@@ -17,12 +17,12 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| **INNER JOIN** | Returns only matched rows → the most common join | Use explicit ANSI JOIN syntax over theta-style |
+| **INNER JOIN** | Returns only matched rows â†’ the most common join | Use explicit ANSI JOIN syntax over theta-style |
 | **OUTER JOINs** | LEFT, RIGHT, FULL preserve unmatched rows with NULLs | LEFT JOIN / IS NULL is the standard anti-join pattern |
 | **SELF JOIN** | Join a table to itself using aliases | Ideal for hierarchies, pairs, and consecutive records |
-| **NATURAL JOIN** | Auto-matches columns with same name | Dangerous in production → schema changes break queries silently |
+| **NATURAL JOIN** | Auto-matches columns with same name | Dangerous in production â†’ schema changes break queries silently |
 | **Subqueries** | Nested SELECT in WHERE, FROM, or SELECT clause | EXISTS short-circuits and handles NULLs better than IN |
-| **Correlated Subqueries** | Re-execute per outer row → powerful but expensive | Rewrite as window functions or JOINs when possible |
+| **Correlated Subqueries** | Re-execute per outer row â†’ powerful but expensive | Rewrite as window functions or JOINs when possible |
 
 ## Chapter Roadmap
 
@@ -40,7 +40,7 @@ flowchart LR
 
 ## Theory
 
-> **One-Sentence Takeaway:** Joins are the heart of relational querying → mastering INNER, OUTER, SELF, NATURAL, SEMI, ANTI, and subqueries lets you combine any data across normalized tables.
+> **One-Sentence Takeaway:** Joins are the heart of relational querying â†’ mastering INNER, OUTER, SELF, NATURAL, SEMI, ANTI, and subqueries lets you combine any data across normalized tables.
 
 ![SQL Joins and Subqueries Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch05-sql-joins.png)
 
@@ -50,7 +50,7 @@ Relational databases store data in normalized tables. To answer meaningful quest
 
 Joins are the heart of relational querying. Understanding them deeply is essential for writing correct and efficient SQL.
 
-**Why Joins Exist:** Normalization splits data into separate tables to reduce redundancy. Joins reverse this split at query time → reconnecting related data without duplicating storage.
+**Why Joins Exist:** Normalization splits data into separate tables to reduce redundancy. Joins reverse this split at query time â†’ reconnecting related data without duplicating storage.
 
 **Join Condition:** The predicate that determines how rows from two tables relate. Most common: foreign key = primary key.
 
@@ -68,7 +68,7 @@ Joins are the heart of relational querying. Understanding them deeply is essenti
 
 All join examples use the following two tables:
 
-**Table A → employees**
+**Table A â†’ employees**
 
 | emp_id | emp_name | dept_id | salary |
 |--------|----------|---------|--------|
@@ -94,7 +94,7 @@ INSERT INTO employees VALUES
 (5, 'Eve',     20, 75000);
 ```
 
-**Table B → departments**
+**Table B â†’ departments**
 
 | dept_id | dept_name |
 |---------|-----------|
@@ -116,7 +116,7 @@ INSERT INTO departments VALUES
 
 **Key observations:**
 - Departments 10 and 20 have employees; department 30 (HR) has none
-- Diana (emp_id=4) has NULL dept_id → no department match
+- Diana (emp_id=4) has NULL dept_id â†’ no department match
 - These edge cases make every join type produce distinct, instructive results
 
 ### 5.2 INNER JOIN
@@ -154,25 +154,25 @@ END PROCEDURE
 
 #### Dry Run Trace Table
 
-**Step-by-step matching for INNER JOIN employees Ã— departments ON dept_id:**
+**Step-by-step matching for INNER JOIN employees Ãƒâ€” departments ON dept_id:**
 
 | Step | Left Row (employees) | Right Row Scanned (departments) | Condition `e.dept_id = d.dept_id` | Action | Accumulated Result |
 |------|---------------------|-------------------------------|-----------------------------------|--------|-------------------|
-| 1 | (1, Alice, 10, 70000) | (10, Engineering) | 10 = 10 → TRUE | EMIT | (Alice, Engineering) |
-| 2 | (1, Alice, 10, 70000) | (20, Sales) | 10 = 20 → FALSE | SKIP | (Alice, Engineering) |
-| 3 | (1, Alice, 10, 70000) | (30, HR) | 10 = 30 → FALSE | SKIP | (Alice, Engineering) |
-| 4 | (2, Bob, 10, 60000) | (10, Engineering) | 10 = 10 → TRUE | EMIT | (Alice, Eng), (Bob, Eng) |
-| 5 | (2, Bob, 10, 60000) | (20, Sales) | 10 = 20 → FALSE | SKIP | (Alice, Eng), (Bob, Eng) |
-| 6 | (2, Bob, 10, 60000) | (30, HR) | 10 = 30 → FALSE | SKIP | (Alice, Eng), (Bob, Eng) |
-| 7 | (3, Charlie, 20, 80000) | (10, Engineering) | 20 = 10 → FALSE | SKIP | (Alice, Eng), (Bob, Eng) |
-| 8 | (3, Charlie, 20, 80000) | (20, Sales) | 20 = 20 → TRUE | EMIT | + (Charlie, Sales) |
-| 9 | (3, Charlie, 20, 80000) | (30, HR) | 20 = 30 → FALSE | SKIP | (Charlie, Sales) |
-| 10 | (4, Diana, NULL, 55000) | (10, Engineering) | NULL = 10 → UNKNOWN | SKIP | (no change) |
-| 11 | (4, Diana, NULL, 55000) | (20, Sales) | NULL = 20 → UNKNOWN | SKIP | (no change) |
-| 12 | (4, Diana, NULL, 55000) | (30, HR) | NULL = 30 → UNKNOWN | SKIP | (no change) |
-| 13 | (5, Eve, 20, 75000) | (10, Engineering) | 20 = 10 → FALSE | SKIP | (no change) |
-| 14 | (5, Eve, 20, 75000) | (20, Sales) | 20 = 20 → TRUE | EMIT | + (Eve, Sales) |
-| 15 | (5, Eve, 20, 75000) | (30, HR) | 20 = 30 → FALSE | SKIP | (done) |
+| 1 | (1, Alice, 10, 70000) | (10, Engineering) | 10 = 10 â†’ TRUE | EMIT | (Alice, Engineering) |
+| 2 | (1, Alice, 10, 70000) | (20, Sales) | 10 = 20 â†’ FALSE | SKIP | (Alice, Engineering) |
+| 3 | (1, Alice, 10, 70000) | (30, HR) | 10 = 30 â†’ FALSE | SKIP | (Alice, Engineering) |
+| 4 | (2, Bob, 10, 60000) | (10, Engineering) | 10 = 10 â†’ TRUE | EMIT | (Alice, Eng), (Bob, Eng) |
+| 5 | (2, Bob, 10, 60000) | (20, Sales) | 10 = 20 â†’ FALSE | SKIP | (Alice, Eng), (Bob, Eng) |
+| 6 | (2, Bob, 10, 60000) | (30, HR) | 10 = 30 â†’ FALSE | SKIP | (Alice, Eng), (Bob, Eng) |
+| 7 | (3, Charlie, 20, 80000) | (10, Engineering) | 20 = 10 â†’ FALSE | SKIP | (Alice, Eng), (Bob, Eng) |
+| 8 | (3, Charlie, 20, 80000) | (20, Sales) | 20 = 20 â†’ TRUE | EMIT | + (Charlie, Sales) |
+| 9 | (3, Charlie, 20, 80000) | (30, HR) | 20 = 30 â†’ FALSE | SKIP | (Charlie, Sales) |
+| 10 | (4, Diana, NULL, 55000) | (10, Engineering) | NULL = 10 â†’ UNKNOWN | SKIP | (no change) |
+| 11 | (4, Diana, NULL, 55000) | (20, Sales) | NULL = 20 â†’ UNKNOWN | SKIP | (no change) |
+| 12 | (4, Diana, NULL, 55000) | (30, HR) | NULL = 30 â†’ UNKNOWN | SKIP | (no change) |
+| 13 | (5, Eve, 20, 75000) | (10, Engineering) | 20 = 10 â†’ FALSE | SKIP | (no change) |
+| 14 | (5, Eve, 20, 75000) | (20, Sales) | 20 = 20 â†’ TRUE | EMIT | + (Eve, Sales) |
+| 15 | (5, Eve, 20, 75000) | (30, HR) | 20 = 30 â†’ FALSE | SKIP | (done) |
 
 **Final Result:**
 
@@ -183,7 +183,7 @@ END PROCEDURE
 | Charlie | Sales |
 | Eve | Sales |
 
-Diana (no department) and HR department are excluded → neither had a match.
+Diana (no department) and HR department are excluded â†’ neither had a match.
 
 #### SQL Code
 
@@ -199,7 +199,7 @@ INNER JOIN departments d ON e.dept_id = d.dept_id;
 -- Charlie  Sales
 -- Eve      Sales
 
--- Implicit (theta-style) syntax → older, harder to maintain
+-- Implicit (theta-style) syntax â†’ older, harder to maintain
 SELECT e.emp_name, d.dept_name
 FROM employees e, departments d
 WHERE e.dept_id = d.dept_id;
@@ -243,7 +243,7 @@ struct JoinRow {
     std::string dept_name;
 };
 
-// Nested Loop Inner Join → O(N * M)
+// Nested Loop Inner Join â†’ O(N * M)
 std::vector<JoinRow> nestedLoopInnerJoin(
     const std::vector<Employee>& employees,
     const std::vector<Department>& departments) {
@@ -259,7 +259,7 @@ std::vector<JoinRow> nestedLoopInnerJoin(
     return result;
 }
 
-// Hash Inner Join → O(N + M) average
+// Hash Inner Join â†’ O(N + M) average
 std::vector<JoinRow> hashInnerJoin(
     const std::vector<Employee>& employees,
     const std::vector<Department>& departments) {
@@ -321,7 +321,7 @@ class Department:
 
 
 def nested_loop_inner_join(employees, departments):
-    """Nested Loop Inner Join → O(N * M)"""
+    """Nested Loop Inner Join â†’ O(N * M)"""
     result = []
     for e in employees:
         if e.dept_id is None:
@@ -333,7 +333,7 @@ def nested_loop_inner_join(employees, departments):
 
 
 def hash_inner_join(employees, departments):
-    """Hash Inner Join → O(N + M) average"""
+    """Hash Inner Join â†’ O(N + M) average"""
     dept_map = {d.dept_id: d.dept_name for d in departments}
     result = []
     for e in employees:
@@ -366,13 +366,13 @@ for name, dept in hash_inner_join(employees, departments):
 
 | Aspect | Nested Loop | Hash Join |
 |--------|------------|-----------|
-| Time | O(N Ã— M) | O(N + M) average |
+| Time | O(N Ãƒâ€” M) | O(N + M) average |
 | Space | O(1) extra | O(M) for hash table |
-| Why | N left rows Ã— M right rows checked | Build hash on smaller table, probe with larger |
+| Why | N left rows Ãƒâ€” M right rows checked | Build hash on smaller table, probe with larger |
 
-**Why Nested Loop is O(NÃ—M):** For each of the N left rows, we scan all M right rows. With 5 employees and 3 departments: 5Ã—3 = 15 condition evaluations. With 1M employees and 100K departments: 10Â¹Â¹ evaluations → catastrophic.
+**Why Nested Loop is O(NÃƒâ€”M):** For each of the N left rows, we scan all M right rows. With 5 employees and 3 departments: 5Ãƒâ€”3 = 15 condition evaluations. With 1M employees and 100K departments: 10Ã‚Â¹Ã‚Â¹ evaluations â†’ catastrophic.
 
-**Why Hash Join is O(N+M):** Building the hash table costs O(M), probing costs O(N) with O(1) average lookup. Total: O(N+M). With 1M employees and 100K departments: ~1.1M operations → dramatically faster.
+**Why Hash Join is O(N+M):** Building the hash table costs O(M), probing costs O(N) with O(1) average lookup. Total: O(N+M). With 1M employees and 100K departments: ~1.1M operations â†’ dramatically faster.
 
 **Why Hash Join is not always used:** Building the hash table requires memory (O(M)). For very large tables that don't fit in memory, the DB spills to disk, and Nested Loop (or Merge Join) may win. Hash joins only work for equi-joins (=), not range conditions (<, >).
 
@@ -382,18 +382,18 @@ for name, dept in hash_inner_join(employees, departments):
 |--------|-----------|--------------|
 | ANSI Syntax | Separates join logic from filters, easier to read | Slightly more verbose |
 | Theta-style | Compact for simple joins | Mixes join and filter; hard to maintain |
-| Nested Loop | Works for any join condition, low memory | Quadratic time → terrible for large tables |
+| Nested Loop | Works for any join condition, low memory | Quadratic time â†’ terrible for large tables |
 | Hash Join | Linear time for equi-joins | Memory hungry, no range conditions |
-| INNER JOIN itself | Most efficient join → smallest result set | Loses unmatched rows (not always desired) |
+| INNER JOIN itself | Most efficient join â†’ smallest result set | Loses unmatched rows (not always desired) |
 
 #### Edge Cases
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
-| **NULL in join column** | NULL â‰  anything (even another NULL). Row is excluded. | Diana (NULL dept_id) never matches |
-| **Duplicate join values** | Every pair is emitted → can cause row multiplication | Two employees in dept 20 Ã— one dept 20 row → 2 rows |
-| **Empty left table** | Empty result (nothing to iterate) | Zero employees → zero rows |
-| **Empty right table** | Empty result (no matches possible) | Zero departments → zero rows |
+| **NULL in join column** | NULL Ã¢â€°Â  anything (even another NULL). Row is excluded. | Diana (NULL dept_id) never matches |
+| **Duplicate join values** | Every pair is emitted â†’ can cause row multiplication | Two employees in dept 20 Ãƒâ€” one dept 20 row â†’ 2 rows |
+| **Empty left table** | Empty result (nothing to iterate) | Zero employees â†’ zero rows |
+| **Empty right table** | Empty result (no matches possible) | Zero departments â†’ zero rows |
 | **Mismatched key types** | SQL performs implicit type coercion or fails | `VARCHAR '10'` = `INT 10` works in most DBs |
 | **Self-inner-join** | Join table to itself; must use aliases | Pairs of employees in same department |
 
@@ -403,7 +403,7 @@ A LEFT JOIN returns **all rows from the left table**. When a match exists in the
 
 #### Real-World Analogy: Class Roster
 
-Imagine a **class roster** (left table) listing all enrolled students and a **grades table** (right table) with test scores. A LEFT JOIN answers: "Show every student and their test score → if a student hasn't taken the test yet, show their name with NULL for the score." No student is omitted.
+Imagine a **class roster** (left table) listing all enrolled students and a **grades table** (right table) with test scores. A LEFT JOIN answers: "Show every student and their test score â†’ if a student hasn't taken the test yet, show their name with NULL for the score." No student is omitted.
 
 #### Numbered Steps of LEFT JOIN Execution
 
@@ -438,28 +438,28 @@ END PROCEDURE
 
 #### Dry Run Trace Table
 
-**LEFT JOIN employees Ã— departments ON dept_id:**
+**LEFT JOIN employees Ãƒâ€” departments ON dept_id:**
 
 | Step | Left Row | Right Row Scanned | Condition | Matched? | Action | Result Accumulated |
 |------|----------|-------------------|-----------|----------|--------|-------------------|
-| 1 | (1, Alice, 10) | (10, Eng) | 10=10→TRUE | → | EMIT | (Alice, Engineering) |
-| 2 | (1, Alice, 10) | (20, Sales) | 10=20→FALSE | → | SKIP | (Alice, Engineering) |
-| 3 | (1, Alice, 10) | (30, HR) | 10=30→FALSE | → | SKIP | (Alice, Engineering) |
-| 4 | (1, Alice, 10) | → scan done | → | TRUE | continue | (Alice, Engineering) |
-| 5 | (2, Bob, 10) | (10, Eng) | 10=10→TRUE | → | EMIT | + (Bob, Engineering) |
-| 6 | (2, Bob, 10) | (20, Sales) | 10=20→FALSE | → | SKIP | (Bob, Engineering) |
-| 7 | (2, Bob, 10) | (30, HR) | 10=30→FALSE | → | SKIP | (Bob, Engineering) |
-| 8 | (2, Bob, 10) | → scan done | → | TRUE | continue | (Bob, Engineering) |
-| 9 | (3, Charlie, 20) | (10, Eng) | 20=10→FALSE | → | SKIP | (Charlie start) |
-| 10 | (3, Charlie, 20) | (20, Sales) | 20=20→TRUE | → | EMIT | + (Charlie, Sales) |
-| 11 | (3, Charlie, 20) | (30, HR) | 20=30→FALSE | → | SKIP | (Charlie, Sales) |
-| 12 | (4, Diana, NULL) | (10, Eng) | NULL=10→UNKNOWN | → | SKIP | (Diana start) |
-| 13 | (4, Diana, NULL) | (20, Sales) | NULL=20→UNKNOWN | → | SKIP | (Diana, no match) |
-| 14 | (4, Diana, NULL) | (30, HR) | NULL=30→UNKNOWN | → | SKIP | (Diana, no match) |
-| 15 | (4, Diana, NULL) | → scan done | → | **FALSE** | EMIT WITH NULL | + (Diana, NULL) |
-| 16 | (5, Eve, 20) | (10, Eng) | 20=10→FALSE | → | SKIP | (Eve start) |
-| 17 | (5, Eve, 20) | (20, Sales) | 20=20→TRUE | → | EMIT | + (Eve, Sales) |
-| 18 | (5, Eve, 20) | (30, HR) | 20=30→FALSE | → | SKIP | (Eve, Sales) |
+| 1 | (1, Alice, 10) | (10, Eng) | 10=10â†’TRUE | â†’ | EMIT | (Alice, Engineering) |
+| 2 | (1, Alice, 10) | (20, Sales) | 10=20â†’FALSE | â†’ | SKIP | (Alice, Engineering) |
+| 3 | (1, Alice, 10) | (30, HR) | 10=30â†’FALSE | â†’ | SKIP | (Alice, Engineering) |
+| 4 | (1, Alice, 10) | â†’ scan done | â†’ | TRUE | continue | (Alice, Engineering) |
+| 5 | (2, Bob, 10) | (10, Eng) | 10=10â†’TRUE | â†’ | EMIT | + (Bob, Engineering) |
+| 6 | (2, Bob, 10) | (20, Sales) | 10=20â†’FALSE | â†’ | SKIP | (Bob, Engineering) |
+| 7 | (2, Bob, 10) | (30, HR) | 10=30â†’FALSE | â†’ | SKIP | (Bob, Engineering) |
+| 8 | (2, Bob, 10) | â†’ scan done | â†’ | TRUE | continue | (Bob, Engineering) |
+| 9 | (3, Charlie, 20) | (10, Eng) | 20=10â†’FALSE | â†’ | SKIP | (Charlie start) |
+| 10 | (3, Charlie, 20) | (20, Sales) | 20=20â†’TRUE | â†’ | EMIT | + (Charlie, Sales) |
+| 11 | (3, Charlie, 20) | (30, HR) | 20=30â†’FALSE | â†’ | SKIP | (Charlie, Sales) |
+| 12 | (4, Diana, NULL) | (10, Eng) | NULL=10â†’UNKNOWN | â†’ | SKIP | (Diana start) |
+| 13 | (4, Diana, NULL) | (20, Sales) | NULL=20â†’UNKNOWN | â†’ | SKIP | (Diana, no match) |
+| 14 | (4, Diana, NULL) | (30, HR) | NULL=30â†’UNKNOWN | â†’ | SKIP | (Diana, no match) |
+| 15 | (4, Diana, NULL) | â†’ scan done | â†’ | **FALSE** | EMIT WITH NULL | + (Diana, NULL) |
+| 16 | (5, Eve, 20) | (10, Eng) | 20=10â†’FALSE | â†’ | SKIP | (Eve start) |
+| 17 | (5, Eve, 20) | (20, Sales) | 20=20â†’TRUE | â†’ | EMIT | + (Eve, Sales) |
+| 18 | (5, Eve, 20) | (30, HR) | 20=30â†’FALSE | â†’ | SKIP | (Eve, Sales) |
 
 **Final Result:**
 
@@ -488,12 +488,12 @@ LEFT JOIN departments d ON e.dept_id = d.dept_id;
 -- Diana    NULL
 -- Eve      Sales
 
--- LEFT JOIN with additional WHERE filter (be careful → WHERE can turn it into INNER!)
+-- LEFT JOIN with additional WHERE filter (be careful â†’ WHERE can turn it into INNER!)
 SELECT e.emp_name, d.dept_name
 FROM employees e
 LEFT JOIN departments d ON e.dept_id = d.dept_id
 WHERE d.dept_name = 'Engineering';
--- Output (only matched rows → WHERE filters out NULLs):
+-- Output (only matched rows â†’ WHERE filters out NULLs):
 -- Alice    Engineering
 -- Bob      Engineering
 
@@ -506,7 +506,7 @@ LEFT JOIN departments d
 -- Output:
 -- Alice    Engineering
 -- Bob      Engineering
--- Charlie  NULL   (matched but ON filter failed → NULL)
+-- Charlie  NULL   (matched but ON filter failed â†’ NULL)
 -- Diana    NULL
 -- Eve      NULL
 ```
@@ -606,10 +606,10 @@ for name, dept in left_join(employees, departments):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| Nested Loop | O(N Ã— M) | O(1) | N left rows Ã— M right rows scanned |
+| Nested Loop | O(N Ãƒâ€” M) | O(1) | N left rows Ãƒâ€” M right rows scanned |
 | Hash-based | O(N + M) | O(M) | Hash smaller table, probe with larger |
 
-Same complexity as INNER JOIN → the difference is in **result cardinality**, not algorithm cost. LEFT JOIN may produce more rows (up to N + unmatched) but the computation per row is identical.
+Same complexity as INNER JOIN â†’ the difference is in **result cardinality**, not algorithm cost. LEFT JOIN may produce more rows (up to N + unmatched) but the computation per row is identical.
 
 #### A&D Table
 
@@ -623,15 +623,15 @@ Same complexity as INNER JOIN → the difference is in **result cardinality**, n
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
-| **NULL join column** | No match found → right side is NULL | Diana gets (Diana, NULL) |
+| **NULL join column** | No match found â†’ right side is NULL | Diana gets (Diana, NULL) |
 | **No matches at all** | All left rows appear with NULL right side | If departments is empty, all 5 employees appear with NULL |
 | **Multiple matches** | Left rows are duplicated per match | If two departments had id=10, Alice would appear twice |
-| **Empty left table** | Zero rows returned | No employees → empty result |
-| **Empty right table** | All left rows appear with NULLs | No departments → all employees with NULL dept |
+| **Empty left table** | Zero rows returned | No employees â†’ empty result |
+| **Empty right table** | All left rows appear with NULLs | No departments â†’ all employees with NULL dept |
 
 ### 5.4 RIGHT OUTER JOIN
 
-A RIGHT JOIN returns **all rows from the right table**. It is the mirror of LEFT JOIN. Any SQL engine can swap table order and use LEFT JOIN instead → RIGHT JOIN exists mainly for syntactic convenience.
+A RIGHT JOIN returns **all rows from the right table**. It is the mirror of LEFT JOIN. Any SQL engine can swap table order and use LEFT JOIN instead â†’ RIGHT JOIN exists mainly for syntactic convenience.
 
 #### Real-World Analogy: Venue Booking
 
@@ -671,28 +671,28 @@ END PROCEDURE
 
 #### Dry Run Trace Table
 
-**RIGHT JOIN employees Ã— departments ON dept_id:**
+**RIGHT JOIN employees Ãƒâ€” departments ON dept_id:**
 
 | Step | Right Row (dept) | Left Row Scanned (emp) | Condition | Matched | Action | Result |
 |------|------------------|----------------------|-----------|---------|--------|--------|
-| 1 | (10, Engineering) | (1, Alice, 10) | 10=10→TRUE | → | EMIT | (Alice, Engineering) |
-| 2 | (10, Engineering) | (2, Bob, 10) | 10=10→TRUE | → | EMIT | + (Bob, Engineering) |
-| 3 | (10, Engineering) | (3, Charlie, 20) | 10=20→FALSE | → | SKIP | → |
-| 4 | (10, Engineering) | (4, Diana, NULL) | NULL=10→UNK | → | SKIP | → |
-| 5 | (10, Engineering) | (5, Eve, 20) | 10=20→FALSE | → | SKIP | → |
-| 6 | (10, Eng) | → scan done | → | TRUE | continue | → |
-| 7 | (20, Sales) | (1, Alice, 10) | 20=10→FALSE | → | SKIP | → |
-| 8 | (20, Sales) | (2, Bob, 10) | 20=10→FALSE | → | SKIP | → |
-| 9 | (20, Sales) | (3, Charlie, 20) | 20=20→TRUE | → | EMIT | + (Charlie, Sales) |
-| 10 | (20, Sales) | (4, Diana, NULL) | NULL=20→UNK | → | SKIP | → |
-| 11 | (20, Sales) | (5, Eve, 20) | 20=20→TRUE | → | EMIT | + (Eve, Sales) |
-| 12 | (20, Sales) | → scan done | → | TRUE | continue | → |
-| 13 | (30, HR) | (1, Alice, 10) | 30=10→FALSE | → | SKIP | → |
-| 14 | (30, HR) | (2, Bob, 10) | 30=10→FALSE | → | SKIP | → |
-| 15 | (30, HR) | (3, Charlie, 20) | 30=20→FALSE | → | SKIP | → |
-| 16 | (30, HR) | (4, Diana, NULL) | NULL=30→UNK | → | SKIP | → |
-| 17 | (30, HR) | (5, Eve, 20) | 30=20→FALSE | → | SKIP | → |
-| 18 | (30, HR) | → scan done | → | **FALSE** | EMIT WITH NULL | + (NULL, HR) |
+| 1 | (10, Engineering) | (1, Alice, 10) | 10=10â†’TRUE | â†’ | EMIT | (Alice, Engineering) |
+| 2 | (10, Engineering) | (2, Bob, 10) | 10=10â†’TRUE | â†’ | EMIT | + (Bob, Engineering) |
+| 3 | (10, Engineering) | (3, Charlie, 20) | 10=20â†’FALSE | â†’ | SKIP | â†’ |
+| 4 | (10, Engineering) | (4, Diana, NULL) | NULL=10â†’UNK | â†’ | SKIP | â†’ |
+| 5 | (10, Engineering) | (5, Eve, 20) | 10=20â†’FALSE | â†’ | SKIP | â†’ |
+| 6 | (10, Eng) | â†’ scan done | â†’ | TRUE | continue | â†’ |
+| 7 | (20, Sales) | (1, Alice, 10) | 20=10â†’FALSE | â†’ | SKIP | â†’ |
+| 8 | (20, Sales) | (2, Bob, 10) | 20=10â†’FALSE | â†’ | SKIP | â†’ |
+| 9 | (20, Sales) | (3, Charlie, 20) | 20=20â†’TRUE | â†’ | EMIT | + (Charlie, Sales) |
+| 10 | (20, Sales) | (4, Diana, NULL) | NULL=20â†’UNK | â†’ | SKIP | â†’ |
+| 11 | (20, Sales) | (5, Eve, 20) | 20=20â†’TRUE | â†’ | EMIT | + (Eve, Sales) |
+| 12 | (20, Sales) | â†’ scan done | â†’ | TRUE | continue | â†’ |
+| 13 | (30, HR) | (1, Alice, 10) | 30=10â†’FALSE | â†’ | SKIP | â†’ |
+| 14 | (30, HR) | (2, Bob, 10) | 30=10â†’FALSE | â†’ | SKIP | â†’ |
+| 15 | (30, HR) | (3, Charlie, 20) | 30=20â†’FALSE | â†’ | SKIP | â†’ |
+| 16 | (30, HR) | (4, Diana, NULL) | NULL=30â†’UNK | â†’ | SKIP | â†’ |
+| 17 | (30, HR) | (5, Eve, 20) | 30=20â†’FALSE | â†’ | SKIP | â†’ |
+| 18 | (30, HR) | â†’ scan done | â†’ | **FALSE** | EMIT WITH NULL | + (NULL, HR) |
 
 **Final Result:**
 
@@ -704,7 +704,7 @@ END PROCEDURE
 | Eve | Sales |
 | NULL | HR |
 
-HR department appears with NULL employee → no employee belongs to HR.
+HR department appears with NULL employee â†’ no employee belongs to HR.
 
 #### SQL Code
 
@@ -778,14 +778,14 @@ def right_join(employees, departments):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| Nested Loop | O(N Ã— M) | O(1) | N left Ã— M right → same as LEFT JOIN |
+| Nested Loop | O(N Ãƒâ€” M) | O(1) | N left Ãƒâ€” M right â†’ same as LEFT JOIN |
 | Hash Join | O(N + M) | O(N) or O(M) | Build hash on smaller of two tables |
 
 #### A&D Table
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| RIGHT JOIN | Symmetric complement to LEFT | Rarely needed → swap tables and use LEFT |
+| RIGHT JOIN | Symmetric complement to LEFT | Rarely needed â†’ swap tables and use LEFT |
 | Readability | Direct when right table is the "master" | Confusing in complex multi-join queries |
 
 #### Edge Cases
@@ -793,8 +793,8 @@ def right_join(employees, departments):
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
 | **NULL join column** | Employee with NULL dept_id won't match any department | Diana never matches |
-| **Empty right table** | Zero rows returned | No departments → empty result |
-| **Empty left table** | All right rows appear with NULLs for left columns | No employees → all depts with NULL emp |
+| **Empty right table** | Zero rows returned | No departments â†’ empty result |
+| **Empty left table** | All right rows appear with NULLs for left columns | No employees â†’ all depts with NULL emp |
 | **Unmatched right rows** | Appear once with NULL left columns | HR department has NULL employee |
 
 ### 5.5 FULL OUTER JOIN
@@ -803,7 +803,7 @@ A FULL OUTER JOIN returns **all rows from both tables**. When a match exists, co
 
 #### Real-World Analogy: Conference Attendees and Speakers
 
-The **attendees list** (left) and **speakers list** (right) for a conference. A FULL OUTER JOIN answers: "Show me all people → attendees who attended, speakers who presented, and anyone who did both." No one is omitted.
+The **attendees list** (left) and **speakers list** (right) for a conference. A FULL OUTER JOIN answers: "Show me all people â†’ attendees who attended, speakers who presented, and anyone who did both." No one is omitted.
 
 #### Numbered Steps of FULL OUTER JOIN Execution
 
@@ -851,9 +851,9 @@ END PROCEDURE
 
 #### Dry Run Trace Table
 
-**FULL OUTER JOIN employees Ã— departments ON dept_id:**
+**FULL OUTER JOIN employees Ãƒâ€” departments ON dept_id:**
 
-**Phase 1 → LEFT JOIN pass:**
+**Phase 1 â†’ LEFT JOIN pass:**
 
 | Left Row | Matches | Emitted |
 |----------|---------|---------|
@@ -865,7 +865,7 @@ END PROCEDURE
 
 Matched right rows so far: Engineering (id=10), Sales (id=20).
 
-**Phase 2 → Unmatched right rows:**
+**Phase 2 â†’ Unmatched right rows:**
 
 | Right Row | Was Matched? | Action |
 |-----------|-------------|--------|
@@ -917,7 +917,7 @@ FULL OUTER JOIN departments d ON e.dept_id = d.dept_id;
 -- Eve         Sales
 -- (no employee)  HR
 
--- MySQL doesn't support FULL OUTER JOIN → simulate with UNION:
+-- MySQL doesn't support FULL OUTER JOIN â†’ simulate with UNION:
 SELECT e.emp_name, d.dept_name
 FROM employees e
 LEFT JOIN departments d ON e.dept_id = d.dept_id
@@ -1003,10 +1003,10 @@ def full_outer_join(employees, departments):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| Two-pass (LEFT + unmatched Right) | O(N Ã— M) | O(M) worst | Left pass O(NÃ—M), tracking set O(M) |
+| Two-pass (LEFT + unmatched Right) | O(N Ãƒâ€” M) | O(M) worst | Left pass O(NÃƒâ€”M), tracking set O(M) |
 | Hash-based | O(N + M) | O(N + M) | Hash both sides, then merge |
 
-**Why Nested Loop is still O(NÃ—M):** The LEFT JOIN pass does NÃ—M comparisons. The unmatched-right pass does M set lookups (O(1) each). Total is dominated by NÃ—M.
+**Why Nested Loop is still O(NÃƒâ€”M):** The LEFT JOIN pass does NÃƒâ€”M comparisons. The unmatched-right pass does M set lookups (O(1) each). Total is dominated by NÃƒâ€”M.
 
 **Why Hash Join is O(N+M):** Build hash on right table (O(M)). Probe with left (O(N)). Track matched keys. Emit unmatched right rows (O(M)). Total: O(N+M).
 
@@ -1014,7 +1014,7 @@ def full_outer_join(employees, departments):
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| FULL OUTER | Complete picture → no data loss | Largest result set; most expensive |
+| FULL OUTER | Complete picture â†’ no data loss | Largest result set; most expensive |
 | COALESCE display | Human-readable output | Slight query complexity |
 | MySQL UNION workaround | Works without FULL JOIN support | Two full scans; deduplication overhead |
 
@@ -1024,18 +1024,18 @@ def full_outer_join(employees, departments):
 |-----------|----------|---------|
 | **NULL join column** | Row kept with NULLs on the other side | Diana appears with NULL department |
 | **All rows match** | Same as INNER JOIN result | If every employee had a valid dept and every dept had employees |
-| **No rows match** | All rows appear with NULLs on the other side | Cartesians: every emp Ã— NULL + every dept Ã— NULL |
-| **Empty left table** | All right rows appear with NULL left columns | Zero employees → all depts with NULL |
-| **Empty right table** | All left rows appear with NULL right columns | Zero departments → all emps with NULL |
+| **No rows match** | All rows appear with NULLs on the other side | Cartesians: every emp Ãƒâ€” NULL + every dept Ãƒâ€” NULL |
+| **Empty left table** | All right rows appear with NULL left columns | Zero employees â†’ all depts with NULL |
+| **Empty right table** | All left rows appear with NULL right columns | Zero departments â†’ all emps with NULL |
 | **Both empty** | Empty result | Nothing to show |
 
 ### 5.6 CROSS JOIN
 
-A CROSS JOIN produces the **Cartesian product** of two tables → every row of the first table paired with every row of the second. No join condition is needed (and specifying one turns it into an INNER JOIN).
+A CROSS JOIN produces the **Cartesian product** of two tables â†’ every row of the first table paired with every row of the second. No join condition is needed (and specifying one turns it into an INNER JOIN).
 
 #### Real-World Analogy: Menu Combinations
 
-A restaurant has a **main courses list** (left) and a **side dishes list** (right). A CROSS JOIN answers: "Show every possible combination of one main course and one side dish." If there are 3 mains and 4 sides, the result has 3Ã—4 = 12 rows.
+A restaurant has a **main courses list** (left) and a **side dishes list** (right). A CROSS JOIN answers: "Show every possible combination of one main course and one side dish." If there are 3 mains and 4 sides, the result has 3Ãƒâ€”4 = 12 rows.
 
 #### Numbered Steps of CROSS JOIN Execution
 
@@ -1044,7 +1044,7 @@ A restaurant has a **main courses list** (left) and a **side dishes list** (righ
 3. Move to the next left row and repeat
 4. Continue until all left rows are processed
 
-No matching logic → every left row pairs with every right row unconditionally.
+No matching logic â†’ every left row pairs with every right row unconditionally.
 
 #### Pseudocode
 
@@ -1062,7 +1062,7 @@ END PROCEDURE
 
 #### Dry Run Trace Table
 
-**CROSS JOIN employees Ã— departments (no condition):**
+**CROSS JOIN employees Ãƒâ€” departments (no condition):**
 
 | Step | Left Row | Right Row | Action | Result Accumulated |
 |------|----------|-----------|--------|-------------------|
@@ -1082,7 +1082,7 @@ END PROCEDURE
 | 14 | (Eve) | (Sales) | EMIT | + (Eve, Sales) |
 | 15 | (Eve) | (HR) | EMIT | + (Eve, HR) |
 
-**Final Result → 5 Ã— 3 = 15 rows:**
+**Final Result â†’ 5 Ãƒâ€” 3 = 15 rows:**
 
 | emp_name | dept_name |
 |----------|-----------|
@@ -1102,7 +1102,7 @@ END PROCEDURE
 | Eve | Sales |
 | Eve | HR |
 
-Every employee is paired with every department → even combinations that make no business sense (Diana in HR without a matching dept_id).
+Every employee is paired with every department â†’ even combinations that make no business sense (Diana in HR without a matching dept_id).
 
 #### SQL Code
 
@@ -1112,7 +1112,7 @@ SELECT e.emp_name, d.dept_name
 FROM employees e
 CROSS JOIN departments d;
 
--- Implicit theta-style (same result → no WHERE clause)
+-- Implicit theta-style (same result â†’ no WHERE clause)
 SELECT e.emp_name, d.dept_name
 FROM employees e, departments d;
 
@@ -1166,31 +1166,31 @@ def cross_join(employees, departments):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| CROSS JOIN | O(N Ã— M) | O(1) extra | Every left Ã— every right → no shortcuts |
-| Result size | O(N Ã— M) | O(N Ã— M) | Result itself is the bottleneck |
+| CROSS JOIN | O(N Ãƒâ€” M) | O(1) extra | Every left Ãƒâ€” every right â†’ no shortcuts |
+| Result size | O(N Ãƒâ€” M) | O(N Ãƒâ€” M) | Result itself is the bottleneck |
 
-**Why it's always O(NÃ—M):** There is no optimization possible → every row must pair with every other row. The result set itself is size NÃ—M. With 1000 employees and 1000 departments, the result is 1,000,000 rows. **Never CROSS JOIN large tables accidentally** → a forgotten WHERE clause in a theta-style join silently produces a Cartesian product.
+**Why it's always O(NÃƒâ€”M):** There is no optimization possible â†’ every row must pair with every other row. The result set itself is size NÃƒâ€”M. With 1000 employees and 1000 departments, the result is 1,000,000 rows. **Never CROSS JOIN large tables accidentally** â†’ a forgotten WHERE clause in a theta-style join silently produces a Cartesian product.
 
 #### A&D Table
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| CROSS JOIN | Simple; generates all combinations | Result size explosion (N Ã— M) |
+| CROSS JOIN | Simple; generates all combinations | Result size explosion (N Ãƒâ€” M) |
 | Practical use | Calendar grids, attribute combos | Nearly always wrong for business queries |
-| Accidental Cartesian | → | Most common join bug → always qualify your joins |
+| Accidental Cartesian | â†’ | Most common join bug â†’ always qualify your joins |
 
 #### Edge Cases
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
-| **Empty left table** | Empty result | Zero employees → zero rows |
-| **Empty right table** | Empty result | Zero departments → zero rows |
+| **Empty left table** | Empty result | Zero employees â†’ zero rows |
+| **Empty right table** | Empty result | Zero departments â†’ zero rows |
 | **NULL join columns** | NULLs are treated as values, still pair | Diana (NULL dept_id) still appears with all departments |
-| **Large tables** | Result explosion | 10K Ã— 10K = 100M rows → can crash the server |
+| **Large tables** | Result explosion | 10K Ãƒâ€” 10K = 100M rows â†’ can crash the server |
 
 ### 5.7 NATURAL JOIN
 
-A NATURAL JOIN automatically joins two tables based on **all columns with the same name** in both tables. No explicit join condition is needed → the database infers it.
+A NATURAL JOIN automatically joins two tables based on **all columns with the same name** in both tables. No explicit join condition is needed â†’ the database infers it.
 
 #### Real-World Analogy: Identical Forms
 
@@ -1229,17 +1229,17 @@ Shared column: `dept_id` (both tables have it).
 
 | Step | Left Row (emp) | Right Row (dept) | Condition `e.dept_id = d.dept_id` | Action | Result |
 |------|---------------|-------------------|-----------------------------------|--------|--------|
-| 1 | (1, Alice, 10, 70000) | (10, Eng, Bldg-A) | 10=10 → TRUE | EMIT | (Alice, 10, Eng, Bldg-A) |
-| 2 | (1, Alice, 10, 70000) | (20, Sales, Bldg-B) | 10=20 → FALSE | SKIP | → |
-| 3 | (1, Alice, 10, 70000) | (30, HR, Bldg-C) | 10=30 → FALSE | SKIP | → |
-| 4 | (2, Bob, 10, 60000) | (10, Eng, Bldg-A) | 10=10 → TRUE | EMIT | (Bob, 10, Eng, Bldg-A) |
-| 5 | (3, Charlie, 20, 80000) | (10, Eng, Bldg-A) | 20=10 → FALSE | SKIP | → |
-| 6 | (3, Charlie, 20, 80000) | (20, Sales, Bldg-B) | 20=20 → TRUE | EMIT | (Charlie, 20, Sales, Bldg-B) |
-| 7 | (4, Diana, NULL, 55000) | (10, Eng, Bldg-A) | NULL=10 → UNK | SKIP | → |
-| 8 | (4, Diana, NULL, 55000) | (20, Sales, Bldg-B) | NULL=20 → UNK | SKIP | → |
-| 9 | (4, Diana, NULL, 55000) | (30, HR, Bldg-C) | NULL=30 → UNK | SKIP | → |
-| 10 | (5, Eve, 20, 75000) | (10, Eng, Bldg-A) | 20=10 → FALSE | SKIP | → |
-| 11 | (5, Eve, 20, 75000) | (20, Sales, Bldg-B) | 20=20 → TRUE | EMIT | (Eve, 20, Sales, Bldg-B) |
+| 1 | (1, Alice, 10, 70000) | (10, Eng, Bldg-A) | 10=10 â†’ TRUE | EMIT | (Alice, 10, Eng, Bldg-A) |
+| 2 | (1, Alice, 10, 70000) | (20, Sales, Bldg-B) | 10=20 â†’ FALSE | SKIP | â†’ |
+| 3 | (1, Alice, 10, 70000) | (30, HR, Bldg-C) | 10=30 â†’ FALSE | SKIP | â†’ |
+| 4 | (2, Bob, 10, 60000) | (10, Eng, Bldg-A) | 10=10 â†’ TRUE | EMIT | (Bob, 10, Eng, Bldg-A) |
+| 5 | (3, Charlie, 20, 80000) | (10, Eng, Bldg-A) | 20=10 â†’ FALSE | SKIP | â†’ |
+| 6 | (3, Charlie, 20, 80000) | (20, Sales, Bldg-B) | 20=20 â†’ TRUE | EMIT | (Charlie, 20, Sales, Bldg-B) |
+| 7 | (4, Diana, NULL, 55000) | (10, Eng, Bldg-A) | NULL=10 â†’ UNK | SKIP | â†’ |
+| 8 | (4, Diana, NULL, 55000) | (20, Sales, Bldg-B) | NULL=20 â†’ UNK | SKIP | â†’ |
+| 9 | (4, Diana, NULL, 55000) | (30, HR, Bldg-C) | NULL=30 â†’ UNK | SKIP | â†’ |
+| 10 | (5, Eve, 20, 75000) | (10, Eng, Bldg-A) | 20=10 â†’ FALSE | SKIP | â†’ |
+| 11 | (5, Eve, 20, 75000) | (20, Sales, Bldg-B) | 20=20 â†’ TRUE | EMIT | (Eve, 20, Sales, Bldg-B) |
 
 **Result (dept_id appears once):**
 
@@ -1255,7 +1255,7 @@ Same as INNER JOIN, but `dept_id` column is not duplicated.
 #### SQL Code
 
 ```sql
--- NATURAL JOIN → infers join on all common columns
+-- NATURAL JOIN â†’ infers join on all common columns
 SELECT *
 FROM employees
 NATURAL JOIN departments;
@@ -1285,7 +1285,7 @@ INNER JOIN departments d ON e.dept_id = d.dept_id;
 #include <unordered_map>
 #include <optional>
 
-// Generic natural join → joins on the common key column name "dept_id"
+// Generic natural join â†’ joins on the common key column name "dept_id"
 struct Employee { int id; std::string name; int dept_id; double sal; };
 struct Department { int dept_id; std::string name; std::string loc; };
 struct JoinResult { std::string emp; int dept_id; std::string dept; std::string loc; };
@@ -1326,15 +1326,15 @@ def natural_join(employees, departments):
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
 | NATURAL (hash) | O(N + M) | O(M) | Same as inner equi-join after condition discovery |
-| Schema detection | O(Câ‚ + Câ‚‚) | O(1) | Câ‚, Câ‚‚ = column counts of each table |
+| Schema detection | O(CÃ¢â€šÂ + CÃ¢â€šâ€š) | O(1) | CÃ¢â€šÂ, CÃ¢â€šâ€š = column counts of each table |
 
-The join itself has the same complexity as INNER JOIN. The extra work is schema introspection to find common columns → negligible (sub-millisecond).
+The join itself has the same complexity as INNER JOIN. The extra work is schema introspection to find common columns â†’ negligible (sub-millisecond).
 
 #### A&D Table
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| NATURAL JOIN | Concise → no join condition to write | **Fragile** → schema changes silently change semantics |
+| NATURAL JOIN | Concise â†’ no join condition to write | **Fragile** â†’ schema changes silently change semantics |
 | Short-term use | Quick ad-hoc queries | Never use in production code |
 | Column dedup | Clean output with no duplicate columns | Cannot control which common columns to join on |
 
@@ -1345,7 +1345,7 @@ The join itself has the same complexity as INNER JOIN. The extra work is schema 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
 | **No common columns** | CROSS JOIN (all pairs)! | Tables with no matching column names produce Cartesian product |
-| **Multiple common columns** | All become part of join condition | Both share `dept_id` AND `location` → AND join |
+| **Multiple common columns** | All become part of join condition | Both share `dept_id` AND `location` â†’ AND join |
 | **NULL with NATURAL** | Same as INNER JOIN NULL behavior | Diana (NULL dept_id) excluded |
 | **Schema evolution** | New column with same name changes join silently | Adding `created_at` to both tables adds it to the join |
 
@@ -1355,7 +1355,7 @@ A SELF JOIN joins a table to itself. Since SQL doesn't have a `SELF JOIN` keywor
 
 #### Real-World Analogy: Employee Directory with Managers
 
-One table `employees` contains both regular employees and their managers (via `manager_id`). You need to look up **two rows from the same table** → one for the employee, one for the manager → and pair them. A SELF JOIN treats the same table as if it were two separate copies.
+One table `employees` contains both regular employees and their managers (via `manager_id`). You need to look up **two rows from the same table** â†’ one for the employee, one for the manager â†’ and pair them. A SELF JOIN treats the same table as if it were two separate copies.
 
 #### Numbered Steps of SELF JOIN Execution
 
@@ -1394,27 +1394,27 @@ Using a modified employees table with manager_id:
 
 | Step | e Row | m Row Scanned | Condition e.mgr_id = m.emp_id | Action | Result |
 |------|-------|---------------|-------------------------------|--------|--------|
-| 1 | (1, Alice, NULL) | (1, Alice) | NULL=1→UNK | SKIP | → |
-| 2 | (1, Alice, NULL) | (2, Bob) | NULL=2→UNK | SKIP | → |
-| 3 | (1, Alice, NULL) | (3, Charlie) | NULL=3→UNK | SKIP | → |
-| 4 | (1, Alice, NULL) | (4, Diana) | NULL=4→UNK | SKIP | → |
-| 5 | (1, Alice, NULL) | (5, Eve) | NULL=5→UNK | SKIP | → |
-| 6 | (1, Alice, NULL) | → scan done, no match | → | EMIT w/ NULL | (Alice, NULL) |
-| 7 | (2, Bob, 1) | (1, Alice) | 1=1→TRUE | EMIT | (Bob, Alice) |
-| 8 | (2, Bob, 1) | (2, Bob), (3, C), ... | rest FALSE | SKIP | → |
-| 9 | (3, Charlie, 1) | (1, Alice) | 1=1→TRUE | EMIT | (Charlie, Alice) |
-| 10 | (4, Diana, 2) | (1, Alice) | 2=1→FALSE | SKIP | → |
-| 11 | (4, Diana, 2) | (2, Bob) | 2=2→TRUE | EMIT | (Diana, Bob) |
-| 12 | (5, Eve, 3) | (1, Alice) | 3=1→FALSE | SKIP | → |
-| 13 | (5, Eve, 3) | (2, Bob) | 3=2→FALSE | SKIP | → |
-| 14 | (5, Eve, 3) | (3, Charlie) | 3=3→TRUE | EMIT | (Eve, Charlie) |
-| 15 | (5, Eve, 3) | (4, Diana), (5, Eve) | rest FALSE | SKIP | → |
+| 1 | (1, Alice, NULL) | (1, Alice) | NULL=1â†’UNK | SKIP | â†’ |
+| 2 | (1, Alice, NULL) | (2, Bob) | NULL=2â†’UNK | SKIP | â†’ |
+| 3 | (1, Alice, NULL) | (3, Charlie) | NULL=3â†’UNK | SKIP | â†’ |
+| 4 | (1, Alice, NULL) | (4, Diana) | NULL=4â†’UNK | SKIP | â†’ |
+| 5 | (1, Alice, NULL) | (5, Eve) | NULL=5â†’UNK | SKIP | â†’ |
+| 6 | (1, Alice, NULL) | â†’ scan done, no match | â†’ | EMIT w/ NULL | (Alice, NULL) |
+| 7 | (2, Bob, 1) | (1, Alice) | 1=1â†’TRUE | EMIT | (Bob, Alice) |
+| 8 | (2, Bob, 1) | (2, Bob), (3, C), ... | rest FALSE | SKIP | â†’ |
+| 9 | (3, Charlie, 1) | (1, Alice) | 1=1â†’TRUE | EMIT | (Charlie, Alice) |
+| 10 | (4, Diana, 2) | (1, Alice) | 2=1â†’FALSE | SKIP | â†’ |
+| 11 | (4, Diana, 2) | (2, Bob) | 2=2â†’TRUE | EMIT | (Diana, Bob) |
+| 12 | (5, Eve, 3) | (1, Alice) | 3=1â†’FALSE | SKIP | â†’ |
+| 13 | (5, Eve, 3) | (2, Bob) | 3=2â†’FALSE | SKIP | â†’ |
+| 14 | (5, Eve, 3) | (3, Charlie) | 3=3â†’TRUE | EMIT | (Eve, Charlie) |
+| 15 | (5, Eve, 3) | (4, Diana), (5, Eve) | rest FALSE | SKIP | â†’ |
 
 **Final Result:**
 
 | employee | manager |
 |----------|---------|
-| Alice | NULL (she's the CEO → no manager) |
+| Alice | NULL (she's the CEO â†’ no manager) |
 | Bob | Alice |
 | Charlie | Alice |
 | Diana | Bob |
@@ -1437,7 +1437,7 @@ WHERE a.emp_id < b.emp_id;
 -- Output:
 -- Alice  Bob   10
 -- Alice  Eve   20
--- Bob    Eve   20  -- Wait, Bob is dept 10, Eve is dept 20 → no!
+-- Bob    Eve   20  -- Wait, Bob is dept 10, Eve is dept 20 â†’ no!
 -- (Actually correct: Alice/Bob share dept 10, Charlie/Eve share dept 20)
 -- Alice  Bob   10
 -- Charlie Eve   20
@@ -1506,19 +1506,19 @@ def self_join(employees):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| SELF JOIN (nested loop) | O(NÂ²) | O(1) extra | N rows Ã— N rows = NÂ² comparisons |
+| SELF JOIN (nested loop) | O(NÃ‚Â²) | O(1) extra | N rows Ãƒâ€” N rows = NÃ‚Â² comparisons |
 | SELF JOIN (hash) | O(N) | O(N) | Build hash on manager emp_id, probe with employee manager_id |
 
-**Why O(NÂ²) for nested loop:** The same table appears twice. For each of N "employee" rows, we scan all N "manager" rows. 5 rows → 25 comparisons. 1M rows → 10Â¹Â² comparisons (impractical without hash).
+**Why O(NÃ‚Â²) for nested loop:** The same table appears twice. For each of N "employee" rows, we scan all N "manager" rows. 5 rows â†’ 25 comparisons. 1M rows â†’ 10Ã‚Â¹Ã‚Â² comparisons (impractical without hash).
 
-**Why O(N) for hash:** Build hash map from emp_id → emp_name (O(N)). Then for each employee, look up their manager_id in the hash (O(1) each). Total: O(N).
+**Why O(N) for hash:** Build hash map from emp_id â†’ emp_name (O(N)). Then for each employee, look up their manager_id in the hash (O(1) each). Total: O(N).
 
 #### A&D Table
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | SELF JOIN | Solves hierarchy, pairs, consecutive problems | Can be confusing to read |
-| Table aliases | Required → disambiguate role | Forgetting aliases causes error |
+| Table aliases | Required â†’ disambiguate role | Forgetting aliases causes error |
 | Self-pair filtering | `a.id < b.id` avoids (A,A) and (A,B)=(B,A) | Must remember to add this filter |
 
 #### Edge Cases
@@ -1533,7 +1533,7 @@ def self_join(employees):
 
 ### 5.9 SEMI JOIN (Logical)
 
-A SEMI JOIN returns rows from the left table that have **at least one match** in the right table. Unlike INNER JOIN, it never duplicates left rows → even if multiple right rows match, the left row appears exactly once.
+A SEMI JOIN returns rows from the left table that have **at least one match** in the right table. Unlike INNER JOIN, it never duplicates left rows â†’ even if multiple right rows match, the left row appears exactly once.
 
 SQL has no `SEMI JOIN` keyword. It is expressed using `EXISTS` or `IN`.
 
@@ -1547,7 +1547,7 @@ The **applicants table** (left) lists all applicants, and the **interviews table
 2. Scan the right table for matching rows using the join condition
 3. As soon as the **first match** is found, emit the left row and **stop scanning** (short-circuit)
 4. Move to the next left row
-5. A left row appears at most once → no duplication
+5. A left row appears at most once â†’ no duplication
 
 **Key difference from INNER JOIN:** INNER JOIN emits one row per match. SEMI JOIN emits one row per left row that has at least one match.
 
@@ -1560,7 +1560,7 @@ PROCEDURE SEMI_JOIN(table_left, table_right, condition)
         FOR EACH row_r IN table_right
             IF condition(row_l, row_r) == TRUE THEN
                 result.append(row_l)  // Only left columns!
-                BREAK                // Short-circuit → first match only
+                BREAK                // Short-circuit â†’ first match only
             END IF
         END FOR
     END FOR
@@ -1570,18 +1570,18 @@ END PROCEDURE
 
 #### Dry Run Trace Table
 
-**SEMI JOIN employees Ã— departments ON dept_id (which employees have ANY department?)**
+**SEMI JOIN employees Ãƒâ€” departments ON dept_id (which employees have ANY department?)**
 
 | Step | Left Row | Right Row Scanned | Match? | Action | Result |
 |------|----------|-------------------|--------|--------|--------|
 | 1 | (1, Alice, 10) | (10, Engineering) | YES | EMIT (Alice) then BREAK | (Alice) |
 | 2 | (2, Bob, 10) | (10, Engineering) | YES | EMIT (Bob) then BREAK | (Alice, Bob) |
-| 3 | (3, Charlie, 20) | (10, Engineering) | NO (20â‰ 10) | Continue scanning | → |
+| 3 | (3, Charlie, 20) | (10, Engineering) | NO (20Ã¢â€°Â 10) | Continue scanning | â†’ |
 | 4 | (3, Charlie, 20) | (20, Sales) | YES | EMIT (Charlie) then BREAK | + (Charlie) |
-| 5 | (4, Diana, NULL) | (10, Eng) | NULL=10→UNK | Continue | → |
-| 6 | (4, Diana, NULL) | (20, Sales) | NULL=20→UNK | Continue | → |
-| 7 | (4, Diana, NULL) | (30, HR) | NULL=30→UNK | Continue, no match → skip | (no Diana) |
-| 8 | (5, Eve, 20) | (10, Eng) | NO (20â‰ 10) | Continue | → |
+| 5 | (4, Diana, NULL) | (10, Eng) | NULL=10â†’UNK | Continue | â†’ |
+| 6 | (4, Diana, NULL) | (20, Sales) | NULL=20â†’UNK | Continue | â†’ |
+| 7 | (4, Diana, NULL) | (30, HR) | NULL=30â†’UNK | Continue, no match â†’ skip | (no Diana) |
+| 8 | (5, Eve, 20) | (10, Eng) | NO (20Ã¢â€°Â 10) | Continue | â†’ |
 | 9 | (5, Eve, 20) | (20, Sales) | YES | EMIT (Eve) then BREAK | + (Eve) |
 
 **Final Result (only left-table columns):**
@@ -1593,7 +1593,7 @@ END PROCEDURE
 | Charlie |
 | Eve |
 
-Diana is excluded (no department match). Alice, Bob, Charlie, Eve appear once each → **no duplication** despite Alice and Bob matching the same department row.
+Diana is excluded (no department match). Alice, Bob, Charlie, Eve appear once each â†’ **no duplication** despite Alice and Bob matching the same department row.
 
 #### SQL Code
 
@@ -1627,7 +1627,7 @@ SELECT DISTINCT e.emp_name
 FROM employees e
 INNER JOIN departments d ON e.dept_id = d.dept_id;
 
--- EXISTS is generally preferred → it short-circuits and avoids dedup cost
+-- EXISTS is generally preferred â†’ it short-circuits and avoids dedup cost
 ```
 
 #### C++ Implementation
@@ -1672,29 +1672,29 @@ def semi_join(employees, departments):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| EXISTS (nested) | O(N Ã— M) worst | O(1) | Worst case: every left row scans until end |
+| EXISTS (nested) | O(N Ãƒâ€” M) worst | O(1) | Worst case: every left row scans until end |
 | EXISTS (hash) | O(N + M) | O(M) | Build hash on right key, O(1) probe per left row |
 | IN | O(N + M) | O(M) | Materializes subquery, then does hash lookup |
-| INNER JOIN + DISTINCT | O(NÃ—M + sort) | O(N + M) | Join then sort for dedup → most expensive option |
+| INNER JOIN + DISTINCT | O(NÃƒâ€”M + sort) | O(N + M) | Join then sort for dedup â†’ most expensive option |
 
-**Why SEMI JOIN can be faster than INNER JOIN:** The short-circuit (`BREAK` on first match) means it doesn't need to find all matches → just the first one. For tables with many duplicates on the join key, this is significantly faster.
+**Why SEMI JOIN can be faster than INNER JOIN:** The short-circuit (`BREAK` on first match) means it doesn't need to find all matches â†’ just the first one. For tables with many duplicates on the join key, this is significantly faster.
 
 #### A&D Table
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| EXISTS | Short-circuits, NULL-safe | Correlated → re-executes per row |
+| EXISTS | Short-circuits, NULL-safe | Correlated â†’ re-executes per row |
 | IN | Clear, non-correlated | NULL-sensitive; materializes full subquery |
 | JOIN + DISTINCT | Single query, no nesting | Dedup overhead; can produce wrong results if join duplicates multiply |
-| SEMI JOIN (logical) | No duplication; short-circuit | Not explicit SQL → must use EXISTS/IN |
+| SEMI JOIN (logical) | No duplication; short-circuit | Not explicit SQL â†’ must use EXISTS/IN |
 
 #### Edge Cases
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
-| **NULL join column** | Row excluded (NULL â‰  anything) | Diana (NULL dept_id) not returned |
-| **Multiple matches** | Left row appears once (first match short-circuits) | Alice matches Engineering → only Alice, not AliceÃ—N |
-| **Empty right table** | Empty result (no matches possible) | No departments → no employees returned |
+| **NULL join column** | Row excluded (NULL Ã¢â€°Â  anything) | Diana (NULL dept_id) not returned |
+| **Multiple matches** | Left row appears once (first match short-circuits) | Alice matches Engineering â†’ only Alice, not AliceÃƒâ€”N |
+| **Empty right table** | Empty result (no matches possible) | No departments â†’ no employees returned |
 | **NULL in IN subquery** | IN handles NULLs; NOT IN with NULL returns empty | `WHERE id NOT IN (1, NULL)` returns zero rows |
 
 ### 5.10 ANTI JOIN (Logical)
@@ -1725,7 +1725,7 @@ PROCEDURE ANTI_JOIN(table_left, table_right, condition)
         FOR EACH row_r IN table_right
             IF condition(row_l, row_r) == TRUE THEN
                 matched = TRUE
-                BREAK  // Early exit → we know this left row is out
+                BREAK  // Early exit â†’ we know this left row is out
             END IF
         END FOR
         IF matched == FALSE THEN
@@ -1738,20 +1738,20 @@ END PROCEDURE
 
 #### Dry Run Trace Table
 
-**ANTI JOIN employees Ã— departments ON dept_id (which employees have NO department?)**
+**ANTI JOIN employees Ãƒâ€” departments ON dept_id (which employees have NO department?)**
 
 | Step | Left Row | Right Row Scanned | Match? | Action | Result |
 |------|----------|-------------------|--------|--------|--------|
-| 1 | (1, Alice, 10) | (10, Engineering) | YES | Mark matched → skip Alice | → |
-| 2 | (2, Bob, 10) | (10, Engineering) | YES | Mark matched → skip Bob | → |
-| 3 | (3, Charlie, 20) | (10, Engineering) | NO | Continue | → |
-| 4 | (3, Charlie, 20) | (20, Sales) | YES | Mark matched → skip Charlie | → |
-| 5 | (4, Diana, NULL) | (10, Eng) | NULL=10→UNK | Continue | → |
-| 6 | (4, Diana, NULL) | (20, Sales) | NULL=20→UNK | Continue | → |
-| 7 | (4, Diana, NULL) | (30, HR) | NULL=30→UNK | Continue | → |
-| 8 | (4, Diana, NULL) | → scan done, no match | → | **EMIT** | (Diana) |
-| 9 | (5, Eve, 20) | (10, Eng) | NO | Continue | → |
-| 10 | (5, Eve, 20) | (20, Sales) | YES | Mark matched → skip Eve | → |
+| 1 | (1, Alice, 10) | (10, Engineering) | YES | Mark matched â†’ skip Alice | â†’ |
+| 2 | (2, Bob, 10) | (10, Engineering) | YES | Mark matched â†’ skip Bob | â†’ |
+| 3 | (3, Charlie, 20) | (10, Engineering) | NO | Continue | â†’ |
+| 4 | (3, Charlie, 20) | (20, Sales) | YES | Mark matched â†’ skip Charlie | â†’ |
+| 5 | (4, Diana, NULL) | (10, Eng) | NULL=10â†’UNK | Continue | â†’ |
+| 6 | (4, Diana, NULL) | (20, Sales) | NULL=20â†’UNK | Continue | â†’ |
+| 7 | (4, Diana, NULL) | (30, HR) | NULL=30â†’UNK | Continue | â†’ |
+| 8 | (4, Diana, NULL) | â†’ scan done, no match | â†’ | **EMIT** | (Diana) |
+| 9 | (5, Eve, 20) | (10, Eng) | NO | Continue | â†’ |
+| 10 | (5, Eve, 20) | (20, Sales) | YES | Mark matched â†’ skip Eve | â†’ |
 
 **Final Result:**
 
@@ -1764,7 +1764,7 @@ Only Diana has no matching department (her dept_id is NULL).
 #### SQL Code
 
 ```sql
--- ANTI JOIN using NOT EXISTS (safest → handles NULLs correctly)
+-- ANTI JOIN using NOT EXISTS (safest â†’ handles NULLs correctly)
 SELECT e.emp_name
 FROM employees e
 WHERE NOT EXISTS (
@@ -1789,7 +1789,7 @@ FROM employees
 WHERE dept_id NOT IN (SELECT dept_id FROM departments);
 
 -- This returns ZERO rows if the subquery has a NULL!
--- Because: WHERE dept_id NOT IN (10, 20, 30, NULL) → UNKNOWN for all
+-- Because: WHERE dept_id NOT IN (10, 20, 30, NULL) â†’ UNKNOWN for all
 -- Always add: WHERE dept_id NOT IN (SELECT dept_id FROM departments WHERE dept_id IS NOT NULL)
 
 -- Anti-join: departments with no employees
@@ -1862,9 +1862,9 @@ def anti_join_left_is_null(employees, departments):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| NOT EXISTS (nested) | O(N Ã— M) worst | O(1) | Each left row scans right until a match found |
+| NOT EXISTS (nested) | O(N Ãƒâ€” M) worst | O(1) | Each left row scans right until a match found |
 | NOT EXISTS (hash) | O(N + M) | O(M) | Hash right keys, O(1) probe per left row |
-| LEFT JOIN / NULL | O(N + M) | O(M) | Hash join + null check → same complexity |
+| LEFT JOIN / NULL | O(N + M) | O(M) | Hash join + null check â†’ same complexity |
 | NOT IN | O(N + M) | O(M) | Materializes subquery, then anti-probe |
 
 **Why LEFT JOIN / IS NULL is the standard pattern:**
@@ -1877,7 +1877,7 @@ def anti_join_left_is_null(employees, departments):
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| NOT EXISTS | NULL-safe, short-circuits | Correlated → slower for non-correlated cases |
+| NOT EXISTS | NULL-safe, short-circuits | Correlated â†’ slower for non-correlated cases |
 | LEFT JOIN / NULL | Not correlated, works well in complex queries | Slightly verbose; WHERE IS NULL confuses beginners |
 | NOT IN | Simple syntax | **NULL-bug:** returns empty if subquery has any NULL |
 | ANTI JOIN (logical) | Correct semantics | Must be expressed using NOT EXISTS or LEFT JOIN |
@@ -1888,7 +1888,7 @@ def anti_join_left_is_null(employees, departments):
 |-----------|----------|---------|
 | **NULL join column** | Row included (NULL can't match) | Diana appears in ANTI JOIN result |
 | **All rows match** | Empty result | If every employee has a valid department |
-| **Empty right table** | All left rows returned | No departments → all employees are "unmatched" |
+| **Empty right table** | All left rows returned | No departments â†’ all employees are "unmatched" |
 | **NULL in NOT IN subquery** | **All rows excluded** (critical bug) | `WHERE id NOT IN (1, NULL, 3)` returns zero rows |
 | **Multiple tables** | LEFT JOIN / NULL chains safely | `A LEFT JOIN B LEFT JOIN C WHERE B.id IS NULL AND C.id IS NULL` |
 
@@ -1902,7 +1902,7 @@ def anti_join_left_is_null(employees, departments):
 | **Join condition required** | Yes | Yes | Yes | Yes | No | No (auto) | Yes | Yes (logical) | Yes (logical) |
 | **Duplicate left rows possible** | Yes | Yes | No | Yes | Yes | Yes | Depends | **No** | No |
 | **Left row appears at most once** | No | No | No | No | No | No | Depends | **Yes** | **Yes** |
-| **Result size** | â‰¤ NÃ—M | N + (matched) | M + (matched) | N+M+matches | **NÃ—M** | â‰¤ NÃ—M | â‰¤ NÂ² | â‰¤ N | â‰¤ N |
+| **Result size** | Ã¢â€°Â¤ NÃƒâ€”M | N + (matched) | M + (matched) | N+M+matches | **NÃƒâ€”M** | Ã¢â€°Â¤ NÃƒâ€”M | Ã¢â€°Â¤ NÃ‚Â² | Ã¢â€°Â¤ N | Ã¢â€°Â¤ N |
 | **Common use** | Related data | Preserve left | Preserve right | Symmetric diff | Combinations | Quick ad-hoc | Hierarchies | Existence | Absence |
 | **SQL syntax** | `INNER JOIN` | `LEFT JOIN` | `RIGHT JOIN` | `FULL JOIN` | `CROSS JOIN` | `NATURAL JOIN` | Alias join | `EXISTS` | `NOT EXISTS` |
 | **NULL-safe** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | NOT IN is not |
@@ -1914,14 +1914,14 @@ def anti_join_left_is_null(employees, departments):
 | Aspect | JOIN | Subquery |
 |--------|------|----------|
 | **Definition** | Combines columns from multiple tables into a single result set | Nested query whose result is used by the outer query |
-| **Readability** | Better for multi-table reporting → all tables visible in FROM | Better for single-value comparisons (e.g., `WHERE price > AVG(...)`) |
-| **Performance** | Often faster → optimizer can reorder, index nested loop, hash join | Can be slower (especially correlated subqueries that re-execute per row) |
-| **NULL handling** | Equi-joins ignore NULLs naturally (NULL â‰  NULL) | IN/NOT IN have NULL pitfalls; EXISTS/NOT EXISTS handle NULLs correctly |
+| **Readability** | Better for multi-table reporting â†’ all tables visible in FROM | Better for single-value comparisons (e.g., `WHERE price > AVG(...)`) |
+| **Performance** | Often faster â†’ optimizer can reorder, index nested loop, hash join | Can be slower (especially correlated subqueries that re-execute per row) |
+| **NULL handling** | Equi-joins ignore NULLs naturally (NULL Ã¢â€°Â  NULL) | IN/NOT IN have NULL pitfalls; EXISTS/NOT EXISTS handle NULLs correctly |
 | **Duplicate handling** | May need DISTINCT to avoid duplicate rows from 1:N joins | EXISTS/NOT EXISTS never duplicate; IN may duplicate (without DISTINCT) |
 | **Result columns** | Columns from multiple tables in one result | Subquery in SELECT (scalar) returns one value; FROM subquery (derived table) returns a table |
 | **Flexibility** | Best for retrieving columns from multiple tables | Best for existence checks, scalar comparisons, and aggregate comparisons |
 | **Optimization** | Can use hash join, merge join, nested loop, index joins | Correlated = nested loop; non-correlated = materialized then joined |
-| **Correlation** | Not applicable | Correlated subquery re-runs per outer row → can be expensive |
+| **Correlation** | Not applicable | Correlated subquery re-runs per outer row â†’ can be expensive |
 | **Expressiveness** | Cannot easily express `WHERE x > ALL(SELECT ...)` | ANY/ALL provide comparison semantics that joins cannot match |
 
 **Rule of thumb:** Use JOIN to **retrieve columns** from related tables. Use subqueries for **existence checks**, **scalar comparisons**, and **aggregate comparisons**.
@@ -1929,20 +1929,20 @@ def anti_join_left_is_null(employees, departments):
 **Rewrite equivalences:**
 
 ```sql
--- IN → JOIN
+-- IN â†’ JOIN
 -- Slow: WHERE id IN (SELECT id FROM B WHERE ...)
 -- Fast: JOIN B USING(id) WHERE ...
 -- Watch for: JOIN can duplicate rows
 
--- NOT IN → LEFT JOIN / NULL
+-- NOT IN â†’ LEFT JOIN / NULL
 -- Buggy: WHERE id NOT IN (SELECT id FROM B)
 -- Safe:  LEFT JOIN B USING(id) WHERE B.id IS NULL
 
--- EXISTS → SEMI JOIN
+-- EXISTS â†’ SEMI JOIN
 -- Same:  WHERE EXISTS (SELECT 1 FROM B WHERE A.id = B.id)
 -- Same:  Optimizer often rewrites INNER JOIN DISTINCT to SEMI JOIN automatically
 
--- Scalar subquery → LEFT JOIN with aggregation
+-- Scalar subquery â†’ LEFT JOIN with aggregation
 -- WHERE price > (SELECT AVG(price) FROM products)
 -- Can sometimes be: JOIN (SELECT AVG(price) AS avg FROM products) ...
 ```
@@ -1952,13 +1952,13 @@ def anti_join_left_is_null(employees, departments):
 | Property | Nested Loop Join | Hash Join | Merge Join (Sort-Merge) |
 |----------|-----------------|-----------|------------------------|
 | **How it works** | For each outer row, scan inner table looking for matches | Build hash table on smaller table, probe with larger table | Sort both tables on join key, then merge like zipper |
-| **Time complexity** | O(N Ã— M) | O(N + M) average | O(N log N + M log M + N + M) |
+| **Time complexity** | O(N Ãƒâ€” M) | O(N + M) average | O(N log N + M log M + N + M) |
 | **Space complexity** | O(1) | O(min(N, M)) for hash table | O(N + M) for sorting (or O(1) if indexed) |
 | **Join types supported** | All (equi, theta, cross) | Equi-joins only (=) | Equi-joins only (=); range with optimization |
-| **Best when** | Small inner table (â‰¤100 rows) | Large tables, no indexes | Tables already sorted on join key |
-| **Worst when** | Large tables (10K+ Ã— 10K+) | Memory pressure (spills to disk) | Large tables not pre-sorted (sort dominates) |
+| **Best when** | Small inner table (Ã¢â€°Â¤100 rows) | Large tables, no indexes | Tables already sorted on join key |
+| **Worst when** | Large tables (10K+ Ãƒâ€” 10K+) | Memory pressure (spills to disk) | Large tables not pre-sorted (sort dominates) |
 | **NULL handling** | Naturally excludes NULLs | **Hash tables ignore NULL keys** | NULLs sort first or last per DB |
-| **Index benefit** | Can use index on inner table (Index Nested Loop) → O(N log M) | Index not needed (full scan both tables) | Index pre-sorts → O(N + M) no sort phase |
+| **Index benefit** | Can use index on inner table (Index Nested Loop) â†’ O(N log M) | Index not needed (full scan both tables) | Index pre-sorts â†’ O(N + M) no sort phase |
 | **Parallelizable** | Yes (partition outer rows) | Yes (partition + build per partition) | Yes (sort in parallel, merge sequentially) |
 | **Supported by** | Every database | PostgreSQL, MySQL, SQL Server, Oracle | PostgreSQL, SQL Server, Oracle (MySQL limited) |
 | **Memory requirement** | Minimal | O(min(N, M)) for hash table | O(N + M) for sort (or work area) |
@@ -1978,7 +1978,7 @@ ELSE:
     Nested Loop wins for small tables with inner index
 ```
 
-#### Algorithm Deep Dive → Nested Loop Join
+#### Algorithm Deep Dive â†’ Nested Loop Join
 
 ```sql
 -- Pseudocode execution
@@ -1992,11 +1992,11 @@ FOR each row r in outer_table:
     use index on inner_table to find matching s rows directly
     OUTPUT combined rows
 
--- Time: Without index: O(R Ã— S)
---       With index:    O(R Ã— log S)
+-- Time: Without index: O(R Ãƒâ€” S)
+--       With index:    O(R Ãƒâ€” log S)
 ```
 
-#### Algorithm Deep Dive → Hash Join
+#### Algorithm Deep Dive â†’ Hash Join
 
 ```sql
 -- Phase 1: Build
@@ -2013,10 +2013,10 @@ FOR each row r in larger_table:
             OUTPUT combined row
 
 -- Key insight: Hash function distributes rows evenly across buckets
--- Worst case: All rows hash to same bucket → degenerates to Nested Loop
+-- Worst case: All rows hash to same bucket â†’ degenerates to Nested Loop
 ```
 
-#### Algorithm Deep Dive → Merge Join
+#### Algorithm Deep Dive â†’ Merge Join
 
 ```sql
 -- Phase 1: Sort (skip if indexed)
@@ -2115,14 +2115,14 @@ flowchart TD
 
 ```sql
 -- Example: 100 employees, 3 departments
--- Option A: employees (driving) Ã— departments (inner)
+-- Option A: employees (driving) Ãƒâ€” departments (inner)
 EXPLAIN SELECT * FROM employees e JOIN departments d ON e.dept_id = d.dept_id;
 -- Likely: Hash Join (build on departments=3 rows, probe employees=100 rows)
 
 -- For Nested Loop (pre-8.0.18 MySQL):
 -- Best: small table drives, large table has index
--- Small table first as outer: 3 Ã— 100 = 300 comparisons
--- Large table first as outer: 100 Ã— 3 = 300 comparisons
+-- Small table first as outer: 3 Ãƒâ€” 100 = 300 comparisons
+-- Large table first as outer: 100 Ãƒâ€” 3 = 300 comparisons
 -- (Same for cross join; with index, inner table scans are O(log N))
 ```
 
@@ -2265,7 +2265,7 @@ WHERE salary > ALL (
 - **Join order matters** to the optimizer, but modern optimizers usually find the best plan.
 - **Indexes on join columns** dramatically improve join performance.
 - **Smaller table first** (as inner table) is generally better for hash joins.
-- **Subqueries can often be rewritten as joins** (especially IN → INNER JOIN).
+- **Subqueries can often be rewritten as joins** (especially IN â†’ INNER JOIN).
 - **Correlated subqueries** can sometimes be rewritten as window functions or joins.
 
 ```sql
@@ -2321,23 +2321,23 @@ Performance-wise, JOINs are often faster because the optimizer can reorder table
 
 #### Q3: How do NULLs behave in JOINs?
 
-**Answer:** In SQL, NULL â‰  NULL. Any comparison involving NULL yields UNKNOWN, not TRUE. Therefore:
+**Answer:** In SQL, NULL Ã¢â€°Â  NULL. Any comparison involving NULL yields UNKNOWN, not TRUE. Therefore:
 - INNER JOIN: Rows with NULL in the join column are **always excluded**
 - LEFT JOIN: Rows with NULL join column produce NULL for right-side columns
-- FULL JOIN: Same behavior → NULL on either side prevents a match
-- NOT IN: **Dangerous** → `WHERE x NOT IN (1, NULL, 3)` returns zero rows because `x â‰  NULL` is UNKNOWN
+- FULL JOIN: Same behavior â†’ NULL on either side prevents a match
+- NOT IN: **Dangerous** â†’ `WHERE x NOT IN (1, NULL, 3)` returns zero rows because `x Ã¢â€°Â  NULL` is UNKNOWN
 
 Recommended: Use `NOT EXISTS` or `LEFT JOIN / IS NULL` for anti-joins. Never rely on `NOT IN` with subqueries that might contain NULLs.
 
 #### Q4: How can you optimize JOIN performance?
 
 **Answer:**
-1. **Index join columns** → especially foreign keys. Index Nested Loop turns O(NÃ—M) into O(N log M)
-2. **Reduce result set early** → filter with WHERE before joining
-3. **Choose the right algorithm** → let the optimizer decide, but understand: Hash (large, no index), Nested Loop (small inner table with index), Merge (pre-sorted data)
-4. **Avoid joining unnecessary tables** → each join multiplies rows
-5. **Use covering indexes** → index includes all needed columns (index-only scan)
-6. **Check EXPLAIN plans** → verify actual vs estimated row counts
+1. **Index join columns** â†’ especially foreign keys. Index Nested Loop turns O(NÃƒâ€”M) into O(N log M)
+2. **Reduce result set early** â†’ filter with WHERE before joining
+3. **Choose the right algorithm** â†’ let the optimizer decide, but understand: Hash (large, no index), Nested Loop (small inner table with index), Merge (pre-sorted data)
+4. **Avoid joining unnecessary tables** â†’ each join multiplies rows
+5. **Use covering indexes** â†’ index includes all needed columns (index-only scan)
+6. **Check EXPLAIN plans** â†’ verify actual vs estimated row counts
 
 #### Q5: What is a SELF JOIN and when would you use it?
 
@@ -2366,12 +2366,12 @@ Example: `SELECT a.name, b.name FROM employees a JOIN employees b ON a.manager_i
 
 #### Q8: What is a CROSS JOIN and when is it useful?
 
-**Answer:** CROSS JOIN produces the Cartesian product (every row of A Ã— every row of B). It's useful for:
-- Generating all combinations of attributes (sizes Ã— colors for a catalog)
-- Creating calendar tables (dates Ã— stores for sales reporting)
+**Answer:** CROSS JOIN produces the Cartesian product (every row of A Ãƒâ€” every row of B). It's useful for:
+- Generating all combinations of attributes (sizes Ãƒâ€” colors for a catalog)
+- Creating calendar tables (dates Ãƒâ€” stores for sales reporting)
 - Test data generation
 
-It's dangerous when **accidentally** produced by forgetting a WHERE clause in theta-style joins → this is the most common SQL join bug.
+It's dangerous when **accidentally** produced by forgetting a WHERE clause in theta-style joins â†’ this is the most common SQL join bug.
 
 ### 5.21 Applications in Real Systems
 
@@ -2379,9 +2379,9 @@ It's dangerous when **accidentally** produced by forgetting a WHERE clause in th
 
 MySQL uses only **Nested Loop Join** variants (no Hash Join before 8.0.18):
 
-1. **Simple Nested Loop Join** → naive double loop (worst)
-2. **Block Nested Loop (BNL)** → reads inner table in blocks into join buffer, reducing I/O
-3. **Batched Key Access (BKA)** → batches outer rows and uses multi-range read (MRR) on the inner table index
+1. **Simple Nested Loop Join** â†’ naive double loop (worst)
+2. **Block Nested Loop (BNL)** â†’ reads inner table in blocks into join buffer, reducing I/O
+3. **Batched Key Access (BKA)** â†’ batches outer rows and uses multi-range read (MRR) on the inner table index
 
 ```sql
 -- MySQL: Force join order (STRAIGHT_JOIN)
@@ -2400,9 +2400,9 @@ EXPLAIN FORMAT=JSON SELECT ...;
 
 PostgreSQL has a sophisticated Hash Join implementation:
 
-1. **In-memory hash join** → hash table fits in `work_mem`
-2. **Hybrid hash join** → partial hash table + batch spill to disk (grace hash join)
-3. **Hash Semi Join** → optimized hash join for EXISTS (stops after first match per probe key)
+1. **In-memory hash join** â†’ hash table fits in `work_mem`
+2. **Hybrid hash join** â†’ partial hash table + batch spill to disk (grace hash join)
+3. **Hash Semi Join** â†’ optimized hash join for EXISTS (stops after first match per probe key)
 
 ```sql
 -- PostgreSQL: Control work_mem for hash joins
@@ -2420,10 +2420,10 @@ SELECT * FROM employees e JOIN departments d ON e.dept_id = d.dept_id;
 
 ```
 1. Estimate size of smaller table
-2. Choose number of buckets (power of 2, typically 2Ã— row count)
+2. Choose number of buckets (power of 2, typically 2Ãƒâ€” row count)
 3. Build: iterate smaller table, insert into hash
-4. If hash table exceeds work_mem → spill to disk in batches
-5. Probe: iterate larger table, probe hash, if hash spilled → probe per batch
+4. If hash table exceeds work_mem â†’ spill to disk in batches
+5. Probe: iterate larger table, probe hash, if hash spilled â†’ probe per batch
 ```
 
 #### SQL Server Merge Join
@@ -2441,9 +2441,9 @@ SET STATISTICS PROFILE ON;
 ```
 
 SQL Server uses three join types:
-1. **Nested Loops** → best for small inputs
-2. **Hash Match** → best for large unsorted inputs
-3. **Merge Join** → best for large sorted inputs
+1. **Nested Loops** â†’ best for small inputs
+2. **Hash Match** â†’ best for large unsorted inputs
+3. **Merge Join** â†’ best for large sorted inputs
 
 #### Oracle Join Optimizer
 
@@ -2491,7 +2491,7 @@ This star-join pattern is highly optimized in all major databases. The fact tabl
 
 ## Examples
 
-> **One-Sentence Takeaway:** Practicing multi-table JOINs → from employee-department analysis to customer spending reports → solidifies the ability to write correct, efficient queries for real reporting needs.
+> **One-Sentence Takeaway:** Practicing multi-table JOINs â†’ from employee-department analysis to customer spending reports â†’ solidifies the ability to write correct, efficient queries for real reporting needs.
 
 **Example 5.1: Employee Department Analysis**
 
@@ -2551,31 +2551,238 @@ WHERE NOT EXISTS (
 );
 ```
 
-> **Warning:** NOT IN with NULLs in the subquery returns zero rows → use NOT EXISTS or LEFT JOIN / IS NULL for safe anti-joins.
+> **Warning:** NOT IN with NULLs in the subquery returns zero rows â†’ use NOT EXISTS or LEFT JOIN / IS NULL for safe anti-joins.
 >
-> **Remember:** Test your joins on small data first → an incorrect join condition can produce a Cartesian product with millions of rows that is extremely hard to debug.
+> **Remember:** Test your joins on small data first â†’ an incorrect join condition can produce a Cartesian product with millions of rows that is extremely hard to debug.
+
+### 5.22 Join Algorithm Simulator (TypeScript)
+
+The following code simulates three fundamental join algorithms â€” Nested Loop, Hash Join, and Sort-Merge Join â€” with cost analysis.
+
+```typescript
+// ============================================================
+// Join Algorithm Simulator â€” TypeScript
+// ============================================================
+
+interface JoinRow {
+  [key: string]: unknown;
+}
+
+interface JoinResult {
+  rows: JoinRow[];
+  algorithm: string;
+  cost: number;
+  executionTimeMs: number;
+}
+
+class JoinSimulator {
+  simulateNestedLoop(left: JoinRow[], right: JoinRow[], leftKey: string, rightKey: string): JoinResult {
+    const start = Date.now();
+    const result: JoinRow[] = [];
+    let comparisons = 0;
+    for (const l of left) {
+      for (const r of right) {
+        comparisons++;
+        if (String(l[leftKey]) === String(r[rightKey])) {
+          result.push({ ...l, ...r });
+        }
+      }
+    }
+    return {
+      rows: result,
+      algorithm: 'Nested Loop (O(n*m) = ' + left.length + 'x' + right.length + ')',
+      cost: comparisons,
+      executionTimeMs: Date.now() - start
+    };
+  }
+
+  simulateHashJoin(left: JoinRow[], right: JoinRow[], leftKey: string, rightKey: string): JoinResult {
+    const start = Date.now();
+    // Build hash table on smaller relation (left)
+    const hashTable = new Map<string, JoinRow[]>();
+    for (const row of left) {
+      const key = String(row[leftKey]);
+      if (!hashTable.has(key)) hashTable.set(key, []);
+      hashTable.get(key)!.push(row);
+    }
+    // Probe with larger relation (right)
+    const result: JoinRow[] = [];
+    let probes = 0;
+    for (const row of right) {
+      const key = String(row[rightKey]);
+      probes++;
+      const matches = hashTable.get(key);
+      if (matches) {
+        for (const match of matches) {
+          result.push({ ...match, ...row });
+        }
+      }
+    }
+    return {
+      rows: result,
+      algorithm: 'Hash Join (O(n+m) build+probe)',
+      cost: left.length + probes,
+      executionTimeMs: Date.now() - start
+    };
+  }
+
+  simulateSortMergeJoin(left: JoinRow[], right: JoinRow[], leftKey: string, rightKey: string): JoinResult {
+    const start = Date.now();
+    // Sort both relations by join key
+    const sortedLeft = [...left].sort((a, b) => String(a[leftKey]).localeCompare(String(b[leftKey])));
+    const sortedRight = [...right].sort((a, b) => String(a[rightKey]).localeCompare(String(b[rightKey])));
+    const result: JoinRow[] = [];
+    let i = 0, j = 0;
+    let comparisons = 0;
+    while (i < sortedLeft.length && j < sortedRight.length) {
+      comparisons++;
+      const lVal = String(sortedLeft[i][leftKey]);
+      const rVal = String(sortedRight[j][rightKey]);
+      if (lVal < rVal) {
+        i++;
+      } else if (lVal > rVal) {
+        j++;
+      } else {
+        // Match found â€” scan all matching tuples on both sides
+        let jStart = j;
+        while (j < sortedRight.length && String(sortedRight[j][rightKey]) === lVal) {
+          result.push({ ...sortedLeft[i], ...sortedRight[j] });
+          j++;
+        }
+        i++;
+        j = jStart;
+        while (i < sortedLeft.length && String(sortedLeft[i][leftKey]) === lVal) {
+          j = jStart;
+          while (j < sortedRight.length && String(sortedRight[j][rightKey]) === lVal) {
+            result.push({ ...sortedLeft[i], ...sortedRight[j] });
+            j++;
+          }
+          i++;
+        }
+      }
+    }
+    return {
+      rows: result,
+      algorithm: 'Sort-Merge Join (O(n log n + m log m + n + m))',
+      cost: sortedLeft.length * Math.log2(sortedLeft.length) + sortedRight.length * Math.log2(sortedRight.length) + comparisons,
+      executionTimeMs: Date.now() - start
+    };
+  }
+}
+
+// Demo
+const simulator = new JoinSimulator();
+const employees = [
+  { id: 1, name: 'Alice', dept_id: 10 },
+  { id: 2, name: 'Bob', dept_id: 20 },
+  { id: 3, name: 'Charlie', dept_id: 10 },
+  { id: 4, name: 'Diana', dept_id: 30 },
+];
+
+const departments = [
+  { dept_id: 10, name: 'Engineering' },
+  { dept_id: 20, name: 'Marketing' },
+  { dept_id: 30, name: 'Sales' },
+  { dept_id: 10, name: 'Engineering' }, // duplicate for testing
+];
+
+console.log('Join Algorithm Comparison:\n');
+const nl = simulator.simulateNestedLoop(employees, departments, 'dept_id', 'dept_id');
+console.log('1. ' + nl.algorithm);
+console.log('   Comparisons: ' + nl.cost + ', Results: ' + nl.rows.length);
+
+const hj = simulator.simulateHashJoin(employees, departments, 'dept_id', 'dept_id');
+console.log('2. ' + hj.algorithm);
+console.log('   Operations: ' + hj.cost + ', Results: ' + hj.rows.length);
+
+const smj = simulator.simulateSortMergeJoin(employees, departments, 'dept_id', 'dept_id');
+console.log('3. ' + smj.algorithm);
+console.log('   Operations: ' + smj.cost + ', Results: ' + smj.rows.length);
+```
+
+**Mermaid Diagram: Join Decision Tree**
+
+```mermaid
+flowchart TD
+    Q[Join Operation] --> T[Table Sizes]
+    T -->|Small inner < 100 rows| NL[Nested Loop Join]
+    T -->|Large tables| EQ{Equi-join?}
+    EQ -->|Yes| H{Hash Join}
+    EQ -->|No| NL
+    H -->|Indexed| INL[Index Nested Loop]
+    H -->|No index| HJ[Hash Join]
+    H -->|Pre-sorted| MJ[Sort-Merge Join]
+    NL --> R[Result]
+    HJ --> R
+    MJ --> R
+    INL --> R
+```
+
+### Additional Chapter Quiz Questions
+
+13. Which join algorithm requires the join condition to be an equality?
+    a) Nested Loop Join
+    b) Hash Join
+    c) Sort-Merge Join
+    d) Both Hash Join and Sort-Merge Join (optimally)
+
+14. The main advantage of Hash Join over Nested Loop Join is:
+    a) It works with any join condition
+    b) It has O(n + m) complexity for equi-joins vs O(n*m)
+    c) It requires less memory
+    d) It preserves sorted order
+
+15. When would Nested Loop Join outperform Hash Join?
+    a) When both tables are very large
+    b) When the inner table is small and indexed
+    c) When the join condition is an inequality
+    d) Both b and c
+
+16. A LEFT JOIN / IS NULL pattern is equivalent to:
+    a) INNER JOIN
+    b) ANTI JOIN
+    c) SEMI JOIN
+    d) CROSS JOIN
+
+17. What happens when you use NOT IN with a subquery that contains NULL values?
+    a) NULL values are ignored
+    b) The query returns zero rows
+    c) NULL values are treated as matches
+    d) The query returns an error
+
+**Answers:** 13-d, 14-b, 15-d, 16-b, 17-b
+
+### Additional Exercises
+
+13. Using the TypeScript JoinSimulator class, compare the performance of Nested Loop vs Hash Join on a dataset of 100 employees and 5 departments. Record the number of comparisons and execution time.
+
+14. Write a SQL query using a FULL OUTER JOIN that finds all employees and all departments, showing unmatched rows on both sides. Schema: employees(id, name, dept_id), departments(dept_id, name).
+
+15. Write a TypeScript function that detects Cartesian products from a SQL-like query plan by identifying join conditions that involve all table pairs.
+
+---
 
 ## Pro Tips
 
-1. **Prefer explicit ANSI JOIN syntax** (`INNER JOIN ... ON`) over implicit theta-style (`FROM a, b WHERE a.x = b.x`) → it separates join conditions from filter conditions and is far more readable.
-2. **LEFT JOIN / IS NULL is the standard anti-join pattern** → but NOT EXISTS is often more efficient and handles NULLs correctly.
-3. **SELF JOINs solve more problems than you expect** → employee hierarchies, product pairs, consecutive seat bookings, and date range comparisons all use SELF JOIN.
-4. **Correlated subqueries can often be rewritten as window functions** → which execute once instead of once per outer row.
-5. **Test your joins on small data first** → an incorrect join condition can produce a Cartesian product (millions of rows) that is hard to debug.
-6. **Use EXPLAIN PLAN** → always verify the optimizer is using the join strategy you expect.
-7. **Never use NATURAL JOIN in production** → schema changes silently break queries.
-8. **CROSS JOIN intentionally** → always write `CROSS JOIN` explicitly; never rely on a missing WHERE clause.
-9. **Hash Join vs Nested Loop** → for large tables with equi-joins, prefer hash join (increase `work_mem`/`join_buffer_size`).
+1. **Prefer explicit ANSI JOIN syntax** (`INNER JOIN ... ON`) over implicit theta-style (`FROM a, b WHERE a.x = b.x`) â†’ it separates join conditions from filter conditions and is far more readable.
+2. **LEFT JOIN / IS NULL is the standard anti-join pattern** â†’ but NOT EXISTS is often more efficient and handles NULLs correctly.
+3. **SELF JOINs solve more problems than you expect** â†’ employee hierarchies, product pairs, consecutive seat bookings, and date range comparisons all use SELF JOIN.
+4. **Correlated subqueries can often be rewritten as window functions** â†’ which execute once instead of once per outer row.
+5. **Test your joins on small data first** â†’ an incorrect join condition can produce a Cartesian product (millions of rows) that is hard to debug.
+6. **Use EXPLAIN PLAN** â†’ always verify the optimizer is using the join strategy you expect.
+7. **Never use NATURAL JOIN in production** â†’ schema changes silently break queries.
+8. **CROSS JOIN intentionally** â†’ always write `CROSS JOIN` explicitly; never rely on a missing WHERE clause.
+9. **Hash Join vs Nested Loop** â†’ for large tables with equi-joins, prefer hash join (increase `work_mem`/`join_buffer_size`).
 
 ## One-Sentence Takeaways
 
-- **5.1:** Joins combine rows from multiple tables based on related columns → they are the heart of relational querying.
+- **5.1:** Joins combine rows from multiple tables based on related columns â†’ they are the heart of relational querying.
 - **5.2:** INNER JOIN returns only matched rows; it is the most common and efficient join type.
 - **5.3:** OUTER JOINs (LEFT, RIGHT, FULL) preserve unmatched rows, filling missing values with NULL.
 - **5.4:** CROSS JOIN produces a Cartesian product; SELF JOIN joins a table to itself for hierarchical or pairwise queries.
-- **5.5:** NATURAL JOIN auto-detects common columns → convenient but dangerous.
+- **5.5:** NATURAL JOIN auto-detects common columns â†’ convenient but dangerous.
 - **5.6:** EXISTS short-circuits on the first match and handles NULLs correctly, often outperforming IN.
-- **5.7:** Correlated subqueries reference the outer query and re-execute per row → powerful but potentially expensive.
+- **5.7:** Correlated subqueries reference the outer query and re-execute per row â†’ powerful but potentially expensive.
 - **5.8:** ANY and ALL compare a value against a subquery result set with intuitive semantics.
 - **5.9:** SEMI JOIN returns left rows with at least one match; ANTI JOIN returns left rows with no match.
 - **5.10:** Join order, indexes, and algorithm selection significantly impact query performance.
@@ -2584,15 +2791,15 @@ WHERE NOT EXISTS (
 
 | Join Type | Rows Returned | Use Case |
 |-----------|--------------|----------|
-| **INNER JOIN** | Only matched rows | Most common → orders with customer details |
+| **INNER JOIN** | Only matched rows | Most common â†’ orders with customer details |
 | **LEFT JOIN** | All left rows + matched right rows | All customers, with or without orders |
-| **RIGHT JOIN** | All right rows + matched left rows | Rare → usually rewritten as LEFT JOIN |
+| **RIGHT JOIN** | All right rows + matched left rows | Rare â†’ usually rewritten as LEFT JOIN |
 | **FULL JOIN** | All rows from both sides | All employees and all departments, matched if possible |
-| **CROSS JOIN** | Cartesian product (every Ã— every) | Generating date ranges or attribute combinations |
+| **CROSS JOIN** | Cartesian product (every Ãƒâ€” every) | Generating date ranges or attribute combinations |
 | **NATURAL JOIN** | Auto-matched on common columns | Quick ad-hoc queries (never in production) |
 | **SELF JOIN** | Depends on join condition | Hierarchies, consecutive records, pairs |
-| **SEMI JOIN** | Left rows with match in right | EXISTS queries → at least one match |
-| **ANTI JOIN** | Left rows with no match in right | NOT EXISTS → orphan detection |
+| **SEMI JOIN** | Left rows with match in right | EXISTS queries â†’ at least one match |
+| **ANTI JOIN** | Left rows with no match in right | NOT EXISTS â†’ orphan detection |
 
 | Pattern | Purpose | Example |
 |---------|---------|---------|
@@ -2612,7 +2819,7 @@ WHERE NOT EXISTS (
 | Left Outer | `A LEFT JOIN B ON A.id = B.id` | Keeps all A rows; NULLs for unmatched B |
 | Right Outer | `A RIGHT JOIN B ON A.id = B.id` | Keeps all B rows; NULLs for unmatched A |
 | Full Outer | `A FULL JOIN B ON A.id = B.id` | Keeps all rows from both |
-| Cross | `A CROSS JOIN B` | N_A Ã— N_B rows |
+| Cross | `A CROSS JOIN B` | N_A Ãƒâ€” N_B rows |
 | Self | `A a JOIN A b ON a.parent = b.id` | Table joined to itself with aliases |
 | Natural | `A NATURAL JOIN B` | Auto-match on common column names |
 | Semi-join (logical) | `WHERE EXISTS (SELECT ...)` | Rows from A with at least one match in B |
@@ -2676,13 +2883,13 @@ WHERE NOT EXISTS (
    a) INNER JOIN   b) LEFT JOIN   c) CROSS JOIN   d) FULL JOIN
 
 10. What is the time complexity of a Hash Join?
-    a) O(N Ã— M)   b) O(NÂ²)   c) O(N + M)   d) O(log N)
+    a) O(N Ãƒâ€” M)   b) O(NÃ‚Â²)   c) O(N + M)   d) O(log N)
 
 11. Which join algorithm requires the data to be pre-sorted on the join key?
     a) Nested Loop   b) Hash Join   c) Merge Join   d) All of the above
 
 12. What happens when you use NATURAL JOIN and the schema adds a new column with the same name to both tables?
-    a) Nothing → the join ignores it
+    a) Nothing â†’ the join ignores it
     b) The join condition silently includes the new column
     c) An error is thrown   d) The new column is excluded automatically
 
@@ -2692,18 +2899,18 @@ WHERE NOT EXISTS (
 
 - INNER JOIN returns only matched rows; OUTER JOINs preserve unmatched rows with NULLs.
 - SELF JOIN joins a table to itself for hierarchical or pair-wise queries.
-- NATURAL JOIN auto-matches columns by name → convenient but fragile in production.
-- CROSS JOIN produces Cartesian products → useful for grids but dangerous accidentally.
-- SEMI JOIN (EXISTS) returns left rows with at least one match → no duplication, short-circuits.
+- NATURAL JOIN auto-matches columns by name â†’ convenient but fragile in production.
+- CROSS JOIN produces Cartesian products â†’ useful for grids but dangerous accidentally.
+- SEMI JOIN (EXISTS) returns left rows with at least one match â†’ no duplication, short-circuits.
 - ANTI JOIN (NOT EXISTS / LEFT JOIN / NULL) returns rows with no match.
 - Subqueries can appear in SELECT, FROM, WHERE, and HAVING clauses.
 - EXISTS is often more efficient than IN for correlated subqueries.
 - ANY and ALL compare a value against a subquery result set.
 - LEFT JOIN / IS NULL is a common pattern for anti-joins (find unmatched rows).
 - Correlated subqueries execute per outer row and can be performance bottlenecks.
-- Hash Join is O(N+M) for equi-joins → the go-to algorithm for large tables.
+- Hash Join is O(N+M) for equi-joins â†’ the go-to algorithm for large tables.
 - Merge Join is fastest for pre-sorted data (indexed join columns).
-- Nested Loop Join works for any condition but is O(NÃ—M) → best with small inner tables.
+- Nested Loop Join works for any condition but is O(NÃƒâ€”M) â†’ best with small inner tables.
 
 ## Exercises
 

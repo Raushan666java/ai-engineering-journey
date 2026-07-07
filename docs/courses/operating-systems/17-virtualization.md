@@ -3528,7 +3528,223 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 10. **How does live migration achieve sub-100ms downtime?**
     - Pre-copy phase iteratively transfers dirty pages; final stop-and-copy phase pauses the VM only long enough to transfer remaining dirtied pages.
 
-## 12. Summary
+## 12. TypeScript Implementation — Nested Page Walk Simulator
+
+```typescript
+/**
+ * NestedPageWalkSimulator: Models a guest virtual address translation
+ * through 4-level guest page tables and 4-level EPT (Extended Page Tables).
+ * 
+ * Demonstrates why EPT/NPT requires up to 24 memory accesses per translation.
+ */
+interface PageWalkResult {
+  levels: PageWalkLevel[];
+  totalMemoryAccesses: number;
+  eptViolation: boolean;
+}
+
+interface PageWalkLevel {
+  level: number;           // 0=L4, 1=L3, 2=L2, 3=L1
+  type: 'guest' | 'ept';
+  virtualAddr: string;     // partial VPN
+  pfn: number;             // page frame number from table entry
+  tableAddr: string;       // physical address of page table
+  entryAddr: string;       // physical address of table entry
+  entryValue: string;      // raw entry bits
+}
+
+class MemoryVirtualizationSimulator {
+  // Simulated physical memory for page tables
+  private readonly PAGE_SIZE = 4096;
+  private readonly BITS_PER_LEVEL = 9;  // x86-64 uses 9 bits per level
+  private readonly ENTRY_SIZE = 8;      // 8 bytes per PTE
+
+  /**
+   * Walk a guest virtual address through 4 guest levels + 4 EPT levels.
+   * Guest VA → Guest Page Tables → GPA → EPT → HPA
+   */
+  walkGuestAddress(guestVA: string, guestCR3: number, eptp: number): PageWalkResult {
+    const va = BigInt(guestVA);
+    const levels: PageWalkLevel[] = [];
+    let totalAccesses = 0;
+
+    // Extract 4 VPN indices from guest VA
+    const vpn4 = Number((va >> BigInt(39)) & BigInt(0x1FF));  // bits 47:39
+    const vpn3 = Number((va >> BigInt(30)) & BigInt(0x1FF));  // bits 38:30
+    const vpn2 = Number((va >> BigInt(21)) & BigInt(0x1FF));  // bits 29:21
+    const vpn1 = Number((va >> BigInt(12)) & BigInt(0x1FF));  // bits 20:12
+    const offset = Number(va & BigInt(0xFFF));                 // bits 11:0
+
+    console.log(`Guest VA: ${guestVA}`);
+    console.log(`  VPN4=${vpn4.toString().padStart(3)} VPN3=${vpn3.toString().padStart(3)} VPN2=${vpn2.toString().padStart(3)} VPN1=${vpn1.toString().padStart(3)} Offset=${offset.toString(16).padStart(3,'0')}`);
+
+    // Simulate 4-level guest page walk
+    let currentTable = guestCR3;
+    const vpns = [vpn4, vpn3, vpn2, vpn1];
+
+    for (let level = 0; level < 4; level++) {
+      // Each level requires:
+      // 1. Read guest PML4 entry → 1 guest memory access
+      // 2. If using EPT: each guest access triggers an EPT walk to translate the GPA
+      
+      const entryAddr = currentTable + vpns[level] * this.ENTRY_SIZE;
+      
+      // Guest page table access
+      levels.push({
+        level: level + 1, type: 'guest',
+        virtualAddr: `VPN${4-level}=${vpns[level]}`,
+        pfn: 0x1000 + level, tableAddr: `0x${currentTable.toString(16)}`,
+        entryAddr: `0x${entryAddr.toString(16)}`, entryValue: `[simulated] P=1 PFN=0x${(0x1000+level).toString(16)}`
+      });
+      totalAccesses++;  // Guest PT read
+
+      // EPT walk for the GPA (each guest memory access triggers EPT walk)
+      if (currentTable !== guestCR3 || level === 0) {
+        // Simulate 4-level EPT walk for the guest page table base
+        for (let eptLevel = 0; eptLevel < 4; eptLevel++) {
+          levels.push({
+            level: eptLevel + 1, type: 'ept',
+            virtualAddr: `EPT-L${4-eptLevel}`,
+            pfn: 0x5000 + eptLevel, tableAddr: `EPT-0x${eptLevel}`,
+            entryAddr: `EPT-entry-${eptLevel}`,
+            entryValue: `[simulated EPT] R=1 W=1 X=1`
+          });
+          totalAccesses++;  // EPT walk memory access
+        }
+      }
+
+      // Move to next table (simulated)
+      currentTable = 0x2000 + level * 0x1000;
+    }
+
+    // Final data access: read from 0x{final GPA}
+    const finalGPA = currentTable + offset;
+    console.log(`  GPA (after guest walk): 0x${finalGPA.toString(16)}`);
+
+    // One more EPT walk to translate the final GPA to HPA
+    for (let eptLevel = 0; eptLevel < 4; eptLevel++) {
+      levels.push({
+        level: eptLevel + 1, type: 'ept',
+        virtualAddr: `EPT-FINAL-L${4-eptLevel}`,
+        pfn: 0x9000 + eptLevel,
+        tableAddr: `EPT-FINAL-0x${eptLevel}`,
+        entryAddr: `EPT-FINAL-entry-${eptLevel}`,
+        entryValue: `[simulated] R=1 W=1 X=1`
+      });
+      totalAccesses++;
+    }
+
+    const eptViolation = false;
+
+    console.log(`\nTotal memory accesses for this translation: ${totalAccesses}`);
+    console.log(`  Guest PT walks: 4 reads`);
+    console.log(`  EPT walks: 4 × ${totalAccesses - 4} translations for guest table reads + final data`);
+    console.log(`  Data access (final GPA → HPA via EPT): 4 EPT reads`);
+
+    return { levels, totalMemoryAccesses, eptViolation };
+  }
+
+  compareShadowVsEPT(): void {
+    console.log('\n========== Shadow Page Tables vs EPT/NPT ==========');
+    console.log('\nShadow Page Tables:');
+    console.log('  VMM maintains shadow copies of guest page tables.');
+    console.log('  Guest PT modifications → VM-exit → VMM updates shadow PT → VM-entry.');
+    console.log('  Memory accesses per translation: 4 (guest walk via shadow PT, no EPT)');
+    console.log('  BUT: every guest page table modification causes a VM-exit!');
+    console.log('  Cost: applications that frequently modify page tables (fork, mmap, munmap)');
+    console.log('         suffer thousands of VM-exits per second.');
+
+    console.log('\nEPT/NPT (Nested Page Tables):');
+    console.log('  Hardware walks both guest PT and EPT simultaneously.');
+    console.log('  Guest PT modifications DO NOT cause VM-exits.');
+    console.log('  Memory accesses per translation: up to 24 (4 guest × 4 EPT + 4 data EPT)');
+    console.log('  BUT: no VM-exits for page table operations.');
+
+    console.log('\nComparison:');
+    console.log('  Metric            | Shadow PT   | EPT/NPT');
+    console.log('  VM-exits on PT op | High        | None');
+    console.log('  Translation cost  | ~4 accesses | ~24 accesses');
+    console.log('  Overall perf      | Good for   | Good for');
+    console.log('                    | static maps | dynamic maps');
+    console.log('  Modern usage      | Legacy      | Default (since ~2010)');
+  }
+}
+
+// Example: Walk a guest virtual address
+const sim = new MemoryVirtualizationSimulator();
+console.log('=== Nested Page Walk Demonstration ===');
+console.log('Guest VA: 0x7F00_1234_5678, Guest CR3: 0x100000, EPTP: 0x200000\n');
+
+sim.walkGuestAddress('0x7F0012345678', 0x100000, 0x200000);
+sim.compareShadowVsEPT();
+```
+
+## 13. Chapter Quiz (Multiple Choice)
+\`\`\`
+1. What is the key difference between Type 1 and Type 2 hypervisors?
+   a) Type 1 runs directly on hardware; Type 2 runs on a host OS
+   b) Type 1 is faster; Type 2 is slower
+   c) Type 1 supports more VMs; Type 2 supports fewer
+   d) Type 1 is open-source; Type 2 is proprietary
+
+2. Why is EPT faster than shadow page tables for most workloads?
+   a) EPT reduces the number of memory accesses per translation
+   b) EPT eliminates VM-exits on guest page table modifications
+   c) EPT uses larger page sizes
+   d) EPT requires no hardware support
+
+3. What is the primary advantage of paravirtualized I/O (virtio) over full device emulation?
+   a) Virtio supports more device types
+   b) Virtio uses shared ring buffers, eliminating MMIO traps for each I/O
+   c) Virtio is easier to implement in the VMM
+   d) Virtio requires no guest driver changes
+
+4. What is the minimum number of memory accesses for a 4-level page walk with EPT?
+   a) 4
+   b) 8
+   c) 16-20
+   d) 20-24
+
+5. Why can't containers run a different kernel than the host?
+   a) Containers share the host kernel through syscalls
+   b) Container images don't include kernel binaries
+   c) The host firewall blocks kernel loading
+   d) The VMM prevents kernel execution in containers
+
+6. What mechanism does the VMM use to enforce memory isolation between guests?
+   a) Memory ballooning
+   b) EPT (hardware) or shadow page tables (software)
+   c) Virtual memory segmentation
+   d) Cryptographic memory encryption
+
+7. What is the purpose of the balloon driver?
+   a) To compress guest memory
+   b) To reclaim guest memory under overcommit
+   c) To accelerate guest network I/O
+   d) To provide live migration support
+
+8. What happens on a VM exit?
+   a) The guest OS exits gracefully
+   b) CPU saves guest state, loads host state, enters VMM
+   c) The VM is migrated to another host
+   d) The VMM is terminated
+
+9. How does live migration achieve sub-100ms downtime?
+   a) By compressing memory pages before transfer
+   b) Pre-copy phase transfers dirty pages; stop-and-copy phase is brief
+   c) By using InfiniBand network interconnects
+   d) By running the VM on both hosts simultaneously
+
+10. What is the primary trade-off between SR-IOV and virtio?
+    a) SR-IOV is faster but prevents live migration; virtio supports migration
+    b) SR-IOV is open-source; virtio is proprietary
+    c) SR-IOV supports more VFs; virtio supports fewer
+    d) SR-IOV requires special hardware; virtio works on any NIC
+
+**Answers:** 1-a, 2-b, 3-b, 4-d, 5-a, 6-b, 7-b, 8-b, 9-b, 10-a
+\`\`\`
+
+## 14. Summary
 
 - **Virtualization** abstracts hardware resources so multiple OS instances share a single physical machine.
 - **Hypervisors** come in Type 1 (bare-metal: KVM, ESXi, Hyper-V, Xen) and Type 2 (hosted: VirtualBox, VMware Workstation).
@@ -3560,3 +3776,25 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 9. **Nested virtualization performance**: If a nested VM (KVM → QEMU → KVM → guest) takes a VM-exit, how many exits actually occur on the physical CPU? Trace the exit path.
 
 10. **Design a hypervisor comparison matrix**: Create a table comparing KVM, Xen, ESXi, and Hyper-V across: CPU virt method, memory virt method, I/O method, management interface, guest OS support, maximum vCPUs per VM, maximum RAM per VM, live migration support, and fault tolerance.
+
+### Additional Exercises
+
+11. **VM-Exit frequency analyzer**: Write a KVM-based tool (using `perf kvm stat` or `/sys/kernel/debug/kvm/*`) that profiles VM-exit reasons for a running VM. Measure exit counts for: EPT violation, I/O instruction, CPUID, HLT, MSR access, and control register access. Identify the top 3 exit reasons and suggest optimizations.
+
+12. **Overcommit risk calculator**: Extend the TypeScript RaidCalculator pattern to build a memory overcommit risk model. Given: physical RAM, per-VM reserved memory, per-VM balloonable memory, workload memory pressure distribution, and acceptable risk level (e.g., 99.9% no swap), calculate the maximum number of VMs that can run.
+
+13. **Nested virtualization performance**: Benchmark nested virtualization by running a CPU-bound workload at four levels: native, L1 VM (KVM), L2 VM (KVM nested in L1), and L3 VM (KVM in L2). Measure: SPECrate score degradation at each level, VM-exit cost (in cycles), and memory access latency. Calculate the performance multiplier per nesting level.
+
+14. **virtio ring buffer simulator**: Implement a virtio virtqueue in TypeScript with: descriptor table (address, length, flags, next), available ring (guest-to-host notifications), and used ring (host-to-Guest completions). Simulate a network device sending and receiving packets through the ring buffer. Measure throughput vs a simple MMIO-based emulated device.
+
+15. **Live migration cost model**: Build a mathematical model for live migration. Given: VM memory size (D), memory dirtying rate (R), network bandwidth (B), and downtime target (T), compute: number of pre-copy rounds, total migration time, total data transferred, and final downtime. Show results for: 8GB VM with 20MB/s dirty rate over 1Gbps, 10Gbps, and 100Gbps links.
+
+16. **Container vs VM density comparison**: Given a host with 32 vCPUs, 128GB RAM, and 1TB SSD, compare maximum density for: (a) Docker containers (each: 0.1 vCPU, 256MB RAM, 1GB storage) vs (b) VMs (each: 1 vCPU, 2GB RAM, 20GB storage). Include OS overhead for each VM (assume 512MB for guest OS). Calculate total application instances achievable.
+
+17. **KVM module performance test**: Write a C program using `/dev/kvm` to: create a VM with a vCPU, run a tiny guest code that executes a CPUID instruction, measure the latency of a VM-entry/VM-exit round trip. Run 10,000 iterations and report average, min, max, and percentile latencies. Compare with and without hardware virtualization features.
+
+18. **Firecracker microVM vs Docker benchmark**: Compare AWS Firecracker microVMs vs Docker containers on: boot time (to first process execution), memory overhead per instance, maximum instances on a 16GB host, and security isolation (using a syscall count attack surface metric). Explain the scenarios where each is preferable.
+
+19. **Page table isolation (KPTI) simulation**: Implement a TypeScript simulation of Kernel Page Table Isolation (KPTI / KAISER) used to mitigate Meltdown. Show the difference between: (a) without KPTI — user page tables include kernel mappings, (b) with KPTI — user page tables contain only minimal kernel entries. Measure the syscall overhead of TLB flushing for KPTI.
+
+20. **GPU passthrough performance**: Write a benchmark that measures GPU compute performance (using CUDA or Vulkan) across: bare metal, VM with GPU passthrough (VFIO), VM with GPU paravirtualization (virtio-gpu), and VM with emulated GPU (QEMU stdvga). Report: GFLOPS, frame rate, and API call latency. Explain which workloads are suitable for each approach.

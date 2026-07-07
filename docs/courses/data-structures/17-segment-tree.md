@@ -1322,11 +1322,216 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 | Range histogram queries | Segment tree of histograms | Merge histograms at each node |
 | k-th smallest in range | Wavelet tree or segment tree of sorted vectors | Merge-sort tree variant |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-**Q1.** What is the standard array size allocated for a segment tree of n elements?
+### Common Mistakes (GFG-Style)
 
-- A) n
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Allocating 2n instead of 4n array for segment tree | n may not be a power of 2; size 4n guarantees safe bounds even for worst case | Always allocate 4 × n (or next power of 2 × 2) |
+| Off-by-one errors in range query (inclusive vs exclusive) | Query uses [l, r] inclusive but segment tree stores [l, r] or [l, r) inconsistently | Be consistent: use inclusive-inclusive [l, r] or inclusive-exclusive [l, r); document choice |
+| Forgetting to handle overlapping ranges in query | Without checking if query fully contains → partial → disjoint, recursion is infinite | if (qs ≤ l && r ≤ qe) return tree[node]; if (qe < l || r < qs) return identity; else recurse |
+| Not returning proper identity element for the operation | Sum needs 0, product needs 1, min needs Infinity, max needs -Infinity | Each operation has a unique identity: `f(identity, x) = x` |
+| Lazy propagation: not pushing updates before traversing children | Deferred updates accumulate and never reach the leaves | Always push lazy values to children before recursing during query/update |
+| Confusing lazy propagation with range update | Without lazy, range update becomes O(n) at each leaf | Lazy defers updates to O(log n) by storing pending ops in nodes |
+| Building segment tree with recursion when iterative (bottom-up) is simpler | Recursive build for 2n size is unnecessary overhead | Use iterative segment tree: build from n to 2n-1 for leaf values, then i = n-1 down to 1 |
+| Not considering overflow for range sum queries | Storing large sums in 32-bit integer overflows | Use 64-bit integers (bigint or number with checks) for sums |
+
+### TypeScript Segment Tree Implementation (with Lazy Propagation)
+
+```typescript
+class SegmentTree {
+    private tree: number[];
+    private lazy: number[];
+    private n: number;
+
+    constructor(arr: number[]) {
+        this.n = arr.length;
+        this.tree = new Array(4 * this.n).fill(0);
+        this.lazy = new Array(4 * this.n).fill(0);
+        this.build(arr, 0, 0, this.n - 1);
+    }
+
+    private build(arr: number[], node: number, l: number, r: number): void {
+        if (l === r) {
+            this.tree[node] = arr[l];
+            return;
+        }
+        const mid = Math.floor((l + r) / 2);
+        this.build(arr, 2 * node + 1, l, mid);
+        this.build(arr, 2 * node + 2, mid + 1, r);
+        this.tree[node] = this.tree[2 * node + 1] + this.tree[2 * node + 2];
+    }
+
+    // Range query [ql, qr] inclusive
+    query(ql: number, qr: number): number {
+        return this._query(0, 0, this.n - 1, ql, qr);
+    }
+
+    private _query(node: number, l: number, r: number, ql: number, qr: number): number {
+        this.propagate(node, l, r);
+        if (ql > r || qr < l) return 0; // no overlap
+        if (ql <= l && r <= qr) return this.tree[node]; // total overlap
+        const mid = Math.floor((l + r) / 2);
+        const left = this._query(2 * node + 1, l, mid, ql, qr);
+        const right = this._query(2 * node + 2, mid + 1, r, ql, qr);
+        return left + right;
+    }
+
+    // Point update: set arr[idx] = val
+    pointUpdate(idx: number, val: number): void {
+        this._pointUpdate(0, 0, this.n - 1, idx, val);
+    }
+
+    private _pointUpdate(node: number, l: number, r: number, idx: number, val: number): void {
+        if (l === r) {
+            this.tree[node] = val;
+            return;
+        }
+        const mid = Math.floor((l + r) / 2);
+        if (idx <= mid) this._pointUpdate(2 * node + 1, l, mid, idx, val);
+        else this._pointUpdate(2 * node + 2, mid + 1, r, idx, val);
+        this.tree[node] = this.tree[2 * node + 1] + this.tree[2 * node + 2];
+    }
+
+    // Range update: add val to all elements in [ql, qr]
+    rangeUpdate(ql: number, qr: number, val: number): void {
+        this._rangeUpdate(0, 0, this.n - 1, ql, qr, val);
+    }
+
+    private _rangeUpdate(node: number, l: number, r: number, ql: number, qr: number, val: number): void {
+        this.propagate(node, l, r);
+        if (ql > r || qr < l) return;
+        if (ql <= l && r <= qr) {
+            this.tree[node] += (r - l + 1) * val;
+            if (l !== r) {
+                this.lazy[2 * node + 1] += val;
+                this.lazy[2 * node + 2] += val;
+            }
+            return;
+        }
+        const mid = Math.floor((l + r) / 2);
+        this._rangeUpdate(2 * node + 1, l, mid, ql, qr, val);
+        this._rangeUpdate(2 * node + 2, mid + 1, r, ql, qr, val);
+        this.tree[node] = this.tree[2 * node + 1] + this.tree[2 * node + 2];
+    }
+
+    private propagate(node: number, l: number, r: number): void {
+        if (this.lazy[node] !== 0) {
+            this.tree[node] += (r - l + 1) * this.lazy[node];
+            if (l !== r) {
+                this.lazy[2 * node + 1] += this.lazy[node];
+                this.lazy[2 * node + 2] += this.lazy[node];
+            }
+            this.lazy[node] = 0;
+        }
+    }
+}
+
+// Iterative (Fenwick-style) Segment Tree for point updates, range sums
+class BIT { // Binary Indexed Tree / Fenwick Tree
+    private tree: number[];
+    constructor(private n: number) {
+        this.tree = new Array(n + 1).fill(0);
+    }
+
+    add(idx: number, delta: number): void {
+        idx++; // 1-indexed internally
+        while (idx <= this.n) {
+            this.tree[idx] += delta;
+            idx += idx & -idx;
+        }
+    }
+
+    sum(idx: number): number { // prefix sum [0, idx]
+        idx++;
+        let sum = 0;
+        while (idx > 0) {
+            sum += this.tree[idx];
+            idx -= idx & -idx;
+        }
+        return sum;
+    }
+
+    rangeSum(l: number, r: number): number {
+        return this.sum(r) - (l > 0 ? this.sum(l - 1) : 0);
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+8. **The size of the tree array for a segment tree of n = 10 elements (worst-case) is:**
+   - a) 20
+   - b) 40 ✓ (4 × 10)
+   - c) 100
+   - d) 1024
+
+9. **Lazy propagation reduces range update time from:**
+   - a) O(log n) to O(1)
+   - b) O(n) to O(log n) ✓
+   - c) O(n²) to O(n)
+   - d) O(log n) to O(n)
+
+10. **What is the identity element for a range minimum query segment tree?**
+    - a) 0
+    - b) Infinity ✓
+    - c) -Infinity
+    - d) 1
+
+11. **Fenwick Tree (BIT) supports which operations natively?**
+    - a) Range update, range query
+    - b) Point update, prefix sum query ✓
+    - c) Range update, point query
+    - d) All of the above (with extensions)
+
+12. **In a segment tree, the update and query operations visit at most how many nodes?**
+    - a) O(1)
+    - b) O(log n) ✓
+    - c) O(n)
+    - d) O(√n)
+
+13. **The iterative segment tree (size = power of 2) stores leaf values at indices:**
+    - a) 0 to n-1
+    - b) n to 2n-1 ✓
+    - c) 1 to n
+    - d) 2n to 4n-1
+
+**Answers:** 8-b, 9-b, 10-b, 11-b, 12-b, 13-b
+
+### Additional Exercises (GFG Pattern)
+
+12. **Count of smaller numbers after self (LC 315)**: Given an array, for each element count how many elements to its right are smaller. Use a segment tree or BIT.
+
+13. **Range sum query with mutable array (LC 307)**: Implement NumArray with point updates and range sum queries using segment tree.
+
+14. **Range minimum query with updates**: Implement a segment tree that supports point updates and range minimum queries.
+
+15. **Count of range sum (LC 327)**: Given an array and a range [lower, upper], count the number of subarrays whose sum falls in that range. Use BIT with coordinate compression.
+
+16. **Range frequency queries**: Given an array, answer queries of the form "how many times does x appear in range [l, r]?" Use segment tree with hash maps at each node.
+
+17. **Merge sort tree**: Store sorted arrays at each segment tree node. Answer "count of elements ≤ k in range [l, r]" in O(log² n).
+
+18. **Segment tree with XOR operation**: Implement a segment tree where the operation is XOR. Answer range XOR queries.
+
+19. **Lazy propagation for assignment updates**: Modify lazy propagation to support assignment (set all values in [l, r] to x) instead of addition.
+
+20. **Maximum subarray sum in range (LC 53 variant)**: Build a segment tree that returns maximum subarray sum for any range. Each node stores: total sum, max prefix, max suffix, max subarray.
+
+### Segment Tree Variants Comparison
+
+| Variant | Build | Query | Point Update | Range Update | Memory |
+|---------|-------|-------|-------------|-------------|--------|
+| Standard (recursive) | O(n) | O(log n) | O(log n) | O(log n) lazy | 4n |
+| Iterative (bottom-up) | O(n) | O(log n) | O(log n) | Not supported | 2n |
+| Fenwick Tree (BIT) | O(n log n) | O(log n) | O(log n) | O(log n)* | n+1 |
+| Sparse Table | O(n log n) | O(1) | Not supported | Not supported | n log n |
+| SQRT Decomposition | O(n) | O(√n) | O(1) | O(√n) | n + √n |
+| Segment Tree + Lazy | O(n) | O(log n) | O(log n) | O(log n) | 4n + 4n (lazy) |
+| Merge Sort Tree | O(n log n) | O(log² n) | Not supported | Not supported | n log n |
+
+*Fenwick tree: with range update and point query, or point update and range query. Not both simultaneously without extra structure.
 - B) 2n
 - C) 4n
 - D) n²

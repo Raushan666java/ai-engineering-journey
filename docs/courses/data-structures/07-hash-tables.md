@@ -1952,11 +1952,205 @@ A **Bloom filter** is a space-efficient probabilistic hash-based data structure 
 
 ---
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the average time complexity of hash table search?**
-   - a) O(1) ✓
-   - b) O(log n)
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Using a non-idempotent hashCode (changes over time) | Object modified after insertion causes lookup failure | Use immutable fields for the hash code; recompute on mutation |
+| Storing mutable objects as keys | If key changes, bucket lookup returns null even though object still exists | Use only immutable types (string, number) as keys |
+| Ignoring load factor — allowing table to become too full | High load factor → many collisions → O(n) degenerate performance | Resize when load factor > 0.75 (or chosen threshold) |
+| Custom hashCode returning a constant for all objects | Every entry lands in the same bucket → degenerate to a linked list | Distribute hash bits: use prime multipliers and mixed bit shifts |
+| Using modulo with a non-prime capacity | Certain hash patterns collide more often with composite capacities | Use prime or power-of-2 capacities with proper mixing |
+| Forgetting to handle `null` key/value | NullPointerException on `key.hashCode()` or `value.equals()` | Use a sentinel or special-case null key |
+| Not rehashing after resize | Old entries point to wrong buckets after capacity changes | Recompute index = hashCode % newCapacity for every entry |
+
+### TypeScript HashTable Implementation
+
+```typescript
+interface IHashTable<K, V> {
+    put(key: K, value: V): void;
+    get(key: K): V | undefined;
+    remove(key: K): boolean;
+    contains(key: K): boolean;
+    size(): number;
+}
+
+class HashNode<K, V> {
+    constructor(
+        public key: K,
+        public value: V,
+        public next: HashNode<K, V> | null = null
+    ) {}
+}
+
+class HashTable<K, V> implements IHashTable<K, V> {
+    private buckets: (HashNode<K, V> | null)[];
+    private _size: number = 0;
+    private static readonly DEFAULT_CAPACITY = 16;
+    private static readonly LOAD_FACTOR = 0.75;
+
+    constructor(capacity: number = HashTable.DEFAULT_CAPACITY) {
+        this.buckets = new Array(capacity).fill(null);
+    }
+
+    private hash(key: K): number {
+        const str = String(key);
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+            hash = (hash * 31 + str.charCodeAt(i)) | 0;
+        }
+        return Math.abs(hash) % this.buckets.length;
+    }
+
+    put(key: K, value: V): void {
+        const index = this.hash(key);
+        let node = this.buckets[index];
+        while (node) {
+            if (node.key === key) {
+                node.value = value; // update
+                return;
+            }
+            node = node.next;
+        }
+        // insert at head
+        this.buckets[index] = new HashNode(key, value, this.buckets[index]);
+        this._size++;
+        if (this._size > this.buckets.length * HashTable.LOAD_FACTOR) {
+            this.resize(this.buckets.length * 2);
+        }
+    }
+
+    get(key: K): V | undefined {
+        const index = this.hash(key);
+        let node = this.buckets[index];
+        while (node) {
+            if (node.key === key) return node.value;
+            node = node.next;
+        }
+        return undefined;
+    }
+
+    remove(key: K): boolean {
+        const index = this.hash(key);
+        let node = this.buckets[index];
+        let prev: HashNode<K, V> | null = null;
+        while (node) {
+            if (node.key === key) {
+                if (prev) prev.next = node.next;
+                else this.buckets[index] = node.next;
+                this._size--;
+                return true;
+            }
+            prev = node;
+            node = node.next;
+        }
+        return false;
+    }
+
+    contains(key: K): boolean { return this.get(key) !== undefined; }
+    size(): number { return this._size; }
+
+    private resize(newCapacity: number): void {
+        const oldBuckets = this.buckets;
+        this.buckets = new Array(newCapacity).fill(null);
+        this._size = 0;
+        for (const bucket of oldBuckets) {
+            let node = bucket;
+            while (node) {
+                this.put(node.key, node.value);
+                node = node.next;
+            }
+        }
+    }
+}
+
+// Two-Sum using a hash table (classic interview problem)
+function twoSum(nums: number[], target: number): [number, number] | null {
+    const map = new Map<number, number>();
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        if (map.has(complement)) {
+            return [map.get(complement)!, i];
+        }
+        map.set(nums[i], i);
+    }
+    return null;
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **Which of the following is NOT a collision resolution technique?**
+   - a) Separate chaining
+   - b) Open addressing
+   - c) Double hashing
+   - d) Bubble sort ✓
+
+10. **The load factor α in a hash table is defined as:**
+    - a) α = number of buckets / number of entries
+    - b) α = number of entries / number of buckets ✓
+    - c) α = number of collisions / number of entries
+    - d) α = table size / entry size
+
+11. **In linear probing, the primary clustering problem occurs because:**
+    - a) Keys with the same hash form a cluster
+    - b) Collisions cause consecutive occupied slots to coalesce ✓
+    - c) The hash function is weak
+    - d) The table is too large
+
+12. **What is the worst-case time complexity for a hash table with separate chaining and a universal hash function?**
+    - a) O(1)
+    - b) O(log n)
+    - c) O(n) ✓
+    - d) O(n²)
+
+13. **Double hashing uses a second hash function to determine:**
+    - a) The bucket index
+    - b) The probe step size ✓
+    - c) The hash table capacity
+    - d) The load factor
+
+14. **The hashCode 31 is commonly used because:**
+    - a) It is a Mersenne prime
+    - b) 31 * i can be optimized as (i << 5) - i ✓
+    - c) It minimizes hash collisions better than any other number
+    - d) It's the smallest prime
+
+**Answers:** 9-d, 10-b, 11-b, 12-c, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+15. **Design a hash map with open addressing**: Implement a hash map using linear probing with load factor handling, including `put`, `get`, `remove`, and `contains` methods.
+
+16. **Find the first non-repeating character in a string**: Given a string, find the first character that does not repeat. Solve in O(n) using a hash table.
+
+17. **Group anagrams**: Given a list of strings, group anagrams together. Use a hash map where the key is the sorted string.
+
+18. **Longest consecutive sequence**: Given an unsorted array of integers, find the length of the longest consecutive elements sequence in O(n) time.
+
+19. **Subarray sum equals K**: Given an array of integers and an integer K, find the total number of subarrays whose sum equals K. Use prefix sum + hash map.
+
+20. **4Sum with hash map**: Given an array of integers, find all unique quadruplets that sum to a target using hashing.
+
+21. **Longest substring without repeating characters**: Use sliding window + hash set/map for O(n) solution.
+
+22. **Top K frequent elements**: Given an array, find the K most frequent elements. Use hash map + bucket sort or min-heap.
+
+23. **Design a time-based key-value store**: Support `set(key, value, timestamp)` and `get(key, timestamp)` returning the value for the exact or greatest previous timestamp.
+
+24. **Encode and decode tiny URLs**: Design a URL shortening service mapping short codes ↔ original URLs using hash maps and base62 encoding.
+
+### Collision Resolution Comparison
+
+| Method | Worst-case Search | Space | Deletion | Cache Performance | Clustering |
+|--------|-------------------|-------|----------|-------------------|------------|
+| Separate Chaining | O(n) | O(n + buckets) | Easy | Poor | None |
+| Linear Probing | O(n) | O(n) | Lazy deletion needed | Good | Primary |
+| Quadratic Probing | O(n) | O(n) | Harder | Moderate | Secondary |
+| Double Hashing | O(n) | O(n) | Harder | Poor | Minimal |
+| Cuckoo Hashing | O(1) worst-case | O(n) | Easy | Good | None (deterministic) |
    - c) O(n)
    - d) O(n²)
 

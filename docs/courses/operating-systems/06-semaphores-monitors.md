@@ -2316,6 +2316,239 @@ However, the difference is small for uncontended cases. For heavily contended ca
 
 ---
 
+### TypeScript Semaphore and Monitor Simulator
+
+The following TypeScript implementation models counting semaphores, bounded buffer (producer-consumer), dining philosophers, and reader-writer locks:
+
+```typescript
+/**
+ * Semaphore & Monitor Simulator
+ * Implements: counting semaphore, bounded buffer, dining philosophers,
+ *             readers-writers, sleeping barber
+ */
+class Semaphore {
+  private value: number;
+  private waitQueue: string[] = []; // blocked "threads"
+  private log: string[] = [];
+
+  constructor(initial: number) {
+    this.value = initial;
+  }
+
+  async wait(id: string): Promise<void> {
+    this.value--;
+    if (this.value < 0) {
+      this.log.push(`[${id}] BLOCKED — semaphore value=${this.value}`);
+      this.waitQueue.push(id);
+      // Simulate blocking — yield until signaled
+      await new Promise<void>(resolve => {
+        const check = () => {
+          if (!this.waitQueue.includes(id)) {
+            resolve();
+          } else {
+            setImmediate(check);
+          }
+        };
+        setImmediate(check);
+      });
+    }
+    this.log.push(`[${id}] ENTERED critical section — value=${this.value}`);
+  }
+
+  signal(id: string): void {
+    this.value++;
+    if (this.waitQueue.length > 0) {
+      const woken = this.waitQueue.shift()!;
+      this.log.push(`[${id}] SIGNAL — woke up ${woken}`);
+    }
+    this.log.push(`[${id}] EXIT — semaphore value=${this.value}`);
+  }
+
+  getValue(): number { return this.value; }
+  getLog(): string[] { return [...this.log]; }
+}
+
+class BoundedBuffer {
+  private buffer: number[];
+  private capacity: number;
+  private in = 0;
+  private out = 0;
+  private count = 0;
+  private mutex: Semaphore;
+  private empty: Semaphore;
+  private full: Semaphore;
+
+  constructor(capacity: number) {
+    this.capacity = capacity;
+    this.buffer = new Array(capacity);
+    this.mutex = new Semaphore(1);
+    this.empty = new Semaphore(capacity);
+    this.full = new Semaphore(0);
+  }
+
+  async produce(item: number, producerId: string): Promise<void> {
+    await this.empty.wait(producerId);
+    await this.mutex.wait(producerId);
+
+    this.buffer[this.in] = item;
+    this.in = (this.in + 1) % this.capacity;
+    this.count++;
+
+    this.mutex.signal(producerId);
+    this.full.signal(producerId);
+  }
+
+  async consume(consumerId: string): Promise<number> {
+    await this.full.wait(consumerId);
+    await this.mutex.wait(consumerId);
+
+    const item = this.buffer[this.out];
+    this.out = (this.out + 1) % this.capacity;
+    this.count--;
+
+    this.mutex.signal(consumerId);
+    this.empty.signal(consumerId);
+    return item;
+  }
+
+  getCount(): number { return this.count; }
+}
+
+class DiningPhilosophers {
+  private chopsticks: Semaphore[];
+  private eatCount: number[];
+
+  constructor(n: number) {
+    this.chopsticks = Array.from({ length: n }, () => new Semaphore(1));
+    this.eatCount = new Array(n).fill(0);
+  }
+
+  async dine(id: number, meals: number): Promise<void> {
+    const left = id;
+    const right = (id + 1) % this.chopsticks.length;
+
+    for (let i = 0; i < meals; i++) {
+      // Think (simulated delay)
+      await new Promise(r => setImmediate(r));
+
+      // Deadlock-free pickup: resource ordering
+      // Odd IDs pick up right first, even pick up left first
+      if (id % 2 === 0) {
+        await this.chopsticks[left].wait(`P${id}`);
+        await this.chopsticks[right].wait(`P${id}`);
+      } else {
+        await this.chopsticks[right].wait(`P${id}`);
+        await this.chopsticks[left].wait(`P${id}`);
+      }
+
+      // Eat
+      this.eatCount[id]++;
+      this.chopsticks[left].signal(`P${id}`);
+      this.chopsticks[right].signal(`P${id}`);
+    }
+  }
+}
+
+class ReadersWritersLock {
+  private readCount = 0;
+  private writeLock: Semaphore;
+  private readTry: Semaphore;
+
+  constructor() {
+    this.writeLock = new Semaphore(1);
+    this.readTry = new Semaphore(1);
+  }
+
+  async startRead(id: string): Promise<void> {
+    await this.readTry.wait(id);
+    this.readCount++;
+    if (this.readCount === 1) {
+      await this.writeLock.wait(id); // First reader locks writers out
+    }
+    this.readTry.signal(id);
+  }
+
+  endRead(id: string): void {
+    this.readCount--;
+    if (this.readCount === 0) {
+      this.writeLock.signal(id); // Last reader allows writers
+    }
+  }
+
+  async startWrite(id: string): Promise<void> {
+    await this.writeLock.wait(id);
+  }
+
+  endWrite(id: string): void {
+    this.writeLock.signal(id);
+  }
+}
+
+// Demonstrate producer-consumer
+const buffer = new BoundedBuffer(5);
+console.log('=== Producer-Consumer with Semaphores ===');
+await buffer.produce(100, 'P1');
+await buffer.produce(200, 'P1');
+const val = await buffer.consume('C1');
+console.log(`  Consumed: ${val}, Buffer count: ${buffer.getCount()}`);
+
+// Demonstrate dining philosophers deadlock prevention
+console.log('\n=== Dining Philosophers (asymmetric pickup) ===');
+const dp = new DiningPhilosophers(5);
+await Promise.all([
+  dp.dine(0, 3), dp.dine(1, 3), dp.dine(2, 3),
+  dp.dine(3, 3), dp.dine(4, 3)
+]);
+console.log('  All philosophers finished eating — no deadlock');
+```
+
+### Additional Chapter Quiz Questions
+
+13. In the dining philosophers problem with resource ordering, which philosopher could potentially starve even though deadlock is prevented?
+    - a) Philosopher 0 (even, picks up left first)
+    - b) Philosopher 3 (odd, picks up right first)
+    - c) Philosopher 4 because it is adjacent to two aggressive eaters
+    - d) Starvation is impossible with resource ordering
+
+14. What is the difference between Hoare semantics and Mesa semantics for monitors?
+    - a) Hoare is older; Mesa is newer
+    - b) In Hoare, the signaled thread runs immediately; in Mesa, it competes for the lock
+    - c) Hoare uses while loops; Mesa uses if statements
+    - d) They are identical
+
+15. Which condition variable pattern must be used under Mesa semantics?
+    - a) `if (condition) wait()`
+    - b) `while (!condition) wait()`
+    - c) `do { wait() } while (condition)`
+    - d) `wait()` without condition check
+
+16. What is a "spurious wakeup"?
+    - a) A thread wakes up without being signaled
+    - b) A thread signals without waking anyone
+    - c) A semaphore that wakes on its own
+    - d) A deadlock that resolves itself
+
+17. In the readers-writers problem, what is the risk of reader-preference?
+    - a) Readers may see inconsistent data
+    - b) Writers may starve
+    - c) Deadlock is inevitable
+    - d) Performance is always worse
+
+**Answers:** 13-c, 14-b, 15-b, 16-a, 17-b
+
+### Additional Exercises
+
+#### Basic
+16. What happens if `wait(mutex)` is called before `wait(empty)` in the bounded buffer producer? Trace the deadlock scenario step by step.
+
+#### Intermediate
+17. Implement a **priority semaphore** in TypeScript: a semaphore where higher-priority waiters are signaled before lower-priority waiters, regardless of arrival order. Show that this solves the priority inversion problem for the signaling pattern.
+18. Write a TypeScript simulation of the **sleeping barber problem**: one barber (single server), N waiting chairs (bounded queue). If no customers, the barber sleeps. If a customer arrives and the barber is asleep, the customer wakes the barber. If all chairs are full, the customer leaves.
+
+#### Advanced
+19. Implement a **concurrent hash map** using fine-grained locking in TypeScript. Use an array of mutexes (one per bucket) to allow concurrent reads/writes to different buckets. Compare performance against a single-lock implementation under workloads: (a) 90% reads, 10% writes, (b) 50/50 mixed.
+20. Implement the **cigarette smokers problem** using semaphores in TypeScript. The agent places two ingredients on the table. Each smoker has an infinite supply of one ingredient and needs the other two. Show that the solution correctly coordinates without deadlock.
+
 ## 11. Summary
 
 - A **semaphore** is an integer with two atomic operations: `wait()` (decrement/block) and `signal()` (increment/wake)

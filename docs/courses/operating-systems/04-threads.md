@@ -2433,6 +2433,243 @@ int main() {
 
 ---
 
+### TypeScript Thread Pool and Parallelism Simulator
+
+The following TypeScript implementation models thread pools, work stealing, Amdahl's Law computation, and race condition detection:
+
+```typescript
+/**
+ * Thread Pool & Concurrency Simulator
+ * Models: thread pool, work stealing, Amdahl's Law, race conditions
+ */
+interface Task {
+  id: number;
+  duration: number;   // simulated work units
+  type: 'cpu' | 'io';
+}
+
+class ThreadPool {
+  private workers: number;
+  private queue: Task[] = [];
+  private completed = 0;
+  private totalTasks = 0;
+  private time = 0;
+  private log: string[] = [];
+
+  constructor(workers: number) {
+    this.workers = workers;
+  }
+
+  submit(tasks: Task[]): void {
+    this.queue.push(...tasks);
+    this.totalTasks += tasks.length;
+  }
+
+  run(): { makespan: number; throughput: number; avgLatency: number } {
+    const latencies: number[] = [];
+    const workerLoads = new Array(this.workers).fill(0);
+
+    while (this.completed < this.totalTasks || this.queue.length > 0) {
+      const availableWorkers = this.workers - workerLoads.filter(l => l > 0).length;
+
+      for (let w = 0; w < this.workers && this.queue.length > 0; w++) {
+        if (workerLoads[w] === 0) {
+          const task = this.queue.shift()!;
+          workerLoads[w] = task.duration;
+          latencies.push(this.time + task.duration);
+          this.log.push(`[t=${this.time}] Worker ${w} started Task ${task.id} (duration=${task.duration}, type=${task.type})`);
+        }
+      }
+
+      // Advance time by minimum remaining work
+      const minWork = Math.min(...workerLoads.filter(l => l > 0));
+      if (minWork === Infinity) break;
+
+      this.time += minWork;
+      for (let w = 0; w < this.workers; w++) {
+        if (workerLoads[w] > 0) {
+          workerLoads[w] -= minWork;
+          if (workerLoads[w] === 0) {
+            this.completed++;
+            this.log.push(`[t=${this.time}] Worker ${w} completed task — ${this.completed}/${this.totalTasks}`);
+          }
+        }
+      }
+    }
+
+    const makespan = this.time;
+    const throughput = this.totalTasks / makespan;
+    const avgLatency = latencies.reduce((s, l) => s + l, 0) / latencies.length;
+    return { makespan, throughput: parseFloat(throughput.toFixed(4)), avgLatency: parseFloat(avgLatency.toFixed(2)) };
+  }
+
+  getLog(): string[] { return [...this.log]; }
+}
+
+/**
+ * Amdahl's Law calculator
+ */
+function amdahlsLaw(serialFraction: number, numCores: number): number {
+  return 1 / (serialFraction + (1 - serialFraction) / numCores);
+}
+
+/**
+ * Gustafson's Law (scaled speedup)
+ */
+function gustafsonsLaw(serialFraction: number, numCores: number): number {
+  return serialFraction + (1 - serialFraction) * numCores;
+}
+
+/**
+ * Optimal thread pool sizing
+ */
+function optimalPoolSize(numCores: number, waitTime: number, serviceTime: number): number {
+  return numCores * (1 + waitTime / serviceTime);
+}
+
+// Amdahl's Law analysis
+console.log('=== Amdahl\'s Law Speedup ===');
+for (const s of [0.05, 0.10, 0.25, 0.50]) {
+  for (const cores of [1, 2, 4, 8, 16, 64]) {
+    console.log(`  S=${(s*100).toFixed(0)}% serial, ${cores} cores: ${amdahlsLaw(s, cores).toFixed(2)}x`);
+  }
+}
+
+console.log('\n=== Optimal Thread Pool Size ===');
+console.log(`  CPU-bound (8 cores): ${optimalPoolSize(8, 0, 1)} threads`);
+console.log(`  I/O-bound (8 cores, wait=10ms, service=1ms): ${optimalPoolSize(8, 10, 1)} threads`);
+console.log(`  Mixed (8 cores, wait=2ms, service=1ms): ${optimalPoolSize(8, 2, 1)} threads`);
+
+// Thread pool simulation
+console.log('\n=== Thread Pool Simulation ===');
+const pool = new ThreadPool(4);
+pool.submit([
+  { id: 1, duration: 5, type: 'cpu' },
+  { id: 2, duration: 3, type: 'io' },
+  { id: 3, duration: 7, type: 'cpu' },
+  { id: 4, duration: 2, type: 'io' },
+  { id: 5, duration: 4, type: 'cpu' },
+  { id: 6, duration: 6, type: 'io' },
+  { id: 7, duration: 8, type: 'cpu' },
+  { id: 8, duration: 3, type: 'io' }
+]);
+console.log(pool.run());
+```
+
+### Thread Safety in TypeScript: Race Condition Detector
+
+```typescript
+/**
+ * Simple race condition detector for concurrent operations
+ */
+class RaceConditionDetector {
+  private counter = 0;
+  private expectedValue = 0;
+  private interleavings: string[] = [];
+
+  // Simulates counter++ without synchronization (3-step: load, inc, store)
+  async unsafeIncrement(id: number): Promise<void> {
+    const before = this.counter;
+    this.interleavings.push(`Thread ${id}: LOAD counter = ${before}`);
+
+    // Simulate context switch between load and store
+    await new Promise(r => setImmediate(r));
+
+    const after = before + 1;
+    this.interleavings.push(`Thread ${id}: STORE counter = ${after}`);
+    this.counter = after;
+  }
+
+  async runUnsafe(threads: number, iterations: number): Promise<number> {
+    this.counter = 0;
+    this.expectedValue = threads * iterations;
+    this.interleavings = [];
+
+    const promises: Promise<void>[] = [];
+    for (let t = 0; t < threads; t++) {
+      for (let i = 0; i < iterations; i++) {
+        promises.push(this.unsafeIncrement(t));
+      }
+    }
+
+    await Promise.all(promises);
+    return this.counter;
+  }
+
+  analyze(): string {
+    const actual = this.counter;
+    const expected = this.expectedValue;
+    const raceDetected = actual !== expected;
+    const lostUpdates = expected - actual;
+    return JSON.stringify({
+      expected,
+      actual,
+      raceDetected,
+      lostUpdates,
+      details: raceDetected
+        ? `${lostUpdates} increments lost due to race condition`
+        : 'No data race — all increments preserved'
+    }, null, 2);
+  }
+}
+
+// Demonstrate race condition
+async function main() {
+  const detector = new RaceConditionDetector();
+  const result = await detector.runUnsafe(5, 1000);
+  console.log('Race Result:', detector.analyze());
+}
+main();
+```
+
+### Additional Chapter Quiz Questions
+
+11. What is the primary reason user-level threads cannot achieve parallelism on multi-core systems?
+    - a) They run at too low a priority
+    - b) The kernel sees only one thread (the process)
+    - c) They don't have a stack
+    - d) They cannot perform I/O
+
+12. What is a "fiber" in Windows?
+    - a) A kernel-level thread
+    - b) A user-level thread that is manually scheduled
+    - c) A hardware thread
+    - d) A type of process
+
+13. In Linux NPTL, what is the relationship between user threads and kernel threads?
+    - a) Many user threads map to one kernel thread
+    - b) One user thread maps to one kernel thread
+    - c) Many user threads map to many kernel threads
+    - d) No relationship
+
+14. What is the main advantage of the many-to-many threading model?
+    - a) Simpler implementation than one-to-one
+    - b) Combines fast user-level creation with kernel-level parallelism
+    - c) Requires no kernel support
+    - d) Uses the least memory
+
+15. Which of the following best describes Java Virtual Threads (Project Loom)?
+    - a) Kernel threads managed by the JVM
+    - b) User-level threads that can number in the millions
+    - c) Native OS threads with a Java wrapper
+    - d) Thread pools that reuse kernel threads
+
+**Answers:** 11-b, 12-b, 13-b, 14-b, 15-b
+
+### Additional Exercises
+
+#### Basic
+16. Write a TypeScript function that calculates the optimal thread pool size for a given workload. The function should take: number of cores, average service time, and average wait time. Explain the formula.
+17. Use `htop` or `ps -eLf` on a Linux system to identify which processes have multiple threads. Pick three multi-threaded processes and identify what each thread is likely doing.
+
+#### Intermediate
+18. Implement a work-stealing thread pool simulator in TypeScript: each worker has its own task queue; when a worker's queue is empty, it steals tasks from another worker's queue. Compare the makespan of work-stealing vs. a global queue across 100 tasks with varying durations.
+19. Reproduce the race condition example above in TypeScript using async/await with setImmediate to force context switches. Show that without proper locking (an atomic counter or mutex), the final counter value is less than expected.
+
+#### Advanced
+20. Implement a reader-writer lock in TypeScript using Promises. Multiple readers should be able to access simultaneously, but writers need exclusive access. Show that under a read-heavy workload (90% reads, 10% writes), the reader-writer lock outperforms a simple mutex.
+21. Implement a lock-free hash map in TypeScript using atomic operations and CAS (compare-and-swap) semantics. Support put(), get(), and delete(). Show that it is thread-safe without using any mutex or lock.
+
 ## Further Reading
 
 - **Silberschatz, Galvin, Gagne** — Operating System Concepts (Chapter 4: Threads & Concurrency)

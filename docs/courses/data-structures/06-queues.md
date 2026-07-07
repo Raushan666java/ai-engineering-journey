@@ -1598,11 +1598,211 @@ A deque stores edit history. The user can undo (pop from back) or redo (pop from
 
 ---
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What does FIFO stand for?**
-   - a) Fast In, Fast Out
-   - b) First In, First Out ✓
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Confusing front vs rear in circular queue | Enqueue at rear, dequeue from front — mixing them breaks ordering | Keep invariant: `front` points to oldest element, `rear` to the next insertion spot |
+| Miscomputing modulo with `(rear + 1) % size` for empty check | Full and empty both have `front == rear` in circular queues | Use `count` variable or sacrifice one slot to distinguish |
+| Not resizing array queue when full (array impl) | Elements are overwritten or queue rejects valid inserts | Double the capacity and copy elements from front to rear |
+| Forgetting to wrap-around when dequeuing in circular queue | `front++` eventually goes out of bounds | Always update with `front = (front + 1) % capacity` |
+| Assuming popFront on empty linked queue returns null gracefully | When queue is empty and `front` is null, `front.next` crashes | Check `isEmpty()` before accessing `front.next` |
+| Using shift() on arrays for queue in JavaScript/TypeScript | `shift()` is O(n) because every element must re-index | Use `push()` + index pointer for O(1), or a proper `Queue` class |
+
+### TypeScript Queue Implementation
+
+```typescript
+interface IQueue<T> {
+    enqueue(item: T): void;
+    dequeue(): T | undefined;
+    peek(): T | undefined;
+    isEmpty(): boolean;
+    size(): number;
+}
+
+// Linked List Queue (O(1) all operations)
+class LinkedQueue<T> implements IQueue<T> {
+    private front: { data: T; next: any } | null = null;
+    private rear: { data: T; next: any } | null = null;
+    private _size: number = 0;
+
+    enqueue(item: T): void {
+        const node = { data: item, next: null };
+        if (this.rear) this.rear.next = node;
+        this.rear = node;
+        if (!this.front) this.front = node;
+        this._size++;
+    }
+
+    dequeue(): T | undefined {
+        if (!this.front) return undefined;
+        const item = this.front.data;
+        this.front = this.front.next;
+        if (!this.front) this.rear = null;
+        this._size--;
+        return item;
+    }
+
+    peek(): T | undefined { return this.front?.data; }
+    isEmpty(): boolean { return this._size === 0; }
+    size(): number { return this._size; }
+}
+
+// Circular Array Queue (O(1) all operations)
+class CircularArrayQueue<T> implements IQueue<T> {
+    private data: (T | undefined)[];
+    private frontIdx: number = 0;
+    private rearIdx: number = 0;
+    private _size: number = 0;
+    private cap: number;
+
+    constructor(capacity: number = 10) {
+        this.cap = capacity;
+        this.data = new Array(capacity);
+    }
+
+    enqueue(item: T): void {
+        if (this._size === this.cap) this.resize();
+        this.data[this.rearIdx] = item;
+        this.rearIdx = (this.rearIdx + 1) % this.cap;
+        this._size++;
+    }
+
+    dequeue(): T | undefined {
+        if (this._size === 0) return undefined;
+        const item = this.data[this.frontIdx];
+        this.frontIdx = (this.frontIdx + 1) % this.cap;
+        this._size--;
+        return item;
+    }
+
+    peek(): T | undefined {
+        return this._size === 0 ? undefined : this.data[this.frontIdx];
+    }
+
+    isEmpty(): boolean { return this._size === 0; }
+    size(): number { return this._size; }
+
+    private resize(): void {
+        const newCap = this.cap * 2;
+        const newData = new Array(newCap);
+        for (let i = 0; i < this._size; i++) {
+            newData[i] = this.data[(this.frontIdx + i) % this.cap];
+        }
+        this.data = newData;
+        this.frontIdx = 0;
+        this.rearIdx = this._size;
+        this.cap = newCap;
+    }
+}
+
+// Deque with O(1) insert/delete at both ends
+class Deque<T> {
+    private data: (T | undefined)[] = [];
+    private frontIdx: number = 0;
+    private backIdx: number = -1;
+
+    pushFront(item: T): void {
+        this.frontIdx--;
+        this.data[this.frontIdx] = item;
+    }
+
+    pushBack(item: T): void {
+        this.backIdx++;
+        this.data[this.backIdx] = item;
+    }
+
+    popFront(): T | undefined {
+        if (this.frontIdx > this.backIdx) return undefined;
+        const item = this.data[this.frontIdx];
+        this.frontIdx++;
+        return item;
+    }
+
+    popBack(): T | undefined {
+        if (this.frontIdx > this.backIdx) return undefined;
+        const item = this.data[this.backIdx];
+        this.backIdx--;
+        return item;
+    }
+
+    isEmpty(): boolean { return this.frontIdx > this.backIdx; }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+7. **What is true about a deque (double-ended queue)?**
+   - a) Elements can be inserted/deleted at both ends ✓
+   - b) Elements can only be inserted at front
+   - c) Elements can only be deleted at rear
+   - d) Supports access to middle elements in O(1)
+
+8. **In a circular queue of size 5, if `front = 3` and `rear = 2`, how many elements?**
+   - a) 3
+   - b) 4 ✓
+   - c) 5
+   - d) 0
+
+9. **Which queue variant is best for implementing a sliding window maximum?**
+   - a) Simple queue
+   - b) Priority queue
+   - c) Deque ✓
+   - d) Circular queue
+
+10. **What is the main advantage of the linked-list queue over the array queue?**
+    - a) Faster enqueue
+    - b) No fixed capacity ✓
+    - c) Lower memory
+    - d) Simpler code
+
+11. **An application that requires serving tasks in order of arrival, then emergencies first, needs:**
+    - a) Simple queue
+    - b) Priority queue ✓
+    - c) Deque
+    - d) Circular queue
+
+12. **The `size()` method in a linked queue implemented without a counter is:**
+    - a) O(1)
+    - b) O(n) ✓
+    - c) O(log n)
+    - d) O(n²)
+
+**Answers:** 7-a, 8-b, 9-c, 10-b, 11-b, 12-b
+
+### Additional Exercises (GFG Pattern)
+
+11. **Implement a stack using queues**: Use two queues to implement all stack operations (push, pop, top, empty) with O(1) push and O(n) pop, or O(n) push and O(1) pop.
+
+12. **Reverse the first K elements of a queue**: Given a queue and an integer K, reverse the order of the first K elements.
+
+13. **Interleave the first half with the second half**: Given a queue of even length, interleave the first half with the second half (e.g., `[1,2,3,4,5,6]` → `[1,4,2,5,3,6]`).
+
+14. **Generate binary numbers from 1 to N**: Given a number N, generate binary representations for all numbers from 1 to N using a queue.
+
+15. **First non-repeating character in a stream**: Given a stream of characters, find the first non-repeating character at any point. Use a queue and a hash map.
+
+16. **LRU cache with queue**: Design an LRU cache using a combination of a queue and a hash map. The queue tracks the order of access.
+
+17. **Check if a given permutation is valid for a queue**: Given two arrays — the original order and the dequeued order — check if it's possible to dequeue in that order using a queue.
+
+18. **Connect n ropes with minimum cost**: Given n ropes of varying lengths, connect them into one rope with minimum cost (cost = sum of two rope lengths at each connection).
+
+19. **Maximum of all subarrays of size K**: Given an array and a window size K, find the maximum element in every contiguous subarray of size K. Solve in O(n) using a deque.
+
+20. **Sliding window first negative element**: Given an array and a window size K, find the first negative integer in each subarray of size K.
+
+### Queue Variants Comparison
+
+| Variant | Enqueue | Dequeue | Peek | Space | Use Case |
+|---------|---------|---------|------|-------|----------|
+| Simply linked list (queue) | O(1) | O(1) | O(1) | O(n) | General-purpose |
+| Circular array queue | O(1) amortized | O(1) | O(1) | O(n) | Bounded buffers |
+| Deque | O(1) both ends | O(1) both ends | O(1) | O(n) | Sliding window |
+| Priority queue | O(log n) | O(log n) | O(1) | O(n) | Scheduling |
+| Monotonic queue | O(1) amortized | O(1) | O(1) | O(n) | Max/min in sliding window |
    - c) Final In, Final Out
    - d) Fixed Input, Fixed Output
 

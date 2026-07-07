@@ -36,7 +36,7 @@ flowchart LR
 ```
 ## Theory
 ```
-> **One-Sentence Takeaway:** The ER model provides a high-level conceptual blueprint → translating real-world requirements into visual diagrams before any SQL is written.
+> **One-Sentence Takeaway:** The ER model provides a high-level conceptual blueprint â†’ translating real-world requirements into visual diagrams before any SQL is written.
 ```
 ![ER Model Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch02-er-model.png)
 ```
@@ -60,16 +60,16 @@ Just as an architect draws a blueprint before construction begins, a database de
 ```
 #### Numbered Steps to Build an ER Model
 ```
-1. **Identify entities** → List all noun concepts from requirements (e.g., Student, Course, Professor)
-2. **Identify relationships** → Find verb associations between entities (e.g., Student enrolls in Course)
-3. **Identify cardinality** → Determine 1:1, 1:N, or M:N for each relationship
-4. **Identify attributes** → List properties for each entity (e.g., student_id, name, email)
-5. **Classify attributes** → Mark simple/composite, single-valued/multi-valued, stored/derived, key
-6. **Identify weak entities** → Find entities that depend on others for identity
-7. **Apply constraints** → Specify total/partial participation, disjointness, completeness
-8. **Draw ER diagram** → Use rectangles, diamonds, ellipses with standard notation
-9. **Map to relational schema** → Apply systematic conversion rules
-10. **Normalize** → Check for redundancy and apply normal forms if needed
+1. **Identify entities** â†’ List all noun concepts from requirements (e.g., Student, Course, Professor)
+2. **Identify relationships** â†’ Find verb associations between entities (e.g., Student enrolls in Course)
+3. **Identify cardinality** â†’ Determine 1:1, 1:N, or M:N for each relationship
+4. **Identify attributes** â†’ List properties for each entity (e.g., student_id, name, email)
+5. **Classify attributes** â†’ Mark simple/composite, single-valued/multi-valued, stored/derived, key
+6. **Identify weak entities** â†’ Find entities that depend on others for identity
+7. **Apply constraints** â†’ Specify total/partial participation, disjointness, completeness
+8. **Draw ER diagram** â†’ Use rectangles, diamonds, ellipses with standard notation
+9. **Map to relational schema** â†’ Apply systematic conversion rules
+10. **Normalize** â†’ Check for redundancy and apply normal forms if needed
 ```
 #### Pseudocode: ER Model Builder
 ```
@@ -565,7 +565,7 @@ An **entity set** is a collection of entities that share the same properties. Fo
 | Relationship | "Parent of" connects two people |
 | Weak Entity | A childhood nickname tied to a specific person |
 ```
-In a family tree, each person exists independently (strong entity). But a "Family Nickname" (like "Little John" within the Smith family) is a weak entity → it has meaning only within the context of a specific family.
+In a family tree, each person exists independently (strong entity). But a "Family Nickname" (like "Little John" within the Smith family) is a weak entity â†’ it has meaning only within the context of a specific family.
 ```
 #### Numbered Steps to Identify Entities
 ```
@@ -636,12 +636,12 @@ Attributes describe the properties of entities. Each entity has a value for each
 Consider a university registration form:
 - **Simple:** Student ID (a single, atomic number)
 - **Composite:** Full Name = First Name + Middle Initial + Last Name (can be broken down)
-- **Multi-valued:** Phone Numbers (home, cell, work → zero or more)
+- **Multi-valued:** Phone Numbers (home, cell, work â†’ zero or more)
 - **Derived:** Age (calculated from Date of Birth and today's date)
 - **Stored:** Date of Birth (physically stored in database)
 - **Key:** Student ID (uniquely identifies each student)
 ```
-The form designer decides which fields are composite (they provide sub-boxes for first/last name) and which are simple (single box for ID). They know phone numbers need space for multiple entries. Age is never written on the form → it is computed when needed.
+The form designer decides which fields are composite (they provide sub-boxes for first/last name) and which are simple (single box for ID). They know phone numbers need space for multiple entries. Age is never written on the form â†’ it is computed when needed.
 ```
 #### Python Implementation: Attribute Type Validator
 ```
@@ -1091,16 +1091,16 @@ Without the invoice, a line item is meaningless. "2 x Laptop at $999" means noth
 ```
 #### Numbered Steps to Identify and Map Weak Entities
 ```
-1. **Check dependency** → Ask: "Can this entity exist without another entity?" If no, it is weak
-2. **Identify owner** → Find the entity on which it depends
-3. **Determine discriminator** → Find the attribute that distinguishes weak entities within one owner (e.g., line_number, dependent_name)
-4. **Verify total participation** → Confirm that every weak entity must belong to an owner
-5. **Verify M:1 identifying relationship** → Confirm many weak entities belong to one owner
-6. **Map owner** → Create table for strong entity first (standard mapping)
-7. **Map weak entity** → Create table with composite PK = owner's PK + discriminator
-8. **Add FK constraint** → owner's PK in weak entity table is also a FK
-9. **Add ON DELETE CASCADE** → Deleting owner cascades to weak entities
-10. **Document** → Note in schema comments that this is a weak entity
+1. **Check dependency** â†’ Ask: "Can this entity exist without another entity?" If no, it is weak
+2. **Identify owner** â†’ Find the entity on which it depends
+3. **Determine discriminator** â†’ Find the attribute that distinguishes weak entities within one owner (e.g., line_number, dependent_name)
+4. **Verify total participation** â†’ Confirm that every weak entity must belong to an owner
+5. **Verify M:1 identifying relationship** â†’ Confirm many weak entities belong to one owner
+6. **Map owner** â†’ Create table for strong entity first (standard mapping)
+7. **Map weak entity** â†’ Create table with composite PK = owner's PK + discriminator
+8. **Add FK constraint** â†’ owner's PK in weak entity table is also a FK
+9. **Add ON DELETE CASCADE** â†’ Deleting owner cascades to weak entities
+10. **Document** â†’ Note in schema comments that this is a weak entity
 ```
 #### Pseudocode: Weak Entity Mapping
 ```
@@ -1476,7 +1476,7 @@ int main() {
 ```
 **Generalization:** The process of defining a more general entity set from lower-level entity sets. Example: PERSON is a generalization of STUDENT and FACULTY. The common attributes (name, address, phone) are moved to PERSON, while specific attributes (GPA for STUDENT, salary for FACULTY) remain in the specialized sets.
 ```
-**Specialization:** The inverse → defining sub-groupings within an entity set. Example: From EMPLOYEE, we define subtypes SECRETARY, ENGINEER, and MANAGER, each with additional attributes.
+**Specialization:** The inverse â†’ defining sub-groupings within an entity set. Example: From EMPLOYEE, we define subtypes SECRETARY, ENGINEER, and MANAGER, each with additional attributes.
 ```
 **Constraints on Specialization/Generalization:**
 - **Disjointness:** Can an entity belong to more than one subclass?
@@ -1540,11 +1540,11 @@ int main() {
 ```
 #### Numbered Steps for Generalization/Specialization Mapping
 ```
-1. **Identify superclass entities** → Find common attributes across similar entities
-2. **Identify subclasses** → Determine distinct categories with specific attributes
-3. **Determine disjointness** → Check if an entity can belong to multiple subclasses
-4. **Determine completeness** → Check if every superclass entity must be in a subclass
-5. **Choose mapping strategy** → A (single table), B (separate tables), or C (subclass only)
+1. **Identify superclass entities** â†’ Find common attributes across similar entities
+2. **Identify subclasses** â†’ Determine distinct categories with specific attributes
+3. **Determine disjointness** â†’ Check if an entity can belong to multiple subclasses
+4. **Determine completeness** â†’ Check if every superclass entity must be in a subclass
+5. **Choose mapping strategy** â†’ A (single table), B (separate tables), or C (subclass only)
 6. **For Strategy B:** Create superclass table with common attributes and shared PK
 7. **For Strategy B:** Create subclass tables with FK to superclass (same PK value)
 8. **Add discriminator** (disjoint) or boolean flags (overlapping) to superclass
@@ -1747,7 +1747,7 @@ if __name__ == "__main__":
 ```
 ### 2.8 From ER to Relational Mapping
 ```
-ER diagrams are conceptual → they must be converted to relational schemas for implementation. The mapping rules:
+ER diagrams are conceptual â†’ they must be converted to relational schemas for implementation. The mapping rules:
 ```
 1. **Strong Entity Sets:** Create a table with all simple attributes. Composite attributes are flattened (each component becomes a column). The primary key becomes the table's primary key.
 ```
@@ -1843,7 +1843,7 @@ CREATE TABLE dependent (
 ```
 **Q2: How do you identify a weak entity?**
 ```
-**A:** A weak entity is identified by checking if its existence depends on another entity. Key indicators: it has no meaningful primary key of its own, it cannot exist without its owner, and deleting the owner must cascade-delete the weak entity. Example: LINE_ITEM on an INVOICE → the line item has no meaning without the invoice.
+**A:** A weak entity is identified by checking if its existence depends on another entity. Key indicators: it has no meaningful primary key of its own, it cannot exist without its owner, and deleting the owner must cascade-delete the weak entity. Example: LINE_ITEM on an INVOICE â†’ the line item has no meaning without the invoice.
 ```
 **Q3: What are participation constraints and why do they matter?**
 ```
@@ -1859,7 +1859,7 @@ CREATE TABLE dependent (
 ```
 **Q6: When should you use a ternary relationship vs. two binary relationships?**
 ```
-**A:** Use a ternary relationship when the relationship among three entities is atomic and cannot be decomposed. For example, a SUPPLIER supplies a PRODUCT to a WAREHOUSE → the supply relationship involves all three simultaneously. Decomposing into SUPPLIER-supplies-PRODUCT and PRODUCT-stored-in-WAREHOUSE loses the constraint that a specific supplier supplies a specific product to a specific warehouse. Use binary when the relationships are independent.
+**A:** Use a ternary relationship when the relationship among three entities is atomic and cannot be decomposed. For example, a SUPPLIER supplies a PRODUCT to a WAREHOUSE â†’ the supply relationship involves all three simultaneously. Decomposing into SUPPLIER-supplies-PRODUCT and PRODUCT-stored-in-WAREHOUSE loses the constraint that a specific supplier supplies a specific product to a specific warehouse. Use binary when the relationships are independent.
 ```
 **Q7: How do you map a unary (recursive) relationship?**
 ```
@@ -1891,7 +1891,7 @@ Draw.io is a free, web-based diagramming tool widely used for ER diagrams:
 ```
 Lucidchart is a premium diagramming tool with strong database modeling:
 - **ER Shapes:** Dedicated ER shape libraries with multiple notation styles
-- **Database Import:** Import schema from MySQL, PostgreSQL, SQL Server, Oracle → auto-generates ER diagram
+- **Database Import:** Import schema from MySQL, PostgreSQL, SQL Server, Oracle â†’ auto-generates ER diagram
 - **Data Linking:** Link shapes to spreadsheet data for attribute documentation
 - **Export:** Visio, PDF, SVG, PNG; integrates with Confluence, Jira, Slack
 - **Collaboration:** Real-time multi-user editing with comments and version history
@@ -1922,7 +1922,7 @@ Lucidchart is a premium diagramming tool with strong database modeling:
 ```
 ## Examples
 ```
-> **One-Sentence Takeaway:** Practicing ER-to-relational mapping with real examples → from strong entities to weak entities to generalization → builds the skill to design any database schema systematically.
+> **One-Sentence Takeaway:** Practicing ER-to-relational mapping with real examples â†’ from strong entities to weak entities to generalization â†’ builds the skill to design any database schema systematically.
 ```
 **Example 2.1: Mapping a University ER Diagram to Relations**
 ```
@@ -2022,20 +2022,343 @@ CREATE TABLE faculty (
 -- INSERT INTO faculty VALUES (1, 85000, 'CS');
 ```
 ```
-> **Warning:** Ternary relationships (degree 3) are often overused → most scenarios modeled with three entities can be expressed as two binary relationships.
+> **Warning:** Ternary relationships (degree 3) are often overused â†’ most scenarios modeled with three entities can be expressed as two binary relationships.
 >
-> **Remember:** The ER diagram is a communication tool, not just a design artifact → use consistent notation so all stakeholders interpret it the same way.
+> **Remember:** The ER diagram is a communication tool, not just a design artifact â†’ use consistent notation so all stakeholders interpret it the same way.
 ```
+### 2.13 ER Model Implementation (TypeScript)
+
+The following TypeScript code demonstrates how to programmatically represent and validate an ER model, including entity types, relationships, attributes, and cardinality constraints.
+
+```typescript
+// ============================================================
+// ER Model Implementation â€” TypeScript
+// ============================================================
+
+enum AttributeType {
+  SIMPLE,
+  COMPOSITE,
+  MULTIVALUED,
+  DERIVED,
+  KEY
+}
+
+enum Cardinality {
+  ONE_TO_ONE = '1:1',
+  ONE_TO_MANY = '1:N',
+  MANY_TO_MANY = 'M:N'
+}
+
+enum Participation {
+  TOTAL,
+  PARTIAL
+}
+
+interface Attribute {
+  name: string;
+  type: AttributeType;
+  subAttributes?: Attribute[];
+}
+
+interface EntityType {
+  name: string;
+  attributes: Attribute[];
+  isWeak: boolean;
+  discriminator?: string;
+}
+
+interface RelationshipType {
+  name: string;
+  entityPairs: Array<{
+    entityName: string;
+    cardinality: Cardinality;
+    participation: Participation;
+    role?: string;
+  }>;
+  attributes: Attribute[];
+  isIdentifying: boolean;
+}
+
+class ERModelBuilder {
+  private entities: Map<string, EntityType> = new Map();
+  private relationships: RelationshipType[] = [];
+
+  addEntity(name: string, attrs: Attribute[], isWeak = false, discriminator?: string): void {
+    if (this.entities.has(name)) {
+      throw new Error('Entity \'' + name + '\' already exists');
+    }
+    this.entities.set(name, { name, attributes: attrs, isWeak, discriminator });
+  }
+
+  addRelationship(
+    name: string,
+    entityPairs: RelationshipType['entityPairs'],
+    attrs: Attribute[] = [],
+    isIdentifying = false
+  ): void {
+    // Validate that all referenced entities exist
+    for (const pair of entityPairs) {
+      if (!this.entities.has(pair.entityName)) {
+        throw new Error('Entity \'' + pair.entityName + '\' not defined');
+      }
+    }
+    this.relationships.push({ name, entityPairs, attributes: attrs, isIdentifying });
+  }
+
+  generateRelationalSchema(): string[] {
+    const schemas: string[] = [];
+
+    // 1. Strong entities become tables
+    for (const [name, entity] of this.entities) {
+      if (!entity.isWeak) {
+        const cols = this.flattenAttributes(entity.attributes);
+        const pk = cols.find(c => c.includes('PRIMARY KEY'));
+        schemas.push(name + '(' + cols.join(', ') + ')');
+      }
+    }
+
+    // 2. Weak entities: table with FK to owner
+    for (const [name, entity] of this.entities) {
+      if (entity.isWeak) {
+        // Find the identifying relationship
+        const identifyingRel = this.relationships.find(
+          r => r.isIdentifying && r.entityPairs.some(p => p.entityName === name)
+        );
+        const owner = identifyingRel?.entityPairs.find(p => p.entityName !== name);
+        const cols = this.flattenAttributes(entity.attributes);
+        if (owner) {
+          cols.push(owner.entityName + '_id INTEGER NOT NULL');
+        }
+        schemas.push(name + '(' + cols.join(', ') + ', FK to ' + (owner?.entityName || '?') + ')');
+      }
+    }
+
+    // 3. M:N relationships: junction table with FKs to both entities
+    for (const rel of this.relationships) {
+      const pair0 = rel.entityPairs[0];
+      const pair1 = rel.entityPairs[1];
+      if (pair0.cardinality === Cardinality.MANY_TO_MANY) {
+        const fk1 = pair0.entityName + '_id INTEGER REFERENCES ' + pair0.entityName;
+        const fk2 = pair1.entityName + '_id INTEGER REFERENCES ' + pair1.entityName;
+        const relAttrs = this.flattenAttributes(rel.attributes);
+        schemas.push(rel.name + '(' + fk1 + ', ' + fk2 + ', ' + relAttrs.join(', ') + ', PRIMARY KEY (' + pair0.entityName + '_id, ' + pair1.entityName + '_id))');
+      }
+    }
+
+    return schemas;
+  }
+
+  private flattenAttributes(attrs: Attribute[], prefix = ''): string[] {
+    const cols: string[] = [];
+    for (const attr of attrs) {
+      const colName = prefix ? prefix + '_' + attr.name : attr.name;
+      switch (attr.type) {
+        case AttributeType.SIMPLE:
+        case AttributeType.KEY:
+          cols.push(colName + ' ' + (attr.type === AttributeType.KEY ? 'PRIMARY KEY' : 'VARCHAR(255)'));
+          break;
+        case AttributeType.COMPOSITE:
+          if (attr.subAttributes) {
+            cols.push(...this.flattenAttributes(attr.subAttributes, colName));
+          }
+          break;
+        case AttributeType.MULTIVALUED:
+          // Handled as a separate table elsewhere
+          cols.push('-- ' + colName + ' (stored in separate table)');
+          break;
+        case AttributeType.DERIVED:
+          cols.push('-- ' + colName + ' (computed, not stored)');
+          break;
+      }
+    }
+    return cols;
+  }
+
+  toString(): string {
+    let result = 'ER Model:\n';
+    result += 'Entities:\n';
+    for (const [name, entity] of this.entities) {
+      const weakTag = entity.isWeak ? ' [WEAK]' : '';
+      result += '  [' + name + ']' + weakTag + '\n';
+      for (const attr of entity.attributes) {
+        result += '    - ' + AttributeType[attr.type] + ': ' + attr.name + '\n';
+      }
+    }
+    result += 'Relationships:\n';
+    for (const rel of this.relationships) {
+      const pairs = rel.entityPairs.map(
+        p => p.entityName + ' (' + p.cardinality + ', ' + Participation[p.participation] + ')'
+      ).join(' - ');
+      result += '  [' + rel.name + '] ' + pairs + '\n';
+    }
+    return result;
+  }
+}
+
+// Demo: University ER Model
+const builder = new ERModelBuilder();
+
+builder.addEntity('Student', [
+  { name: 'student_id', type: AttributeType.KEY },
+  { name: 'name', type: AttributeType.SIMPLE },
+  { name: 'address', type: AttributeType.COMPOSITE, subAttributes: [
+    { name: 'street', type: AttributeType.SIMPLE },
+    { name: 'city', type: AttributeType.SIMPLE },
+    { name: 'zip', type: AttributeType.SIMPLE }
+  ]},
+  { name: 'phone', type: AttributeType.MULTIVALUED },
+  { name: 'age', type: AttributeType.DERIVED }
+]);
+
+builder.addEntity('Course', [
+  { name: 'course_id', type: AttributeType.KEY },
+  { name: 'title', type: AttributeType.SIMPLE },
+  { name: 'credits', type: AttributeType.SIMPLE }
+]);
+
+builder.addRelationship('Enrolls', [
+  { entityName: 'Student', cardinality: Cardinality.MANY_TO_MANY, participation: Participation.TOTAL },
+  { entityName: 'Course', cardinality: Cardinality.MANY_TO_MANY, participation: Participation.PARTIAL }
+], [{ name: 'grade', type: AttributeType.SIMPLE }]);
+
+console.log(builder.toString());
+console.log('Relational Schema:');
+builder.generateRelationalSchema().forEach(s => console.log('  ' + s));
+```
+
+**Mermaid Diagram: ER-to-Relational Mapping Decision Flow**
+
+```mermaid
+flowchart TD
+    Start[ER Construct] --> IsEntity{Is it an<br>entity type?}
+    
+    IsEntity -->|Yes| IsWeak{Is it weak?}
+    IsWeak -->|No| StrongTable[Create table<br>with PK = key attribute]
+    IsWeak -->|Yes| WeakTable[Create table with<br>composite PK = FK + discriminator]
+    
+    IsEntity -->|No| IsRel{Is it a<br>relationship?}
+    IsRel -->|Yes| Card{What is the<br>cardinality?}
+    
+    Card -->|1:1| OneToOne[Add FK to either<br>side with UNIQUE]
+    Card -->|1:N| OneToMany[Add FK to the<br>N-side table]
+    Card -->|M:N| ManyToMany[Create junction table<br>with composite PK]
+    
+    IsRel -->|No| IsAttr{Is it an<br>attribute?}
+    
+    IsAttr -->|Simple| AddCol[Add as column]
+    IsAttr -->|Composite| Flatten[Flatten into<br>multiple columns]
+    IsAttr -->|Multi-valued| NewTable[Create separate<br>table with FK]
+    IsAttr -->|Derived| Compute[Dont store;<br>compute on read]
+    IsAttr -->|Key| PKCol[Add as PK column]
+```
+
+### 2.14 ER-to-Relational Mapping Patterns
+
+| ER Construct | Mapping Strategy | SQL Pattern | Example |
+|-------------|-----------------|-------------|---------|
+| Strong Entity | Create table with PK | `CREATE TABLE student (id INT PK, name TEXT)` | Student, Course |
+| Weak Entity | Create table with FK composite PK | `CREATE TABLE dependent (emp_id INT, name TEXT, PK(emp_id, name), FK(emp_id) REFERENCES employee)` | Dependent, Line Item |
+| Simple Attribute | Column in table | `name VARCHAR(100)` | name, title |
+| Composite Attribute | Flattened columns | `address_street, address_city, address_zip` | Address |
+| Multi-valued Attribute | Separate child table | `CREATE TABLE student_phone (student_id INT FK, phone VARCHAR(20))` | Phone, Email |
+| Derived Attribute | Not stored; use view/computed column | `CREATE VIEW ... AS SELECT birth_date, AGE(birth_date) AS age` | Age, Experience |
+| 1:1 Relationship | FK + UNIQUE on either side | `ALTER TABLE employee ADD passport_id INT UNIQUE REFERENCES passport` | Manages, Leads |
+| 1:N Relationship | FK on N-side | `ALTER TABLE course ADD dept_id INT REFERENCES department` | Offered By, Belongs To |
+| M:N Relationship | Junction table | `CREATE TABLE enrollment (student_id INT, course_id INT, grade CHAR, PK(student_id, course_id))` | Enrolls, Registers |
+| Total Participation | NOT NULL on FK | `dept_id INT NOT NULL REFERENCES department` | Every student enrolled |
+| Partial Participation | NULL allowed on FK | `dept_id INT NULL REFERENCES department` | Optional course |
+| Identifying Relationship | FK in weak entity PK | `emp_id INT NOT NULL, PK(emp_id, dependent_name)` | Dependent Of |
+
+### Additional Chapter Quiz Questions
+
+13. Which of the following is true about weak entities?
+    a) They have their own primary key
+    b) They are identified by a combination of a FK to the owner entity and a discriminator
+    c) They cannot have any attributes
+    d) They always participate in identifying relationships
+
+14. A derived attribute is:
+    a) Stored in a separate child table
+    b) Computed from other attributes and not physically stored
+    c) Always used as a primary key
+    d) A multi-valued attribute
+
+15. In the ER-to-relational mapping, a composite attribute is:
+    a) Stored as a separate table
+    b) Flattened into multiple columns
+    c) Stored in a JSON column
+    d) Ignored because it cannot be mapped
+
+16. A ternary relationship is:
+    a) A relationship involving three entity types
+    b) A relationship between three instances of the same entity
+    c) A relationship that has three attributes
+    d) Three binary relationships
+
+17. The main problem with star schemas in ER diagrams (unnecessary use of M:N relationships) is:
+    a) They are too slow to query
+    b) They create redundant data and ambiguous semantics
+    c) They violate 1NF
+    d) They cannot be converted to relational tables
+
+18. A unary (recursive) relationship in ER is one where:
+    a) The relationship has no attributes
+    b) The relationship connects an entity to itself
+    c) The relationship has a single entity type
+    d) The relationship is weak
+
+**Answers:** 13-b, 14-b, 15-b, 16-a, 17-b, 18-b
+
+### Additional Exercises
+
+#### Basic (continued)
+
+13. Draw an ER diagram for a social media platform with the following requirements: Users can create posts; posts can have comments from users; users can like posts and comments; users can follow other users. Identify all entities, relationships, cardinalities, and participation constraints.
+
+14. Map the following ER constructs to SQL: (a) composite attribute, (b) multi-valued attribute, (c) weak entity, (d) M:N relationship, (e) 1:1 relationship with total participation on both sides.
+
+#### Intermediate (continued)
+
+15. Given the following requirements for a HOSPITAL management system:
+    - Patients are identified by patient_id and have name, address (composite), phone (multi-valued)
+    - Doctors are identified by doctor_id and have name, specialty, and salary
+    - A patient is treated by exactly one doctor (total participation)
+    - A doctor treats many patients (partial participation)
+    - Treatments are identified by treatment_id and have a date, diagnosis, and cost
+    - Each treatment is for exactly one patient and performed by exactly one doctor
+    
+    Draw the ER diagram and generate the complete relational schema. Include all FKs and constraints.
+
+16. Convert the ER diagram from Exercise 15 into a TypeScript implementation using the ERModelBuilder pattern shown in this chapter.
+
+#### Advanced (continued)
+
+17. Design an ER model for a FLIGHT BOOKING system that includes:
+    - Airlines, aircraft, airports, flights, passengers, bookings, seats
+    - Each flight uses one aircraft and operates between two airports
+    - A passenger can have multiple bookings; each booking has exactly one passenger
+    - Each booking is for one flight and includes one or more seats
+    - Include at least one weak entity and one composite attribute
+    - Map the design to relational schema with all constraints
+
+18. For the ER model created in Exercise 17, write a TypeScript validation function that:
+    - Verifies all entities are uniquely identified
+    - Checks that every relationship references existing entities
+    - Validates cardinality consistency (e.g., no entity has two conflicting relationships)
+    - Generates the corresponding SQL CREATE TABLE statements
+
+---
+
 ## Pro Tips
 ```
-1. **Always start with an ER diagram** before writing a single CREATE TABLE statement → it catches design flaws early and communicates structure to stakeholders.
-2. **Binary relationships cover 90% of real-world cases** → avoid ternary relationships unless all three entity types are genuinely independent; they often hide design problems.
-3. **Be precise with cardinality and participation** → confusing 1:N with M:N or total with partial participation leads to incorrect schemas that are expensive to fix later.
-4. **Weak entities are more common than you think** → line items on an invoice, dependents of an employee, and seat assignments on a flight are all weak entities.
-5. **Use Strategy B (separate tables) for generalization** → it preserves all constraints and handles overlapping subclasses cleanly, at the cost of more joins.
-6. **Name junction tables descriptively** → use entity_relationship names like `student_course` or `enrolls_in`, not `junction_table`.
-7. **Avoid fan traps by validating query paths** → before finalizing the schema, write sample queries for all common access patterns.
-8. **Document all assumptions** → cardinality decisions are often ambiguous in requirements; document why you chose each one.
+1. **Always start with an ER diagram** before writing a single CREATE TABLE statement â†’ it catches design flaws early and communicates structure to stakeholders.
+2. **Binary relationships cover 90% of real-world cases** â†’ avoid ternary relationships unless all three entity types are genuinely independent; they often hide design problems.
+3. **Be precise with cardinality and participation** â†’ confusing 1:N with M:N or total with partial participation leads to incorrect schemas that are expensive to fix later.
+4. **Weak entities are more common than you think** â†’ line items on an invoice, dependents of an employee, and seat assignments on a flight are all weak entities.
+5. **Use Strategy B (separate tables) for generalization** â†’ it preserves all constraints and handles overlapping subclasses cleanly, at the cost of more joins.
+6. **Name junction tables descriptively** â†’ use entity_relationship names like `student_course` or `enrolls_in`, not `junction_table`.
+7. **Avoid fan traps by validating query paths** â†’ before finalizing the schema, write sample queries for all common access patterns.
+8. **Document all assumptions** â†’ cardinality decisions are often ambiguous in requirements; document why you chose each one.
 ```
 ## One-Sentence Takeaways
 ```
@@ -2044,7 +2367,7 @@ CREATE TABLE faculty (
 - **2.3:** Attributes describe entity properties and can be simple/composite, single-valued/multi-valued, or stored/derived.
 - **2.4:** Relationships connect entities with specified degree (unary, binary, ternary) and cardinality constraints (1:1, 1:N, M:N).
 - **2.5:** Weak entities depend on owner entities for their identity and combine an owner's key with a discriminator.
-- **2.6:** ER diagrams use standard symbols → rectangles for entities, diamonds for relationships, ellipses for attributes.
+- **2.6:** ER diagrams use standard symbols â†’ rectangles for entities, diamonds for relationships, ellipses for attributes.
 - **2.7:** Generalization creates a superclass from subclasses; specialization creates subclasses from a superclass.
 - **2.8:** ER-to-relational mapping converts conceptual designs into implementable SQL schemas using systematic rules.
 ```
@@ -2098,7 +2421,7 @@ CREATE TABLE faculty (
 |-----------|-----------|----------------|
 | **Weak Entities** | Invoicing, flight booking, payroll | Line items, seat assignments, dependents need parent |
 | **1:N Relationships** | Almost every business domain | Customers->Orders, Departments->Employees, Authors->Books |
-| **M:N Relationships** | Students->Courses, Products->Orders | Junction tables required → common source of errors |
+| **M:N Relationships** | Students->Courses, Products->Orders | Junction tables required â†’ common source of errors |
 | **Generalization** | Employee types, account types, media | Models inheritance: savings/checking, full-time/contract |
 | **Multi-valued Attributes** | Phone numbers, skills, tags | Never store as comma-separated strings |
 | **Total Participation** | Mandatory relationships | Ensures data completeness |

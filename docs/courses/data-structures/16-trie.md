@@ -1228,11 +1228,216 @@ def search(self, word: str) -> bool:
 | URL router (web framework) | Path prefix matching |
 | T9 predictive text | Map digit sequences to words |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **Trie search time depends on:**
-   - a) Number of stored strings
-   - b) String length
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Confusing trie search with hash table search | Trie search is O(key_length) regardless of collisions; hash table is O(1) average | Use trie when prefix search or ordered keys matter; hash table for pure existence |
+| Not handling empty string as a valid key | Empty string terminates at root; root needs an `isEndOfWord` flag | Set `root.isEndOfWord = true` if empty string is valid |
+| Forgetting to free/deallocate children recursively (in low-level languages) | Only deleting the root leaks all child nodes | Recursively delete children in destructor; or use smart pointers |
+| Using arrays for children (wasteful for large alphabets) | Array of 26 for English fine, but 256 ASCII or 1114112 Unicode is huge | Use hash map or array-of-pointers with null checks; for Unicode use Map or ternary search tree |
+| Trie for sparse keysets wastes memory | Most nodes have only 1-2 children, but array allocates space for full alphabet | Use a compressed trie/radix tree or ternary search tree for sparse data |
+| Not marking isEndOfWord correctly during deletion | Decrementing counts without checking leaf status leaves stale flags | Only clear isEndOfWord when no children remain and it's not a prefix of another word |
+| Ternary search tree confusion with trie | TST saves memory but has O(log n) search vs trie O(k) | TST = hybrid, each node has 3 children (less/same/more). Use for sparse, trie for dense |
+
+### TypeScript Trie Implementation
+
+```typescript
+class TrieNode {
+    children: Map<string, TrieNode> = new Map();
+    isEndOfWord: boolean = false;
+    frequency: number = 0; // for prefix counting
+}
+
+class Trie {
+    private root: TrieNode = new TrieNode();
+
+    insert(word: string): void {
+        let node = this.root;
+        for (const ch of word) {
+            if (!node.children.has(ch)) {
+                node.children.set(ch, new TrieNode());
+            }
+            node = node.children.get(ch)!;
+            node.frequency++; // count prefix occurrences
+        }
+        node.isEndOfWord = true;
+    }
+
+    search(word: string): boolean {
+        const node = this._traverse(word);
+        return node !== null && node.isEndOfWord;
+    }
+
+    startsWith(prefix: string): boolean {
+        return this._traverse(prefix) !== null;
+    }
+
+    countPrefix(prefix: string): number {
+        const node = this._traverse(prefix);
+        return node ? node.frequency : 0;
+    }
+
+    delete(word: string): boolean {
+        return this._delete(this.root, word, 0);
+    }
+
+    private _delete(node: TrieNode, word: string, depth: number): boolean {
+        if (depth === word.length) {
+            if (!node.isEndOfWord) return false;
+            node.isEndOfWord = false;
+            return node.children.size === 0;
+        }
+        const ch = word[depth];
+        const child = node.children.get(ch);
+        if (!child) return false;
+        
+        const shouldDelete = this._delete(child, word, depth + 1);
+        if (shouldDelete) {
+            node.children.delete(ch);
+            return node.children.size === 0 && !node.isEndOfWord;
+        }
+        return false;
+    }
+
+    private _traverse(prefix: string): TrieNode | null {
+        let node = this.root;
+        for (const ch of prefix) {
+            if (!node.children.has(ch)) return null;
+            node = node.children.get(ch)!;
+        }
+        return node;
+    }
+
+    // Auto-complete: find all words with given prefix
+    autoComplete(prefix: string): string[] {
+        const node = this._traverse(prefix);
+        if (!node) return [];
+        const results: string[] = [];
+        this._collectWords(node, prefix, results);
+        return results;
+    }
+
+    private _collectWords(node: TrieNode, prefix: string, results: string[]): void {
+        if (node.isEndOfWord) results.push(prefix);
+        for (const [ch, child] of node.children) {
+            this._collectWords(child, prefix + ch, results);
+        }
+    }
+
+    // Find longest common prefix among all words
+    longestCommonPrefix(): string {
+        let node = this.root;
+        let prefix = '';
+        while (node.children.size === 1 && !node.isEndOfWord) {
+            const [ch, child] = node.children.entries().next().value;
+            prefix += ch;
+            node = child;
+        }
+        return prefix;
+    }
+}
+
+// Word search in a grid using Trie (LC 212)
+function findWords(board: string[][], words: string[]): string[] {
+    const trie = new Trie();
+    for (const w of words) trie.insert(w);
+    const result = new Set<string>();
+    const dirs = [[0,1],[0,-1],[1,0],[-1,0]];
+    
+    function dfs(r: number, c: number, node: TrieNode, path: string): void {
+        if (node.isEndOfWord) result.add(path);
+        if (r < 0 || r >= board.length || c < 0 || c >= board[0].length) return;
+        const ch = board[r][c];
+        const child = node.children.get(ch);
+        if (!child) return;
+        
+        board[r][c] = '#'; // mark visited
+        for (const [dr, dc] of dirs) dfs(r + dr, c + dc, child, path + ch);
+        board[r][c] = ch; // restore
+    }
+    
+    for (let r = 0; r < board.length; r++) {
+        for (let c = 0; c < board[0].length; c++) {
+            dfs(r, c, trie['root'], '');
+        }
+    }
+    return [...result];
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+8. **What is the space complexity of a trie storing n strings of average length L over an alphabet of size A?**
+   - a) O(n)
+   - b) O(nL)
+   - c) O(nL × A) ✓ (worst-case: each char creates A children)
+   - d) O(A)
+
+9. **A ternary search tree (TST) node stores:**
+   - a) One character and three child pointers ✓
+   - b) Three characters and one pointer
+   - c) A character array
+   - d) A hash map
+
+10. **The number of nodes in a trie for the set {a, aa, aaa, ..., a^k} is:**
+    - a) k
+    - b) k(k+1)/2 ✓
+    - c) 2^k
+    - d) k²
+
+11. **Trie is preferred over hash set when:**
+    - a) Memory is the primary concern
+    - b) Prefix queries are frequent ✓
+    - c) Insert order must be preserved
+    - d) The key set is small
+
+12. **A compressed trie (radix tree) compresses:**
+    - a) Leaf nodes into arrays
+    - b) Chains of single-child nodes into a single node ✓
+    - c) All nodes into a hash map
+    - d) Characters into bits
+
+13. **In the word search II problem (LC 212), using a trie reduces time complexity from:**
+    - a) O(k × m × n) to O(k)
+    - b) O(m × n × 4^L) to O(m × n × 4^L) with pruning ✓ (trie prunes search)
+    - c) O(L²) to O(L)
+    - d) O(k log k) to O(k)
+
+**Answers:** 8-c, 9-a, 10-b, 11-b, 12-b, 13-b
+
+### Additional Exercises (GFG Pattern)
+
+11. **Replace words (LC 648)**: Given a dictionary of roots and a sentence, replace all words with their shortest root prefix. Use a trie.
+
+12. **Longest word in dictionary (LC 720)**: Find the longest word that can be built one character at a time from other words in a dictionary.
+
+13. **Map sum pairs (LC 677)**: Design a map that supports `insert(key, val)` and `sum(prefix)` returning sum of all values of keys starting with the prefix.
+
+14. **Palindrome pairs (LC 336)**: Given a list of words, find all pairs of distinct indices (i, j) such that words[i] + words[j] is a palindrome. Use trie + reverse lookup.
+
+15. **Stream of characters (LC 1032)**: Design a data structure that supports `query(letter)` returning true if any previously seen word suffix matches. Use a reversed trie.
+
+16. **Design search autocomplete system (LC 642)**: Design a system that suggests top-3 sentences given a prefix, based on previous query frequencies.
+
+17. **Extract all words matching a wildcard pattern**: Given a trie and a pattern with '?' wildcard, return all words matching the pattern.
+
+18. **Phone directory with trie**: Given a list of contacts and a phone number string, suggest all contacts matching the prefix as digits are typed.
+
+19. **Maximum XOR of two numbers in an array (LC 421)**: Use a binary trie to find two numbers whose XOR is maximum.
+
+### Trie Variants Comparison
+
+| Variant | Node Structure | Space | Search Time | Use Case |
+|---------|---------------|-------|-------------|----------|
+| Standard Trie | Array of A pointers | O(nL × A) | O(L) | Dense alphabets, small A |
+| Hash-map based Trie | Map<char, node> | O(nL) | O(L) | Unicode, sparse keys |
+| Compressed Trie (Radix Tree) | String + children | O(n) | O(L) | IP routing, longest prefix |
+| Ternary Search Tree | 3 child pointers | O(n) | O(L + log n) | Sparse keys, memory-limited |
+| Suffix Trie | Pointer to suffix | O(n²) | O(L) | String matching |
+| Patricia Trie | Bit-level indexing | Compact | O(L) | IP routing, memory-constrained |
    - c) Hash function
    - d) Tree height
 

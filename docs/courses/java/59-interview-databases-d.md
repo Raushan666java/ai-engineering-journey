@@ -504,15 +504,243 @@ public String getEmail(User u) {
 
 Never rename or drop columns without a multi-phase migration. Never make columns NOT NULL without backfilling data first. Test rollbacks on a staging database that mirrors production volume.
 
+---
+
+### Q27: What is the `@Version` annotation and how does it prevent lost updates?
+
+**Answer:**
+
+`@Version` enables optimistic locking in JPA. Hibernate checks the version field on every update — if another transaction modified the row concurrently, an `OptimisticLockException` is thrown.
+
+```java
+@Entity
+@Table(name = "inventory")
+public class InventoryItem {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false)
+    private int quantity;
+
+    @Version
+    private long version;  // Starts at 0, incremented on each update
+}
+
+// Scenario: Two concurrent requests deduct stock
+//
+// Time  | Transaction A                    | Transaction B
+// ------|----------------------------------|----------------------------------
+// T1    | read item (version=0, qty=10)    |
+// T2    |                                  | read item (version=0, qty=10)
+// T3    | setQty(10-3=7)                   |
+// T4    | flush → UPDATE SET qty=7,        |
+//       |   version=1 WHERE version=0      |
+//       |   → success (1 row updated)      |
+// T5    |                                  | setQty(10-5=5)
+// T6    |                                  | flush → UPDATE SET qty=5,
+//       |                                  |   version=1 WHERE version=0
+//       |                                  |   → OptimisticLockException!
+//       |                                  |   (0 rows updated — version mismatch)
+//
+// Transaction B's update affects 0 rows → Hibernate throws OptimisticLockException
+```
+
+**Important behaviors:**
+- `@Version` works with `int`, `Integer`, `long`, `Long`, `short`, `Short`, `java.sql.Timestamp`
+- Version is checked on every entity update (INSERT sets version=0; UPDATE increments)
+- Version is NOT checked on reads — only on write operations
+- OptimisticLockException is a `org.hibernate.StaleObjectStateException` (extends `PessimisticLockException`)
+
+**Retry strategy:**
+
+```java
+@Service
+public class InventoryService {
+
+    @Transactional
+    public void deductStock(Long itemId, int quantity) {
+        for (int attempt = 1; attempt <= 3; attempt++) {
+            try {
+                InventoryItem item = repo.findById(itemId).orElseThrow();
+                if (item.getQuantity() < quantity) {
+                    throw new InsufficientStockException();
+                }
+                item.setQuantity(item.getQuantity() - quantity);
+                return;  // Success — exit retry loop
+            } catch (OptimisticLockException e) {
+                if (attempt == 3) throw e;  // Max retries exceeded
+                // Sleep with exponential backoff before retry
+                Thread.sleep(50L * attempt);
+            }
+        }
+    }
+}
+```
+
+---
+
+### Q28: What is a `@ManyToOne` relationship's default fetch type and why is it problematic?
+
+**Answer:**
+
+`@ManyToOne` defaults to `FetchType.EAGER`. This is problematic because:
+
+1. **Every query for the owning entity joins the parent table**, even when you don't need it
+2. **Multiple EAGER associations can cause Cartesian products** — pulling in 3+ joined tables
+3. **Circular EAGER loading** can cause infinite recursion if two entities eagerly load each other
+4. **N+1 with a twist** — EAGER loading via separate SELECT (not JOIN) can cause N+1 for collection-style queries
+
+```java
+// ❌ WRONG: Default EAGER on @ManyToOne (3 eager fetches)
+@Entity
+public class Order {
+
+    @ManyToOne  // EAGER by default!
+    private Customer customer;
+
+    @ManyToOne  // EAGER by default!
+    private Address shippingAddress;
+
+    @ManyToOne  // EAGER by default!
+    private PaymentMethod paymentMethod;
+}
+
+// FindAll generates this cartesian join:
+// SELECT o.*, c.*, a.*, p.*
+// FROM orders o
+//   LEFT JOIN customers c ON o.customer_id = c.id
+//   LEFT JOIN addresses a ON o.shipping_address_id = a.id
+//   LEFT JOIN payment_methods p ON o.payment_method_id = p.id
+```
+
+**Fix: Always override to LAZY:**
+
+```java
+@Entity
+public class Order {
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "shipping_address_id")
+    private Address shippingAddress;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "payment_method_id")
+    private PaymentMethod paymentMethod;
+}
+
+// Then use JOIN FETCH or EntityGraph when you actually need the parent
+@Query("SELECT o FROM Order o JOIN FETCH o.customer WHERE o.id = :id")
+Optional<Order> findByIdWithCustomer(@Param("id") Long id);
+```
+
+---
+
+## Common Mistakes in JPA Entity Design (GFG-Style)
+
+### Mistake 1: Circular references in bidirectional relationships
+```java
+// ❌ WRONG: Both sides eager-load each other → infinite loop on serialization
+@Entity
+public class User {
+    @OneToMany(mappedBy = "user")
+    private List<Order> orders;  // LAZY by default — fine
+}
+
+@Entity
+public class Order {
+    @ManyToOne(fetch = FetchType.EAGER)  // ❌ EAGER loads User → which loads Orders...
+    private User user;
+}
+
+// ✅ CORRECT: LAZY on both sides, use DTO or @JsonIgnore for serialization
+@Entity
+public class Order {
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    @JsonIgnore  // Prevent circular JSON serialization
+    private User user;
+}
+```
+
+### Mistake 2: Using `List` on the Many side of OneToMany
+```java
+// ❌ WRONG: List on @OneToMany can cause Hibernate to delete all and re-insert
+@OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+private List<Child> children = new ArrayList<>();
+// Hibernate removes ALL children and re-inserts the ones still in the list
+// on every collection modification!
+
+// ✅ CORRECT: Use Set for @OneToMany to avoid delete+reinsert
+@OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true)
+private Set<Child> children = new HashSet<>();
+```
+
+### Mistake 3: Forgetting `fetch = FetchType.LAZY` on @ToOne associations
+```properties
+# Best practice: Make LAZY the global default
+spring.jpa.properties.hibernate.default_batch_fetch_size=25
+```
+
+```java
+// Hibernate 6 can make all associations LAZY globally
+// In application.properties:
+// spring.jpa.properties.hibernate.default_eager_fetch_strategy=LAZY
+```
+
+---
+
+## Effective vs Unoptimized JPA Query Comparison
+
+| Pattern | Generated SQL | Round-trips | Memory | Use Case |
+|---------|-------------|-------------|--------|----------|
+| EAGER @ManyToOne | LEFT JOIN on every query | 1 | High — loads all parents | ❌ Avoid |
+| LAZY + JOIN FETCH | Single LEFT JOIN when needed | 1 per query | Medium — data you need | ✅ Best for specific fetches |
+| LAZY + @BatchSize | WHERE fk IN (...) in batches | N/25 | Low — loaded on demand | ✅ Good default |
+| DTO projection | SELECT specific columns only | 1 | Low — only needed data | ✅ Best for reads |
+| Entity + OSIV | Individual SELECT per access | N+1 | High — full entities | ❌ Production anti-pattern |
+
+## Chapter Quiz — Database (Part 5)
+
+4. What does the `@Version` annotation protect against?
+    - A) SQL injection
+    - B) Lost updates from concurrent transactions
+    - C) Database deadlocks
+    - D) Connection leaks
+
+<details>
+<summary>Answer</summary>
+**B) Lost updates.** `@Version` implements optimistic locking — if two transactions read the same entity and both try to update it, the second one to commit gets an `OptimisticLockException` because the version has incremented.
+</details>
+
+5. What is the default fetch type of `@ManyToOne`?
+    - A) LAZY
+    - B) EAGER
+    - C) AUTO
+    - D) DEFAULT
+
+<details>
+<summary>Answer</summary>
+**B) EAGER.** `@ManyToOne` and `@OneToOne` default to EAGER. This is widely considered a design flaw — always override to LAZY and fetch explicitly via JOIN FETCH or EntityGraph.
+</details>
+
+6. Why is `List` problematic for `@OneToMany` relationships?
+    - A) Lists cannot be sorted
+    - B) Hibernate may delete all children and re-insert on modification
+    - C) Lists cannot be lazy-loaded
+    - D) Lists cause N+1 queries
+
+<details>
+<summary>Answer</summary>
+**B) Hibernate may delete all children and re-insert.** With `List`, Hibernate compares old and new collections, potentially removing all rows and re-inserting the remaining ones. `Set` avoids this because Hibernate tracks individual element changes.
+</details>
+
 ## Concept Comparison Table
-
-| Concept | Definition | Key Distinction | Use Case |
-|---------|-----------|-----------------|----------|
-| Interface | Contract without state | Multiple inheritance of type | API contracts |
-| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
-| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
-
-## Quick Reference
 
 | Topic | Key Points | Interview Frequency |
 |-------|-----------|-------------------|

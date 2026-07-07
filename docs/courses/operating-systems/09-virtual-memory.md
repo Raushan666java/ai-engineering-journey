@@ -2833,6 +2833,285 @@ int main() {
    - c) The entire address space
    - d) Pages in the TLB
 
+### TypeScript Virtual Memory Simulator
+
+The following TypeScript implementation models demand paging, FIFO/LRU/Optimal page replacement, working set tracking, and thrashing detection:
+
+```typescript
+/**
+ * Virtual Memory Simulator
+ * Implements: demand paging, FIFO/LRU/Optimal page replacement,
+ *             working set model, thrashing detection, Belady's anomaly
+ */
+class PageReplacementSimulator {
+  private frames: number[];
+  private capacity: number;
+  private pageFaults = 0;
+  private pageHits = 0;
+  private accessCount = 0;
+
+  constructor(capacity: number) {
+    this.capacity = capacity;
+    this.frames = [];
+  }
+
+  fifo(referenceString: number[]): number {
+    this.frames = [];
+    this.pageFaults = 0;
+    this.pageHits = 0;
+    this.accessCount = 0;
+    let queue: number[] = [];
+    
+    for (const page of referenceString) {
+      this.accessCount++;
+      if (this.frames.includes(page)) {
+        this.pageHits++;
+        continue;
+      }
+
+      this.pageFaults++;
+      if (this.frames.length < this.capacity) {
+        this.frames.push(page);
+        queue.push(page);
+      } else {
+        const evicted = queue.shift()!;
+        const idx = this.frames.indexOf(evicted);
+        this.frames[idx] = page;
+        queue.push(page);
+      }
+    }
+    return this.pageFaults;
+  }
+
+  lru(referenceString: number[]): number {
+    this.frames = [];
+    this.pageFaults = 0;
+    this.pageHits = 0;
+    this.accessCount = 0;
+    const indices = new Map<number, number>();
+
+    for (let i = 0; i < referenceString.length; i++) {
+      const page = referenceString[i];
+      this.accessCount++;
+
+      if (this.frames.includes(page)) {
+        this.pageHits++;
+        indices.set(page, i);
+        continue;
+      }
+
+      this.pageFaults++;
+      if (this.frames.length < this.capacity) {
+        this.frames.push(page);
+        indices.set(page, i);
+      } else {
+        let lruPage = this.frames[0];
+        let lruTime = indices.get(lruPage) ?? Infinity;
+        for (const fp of this.frames) {
+          const time = indices.get(fp) ?? Infinity;
+          if (time < lruTime) {
+            lruTime = time;
+            lruPage = fp;
+          }
+        }
+        const idx = this.frames.indexOf(lruPage);
+        this.frames[idx] = page;
+        indices.delete(lruPage);
+        indices.set(page, i);
+      }
+    }
+    return this.pageFaults;
+  }
+
+  optimal(referenceString: number[]): number {
+    this.frames = [];
+    this.pageFaults = 0;
+    this.pageHits = 0;
+    this.accessCount = 0;
+
+    for (let i = 0; i < referenceString.length; i++) {
+      const page = referenceString[i];
+      this.accessCount++;
+
+      if (this.frames.includes(page)) {
+        this.pageHits++;
+        continue;
+      }
+
+      this.pageFaults++;
+      if (this.frames.length < this.capacity) {
+        this.frames.push(page);
+      } else {
+        let evictPage = this.frames[0];
+        let farthestDist = -1;
+
+        for (const fp of this.frames) {
+          const nextUse = referenceString.indexOf(fp, i + 1);
+          const dist = nextUse === -1 ? Infinity : nextUse - i;
+          if (dist > farthestDist) {
+            farthestDist = dist;
+            evictPage = fp;
+          }
+        }
+
+        const idx = this.frames.indexOf(evictPage);
+        this.frames[idx] = page;
+      }
+    }
+    return this.pageFaults;
+  }
+
+  getFaultRate(): number {
+    return this.accessCount > 0 ? this.pageFaults / this.accessCount : 0;
+  }
+
+  printSummary(): void {
+    console.log(`Page faults: ${this.pageFaults}, Hits: ${this.pageHits}, ` +
+      `Fault rate: ${(this.getFaultRate() * 100).toFixed(2)}%`);
+  }
+}
+
+class WorkingSetModel {
+  private window: number[] = [];
+  private windowSize: number;
+  private workingSet: Set<number> = new Set();
+  private pageFaults = 0;
+  private thrashed = false;
+
+  constructor(windowSize: number) {
+    this.windowSize = windowSize;
+  }
+
+  access(page: number): void {
+    this.window.push(page);
+    if (this.window.length > this.windowSize) {
+      const removed = this.window.shift()!;
+      if (!this.window.includes(removed)) {
+        this.workingSet.delete(removed);
+      }
+    }
+
+    if (!this.workingSet.has(page)) {
+      this.pageFaults++;
+      this.workingSet.add(page);
+    }
+
+    if (this.workingSet.size > 10) {
+      this.thrashed = true;
+    }
+  }
+
+  getWorkingSetSize(): number { return this.workingSet.size; }
+  isThrashing(): boolean { return this.thrashed; }
+}
+
+// Compare page replacement algorithms
+const refString = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1];
+const capacities = [3, 4, 5];
+
+console.log('=== Page Replacement Comparison ===');
+for (const cap of capacities) {
+  const fifo = new PageReplacementSimulator(cap);
+  const lru = new PageReplacementSimulator(cap);
+  const opt = new PageReplacementSimulator(cap);
+
+  console.log(`\n--- Frames = ${cap} ---`);
+  console.log('FIFO:', fifo.fifo(refString), 'faults');
+  console.log('LRU:', lru.lru(refString), 'faults');
+  console.log('OPT:', opt.optimal(refString), 'faults');
+}
+
+// Belady's anomaly demonstration
+console.log('\n=== Belady\'s Anomaly ===');
+const refPattern = [1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5];
+for (let cap = 1; cap <= 6; cap++) {
+  const f = new PageReplacementSimulator(cap);
+  const faults = f.fifo(refPattern);
+  console.log(`FIFO with ${cap} frames: ${faults} faults`);
+}
+```
+
+### Numerical Examples
+
+#### Page Replacement Trace (LRU with 4 frames)
+
+**Reference string:** 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1
+
+| Ref | Frames (LRU order) | Hit/Fault |
+|-----|-------------------|-----------|
+| 7   | [7]               | F         |
+| 0   | [7, 0]            | F         |
+| 1   | [7, 0, 1]         | F         |
+| 2   | [7, 0, 1, 2]      | F         |
+| 0   | [7, 1, 2, 0]      | H         |
+| 3   | [1, 2, 0, 3]      | F         |
+| 0   | [1, 2, 3, 0]      | H         |
+| 4   | [2, 3, 0, 4]      | F         |
+| 2   | [3, 0, 4, 2]      | H         |
+| 3   | [0, 4, 2, 3]      | H         |
+| 0   | [4, 2, 3, 0]      | H         |
+| ... | **Total: 8 faults** |           |
+
+#### Belady's Anomaly with FIFO
+
+**Reference string:** [1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5]
+
+| Frames | FIFO Faults | Notes |
+|--------|-------------|-------|
+| 1      | 12          | Every reference faults |
+| 2      | 11          | Minimal capacity |
+| 3      | 9           | Better |
+| **4**  | **10**      | **More faults than 3 frames!** |
+| 5      | 5           | Finally fits |
+| 6      | 5           | Same |
+
+### Additional Chapter Quiz Questions
+
+9. What is the minimum number of frames required for a process with 5 virtual pages to guarantee no thrashing under pure demand paging?
+   - a) 1
+   - b) 2
+   - c) 5
+   - d) Depends on page size and reference pattern
+
+10. The working set model prevents thrashing by:
+    - a) Increasing page size dynamically
+    - b) Ensuring each process has at least as many frames as its working set size
+    - c) Using larger TLBs
+    - d) Reducing the degree of multiprogramming
+
+11. What is **Zero-Fill-On-Demand**?
+    - a) Pre-zeroing pages during process creation
+    - b) Keeping a pool of pre-zeroed frames for demand paging
+    - c) Zeroing pages during swap-in
+    - d) Compressing zero-filled pages to save swap space
+
+12. What happens in the **swap-out** step of page fault handling?
+    - a) The faulted page is read from disk
+    - b) A victim frame is selected and written to swap space if dirty
+    - c) The page table is updated immediately
+    - d) The TLB is flushed
+
+13. Which page replacement policy uses reference and dirty bits to classify pages into four classes?
+    - a) FIFO
+    - b) LRU
+    - c) Second Chance (Clock)
+    - d) NRU (Not Recently Used)
+
+**Answers:** 9-d, 10-b, 11-b, 12-b, 13-d
+
+### Additional Exercises
+
+#### Basic
+14. Given the reference string [0, 2, 1, 3, 5, 4, 6, 3, 0, 2, 1, 4, 0, 2] with 3 frames, compute page faults for FIFO, LRU, and Optimal. Which algorithm has the fewest faults?
+
+#### Intermediate
+15. Write a TypeScript program that simulates the **Clock (Second Chance)** page replacement algorithm. Use a circular list of frames with reference bits. Process a reference string of 30 random pages with 4 frames. Show the frame state after each access, identifying which frames are "second chance" candidates.
+16. Implement the **Aging** LRU approximation algorithm in TypeScript. Use an 8-bit counter per frame that is shifted right and ORed with the reference bit on each clock tick. Compare fault counts against exact LRU on a reference string of 50 accesses.
+
+#### Advanced
+17. Implement the **Page Fault Frequency (PFF)** algorithm that dynamically adjusts frame allocation. Track page fault rate per 100 accesses. If the fault rate exceeds 5%, allocate an additional frame. If it drops below 1%, deallocate a frame. Demonstrate that PFF prevents thrashing by simulating a process that suddenly expands its working set.
+18. Write a TypeScript simulation comparing **local vs. global page replacement** with two co-running processes. In local replacement, each process replaces within its allocated frames. In global replacement, they compete for all frames. Show that global replacement can cause one process to steal frames from another, potentially inducing thrashing.
+
 ## Summary
 
 - Virtual memory decouples logical address space from physical memory via demand paging

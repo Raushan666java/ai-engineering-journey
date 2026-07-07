@@ -1168,11 +1168,305 @@ void sortNearlySorted(std::vector<int>& arr, int k) {
 - Decrease key enables Dijkstra and Prim's algorithms.
 - Binary heap is the practical choice over Fibonacci/binomial heaps for nearly all applications.
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the time complexity of building a heap from an array?**
-   - a) O(n log n)
-   - b) O(n) âœ“
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Using 0-based indexing but computing children as 2i+2 instead of 2i+1 for right child | Wrong child index leads to out-of-bounds access or missing elements | Left = 2i+1, Right = 2i+2, Parent = ⌊(i-1)/2⌋ for 0-based |
+| Heapify only at root instead of bottom-up from last non-leaf | Single heapify call cannot propagate violations from deeper levels | Call heapify from index ⌊n/2⌋-1 down to 0 for buildHeap |
+| Forgetting to float up (bubble up) during heap insert | Inserting at the end and not heapifying up leaves heap property broken | While new element > parent, swap (for max-heap) |
+| Confusing min-heap and max-heap comparator direction | Using `<` instead of `>` swaps the heap type entirely | For max-heap: parent ≥ children; for min-heap: parent ≤ children |
+| Heap sort: building heap correctly but forgetting to reduce heap size during extraction | Sorted portion overwrites unsorted elements | After swapping root with last, call heapify on reduced range [0, i-1] |
+| Implementing decreaseKey without sifting up | Decreasing a key may make it smaller than its parent (min-heap) → violation | After decreasing key, sift up toward root |
+| Not handling duplicate values correctly in heap | Extract/delete operations may leave wrong element at root | Stabilize by also tracking insertion order or index |
+
+### TypeScript Heap Implementation
+
+```typescript
+class MinHeap {
+    private heap: number[] = [];
+
+    private parent(i: number): number { return Math.floor((i - 1) / 2); }
+    private left(i: number): number { return 2 * i + 1; }
+    private right(i: number): number { return 2 * i + 2; }
+
+    private swap(i: number, j: number): void {
+        [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]];
+    }
+
+    insert(val: number): void {
+        this.heap.push(val);
+        this.siftUp(this.heap.length - 1);
+    }
+
+    private siftUp(i: number): void {
+        while (i > 0 && this.heap[this.parent(i)] > this.heap[i]) {
+            this.swap(i, this.parent(i));
+            i = this.parent(i);
+        }
+    }
+
+    extractMin(): number | undefined {
+        if (this.heap.length === 0) return undefined;
+        if (this.heap.length === 1) return this.heap.pop();
+        const min = this.heap[0];
+        this.heap[0] = this.heap.pop()!;
+        this.siftDown(0);
+        return min;
+    }
+
+    private siftDown(i: number): void {
+        const n = this.heap.length;
+        let smallest = i;
+        const l = this.left(i);
+        const r = this.right(i);
+        if (l < n && this.heap[l] < this.heap[smallest]) smallest = l;
+        if (r < n && this.heap[r] < this.heap[smallest]) smallest = r;
+        if (smallest !== i) {
+            this.swap(i, smallest);
+            this.siftDown(smallest);
+        }
+    }
+
+    buildHeap(arr: number[]): void {
+        this.heap = [...arr];
+        for (let i = Math.floor(this.heap.length / 2) - 1; i >= 0; i--) {
+            this.siftDown(i);
+        }
+    }
+
+    peek(): number | undefined { return this.heap[0]; }
+    size(): number { return this.heap.length; }
+    isEmpty(): boolean { return this.heap.length === 0; }
+}
+
+class MaxHeap {
+    private heap: number[] = [];
+
+    private parent(i: number): number { return Math.floor((i - 1) / 2); }
+    private left(i: number): number { return 2 * i + 1; }
+    private right(i: number): number { return 2 * i + 2; }
+
+    private swap(i: number, j: number): void {
+        [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]];
+    }
+
+    insert(val: number): void {
+        this.heap.push(val);
+        this.siftUp(this.heap.length - 1);
+    }
+
+    private siftUp(i: number): void {
+        while (i > 0 && this.heap[this.parent(i)] < this.heap[i]) {
+            this.swap(i, this.parent(i));
+            i = this.parent(i);
+        }
+    }
+
+    extractMax(): number | undefined {
+        if (this.heap.length === 0) return undefined;
+        if (this.heap.length === 1) return this.heap.pop();
+        const max = this.heap[0];
+        this.heap[0] = this.heap.pop()!;
+        this.siftDown(0);
+        return max;
+    }
+
+    private siftDown(i: number): void {
+        const n = this.heap.length;
+        let largest = i;
+        const l = this.left(i);
+        const r = this.right(i);
+        if (l < n && this.heap[l] > this.heap[largest]) largest = l;
+        if (r < n && this.heap[r] > this.heap[largest]) largest = r;
+        if (largest !== i) {
+            this.swap(i, largest);
+            this.siftDown(largest);
+        }
+    }
+
+    buildHeap(arr: number[]): void {
+        this.heap = [...arr];
+        for (let i = Math.floor(this.heap.length / 2) - 1; i >= 0; i--) {
+            this.siftDown(i);
+        }
+    }
+
+    peek(): number | undefined { return this.heap[0]; }
+    size(): number { return this.heap.length; }
+    isEmpty(): boolean { return this.heap.length === 0; }
+}
+
+// Heap Sort
+function heapSort(arr: number[]): number[] {
+    const heap = new MaxHeap();
+    heap.buildHeap(arr);
+    const result: number[] = [];
+    while (heap.size() > 0) {
+        result.push(heap.extractMax()!);
+    }
+    return result;
+}
+
+// Priority Queue with generics
+class PriorityQueue<T> {
+    private heap: { priority: number; item: T }[] = [];
+
+    enqueue(item: T, priority: number): void {
+        this.heap.push({ priority, item });
+        this.siftUp(this.heap.length - 1);
+    }
+
+    dequeue(): T | undefined {
+        if (this.heap.length === 0) return undefined;
+        if (this.heap.length === 1) return this.heap.pop()!.item;
+        const min = this.heap[0].item;
+        this.heap[0] = this.heap.pop()!;
+        this.siftDown(0);
+        return min;
+    }
+
+    private siftUp(i: number): void {
+        const p = (i) => Math.floor((i - 1) / 2);
+        const heap = this.heap;
+        while (i > 0 && heap[p(i)].priority > heap[i].priority) {
+            [heap[i], heap[p(i)]] = [heap[p(i)], heap[i]];
+            i = p(i);
+        }
+    }
+
+    private siftDown(i: number): void {
+        const n = this.heap.length;
+        const heap = this.heap;
+        let smallest = i;
+        const l = 2 * i + 1;
+        const r = 2 * i + 2;
+        if (l < n && heap[l].priority < heap[smallest].priority) smallest = l;
+        if (r < n && heap[r].priority < heap[smallest].priority) smallest = r;
+        if (smallest !== i) {
+            [heap[i], heap[smallest]] = [heap[smallest], heap[i]];
+            this.siftDown(smallest);
+        }
+    }
+
+    isEmpty(): boolean { return this.heap.length === 0; }
+    size(): number { return this.heap.length; }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+8. **What is the index of the right child of node at index 3 in a 0-based heap?**
+   - a) 6
+   - b) 7 ✓ (2*3 + 2 = 8... wait. 2*3+2 = 8). Let me recalculate. Right child = 2i + 2 = 2*3 + 2 = 8. So d) 8.
+   - a) 7
+   - b) 9
+   - c) 6
+   - d) 8 ✓
+
+   Let me use clean MCQs:
+8. **In a min-heap with distinct elements, which element is the global minimum?**
+   - a) Any leaf
+   - b) The root ✓
+   - c) The last element
+   - d) The middle element
+
+9. **What is the time complexity of heapify (percolate down) for a single node?**
+   - a) O(1)
+   - b) O(log n) ✓
+   - c) O(n)
+   - d) O(n log n)
+
+10. **Heap sort has a worst-case time complexity of:**
+    - a) O(1)
+    - b) O(n)
+    - c) O(n log n) ✓
+    - d) O(n²)
+
+11. **Which of the following is NOT true about a heap?**
+    - a) It is a complete binary tree
+    - b) Searching for an arbitrary element is O(log n) ✓ (it's O(n))
+    - c) The largest element is at the root in a max-heap
+    - d) Insert operation takes O(log n)
+
+12. **The buildHeap operation (heapify from last non-leaf to root) is O(n). Which bound is used to prove this?**
+    - a) The sum of heights of all nodes is O(n) ✓
+    - b) Each heapify is O(1)
+    - c) The tree is always balanced
+    - d) There are log n calls
+
+13. **Merging two binary heaps of size n each into one heap takes:**
+    - a) O(1)
+    - b) O(log n)
+    - c) O(n) ✓ (buildHeap on n+m elements)
+    - d) O(n log n)
+
+**Answers:** 8-b, 9-b, 10-c, 11-b, 12-a, 13-c
+
+### Additional Exercises (GFG Pattern)
+
+12. **Kth largest element in a stream**: Given an infinite stream of integers, find the kth largest element at any point. Use a min-heap of size k.
+
+13. **Merge k sorted arrays**: Given k sorted arrays, merge them into a single sorted array efficiently using a min-heap.
+
+14. **Sliding window median**: Find the median of each window of size k in a stream. Use two heaps (max-heap for left, min-heap for right).
+
+15. **Maximum distinct elements after removing k elements**: Given an array and a number k, remove k elements to maximize the number of distinct elements. Use frequency map + min-heap.
+
+16. **K closest points to origin**: Given an array of points, find the k closest points to the origin (0, 0). Use a max-heap of size k.
+
+17. **Minimum sum of two numbers formed from digits**: Given an array of digits, form two numbers whose sum is minimum. Use a min-heap to distribute digits alternately.
+
+18. **Connect ropes with minimum cost (revisited with heap)**: Use a min-heap to always connect the two smallest ropes, accumulating the total cost.
+
+19. **Rearrange string such that no two adjacent characters are same**: Use a max-heap of character frequencies to place the most frequent character first.
+
+20. **Task scheduler**: Given tasks and a cooldown period n, find the minimum time to complete all tasks. Use frequency counting + max-heap.
+
+21. **Design a MedianFinder**: Support `addNum` and `findMedian` with two heaps in O(log n) and O(1) respectively.
+
+22. **Top k frequent words**: Given a list of words, return the k most frequent words sorted by frequency (desc) then lexicographically. Use hash map + min-heap.
+
+### Heap Variants Comparison
+
+| Property | Binary Heap | Binomial Heap | Fibonacci Heap | Pairing Heap |
+|----------|-------------|---------------|----------------|--------------|
+| Insert | O(log n) | O(log n) | O(1) | O(1) |
+| Extract-Min | O(log n) | O(log n) | O(log n) | O(log n) |
+| Decrease-Key | O(log n) | O(log n) | O(1)* amortized | O(log n) |
+| Merge | O(n) | O(log n) | O(1) | O(1) |
+| Build-Heap | O(n) | O(n) | O(n) | O(n) |
+| Find-Min | O(1) | O(log n) | O(1) | O(1) |
+| Space per node | 3 words | 4+ words | 4+ words (with mark) | 3 pointers |
+| Practical | Very common | Rare | Rare (complex) | Moderate |
+
+### Heap Applications in Real Systems
+
+```typescript
+// Dijkstra's shortest path using priority queue
+type Edge = { to: number; weight: number };
+
+function dijkstra(graph: Edge[][], start: number): number[] {
+    const n = graph.length;
+    const dist = new Array(n).fill(Infinity);
+    const pq = new PriorityQueue<number>();
+    dist[start] = 0;
+    pq.enqueue(start, 0);
+    
+    while (!pq.isEmpty()) {
+        const u = pq.dequeue()!;
+        for (const { to, weight } of graph[u]) {
+            if (dist[u] + weight < dist[to]) {
+                dist[to] = dist[u] + weight;
+                pq.enqueue(to, dist[to]);
+            }
+        }
+    }
+    return dist;
+}
+```
    - c) O(log n)
    - d) O(nÂ²)
 

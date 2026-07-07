@@ -2329,6 +2329,293 @@ Compare to single-level page table for 48-bit:
 
 ---
 
+### TypeScript Memory Management Simulator
+
+The following TypeScript implementation models paging, TLB with LRU, page table walk, and dynamic allocation strategies:
+
+```typescript
+/**
+ * Memory Management Simulator
+ * Implements: paging, TLB with LRU, page table walk,
+ *             first/best/worst-fit allocation, buddy allocator
+ */
+interface PageTableEntry {
+  frameNumber: number;
+  valid: boolean;
+  dirty: boolean;
+  referenced: boolean;
+}
+
+class PagingSimulator {
+  private pageTable: Map<number, PageTableEntry> = new Map();
+  private frameSize: number;
+  private totalFrames: number;
+  private freeFrames: Set<number>;
+  private tlb: { page: number; frame: number; lastAccess: number }[] = [];
+  private tlbSize: number;
+  private tlbHits = 0;
+  private tlbMisses = 0;
+  private accessTime = 0;
+
+  constructor(frameSize: number, totalFrames: number, tlbSize: number) {
+    this.frameSize = frameSize;
+    this.totalFrames = totalFrames;
+    this.freeFrames = new Set(Array.from({ length: totalFrames }, (_, i) => i));
+    this.tlbSize = tlbSize;
+  }
+
+  translateAddress(logicalAddress: number): { physicalAddress: number; tlbHit: boolean; pageFault: boolean } {
+    const pageNumber = Math.floor(logicalAddress / this.frameSize);
+    const offset = logicalAddress % this.frameSize;
+    this.accessTime++;
+
+    // Check TLB first
+    const tlbEntry = this.tlb.find(e => e.page === pageNumber);
+    if (tlbEntry) {
+      this.tlbHits++;
+      tlbEntry.lastAccess = this.accessTime;
+      return { physicalAddress: tlbEntry.frame * this.frameSize + offset, tlbHit: true, pageFault: false };
+    }
+
+    this.tlbMisses++;
+
+    // Check page table
+    const pte = this.pageTable.get(pageNumber);
+    if (pte && pte.valid) {
+      // TLB miss but page is in memory — update TLB
+      this.updateTLB(pageNumber, pte.frameNumber);
+      pte.referenced = true;
+      return { physicalAddress: pte.frameNumber * this.frameSize + offset, tlbHit: false, pageFault: false };
+    }
+
+    // Page fault — allocate frame
+    if (this.freeFrames.size === 0) {
+      return { physicalAddress: -1, tlbHit: false, pageFault: true };
+    }
+
+    const frame = this.freeFrames.values().next().value;
+    this.freeFrames.delete(frame);
+    this.pageTable.set(pageNumber, { frameNumber: frame, valid: true, dirty: false, referenced: true });
+    this.updateTLB(pageNumber, frame);
+
+    return { physicalAddress: frame * this.frameSize + offset, tlbHit: false, pageFault: true };
+  }
+
+  private updateTLB(page: number, frame: number): void {
+    if (this.tlb.length >= this.tlbSize) {
+      // LRU eviction
+      const lru = this.tlb.reduce((min, e) => e.lastAccess < min.lastAccess ? e : min);
+      const idx = this.tlb.indexOf(lru);
+      this.tlb[idx] = { page, frame, lastAccess: this.accessTime };
+    } else {
+      this.tlb.push({ page, frame, lastAccess: this.accessTime });
+    }
+  }
+
+  getStats(): string {
+    const totalAccesses = this.tlbHits + this.tlbMisses;
+    return JSON.stringify({
+      tlbHits: this.tlbHits,
+      tlbMisses: this.tlbMisses,
+      tlbHitRate: (this.tlbHits / totalAccesses * 100).toFixed(2) + '%',
+      pageTableEntries: this.pageTable.size,
+      freeFrames: this.freeFrames.size,
+      totalFrames: this.totalFrames
+    }, null, 2);
+  }
+}
+
+class MemoryAllocator {
+  private holes: { start: number; size: number }[] = [];
+  private totalMemory: number;
+
+  constructor(totalMemory: number) {
+    this.totalMemory = totalMemory;
+    this.holes.push({ start: 0, size: totalMemory });
+  }
+
+  allocate(size: number, strategy: 'first' | 'best' | 'worst' | 'next'): number | null {
+    let selected: { idx: number; hole: { start: number; size: number } } | null = null;
+    let nextIdx = 0;
+
+    switch (strategy) {
+      case 'first': {
+        for (let i = 0; i < this.holes.length; i++) {
+          if (this.holes[i].size >= size) {
+            selected = { idx: i, hole: this.holes[i] };
+            break;
+          }
+        }
+        break;
+      }
+      case 'best': {
+        let minWaste = Infinity;
+        for (let i = 0; i < this.holes.length; i++) {
+          const waste = this.holes[i].size - size;
+          if (waste >= 0 && waste < minWaste) {
+            minWaste = waste;
+            selected = { idx: i, hole: this.holes[i] };
+          }
+        }
+        break;
+      }
+      case 'worst': {
+        let maxSize = -1;
+        for (let i = 0; i < this.holes.length; i++) {
+          if (this.holes[i].size >= size && this.holes[i].size > maxSize) {
+            maxSize = this.holes[i].size;
+            selected = { idx: i, hole: this.holes[i] };
+          }
+        }
+        break;
+      }
+      case 'next': {
+        for (let i = nextIdx; i < this.holes.length; i++) {
+          if (this.holes[i].size >= size) {
+            selected = { idx: i, hole: this.holes[i] };
+            nextIdx = i;
+            break;
+          }
+        }
+        if (!selected) {
+          for (let i = 0; i < nextIdx; i++) {
+            if (this.holes[i].size >= size) {
+              selected = { idx: i, hole: this.holes[i] };
+              nextIdx = i;
+              break;
+            }
+          }
+        }
+        break;
+      }
+    }
+
+    if (!selected) return null;
+
+    const { idx, hole } = selected;
+    const address = hole.start;
+
+    if (hole.size === size) {
+      this.holes.splice(idx, 1);
+    } else {
+      this.holes[idx] = { start: hole.start + size, size: hole.size - size };
+    }
+
+    return address;
+  }
+
+  free(address: number, size: number): void {
+    this.holes.push({ start: address, size });
+    this.holes.sort((a, b) => a.start - b.start);
+    this.mergeAdjacent();
+  }
+
+  private mergeAdjacent(): void {
+    for (let i = 0; i < this.holes.length - 1; i++) {
+      if (this.holes[i].start + this.holes[i].size === this.holes[i + 1].start) {
+        this.holes[i].size += this.holes[i + 1].size;
+        this.holes.splice(i + 1, 1);
+        i--;
+      }
+    }
+  }
+
+  printHoles(): string {
+    return this.holes.map(h => `[${h.start}-${h.start + h.size - 1}] (${h.size} KB)`).join(', ');
+  }
+}
+
+// Paging demo
+console.log('=== Paging with TLB ===');
+const paging = new PagingSimulator(4096, 64, 4);
+for (let i = 0; i < 100; i++) {
+  const addr = Math.floor(Math.random() * 0x100000);
+  paging.translateAddress(addr);
+}
+console.log(paging.getStats());
+
+// Allocation demo
+console.log('\n=== Memory Allocation ===');
+const alloc = new MemoryAllocator(1024);
+console.log('Initial:', alloc.printHoles());
+console.log('First-fit 200:', alloc.allocate(200, 'first'));
+console.log('Best-fit 100:', alloc.allocate(100, 'best'));
+console.log('Free at 0 size 200');
+alloc.free(0, 200);
+console.log('After free:', alloc.printHoles());
+```
+
+### Effective Access Time Calculation
+
+The Effective Access Time (EAT) formula captures TLB performance:
+
+```
+EAT = Hit_Ratio × (TLB_Access + Memory_Access) + Miss_Ratio × (TLB_Access + Page_Walk + Memory_Access)
+```
+
+**Example 1:** TLB hit rate = 98%, TLB access = 2 ns, memory access = 100 ns, page walk = 100 ns (single level)
+```
+EAT = 0.98 × (2 + 100) + 0.02 × (2 + 100 + 100)
+    = 0.98 × 102 + 0.02 × 202
+    = 99.96 + 4.04
+    = 104.0 ns 
+```
+
+**Example 2:** Four-level page table (4 page walks = 400 ns)
+```
+EAT = 0.98 × (2 + 100) + 0.02 × (2 + 400 + 100)
+    = 0.98 × 102 + 0.02 × 502
+    = 99.96 + 10.04
+    = 110.0 ns
+```
+
+### Additional Chapter Quiz Questions
+
+9. What is the TLB reach with 32 entries and 4 KB pages?
+   - a) 32 KB
+   - b) 128 KB
+   - c) 256 KB
+   - d) 512 KB
+
+10. Which page table structure uses a hash function to map virtual pages to physical frames?
+    - a) Hierarchical page table
+    - b) Hashed page table
+    - c) Inverted page table
+    - d) Single-level page table
+
+11. What is the primary advantage of an inverted page table?
+    - a) Faster lookups
+    - b) Proportional to physical memory size, not virtual address space
+    - c) Simpler implementation
+    - d) No TLB needed
+
+12. In the buddy allocator, what happens when you free a block that is adjacent to its buddy?
+    - a) Both blocks remain separate
+    - b) The blocks are merged into a larger block
+    - c) The blocks are zeroed
+    - d) Nothing special happens
+
+13. What is compaction in memory management?
+    - a) Compressing memory pages
+    - b) Moving allocated processes to consolidate free memory
+    - c) Reducing page table size
+    - d) Merging adjacent free blocks
+
+**Answers:** 9-b, 10-b, 11-b, 12-b, 13-b
+
+### Additional Exercises
+
+#### Basic
+13. Calculate the effective access time for a system with 95% TLB hit rate, 1 ns TLB access, 50 ns memory access, and a two-level page table (50 ns per walk). Show all steps.
+
+#### Intermediate
+14. Write a TypeScript program that simulates a multi-level page table for a 32-bit system with 4 KB pages. Given a logical address, walk through each level to find the physical address. Support 2-level and 3-level page table configurations.
+15. Implement a **buddy allocator** in TypeScript: allocate and free memory in power-of-2-sized blocks. Show the free list at each order after a sequence of allocations and deallocations. Demonstrate coalescing when buddies are freed.
+
+#### Advanced
+16. Write a TypeScript program that implements and benchmarks the four dynamic allocation strategies (first-fit, best-fit, worst-fit, next-fit) on a simulated 1 MB heap. Run 1000 random allocation/free operations and measure: average allocation time, external fragmentation (total free space in largest hole), and allocation success rate.
+17. Implement a **TLB simulator** with LRU replacement policy. Process a random sequence of 10,000 page accesses (50-200 distinct pages). Measure hit rate for TLB sizes of 4, 8, 16, 32, and 64 entries. Plot the hit rate vs. TLB size relationship.
+
 ## Concept Comparison
 
 | Feature | Contiguous | Paging | Segmentation | Seg+Paging |

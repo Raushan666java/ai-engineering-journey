@@ -732,15 +732,276 @@ public class OrderSagaOrchestrator {
 
 Saga handles long-running transactions without locking resources. Choreography works when the flow is simple (3-4 services). Orchestration is better for complex workflows with branching and compensations. Never use XA/2PC transactions across services → that defeats the purpose of microservices.
 
+---
+
+### Q6: What is the Strangler Fig pattern and when should you use it?
+
+**Answer:**
+
+The Strangler Fig pattern incrementally replaces a monolithic system with microservices by gradually routing functionality to new services while the old system remains operational. Named after fig trees that grow around and eventually replace their host tree.
+
+```java
+// ── Step 1: Introduce a proxy/routing layer ──
+@Component
+public class MonolithRoutingFilter implements Filter {
+
+    private static final Set<String> MIGRATED_PATHS = Set.of(
+        "/api/v2/products",    // New microservice handles products
+        "/api/v2/search"       // New microservice handles search
+    );
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response,
+                         FilterChain chain) {
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        String path = httpRequest.getRequestURI();
+
+        if (MIGRATED_PATHS.contains(path)) {
+            // Route to new microservice
+            forwardToMicroservice(httpRequest, response);
+        } else {
+            // Route to old monolith
+            chain.doFilter(request, response);
+        }
+    }
+}
+
+// ── Step 2: Gradually expand migrated paths ──
+// Step 3: When all paths are migrated → decommission the monolith
+```
+
+**Migration phases:**
+1. **Coexist:** New features built as microservices. Monolith handles old features.
+2. **Strangle:** Routes for old features are gradually redirected to new services.
+3. **Decommission:** Once all routes point to microservices, the monolith is shut down.
+
+**Key principles:**
+- Never big-bang rewrite — strangulation reduces risk
+- Each migrated feature must be independently deployable
+- Maintain backward compatibility during transition
+- Use feature flags to toggle between old and new implementations
+- Monitor both systems in parallel until migration is complete
+
+---
+
+### Q7: How do you handle distributed caching in microservices?
+
+**Answer:**
+
+Distributed caching in microservices requires coordinating cache state across service instances. The most common approach is a shared Redis cluster with cache-aside pattern.
+
+**Cache-aside (lazy population) — the standard pattern:**
+
+```java
+@Service
+public class ProductService {
+
+    private final RedisTemplate<String, ProductDto> redis;
+    private final ProductRepository productRepo;
+    private static final Duration CACHE_TTL = Duration.ofMinutes(30);
+
+    public ProductDto getProduct(Long id) {
+        String key = "product:" + id;
+
+        // 1. Try cache
+        ProductDto cached = redis.opsForValue().get(key);
+        if (cached != null) return cached;
+
+        // 2. Cache miss — load from DB
+        Product product = productRepo.findById(id)
+            .orElseThrow(() -> new ProductNotFoundException(id));
+        ProductDto dto = ProductDto.from(product);
+
+        // 3. Populate cache
+        redis.opsForValue().set(key, dto, CACHE_TTL);
+        return dto;
+    }
+
+    @Transactional
+    public ProductDto updateProduct(Long id, UpdateProductRequest req) {
+        // 1. Update DB
+        Product product = productRepo.findById(id).orElseThrow();
+        product.setName(req.name());
+        product.setPrice(req.price());
+        productRepo.save(product);
+
+        // 2. Invalidate cache (or update it)
+        String key = "product:" + id;
+        redis.delete(key);  // Next read will repopulate
+
+        return ProductDto.from(product);
+    }
+}
+```
+
+**Cache invalidation strategies:**
+- **TTL-based:** Simplest — entries expire after a fixed duration. Accept some staleness.
+- **Write-through:** Update cache on every write. Consistent but slower writes.
+- **Write-behind:** Async cache update. Fast writes but risk of data loss.
+- **Event-based invalidation:** Publish cache invalidation events when data changes.
+
+```java
+// Cache invalidation via event
+@Service
+public class ProductEventConsumer {
+
+    @KafkaListener(topics = "product-events")
+    public void onProductUpdated(ProductUpdatedEvent event) {
+        String key = "product:" + event.productId();
+        redis.delete(key);
+        System.out.println("Cache invalidated: " + key);
+    }
+}
+```
+
+**Cache stampede prevention:** See Q24 in the previous chapter for distributed locking patterns.
+
+---
+
+## Common Mistakes in Saga Pattern (GFG-Style)
+
+### Mistake 1: Not implementing compensating transactions
+```java
+// ❌ WRONG: Saga only has forward steps, no rollback
+// If payment succeeds but inventory fails → money is lost!
+
+// ✅ CORRECT: Every forward action has a compensating action
+@Component
+public class OrderSagaOrchestrator {
+    // Forward actions (as defined above)
+    public void process(Order order) {
+        createOrder(order);
+        reserveInventory(order);
+        processPayment(order);
+    }
+
+    // Compensating actions (for each forward step)
+    public void compensate(Order order) {
+        refundPayment(order);        // Reverse payment
+        releaseInventory(order);     // Release reserved stock
+        cancelOrder(order);          // Mark order as failed
+    }
+}
+```
+
+### Mistake 2: Using synchronous communication for saga steps
+```java
+// ❌ WRONG: Sequential synchronous calls → tight coupling, cascading failures
+// Order → Payment (REST) → wait → Inventory (REST) → wait → Notification (REST)
+
+// ✅ CORRECT: Event-driven saga steps
+// Order → publish OrderCreated → Payment consumes, publishes PaymentProcessed →
+// Inventory consumes, publishes InventoryReserved → etc.
+```
+
+### Mistake 3: Not handling duplicate saga events
+```java
+// ❌ WRONG: No idempotency check → duplicate events double-process
+// If Kafka re-delivers a PaymentProcessed event, inventory is deducted twice
+
+// ✅ CORRECT: Check idempotency before each saga step
+public void handlePaymentProcessed(PaymentProcessedEvent event) {
+    if (sagaStateRepo.existsBySagaIdAndStep(event.sagaId(), "PAYMENT")) {
+        return;  // Already processed this step
+    }
+    // Process the step
+}
+```
+
+---
+
+## Choreography vs Orchestration Saga Comparison
+
+| Aspect | Choreography (Event-driven) | Orchestration (Command-driven) |
+|--------|---------------------------|-------------------------------|
+| Coordination | Decentralized — each service reacts to events | Centralized — orchestrator tells services what to do |
+| Coupling | Loose — services only know their events | Tighter — services depend on orchestrator |
+| Complexity | Low for simple flows (3-4 steps) | Manageable for complex flows |
+| Debugging | Hard — no central coordinator to inspect | Easier — orchestrator logs each step |
+| Flow visibility | Requires event tracing (distributed) | Centralized state in orchestrator |
+| Failure handling | Each service emits failure events | Orchestrator triggers compensating actions |
+| Testing | Complex — need to run multiple services | Simpler — mock orchestrator to drive tests |
+| Best for | Simple linear pipelines | Complex branching workflows |
+
+**Rule of thumb:** If your saga has more than 5 steps or requires branching/conditional logic, use orchestration. Otherwise, choreography is simpler.
+
+## Mermaid: Saga Patterns Comparison
+
+```mermaid
+flowchart LR
+    subgraph Choreography
+        direction LR
+        A1[Order Service] -->|OrderCreated| B1[Payment Service]
+        B1 -->|PaymentProcessed| C1[Inventory Service]
+        C1 -->|InventoryReserved| D1[Shipping Service]
+        D1 -->|Shipped| E1[Complete]
+    end
+
+    subgraph Orchestration
+        direction LR
+        O[Orchestrator<br/>Saga Manager]
+        A2[Order Service]
+        B2[Payment Service]
+        C2[Inventory Service]
+        D2[Shipping Service]
+
+        O -->|Create Order| A2
+        O -->|Process Payment| B2
+        O -->|Reserve Inventory| C2
+        O -->|Arrange Shipping| D2
+        A2 -->|OrderCreated| O
+        B2 -->|PaymentProcessed| O
+        C2 -->|InventoryReserved| O
+        D2 -->|Shipped| O
+    end
+
+    style O fill:#ff9800,color:#fff
+    style A1 fill:#2196f3,color:#fff
+    style B1 fill:#2196f3,color:#fff
+    style C1 fill:#2196f3,color:#fff
+    style D1 fill:#2196f3,color:#fff
+    style A2 fill:#4caf50,color:#fff
+    style B2 fill:#4caf50,color:#fff
+    style C2 fill:#4caf50,color:#fff
+    style D2 fill:#4caf50,color:#fff
+```
+
+## Chapter Quiz — Microservices Patterns
+
+4. What is the Strangler Fig pattern used for?
+    - A) Improving database performance
+    - B) Incrementally migrating a monolith to microservices
+    - C) Implementing service discovery
+    - D) Handling distributed transactions
+
+<details>
+<summary>Answer</summary>
+**B) Incrementally migrating a monolith to microservices.** The Strangler Fig pattern routes traffic to new services gradually while the monolith stays operational, reducing risk compared to a big-bang rewrite.
+</details>
+
+5. In the cache-aside pattern, what happens on a cache miss?
+    - A) An error is returned to the client
+    - B) The data is loaded from the database and the cache is populated
+    - C) The cache is bypassed permanently
+    - D) A new cache node is created
+
+<details>
+<summary>Answer</summary>
+**B) The data is loaded from the database and the cache is populated.** On cache miss, the application loads data from the database, stores it in the cache with a TTL, and returns the result. Subsequent reads for the same key hit the cache.
+</details>
+
+6. What is the key difference between choreography and orchestration sagas?
+    - A) Choreography is faster
+    - B) Choreography has no central coordinator; orchestration has a central saga manager
+    - C) Orchestration requires Kafka
+    - D) Choreography is only for REST APIs
+
+<details>
+<summary>Answer</summary>
+**B) Choreography has no central coordinator.** In choreography, each service emits events that other services react to. In orchestration, a central orchestrator tells each service what to do and tracks the overall state.
+</details>
+
 ## Concept Comparison Table
-
-| Concept | Definition | Key Distinction | Use Case |
-|---------|-----------|-----------------|----------|
-| Interface | Contract without state | Multiple inheritance of type | API contracts |
-| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
-| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
-
-## Quick Reference
 
 | Topic | Key Points | Interview Frequency |
 |-------|-----------|-------------------|

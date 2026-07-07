@@ -2529,7 +2529,284 @@ void *reader_fixed(void *arg) {
 
 ---
 
-### Summary
+### TypeScript Deadlock Detection and Banker's Algorithm Simulator
+
+The following TypeScript implementation models deadlock detection via wait-for graphs, Banker's algorithm, and resource allocation:
+
+```typescript
+/**
+ * Deadlock Detection & Avoidance Simulator
+ * Implements: Banker's Algorithm, Wait-For Graph cycle detection,
+ *             Resource Allocation Graph, Deadlock detection
+ */
+class BankersAlgorithm {
+  private processes: number;
+  private resources: number;
+  private available: number[];
+  private max: number[][];
+  private allocation: number[][];
+  private need: number[][];
+
+  constructor(available: number[], max: number[][], allocation: number[][]) {
+    this.processes = max.length;
+    this.resources = available.length;
+    this.available = [...available];
+    this.max = max.map(r => [...r]);
+    this.allocation = allocation.map(r => [...r]);
+    this.need = max.map((row, i) => row.map((val, j) => val - allocation[i][j]));
+  }
+
+  isSafeState(): { safe: boolean; safeSequence: number[] } {
+    const work = [...this.available];
+    const finish = new Array(this.processes).fill(false);
+    const sequence: number[] = [];
+    let count = 0;
+
+    while (count < this.processes) {
+      let found = false;
+      for (let i = 0; i < this.processes; i++) {
+        if (!finish[i] && this.need[i].every((n, j) => n <= work[j])) {
+          // This process can finish
+          for (let j = 0; j < this.resources; j++) {
+            work[j] += this.allocation[i][j];
+          }
+          finish[i] = true;
+          sequence.push(i);
+          found = true;
+          count++;
+        }
+      }
+
+      if (!found) {
+        // No process can proceed — unsafe state
+        return { safe: false, safeSequence: sequence };
+      }
+    }
+
+    return { safe: true, safeSequence: sequence };
+  }
+
+  requestResources(pid: number, request: number[]): string {
+    // Check if request exceeds declared maximum
+    for (let j = 0; j < this.resources; j++) {
+      if (request[j] > this.need[pid][j]) {
+        return `DENIED: Process P${pid} requested more than its maximum claim`;
+      }
+    }
+
+    // Check if resources are available
+    for (let j = 0; j < this.resources; j++) {
+      if (request[j] > this.available[j]) {
+        return `DENIED: Resources not available — P${pid} must wait`;
+      }
+    }
+
+    // Pretend to allocate
+    const savedAlloc = this.allocation.map(r => [...r]);
+    const savedAvail = [...this.available];
+    const savedNeed = this.need.map(r => [...r]);
+
+    for (let j = 0; j < this.resources; j++) {
+      this.available[j] -= request[j];
+      this.allocation[pid][j] += request[j];
+      this.need[pid][j] -= request[j];
+    }
+
+    // Check if resulting state is safe
+    const { safe, safeSequence } = this.isSafeState();
+    if (safe) {
+      return `GRANTED: Resources allocated to P${pid}. Safe sequence: P${safeSequence.join(' → P')}`;
+    } else {
+      // Roll back
+      this.allocation = savedAlloc;
+      this.available = savedAvail;
+      this.need = savedNeed;
+      return `DENIED: Unsafe state would result. Request from P${pid} would lead to deadlock.`;
+    }
+  }
+
+  releaseResources(pid: number, release: number[]): void {
+    for (let j = 0; j < this.resources; j++) {
+      this.available[j] += release[j];
+      this.allocation[pid][j] -= release[j];
+      this.need[pid][j] += release[j];
+    }
+  }
+
+  printState(): string {
+    const header = `Available: [${this.available.join(', ')}]\n`;
+    const rows = ['PID\tAlloc\t\tMax\t\tNeed'];
+    for (let i = 0; i < this.processes; i++) {
+      rows.push(`P${i}\t[${this.allocation[i].join(',')}]\t[${this.max[i].join(',')}]\t[${this.need[i].join(',')}]`);
+    }
+    return header + rows.join('\n');
+  }
+}
+
+class WaitForGraph {
+  private adjacency: Map<number, Set<number>> = new Map();
+
+  addEdge(from: number, to: number): void {
+    if (!this.adjacency.has(from)) this.adjacency.set(from, new Set());
+    this.adjacency.get(from)!.add(to);
+  }
+
+  hasCycle(): { cycle: boolean; cyclePath: number[] } {
+    const visited = new Set<number>();
+    const recStack = new Set<number>();
+    const parent = new Map<number, number>();
+
+    const dfs = (node: number): number | null => {
+      visited.add(node);
+      recStack.add(node);
+
+      const neighbors = this.adjacency.get(node) || new Set();
+      for (const neighbor of neighbors) {
+        if (!visited.has(neighbor)) {
+          parent.set(neighbor, node);
+          const result = dfs(neighbor);
+          if (result !== null) return result;
+        } else if (recStack.has(neighbor)) {
+          return neighbor; // Cycle found — return cycle start
+        }
+      }
+
+      recStack.delete(node);
+      return null;
+    };
+
+    for (const node of this.adjacency.keys()) {
+      if (!visited.has(node)) {
+        const cycleStart = dfs(node);
+        if (cycleStart !== null) {
+          // Reconstruct cycle path
+          const path = [cycleStart];
+          let current = cycleStart;
+          do {
+            current = parent.get(current)!;
+            path.push(current);
+          } while (current !== cycleStart);
+          return { cycle: true, cyclePath: path.reverse() };
+        }
+      }
+    }
+
+    return { cycle: false, cyclePath: [] };
+  }
+
+  printGraph(): string {
+    const edges: string[] = [];
+    for (const [from, toSet] of this.adjacency) {
+      for (const to of toSet) {
+        edges.push(`P${from} → P${to}`);
+      }
+    }
+    return edges.join('\n');
+  }
+}
+
+// Banker's Algorithm example
+console.log('=== Banker\'s Algorithm ===');
+const banker = new BankersAlgorithm(
+  [3, 3, 2],  // Available
+  [            // Max
+    [7, 5, 3],
+    [3, 2, 2],
+    [9, 0, 2],
+    [2, 2, 2],
+    [4, 3, 3]
+  ],
+  [            // Allocation
+    [0, 1, 0],
+    [2, 0, 0],
+    [3, 0, 2],
+    [2, 1, 1],
+    [0, 0, 2]
+  ]
+);
+console.log(banker.printState());
+console.log(`\nSafe state check:`, banker.isSafeState());
+console.log(`\nP1 request [1,0,2]:`, banker.requestResources(1, [1, 0, 2]));
+
+// Wait-for graph cycle detection
+console.log('\n=== Wait-For Graph Deadlock Detection ===');
+const wfg = new WaitForGraph();
+wfg.addEdge(1, 2); // P1 waiting for P2
+wfg.addEdge(2, 3); // P2 waiting for P3
+wfg.addEdge(3, 1); // P3 waiting for P1 — cycle!
+console.log(wfg.printGraph());
+console.log('Cycle detected:', wfg.hasCycle());
+```
+
+### Numerical Example: Banker's Algorithm Safety Check
+
+**System state:** Available = [3, 3, 2], 5 processes with Max and Allocation shown.
+
+**Need matrix** = Max - Allocation:
+| PID | Need |
+|-----|------|
+| P0 | [7, 4, 3] |
+| P1 | [1, 2, 2] |
+| P2 | [6, 0, 0] |
+| P3 | [0, 1, 1] |
+| P4 | [4, 3, 1] |
+
+**Safety algorithm trace:**
+1. Work = [3, 3, 2]. Need[0]=[7,4,3] > Work. Skip.
+2. Need[1]=[1,2,2] ≤ Work. P1 can finish. Work = [3,3,2]+[2,0,0] = [5,3,2].
+3. Need[3]=[0,1,1] ≤ Work. P3 can finish. Work = [5,3,2]+[2,1,1] = [7,4,3].
+4. Need[4]=[4,3,1] ≤ Work. P4 can finish. Work = [7,4,3]+[0,0,2] = [7,4,5].
+5. Need[2]=[6,0,0] ≤ Work. P2 can finish. Work = [7,4,5]+[3,0,2] = [10,4,7].
+6. Need[0]=[7,4,3] ≤ Work. P0 can finish. Work = [10,4,7]+[0,1,0] = [10,5,7].
+**Safe sequence:** P1 → P3 → P4 → P2 → P0
+
+### Additional Chapter Quiz Questions
+
+9. What is the time complexity of Banker's algorithm safety check?
+   - a) O(n)
+   - b) O(m·n)
+   - c) O(m·n²)
+   - d) O(2ⁿ)
+
+10. In the resource allocation graph, what does a cycle with multi-instance resources indicate?
+    - a) Certain deadlock
+    - b) Possible deadlock (depends on reduction)
+    - c) No deadlock
+    - d) Starvation
+
+11. What is the "Ostrich algorithm" for deadlocks?
+    - a) Actively preventing deadlocks
+    - b) Ignoring the possibility of deadlocks
+    - c) Detecting and recovering from deadlocks
+    - d) Avoiding deadlocks via Banker's algorithm
+
+12. Which deadlock prevention strategy is most practical in real systems?
+    - a) Eliminate mutual exclusion
+    - b) Eliminate hold-and-wait (acquire all at once)
+    - c) Enforce lock ordering (eliminate circular wait)
+    - d) Allow preemption of resources
+
+13. In MySQL InnoDB, what happens when a deadlock is detected?
+    - a) The server crashes
+    - b) One transaction is rolled back (the one that modified fewer rows)
+    - c) Both transactions are rolled back
+    - d) The deadlock is ignored
+
+**Answers:** 9-c, 10-b, 11-b, 12-c, 13-b
+
+### Additional Exercises
+
+#### Basic
+14. Given the resource allocation graph: P1 → R1 → P2 → R2 → P3 → R1 (with R1 having 1 instance, R2 having 1 instance), determine whether a deadlock exists. Draw the wait-for graph to confirm.
+
+#### Intermediate
+15. Write a TypeScript implementation of the Banker's algorithm that handles up to 10 processes and 5 resource types. The implementation should accept a sequence of resource requests and grant or deny each request based on safety. Display the safe sequence in each case.
+
+#### Advanced
+16. Implement the **distributed deadlock detection** algorithm (Chandy-Misra-Haas edge chasing). The implementation should support probe messages that traverse the wait-for graph across simulated nodes. When a probe returns to the initiator, a deadlock is declared. Demonstrate with a 4-node distributed system.
+17. Implement **wound-wait** and **wait-die** deadlock prevention schemes. Create a scenario with 3 transactions where the schemes prevent deadlock. Compare wound-wait and wait-die in terms of restarts per transaction.
+
+### Quick Reference
 
 - **Deadlock** requires four conditions: mutual exclusion, hold-and-wait, no preemption, circular wait
 - **Resource-allocation graphs** detect cycles; single-instance cycle = deadlock, multi-instance needs reduction

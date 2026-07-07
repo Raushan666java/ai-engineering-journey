@@ -16,19 +16,19 @@
 
 **Real-World Analogy: The Library Catalog**
 
-Imagine a public library with 100,000 books but no catalog system. To find a specific book, a visitor must walk every aisle scanning shelves. If a book is moved, returned late, or misplaced, it becomes effectively lost. Now imagine the same library with a digital catalog → you search by title, author, or ISBN, see the exact shelf location, check availability, and even reserve it online. The catalog does not replace the books; it manages the metadata about the books and provides efficient access.
+Imagine a public library with 100,000 books but no catalog system. To find a specific book, a visitor must walk every aisle scanning shelves. If a book is moved, returned late, or misplaced, it becomes effectively lost. Now imagine the same library with a digital catalog â†’ you search by title, author, or ISBN, see the exact shelf location, check availability, and even reserve it online. The catalog does not replace the books; it manages the metadata about the books and provides efficient access.
 
 **A Database Management System (DBMS)** is the digital library catalog for data. It is software that manages, stores, retrieves, and secures data while hiding the complexity of storage, indexing, concurrency, and recovery from users.
 
 **Key Functions of a DBMS:**
 
-1. **Data Definition** → CREATE, ALTER, DROP schema objects
-2. **Data Manipulation** → SELECT, INSERT, UPDATE, DELETE data
-3. **Data Security & Integrity** → enforce constraints and access controls
-4. **Transaction Management** → ACID properties (Atomicity, Consistency, Isolation, Durability)
-5. **Concurrency Control** → serialize simultaneous user access
-6. **Recovery Management** → restore state after system crash or media failure
-7. **Data Dictionary Management** → store metadata about database objects
+1. **Data Definition** â†’ CREATE, ALTER, DROP schema objects
+2. **Data Manipulation** â†’ SELECT, INSERT, UPDATE, DELETE data
+3. **Data Security & Integrity** â†’ enforce constraints and access controls
+4. **Transaction Management** â†’ ACID properties (Atomicity, Consistency, Isolation, Durability)
+5. **Concurrency Control** â†’ serialize simultaneous user access
+6. **Recovery Management** â†’ restore state after system crash or media failure
+7. **Data Dictionary Management** â†’ store metadata about database objects
 
 **Numbered Steps: How a DBMS Processes a Query**
 
@@ -358,13 +358,13 @@ if __name__ == "__main__":
 | Advantages | Disadvantages |
 |------------|---------------|
 | Data independence (physical + logical) | High initial cost (licensing, hardware, DBA salaries) |
-| Efficient data access via indexes and optimization | Complexity → steep learning curve for administration |
+| Efficient data access via indexes and optimization | Complexity â†’ steep learning curve for administration |
 | Concurrent access with ACID guarantees | Performance overhead compared to raw file I/O |
 | Security at row/column level | Single point of failure risk |
 | Data integrity via constraints (PK, FK, CHECK) | Vendor lock-in potential |
 | Reduced data redundancy | Resource intensive (memory, CPU, disk) |
 | Backup and recovery automation | Overkill for simple, single-user applications |
-| Standard interfaces (SQL, ODBC, JDBC) | Schema rigidity → schema changes require migrations |
+| Standard interfaces (SQL, ODBC, JDBC) | Schema rigidity â†’ schema changes require migrations |
 | Scalability (parallel, distributed) | Network overhead in client-server deployment |
 | Multi-user access and role-based control | Tuning complexity requires expertise |
 
@@ -389,7 +389,7 @@ if __name__ == "__main__":
 
 **Real-World Analogy: Filing Cabinets vs. Library**
 
-A **file system** is like a room full of filing cabinets. Each department has its own cabinet with its own folders. The sales department's cabinet has customer folders, the billing department has its own customer folders, and support has yet another set. When a customer changes their address, three different people must pull three different folders and make the same change. One person might forget, or use a different format, and now the data is inconsistent. There is no central index telling you which cabinet has which information. If someone is using a folder, the next person has to wait → or worse, both make changes simultaneously and one overwrites the other.
+A **file system** is like a room full of filing cabinets. Each department has its own cabinet with its own folders. The sales department's cabinet has customer folders, the billing department has its own customer folders, and support has yet another set. When a customer changes their address, three different people must pull three different folders and make the same change. One person might forget, or use a different format, and now the data is inconsistent. There is no central index telling you which cabinet has which information. If someone is using a folder, the next person has to wait â†’ or worse, both make changes simultaneously and one overwrites the other.
 
 A **DBMS** is a library. All books are centrally managed. A single catalog tells you where every book is. When a book's information changes, the catalog is updated in one place. Multiple people can check out books simultaneously because the system tracks who has what. The librarian (DBA) ensures books are properly organized, no duplicates exist in the catalog, and only authorized patrons can access restricted sections.
 
@@ -397,21 +397,21 @@ A **DBMS** is a library. All books are centrally managed. A single catalog tells
 
 | # | Feature | File System | DBMS |
 |---|---------|-------------|------|
-| 1 | **Data Redundancy** | High → same data duplicated across multiple files | Minimal to none → controlled redundancy via normalization |
-| 2 | **Data Consistency** | Low → updates must be applied to every file independently | High → single source of truth; constraints enforce consistency |
-| 3 | **Concurrent Access** | No built-in control → race conditions, lost updates | ACID transactions with lock-based/multiversion concurrency control |
-| 4 | **Atomicity** | None → partial updates survive crashes | Full atomicity via transactions: COMMIT or ROLLBACK |
-| 5 | **Integrity Constraints** | Application code only → easily bypassed | Declarative constraints: PRIMARY KEY, FOREIGN KEY, CHECK, UNIQUE, NOT NULL |
+| 1 | **Data Redundancy** | High â†’ same data duplicated across multiple files | Minimal to none â†’ controlled redundancy via normalization |
+| 2 | **Data Consistency** | Low â†’ updates must be applied to every file independently | High â†’ single source of truth; constraints enforce consistency |
+| 3 | **Concurrent Access** | No built-in control â†’ race conditions, lost updates | ACID transactions with lock-based/multiversion concurrency control |
+| 4 | **Atomicity** | None â†’ partial updates survive crashes | Full atomicity via transactions: COMMIT or ROLLBACK |
+| 5 | **Integrity Constraints** | Application code only â†’ easily bypassed | Declarative constraints: PRIMARY KEY, FOREIGN KEY, CHECK, UNIQUE, NOT NULL |
 | 6 | **Security** | File-level permissions only | Granular: row-level, column-level, role-based GRANT/REVOKE |
-| 7 | **Data Independence** | None → application code depends on file format | Physical and logical independence via three-level architecture |
+| 7 | **Data Independence** | None â†’ application code depends on file format | Physical and logical independence via three-level architecture |
 | 8 | **Query Capability** | Manual parsing and processing required | Declarative SQL with query optimization, join algorithms, aggregation |
-| 9 | **Backup & Recovery** | Manual file copies → no crash recovery | Automated backup, point-in-time recovery, transaction log replay |
-| 10 | **Data Sharing** | Difficult → file locking is coarse | Easy → concurrent users with fine-grained locks |
+| 9 | **Backup & Recovery** | Manual file copies â†’ no crash recovery | Automated backup, point-in-time recovery, transaction log replay |
+| 10 | **Data Sharing** | Difficult â†’ file locking is coarse | Easy â†’ concurrent users with fine-grained locks |
 | 11 | **Scalability** | Limited to single machine capacity | Horizontal (sharding, replication) and vertical (bigger hardware) |
 | 12 | **Storage Efficiency** | Wasted space due to duplication | Storage optimized via normalization, compression, and indexing |
-| 13 | **Data Model** | Flat → no relationships between files | Rich → relational, document, graph, object-oriented |
+| 13 | **Data Model** | Flat â†’ no relationships between files | Rich â†’ relational, document, graph, object-oriented |
 | 14 | **Metadata Management** | None or scattered | Centralized data dictionary (catalog) |
-| 15 | **Multi-user Support** | Primitive → file-level locking only | Sophisticated → transaction isolation levels, locking granularity |
+| 15 | **Multi-user Support** | Primitive â†’ file-level locking only | Sophisticated â†’ transaction isolation levels, locking granularity |
 | 16 | **Time to Develop** | Fast for small, single-user apps | Higher initial setup; much faster for complex, multi-user apps |
 
 **Numbered Steps: File System vs. DBMS Contrast**
@@ -423,9 +423,9 @@ File System Approach:
   3. Application searches for matching records
   4. Application modifies data in memory
   5. Application writes entire file back to disk
-  6. If another app has the file open → conflict!
-  7. If crash occurs during step 5 → data loss!
-  8. If data format changes → every app must be rewritten!
+  6. If another app has the file open â†’ conflict!
+  7. If crash occurs during step 5 â†’ data loss!
+  8. If data format changes â†’ every app must be rewritten!
 
 DBMS Approach:
   1. Application sends SQL query to DBMS
@@ -434,8 +434,8 @@ DBMS Approach:
   4. DBMS reads only required pages from disk
   5. DBMS applies changes with Write-Ahead Logging (WAL)
   6. DBMS releases locks
-  7. If crash occurs → log replays or undoes on restart
-  8. If schema changes → views insulate applications
+  7. If crash occurs â†’ log replays or undoes on restart
+  8. If schema changes â†’ views insulate applications
 ```
 
 **Pseudocode: File-Based vs. DBMS-Based Data Access**
@@ -464,20 +464,20 @@ FUNCTION update_customer_address_db(cust_id, new_address):
         SET address = new_address
         WHERE customer_id = cust_id;
         // DBMS internally: acquire lock, log change, update page in buffer
-    COMMIT                                          // Step 4: Commit → all or nothing
+    COMMIT                                          // Step 4: Commit â†’ all or nothing
     conn.CLOSE()
     // BENEFIT: Atomic, durable, concurrent-safe, indexed
 END FUNCTION
 ```
 
-**Dry Run Trace: File System vs. DBMS → Concurrent Booking Conflict**
+**Dry Run Trace: File System vs. DBMS â†’ Concurrent Booking Conflict**
 
 | Step | File System | DBMS |
 |------|-------------|------|
 | Initial | `seats.txt`: Seat 1A=available, Seat 1B=available | `seats` table: seat_1A='available', seat_1B='available' |
-| User A reads | Reads file, sees Seat 1A=available | `SELECT status FROM seats WHERE id='1A'` → 'available', shared lock acquired |
+| User A reads | Reads file, sees Seat 1A=available | `SELECT status FROM seats WHERE id='1A'` â†’ 'available', shared lock acquired |
 | User B reads | Reads file simultaneously, sees Seat 1A=available | Same query, also gets shared lock |
-| User A writes | Changes seat 1A to 'booked', writes file | `UPDATE seats SET status='booked' WHERE id='1A'` → exclusive lock requested |
+| User A writes | Changes seat 1A to 'booked', writes file | `UPDATE seats SET status='booked' WHERE id='1A'` â†’ exclusive lock requested |
 | User B writes | Changes seat 1A to 'booked' (same!), overwrites A's change | Lock conflict! B waits or gets deadlock error |
 | Outcome | Double booking! Both users think they have the seat | Only A succeeds; B gets "could not serialize access" error |
 | Integrity | Lost. File has B's version only (A's change gone) | Preserved. Only one booking per seat |
@@ -515,7 +515,7 @@ public:
         return data;
     }
 
-    // Simulates race condition → no locking
+    // Simulates race condition â†’ no locking
     void unsafeBook(const std::string& seatId, const std::string& user) {
         auto data = readAll();
         for (auto& line : data) {
@@ -552,7 +552,7 @@ public:
                 return true;
             }
         }
-        std::cout << "[DBMS] " << seatId << " already taken → " << user << " denied\n";
+        std::cout << "[DBMS] " << seatId << " already taken â†’ " << user << " denied\n";
         return false;
     }
 
@@ -631,7 +631,7 @@ class FileSystemStore:
                 f.write(line + "\n")
     
     def unsafe_book(self, seat_id: str, user: str) -> bool:
-        """No locking → demonstrates race condition."""
+        """No locking â†’ demonstrates race condition."""
         data = self.read_all()
         for i, line in enumerate(data):
             parts = line.split(",")
@@ -641,7 +641,7 @@ class FileSystemStore:
                 self.write_all(data)
                 print(f"[FILE] {user} booked {seat_id}")
                 return True
-        print(f"[FILE] {seat_id} already taken → {user} denied")
+        print(f"[FILE] {seat_id} already taken â†’ {user} denied")
         return False
 
 
@@ -664,7 +664,7 @@ class DBMSStore:
                 self.seats[seat_id]["user"] = user
                 print(f"[DBMS] {user} booked {seat_id}")
                 return True
-            print(f"[DBMS] {seat_id} already taken → {user} denied")
+            print(f"[DBMS] {seat_id} already taken â†’ {user} denied")
             return False
     
     def print_status(self) -> None:
@@ -720,7 +720,7 @@ if __name__ == "__main__":
 | Delete | O(n) rewrite | O(log n) locate + mark | File rewrite vs. tombstone marking |
 | Concurrent Access | O(1) but unsafe | O(1) lock acquire | File: no coordination. DBMS: lock manager overhead |
 | Consistency Check | O(n) manual | O(1) constraint check | File: no automatic checks. DBMS: constraint enforced at write |
-| Recovery | Manual → O(n) restore | O(log n) log replay | File: restore from backup. DBMS: replay/undo WAL |
+| Recovery | Manual â†’ O(n) restore | O(log n) log replay | File: restore from backup. DBMS: replay/undo WAL |
 
 **Advantages & Disadvantages: File System vs. DBMS**
 
@@ -730,11 +730,11 @@ if __name__ == "__main__":
 | **Performance** | Fast for sequential I/O, single-user | Overhead for trivial operations |
 | **Cost** | Free (OS built-in) | License, hardware, DBA salary |
 | **Portability** | Any OS can read text files | Vendor-specific format |
-| **Atomicity** | None → partial writes | Full ACID transaction support |
-| **Concurrent Access** | None → file-level locking only | Row-level locking, MVCC, isolation levels |
+| **Atomicity** | None â†’ partial writes | Full ACID transaction support |
+| **Concurrent Access** | None â†’ file-level locking only | Row-level locking, MVCC, isolation levels |
 | **Security** | File permissions only | Row/column-level GRANT/REVOKE, encryption |
-| **Data Integrity** | None → application must enforce | Declarative constraints, triggers |
-| **Data Independence** | None → format change breaks everything | Physical/logical independence via abstraction |
+| **Data Integrity** | None â†’ application must enforce | Declarative constraints, triggers |
+| **Data Independence** | None â†’ format change breaks everything | Physical/logical independence via abstraction |
 | **Query Flexibility** | Manual parsing for each query | Declarative SQL with joins, subqueries, aggregation |
 | **Recovery** | Manual restore from backup | Automated crash recovery, point-in-time restore |
 | **Multi-user** | Not designed for it | Built for concurrent multi-user access |
@@ -743,13 +743,13 @@ if __name__ == "__main__":
 
 | Edge Case | File System | DBMS |
 |-----------|-------------|------|
-| Two users editing same record | Last write wins → data loss | First committer wins → second gets serialization error |
+| Two users editing same record | Last write wins â†’ data loss | First committer wins â†’ second gets serialization error |
 | System crash during write | Corrupted file, partial write | Atomic recovery via WAL |
 | Disk space exhaustion | Incomplete write, no recovery | Transaction aborts cleanly |
 | Schema change (add column) | Every app must be rewritten | ALTER TABLE with default value; views insulate apps |
 | Cross-file consistency | No referential integrity | FOREIGN KEY constraints enforced |
 | Million-record search | Slow sequential scan (minutes) | Indexed lookup (milliseconds) |
-| Simultaneous backup | File locked → no access | Online backup with consistent snapshot |
+| Simultaneous backup | File locked â†’ no access | Online backup with consistent snapshot |
 | Data encryption | Encrypt entire file or nothing | Column-level transparent encryption |
 
 ---
@@ -758,8 +758,8 @@ if __name__ == "__main__":
 **Real-World Analogy: Building Blueprint**
 
 Think of a large building:
-- **Physical Level** = The actual construction → concrete foundation, steel beams, electrical wiring, plumbing pipes. The architect does not show wiring diagrams to the office tenants.
-- **Conceptual Level** = The architectural blueprint → floor plans showing rooms, hallways, doors, windows. It describes what is in the building without specifying pipe diameters or wire gauges.
+- **Physical Level** = The actual construction â†’ concrete foundation, steel beams, electrical wiring, plumbing pipes. The architect does not show wiring diagrams to the office tenants.
+- **Conceptual Level** = The architectural blueprint â†’ floor plans showing rooms, hallways, doors, windows. It describes what is in the building without specifying pipe diameters or wire gauges.
 - **External Level** = The tenant's view. The CEO sees a corner office with a view. The IT team sees a server room with cooling ducts. The janitor sees the cleaning supply closet. Same building, different perspectives.
 
 The three-level architecture (ANSI-SPARC standard, 1975) separates these concerns so that changes at one level do not cascade to others.
@@ -775,7 +775,7 @@ The three-level architecture (ANSI-SPARC standard, 1975) separates these concern
 | **Changes** | Add index, change file org, compression | Add column, new table, new relationship | Add/modify/drop user views |
 | **Example** | "Table stored as heap file, B+ tree index on PK, 4KB blocks, LZ4 compression" | "Customer has orders; each order has items; customer has name, address, phone;" | "Shipping clerk sees only customer address and order ID" |
 | **Independence** | Changes hidden from upper levels | Changes may affect external views | Isolated from conceptual/physical changes |
-| **Hardware dependency** | High → depends on disk, memory, CPU | None | None |
+| **Hardware dependency** | High â†’ depends on disk, memory, CPU | None | None |
 | **Number of schemas** | One | One | Multiple (one per user group) |
 | **Data Dictionary entry** | Storage parameters, file paths, indexes | Table/column definitions, relationships, constraints | View definitions, access privileges |
 
@@ -789,14 +789,14 @@ Step 4: Conceptual schema processes the logical query against base tables
 Step 5: Conceptual-to-physical mapping determines how to access data
 Step 6: Physical schema locates the file, index, and blocks on disk
 Step 7: Storage manager reads the physical pages into buffer pool
-Step 8: Results propagate back through the levels (physical → conceptual → external → user)
+Step 8: Results propagate back through the levels (physical â†’ conceptual â†’ external â†’ user)
 ```
 
 **Pseudocode: Three-Level Query Resolution**
 
 ```
 FUNCTION resolve_user_query(user_query, user_role):
-    // Step 1-2: External level → apply view restrictions
+    // Step 1-2: External level â†’ apply view restrictions
     view = GET_VIEW_FOR_ROLE(user_role)
     allowed_columns = view.get_allowed_columns(user_query.table)
     row_filter = view.get_row_filter(user_query.table)
@@ -804,7 +804,7 @@ FUNCTION resolve_user_query(user_query, user_role):
     // Step 3: Map external to conceptual
     conceptual_query = external_to_conceptual(user_query, view)
     
-    // Step 4-5: Conceptual level → validate against catalog
+    // Step 4-5: Conceptual level â†’ validate against catalog
     schema = catalog.get_schema(conceptual_query.table)
     VALIDATE(conceptual_query, schema)
     
@@ -822,13 +822,13 @@ FUNCTION resolve_user_query(user_query, user_role):
 END FUNCTION
 ```
 
-**Dry Run Trace: Three-Level Query → "Show my orders"**
+**Dry Run Trace: Three-Level Query â†’ "Show my orders"**
 
 | Level | Component | Input | Processing | Output |
 |-------|-----------|-------|------------|--------|
 | External | View Definition | User role = 'customer' | Maps to view `customer_orders` that shows only `order_id, date, status, total` (hides `credit_card, internal_notes`) | View query: `SELECT order_id, date, status, total FROM orders WHERE customer_id = ?` |
 | Conceptual | Schema Mapping | View query | Translates to conceptual query; validates table `orders` has columns `order_id, date, status, total, customer_id` | Logical query: `SELECT ... FROM orders WHERE customer_id=101` |
-| Physical | Storage Mapping | Logical query | Index on `customer_id` selected; file `orders.ibd` page 42-48; buffer pool cache checked | Physical plan: IndexScan(orders_cid_idx) → Fetch(blocks 42,45) |
+| Physical | Storage Mapping | Logical query | Index on `customer_id` selected; file `orders.ibd` page 42-48; buffer pool cache checked | Physical plan: IndexScan(orders_cid_idx) â†’ Fetch(blocks 42,45) |
 | Physical | Execution | Physical plan | Buffer pool hit page 42 (cached), page 45 read from disk (5ms I/O) | 12 rows returned |
 | Conceptual | Formatting | 12 raw rows | Columns filtered per conceptual schema | Row set with all allowed cols |
 | External | View Filtering | Full row set | `credit_card` column removed; `internal_notes` column removed | 12 rows, 4 visible columns |
@@ -1182,17 +1182,17 @@ if __name__ == "__main__":
 | External view resolution | O(1) | View definition is a hash lookup by role + table name |
 | Conceptual schema lookup | O(1) | Catalog is hash-indexed by table name |
 | Physical storage mapping | O(1) | File path and organization stored in schema metadata |
-| View-to-conceptual mapping | O(c) where c = view columns | Column subset selection → linear in number of columns |
+| View-to-conceptual mapping | O(c) where c = view columns | Column subset selection â†’ linear in number of columns |
 | Conceptual-to-physical mapping | O(1) | Direct mapping via schema-stored physical parameters |
-| Full query resolution (E→C→P→C→E) | O(c + n) | Column mapping + optional data fetching |
+| Full query resolution (Eâ†’Câ†’Pâ†’Câ†’E) | O(c + n) | Column mapping + optional data fetching |
 
 **Advantages & Disadvantages of Three-Schema Architecture**
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Data independence (physical and logical) | Complexity → three levels to design and maintain |
+| Data independence (physical and logical) | Complexity â†’ three levels to design and maintain |
 | Multiple user views from same data | Performance overhead of mapping between levels |
-| Security → sensitive columns hidden per role | Schema evolution management complexity |
+| Security â†’ sensitive columns hidden per role | Schema evolution management complexity |
 | Simplified application development | Initial design effort is significant |
 | Centralized control with flexible access | Some DBMS do not fully implement all three levels |
 | Supports multiple external schemas | Mapping rules must be defined and maintained |
@@ -1216,7 +1216,7 @@ if __name__ == "__main__":
 
 In a restaurant:
 - **Physical Independence**: The chef can replace the old gas stove with an induction cooktop. The waiters still deliver the same dishes to customers. They do not need to change how they write orders.
-- **Logical Independence**: The chef changes the menu → replaces "Beef Wellington" with "Lobster Thermidor" on the printed menu. The suppliers still deliver ingredients the same way. The kitchen equipment does not change.
+- **Logical Independence**: The chef changes the menu â†’ replaces "Beef Wellington" with "Lobster Thermidor" on the printed menu. The suppliers still deliver ingredients the same way. The kitchen equipment does not change.
 
 **Logical vs. Physical Data Independence Comparison**
 
@@ -1228,17 +1228,17 @@ In a restaurant:
 | **Affected By** | Adding/removing indexes, switching from heap to sorted file, changing block size, migrating to SSD | Adding/dropping columns, splitting tables, normalizing, adding new relationships |
 | **Protection Mechanism** | Conceptual-to-physical mapping | External-to-conceptual mapping (views) |
 | **Implementation Level** | Between physical and conceptual schemas | Between conceptual and external schemas |
-| **Difficulty** | Easier → only DBA/storage team involved | Harder → may require view redefinition, application testing |
+| **Difficulty** | Easier â†’ only DBA/storage team involved | Harder â†’ may require view redefinition, application testing |
 | **Example** | Adding a B+ tree index on `last_name` does not change any `SELECT` query | Splitting `employees` into `employees + employee_details` requires updating views |
 | **Impact of Change** | Zero impact on applications | May require view updates; application changes minimized |
-| **Risk** | Low → storage changes are transparent | Medium → view definitions must be carefully rewritten |
+| **Risk** | Low â†’ storage changes are transparent | Medium â†’ view definitions must be carefully rewritten |
 | **Real DBMS Example** | MySQL changing from MyISAM to InnoDB engine | PostgreSQL adding a column with ALTER TABLE ... ADD COLUMN |
 | **Frequency** | Frequent (performance tuning, hardware upgrades) | Less frequent (schema evolution, new features) |
 
 **Numbered Steps: How Data Independence Works**
 
 ```
-Physical Independence Example → Adding an Index:
+Physical Independence Example â†’ Adding an Index:
   1. DBA identifies slow query: SELECT * FROM orders WHERE customer_id = 101
   2. DBA creates index: CREATE INDEX idx_customer_id ON orders(customer_id)
   3. Physical schema now has a B+ tree index on customer_id
@@ -1247,7 +1247,7 @@ Physical Independence Example → Adding an Index:
   6. The query optimizer uses the new index automatically
   7. Result: faster query, zero application changes
 
-Logical Independence Example → Adding a Column:
+Logical Independence Example â†’ Adding a Column:
   1. Business requirement: track employee department
   2. DBA alters conceptual schema: ALTER TABLE employees ADD COLUMN dept VARCHAR(50)
   3. External views that do NOT include `dept` are unaffected
@@ -1282,7 +1282,7 @@ FUNCTION logical_independence_test():
     
     // After schema change
     new_view = catalog.get_view("employee_basics")
-    new_columns = new_view.allowed_columns    // [id, name, email, salary] ← unchanged!
+    new_columns = new_view.allowed_columns    // [id, name, email, salary] â† unchanged!
     
     ASSERT old_columns == new_columns          // View definition preserved
     PRINT "Logical independence verified: schema changed, view unchanged"
@@ -1349,7 +1349,7 @@ public:
         return result;
     }
 
-    // Simulate logical independence → adding column without breaking view
+    // Simulate logical independence â†’ adding column without breaking view
     struct EmployeeView {
         std::vector<std::string> columns;  // What the view exposes
         std::vector<std::unordered_map<std::string, std::string>> data;
@@ -1391,7 +1391,7 @@ int main() {
 
     auto r2 = db.findByName("User_500");
     std::cout << r2.strategy << " -> " << r2.duration_us << " us\n";
-    std::cout << "Same query, different execution, same result âœ“\n\n";
+    std::cout << "Same query, different execution, same result Ã¢Å“â€œ\n\n";
 
     // Logical Independence Demo
     std::cout << "=== LOGICAL DATA INDEPENDENCE ===\n";
@@ -1458,7 +1458,7 @@ class DataIndependentDB:
         departments = {1: "Engineering", 2: "Marketing"}
         print("[LOGICAL CHANGE] Added department column to conceptual schema")
         print("[VERIFICATION] View columns unchanged:", view_columns)
-        print("Applications using employee_basics view are NOT affected âœ“")
+        print("Applications using employee_basics view are NOT affected Ã¢Å“â€œ")
 
 
 if __name__ == "__main__":
@@ -1472,7 +1472,7 @@ if __name__ == "__main__":
     r2 = db.find_by_name("User_500")
     print(f"{r2.strategy} -> {r2.duration_us:.0f} us")
     print(f"Speedup: {r1.duration_us / r2.duration_us:.1f}x")
-    print("Same query, different execution plan, identical results âœ“")
+    print("Same query, different execution plan, identical results Ã¢Å“â€œ")
 
     db.demo_logical_independence()
 ```
@@ -1485,7 +1485,7 @@ if __name__ == "__main__":
 | Physical independence cost | O(1) mapping overhead | Mapping layer indirection is constant-time pointer resolution |
 | Logical change (add column) | O(1) schema change + O(n) default fill | Metadata update is O(1); filling default for n existing rows is O(n) |
 | Logical independence benefit | O(k) view resolution | View definition hides change; only k view columns need resolution |
-| Query with physical change | O(log n) vs original O(n) | Index scan replaces full table scan → exponential improvement |
+| Query with physical change | O(log n) vs original O(n) | Index scan replaces full table scan â†’ exponential improvement |
 | Query with logical change | Same as before change | View definition unchanged; no query impact |
 
 ---
@@ -1494,12 +1494,12 @@ if __name__ == "__main__":
 
 **Real-World Analogy: Restaurant Operations**
 
-- **DDL (Data Definition Language)** = The architect who designs the restaurant layout → decides where the kitchen, dining room, bathrooms, and storage go. This is done once (or rarely, during renovations).
+- **DDL (Data Definition Language)** = The architect who designs the restaurant layout â†’ decides where the kitchen, dining room, bathrooms, and storage go. This is done once (or rarely, during renovations).
 - **DML (Data Manipulation Language)** = The waitstaff who takes orders, brings food, and clears tables. This happens hundreds of times a day.
 - **DCL (Data Control Language)** = The manager who decides who has keys to the building, who can access the safe, who can enter the wine cellar.
-- **TCL (Transaction Control Language)** = The cashier who processes payment as an atomic unit → either the full payment goes through (including credit card charge and receipt printing) or none of it does.
+- **TCL (Transaction Control Language)** = The cashier who processes payment as an atomic unit â†’ either the full payment goes through (including credit card charge and receipt printing) or none of it does.
 
-**DBMS Languages → Complete Table**
+**DBMS Languages â†’ Complete Table**
 
 | Category | Full Name | Commands | Purpose | Who Uses It | Frequency |
 |----------|-----------|----------|---------|-------------|-----------|
@@ -1796,7 +1796,7 @@ if __name__ == "__main__":
 | SQL classification (first token) | O(1) | Single hash lookup on first word |
 | DDL: CREATE TABLE | O(c) where c = columns | Define column metadata, allocate initial storage pages |
 | DDL: CREATE INDEX | O(n) | Must scan all n rows and build tree structure |
-| DML: SELECT (no WHERE) | O(n) | Full table scan → must read all rows |
+| DML: SELECT (no WHERE) | O(n) | Full table scan â†’ must read all rows |
 | DML: SELECT (with PK equality) | O(log n) | B+ tree primary key lookup |
 | DML: INSERT | O(log n) | Append to page + update index(es) |
 | DML: UPDATE (with index) | O(log n + k) | Find row (log n) + update data + update indexes (k indexes) |
@@ -1811,7 +1811,7 @@ if __name__ == "__main__":
 | Language | Advantages | Disadvantages |
 |----------|------------|---------------|
 | **DDL** | Declarative schema definition; supports constraints (PK, FK, CHECK); transactional DDL in modern DBMS | Schema changes may lock tables; migrations require careful planning; some changes cannot be reversed |
-| **DML** | Declarative → specifies WHAT not HOW; set-based operations; can express complex joins and aggregations | Performance depends on query optimizer; complex queries may be hard to debug; no procedural logic without extensions |
+| **DML** | Declarative â†’ specifies WHAT not HOW; set-based operations; can express complex joins and aggregations | Performance depends on query optimizer; complex queries may be hard to debug; no procedural logic without extensions |
 | **DCL** | Fine-grained access control; row-level security; supports roles and inheritance | Managing permissions at scale is complex; permission explosion with many users |
 | **TCL** | Ensures atomicity; supports savepoints for partial rollbacks; integrates with error handling | Overhead of logging and locking; long transactions block others |
 
@@ -1833,10 +1833,10 @@ if __name__ == "__main__":
 
 **Real-World Analogy: The Hospital**
 
-- **Database Administrator (DBA)** = The hospital administrator → manages the entire facility, hires staff, sets policies, ensures compliance with regulations.
-- **Application Programmers** = The doctors → use tools (instruments, tests) to diagnose and treat patients. They need deep access to specific data.
-- **Sophisticated Users** = The medical researchers → analyze patient outcomes across thousands of cases to find patterns.
-- **Naive Users** = The patients → interact through the front desk, see only their own information, do not access the database directly.
+- **Database Administrator (DBA)** = The hospital administrator â†’ manages the entire facility, hires staff, sets policies, ensures compliance with regulations.
+- **Application Programmers** = The doctors â†’ use tools (instruments, tests) to diagnose and treat patients. They need deep access to specific data.
+- **Sophisticated Users** = The medical researchers â†’ analyze patient outcomes across thousands of cases to find patterns.
+- **Naive Users** = The patients â†’ interact through the front desk, see only their own information, do not access the database directly.
 
 **DBMS User Types Table**
 
@@ -1848,7 +1848,7 @@ if __name__ == "__main__":
 | **Specialized Users** | Build specialized database applications | CAD/CASE tools, expert systems | Domain-specific | GIS engineer managing spatial data |
 | **Database Administrator (DBA)** | Manages the database environment | DBMS admin tools, command-line, monitoring dashboards | Expert (all DDL, DCL, TCL, performance tuning) | DBA optimizing indexes and managing backups |
 
-**DBA Responsibilities → Numbered Steps**
+**DBA Responsibilities â†’ Numbered Steps**
 
 ```
 1. Schema Design: Define tables, columns, constraints, relationships
@@ -1871,10 +1871,10 @@ if __name__ == "__main__":
 
 Different maps serve different purposes for the same city:
 - **ER Model** = A tourist map showing landmarks (entities) and walking paths (relationships) between them
-- **Relational Model** = A spreadsheet with cross-references → each sheet (table) lists items of one type, and columns link across sheets
-- **Hierarchical Model** = A tree-structured org chart → each department has sub-departments, employees report to managers
-- **Network Model** = A subway map → stations (records) are connected by lines (sets) in multiple paths
-- **Object-Oriented Model** = An interactive 3D model → each building is an object with properties and behaviors
+- **Relational Model** = A spreadsheet with cross-references â†’ each sheet (table) lists items of one type, and columns link across sheets
+- **Hierarchical Model** = A tree-structured org chart â†’ each department has sub-departments, employees report to managers
+- **Network Model** = A subway map â†’ stations (records) are connected by lines (sets) in multiple paths
+- **Object-Oriented Model** = An interactive 3D model â†’ each building is an object with properties and behaviors
 
 **Data Models Comparison Table**
 
@@ -1899,15 +1899,15 @@ An ER model is like a family tree showing people (entities), their attributes (n
 
 **Relational Model Real-World Analogy: Spreadsheet with Cross-References**
 
-A relational database is like a set of Excel spreadsheets where each sheet has a unique ID column. One sheet lists customers (each with a customer_id). Another lists orders (each order references a customer_id). To find all orders for a customer, you look up the customer_id in the orders sheet → no duplication of customer data needed.
+A relational database is like a set of Excel spreadsheets where each sheet has a unique ID column. One sheet lists customers (each with a customer_id). Another lists orders (each order references a customer_id). To find all orders for a customer, you look up the customer_id in the orders sheet â†’ no duplication of customer data needed.
 
 **Hierarchical Model Real-World Analogy: Company Org Chart**
 
-A hierarchical database is like an organization chart: CEO at the top, VPs below, directors below them, managers, then employees. To find an employee, you start at the top and navigate down the tree. If an employee works for two managers, you must duplicate the employee record (one in each subtree) → this is the model's main limitation.
+A hierarchical database is like an organization chart: CEO at the top, VPs below, directors below them, managers, then employees. To find an employee, you start at the top and navigate down the tree. If an employee works for two managers, you must duplicate the employee record (one in each subtree) â†’ this is the model's main limitation.
 
 **Network Model Real-World Analogy: Subway Map**
 
-A network database is like a subway map where stations (records) are connected by lines (sets). You can navigate from any station to any connected station. Unlike the hierarchical model's strict tree, the network model allows many-to-many relationships naturally → a route may connect multiple stations, and a station may be on multiple routes.
+A network database is like a subway map where stations (records) are connected by lines (sets). You can navigate from any station to any connected station. Unlike the hierarchical model's strict tree, the network model allows many-to-many relationships naturally â†’ a route may connect multiple stations, and a station may be on multiple routes.
 
 **Object-Oriented Model Real-World Analogy: Lego Set**
 
@@ -1922,7 +1922,7 @@ An OO database is like a Lego set. Each piece is an object with properties (colo
 #include <map>
 #include <memory>
 
-// ===== ER MODEL (conceptual → represented as metadata) =====
+// ===== ER MODEL (conceptual â†’ represented as metadata) =====
 struct ERAttribute {
     std::string name;
     std::string type;
@@ -2253,10 +2253,10 @@ User Query (SQL)
 
 | Component | Primary Function | Key Subcomponents | Performance Impact |
 |-----------|-----------------|-------------------|-------------------|
-| **Query Processor** | Parse, validate, optimize, execute SQL | Parser, Validator, Optimizer, Executor | High → bad optimization = 1000x slower queries |
-| **Storage Manager** | Manage persistent data on disk | Buffer Manager, File Manager, Index Manager | High → buffer hit rate determines I/O cost |
-| **Transaction Manager** | Ensure ACID properties | Lock Manager, Log Manager, Recovery Manager | Medium → locking overhead, log write latency |
-| **Catalog Manager** | Maintain metadata | Data Dictionary, System Tables | Low → mostly read cache, rare writes |
+| **Query Processor** | Parse, validate, optimize, execute SQL | Parser, Validator, Optimizer, Executor | High â†’ bad optimization = 1000x slower queries |
+| **Storage Manager** | Manage persistent data on disk | Buffer Manager, File Manager, Index Manager | High â†’ buffer hit rate determines I/O cost |
+| **Transaction Manager** | Ensure ACID properties | Lock Manager, Log Manager, Recovery Manager | Medium â†’ locking overhead, log write latency |
+| **Catalog Manager** | Maintain metadata | Data Dictionary, System Tables | Low â†’ mostly read cache, rare writes |
 
 ---
 
@@ -2371,19 +2371,19 @@ Example: In an `employees` table, both `employee_id` and `national_id` can uniqu
 
 ## Examples
 
-**Example 1.1: File System vs. DBMS → The Registration Problem**
+**Example 1.1: File System vs. DBMS â†’ The Registration Problem**
 
 A university uses three separate file systems:
-- `students.csv` → managed by admissions
-- `courses.txt` → managed by the registrar
-- `enrollments.dat` → managed by department administrators
+- `students.csv` â†’ managed by admissions
+- `courses.txt` â†’ managed by the registrar
+- `enrollments.dat` â†’ managed by department administrators
 
 When a student changes their name after marriage:
 1. Admissions updates `students.csv`
 2. The registrar must remember to update `courses.txt` independently
 3. Department administrators update `enrollments.dat` independently
 
-Results: The student's name becomes inconsistent across systems. Emails are sent to the wrong name. Transcripts use the old name. The DBMS solves this by storing the student name in exactly one place → any application that needs the name references the single source of truth.
+Results: The student's name becomes inconsistent across systems. Emails are sent to the wrong name. Transcripts use the old name. The DBMS solves this by storing the student name in exactly one place â†’ any application that needs the name references the single source of truth.
 
 **Example 1.2: Atomicity in Banking**
 
@@ -2428,25 +2428,354 @@ DROP USER former_employee;
 
 ---
 
-## ðŸ’¡ Pro Tips
+### 1.12 DBMS Architecture Simulation (TypeScript)
 
-1. **Learn the three-level architecture early** → it is the foundation for understanding data independence, a concept that appears in almost every database interview and design discussion.
-2. **Understand why file systems fail** before learning how DBMS solves each problem → this gives you a framework for evaluating when a DBMS is (and isn't) the right tool.
-3. **The relational model dominates for a reason** → its mathematical foundation (set theory, predicate logic) enables powerful optimizations that other models struggle to match.
-4. **ACID properties are not optional** → any system claiming to be a true DBMS must guarantee all four; partial guarantees belong to NoSQL eventual-consistency systems.
-5. **DBAs are the unsung heroes** → without proper indexing, backup strategy, and performance tuning, even the best-designed schema performs terribly.
-6. **Know your SQL categories cold** → interviewers love asking "which category does CREATE TABLE belong to?" (DDL) and "can you ROLLBACK a TRUNCATE?" (no, in most DBMS).
-7. **Always ask "with or without index?"** when estimating query complexity → the difference between O(n) and O(log n) is the single most impactful optimization in databases.
+Below is a TypeScript implementation that models the core DBMS architecture components â€” query processor, storage manager, transaction manager, and catalog manager â€” demonstrating how they interact to process a user query.
+
+```typescript
+// ============================================================
+// DBMS Architecture Simulator â€” TypeScript
+// ============================================================
+
+interface ColumnSchema {
+  name: string;
+  type: 'INTEGER' | 'VARCHAR' | 'DECIMAL' | 'DATE';
+  isPrimaryKey: boolean;
+  isNullable: boolean;
+}
+
+interface TableSchema {
+  name: string;
+  columns: ColumnSchema[];
+}
+
+interface Row {
+  [column: string]: unknown;
+}
+
+// --- Catalog Manager ---
+class CatalogManager {
+  private tables: Map<string, TableSchema> = new Map();
+
+  createTable(schema: TableSchema): void {
+    this.tables.set(schema.name, schema);
+    const colCount = schema.columns.length;
+    console.log('[Catalog] Created table \'' + schema.name + '\' with ' + colCount + ' columns');
+  }
+
+  getTableSchema(name: string): TableSchema | undefined {
+    return this.tables.get(name);
+  }
+
+  listTables(): string[] {
+    return Array.from(this.tables.keys());
+  }
+}
+
+// --- Storage Manager ---
+class StorageManager {
+  private data: Map<string, Row[]> = new Map();
+  private catalog: CatalogManager;
+
+  constructor(catalog: CatalogManager) {
+    this.catalog = catalog;
+  }
+
+  insert(tableName: string, row: Row): boolean {
+    const schema = this.catalog.getTableSchema(tableName);
+    if (!schema) {
+      console.error('[Storage] Table \'' + tableName + '\' not found');
+      return false;
+    }
+    if (!this.data.has(tableName)) {
+      this.data.set(tableName, []);
+    }
+    this.data.get(tableName)!.push(row);
+    return true;
+  }
+
+  select(tableName: string, predicate?: (row: Row) => boolean): Row[] {
+    const rows = this.data.get(tableName) || [];
+    if (!predicate) return [...rows];
+    return rows.filter(predicate);
+  }
+
+  update(tableName: string, predicate: (row: Row) => boolean, updates: Partial<Row>): number {
+    const rows = this.data.get(tableName);
+    if (!rows) return 0;
+    let count = 0;
+    for (let i = 0; i < rows.length; i++) {
+      if (predicate(rows[i])) {
+        rows[i] = { ...rows[i], ...updates };
+        count++;
+      }
+    }
+    return count;
+  }
+
+  delete(tableName: string, predicate: (row: Row) => boolean): number {
+    const rows = this.data.get(tableName);
+    if (!rows) return 0;
+    const before = rows.length;
+    this.data.set(tableName, rows.filter(r => !predicate(r)));
+    return before - this.data.get(tableName)!.length;
+  }
+}
+
+// --- Transaction Manager ---
+class Transaction {
+  private logs: string[] = [];
+  private storage: StorageManager;
+
+  constructor(storage: StorageManager) {
+    this.storage = storage;
+  }
+
+  begin(): void {
+    this.logs = [];
+    console.log('[TX] Transaction started');
+  }
+
+  insert(tableName: string, row: Row): boolean {
+    this.logs.push('INSERT INTO ' + tableName);
+    return this.storage.insert(tableName, row);
+  }
+
+  update(tableName: string, predicate: (row: Row) => boolean, updates: Partial<Row>): number {
+    this.logs.push('UPDATE ' + tableName);
+    return this.storage.update(tableName, predicate, updates);
+  }
+
+  delete(tableName: string, predicate: (row: Row) => boolean): number {
+    this.logs.push('DELETE FROM ' + tableName);
+    return this.storage.delete(tableName, predicate);
+  }
+
+  commit(): void {
+    const opCount = this.logs.length;
+    console.log('[TX] COMMIT \u2014 ' + opCount + ' operations persisted');
+    this.logs = [];
+  }
+
+  rollback(): void {
+    const opCount = this.logs.length;
+    console.log('[TX] ROLLBACK \u2014 undoing ' + opCount + ' operations');
+    this.logs = [];
+  }
+}
+
+// --- Query Processor ---
+class QueryProcessor {
+  private storage: StorageManager;
+
+  constructor(storage: StorageManager) {
+    this.storage = storage;
+  }
+
+  executeSelect(tableName: string, whereClause?: (row: Row) => boolean): Row[] {
+    console.log('[QueryProcessor] Executing SELECT on \'' + tableName + '\'');
+    const result = this.storage.select(tableName, whereClause);
+    console.log('[QueryProcessor] Returned ' + result.length + ' rows');
+    return result;
+  }
+
+  explain(query: string): string {
+    return (
+      '\nQuery Plan for: ' + query + '\n' +
+      '\u2514\u2500\u2500 Seq Scan on target_table  (cost=0.00..35.50 rows=10)\n' +
+      '    \u2514\u2500\u2500 Filter: (condition)\n' +
+      '\u2514\u2500\u2500 Projection (columns)\n'
+    );
+  }
+}
+
+// --- Demo ---
+const catalog = new CatalogManager();
+const storage = new StorageManager(catalog);
+const processor = new QueryProcessor(storage);
+
+catalog.createTable({
+  name: 'employees',
+  columns: [
+    { name: 'id', type: 'INTEGER', isPrimaryKey: true, isNullable: false },
+    { name: 'name', type: 'VARCHAR', isPrimaryKey: false, isNullable: false },
+    { name: 'salary', type: 'DECIMAL', isPrimaryKey: false, isNullable: true },
+    { name: 'dept', type: 'VARCHAR', isPrimaryKey: false, isNullable: true },
+  ],
+});
+
+const tx = new Transaction(storage);
+tx.begin();
+tx.insert('employees', { id: 1, name: 'Alice', salary: 75000, dept: 'Engineering' });
+tx.insert('employees', { id: 2, name: 'Bob', salary: 82000, dept: 'Engineering' });
+tx.insert('employees', { id: 3, name: 'Charlie', salary: 65000, dept: 'Sales' });
+tx.commit();
+
+const result = processor.executeSelect(
+  'employees',
+  (row) => (row.salary as number) > 70000
+);
+console.log('High earners:', result);
+console.log(processor.explain('SELECT * FROM employees WHERE salary > 70000'));
+```
+
+**Mermaid Diagram: DBMS Query Flow**
+
+```mermaid
+sequenceDiagram
+    participant User as Application / User
+    participant QP as Query Processor
+    participant Parser as Parser
+    participant Optimizer as Optimizer
+    participant Executor as Executor
+    participant SM as Storage Manager
+    participant TM as Transaction Manager
+    participant Disk as Disk Storage
+
+    User->>QP: SQL Query
+    QP->>Parser: Parse & Validate
+    Parser->>Optimizer: Parse Tree
+    Optimizer->>Optimizer: Generate Plans
+    Optimizer->>Executor: Best Execution Plan
+    Executor->>TM: BEGIN TX
+    TM->>SM: Read/Write Requests
+    SM->>Disk: Page I/O
+    Disk-->>SM: Data Pages
+    SM-->>TM: Results
+    TM->>TM: Write WAL Log
+    TM->>Executor: COMMIT / ROLLBACK
+    Executor-->>QP: Result Set
+    QP-->>User: Query Result
+```
+
+### 1.13 Practical DBMS Selection Guide
+
+Choosing the right DBMS depends on workload characteristics, consistency requirements, and operational constraints.
+
+| Criterion | MySQL | PostgreSQL | Oracle | SQLite | MongoDB |
+|-----------|-------|------------|--------|--------|---------|
+| **Read-heavy OLTP** | Excellent | Excellent | Excellent | Good (single-user) | Excellent |
+| **Write-heavy OLTP** | Good (InnoDB) | Good | Excellent | Limited | Excellent |
+| **Complex analytics** | Moderate | Excellent | Excellent | Poor | Moderate |
+| **Geospatial data** | Basic (5.7+) | Excellent (PostGIS) | Excellent (Spatial) | None | Good (2dsphere) |
+| **Full-text search** | Basic (InnoDB) | Excellent (tsvector) | Excellent (Oracle Text) | Basic (FTS5) | Good (text index) |
+| **JSON support** | Good (JSON type) | Excellent (JSONB) | Good (JSON) | None | Native (BSON) |
+| **ACID compliance** | Yes (InnoDB) | Yes (fully) | Yes (fully) | Yes (limited) | Yes (4.0+) |
+| **High availability** | Group Replication | Streaming Replication | Data Guard | None | Replica Sets |
+| **Horizontal scaling** | Sharding (MySQL Cluster) | Citus, Patroni | RAC, Sharding | None | Native sharding |
+| **Cloud-native** | AWS RDS/Aurora, GCP Cloud SQL | AWS RDS/Aurora, GCP Cloud SQL, Supabase | Oracle Cloud, AWS RDS | N/A | Atlas (MongoDB Cloud) |
+| **License cost** | Free (Community) | Free | Very expensive | Free | Free (Community) |
+| **Learning curve** | Low | Medium | High | Very low | Medium |
+
+### Additional Chapter Quiz Questions
+
+13. Which of the following is NOT a component of a DBMS?
+    a) Query Processor
+    b) Storage Manager
+    c) Compiler
+    d) Transaction Manager
+
+14. The Write-Ahead Log (WAL) is primarily used to ensure:
+    a) Consistency
+    b) Isolation
+    c) Atomicity and Durability
+    d) Security
+
+15. Which type of data independence allows changing the storage structure without modifying the conceptual schema?
+    a) Logical data independence
+    b) Physical data independence
+    c) External data independence
+    d) View data independence
+
+16. In a client-server DBMS architecture, the server is responsible for:
+    a) Running the user interface
+    b) Managing data and processing queries
+    c) Rendering graphics
+    d) Compiling application code
+
+17. Which DBMS architecture is best suited for global enterprise applications with geographically distributed teams?
+    a) Centralized
+    b) Client-Server
+    c) Distributed
+    d) Parallel (Shared Memory)
+
+18. The catalog manager in a DBMS stores:
+    a) Actual row data
+    b) Metadata about database objects
+    c) Index files
+    d) Transaction logs
+
+19. A naive user typically interacts with a database through:
+    a) SQL queries
+    b) Pre-built forms and applications
+    c) Data definition language
+    d) System catalogs
+
+20. Which of the following is an example of logical data independence?
+    a) Changing block size from 4KB to 8KB
+    b) Splitting a table into two tables without breaking existing views
+    c) Adding a new index to speed up queries
+    d) Moving the database to a faster disk
+
+**Answers:** 13-c, 14-c, 15-b, 16-b, 17-c, 18-b, 19-b, 20-b
+
+### Additional Exercises
+
+#### Basic (continued)
+
+16. Identify which of the following are advantages of DBMS over file systems: (a) Concurrent access with isolation, (b) Lower cost, (c) Declarative querying, (d) Automatic recovery, (e) Simpler to set up.
+
+17. For each of the following scenarios, recommend a DBMS architecture (centralized, client-server, distributed, or parallel):
+    - A small pharmacy with five local terminals
+    - A multinational bank with branches in 50 countries
+    - A scientific research lab running complex data analysis on a supercomputer
+    - An e-commerce website handling 10,000 concurrent users
+
+#### Intermediate (continued)
+
+18. Draw the three-level architecture for a university database. For each level, list three specific elements that would appear at that level. Explain how adding a new column to the student table exemplifies logical data independence.
+
+19. Given the following file system scenario: A hospital maintains patient records in three separate files \u2014 admissions.txt, billing.csv, and prescriptions.dat. When a patient\u2019s insurance information changes, it must be updated in all three files. Describe three specific problems this creates and explain how a DBMS would solve each one.
+
+20. Write a TypeScript function that simulates a transaction manager. The function should accept a list of database operations and execute them atomically \u2014 if any operation fails, all previous operations should be rolled back. Test it with a fund transfer scenario.
+
+#### Advanced (continued)
+
+21. Design and implement a mini DBMS in TypeScript that includes:
+    - A parser that accepts a subset of SQL (CREATE TABLE, INSERT, SELECT with WHERE)
+    - A storage engine that supports in-memory tables with row-level locking
+    - A transaction manager that supports BEGIN, COMMIT, and ROLLBACK
+    - Demonstrate ACID properties with a concurrent transfer scenario
+
+22. Compare and contrast the ACID guarantees of MongoDB (v4.0+) with PostgreSQL. Under what circumstances would you choose MongoDB over PostgreSQL, despite MongoDB\u2019s more recent ACID implementation?
+
+23. Research cloud-native database offerings (AWS Aurora, Google Cloud Spanner, Azure Cosmos DB). For each, explain:
+    - How they implement distribution and replication
+    - Their consistency model (strong vs. eventual)
+    - The storage architecture (shared-storage vs. shared-nothing)
+    - A use case where each would be the best choice
+
+---
+
+## Ã°Å¸â€™Â¡ Pro Tips
+
+1. **Learn the three-level architecture early** â†’ it is the foundation for understanding data independence, a concept that appears in almost every database interview and design discussion.
+2. **Understand why file systems fail** before learning how DBMS solves each problem â†’ this gives you a framework for evaluating when a DBMS is (and isn't) the right tool.
+3. **The relational model dominates for a reason** â†’ its mathematical foundation (set theory, predicate logic) enables powerful optimizations that other models struggle to match.
+4. **ACID properties are not optional** â†’ any system claiming to be a true DBMS must guarantee all four; partial guarantees belong to NoSQL eventual-consistency systems.
+5. **DBAs are the unsung heroes** â†’ without proper indexing, backup strategy, and performance tuning, even the best-designed schema performs terribly.
+6. **Know your SQL categories cold** â†’ interviewers love asking "which category does CREATE TABLE belong to?" (DDL) and "can you ROLLBACK a TRUNCATE?" (no, in most DBMS).
+7. **Always ask "with or without index?"** when estimating query complexity â†’ the difference between O(n) and O(log n) is the single most impactful optimization in databases.
 
 ---
 
 ## One-Sentence Takeaways
 
 - **1.1:** A DBMS is library catalog software that manages, stores, retrieves, and secures data with ACID guarantees.
-- **1.2:** File systems lack concurrency, atomicity, integrity, security, and independence → a DBMS solves all five systematically.
+- **1.2:** File systems lack concurrency, atomicity, integrity, security, and independence â†’ a DBMS solves all five systematically.
 - **1.3:** The ANSI-SPARC three-level architecture decouples physical storage from logical structure from user views.
-- **1.4:** Physical data independence hides storage changes; logical data independence hides schema changes → both shield applications.
-- **1.5:** DDL defines structure, DML manipulates data, DCL controls access, and TCL manages transactions → the four SQL language pillars.
+- **1.4:** Physical data independence hides storage changes; logical data independence hides schema changes â†’ both shield applications.
+- **1.5:** DDL defines structure, DML manipulates data, DCL controls access, and TCL manages transactions â†’ the four SQL language pillars.
 - **1.6:** Database users range from naive (pre-built forms) to DBA (full control), each interacting at different abstraction levels.
 - **1.7:** Data models (ER, Relational, Hierarchical, Network, OO) provide different ways to structure and think about data.
 - **1.8:** A DBMS is built from query processor, storage manager, transaction manager, and catalog manager interacting together.
@@ -2461,8 +2790,8 @@ DROP USER former_employee;
 
 | Concept | File System | DBMS |
 |---------|-------------|------|
-| **Data Redundancy** | High → data duplicated across files | Minimal → single source of truth |
-| **Concurrent Access** | No built-in control → race conditions | ACID transactions with concurrency control |
+| **Data Redundancy** | High â†’ data duplicated across files | Minimal â†’ single source of truth |
+| **Concurrent Access** | No built-in control â†’ race conditions | ACID transactions with concurrency control |
 | **Atomicity** | No transaction support | BEGIN/COMMIT/ROLLBACK |
 | **Integrity** | Application-level only | Declarative constraints (PK, FK, CHECK, UNIQUE) |
 | **Security** | File-level permissions | Row/column-level GRANT/REVOKE |
@@ -2471,7 +2800,7 @@ DROP USER former_employee;
 | **Recovery** | Manual backups | Automatic recovery via WAL |
 | **Scalability** | Limited to single machine | Parallel and distributed architectures |
 | **Concurrency Unit** | File | Row/Tuple |
-| **Schema Flexibility** | Rigid → format change breaks apps | Flexible → views insulate applications |
+| **Schema Flexibility** | Rigid â†’ format change breaks apps | Flexible â†’ views insulate applications |
 | **Metadata Management** | None | Centralized data dictionary |
 
 ---

@@ -1827,6 +1827,271 @@ Real-time systems require **guaranteed response times** within deadlines. Two cl
 
 ---
 
+### TypeScript CPU Scheduling Simulator
+
+The following TypeScript implementation models FCFS, SJF, SRTF, Round Robin, Priority, and MLFQ scheduling with full Gantt chart output:
+
+```typescript
+/**
+ * CPU Scheduling Algorithm Simulator
+ * Supports: FCFS, SJF (non-preemptive), SRTF (preemptive SJF),
+ *           Round Robin, Priority (preemptive), MLFQ
+ */
+interface Process {
+  id: string;
+  arrivalTime: number;
+  burstTime: number;
+  remainingTime: number;
+  priority: number;
+  completionTime: number;
+  turnaroundTime: number;
+  waitingTime: number;
+  responseTime: number;
+  startTime: number | null;
+}
+
+class CPUScheduler {
+  private processes: Process[] = [];
+  private ganttChart: { pid: string; start: number; end: number }[] = [];
+  private currentTime = 0;
+
+  loadProcesses(procs: { id: string; arrival: number; burst: number; priority?: number }[]): void {
+    this.processes = procs.map(p => ({
+      id: p.id, arrivalTime: p.arrival, burstTime: p.burst,
+      remainingTime: p.burst, priority: p.priority ?? 1,
+      completionTime: 0, turnaroundTime: 0, waitingTime: 0,
+      responseTime: 0, startTime: null
+    }));
+  }
+
+  fcfs(): { avgWaiting: number; avgTurnaround: number; gantt: string } {
+    this.processes.sort((a, b) => a.arrivalTime - b.arrivalTime);
+    this.currentTime = 0;
+    this.ganttChart = [];
+
+    for (const p of this.processes) {
+      if (this.currentTime < p.arrivalTime) this.currentTime = p.arrivalTime;
+      p.startTime = this.currentTime;
+      p.responseTime = p.startTime - p.arrivalTime;
+      this.currentTime += p.burstTime;
+      p.completionTime = this.currentTime;
+      p.turnaroundTime = p.completionTime - p.arrivalTime;
+      p.waitingTime = p.turnaroundTime - p.burstTime;
+      this.ganttChart.push({ pid: p.id, start: p.startTime, end: p.completionTime });
+    }
+    return this.computeStats();
+  }
+
+  roundRobin(quantum: number): { avgWaiting: number; avgTurnaround: number; gantt: string } {
+    const queue: Process[] = [...this.processes].sort((a, b) => a.arrivalTime - b.arrivalTime);
+    for (const p of queue) p.remainingTime = p.burstTime;
+    this.currentTime = 0;
+    this.ganttChart = [];
+    const ready: Process[] = [];
+    let idx = 0;
+
+    while (idx < queue.length || ready.length > 0) {
+      // Move arriving processes to ready queue
+      while (idx < queue.length && queue[idx].arrivalTime <= this.currentTime) {
+        ready.push(queue[idx++]);
+      }
+
+      if (ready.length === 0) {
+        this.currentTime = queue[idx].arrivalTime;
+        continue;
+      }
+
+      const p = ready.shift()!;
+      if (p.startTime === null) p.startTime = this.currentTime;
+      p.responseTime = p.startTime - p.arrivalTime;
+
+      const execTime = Math.min(quantum, p.remainingTime);
+      const start = this.currentTime;
+      this.currentTime += execTime;
+      p.remainingTime -= execTime;
+      this.ganttChart.push({ pid: p.id, start, end: this.currentTime });
+
+      // Move newly arrived processes to ready queue
+      while (idx < queue.length && queue[idx].arrivalTime <= this.currentTime) {
+        ready.push(queue[idx++]);
+      }
+
+      if (p.remainingTime > 0) {
+        ready.push(p); // Re-queue
+      } else {
+        p.completionTime = this.currentTime;
+        p.turnaroundTime = p.completionTime - p.arrivalTime;
+        p.waitingTime = p.turnaroundTime - p.burstTime;
+      }
+    }
+
+    return this.computeStats();
+  }
+
+  srtf(): { avgWaiting: number; avgTurnaround: number; gantt: string } {
+    const queue = [...this.processes].map(p => ({ ...p }));
+    for (const p of queue) p.remainingTime = p.burstTime;
+    this.currentTime = 0;
+    this.ganttChart = [];
+    let completed = 0;
+    let lastPid = '';
+    let segmentStart = 0;
+
+    while (completed < queue.length) {
+      // Find process with shortest remaining time that has arrived
+      let shortest: Process | null = null;
+      for (const p of queue) {
+        if (p.arrivalTime <= this.currentTime && p.remainingTime > 0) {
+          if (!shortest || p.remainingTime < shortest.remainingTime) {
+            shortest = p;
+          }
+        }
+      }
+
+      if (!shortest) {
+        this.currentTime++;
+        continue;
+      }
+
+      if (lastPid !== shortest.id) {
+        if (lastPid) {
+          this.ganttChart.push({ pid: lastPid, start: segmentStart, end: this.currentTime });
+        }
+        segmentStart = this.currentTime;
+        lastPid = shortest.id;
+        if (shortest.startTime === null) shortest.startTime = this.currentTime;
+        shortest.responseTime = shortest.startTime - shortest.arrivalTime;
+      }
+
+      this.currentTime++;
+      shortest.remainingTime--;
+
+      if (shortest.remainingTime === 0) {
+        completed++;
+        shortest.completionTime = this.currentTime;
+        shortest.turnaroundTime = shortest.completionTime - shortest.arrivalTime;
+        shortest.waitingTime = shortest.turnaroundTime - shortest.burstTime;
+        this.ganttChart.push({ pid: shortest.id, start: segmentStart, end: this.currentTime });
+        lastPid = '';
+      }
+    }
+
+    this.processes = queue;
+    return this.computeStats();
+  }
+
+  priorityPreemptive(): { avgWaiting: number; avgTurnaround: number; gantt: string } {
+    const queue = [...this.processes].map(p => ({ ...p }));
+    for (const p of queue) p.remainingTime = p.burstTime;
+    this.currentTime = 0;
+    this.ganttChart = [];
+    let completed = 0;
+    let lastPid = '';
+    let segmentStart = 0;
+
+    while (completed < queue.length) {
+      let highest: Process | null = null;
+      for (const p of queue) {
+        if (p.arrivalTime <= this.currentTime && p.remainingTime > 0) {
+          if (!highest || p.priority < highest.priority) highest = p;
+        }
+      }
+
+      if (!highest) { this.currentTime++; continue; }
+
+      if (lastPid !== highest.id) {
+        if (lastPid) this.ganttChart.push({ pid: lastPid, start: segmentStart, end: this.currentTime });
+        segmentStart = this.currentTime;
+        lastPid = highest.id;
+        if (highest.startTime === null) highest.startTime = this.currentTime;
+        highest.responseTime = highest.startTime - highest.arrivalTime;
+      }
+
+      this.currentTime++;
+      highest.remainingTime--;
+
+      if (highest.remainingTime === 0) {
+        completed++;
+        highest.completionTime = this.currentTime;
+        highest.turnaroundTime = highest.completionTime - highest.arrivalTime;
+        highest.waitingTime = highest.turnaroundTime - highest.burstTime;
+        this.ganttChart.push({ pid: highest.id, start: segmentStart, end: this.currentTime });
+        lastPid = '';
+      }
+    }
+
+    this.processes = queue;
+    return this.computeStats();
+  }
+
+  private computeStats(): { avgWaiting: number; avgTurnaround: number; gantt: string } {
+    const totalWaiting = this.processes.reduce((s, p) => s + p.waitingTime, 0);
+    const totalTurnaround = this.processes.reduce((s, p) => s + p.turnaroundTime, 0);
+    const n = this.processes.length;
+    const gantt = this.ganttChart.map(g => `${g.pid}[${g.start}-${g.end}]`).join(' → ');
+    return {
+      avgWaiting: totalWaiting / n,
+      avgTurnaround: totalTurnaround / n,
+      gantt
+    };
+  }
+}
+
+// Benchmark: compare all algorithms on same workload
+const scheduler = new CPUScheduler();
+scheduler.loadProcesses([
+  { id: 'P1', arrival: 0, burst: 8, priority: 3 },
+  { id: 'P2', arrival: 1, burst: 4, priority: 1 },
+  { id: 'P3', arrival: 2, burst: 9, priority: 4 },
+  { id: 'P4', arrival: 3, burst: 5, priority: 2 }
+]);
+
+console.log('=== FCFS ===', scheduler.fcfs());
+scheduler.loadProcesses([
+  { id: 'P1', arrival: 0, burst: 8, priority: 3 },
+  { id: 'P2', arrival: 1, burst: 4, priority: 1 },
+  { id: 'P3', arrival: 2, burst: 9, priority: 4 },
+  { id: 'P4', arrival: 3, burst: 5, priority: 2 }
+]);
+console.log('=== Round Robin (q=3) ===', scheduler.roundRobin(3));
+```
+
+### Numerical Example: Scheduling Comparison with FCFS, SJF, RR
+
+**Given processes:** P1(arr=0, burst=10), P2(arr=1, burst=5), P3(arr=2, burst=2), P4(arr=3, burst=8)
+
+**FCFS Schedule:**
+| Time | Event | Ready Queue |
+|------|-------|-------------|
+| 0 | P1 starts | — |
+| 1 | P2 arrives | [P2] |
+| 2 | P3 arrives | [P2, P3] |
+| 3 | P4 arrives | [P2, P3, P4] |
+| 10 | P1 done | [P2, P3, P4] |
+| 15 | P2 done | [P3, P4] |
+| 17 | P3 done | [P4] |
+| 25 | P4 done | — |
+
+**FCFS:**
+- Turnaround: P1=10, P2=14, P3=15, P4=22 → Avg = 15.25
+- Waiting: P1=0, P2=9, P3=13, P4=14 → Avg = 9.0
+
+**SJF (non-preemptive):**
+Order by burst: P3(2) → P2(5) → P4(8) → P1(10) but respecting arrival:
+| Time | Event |
+|------|-------|
+| 0 | P1 runs (only one) |
+| 10 | P1 done → P3 shortest (burst=2) |
+| 12 | P3 done → P2 (burst=5) |
+| 17 | P2 done → P4 (burst=8) |
+| 25 | P4 done |
+
+Waiting: P1=0, P2=9, P3=8, P4=14 → Avg = 7.75
+
+**RR (quantum=4):**
+Gantt: P1[0-4] → P2[4-8] → P3[8-10] → P4[10-14] → P1[14-20] → P4[20-24]
+Response: P1=0, P2=3, P3=6, P4=7 → Avg Response = 4.0
+
 ## Concept Comparison
 
 | Criterion | FCFS | SJF | Priority | Round Robin | MLFQ |

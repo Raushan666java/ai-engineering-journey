@@ -1934,11 +1934,170 @@ Graph representations use an array of singly linked lists → one list per verte
 
 ---
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the time complexity of searching for a value in a linked list?**
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Forgetting to update tail pointer on head insertion | Insert at head on empty list must also set tail | Always check `if (!tail) tail = head` after pushFront |
+| Losing reference to the next node during reversal | Overwriting `current.next` before saving the forward reference | Always save `next = current.next` before rewiring |
+| Infinite loop when reversing a cyclic list | Floyd's algorithm catches it, but reversal code hangs | Check for cycles before calling reverse |
+| Not handling empty list before accessing `head->next` | Dereferencing nullptr causes segfault | Guard all operations with `if (!head) return` |
+| Recursive reverse on large lists (stack overflow) | Each recursion level uses a stack frame | Use iterative 3-pointer reversal for production code |
+| Off-by-one in insertAt: traversing to wrong node | Must stop at `index - 1` (the node before insertion point) | Loop `for (i = 0; i < index - 1; i++)` |
+
+### TypeScript Singly Linked List Implementation
+
+```typescript
+class ListNode<T> {
+    constructor(
+        public data: T,
+        public next: ListNode<T> | null = null
+    ) {}
+}
+
+class SinglyLinkedList<T> {
+    private head: ListNode<T> | null = null;
+    private tail: ListNode<T> | null = null;
+    private _count: number = 0;
+
+    get count(): number { return this._count; }
+
+    pushFront(data: T): void {
+        const node = new ListNode(data, this.head);
+        this.head = node;
+        if (!this.tail) this.tail = node;
+        this._count++;
+    }
+
+    pushBack(data: T): void {
+        const node = new ListNode(data);
+        if (!this.head) {
+            this.head = this.tail = node;
+        } else {
+            this.tail!.next = node;
+            this.tail = node;
+        }
+        this._count++;
+    }
+
+    popFront(): T | null {
+        if (!this.head) return null;
+        const data = this.head.data;
+        this.head = this.head.next;
+        if (!this.head) this.tail = null;
+        this._count--;
+        return data;
+    }
+
+    reverse(): void {
+        let prev: ListNode<T> | null = null;
+        let curr = this.head;
+        this.tail = this.head;
+        while (curr) {
+            const next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        this.head = prev;
+    }
+
+    hasCycle(): boolean {
+        let slow = this.head;
+        let fast = this.head;
+        while (fast && fast.next) {
+            slow = slow!.next;
+            fast = fast.next.next;
+            if (slow === fast) return true;
+        }
+        return false;
+    }
+
+    findMiddle(): ListNode<T> | null {
+        let slow = this.head;
+        let fast = this.head;
+        while (fast && fast.next) {
+            slow = slow!.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    toArray(): T[] {
+        const result: T[] = [];
+        let curr = this.head;
+        while (curr) {
+            result.push(curr.data);
+            curr = curr.next;
+        }
+        return result;
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the space complexity of the recursive reverse function for a linked list?**
    - a) O(1)
-   - b) O(n) âœ…
+   - b) O(log n)
+   - c) O(n) ✓
+   - d) O(n²)
+
+10. **In Floyd's cycle detection algorithm, if a cycle exists, how many steps until slow and fast meet?**
+    - a) At most the cycle length
+    - b) At most the list length ✓
+    - c) At most O(log n) steps
+    - d) They may never meet
+
+11. **Which of the following is true about a singly linked list with a tail pointer?**
+    - a) pushBack is O(n)
+    - b) pushBack is O(1) ✓
+    - c) popBack is O(1)
+    - d) Insert at middle is O(1)
+
+12. **The dummy/sentinel node pattern helps primarily by:**
+    - a) Reducing memory usage
+    - b) Eliminating special-case code for empty lists ✓
+    - c) Speeding up traversal
+    - d) Enabling binary search
+
+13. **What happens if you apply Floyd's algorithm to a single-node list pointing to itself?**
+    - a) Returns false
+    - b) Returns true ✓
+    - c) Infinite loop
+    - d) Null pointer error
+
+14. **When merging two sorted lists, the dummy node technique:**
+    - a) Increases space complexity
+    - b) Eliminates the need to check which list is empty first ✓
+    - c) Slows down the merge
+    - d) Requires a circular list
+
+**Answers:** 9-c, 10-b, 11-b, 12-b, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+16. **Add two numbers represented by linked lists**: Given two non-empty linked lists representing non-negative integers with digits stored in reverse order, add them and return the sum as a linked list.
+
+17. **Remove duplicates from an unsorted linked list**: Write a function that removes duplicate nodes from an unsorted singly linked list. Solve using a hash set (O(n) time).
+
+18. **Segregate even and odd nodes**: Given a linked list, modify it such that all even-valued nodes appear before all odd-valued nodes while preserving relative order.
+
+19. **Nth node from the end**: Find the nth node from the end of a singly linked list in one pass using two pointers.
+
+20. **Delete nodes with greater values on the right**: Given a linked list, delete all nodes that have a greater value on their right side.
+
+21. **Sort a linked list of 0s, 1s, and 2s**: Sort a linked list containing only 0s, 1s, and 2s by changing links (not data).
+
+22. **Clone a linked list with next and random pointer**: Implement deep copy of a linked list where each node has an additional random pointer.
+
+23. **Reorder list**: Given `L0→L1→…→Ln-1→Ln`, reorder to `L0→Ln→L1→Ln-1→L2→Ln-2→…` in O(n) time and O(1) space.
+
+24. **Flatten a linked list with next and child pointers**: Given a linked list where each node has a `child` pointer that can point to another linked list, flatten the multilevel structure.
+
+25. **Delete N nodes after M nodes**: Given a linked list, delete N nodes after skipping M nodes. Implement in one pass.
    - c) O(log n)
    - d) O(nÂ²)
 

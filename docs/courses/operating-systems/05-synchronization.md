@@ -2150,7 +2150,257 @@ int main() {
 
 ---
 
-# SUMMARY
+### TypeScript Lock Implementation Simulator
+
+The following TypeScript code implements Peterson's algorithm, test-and-set, ticket locks, and MCS locks with full race condition detection:
+
+```typescript
+/**
+ * Synchronization Primitive Simulator
+ * Implements: Peterson, Test-and-Set, Ticket Lock, MCS Lock, CAS
+ */
+class AtomicUtils {
+  static testAndSet(lock: boolean[]): boolean {
+    const old = lock[0];
+    lock[0] = true;
+    return old;
+  }
+
+  static compareAndSwap(ptr: number[], expected: number, newVal: number): boolean {
+    if (ptr[0] === expected) {
+      ptr[0] = newVal;
+      return true;
+    }
+    return false;
+  }
+
+  static fetchAndAdd(ptr: number[], increment: number): number {
+    const old = ptr[0];
+    ptr[0] += increment;
+    return old;
+  }
+}
+
+class PetersonLock {
+  private flag: boolean[] = [false, false];
+  private turn: number = 0;
+
+  lock(id: number): void {
+    const other = id === 0 ? 1 : 0;
+    this.flag[id] = true;
+    this.turn = other;
+    while (this.flag[other] && this.turn === other) {
+      // Busy wait
+    }
+  }
+
+  unlock(id: number): void {
+    this.flag[id] = false;
+  }
+}
+
+class TicketLock {
+  private nextTicket: number[] = [0];
+  private nowServing: number[] = [0];
+
+  lock(): number {
+    const myTicket = AtomicUtils.fetchAndAdd(this.nextTicket, 1);
+    while (this.nowServing[0] !== myTicket) {
+      // Busy wait — but fair (FIFO)
+    }
+    return myTicket;
+  }
+
+  unlock(): void {
+    AtomicUtils.fetchAndAdd(this.nowServing, 1);
+  }
+}
+
+class MCSLock {
+  private tail: MCSNode | null = null;
+
+  lock(node: MCSNode): void {
+    node.next = null;
+    node.locked = true;
+    const prev = this.tail;
+    this.tail = node;
+    if (prev !== null) {
+      prev.next = node;
+      while (node.locked) {
+        // Spin on local flag — cache-friendly
+      }
+    }
+  }
+
+  unlock(node: MCSNode): void {
+    if (node.next === null) {
+      if (this.tail === node) {
+        this.tail = null;
+        return;
+      }
+      while (node.next === null) {
+        // Wait for successor to link
+      }
+    }
+    node.next.locked = false;
+    node.next = null;
+  }
+}
+
+interface MCSNode {
+  next: MCSNode | null;
+  locked: boolean;
+}
+
+/**
+ * Simulate race condition and fix with lock
+ */
+class CounterSimulator {
+  private counter = 0;
+  private lock = new TicketLock();
+  private raceDetected = false;
+  private log: string[] = [];
+
+  async unsafeIncrement(threadId: number, iterations: number): Promise<void> {
+    for (let i = 0; i < iterations; i++) {
+      // Race: load, increment, store — no synchronization
+      const val = this.counter;
+      this.log.push(`Thread ${threadId}: read counter=${val}`);
+      await new Promise(r => setImmediate(r)); // Forced context switch
+      this.counter = val + 1;
+    }
+  }
+
+  async safeIncrement(threadId: number, iterations: number): Promise<void> {
+    for (let i = 0; i < iterations; i++) {
+      this.lock.lock();
+      this.counter++;
+      this.lock.unlock();
+    }
+  }
+
+  async compareRaceVsSafe(threads: number, iterations: number): Promise<string> {
+    // Unsafe run
+    this.counter = 0;
+    const unsafePromises: Promise<void>[] = [];
+    for (let t = 0; t < threads; t++) {
+      unsafePromises.push(this.unsafeIncrement(t, iterations));
+    }
+    await Promise.all(unsafePromises);
+    const unsafeResult = this.counter;
+    const expected = threads * iterations;
+
+    // Safe run
+    this.counter = 0;
+    const safePromises: Promise<void>[] = [];
+    for (let t = 0; t < threads; t++) {
+      safePromises.push(this.safeIncrement(t, iterations));
+    }
+    await Promise.all(safePromises);
+    const safeResult = this.counter;
+
+    return JSON.stringify({
+      expected,
+      unsafeResult,
+      safeResult,
+      raceDetected: unsafeResult !== expected,
+      lostUpdates: expected - unsafeResult,
+      lockPreventsRace: safeResult === expected
+    }, null, 2);
+  }
+}
+
+// Benchmark: spinlock vs mutex (simulated)
+function benchmarkLocks(criticalSectionNs: number): string {
+  const spinTime = criticalSectionNs < 2000
+    ? criticalSectionNs * 1.1  // spinlock overhead ~10%
+    : criticalSectionNs * 2.0; // spinlock wastes CPU
+
+  const mutexTime = criticalSectionNs * 1.3; // mutex overhead ~30%
+  // but spinlock burns CPU while waiting
+
+  return JSON.stringify({
+    criticalSectionNs,
+    spinlockEffectiveNs: spinTime,
+    mutexEffectiveNs: mutexTime,
+    recommendation: criticalSectionNs < 2000 ? 'Use spinlock' : 'Use mutex'
+  }, null, 2);
+}
+
+console.log('=== Race vs Lock Comparison ===');
+const sim = new CounterSimulator();
+console.log(await sim.compareRaceVsSafe(3, 100));
+
+console.log('\n=== Lock Benchmark ===');
+console.log(benchmarkLocks(100));   // Short CS → spinlock
+console.log(benchmarkLocks(10000)); // Long CS → mutex
+```
+
+### Memory Barriers and Instruction Reordering
+
+Modern CPUs and compilers reorder instructions for performance. This breaks Peterson's algorithm and naive lock implementations without memory barriers:
+
+| Reordering Type | Effect | Example |
+|----------------|--------|---------|
+| **Compiler reordering** | Compiler rearranges code during optimization | Two writes to adjacent variables may be swapped |
+| **CPU out-of-order** | CPU executes instructions in parallel, commits in order | Store buffer delays visibility |
+| **Write-to-read reordering** | A later read can bypass an earlier write | Most common on x86 TSO |
+| **Read-to-read reordering** | Reads can be reordered | Rare on x86, common on ARM/PowerPC |
+
+**Memory barrier types:**
+- `mfence` (x86): Full memory barrier — all loads/stores before fence complete before any after
+- `lfence` (x86): Load barrier — all loads before fence complete before any after
+- `sfence` (x86): Store barrier — all stores before fence complete before any after
+- `dmb` (ARM): Data memory barrier
+- `atomic_thread_fence(memory_order_seq_cst)` (C++): Sequential consistency fence
+
+### Additional Chapter Quiz Questions
+
+10. What is the key difference between a race condition and a data race?
+    - a) They are the same thing
+    - b) A race condition is a logic error; a data race is undefined behavior per the language memory model
+    - c) Data races only occur in databases
+    - d) Race conditions only occur with semaphores
+
+11. Which synchronization primitive provides FIFO fairness?
+    - a) Test-and-set lock
+    - b) Ticket lock
+    - c) Spinlock
+    - d) Peterson's algorithm
+
+12. On x86 CPUs, what memory barrier instruction ensures all previous loads and stores complete before any subsequent loads or stores?
+    - a) `lfence`
+    - b) `sfence`
+    - c) `mfence`
+    - d) `cpuid`
+
+13. Which synchronization primitive spins on a per-thread local memory location rather than a shared location?
+    - a) Test-and-set lock
+    - b) Ticket lock
+    - c) MCS lock
+    - d) Spinlock
+
+14. What problem does the ABA problem affect?
+    - a) Mutex implementation
+    - b) Lock-free data structures using CAS
+    - c) Semaphore counting
+    - d) Condition variable signaling
+
+**Answers:** 10-b, 11-b, 12-c, 13-c, 14-b
+
+### Additional Exercises
+
+#### Basic
+10. Use TypeScript to implement Peterson's solution for mutual exclusion between two async functions. Show that without proper memory barriers, the lock fails on weakly-ordered architectures.
+
+#### Intermediate
+11. Implement a **ticket lock** in TypeScript. Demonstrate that it provides FIFO fairness (bounded waiting) by creating 5 concurrent "threads" that each increment a shared counter 1000 times. Verify the final counter value equals 5000. Compare the implementation against a test-and-set lock that can starve threads.
+
+#### Advanced
+12. Implement a **lock-free stack** (Treiber stack) using compare-and-swap (CAS) semantics in TypeScript. Support `push(value)` and `pop()` operations. Handle the ABA problem by using a version counter (tagged pointer reference). Show that under concurrent access, the lock-free stack maintains correctness while a naive stack corrupted data.
+13. Implement the **MCS lock** (Mellor-Crummey and Scott) in TypeScript. Unlike test-and-set, MCS spins on a per-thread local flag, avoiding cache-line contention. Show that MCS outperforms test-and-set under high contention (16+ threads) by measuring simulated cache misses.
+
+## SUMMARY
 
 - **Race conditions** happen when concurrent operations interleave incorrectly on shared data; they are logical errors distinct from **data races** (which are memory-model UB)
 - The **critical section problem** must satisfy mutual exclusion, progress, and bounded waiting

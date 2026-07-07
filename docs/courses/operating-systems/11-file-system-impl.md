@@ -3633,6 +3633,196 @@ $ debugfs -R "stat /etc/passwd" /dev/sda1
    - c) B-tree
    - d) Hash table
 
+6. What is the primary purpose of a journal in a journaling file system?
+   - a) Speed up file reads
+   - b) Prevent file system corruption after crashes
+   - c) Compress file data
+   - d) Encrypt file metadata
+
+7. In the ext4 block group, what does the block bitmap track?
+   - a) Which inodes are in use
+   - b) Which data blocks are free/allocated
+   - c) Which block groups are active
+   - d) Which superblock is primary vs backup
+
+8. Which file system stores file data directly in the directory entry for very small files?
+   - a) ext4
+   - b) NTFS (resident data in MFT)
+   - c) FAT32
+   - d) XFS
+
+9. What is the key advantage of extent-based allocation over traditional block pointer schemes?
+   - a) Simpler code
+   - b) Fewer metadata lookups for large contiguous files
+   - c) Better support for small files
+   - d) No fragmentation
+
+10. In a 32-bit FAT file system with 4 KB clusters, what is the maximum partition size?
+    - a) 4 GB
+    - b) 8 GB
+    - c) 16 TB
+    - d) 2 TB
+
+**Answers:** 1-a, 2-b, 3-b, 4-d, 5-b, 6-b, 7-b, 8-b, 9-b, 10-c
+
+## TypeScript Implementation — Journaling File System Simulator
+
+```typescript
+/**
+ * JournalingFileSystem: A TypeScript simulator demonstrating
+ * write-ahead journaling (WAL) for crash recovery in file systems.
+ * 
+ * Operations are logged to a journal before modifying the main data store.
+ * On recovery, the journal is replayed to restore consistency.
+ */
+
+type JournalEntryType = 'CREATE' | 'WRITE' | 'DELETE' | 'CHECKPOINT';
+
+interface JournalEntry {
+  seq: number;
+  type: JournalEntryType;
+  path: string;
+  data?: string;
+  /** Transaction state: 'pending' | 'committed' | 'rolled-back' */
+  state: 'pending' | 'committed' | 'rolled-back';
+}
+
+interface FileData {
+  content: string;
+  createdAt: number;
+}
+
+class JournalingFileSystem {
+  private files: Map<string, FileData> = new Map();
+  private journal: JournalEntry[] = [];
+  private seqCounter: number = 0;
+  private checkpointSeq: number = 0;
+
+  /** Write a journal entry before performing the operation */
+  private logEntry(type: JournalEntryType, path: string, data?: string): number {
+    const seq = ++this.seqCounter;
+    this.journal.push({ seq, type, path, data, state: 'pending' });
+    return seq;
+  }
+
+  /** Mark a journal entry as committed (operation completed successfully) */
+  private commitEntry(seq: number): void {
+    const entry = this.journal.find(e => e.seq === seq);
+    if (entry) entry.state = 'committed';
+  }
+
+  /** CREATE operation with journaling */
+  createFile(path: string, content: string = ''): boolean {
+    if (this.files.has(path)) return false;
+    const seq = this.logEntry('CREATE', path, content);
+    this.files.set(path, { content, createdAt: Date.now() });
+    this.commitEntry(seq);
+    return true;
+  }
+
+  /** WRITE operation with journaling */
+  writeFile(path: string, content: string): boolean {
+    if (!this.files.has(path)) return false;
+    const seq = this.logEntry('WRITE', path, content);
+    this.files.set(path, { content, createdAt: this.files.get(path)!.createdAt });
+    this.commitEntry(seq);
+    return true;
+  }
+
+  /** DELETE operation with journaling */
+  deleteFile(path: string): boolean {
+    if (!this.files.has(path)) return false;
+    const seq = this.logEntry('DELETE', path);
+    this.files.delete(path);
+    this.commitEntry(seq);
+    return true;
+  }
+
+  /** Simulate a crash: clear all in-memory data, journal survives */
+  simulateCrash(): void {
+    console.log('[CRASH] System crashed! In-memory data lost.');
+    this.files.clear();
+  }
+
+  /** Recover from journal: replay all committed entries */
+  recover(): void {
+    console.log('[RECOVERY] Starting journal replay...');
+    const committed = this.journal.filter(
+      e => e.state === 'committed' && e.seq > this.checkpointSeq
+    );
+
+    for (const entry of committed) {
+      switch (entry.type) {
+        case 'CREATE':
+        case 'WRITE':
+          this.files.set(entry.path, {
+            content: entry.data || '',
+            createdAt: Date.now()
+          });
+          console.log(`  [REPLAY] ${entry.type} ${entry.path}`);
+          break;
+        case 'DELETE':
+          this.files.delete(entry.path);
+          console.log(`  [REPLAY] DELETE ${entry.path}`);
+          break;
+        case 'CHECKPOINT':
+          this.checkpointSeq = entry.seq;
+          console.log(`  [REPLAY] CHECKPOINT at seq=${entry.seq}`);
+          break;
+      }
+    }
+    console.log(`[RECOVERY] Replayed ${committed.length} entries. Files restored: ${this.files.size}`);
+  }
+
+  /** Create a checkpoint: truncate the journal up to this point */
+  checkpoint(): void {
+    const seq = ++this.seqCounter;
+    this.journal.push({ seq, type: 'CHECKPOINT', path: '', state: 'committed' });
+    this.checkpointSeq = seq;
+    // Remove old journal entries (simulated by marking)
+    this.journal = this.journal.filter(e => e.seq >= this.checkpointSeq);
+    console.log(`[CHECKPOINT] Journal trimmed at seq=${seq}`);
+  }
+
+  /** Display current file system state */
+  status(): void {
+    console.log('\n=== File System State ===');
+    if (this.files.size === 0) {
+      console.log('  (empty — no files)');
+    } else {
+      for (const [path, data] of this.files) {
+        console.log(`  ${path}: ${data.content.substring(0, 40)}...`);
+      }
+    }
+    console.log(`  Total files: ${this.files.size}`);
+    console.log(`  Journal entries: ${this.journal.length}`);
+    console.log('========================\n');
+  }
+}
+
+// Simulate a crash-and-recover scenario
+const jfs = new JournalingFileSystem();
+
+console.log('=== Phase 1: Normal Operations ===');
+jfs.createFile('/etc/config.json', '{"debug": true}');
+jfs.createFile('/var/log/app.log', 'INFO: starting application');
+jfs.writeFile('/var/log/app.log', 'INFO: processing request #42');
+jfs.status();
+
+console.log('=== Phase 2: Crash! ===');
+jfs.simulateCrash();
+jfs.status(); // Should show (empty)
+
+console.log('=== Phase 3: Recovery ===');
+jfs.recover();
+jfs.status(); // Files should be restored from journal
+
+console.log('=== Phase 4: Delete with Journal ===');
+jfs.deleteFile('/etc/config.json');
+jfs.checkpoint();
+jfs.status();
+```
+
 ## Summary
 
 - A file system's on-disk structure includes boot block, superblock, free-space management, inode table, and data blocks
@@ -3671,5 +3861,29 @@ $ debugfs -R "stat /etc/passwd" /dev/sda1
 11. Design and implement a **copy-on-write** file system in a file-backed image. When a block is modified, allocate a new block and update the inode. This is the approach used by btrfs and ZFS for snapshots.
 12. Implement the four free space management methods in a single program and compare their performance for allocating 1000 blocks with random free/allocate patterns. Measure fragmentation and throughput.
 
----
+### Additional Exercises
+
+13. **Journal replay analyzer**: Extend the TypeScript JournalingFileSystem simulator to handle "partial crashes" where some entries are committed and others are still pending. Implement a `simulatePartialCrash()` method that randomly marks half the pending entries as committed before the crash.
+
+14. **Inode pointer walker**: Write a program that, given an inode number, walks the direct, single indirect, double indirect, and triple indirect pointer chains on a real ext4 file system (using `debugfs` or direct block device reads). Print the physical block numbers at each level.
+
+15. **Extent tree visualizer**: For ext4 files using extents, write a program that reads the extent tree from an inode and prints each extent's logical block, physical block, and length. Show how a fragmented file's extent tree differs from a contiguous file's.
+
+16. **Bitmap allocator simulator**: Implement a bitmap-based block allocator in TypeScript. Support `allocate(n)` — finds `n` contiguous free blocks (first-fit), and `free(blockNum, n)` — marks them as free. Simulate a workload of 100 random allocate/free operations. Track fragmentation percentage over time.
+
+17. **Resident data analyzer**: Write a program that identifies which files in an NTFS volume have resident data (stored directly in the MFT record). Compare the distribution of resident vs non-resident files by file size. What is the maximum size for resident data in NTFS?
+
+18. **Directory implementation benchmark**: Implement three directory implementations (linear list, sorted array with binary search, and hash table) in TypeScript. Benchmark `lookup(filename)`, `insert(filename)`, and `delete(filename)` operations for each. Use 10,000 entries and measure average operation time.
+
+19. **fsck simulation**: Write a simplified file system checker that validates: inode-bitmap consistency (every inode referenced by a directory is marked used), block-bitmap consistency (every block referenced by an inode is marked used), directory entry validity (every entry points to a valid inode), and link count accuracy. Report all inconsistencies found.
+
+20. **Sparse file support**: Extend the inode-based file system simulator to support sparse files — files with unallocated blocks (holes). A hole read returns zeros without consuming disk space. Implement `seek` beyond end-of-file to create holes. Track the difference between logical file size and physical block allocation.
+
+21. **Superblock backup comparison**: Write a program that reads the primary superblock and all backup superblocks from an ext4 file system. Compare the fields and report any discrepancies. Explain the significance of backup superblocks for recovery.
+
+22. **Directory index comparison**: Compare the performance of linear directories (ext2-style) vs B-tree directories (ext3/4-style with htree). Write a benchmark that creates 100,000 files in a directory and measures: creation time, lookup time for existing files, lookup time for non-existent files, and deletion time. Explain the O(n) vs O(log n) difference.
+
+23. **Group descriptor analyzer**: Write a program that reads all block group descriptors from an ext4 file system. For each block group, print: block bitmap location, inode bitmap location, inode table location, free blocks count, free inodes count, and used directory count. Visualize the block group layout.
+
+24. **File system aging simulation**: Simulate a file system over time — starting empty, then performing 10,000 file create/delete operations. Track: number of free extents of each size, fragmentation percentage, average allocation latency, time to find a contiguous block of a given size. Show how the system degrades and when compaction would help.
 

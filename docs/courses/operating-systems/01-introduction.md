@@ -1195,6 +1195,225 @@ int main() {
 | **IPC** | Inter-Process Communication |
 | **Context Switch** | Saving/restoring state when switching processes |
 
+### TypeScript OS Boot Simulator
+
+The following TypeScript class simulates the OS boot sequence, system call dispatch, and interrupt handling flow:
+
+```typescript
+/**
+ * OS Boot and System Call Simulator
+ * Demonstrates boot sequence, mode switching, and syscall dispatch
+ */
+interface MemoryRegion {
+  name: string;
+  base: number;
+  size: number;
+  contents: string[];
+}
+
+interface PCB {
+  pid: number;
+  state: 'new' | 'ready' | 'running' | 'waiting' | 'terminated';
+  pc: number;
+  registers: Map<string, number>;
+}
+
+class OSSimulator {
+  private kernelLoaded = false;
+  private currentMode: 'user' | 'kernel' = 'user';
+  private memoryMap: MemoryRegion[] = [];
+  private processes: PCB[] = [];
+  private nextPid = 1;
+  private interruptVector = new Map<number, string>();
+
+  constructor() {
+    this.initMemoryLayout();
+    this.initInterruptVector();
+  }
+
+  private initMemoryLayout(): void {
+    this.memoryMap = [
+      { name: 'BIOS/UEFI', base: 0xFFFF0000, size: 0x10000, contents: ['POST', 'Boot device selection'] },
+      { name: 'Bootloader', base: 0x7C00, size: 0x200, contents: ['Load kernel from disk'] },
+      { name: 'Kernel', base: 0x100000, size: 0x400000, contents: ['Scheduler', 'Memory mgr', 'VFS'] },
+      { name: 'User Programs', base: 0x400000, size: 0x1000000, contents: ['Applications'] },
+      { name: 'Interrupt Vector Table', base: 0x000000, size: 0x400, contents: ['ISR addresses'] }
+    ];
+  }
+
+  private initInterruptVector(): void {
+    this.interruptVector.set(0, 'Divide by Zero');
+    this.interruptVector.set(3, 'Breakpoint');
+    this.interruptVector.set(13, 'General Protection Fault');
+    this.interruptVector.set(14, 'Page Fault');
+    this.interruptVector.set(0x80, 'System Call (Linux)');
+  }
+
+  boot(): string[] {
+    const log: string[] = [];
+    log.push('=== OS Boot Sequence ===');
+    log.push('1. CPU reset: CS=0xF000, IP=0xFFF0 (BIOS entry)');
+    log.push('2. BIOS POST: Checking hardware integrity...');
+
+    // Simulate POST checks
+    const postOk = Math.random() > 0.1;
+    if (!postOk) {
+      log.push('ERROR: POST failed — beep code sequence emitted');
+      return log;
+    }
+    log.push('   CPU: OK, RAM: 4096 MB, Disk: 256 GB');
+    log.push('3. BIOS boot device selection: checking MBR/GPT');
+
+    // Load bootloader
+    log.push('4. Loading bootloader from sector 0 to 0x7C00');
+    log.push('5. Bootloader loads kernel from disk to 0x100000');
+    log.push('6. Kernel decompression and initialization...');
+    
+    this.kernelLoaded = true;
+    this.currentMode = 'kernel';
+    
+    log.push('7. Interrupt Descriptor Table (IDT) initialized');
+    log.push('8. Process table initialized (PID 0 = idle process)');
+    log.push('9. Memory management: page tables set up');
+    log.push('10. Device drivers loaded: keyboard, disk, timer');
+    log.push('11. init process (PID 1) spawned');
+    
+    this.currentMode = 'user';
+    log.push('12. Switching to user mode — system ready');
+    log.push(`    Kernel loaded: ${this.kernelLoaded}, Mode: ${this.currentMode}`);
+    return log;
+  }
+
+  systemCall(syscallNum: number, ...args: number[]): string {
+    const log: string[] = [];
+    log.push(`[${this.currentMode} mode] syscall(${syscallNum}) invoked`);
+    
+    if (this.currentMode === 'user') {
+      log.push('   → Trap instruction (int 0x80 / syscall)');
+      log.push('   → CPU switches to Ring 0 (kernel mode)');
+      this.currentMode = 'kernel';
+    }
+
+    const syscalls: Record<number, string> = {
+      0: 'read', 1: 'write', 2: 'open', 3: 'close',
+      4: 'stat', 5: 'fstat', 6: 'lstat', 7: 'poll',
+      8: 'lseek', 9: 'mmap', 10: 'mprotect', 11: 'munmap',
+      12: 'brk', 13: 'rt_sigaction', 14: 'rt_sigprocmask',
+      15: 'rt_sigreturn', 16: 'ioctl', 17: 'pread64',
+      18: 'pwrite64', 19: 'readv', 20: 'writev'
+    };
+
+    if (syscallNum in syscalls) {
+      log.push(`   → Kernel dispatches sys_${syscalls[syscallNum]}()`);
+      log.push(`   → Arguments: [${args.join(', ')}]`);
+      log.push('   → Operation performed in kernel space');
+    } else {
+      log.push(`   → Unknown syscall ${syscallNum} — returns -ENOSYS`);
+    }
+
+    log.push('   → sysretq / iretd — back to user mode');
+    this.currentMode = 'user';
+    
+    return log.join('\n');
+  }
+
+  createProcess(program: string): number {
+    const pid = this.nextPid++;
+    const pcb: PCB = {
+      pid,
+      state: 'new',
+      pc: 0,
+      registers: new Map([['RAX', 0], ['RBX', 0], ['RCX', 0], ['RDX', 0]])
+    };
+    
+    this.processes.push(pcb);
+    return pid;
+  }
+
+  getMemoryMap(): MemoryRegion[] {
+    return [...this.memoryMap];
+  }
+
+  getStatus(): string {
+    return JSON.stringify({
+      kernelLoaded: this.kernelLoaded,
+      mode: this.currentMode,
+      processes: this.processes.length,
+      memoryRegions: this.memoryMap.length
+    }, null, 2);
+  }
+}
+
+// Usage example
+const os = new OSSimulator();
+console.log(os.boot().join('\n'));
+console.log(os.systemCall(1, 1, 0x1000, 12));
+console.log(os.systemCall(0, 0, 0x2000, 4096));
+console.log(os.getStatus());
+```
+
+### System Call vs Library Call Comparison
+
+Many developers confuse library functions with system calls. The following table clarifies the distinction:
+
+| Aspect | Library Function (API) | System Call |
+|--------|----------------------|-------------|
+| **Example** | `printf()`, `malloc()`, `scanf()` | `write()`, `brk()`, `read()` |
+| **Address space** | User space (library code) | Kernel space |
+| **Privilege level** | Ring 3 (user mode) | Ring 0 (kernel mode) |
+| **Performance** | Fast (~5-50 ns) | Slower (~100-500 ns) |
+| **Context switch** | No mode switch | User→kernel mode switch |
+| **Portability** | Portable across OS variations | OS-specific syscall numbers |
+| **Example flow** | `printf()` → formats string → calls `write()` | `write()` → enters kernel → VFS→driver→hardware |
+
+### Additional Chapter Quiz Questions
+
+9. Which component of the OS remains in memory at all times?
+   - a) Shell
+   - b) Kernel
+   - c) File system
+   - d) Device drivers
+
+10. System calls are typically invoked via which CPU instruction on x86-64?
+    - a) `int 0x80`
+    - b) `syscall` / `sysenter`
+    - c) `call`
+    - d) `jmp`
+
+11. What is the primary advantage of a microkernel over a monolithic kernel?
+    - a) Faster execution
+    - b) Better isolation and reliability when a service crashes
+    - c) Simpler to implement
+    - d) Better support for device drivers
+
+12. In the layered OS approach, which layer interacts directly with hardware?
+    - a) Application layer
+    - b) Service layer
+    - c) Kernel layer
+    - d) Hardware Abstraction Layer (HAL)
+
+13. Which of these is NOT a valid system call category?
+    - a) Process control
+    - b) File management
+    - c) User interface rendering
+    - d) Device management
+
+**Answers:** 9-b, 10-b, 11-b, 12-d, 13-c
+
+### Additional Exercises
+
+#### Basic
+13. Run `strace -c ls` on a Linux system and identify the five most frequently used system calls. Explain what each one does.
+14. Compare Linux's `syscall` instruction with the legacy `int 0x80` approach. What are the performance differences?
+
+#### Intermediate
+15. Write a TypeScript function that models the x86-64 syscall mechanism: the function should accept a syscall number and up to 6 arguments (matching the `rdi`, `rsi`, `rdx`, `r10`, `r8`, `r9` register convention), simulate the mode switch, dispatch to the appropriate handler, and return a result.
+16. Research how macOS's XNU kernel handles system calls differently from Linux. What is the Mach trap mechanism?
+
+#### Advanced
+17. Implement a simple shell that demonstrates the relationship between library calls and system calls. When the user types `ls`, the shell should trace which library functions are called (via `printf`, `readdir`, etc.) and which syscalls they ultimately trigger.
+18. Write a minimal OS boot simulator in TypeScript that models the x86 boot sequence: BIOS POST → bootloader → kernel decompression → init process → shell prompt.
+
 ## Cross-Application Matrix
 
 | Concept | Web Server | Database | Embedded System | Smartphone |

@@ -1934,6 +1934,204 @@ EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
 -- Improvement: 85ms to 0.05ms (1700x faster)
 ```
 
+### 12.12 TypeScript B+ Tree Index Simulator
+
+The code implements a minimal B+ Tree index with search, insert, and range scan capabilities.
+
+```typescript
+// ============================================================
+// B+ Tree Index Simulator â€” TypeScript
+// ============================================================
+
+class BPlusTreeNode {
+  keys: number[] = [];
+  children: BPlusTreeNode[] = [];
+  leaf = false;
+  next?: BPlusTreeNode; // For leaf nodes: pointer to next sibling
+  values?: number[];    // For leaf nodes: record IDs
+
+  constructor(order: number) { this.order = order; }
+  order: number;
+}
+
+class BPlusTree {
+  private root: BPlusTreeNode;
+  private order: number;
+
+  constructor(order = 4) {
+    this.order = order;
+    this.root = new BPlusTreeNode(order);
+    this.root.leaf = true;
+    this.root.values = [];
+  }
+
+  // Search for a key and return value
+  search(key: number): number | undefined {
+    let node = this.root;
+    while (!node.leaf) {
+      let i = 0;
+      while (i < node.keys.length && key >= node.keys[i]) i++;
+      node = node.children[i];
+    }
+    const idx = node.keys.indexOf(key);
+    return idx >= 0 ? node.values![idx] : undefined;
+  }
+
+  // Insert a key-value pair
+  insert(key: number, value: number): void {
+    const result = this.insertRecursive(this.root, key, value);
+    if (result) {
+      // Root was split â€” create new root
+      const newRoot = new BPlusTreeNode(this.order);
+      newRoot.keys = [result.key];
+      newRoot.children = [this.root, result.right];
+      newRoot.leaf = false;
+      this.root = newRoot;
+    }
+  }
+
+  private insertRecursive(node: BPlusTreeNode, key: number, value: number): { key: number; right: BPlusTreeNode } | null {
+    if (node.leaf) {
+      // Insert into leaf
+      const idx = node.keys.findIndex(k => k > key);
+      const pos = idx >= 0 ? idx : node.keys.length;
+      node.keys.splice(pos, 0, key);
+      node.values!.splice(pos, 0, value);
+      // Split if full
+      if (node.keys.length > this.order - 1) return this.splitLeaf(node);
+      return null;
+    }
+
+    // Internal node â€” find child
+    let i = 0;
+    while (i < node.keys.length && key >= node.keys[i]) i++;
+    const result = this.insertRecursive(node.children[i], key, value);
+    if (result) {
+      // Child was split â€” insert separator key
+      const idx = node.keys.findIndex(k => k > result.key);
+      const pos = idx >= 0 ? idx : node.keys.length;
+      node.keys.splice(pos, 0, result.key);
+      node.children.splice(pos + 1, 0, result.right);
+      if (node.keys.length > this.order - 1) return this.splitInternal(node);
+    }
+    return null;
+  }
+
+  private splitLeaf(node: BPlusTreeNode): { key: number; right: BPlusTreeNode } {
+    const mid = Math.floor(node.keys.length / 2);
+    const right = new BPlusTreeNode(this.order);
+    right.leaf = true;
+    right.keys = node.keys.splice(mid);
+    right.values = node.values!.splice(mid);
+    right.next = node.next;
+    node.next = right;
+    return { key: right.keys[0], right };
+  }
+
+  private splitInternal(node: BPlusTreeNode): { key: number; right: BPlusTreeNode } {
+    const mid = Math.floor(node.keys.length / 2);
+    const key = node.keys[mid];
+    const right = new BPlusTreeNode(this.order);
+    right.leaf = false;
+    right.keys = node.keys.splice(mid + 1);
+    right.children = node.children.splice(mid + 1);
+    node.keys.pop(); // Remove the promoted key
+    return { key, right };
+  }
+
+  // Range scan: find all keys in [low, high]
+  rangeScan(low: number, high: number): Array<{ key: number; value: number }> {
+    const result: Array<{ key: number; value: number }> = [];
+    let node = this.root;
+    // Navigate to starting leaf
+    while (!node.leaf) {
+      let i = 0;
+      while (i < node.keys.length && low >= node.keys[i]) i++;
+      node = node.children[i];
+    }
+    // Scan leaf nodes
+    while (node) {
+      for (let i = 0; i < node.keys.length; i++) {
+        if (node.keys[i] > high) return result;
+        if (node.keys[i] >= low) result.push({ key: node.keys[i], value: node.values![i] });
+      }
+      node = node.next!;
+    }
+    return result;
+  }
+
+  print(): void {
+    console.log('B+ Tree Structure (order=' + this.order + '):');
+    const queue: { node: BPlusTreeNode; depth: number }[] = [{ node: this.root, depth: 0 }];
+    let currentDepth = 0;
+    let line = 'Depth 0: ';
+    while (queue.length > 0) {
+      const { node, depth } = queue.shift()!;
+      if (depth > currentDepth) {
+        console.log(line);
+        currentDepth = depth;
+        line = 'Depth ' + depth + ': ';
+      }
+      line += '[' + node.keys.join(',') + '] ';
+      if (!node.leaf) {
+        for (const child of node.children) queue.push({ node: child, depth: depth + 1 });
+      }
+    }
+    console.log(line);
+  }
+}
+
+// Demo
+const tree = new BPlusTree(3);
+const values = [10, 20, 5, 6, 12, 30, 7, 17];
+values.forEach((v, i) => tree.insert(v, i));
+tree.print();
+console.log('\nSearch for 12: ' + (tree.search(12) !== undefined ? 'Found' : 'Not found'));
+console.log('Range scan [5, 15]: ' + JSON.stringify(tree.rangeScan(5, 15)));
+```
+
+**Mermaid Diagram: Index Types Comparison**
+
+```mermaid
+flowchart TD
+    subgraph "Index Types"
+        B[B+ Tree Index<br/>O(log n) search<br/>Range scans efficient<br/>Ordered output] --> U[Use: General purpose<br/>Primary/Unique keys<br/>Range queries]
+        H[Hash Index<br/>O(1) lookup<br/>No range scans<br/>Unordered output] --> U2[Use: Equality lookups<br/>Exact match queries<br/>In-memory caches]
+        G[GiST/SP-GiST<br/>O(log n)<br/>Geometric search<br/>Custom operators] --> U3[Use: Geospatial data<br/>Full-text search<br/>Network addresses]
+        F[Full-Text Index<br/>Inverted file<br/>Token-based<br/>Ranked results] --> U4[Use: Document search<br/>Text mining<br/>Search engine]
+    end
+```
+
+### Additional Chapter Quiz Questions
+
+11. The main advantage of a B+ Tree over a B-Tree is:
+    a) Faster point lookups
+    b) All keys are stored in leaves, enabling efficient range scans
+    c) Less memory usage
+    d) Simpler implementation
+
+12. A hash index is most efficient for:
+    a) Range queries (BETWEEN, >, <)
+    b) Equality queries (=)
+    c) Pattern matching queries (LIKE)
+    d) ORDER BY queries
+
+13. A composite index on (a, b, c) can be used for:
+    a) All queries involving any of a, b, c
+    b) Queries using a, or a and b, or a and b and c
+    c) Only queries using all three columns
+    d) Only the first column (a)
+
+14. The fill factor of an index affects:
+    a) Query results
+    b) How much empty space is left in pages for future inserts
+    c) The number of columns indexed
+    d) The type of index
+
+**Answers:** 11-b, 12-b, 13-b, 14-b
+
+---
+
 ### Pro Tips
 
 1. **Index the WHERE clause columns first** -- columns in WHERE, JOIN, and ORDER BY are the highest priority.

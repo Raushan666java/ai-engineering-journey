@@ -2036,11 +2036,221 @@ def find_pair(root, target):
 | Spell checker | BST stores dictionary for O(log n) lookup |
 | IP routing table | Tree structures enable prefix matching |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the BST invariant?**
-   - a) All nodes on the left are smaller than root; all on right larger ✓
-   - b) Root is always the largest
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Deleting a node with two children without finding inorder successor | Removing the node directly breaks BST structure | Replace with inorder successor (or predecessor), then delete the successor |
+| Recursive BST operations without tail recursion optimization | Deep recursion on skewed BST overflows stack | Use iterative versions (while loops) for search and insert |
+| Inserting duplicates without a policy | BST rule says "left ≤ root < right" or "left < root ≤ right" — mixing causes inconsistent behavior | Choose a consistent policy and document it |
+| Validating BST by only checking immediate children | A node may have a value that satisfies parent check but violates an ancestor's constraint | Pass min/max bounds down the recursion for validation |
+| Assuming all self-balancing trees maintain BST invariant during rotations | Rotations temporarily may violate BST if not applied to the correct pivot | Always verify: left subtree keys < node key < right subtree keys after rotation |
+| Not updating height/balance factor after deletion in AVL | Forgetting to rebalance after deletion leaves tree unbalanced | Rebalance bottom-up after every insertion and deletion |
+| Using linear search to find predecessor/successor in a BST | In-order threaded traversal or direct pointer lookup is O(h) but via flat array is O(n) | Navigate from root using BST properties in O(h) |
+
+### TypeScript BST Implementation
+
+```typescript
+class BSTNode {
+    constructor(
+        public data: number,
+        public left: BSTNode | null = null,
+        public right: BSTNode | null = null
+    ) {}
+}
+
+class BinarySearchTree {
+    private root: BSTNode | null = null;
+
+    insert(data: number): void {
+        if (!this.root) { this.root = new BSTNode(data); return; }
+        let curr = this.root;
+        while (true) {
+            if (data < curr.data) {
+                if (!curr.left) { curr.left = new BSTNode(data); return; }
+                curr = curr.left;
+            } else {
+                if (!curr.right) { curr.right = new BSTNode(data); return; }
+                curr = curr.right;
+            }
+        }
+    }
+
+    search(data: number): boolean {
+        let curr = this.root;
+        while (curr) {
+            if (data === curr.data) return true;
+            curr = data < curr.data ? curr.left : curr.right;
+        }
+        return false;
+    }
+
+    delete(data: number): void {
+        this.root = this._delete(this.root, data);
+    }
+
+    private _delete(node: BSTNode | null, data: number): BSTNode | null {
+        if (!node) return null;
+        if (data < node.data) {
+            node.left = this._delete(node.left, data);
+        } else if (data > node.data) {
+            node.right = this._delete(node.right, data);
+        } else {
+            // case 1: leaf
+            if (!node.left && !node.right) return null;
+            // case 2: one child
+            if (!node.left) return node.right;
+            if (!node.right) return node.left;
+            // case 3: two children → replace with inorder successor
+            const succ = this._min(node.right);
+            node.data = succ.data;
+            node.right = this._delete(node.right, succ.data);
+        }
+        return node;
+    }
+
+    private _min(node: BSTNode): BSTNode {
+        let curr = node;
+        while (curr.left) curr = curr.left;
+        return curr;
+    }
+
+    isValid(): boolean {
+        return this._validate(this.root, -Infinity, Infinity);
+    }
+
+    private _validate(node: BSTNode | null, min: number, max: number): boolean {
+        if (!node) return true;
+        if (node.data <= min || node.data >= max) return false;
+        return this._validate(node.left, min, node.data) &&
+               this._validate(node.right, node.data, max);
+    }
+
+    // Kth smallest element (in-order)
+    kthSmallest(k: number): number | null {
+        const stack: BSTNode[] = [];
+        let curr = this.root;
+        let count = 0;
+        while (curr || stack.length > 0) {
+            while (curr) { stack.push(curr); curr = curr.left; }
+            curr = stack.pop()!;
+            count++;
+            if (count === k) return curr.data;
+            curr = curr.right;
+        }
+        return null;
+    }
+
+    // Lowest common ancestor
+    lca(n1: number, n2: number): number | null {
+        let curr = this.root;
+        while (curr) {
+            if (n1 < curr.data && n2 < curr.data) curr = curr.left;
+            else if (n1 > curr.data && n2 > curr.data) curr = curr.right;
+            else return curr.data; // split point
+        }
+        return null;
+    }
+
+    toArray(): number[] {
+        const result: number[] = [];
+        const stack: BSTNode[] = [];
+        let curr = this.root;
+        while (curr || stack.length > 0) {
+            while (curr) { stack.push(curr); curr = curr.left; }
+            curr = stack.pop()!;
+            result.push(curr.data);
+            curr = curr.right;
+        }
+        return result;
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the worst-case time complexity of searching in a BST with n nodes?**
+   - a) O(1)
+   - b) O(log n)
+   - c) O(n) ✓
+   - d) O(n²)
+
+10. **The inorder traversal of a BST produces:**
+    - a) Sorted descending order
+    - b) Sorted ascending order ✓
+    - c) Root-to-leaf paths
+    - d) Level-order sequence
+
+11. **Which is NOT true about the inorder successor of a node in a BST?**
+    - a) It is the smallest node greater than the given node
+    - b) It can be found by going right once, then left repeatedly ✓ (wait, this IS true — let me rephrase. The FALSE statement.)
+    - b) If the node has no right subtree, the successor is the nearest ancestor where the node is in its left subtree ✓ (this IS true)
+    - Actually: False statement: "If the node has a right subtree, the successor is the leftmost node of the left subtree of the right child" — WAIT that IS true.
+    - Let me restate: NOT true → "The inorder predecessor is always a leaf node." ✓ (predecessor can be internal node)
+
+    Let me use a clean MCQ:
+11. **Which value is NOT in a valid BST's inorder traversal of [1, 3, 7, 9, 12, 15]?**
+    - a) 7
+    - b) 5 ✓ (5 would violate sorted order)
+    - c) 12
+    - d) 15
+
+12. **A binary search tree with a preorder traversal of [5, 3, 2, 4, 7, 6, 8] has what root?**
+    - a) 2
+    - b) 3
+    - c) 5 ✓
+    - d) 8
+
+13. **What is the minimum height of a BST with 255 nodes?**
+    - a) 7
+    - b) 8 ✓ (2⁸ - 1 = 255)
+    - c) 9
+    - d) 255
+
+14. **The ceiling of a key in a BST is defined as:**
+    - a) The smallest key ≥ given key ✓
+    - b) The largest key ≤ given key
+    - c) The root value
+    - d) The height of the node
+
+**Answers:** 9-c, 10-b, 11-b, 12-c, 13-b, 14-a
+
+### Additional Exercises (GFG Pattern)
+
+14. **Find k-th largest element in a BST**: Use reverse in-order traversal (right-root-left) to find the kth largest element in O(h + k).
+
+15. **Check if a binary tree is a BST**: Write a function that returns true if the given binary tree is a valid BST (use the min-max range approach).
+
+16. **Convert a BST to a balanced BST (Day-Stout-Warren algorithm)**: Transform a skewed BST into a balanced one in O(n) time and O(1) space by converting to a vine and then compressing.
+
+17. **Merge two BSTs**: Given two BSTs, merge them into a single BST. Do it in O(m + n) time with limited extra space.
+
+18. **Pair with given sum in BST**: Given a BST and a target sum, check if there exist two nodes whose sum equals the target. Use two-pointer on inorder array, or hash set.
+
+19. **Floor and ceiling in a BST**: Find the largest key ≤ given key (floor) and smallest key ≥ given key (ceiling) in a BST.
+
+20. **Fix a BST with two swapped nodes**: Two nodes in a BST are swapped. Detect and correct them without changing the structure.
+
+21. **Count BST subtrees within a given range**: Given a BST and a range [L, R], count the number of subtrees whose all nodes fall within the range.
+
+22. **Flatten BST to sorted linked list**: Convert a BST into a sorted linked list in place using (reverse) Morris traversal.
+
+23. **Median of BST in O(n) time and O(1) space**: Find the median of a BST efficiently using Morris traversal.
+
+### Comparison: BST vs AVL vs Red-Black vs B-Tree
+
+| Property | BST (unbalanced) | AVL Tree | Red-Black Tree | B-Tree (order m) |
+|----------|------------------|----------|----------------|-------------------|
+| Search (worst) | O(n) | O(log n) | O(log n) | O(log n) |
+| Insert (worst) | O(n) | O(log n) | O(log n) | O(log n) |
+| Delete (worst) | O(n) | O(log n) | O(log n) | O(log n) |
+| Balance strictness | None | Strict | Relaxed | Moderate |
+| Space overhead | 2 pointers | 2 ptrs + height | 2 ptrs + color bit | m pointers + keys |
+| Use case | Educational | Lookup-heavy | Insert/delete-heavy | Disk I/O (databases) |
+| Rotation per insertion | N/A | Up to 2 | Up to 2 (plus recolor) | Node split |
+| Height bound | n | 1.44 log₂n | 2 log₂n | log_{m/2}(n) |
    - c) Tree is always balanced
    - d) Every node has two children
 

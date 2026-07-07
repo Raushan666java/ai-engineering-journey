@@ -1631,11 +1631,159 @@ The classic recursive puzzle models the LIFO constraint - a disk can only be pla
 | Compiler syntax analysis | Token stack | Parse-tree construction |
 | Runtime call stack | Frame stack | Function return management |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What does LIFO stand for?**
-   - a) Last In, First Out
-   - b) Least In, Fastest Out
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Forgetting to check isEmpty before pop/top | Calling pop on empty stack causes underflow | Always guard with `if (isEmpty()) throw ...` |
+| Using recursion when an explicit stack would be safer | Deep recursion overflows the call stack | Convert to iterative stack for depth > 1000 |
+| Confusing stack growth direction | Stack can grow upward (increasing index) or downward | Choose one convention and be consistent |
+| Not resizing the array stack when full | Overwriting memory beyond buffer leads to corruption | Always check cap and double before push |
+| Assuming push is always O(1) (ignoring resize) | When capacity is exhausted, resize costs O(n) | Use amortized analysis: O(1) amortized, O(n) worst-case |
+| Popping from a linked-stack but deleting the wrong node | Must save temp pointer before moving stackTop | `temp = stackTop; stackTop = stackTop.next; delete temp;` |
+
+### TypeScript Stack Implementation
+
+```typescript
+interface IStack<T> {
+    push(item: T): void;
+    pop(): T | undefined;
+    peek(): T | undefined;
+    isEmpty(): boolean;
+    size(): number;
+}
+
+class ArrayStack<T> implements IStack<T> {
+    private data: T[] = [];
+    push(item: T): void { this.data.push(item); }
+    pop(): T | undefined { return this.data.pop(); }
+    peek(): T | undefined { return this.data[this.data.length - 1]; }
+    isEmpty(): boolean { return this.data.length === 0; }
+    size(): number { return this.data.length; }
+}
+
+class LinkedStack<T> implements IStack<T> {
+    private top: { data: T; next: any } | null = null;
+    private _size: number = 0;
+
+    push(item: T): void {
+        this.top = { data: item, next: this.top };
+        this._size++;
+    }
+
+    pop(): T | undefined {
+        if (!this.top) return undefined;
+        const item = this.top.data;
+        this.top = this.top.next;
+        this._size--;
+        return item;
+    }
+
+    peek(): T | undefined { return this.top?.data; }
+    isEmpty(): boolean { return this._size === 0; }
+    size(): number { return this._size; }
+}
+
+// MinStack with O(1) getMin
+class MinStack {
+    private stack: number[] = [];
+    private mins: number[] = [];
+
+    push(val: number): void {
+        this.stack.push(val);
+        if (this.mins.length === 0 || val <= this.mins[this.mins.length - 1]) {
+            this.mins.push(val);
+        }
+    }
+
+    pop(): number | undefined {
+        if (this.stack.length === 0) return undefined;
+        const val = this.stack.pop()!;
+        if (val === this.mins[this.mins.length - 1]) this.mins.pop();
+        return val;
+    }
+
+    peek(): number | undefined { return this.stack[this.stack.length - 1]; }
+    getMin(): number | undefined { return this.mins[this.mins.length - 1]; }
+}
+
+// Parenthesis matching
+function isValidParentheses(s: string): boolean {
+    const stack: string[] = [];
+    const map: Record<string, string> = { ')': '(', '}': '{', ']': '[' };
+    for (const c of s) {
+        if ('({['.includes(c)) stack.push(c);
+        else if (')}]'.includes(c)) {
+            if (stack.pop() !== map[c]) return false;
+        }
+    }
+    return stack.length === 0;
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+8. **What is the minimum number of stacks needed to implement a queue?**
+   - a) 1
+   - b) 2 ✓
+   - c) 3
+   - d) 4
+
+9. **Which of the following is NOT an application of stacks?**
+   - a) Function call management
+   - b) Breadth-First Search ✓
+   - c) Expression evaluation
+   - d) Undo operation
+
+10. **In the linked-list stack implementation, where does push insert the new node?**
+    - a) At the tail
+    - b) At the head ✓
+    - c) At the middle
+    - d) After traversing to the end
+
+11. **What is the time complexity of the `getMin()` operation in the MinStack design?**
+    - a) O(n)
+    - b) O(log n)
+    - c) O(1) ✓
+    - d) O(n²)
+
+12. **The postfix expression `23*54*+` evaluates to:**
+    - a) 26 ✓
+    - b) 30
+    - c) 17
+    - d) 22
+
+13. **Stack overflow typically occurs when:**
+    - a) The linked stack runs out of heap memory
+    - b) The recursion depth exceeds the call stack limit ✓
+    - c) The array stack is full
+    - d) Both a and c
+
+**Answers:** 8-b, 9-b, 10-b, 11-c, 12-a, 13-b
+
+### Additional Exercises (GFG Pattern)
+
+14. **Implement two stacks in one array**: Design a data structure that supports two stacks using a single array. Both stacks should use O(1) push/pop/peek.
+
+15. **Sort a stack using another stack**: Given a stack, sort it in ascending order (largest at top) using only one additional stack and no other data structures.
+
+16. **Reverse a stack using recursion**: Reverse the contents of a stack without using any loop or extra stack. Use only recursion and the stack's own push/pop operations.
+
+17. **Check for balanced brackets with multiple types**: Extend the bracket matching to handle `()`, `{}`, `[]`, `<>`, `«»` — any set of matching pairs.
+
+18. **Infix to prefix conversion**: Modify the shunting-yard algorithm to produce prefix (Polish) notation instead of postfix.
+
+19. **Evaluate prefix expression**: Given a prefix expression (e.g., `+ * 2 3 5`), evaluate it using a stack.
+
+20. **Largest rectangle in a histogram**: Given an array of bar heights, find the largest rectangular area possible. Solve in O(n) using a stack.
+
+21. **Next smaller element**: For each element in an array, find the next smaller element to its right. Use a stack for O(n) solution.
+
+22. **Maximum area of a submatrix with all 1s**: Given a binary matrix, find the maximum area of a submatrix containing all 1s. Use stack-based histogram for each row.
+
+23. **Remove duplicate letters**: Given a string, remove duplicate letters to produce the smallest lexicographic result. Use a monotonic stack approach.
    - c) Linear Input, Fixed Output
    - d) Long In, First Out
 
@@ -1677,6 +1825,151 @@ The classic recursive puzzle models the LIFO constraint - a disk can only be pla
 
 **Answers:** 1-a, 2-a, 3-b, 4-b, 5-a, 6-b, 7-c
 
+## Stack-Based Backtracking: N-Queens Problem
+
+### Real-World Analogy
+
+Think of a **maze explorer** who places breadcrumbs at each fork. When they hit a dead end, they backtrack to the last fork (pop the breadcrumb) and try a different path. Stacks naturally model this backtracking: each choice is pushed onto the stack; when a dead end is reached, the choice is popped and the next alternative is tried.
+
+### Problem: N-Queens
+
+Place N queens on an N×N chessboard such that no two queens attack each other. Queens attack along rows, columns, and diagonals.
+
+### Algorithm (Iterative Backtracking with Stack)
+
+1. Push an empty board state (row = 0, no queens placed).
+2. While the stack is not empty:
+   - Pop the current state (row, column placements).
+   - If row == N: a solution is found — print and continue.
+   - For each column c from 0 to N-1:
+     - If placing a queen at (row, c) is safe (no conflicts with existing queens):
+       - Push (row + 1, placements + [c]) onto the stack.
+
+```mermaid
+flowchart TD
+    Start["Start: row = 0"] --> TryCol["Try column c = 0..N-1"]
+    TryCol --> Safe{"Is (row, c) safe?<br/>Check col, diag1, diag2"}
+    Safe -->|No| NextCol["c++ → try next column"]
+    NextCol --> TryCol
+    Safe -->|Yes| Place["Place queen at (row, c)"]
+    Place --> Check{"row == N-1?"}
+    Check -->|Yes| Solution["Print solution<br/>(Found!)"]
+    Check -->|No| NextRow["row++ → recurse/push"]
+    NextRow --> TryCol
+    Solution --> Backtrack["Backtrack: pop state,<br/>try next column"]
+    Backtrack --> TryCol
+    NextCol --> LastCol{"All columns tried?"}
+    LastCol -->|Yes| DeadEnd["Dead end → backtrack"]
+    DeadEnd --> Backtrack
+```
+
+### TypeScript — N-Queens with Iterative Stack
+
+```typescript
+function solveNQueens(n: number): string[][] {
+    const solutions: string[][] = [];
+
+    // Stack entry: [row, columns_placed_so_far]
+    type State = [number, number[]];
+    const stack: State[] = [[0, []]];
+
+    while (stack.length > 0) {
+        const [row, cols] = stack.pop()!;
+
+        if (row === n) {
+            // Found a complete solution
+            const board: string[] = cols.map(c =>
+                '.'.repeat(c) + 'Q' + '.'.repeat(n - c - 1)
+            );
+            solutions.push(board);
+            continue;
+        }
+
+        // Try columns in reverse so first valid column is on top
+        for (let c = n - 1; c >= 0; c--) {
+            if (isSafe(row, c, cols)) {
+                stack.push([row + 1, [...cols, c]]);
+            }
+        }
+    }
+
+    return solutions;
+}
+
+function isSafe(row: number, col: number, queens: number[]): boolean {
+    for (let r = 0; r < queens.length; r++) {
+        const c = queens[r];
+        // Same column or same diagonal
+        if (c === col || Math.abs(c - col) === Math.abs(r - row)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Solve 4-Queens
+const solutions = solveNQueens(4);
+console.log(`Found ${solutions.length} solutions for 4-Queens:`);
+solutions.forEach((board, idx) => {
+    console.log(`\nSolution ${idx + 1}:`);
+    board.forEach(row => console.log(row));
+});
+
+// Output:
+// Found 2 solutions for 4-Queens:
+// Solution 1:   Solution 2:
+// .Q..          ..Q.
+// ...Q          Q...
+// Q...          ...Q
+// ..Q.          .Q..
+```
+
+### Complexity Analysis
+
+| Metric | Value | Why |
+|--------|-------|-----|
+| Time (N-Queens) | O(N!) | First queen: N choices, second: N-2, third: N-4... ~N!/2 |
+| Space (stack) | O(N²) | Stack may hold multiple partial states; depth at most N |
+| Pruning effect | Much better in practice | Early conflict detection eliminates most branches |
+
+### Additional MCQs (GFG Pattern)
+
+14. **What does the stack in iterative N-Queens backtracking store?**
+    - a) Only the current row number
+    - b) All board configurations
+    - c) Partial placements (row + column choices) ✓
+    - d) The number of conflicts
+
+15. **Which of the following is NOT a valid use of backtracking with stacks?**
+    - a) Maze solving
+    - b) Sudoku solver
+    - c) Sorting an array ✓
+    - d) Generating all permutations
+
+16. **In the N-Queens problem, the isSafe check ensures:**
+    - a) No two queens share the same row
+    - b) No two queens share the same column or diagonal ✓
+    - c) Queens are in ascending order
+    - d) The board is symmetric
+
+**Answers:** 14-c, 15-c, 16-b
+
+### Additional Exercises (GFG Pattern)
+
+16. **Rat in a Maze**: Given an N×N maze with blocked cells (0) and open cells (1), find a path from (0,0) to (N-1,N-1) using stack-based backtracking. The rat can move in four directions.
+
+17. **Generate all valid parentheses combinations**: Given n pairs of parentheses, generate all valid combinations (e.g., n=3 → ["((()))", "(()())", "(())()", "()(())", "()()()"]). Use a stack to track the current string.
+
+18. **Knight's tour**: Place a knight on an empty chessboard and visit every square exactly once using Warnsdorff's heuristic and a stack for backtracking.
+
+19. **Subset sum using stack**: Given a set of integers and a target sum, find all subsets that sum to the target using an explicit stack instead of recursion.
+
+20. **Hamiltonian path in a graph**: Find a path that visits every vertex exactly once using stack-based backtracking. For a small graph (≤10 vertices), this is feasible.
+
+21. **Implement a stack-based Sudoku solver**: Use a stack to try cell values. On conflict, backtrack by popping the last choice and trying the next value.
+
+---
+
 ## Summary
 
 - Stacks provide LIFO access with O(1) push, pop, and top operations.
@@ -1686,6 +1979,7 @@ The classic recursive puzzle models the LIFO constraint - a disk can only be pla
 - MinStack achieves O(1) getMin with an auxiliary stack - a classic interview problem.
 - Monotonic stacks optimize next-greater-element and stock-span problems from O(n^2) to O(n).
 - Stacks are fundamental to parsing, recursion, compilers, undo systems, and DFS traversal.
+- Stack-based backtracking (N-Queens, maze solving) models recursive depth-first search iteratively.
 
 ## Exercises
 

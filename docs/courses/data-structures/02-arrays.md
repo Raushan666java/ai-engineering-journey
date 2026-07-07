@@ -1851,59 +1851,365 @@ Bucket array: [0: list, 1: list, 2: list, ..., M-1: list]
 | Network buffer | Static byte array | Fixed-size, sequential read/write |
 | Hash table buckets | Static array of lists | O(1) hash index, per-bucket chaining |
 
-## Chapter Quiz
+## Common Mistakes & Pitfalls (GFG-Style)
 
-1. **What is the time complexity of accessing arr[i]?**
-   - a) O(n)
-   - b) O(1) ✓
-   - c) O(log n)
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Confusing static and dynamic array capacity | Static arrays cannot grow; dynamic arrays resize | Use `std::vector` / `ArrayList` when size is unknown |
+| Off-by-one in prefix sum queries | `sum(l, r) = prefix[r] - prefix[l-1]` fails for l=0 | Handle l=0 separately: return `prefix[r]` directly |
+| Forgetting that two-pointer requires sorted array | Unsorted arrays break the monotonic property | Sort first (O(n log n)) or use hash map for unsorted |
+| Modifying array while iterating | Insertions/deletions during traversal shift indices | Iterate backward or use a temporary list |
+| Assuming dynamic array `size()` equals `capacity()` | Capacity is allocated space; size is element count | Use `size()` for logical length, `capacity()` for allocated space |
+
+## GFG Interview Corner: TypeScript Array Patterns
+
+### TypeScript Dynamic Array Implementation
+
+```typescript
+class DynamicArray<T> {
+    private data: (T | undefined)[];
+    private _size: number = 0;
+    private _capacity: number;
+
+    constructor(capacity: number = 4) {
+        this._capacity = capacity;
+        this.data = new Array(capacity);
+    }
+
+    get size(): number { return this._size; }
+    get capacity(): number { return this._capacity; }
+
+    push(val: T): void {
+        if (this._size >= this._capacity) {
+            this._capacity *= 2;
+            const newData = new Array(this._capacity);
+            for (let i = 0; i < this._size; i++) newData[i] = this.data[i];
+            this.data = newData;
+        }
+        this.data[this._size++] = val;
+    }
+
+    pop(): T | undefined {
+        if (this._size === 0) return undefined;
+        return this.data[--this._size];
+    }
+
+    get(index: number): T | undefined {
+        if (index < 0 || index >= this._size) return undefined;
+        return this.data[index];
+    }
+
+    insert(index: number, val: T): void {
+        if (index < 0 || index > this._size) return;
+        if (this._size >= this._capacity) this.push(val); // triggers resize
+        for (let i = this._size; i > index; i--) this.data[i] = this.data[i - 1];
+        this.data[index] = val;
+        this._size++;
+    }
+}
+```
+
+### TypeScript Prefix Sum & Range Queries
+
+```typescript
+class PrefixSum {
+    private prefix: number[];
+
+    constructor(private arr: number[]) {
+        this.prefix = new Array(arr.length);
+        if (arr.length > 0) {
+            this.prefix[0] = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                this.prefix[i] = this.prefix[i - 1] + arr[i];
+            }
+        }
+    }
+
+    rangeSum(l: number, r: number): number | null {
+        if (l < 0 || r >= this.arr.length || l > r) return null;
+        return l === 0 ? this.prefix[r] : this.prefix[r] - this.prefix[l - 1];
+    }
+
+    // 2D prefix sum for matrices
+    static build2D(matrix: number[][]): number[][] {
+        const rows = matrix.length, cols = matrix[0].length;
+        const ps: number[][] = Array.from({ length: rows + 1 },
+            () => new Array(cols + 1).fill(0));
+        for (let i = 1; i <= rows; i++)
+            for (let j = 1; j <= cols; j++)
+                ps[i][j] = matrix[i - 1][j - 1] + ps[i - 1][j]
+                    + ps[i][j - 1] - ps[i - 1][j - 1];
+        return ps; // query: ps[r2+1][c2+1] - ps[r1][c2+1] - ps[r2+1][c1] + ps[r1][c1]
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the worst-case time complexity of inserting at the beginning of a dynamic array?**
+   - a) O(1)
+   - b) O(log n)
+   - c) O(n) ✓
    - d) O(n²)
 
-2. **What happens when a dynamic array reaches capacity?**
-   - a) Elements are discarded
-   - b) Array doubles in size ✓
-   - c) Program crashes
-   - d) Insertion fails
+10. **The prefix sum technique is most useful for:**
+    - a) Sorting arrays faster
+    - b) Answering multiple range sum queries efficiently ✓
+    - c) Finding duplicates
+    - d) Rotating arrays
 
-3. **Which technique finds the maximum subarray sum in O(n)?**
-   - a) Binary search
-   - b) Kadane's algorithm ✓
-   - c) Merge sort
-   - d) Two-pointer
+11. **What is the space complexity of a 2D prefix sum matrix for an m×n input?**
+    - a) O(1)
+    - b) O(m + n)
+    - c) O(m × n) ✓
+    - d) O(max(m, n))
 
-4. **Row-major order stores:**
-   - a) Columns contiguously
-   - b) Rows contiguously ✓
-   - c) Diagonals contiguously
-   - d) Random order
+12. **Which of the following is NOT a valid growth factor for dynamic arrays?**
+    - a) 1.5
+    - b) 2
+    - c) 1 ✓ (no growth)
+    - d) 3
 
-5. **What is a prefix sum useful for?**
-   - a) Sorting
-   - b) Range sum queries ✓
-   - c) Searching
-   - d) Insertion
+13. **Sliding window technique is most appropriate for:**
+    - a) Unsorted array pair sum
+    - b) Contiguous subarray problems with monotonic property ✓
+    - c) Finding median
+    - d) Sorting
 
-6. **What is the amortized time complexity of push_back on a dynamic array?**
-   - a) O(n)
-   - b) O(1) ✓
-   - c) O(log n)
-   - d) O(n²)
+14. **What is the minimum number of swaps required to reverse an array of n elements?**
+    - a) n
+    - b) n/2 ✓
+    - c) log n
+    - d) n²
 
-7. **Two-pointer technique works correctly only when:**
-   - a) Array is unsorted
-   - b) Array is sorted ✓
-   - c) Array has unique elements
-   - d) Array has negative numbers
+**Answers:** 9-c, 10-b, 11-c, 12-c, 13-b, 14-b
 
-8. **Which operation takes O(n) time on both static and dynamic arrays?**
-   - a) Access at index i
-   - b) Insert at middle ✓
-   - c) Insert at end
-   - d) Get size
+### Additional Exercises (GFG Pattern)
 
-**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b, 6-b, 7-b, 8-b
+16. **Find the equilibrium index**: An index where the sum of elements to its left equals the sum to its right. Solve in O(n) time.
 
-## Summary
+17. **Maximum subarray sum with at least K elements**: Extend Kadane's algorithm to enforce a minimum subarray length of k.
+
+18. **Sort an array of 0s, 1s, and 2s** (Dutch National Flag): Implement the three-pointer technique in O(n) time.
+
+19. **Given an array, find the maximum j - i such that arr[j] > arr[i]** where j > i. Solve in O(n).
+
+20. **Longest subarray with sum divisible by K**: Use prefix sum with modulo arithmetic. O(n) solution expected.
+
+21. **Given two sorted arrays, find their median in O(log(m+n))** using binary search on the smaller array.
+
+22. **Maximum product subarray**: Similar to Kadane's but tracking both max and min (due to negative numbers).
+
+23. **Find the smallest subarray whose sum is ≥ target** (minimum size subarray sum). Use sliding window.
+
+24. **Merge two sorted arrays without extra space**: Use insertion-sort style merging from the end.
+
+25. **Find all pairs with a given sum in an unsorted array**: Use hash map for O(n) average time.
+
+26. **Subarray with given XOR**: Use prefix XOR with hash map for O(n) solution.
+
+---
+
+## 8. Subarray Problems (Advanced Techniques)
+
+### Real-World Analogy
+
+A **conveyor belt** in a factory moves products past inspection stations. You want to find the longest section of the belt where every product passes quality checks. This is a subarray problem — finding a contiguous segment satisfying a property.
+
+### Subarray Problem Taxonomy
+
+```mermaid
+flowchart TD
+    SP["Subarray Problems"] --> MaxSum["Maximum Sum Subarray<br/>Kadane's Algorithm<br/>O(n) time, O(1) space"]
+    SP --> MaxLen["Maximum Length Subarray<br/>with Given Sum<br/>Hash Map + Prefix Sum"]
+    SP --> MinLen["Minimum Length Subarray<br/>with Sum ≥ Target<br/>Sliding Window O(n)"]
+    SP --> SubDiv["Subarray Sum Divisible<br/>by K<br/>Prefix Sum + Mod Hash"]
+    SP --> SubEq["Subarrays with Equal<br/>0s and 1s<br/>Treat 0 as -1"]
+    SP --> MaxProd["Maximum Product<br/>Subarray<br/>Track Min & Max"]
+    
+    MaxSum --> KeyInsight1["Key: Discard negative<br/>prefix, restart"]
+    MaxLen --> KeyInsight2["Key: prefix[j] - prefix[i] = sum"]
+    MinLen --> KeyInsight3["Key: Expand right,<br/>shrink left"]
+    SubDiv --> KeyInsight4["Key: Same modulo =<br/>divisible subarray"]
+    SubEq --> KeyInsight5["Key: Same prefix sum =<br/>equal 0s and 1s"]
+    MaxProd --> KeyInsight6["Key: Negative × negative = positive"]
+```
+
+### Maximum Product Subarray (LeetCode 152)
+
+**Problem:** Find the contiguous subarray with the largest product.
+
+**Logic:** Unlike Kadane's (which only tracks max), the product version must track *both* maximum and minimum because a negative number can flip the smallest negative into the largest positive.
+
+**Algorithm:**
+1. Initialize `maxProd = arr[0]`, `currMax = arr[0]`, `currMin = arr[0]`
+2. For each element `x` from index 1:
+   - If `x` is negative, swap `currMax` and `currMin`
+   - `currMax = max(x, currMax * x)`
+   - `currMin = min(x, currMin * x)`
+   - Update `maxProd = max(maxProd, currMax)`
+
+**Dry Run:** arr = [2, 3, -2, 4]
+
+| i | x | currMax (before) | currMin (before) | Swapped? | currMax (after) | currMin (after) | maxProd |
+|---|---|-----------------|-----------------|----------|----------------|----------------|---------|
+| 0 | 2 | — | — | — | 2 | 2 | 2 |
+| 1 | 3 | 2 | 2 | No | max(3, 6)=6 | min(3, 6)=3 | 6 |
+| 2 | -2 | 6 | 3 | Yes | max(-2, -12)=-2 | min(-2, -4)=-4 | 6 |
+| 3 | 4 | -2 | -4 | No | max(4, -8)=4 | min(4, -16)=-16 | max(6, 4)=6 |
+
+Result: 6 (subarray [2, 3])
+
+### TypeScript — Maximum Product Subarray
+
+```typescript
+function maxProduct(nums: number[]): number {
+    let maxProd = nums[0];
+    let currMax = nums[0];
+    let currMin = nums[0];
+
+    for (let i = 1; i < nums.length; i++) {
+        const x = nums[i];
+
+        // Negative flips min and max
+        if (x < 0) {
+            [currMax, currMin] = [currMin, currMax];
+        }
+
+        currMax = Math.max(x, currMax * x);
+        currMin = Math.min(x, currMin * x);
+        maxProd = Math.max(maxProd, currMax);
+    }
+
+    return maxProd;
+}
+
+// Test cases
+console.log(maxProduct([2, 3, -2, 4]));    // 6
+console.log(maxProduct([-2, 0, -1]));      // 0
+console.log(maxProduct([-2, 3, -4]));      // 24
+```
+
+---
+
+## 9. Array Partitioning and Quick Select
+
+### Real-World Analogy
+
+You need to find the **median** score from 1 million exam results. Sorting all 1 million takes O(n log n), but Quick Select uses partitioning to find the k-th smallest element in O(n) average time — like repeatedly dividing a phone book in half until you reach the right page.
+
+### Quick Select Algorithm
+
+**Goal:** Find the k-th smallest element in an unsorted array (where k is 0-indexed).
+
+**Algorithm:**
+1. Pick a pivot element (typically the last element).
+2. Partition the array so elements < pivot go left, elements > pivot go right.
+3. If pivot's final position `p` equals `k`, return arr[p].
+4. If `k < p`, recurse on the left partition.
+5. If `k > p`, recurse on the right partition.
+
+### Step-by-Step Dry Run
+
+Find the 3rd smallest (k=2) in arr = [7, 2, 1, 6, 8, 5, 3, 4]
+
+| Step | Subarray | Pivot | Partitioned | pivotIndex | Action |
+|------|----------|-------|-------------|------------|--------|
+| 1 | [7,2,1,6,8,5,3,4] | 4 | [2,1,3,4,8,5,7,6] | 3 | k=2 < 3 → go left |
+| 2 | [2,1,3] | 3 | [2,1,3] | 2 | k=2 < 2 → go left |
+| 3 | [2,1] | 1 | [1,2] | 1 | k=2 > 1 → go right |
+| 4 | [2] | — | — | — | Return 2 |
+
+Result: 3rd smallest element = 3 ✓
+
+### TypeScript — Quick Select
+
+```typescript
+function quickSelect(arr: number[], left: number, right: number, k: number): number {
+    if (left === right) return arr[left];
+
+    // Partition around last element
+    const pivot = arr[right];
+    let i = left;
+
+    for (let j = left; j < right; j++) {
+        if (arr[j] <= pivot) {
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+            i++;
+        }
+    }
+    [arr[i], arr[right]] = [arr[right], arr[i]];
+    const pivotIndex = i;
+
+    if (k === pivotIndex) return arr[k];
+    if (k < pivotIndex) return quickSelect(arr, left, pivotIndex - 1, k);
+    return quickSelect(arr, pivotIndex + 1, right, k);
+}
+
+function findKthSmallest(arr: number[], k: number): number {
+    const copy = [...arr]; // avoid mutating original
+    return quickSelect(copy, 0, copy.length - 1, k - 1); // k is 1-indexed
+}
+
+console.log(findKthSmallest([7, 2, 1, 6, 8, 5, 3, 4], 3)); // 3
+console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
+```
+
+### Complexity Analysis
+
+| Metric | Time | Space | Why |
+|--------|------|-------|-----|
+| Average case | O(n) | O(log n) | Each partition halves expected search space; recursion depth log n |
+| Worst case | O(n²) | O(n) | Bad pivot choice (already sorted array, pivot is always extreme) |
+| Optimized (median-of-3) | O(n) | O(log n) | Choose pivot as median of first, middle, last elements |
+
+**Why O(n) average?** The expected partition size decreases geometrically: n + n/2 + n/4 + ... = 2n = O(n).
+
+### Additional MCQs (GFG Pattern)
+
+27. **Maximum product subarray must track both max and min because:**
+    - a) Min values are always negative
+    - b) A negative number can flip min into new max ✓
+    - c) The answer is always positive
+    - d) Kadane's algorithm doesn't work for products
+
+28. **Quick Select average time complexity is:**
+    - a) O(n log n)
+    - b) O(n) ✓
+    - c) O(log n)
+    - d) O(n²)
+
+29. **For an array of 1 million elements, finding the median using Quick Select vs sorting:**
+    - a) Quick Select is faster by ~log n factor ✓
+    - b) Sorting is always faster
+    - c) Both are O(n log n)
+    - d) Quick Select is O(n²) worst-case
+
+30. **What is the key property that makes Maximum Product Subarray different from Maximum Sum Subarray?**
+    - a) Multiplication is commutative
+    - b) Negative × negative yields positive ✓
+    - c) Products grow faster than sums
+    - d) Division is not allowed
+
+**Answers:** 27-b, 28-b, 29-a, 30-b
+
+### Additional Exercises (GFG Pattern)
+
+27. **Maximum sum subarray with at most K elements**: Given an array of integers, find the subarray with the maximum sum whose length does not exceed K. Solve in O(n) using prefix sums with a deque.
+
+28. **Subarray sum equals K**: Count the number of subarrays whose sum equals a given target K. Use a hash map of prefix sums. O(n) time, O(n) space.
+
+29. **Find all subarrays with zero sum**: Given an array, print all (i, j) pairs where sum of subarray arr[i..j] = 0. Use prefix sum + hash map of indices.
+
+30. **K-th largest element in an array**: Modify Quick Select to find the k-th largest element (instead of k-th smallest). What change do you need?
+
+31. **Sort a nearly sorted array**: Given an array where each element is at most K positions away from its sorted position, sort it in O(n log K) time using a min-heap.
+
+32. **Median of two sorted arrays**: Given two sorted arrays of sizes m and n, find their median in O(log(min(m, n))) time using binary search on the smaller array.
+
+33. **Longest increasing subsequence (LIS)**: Find the length of the longest increasing subsequence (not necessarily contiguous) in O(n log n) using patience sorting.
+
+### Complexity Master Table: Array Operations
 
 - **Array ADT**: Abstract data type providing O(1) random access, O(n) search/insert/delete.
 - **Static vs Dynamic**: Static arrays have fixed size; dynamic arrays grow by a factor (typically 2) when full, giving amortized O(1) push_back.

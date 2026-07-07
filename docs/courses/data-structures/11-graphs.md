@@ -1941,11 +1941,182 @@ OSPF (Open Shortest Path First) uses **Dijkstra's algorithm** on a **weighted, d
 
 ---
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the space complexity of an adjacency matrix?**
-   - a) \(O(V+E)\)
-   - b) \(O(V^2)\) ✓
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Confusing adjacency list vs matrix memory | Matrix is always O(V²) even for sparse graphs; list saves no memory for dense graphs | Use adjacency list for sparse (|E| ≪ |V|²), matrix for dense graphs |
+| Forgetting that BFS uses a queue and DFS uses a stack | Using a stack for BFS gives wrong order (like DFS) | BFS = Queue, DFS = Stack (explicit or recursion) |
+| Not handling disconnected components in traversal | BFS/DFS starting from one node won't reach all nodes | Loop over all vertices, run BFS/DFS from unvisited ones |
+| Confusing indegree and outdegree in directed graphs | indegree edges coming in, outdegree edges going out | indegree = incoming count, outdegree = outgoing count |
+| Misinterpreting "complete graph" vs "connected graph" | Complete = every pair has an edge; connected = there's a path between any two | K_n has n(n-1)/2 edges for undirected, n(n-1) for directed |
+| Forgetting to mark visited nodes in DFS | Without visited array, infinite loop on cyclic graphs | Mark visited before processing neighbors; or use a set |
+| Assuming a DAG has a unique topological order | Many valid orders exist for the same DAG | Any topological sort is valid; Kahn's algorithm may produce different orders based on removal order |
+
+### TypeScript Graph Representation
+
+```typescript
+// Adjacency List
+class Graph {
+    private adjList: Map<number, number[]>;
+
+    constructor(private vertices: number) {
+        this.adjList = new Map();
+        for (let i = 0; i < vertices; i++) this.adjList.set(i, []);
+    }
+
+    addEdge(u: number, v: number, directed: boolean = false): void {
+        this.adjList.get(u)!.push(v);
+        if (!directed) this.adjList.get(v)!.push(u);
+    }
+
+    hasEdge(u: number, v: number): boolean {
+        return this.adjList.get(u)?.includes(v) ?? false;
+    }
+
+    neighbors(u: number): number[] {
+        return [...(this.adjList.get(u) || [])];
+    }
+
+    // Check if graph is connected (undirected)
+    isConnected(): boolean {
+        const visited = new Set<number>();
+        const dfs = (v: number) => {
+            visited.add(v);
+            for (const w of this.adjList.get(v) || []) {
+                if (!visited.has(w)) dfs(w);
+            }
+        };
+        dfs(0);
+        return visited.size === this.vertices;
+    }
+
+    // Count connected components (undirected)
+    countComponents(): number {
+        const visited = new Set<number>();
+        let count = 0;
+        for (let i = 0; i < this.vertices; i++) {
+            if (!visited.has(i)) {
+                count++;
+                const stack = [i];
+                while (stack.length > 0) {
+                    const v = stack.pop()!;
+                    if (visited.has(v)) continue;
+                    visited.add(v);
+                    for (const w of this.adjList.get(v) || []) {
+                        if (!visited.has(w)) stack.push(w);
+                    }
+                }
+            }
+        }
+        return count;
+    }
+
+    // Detect cycle in undirected graph (DFS)
+    hasCycleUndirected(): boolean {
+        const visited = new Set<number>();
+        const dfs = (v: number, parent: number): boolean => {
+            visited.add(v);
+            for (const w of this.adjList.get(v) || []) {
+                if (!visited.has(w)) {
+                    if (dfs(w, v)) return true;
+                } else if (w !== parent) return true;
+            }
+            return false;
+        };
+        for (let i = 0; i < this.vertices; i++) {
+            if (!visited.has(i) && dfs(i, -1)) return true;
+        }
+        return false;
+    }
+
+    // Topological sort (Kahn's algorithm)
+    topologicalSort(): number[] | null {
+        const indegree = new Array(this.vertices).fill(0);
+        for (const [u, neighbors] of this.adjList) {
+            for (const v of neighbors) indegree[v]++;
+        }
+        const queue: number[] = [];
+        for (let i = 0; i < this.vertices; i++) {
+            if (indegree[i] === 0) queue.push(i);
+        }
+        const result: number[] = [];
+        while (queue.length > 0) {
+            const u = queue.shift()!;
+            result.push(u);
+            for (const v of this.adjList.get(u) || []) {
+                indegree[v]--;
+                if (indegree[v] === 0) queue.push(v);
+            }
+        }
+        return result.length === this.vertices ? result : null; // null if cycle
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **For a directed graph with V vertices and E edges, the adjacency list uses:**
+   - a) O(V) space
+   - b) O(E) space
+   - c) O(V + E) space ✓
+   - d) O(V²) space
+
+10. **What is the degree of a vertex in a complete undirected graph with n vertices?**
+    - a) n
+    - b) n - 1 ✓
+    - c) n(n - 1)/2
+    - d) 2n
+
+11. **Kahn's algorithm for topological sort requires:**
+    - a) A stack
+    - b) A queue ✓
+    - c) A priority queue
+    - d) A Deque
+
+12. **Which of the following is true about a bipartite graph?**
+    - a) It contains a triangle
+    - b) It can be 2-colored ✓
+    - c) It is always connected
+    - d) It has no edges
+
+13. **The handshaking lemma states that the sum of degrees equals:**
+    - a) |V|
+    - b) 2|E| ✓
+    - c) |E|²
+    - d) |V|²
+
+14. **What is the minimum number of edges needed for a simple graph with V vertices to be connected?**
+    - a) V
+    - b) V - 1 ✓
+    - c) V(V - 1)/2
+    - d) V + 1
+
+**Answers:** 9-c, 10-b, 11-b, 12-b, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+15. **Bipartite graph check**: Given an undirected graph, determine if it is bipartite using BFS (2-coloring).
+
+16. **Find if a path exists between two vertices**: Given source and destination, check if a path exists using DFS or BFS.
+
+17. **Mother vertex**: Find a vertex from which all other vertices are reachable in a directed graph.
+
+18. **Transitive closure of a directed graph**: Compute the reachability matrix (Floyd-Warshall or DFS from each vertex).
+
+19. **Find all strongly connected components (Kosaraju's algorithm)**: Implement Kosaraju's algorithm: first DFS for finish order, then DFS on transpose graph.
+
+20. **Find all strongly connected components (Tarjan's algorithm)**: Implement Tarjan's algorithm using single DFS with low-link values.
+
+21. **Eulerian path and circuit**: Check if an undirected graph has an Eulerian path (0 or 2 odd-degree vertices) or circuit (all even-degree vertices).
+
+22. **Hamiltonian path check (DFS backtracking)**: Given a graph, determine if it contains a Hamiltonian path that visits each vertex exactly once.
+
+23. **Minimum edges to make a graph connected**: Given a disconnected undirected graph, find the minimum number of edges to add to make it connected.
+
+24. **Snakes and Ladders (BFS)**: Given a snakes and ladders board, find the minimum number of dice throws to reach the last cell using BFS.
    - c) \(O(E^2)\)
    - d) \(O(V)\)
 

@@ -416,6 +416,492 @@ For complex queries, method names become unwieldy. Use `@Query` or `Specificatio
 List<User> findActiveUsersByEmailDomain(@Param("domain") String domain);
 ```
 
+---
+
+### Q9: How does Hibernate's `PersistenceContext` work, and what is the difference between `managed`, `detached`, and `removed` entity states?
+
+**Answer:**
+
+The `PersistenceContext` is Hibernate's first-level cache — a map of managed entity instances associated with a specific `EntityManager`/`Session`. Every entity exists in one of four states:
+
+```java
+// 1. TRANSIENT — entity just created, not associated with a session
+User user = new User("alice@example.com", "Alice");
+//   No ID, not in PersistenceContext, not in database
+
+// 2. MANAGED — entity is associated with a session (loaded or persisted)
+em.persist(user);          // Now MANAGED: in PersistenceContext, will be inserted on flush
+User u = em.find(User.class, 1L);  // MANAGED: loaded into PersistenceContext
+
+// 3. DETACHED — entity was managed but session is closed or entity was evicted
+em.detach(user);           // Now DETACHED: removed from PersistenceContext
+em.close();                // All previously loaded entities become DETACHED
+
+// 4. REMOVED — entity scheduled for deletion
+em.remove(user);           // REMOVED: marked for deletion, removed on flush
+```
+
+State transition diagram:
+```
+                persist()          get/load/find
+Transient ──────────────► Managed ◄─────────────── Database
+    │                         │
+    └─────── remove() ────────┤
+                              │
+                    detach()/close()
+                              │
+                              ▼
+                          Detached
+                              │
+                    merge() ──┘
+```
+
+**Key behaviors per state:**
+- **Managed:** Dirty checking works — any field change auto-generates UPDATE on flush. Entity is returned from PersistenceContext on subsequent `find()` by same ID.
+- **Detached:** Hibernate does NOT track changes. Re-attach with `em.merge(entity)` which returns a new managed copy.
+- **Removed:** Entity is deleted from DB on flush. After flush, the entity instance should not be used.
+
+> **Common Mistake:** Calling `save()` on an already-managed entity re-saves it unnecessarily. Spring Data JPA's `save()` calls `persist()` for new entities and `merge()` for detached ones — it detects state by checking `id == null`.
+
+---
+
+### Q10: What is the difference between `hibernate.jdbc.batch_size` and `hibernate.order_inserts`?
+
+**Answer:**
+
+These two settings work together to batch multiple INSERT statements into a single JDBC batch, dramatically improving write performance.
+
+- `hibernate.jdbc.batch_size`: Controls the maximum number of SQL statements Hibernate will batch together. Default is 0 (batching disabled). Set to 20–50 for optimal performance.
+- `hibernate.order_inserts`: When true, Hibernate reorders INSERT statements so that rows for the same table are grouped together. This allows JDBC batching to work effectively.
+
+```properties
+# application.properties — enable batch inserts
+spring.jpa.properties.hibernate.jdbc.batch_size=50
+spring.jpa.properties.hibernate.order_inserts=true
+spring.jpa.properties.hibernate.order_updates=true
+spring.jpa.properties.hibernate.jdbc.batch_versioned_data=true
+```
+
+```java
+// Without batching: 100 individual INSERT statements
+//   INSERT INTO product (name, price) VALUES (?, ?)   -- for each product
+//   INSERT INTO inventory (product_id, qty) VALUES (?, ?)  -- for each inventory
+//
+// With batching + ordering:
+//   INSERT INTO product (name, price) VALUES (?, ?)  ×50  (batched)
+//   INSERT INTO product (name, price) VALUES (?, ?)  ×50  (batched)
+//   INSERT INTO inventory (product_id, qty) VALUES (?, ?)  ×50  (batched)
+
+@Id
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "batch_seq")
+@SequenceGenerator(name = "batch_seq", allocationSize = 50)
+private Long id;
+```
+
+**Critical constraint:** `GenerationType.IDENTITY` disables batch inserts because Hibernate must execute the INSERT immediately to get the generated ID. Always use `SEQUENCE` or `UUID` ID generation when batching is needed.
+
+Performance comparison (10,000 row insert):
+| Configuration | Round Trips | Time (relative) |
+|--------------|-------------|-----------------|
+| No batching (IDENTITY) | 10,000 | 100% (baseline) |
+| Batch size=50 (SEQUENCE) | 200 | ~15% |
+| Batch size=100 (SEQUENCE) | 100 | ~10% |
+
+---
+
+### Q11: How do you implement pagination efficiently in JPA for large datasets?
+
+**Answer:**
+
+JPA supports three pagination strategies, each with different performance characteristics:
+
+**1. Offset pagination with Pageable (standard approach):**
+
+```java
+// Repository
+Page<Order> findByCustomerId(Long customerId, Pageable pageable);
+
+// Service
+public Page<Order> getOrders(int page, int size) {
+    Pageable pageable = PageRequest.of(page, size, Sort.by("createdAt").descending());
+    return orderRepository.findByCustomerId(42L, pageable);
+}
+```
+
+Generated SQL: `SELECT * FROM orders WHERE customer_id = ? ORDER BY created_at DESC LIMIT ? OFFSET ?`
+
+**Problem with offset:** As OFFSET grows, the database must scan and skip rows. Page 1 is fast, page 10,000 is very slow — the database reads all rows up to the offset.
+
+**2. Keyset (cursor-based) pagination — O(1) regardless of page depth:**
+
+```java
+// Requires a unique sortable key
+@Query("SELECT o FROM Order o WHERE (o.createdAt < :lastCreatedAt OR " +
+       "(o.createdAt = :lastCreatedAt AND o.id < :lastId)) " +
+       "ORDER BY o.createdAt DESC, o.id DESC")
+List<Order> findNextPage(@Param("lastCreatedAt") LocalDateTime lastCreatedAt,
+                         @Param("lastId") Long lastId,
+                         Pageable pageable);
+
+// Usage — pass the last item's values as the cursor
+public List<Order> getNextPage(Order lastOrder, int size) {
+    return orderRepository.findNextPage(
+        lastOrder.getCreatedAt(), lastOrder.getId(),
+        PageRequest.of(0, size));
+}
+```
+
+**3. Scrollable results (Hibernate-specific):**
+
+```java
+@PersistenceContext
+private EntityManager em;
+
+public Stream<Order> streamAllOrders() {
+    return em.createQuery("SELECT o FROM Order o ORDER BY o.id", Order.class)
+        .setHint(org.hibernate.jpa.HibernateHints.HINT_FETCH_SIZE, "100")
+        .unwrap(org.hibernate.query.Query.class)
+        .stream()
+        .onClose(() -> em.close());
+}
+```
+
+| Strategy | Fixed time | Forward only | Random access | Works with real-time data |
+|----------|-----------|-------------|---------------|--------------------------|
+| Offset (Page) | No | No | Yes | No (new rows shift pages) |
+| Keyset (Cursor) | Yes | Yes | No | Yes |
+| Scrollable | Yes | Yes | No | Yes |
+
+Use Page/Slice for UI with up to 1M rows. Use keyset pagination for infinite scroll, APIs, and datasets over 1M rows.
+
+---
+
+## Common Mistakes with JPA & Hibernate (GFG-Style)
+
+### Mistake 1: Using `Set<Entity>` without proper equals/hashCode
+```java
+// ❌ WRONG: HashSet uses hashCode() which may change or cause duplicate entries
+@OneToMany
+private Set<Item> items = new HashSet<>();  // Items may not deduplicate correctly
+
+// ✅ CORRECT: Override equals/hashCode based on business key
+@OneToMany
+private Set<Item> items = new HashSet<>();  // Only if Item has proper equals/hashCode
+
+// Best practice: Use List for ordered collections, Set only when
+// equals/hashCode are correctly implemented with a business key
+```
+
+### Mistake 2: Calling `save()` inside a loop
+```java
+// ❌ WRONG: Each save() flushes independently
+for (Product p : products) {
+    productRepository.save(p);  // N individual INSERTs
+}
+
+// ✅ CORRECT: saveAll() batches if configured properly
+productRepository.saveAll(products);  // Single batch of INSERTs
+```
+
+### Mistake 3: Ignoring N+1 until production
+```java
+// ❌ WRONG: No verification of generated SQL
+List<Order> orders = orderRepository.findAll();
+for (Order o : orders) {
+    System.out.println(o.getItems().size());  // N+1 silently triggers
+}
+
+// ✅ CORRECT: Enable SQL logging in dev
+// spring.jpa.show-sql=true
+// spring.jpa.properties.hibernate.format_sql=true
+// logging.level.org.hibernate.SQL=DEBUG
+// logging.level.org.hibernate.stat=DEBUG
+```
+
+### Mistake 4: Using `fetch = FetchType.EAGER` on multiple associations
+```java
+// ❌ WRONG: Multiple EAGER associations cause Cartesian products
+@Entity
+public class Order {
+    @ManyToOne(fetch = FetchType.EAGER) private Customer customer;
+    @ManyToOne(fetch = FetchType.EAGER) private Address address;
+    @ManyToOne(fetch = FetchType.EAGER) private Payment payment;
+}
+// SELECT o.*, c.*, a.*, p.* FROM orders o
+//   LEFT JOIN customers c ON o.customer_id = c.id
+//   LEFT JOIN addresses a ON o.address_id = a.id
+//   LEFT JOIN payments p ON o.payment_id = p.id
+// This pulls ALL columns from 4 tables in one massive result!
+
+// ✅ CORRECT: All LAZY, fetch explicitly when needed
+@Entity
+public class Order {
+    @ManyToOne(fetch = FetchType.LAZY) private Customer customer;
+    @ManyToOne(fetch = FetchType.LAZY) private Address address;
+    @ManyToOne(fetch = FetchType.LAZY) private Payment payment;
+}
+```
+
+### Mistake 5: Modifying persisted entities outside a transaction
+```java
+// ❌ WRONG: Change made after transaction commits — no UPDATE generated
+@Transactional
+public void updatePrice(Long id, BigDecimal price) {
+    Product p = productRepo.findById(id).orElseThrow();
+    p.setPrice(price);
+    // transaction commits here → dirty checking detects the change
+}
+
+// Calling outside transaction:
+productService.updatePrice(1L, newPrice);  // works fine
+
+// But this does NOT work:
+Product p = productRepo.findById(1L).get();  // no transaction
+p.setPrice(newPrice);  // change is lost! No UPDATE sent to DB
+```
+
+### Mistake 6: Not handling LazyInitializationException
+```java
+// ❌ WRONG: Lazy loading after session close
+@Service
+public class OrderService {
+    public Order getOrder(Long id) {
+        return orderRepo.findById(id).orElseThrow();
+        // Session closes here (no @Transactional)
+    }
+}
+
+@RestController
+public class OrderController {
+    @GetMapping("/orders/{id}")
+    public OrderDto getOrder(@PathVariable Long id) {
+        Order order = orderService.getOrder(id);
+        return new OrderDto(order.getId(), order.getItems().size());
+        // ❌ LazyInitializationException! order.getItems() triggers lazy load
+        // but the session is already closed
+    }
+}
+
+// ✅ CORRECT: Fetch eagerly within the transaction or use DTO
+@Service
+public class OrderService {
+    @Transactional(readOnly = true)
+    public OrderDto getOrder(Long id) {
+        Order order = orderRepo.findById(id).orElseThrow();
+        return new OrderDto(order.getId(), order.getItems().size());
+        // All lazy loading happens inside the transaction
+    }
+}
+```
+
+## TypeScript: JPA Batch Insert Simulator
+
+```typescript
+interface JpaEntity {
+  id: number | null;
+  version: number;
+  sqlTable: string;
+  data: Record<string, unknown>;
+}
+
+class BatchInsertSimulator {
+  private batchSize: number = 50;
+  private idGeneration: 'SEQUENCE' | 'IDENTITY' | 'UUID' = 'SEQUENCE';
+  private allocatedIds: number[] = [];
+  private idIndex: number = 0;
+
+  constructor(batchSize: number, idGeneration: 'SEQUENCE' | 'IDENTITY' | 'UUID') {
+    this.batchSize = batchSize;
+    this.idGeneration = idGeneration;
+  }
+
+  /** Pre-allocate a batch of IDs (SEQUENCE strategy) */
+  private allocateIds(count: number): void {
+    for (let i = 0; i < count; i++) {
+      this.allocatedIds.push(Date.now() + this.idIndex++);
+    }
+    console.log(`[SEQUENCE] Allocated ${count} IDs in one DB round-trip`);
+  }
+
+  /** Generate an ID based on the strategy */
+  private nextId(): number {
+    if (this.idGeneration === 'SEQUENCE') {
+      if (this.idIndex >= this.allocatedIds.length) {
+        this.allocateIds(this.batchSize);
+      }
+      return this.allocatedIds[this.idIndex++];
+    }
+    if (this.idGeneration === 'IDENTITY') {
+      // IDENTITY requires immediate insert — no pre-allocation
+      console.log('[IDENTITY] INSERT required to get ID — batching disabled');
+      return -1;
+    }
+    // UUID — client-side generation
+    return Date.now() + Math.floor(Math.random() * 100000);
+  }
+
+  /** Simulate batch insert */
+  insertBatch(entities: JpaEntity[]): { batches: number; totalTime: number } {
+    const start = Date.now();
+    const batches = Math.ceil(entities.length / this.batchSize);
+
+    for (let batch = 0; batch < batches; batch++) {
+      const batchEntities = entities.slice(
+        batch * this.batchSize,
+        (batch + 1) * this.batchSize
+      );
+
+      if (this.idGeneration === 'IDENTITY') {
+        // IDENTITY: one INSERT per entity
+        for (const entity of batchEntities) {
+          entity.id = this.nextId();
+          console.log(
+            `[INSERT] ${entity.sqlTable} id=${entity.id} (individual — no batching)`
+          );
+        }
+      } else {
+        // SEQUENCE/UUID: batch INSERT
+        for (const entity of batchEntities) {
+          entity.id = this.nextId();
+        }
+        console.log(
+          `[BATCH] INSERT ${batchEntities.length} rows into ${batchEntities[0].sqlTable} ` +
+          `(batched, IDs pre-allocated)`
+        );
+      }
+    }
+
+    const totalTime = Date.now() - start;
+    console.log(`Summary: ${entities.length} entities in ${batches} batches, ${totalTime}ms`);
+    return { batches, totalTime };
+  }
+
+  /** Performance comparison */
+  static benchmark(rowCount: number): void {
+    const entities: JpaEntity[] = Array.from({ length: rowCount }, (_, i) => ({
+      id: null,
+      version: 1,
+      sqlTable: 'products',
+      data: { name: `Product ${i}`, price: Math.random() * 100 }
+    }));
+
+    console.log(`\n=== Benchmark: Inserting ${rowCount} rows ===\n`);
+
+    const identity = new BatchInsertSimulator(50, 'IDENTITY');
+    const identityResult = identity.insertBatch([...entities]);
+
+    const sequence = new BatchInsertSimulator(50, 'SEQUENCE');
+    const sequenceResult = sequence.insertBatch([...entities]);
+
+    const uuid = new BatchInsertSimulator(50, 'UUID');
+    const uuidResult = uuid.insertBatch([...entities]);
+
+    console.log('\n=== Results ===');
+    console.log(`IDENTITY: ${identityResult.totalTime}ms (${rowCount} round-trips)`);
+    console.log(`SEQUENCE: ${sequenceResult.totalTime}ms (${Math.ceil(rowCount / 50)} round-trips)`);
+    console.log(`UUID:     ${uuidResult.totalTime}ms (${Math.ceil(rowCount / 50)} round-trips)`);
+    console.log('\n🏆 Winner: SEQUENCE with allocationSize matching batch size');
+  }
+}
+
+// Run benchmark
+BatchInsertSimulator.benchmark(100);
+```
+
+## Mermaid: Connection Pool and DataSource Flow
+
+```mermaid
+sequenceDiagram
+    participant App as Application
+    participant CP as HikariCP Pool
+    participant DB as Database
+
+    App->>CP: getConnection()
+    alt Connection available
+        CP->>CP: Check idle connections
+        CP-->>App: Return pooled connection
+    else No idle connection
+        CP->>CP: Check if pool < maximumPoolSize
+        alt Can create
+            CP->>DB: CREATE NEW CONNECTION
+            DB-->>CP: Connection established
+            CP-->>App: Return new connection
+        else Pool exhausted
+            CP-->>App: Block (connectionTimeout)
+            CP->>DB: Wait for available connection
+            DB-->>CP: Connection released by another thread
+            CP-->>App: Return connection
+        end
+    end
+
+    App->>DB: Execute SQL (INSERT/SELECT)
+    DB-->>App: Result set
+
+    App->>CP: close() → actually returns to pool
+    CP->>CP: Verify connection is still valid
+    alt Connection stale
+        CP->>DB: CLOSE stale connection
+        CP->>DB: OPEN new connection
+    end
+```
+
+## Chapter Quiz — Database (Part 2)
+
+4. Which ID generation strategy enables JDBC batch inserts?
+    - A) IDENTITY
+    - B) SEQUENCE with allocationSize
+    - C) TABLE
+    - D) AUTO
+
+<details>
+<summary>Answer</summary>
+**B) SEQUENCE with allocationSize.** IDENTITY disables batching because IDs must be generated during INSERT execution. SEQUENCE pre-allocates IDs, allowing Hibernate to batch INSERTs.
+</details>
+
+5. What is the main disadvantage of offset-based pagination for large datasets?
+    - A) It only works with Oracle
+    - B) Performance degrades as OFFSET increases — the DB must scan skipped rows
+    - C) It does not support sorting
+    - D) It requires a native query
+
+<details>
+<summary>Answer</summary>
+**B) Performance degrades as OFFSET increases.** The database must scan and skip `OFFSET` rows on every query, making deep pages extremely slow. Keyset pagination avoids this.
+</details>
+
+6. Which entity state is an entity in when it has been persisted but the transaction has not yet committed?
+    - A) Transient
+    - B) Managed
+    - C) Detached
+    - D) Removed
+
+<details>
+<summary>Answer</summary>
+**B) Managed.** `persist()` transitions the entity to managed state. It is tracked in the PersistenceContext and will be inserted to the database on flush/commit.
+</details>
+
+7. What does `hibernate.order_inserts=true` do?
+    - A) Orders INSERT statements alphabetically
+    - B) Groups INSERTs by table name to enable JDBC batching
+    - C) Disables INSERT ordering
+    - D) Orders INSERTs by primary key
+
+<details>
+<summary>Answer</summary>
+**B) Groups INSERTs by table name.** Without ordering, Hibernate interleaves INSERTs for different tables, preventing JDBC from batching them. Ordering groups them by table, allowing efficient batching.
+</details>
+
+8. What causes a `LazyInitializationException`?
+    - A) Using `FetchType.EAGER`
+    - B) Accessing a lazy association outside an active Hibernate session
+    - C) Calling `save()` on a detached entity
+    - D) Using `@Transactional` on a read-only method
+
+<details>
+<summary>Answer</summary>
+**B) Accessing a lazy association outside an active Hibernate session.** When the session is closed (after transaction or OSIV end), lazy proxies cannot be initialized, throwing `LazyInitializationException`.
+</details>
+
 ## Concept Comparison Table
 
 | Concept | Definition | Key Distinction | Use Case |

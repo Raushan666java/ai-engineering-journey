@@ -1721,6 +1721,144 @@ Answer: Rarely, but yes. If a normalized write requires updating many small tabl
 
 ---
 
+### 8.17 TypeScript MVD Detector & Denormalization Advisor
+
+The following code detects multi-valued dependency violations and recommends denormalization strategies based on query patterns.
+
+```typescript
+// ============================================================
+// MVD Detector & Denormalization Advisor â€” TypeScript
+// ============================================================
+
+interface TableData {
+  name: string;
+  columns: string[];
+  rows: Record<string, unknown>[];
+}
+
+class MVDAnalyzer {
+  detectMVDs(table: TableData): string[] {
+    const mvdCandidates: string[] = [];
+    // For each pair of non-key columns, check if they behave independently
+    const nonKeyCols = table.columns;
+    for (let i = 0; i < nonKeyCols.length; i++) {
+      for (let j = i + 1; j < nonKeyCols.length; j++) {
+        const colA = nonKeyCols[i];
+        const colB = nonKeyCols[j];
+        // Group by remaining columns and check independence
+        const otherCols = table.columns.filter(c => c !== colA && c !== colB);
+        if (otherCols.length === 0) continue;
+        const groups = new Map<string, { aVals: Set<unknown>; bVals: Set<unknown>; count: number }>();
+        for (const row of table.rows) {
+          const key = otherCols.map(c => String(row[c])).join('|');
+          if (!groups.has(key)) groups.set(key, { aVals: new Set(), bVals: new Set(), count: 0 });
+          const g = groups.get(key)!;
+          g.aVals.add(row[colA]);
+          g.bVals.add(row[colB]);
+          g.count++;
+        }
+        for (const [key, g] of groups) {
+          if (g.count > g.aVals.size && g.count > g.bVals.size) {
+            // Possible MVD: total rows > distinct values of either column
+            const expected = g.aVals.size * g.bVals.size;
+            if (g.count === expected) {
+              mvdCandidates.push(
+                'MVD detected: ' + otherCols.join(',') + ' -->> ' + colA + ' (independent of ' + colB + ')' +
+                ' â€” ' + g.count + ' rows = ' + g.aVals.size + ' x ' + g.bVals.size
+              );
+            }
+          }
+        }
+      }
+    }
+    return mvdCandidates;
+  }
+
+  recommendDenormalization(workload: Array<{ tables: string[]; joins: number; frequency: number }>): string[] {
+    const recs: string[] = [];
+    const joinCounts = new Map<string, number>();
+    for (const q of workload) {
+      for (let i = 0; i < q.tables.length; i++) {
+        for (let j = i + 1; j < q.tables.length; j++) {
+          const pair = [q.tables[i], q.tables[j]].sort().join('-');
+          joinCounts.set(pair, (joinCounts.get(pair) || 0) + q.frequency);
+        }
+      }
+    }
+    for (const [pair, count] of joinCounts) {
+      if (count > 100) {
+        recs.push('High-frequency join: ' + pair + ' (' + count + ' queries) â€” Consider denormalization');
+      }
+    }
+    return recs;
+  }
+}
+
+// Demo
+const analyzer = new MVDAnalyzer();
+const doctorTable: TableData = {
+  name: 'DoctorInfo',
+  columns: ['doctor_id', 'patient', 'specialty'],
+  rows: [
+    { doctor_id: 1, patient: 'Alice', specialty: 'Cardiology' },
+    { doctor_id: 1, patient: 'Bob', specialty: 'Cardiology' },
+    { doctor_id: 1, patient: 'Alice', specialty: 'Neurology' },
+    { doctor_id: 1, patient: 'Bob', specialty: 'Neurology' },
+    { doctor_id: 2, patient: 'Charlie', specialty: 'Orthopedics' },
+  ]
+};
+
+const mvds = analyzer.detectMVDs(doctorTable);
+console.log('MVD Analysis for DoctorInfo:');
+mvds.forEach(m => console.log('  ' + m));
+if (mvds.length === 0) console.log('  No MVDs detected');
+```
+
+**Mermaid Diagram: Normalization vs Denormalization Trade-off**
+
+```mermaid
+flowchart LR
+    subgraph "Normalized (3NF/BCNF)"
+        C[Customers] --> J1[JOIN]
+        O[Orders] --> J1
+        OI[Order Items] --> J1
+        J1 --> R1[Report: Slow Write: Fast Integrity: High]
+    end
+    subgraph "Denormalized"
+        DO[Denormalized Orders<br/>with customer_name<br/>and total_amount] --> R2[Report: Fast Write: Slow Integrity: Medium]
+    end
+```
+
+### Additional Chapter Quiz Questions
+
+11. Which of the following is a common sign of a 4NF violation?
+    a) Duplicate rows in the table
+    b) Two independent multi-valued attributes in the same table
+    c) A table with no primary key
+    d) A table with a composite primary key
+
+12. Denormalization should only be applied after:
+    a) The schema is designed
+    b) Performance measurements identify specific bottlenecks
+    c) All foreign keys are removed
+    d) The database is in production
+
+13. A join dependency is a generalization of:
+    a) A functional dependency
+    b) A multi-valued dependency
+    c) A primary key constraint
+    d) A foreign key constraint
+
+14. In a star schema, dimension tables are typically:
+    a) Normalized to 5NF
+    b) Denormalized for query performance
+    c) Stored as views
+    d) Indexed with hash indexes
+
+**Answers:** 11-b, 12-b, 13-b, 14-b
+
+---
+
 ## Chapter Quiz
 
 1. A multi-valued dependency X -->> Y exists when:

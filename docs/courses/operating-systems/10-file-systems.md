@@ -185,6 +185,112 @@ if __name__ == "__main__":
     os.remove("demo.txt")
 ```
 
+ **TypeScript Implementation — File System Permissions Simulator:**
+
+```typescript
+/**
+ * FileSystemPermissions: A TypeScript simulator for Unix-style
+ * file system permission checking. Demonstrates how the OS
+ * validates read/write/execute access based on owner, group, and world.
+ */
+type Permission = 'r' | 'w' | 'x';
+type PermissionSet = { owner: Permission[]; group: Permission[]; others: Permission[] };
+
+class Inode {
+  constructor(
+    public readonly id: number,
+    public readonly ownerUid: number,
+    public readonly groupGid: number,
+    public perms: PermissionSet,
+    public size: number = 0
+  ) {}
+}
+
+class FileSystemPermissions {
+  private inodes: Map<number, Inode> = new Map();
+
+  createFile(ino: number, uid: number, gid: number, perms: PermissionSet): void {
+    this.inodes.set(ino, new Inode(ino, uid, gid, perms));
+  }
+
+  checkAccess(ino: number, uid: number, gid: number, requested: Permission): boolean {
+    const inode = this.inodes.get(ino);
+    if (!inode) throw new Error(`Inode ${ino} not found`);
+
+    const permMap = (p: Permission[]): boolean => p.includes(requested);
+
+    if (uid === inode.ownerUid) return permMap(inode.perms.owner);
+    if (gid === inode.groupGid) return permMap(inode.perms.group);
+    return permMap(inode.perms.others);
+  }
+
+  simulate(): void {
+    // Create a file with rw-r--r-- (owner r+w, group r, others r)
+    this.createFile(42, 1000, 100, {
+      owner: ['r', 'w'],
+      group: ['r'],
+      others: ['r']
+    });
+
+    interface TestCase { desc: string; uid: number; gid: number; perm: Permission; expect: boolean; }
+    const tests: TestCase[] = [
+      { desc: 'Owner writes own file', uid: 1000, gid: 100, perm: 'w', expect: true },
+      { desc: 'Owner reads own file', uid: 1000, gid: 100, perm: 'r', expect: true },
+      { desc: 'Group member reads', uid: 1001, gid: 100, perm: 'r', expect: true },
+      { desc: 'Group member writes (denied)', uid: 1001, gid: 100, perm: 'w', expect: false },
+      { desc: 'Other reads', uid: 2000, gid: 200, perm: 'r', expect: true },
+      { desc: 'Other writes (denied)', uid: 2000, gid: 200, perm: 'w', expect: false },
+      { desc: 'Other executes (denied)', uid: 2000, gid: 200, perm: 'x', expect: false },
+    ];
+
+    for (const t of tests) {
+      const result = this.checkAccess(42, t.uid, t.gid, t.perm);
+      const status = result === t.expect ? '✓ PASS' : '✗ FAIL';
+      console.log(`${status} | ${t.desc}: ${result} (expected ${t.expect})`);
+    }
+  }
+}
+
+// Run the simulator
+const fsPerms = new FileSystemPermissions();
+fsPerms.simulate();
+```
+
+**Mermaid Diagram — File Operation Lifecycle:**
+
+```mermaid
+sequenceDiagram
+    participant P as Process
+    participant OS as OS Kernel
+    participant FS as File System
+    participant Disk as Disk
+    
+    P->>OS: open("/data.txt", O_RDONLY)
+    OS->>FS: path_walk("/" → "data.txt")
+    FS->>Disk: read inode #42
+    Disk-->>FS: inode metadata
+    FS-->>OS: permission check OK
+    OS-->>P: fd = 3
+    
+    P->>OS: read(fd=3, buf, 4096)
+    OS->>FS: lookup block pointers from inode
+    FS->>Disk: read block #8910
+    Disk-->>FS: 4096 bytes
+    FS-->>OS: data in page cache
+    OS-->>P: returns 4096 bytes
+    
+    P->>OS: write(fd=3, "hello", 5)
+    OS->>FS: allocate new block if needed
+    FS->>Disk: write block #8911
+    Disk-->>FS: acknowledge
+    FS-->>OS: update inode size
+    OS-->>P: returns 5
+    
+    P->>OS: close(fd=3)
+    OS->>FS: decrement open count
+    OS-->>P: returns 0
+```
+
 **Complexity Analysis:**
 
 | Operation | Time | Space | Why |
@@ -2469,6 +2575,24 @@ int main(int argc, char* argv[]) {
 | **Dirent** | Directory entry (name + inode number) |
 | **Alias** | Empty file path string in the directory entry. |
 
+## Real-World File System Comparison Table
+
+| Feature | ext4 (Linux) | NTFS (Windows) | FAT32 (Universal) | APFS (macOS) | XFS (Linux) |
+|---------|-------------|----------------|-------------------|-------------|-------------|
+| **Max Volume Size** | 1 EiB | 256 TB | 2 TB (32-bit) / 128 PB (64-bit) | 8 EiB | 8 EiB |
+| **Max File Size** | 16 TiB | 256 TB | 4 GB | 8 EiB | 8 EiB |
+| **Max Filename Length** | 255 bytes | 255 UTF-16 chars | 8.3 (short) / 255 (LFN) | 255 UTF-8 chars | 255 bytes |
+| **Journaling** | Yes (metadata + data options) | Yes ($LogFile) | No | Yes (CoW journal) | Yes (metadata only) |
+| **Extents** | Yes | Yes (runs) | No | Yes | Yes |
+| **Inline Data** | No | Yes (resident in MFT) | No | Yes | No |
+| **Snapshots** | No (LVM/ZFS) | Yes (VSS) | No | Yes (CoW clones) | No (LVM/ZFS) |
+| **Compression** | No | Yes (LZNT1) | No | Yes (zlib, lz4) | No |
+| **Encryption** | Yes (ext4 encrypt) | Yes (EFS, BitLocker) | No | Yes (APFS encrypt) | No |
+| **Sparse Files** | Yes | Yes | No | Yes | Yes |
+| **Check Tool** | e2fsck | chkdsk | scandisk / fsck | fsck_apfs | xfs_repair |
+| **Typical Use** | Linux desktops/servers | Windows OS/drives | USB drives, cameras | Mac/iOS devices | Large-file servers |
+| **Year Introduced** | 2008 (Linux 2.6.28) | 1993 (NT 3.1) | 1996 (Win95 OSR2) | 2017 (macOS High Sierra) | 1994 (SGI IRIX) |
+
 ## Cross-Application Matrix
 
 | Concept | Web Server | Database | Embedded System | Smartphone |
@@ -2544,7 +2668,37 @@ int main(int argc, char* argv[]) {
     - c) Dangling link
     - d) Broken symlink
 
-**Answers:** 1-c, 2-b, 3-c, 4-d, 5-b, 6-b, 7-b, 8-a, 9-b, 10-d
+11. In the Unix inode model, which pointer level allows the largest file size?
+    - a) Direct pointers
+    - b) Single indirect
+    - c) Double indirect
+    - d) Triple indirect
+
+12. What is the primary purpose of the VFS (Virtual File System) layer?
+    - a) Accelerate file reads via caching
+    - b) Provide a uniform interface across different file system types
+    - c) Encrypt file data at rest
+    - d) Compress file data transparently
+
+13. Which file system feature does APFS (Apple File System) use to create instant file copies?
+    - a) Journaling
+    - b) Copy-on-Write (CoW) cloning
+    - c) Extent-based allocation
+    - d) Inline compression
+
+14. What is the maximum path component length in most modern Unix file systems?
+    - a) 64 characters
+    - b) 128 characters
+    - c) 255 characters
+    - d) 512 characters
+
+15. In an acyclic-graph directory, what mechanism is used to prevent traversal loops?
+    - a) Reference counting
+    - b) Cycle detection during traversal
+    - c) Path length limits
+    - d) No loops possible (acyclic by definition)
+
+**Answers:** 1-c, 2-b, 3-c, 4-d, 5-b, 6-b, 7-b, 8-a, 9-b, 10-d, 11-d, 12-b, 13-b, 14-c, 15-d
 
 ---
 
@@ -2592,3 +2746,25 @@ int main(int argc, char* argv[]) {
 13. Implement a FUSE (Filesystem in Userspace) file system that presents a read-only view of a tar file. When `readdir()` is called, list the tar's contents. When `read()` is called, extract and return the data from the tar. Use libfuse.
 14. Implement a simple file protection simulator: a file has an owner (UID), group (GID), and 9-bit permission mask. Write a `check_access(uid, gid, request)` function that returns true/false based on Unix permission semantics.
 15. Compare the performance of sequential vs direct access on a 1 GB file. Write a benchmark that reads 10,000 records of 1024 bytes each — first sequentially, then randomly. Measure and explain the difference.
+
+### Additional Exercises
+
+16. **File type detection by magic numbers**: Write a program that reads the first 8 bytes of a file and identifies its type (PDF, PNG, ELF, ZIP, etc.) based on magic number signatures. Add support for at least 10 file types.
+
+17. **Hard link count investigation**: Create a file, then create 3 hard links to it. Use `stat()` to show the link count after each hard link creation. Then delete the original file and show the link count again. Explain what happened to the data blocks.
+
+18. **Directory tree depth analyzer**: Write a program that traverses a directory tree and reports the maximum depth, average depth, and depth distribution (histogram). Use `nftw()` (C) or `os.walk()` (Python).
+
+19. **File system mount simulator**: Implement a simplified mount table simulator in TypeScript. Support `mount(device, mountPoint, fsType)` and `unmount(mountPoint)`. Resolve path lookups by walking the mount table to find the correct device.
+
+20. **Access control list (ACL) simulator**: Extend the Unix permission model to support ACLs — a list of (user, permission) entries. Implement `setAcl(path, user, permissions)` and `checkAccess(path, uid, operation)`. ACL entries should override the basic Unix permissions.
+
+21. **Sparse file detector**: Write a program that detects sparse files (files with holes) by examining the number of allocated blocks vs the file size. On Linux, use `stat()` to compare `st_blocks * 512` with `st_size`. Create a sparse file by seeking past the end and writing.
+
+22. **File system benchmarking suite**: Write a benchmark that measures and compares: create throughput (files/sec), read throughput (MB/s), write throughput (MB/s), delete throughput (files/sec), metadata operation latency (stat/open/close in μs), and directory traversal speed for directories with 10, 100, 1000, and 10000 entries.
+
+23. **Inode usage analyzer**: Write a program that reads the ext4 superblock from a disk image or mounted partition and reports: total inodes, free inodes, used inodes, inode utilization percentage, and inode size. Use `statfs()` or parse the superblock directly.
+
+24. **Symbolic link resolution chain**: Write a function that follows a chain of symbolic links up to a maximum depth (e.g., 40). If the chain exceeds the limit or forms a loop, report an error. Use `readlink()` repeatedly. Test with a self-referential symlink loop.
+
+25. **File system journaling simulation**: Simulate a write-ahead journal in TypeScript. Before each file system operation (create, write, delete), write a log entry to a journal. On "crash", replay the journal to restore a consistent state. Demonstrate that partially completed operations are rolled back.

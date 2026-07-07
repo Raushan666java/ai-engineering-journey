@@ -1667,7 +1667,253 @@ Red-Black trees power:
 
 **Answers:** 1-b, 2-b, 3-a, 4-b, 5-b, 6-c, 7-d, 8-b
 
-# Exercises
+## Common Mistakes & GFG Deepening
+
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Violating the red-child property during insertion | Inserting a red node under a red parent creates two consecutive reds | Always apply fix-up: recolor if uncle is red, rotate if uncle is black |
+| Forgetting to recolor the root to black after fix-up | Fix-up may turn the root red, violating property 2 | After each insertion fix-up loop, set `root.color = BLACK` |
+| Confusing deletion cases (4 cases vs 3 in insertion) | Deletion has 4 cases based on sibling and its children; harder to memorize | Use a decision tree: sibling color → sibling child colors → rotate/recolor |
+| Not maintaining black-height during deletion | Removing a black node reduces black-height on that path | The fix-up loop restores black-height by transferring a "black token" up the tree |
+| Implementing rotations without preserving BST property | Rotation swaps parent/child relationship; wrong implementation loses ordering | Left rotation: right child becomes new parent; right rotation: left child becomes new parent |
+| Using the same fix-up for insertion and deletion | Deletion fix-up is the mirror-image of insertion but with different semantics | Study deletion fix-up cases separately — they handle a "double-black" node |
+| Assuming LLRB trees handle all cases the same as standard RB trees | LLRB restricts red nodes to left children, simplifying to 2 cases instead of 3 | LLRB insert has only 2 cases: flipColors (both children red) and rotate |
+
+### TypeScript Red-Black Tree (with color simulation)
+
+```typescript
+const enum Color { RED = 0, BLACK = 1 }
+
+class RBNode {
+    data: number;
+    color: Color = Color.RED; // new nodes always red
+    left: RBNode | null = null;
+    right: RBNode | null = null;
+    parent: RBNode | null = null;
+
+    constructor(data: number) { this.data = data; }
+}
+
+class RedBlackTree {
+    private root: RBNode | null = null;
+
+    insert(data: number): void {
+        const node = new RBNode(data);
+        // Standard BST insert
+        let parent: RBNode | null = null;
+        let curr = this.root;
+        while (curr) {
+            parent = curr;
+            if (data < curr.data) curr = curr.left;
+            else if (data > curr.data) curr = curr.right;
+            else return; // no duplicates
+        }
+        node.parent = parent;
+        if (!parent) this.root = node;
+        else if (data < parent.data) parent.left = node;
+        else parent.right = node;
+
+        this.insertFixup(node);
+    }
+
+    private insertFixup(z: RBNode): void {
+        while (z.parent?.color === Color.RED) {
+            const parent = z.parent!;
+            const grandparent = parent.parent!;
+            if (parent === grandparent.left) {
+                const uncle = grandparent.right;
+                if (uncle?.color === Color.RED) {
+                    // Case 1: Recolor
+                    parent.color = Color.BLACK;
+                    uncle.color = Color.BLACK;
+                    grandparent.color = Color.RED;
+                    z = grandparent;
+                } else {
+                    // Case 2/3: Rotate
+                    if (z === parent.right) {
+                        z = parent;
+                        this.leftRotate(z);
+                    }
+                    z.parent!.color = Color.BLACK;
+                    z.parent!.parent!.color = Color.RED;
+                    this.rightRotate(z.parent!.parent!);
+                }
+            } else {
+                // Mirror: parent is right child
+                const uncle = grandparent.left;
+                if (uncle?.color === Color.RED) {
+                    parent.color = Color.BLACK;
+                    uncle.color = Color.BLACK;
+                    grandparent.color = Color.RED;
+                    z = grandparent;
+                } else {
+                    if (z === parent.left) {
+                        z = parent;
+                        this.rightRotate(z);
+                    }
+                    z.parent!.color = Color.BLACK;
+                    z.parent!.parent!.color = Color.RED;
+                    this.leftRotate(z.parent!.parent!);
+                }
+            }
+        }
+        this.root!.color = Color.BLACK;
+    }
+
+    private leftRotate(x: RBNode): void {
+        const y = x.right!;
+        x.right = y.left;
+        if (y.left) y.left.parent = x;
+        y.parent = x.parent;
+        if (!x.parent) this.root = y;
+        else if (x === x.parent.left) x.parent.left = y;
+        else x.parent.right = y;
+        y.left = x;
+        x.parent = y;
+    }
+
+    private rightRotate(y: RBNode): void {
+        const x = y.left!;
+        y.left = x.right;
+        if (x.right) x.right.parent = y;
+        x.parent = y.parent;
+        if (!y.parent) this.root = x;
+        else if (y === y.parent.left) y.parent.left = x;
+        else y.parent.right = x;
+        x.right = y;
+        y.parent = x;
+    }
+
+    search(data: number): boolean {
+        let curr = this.root;
+        while (curr) {
+            if (data === curr.data) return true;
+            curr = data < curr.data ? curr.left : curr.right;
+        }
+        return false;
+    }
+
+    // Verify the 5 Red-Black properties
+    verifyRBProperties(): string[] {
+        const violations: string[] = [];
+        // Property 1: Every node is either red or black — trivially true
+        // Property 2: Root is black
+        if (this.root?.color !== Color.BLACK) violations.push("Root is not black");
+        // Property 3: All leaves (null) are black — trivially true
+        // Property 4: Red nodes have black children
+        const checkRedChildren = (node: RBNode | null): void => {
+            if (!node) return;
+            if (node.color === Color.RED) {
+                if (node.left?.color === Color.RED || node.right?.color === Color.RED) {
+                    violations.push(`Red node ${node.data} has a red child`);
+                }
+            }
+            checkRedChildren(node.left);
+            checkRedChildren(node.right);
+        };
+        checkRedChildren(this.root);
+        // Property 5: All paths have same black height
+        const checkBlackHeight = (node: RBNode | null): number | null => {
+            if (!node) return 0;
+            const leftBH = checkBlackHeight(node.left);
+            const rightBH = checkBlackHeight(node.right);
+            if (leftBH === null || rightBH === null || leftBH !== rightBH) {
+                violations.push(`Black height mismatch at node ${node?.data}`);
+                return null;
+            }
+            return leftBH + (node.color === Color.BLACK ? 1 : 0);
+        };
+        checkBlackHeight(this.root);
+        return violations;
+    }
+
+    toArray(): number[] {
+        const result: number[] = [];
+        let curr = this.root;
+        const stack: RBNode[] = [];
+        while (curr || stack.length > 0) {
+            while (curr) { stack.push(curr); curr = curr.left; }
+            curr = stack.pop()!;
+            result.push(curr.data);
+            curr = curr.right;
+        }
+        return result;
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the maximum number of red nodes on any path from root to leaf in a Red-Black tree?**
+   - a) ⌊log₂n⌋
+   - b) ⌊height/2⌋
+   - c) h/2 where h = height ✓
+   - d) n/2
+
+10. **A Red-Black tree of height 10 has at least how many black nodes on any root-to-leaf path?**
+    - a) 3
+    - b) 5 ✓
+    - c) 10
+    - d) 1
+
+11. **In Red-Black tree deletion, the "double-black" concept arises when:**
+    - a) A red node is deleted
+    - b) A black node is deleted, leaving its child as "double black" ✓
+    - c) Two red nodes are consecutive
+    - d) The root is black
+
+12. **Which of the following trees is also a valid Red-Black tree?**
+    - a) A perfectly balanced BST with all nodes black ✓
+    - b) A tree with a red root
+    - c) A tree with a red node having a red child
+    - d) A tree with unequal black heights on different paths
+
+13. **The transformation between a Red-Black tree and a 2-3-4 tree maps:**
+    - a) Red nodes to 2-nodes
+    - b) Black nodes + red children to 3-nodes and 4-nodes ✓
+    - c) Black nodes only to 4-nodes
+    - d) There is no relationship
+
+14. **Why do Java's TreeMap and C++'s std::map use Red-Black trees instead of AVL?**
+    - a) Faster search
+    - b) Fewer rotations during insert/delete ✓
+    - c) Easier to implement
+    - d) Less memory
+
+**Answers:** 9-c, 10-b, 11-b, 12-a, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+14. **Red-Black property verification**: Write a function that takes a binary search tree and verifies all 5 Red-Black properties, returning which properties are satisfied.
+
+15. **Insert elements to trigger each fix-up case**: Generate insertion sequences that exercise Case 1 (uncle red), Case 2 (uncle black, zig-zag), and Case 3 (uncle black, zig-zig) in a Red-Black tree.
+
+16. **Implement LLRB tree**: Implement a Left-Leaning Red-Black tree insertion with only 2 fix-up cases: `flipColors` and `rotate`. Compare code complexity with standard RB.
+
+17. **Count black-height in O(n)**: Write a function to compute and annotate every node with its black-height. Verify all paths have the same black-height.
+
+18. **Red-Black tree with rank/select**: Augment each node with subtree size. Implement `rank(k)` (number of elements ≤ k) and `select(i)` (i-th smallest element) in O(log n).
+
+19. **AVL vs Red-Black experiment**: Insert 10,000 random elements into both an AVL and Red-Black tree. Count total rotations performed by each. Which one needs fewer?
+
+20. **Interval tree with Red-Black tree**: Implement an interval tree using a Red-Black tree as the underlying balanced BST, with `insertInterval`, `deleteInterval`, and `findOverlapping` operations.
+
+21. **Convert RB tree to AVL tree**: Given a valid Red-Black tree, convert it to a valid AVL tree by rebuilding (flatten to array → build balanced).
+
+### Advanced Comparison: RB vs AVL vs B-Tree
+
+| Criterion | Red-Black | AVL | B-Tree (order m) |
+|-----------|-----------|-----|------------------|
+| Height bound | ≤ 2 log₂(n+1) | ≤ 1.44 log₂n | ≤ log_{⌈m/2⌉} ((n+1)/2) |
+| Search speed | Slower (taller) | Faster (shorter) | Comparable (block access dominates) |
+| Insert rotations | ≤ 2 | ≤ 2 | Node splits (0 rotations) |
+| Delete complexity | 4 cases (hardest) | 4 rotation patterns | Node merges/redistribution |
+| Memory/node | 1 color bit | height field (int) | m keys + m+1 pointers |
+| Practical speed | Best for write-heavy | Best for read-heavy | Best for disk-based storage |
+| In-place update | Yes | Yes | Node overflow (copy) |
+| Library adoption | std::map, TreeMap | None in std libs | Databases, filesystems |
 
 ## Review Questions
 

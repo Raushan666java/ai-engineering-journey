@@ -1757,11 +1757,199 @@ DOM tree structure:
 | Find diameter | Postorder | Height + path through node combined |
 | Check symmetry | Preorder mirror check | Compare left.right with right.left |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the maximum number of nodes at level i of a binary tree?**
-   - a) i
-   - b) 2^i ✓
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Confusing height vs depth | Height = edges from node to deepest leaf; depth = edges from root to node | Height is measured downward, depth is measured upward |
+| Recursive traversal on deep trees (stack overflow) | A skewed tree of depth 10,000 will overflow the call stack | Use iterative stack-based traversals for production code |
+| Not handling null children in recursive traversals | Dereferencing `root.left` when `root` is null crashes | Always check `if (root == null) return` at the top of recursion |
+| Building unbalanced trees when sequential data is inserted | No self-balancing leads to O(n) operations | Use AVL, Red-Black, or B-Trees for ordered data |
+| Forgetting that leaf nodes have both children null | Checking only one child may mis-identify a leaf | Verify `node.left == null && node.right == null` |
+| Level-order using BFS without tracking level boundaries | All nodes come out in one flat queue with no level info | Use null sentinel or inner loop based on `queue.size()` per level |
+| Mistaking full binary tree (every node has 0 or 2 children) with complete binary tree (all levels filled left-to-right) | They are different — a full tree may be incomplete | Learn the 3 definitions: full, complete, perfect |
+
+### TypeScript Binary Tree Traversals
+
+```typescript
+class TreeNode<T> {
+    constructor(
+        public data: T,
+        public left: TreeNode<T> | null = null,
+        public right: TreeNode<T> | null = null
+    ) {}
+}
+
+// Depth-First: Recursive
+function inOrder<T>(root: TreeNode<T> | null, result: T[] = []): T[] {
+    if (!root) return result;
+    inOrder(root.left, result);
+    result.push(root.data);
+    inOrder(root.right, result);
+    return result;
+}
+
+function preOrder<T>(root: TreeNode<T> | null, result: T[] = []): T[] {
+    if (!root) return result;
+    result.push(root.data);
+    preOrder(root.left, result);
+    preOrder(root.right, result);
+    return result;
+}
+
+function postOrder<T>(root: TreeNode<T> | null, result: T[] = []): T[] {
+    if (!root) return result;
+    postOrder(root.left, result);
+    postOrder(root.right, result);
+    result.push(root.data);
+    return result;
+}
+
+// Depth-First: Iterative
+function inOrderIterative<T>(root: TreeNode<T> | null): T[] {
+    const result: T[] = [];
+    const stack: TreeNode<T>[] = [];
+    let curr = root;
+    while (curr || stack.length > 0) {
+        while (curr) {
+            stack.push(curr);
+            curr = curr.left;
+        }
+        curr = stack.pop()!;
+        result.push(curr.data);
+        curr = curr.right;
+    }
+    return result;
+}
+
+// Breadth-First (Level Order)
+function levelOrder<T>(root: TreeNode<T> | null): T[][] {
+    const result: T[][] = [];
+    if (!root) return result;
+    const queue: TreeNode<T>[] = [root];
+    while (queue.length > 0) {
+        const levelSize = queue.length;
+        const level: T[] = [];
+        for (let i = 0; i < levelSize; i++) {
+            const node = queue.shift()!;
+            level.push(node.data);
+            if (node.left) queue.push(node.left);
+            if (node.right) queue.push(node.right);
+        }
+        result.push(level);
+    }
+    return result;
+}
+
+// Tree height
+function treeHeight<T>(root: TreeNode<T> | null): number {
+    if (!root) return -1; // edges to deepest leaf (-1 convention) or 0 for nodes
+    return 1 + Math.max(treeHeight(root.left), treeHeight(root.right));
+}
+
+// Diameter of binary tree
+function treeDiameter<T>(root: TreeNode<T> | null): number {
+    let max = 0;
+    function height(node: TreeNode<T> | null): number {
+        if (!node) return 0;
+        const lh = height(node.left);
+        const rh = height(node.right);
+        max = Math.max(max, lh + rh);
+        return 1 + Math.max(lh, rh);
+    }
+    height(root);
+    return max;
+}
+
+// Check if tree is balanced (height diff ≤ 1)
+function isBalanced<T>(root: TreeNode<T> | null): boolean {
+    function check(node: TreeNode<T> | null): number {
+        if (!node) return 0;
+        const lh = check(node.left);
+        if (lh === -1) return -1;
+        const rh = check(node.right);
+        if (rh === -1) return -1;
+        if (Math.abs(lh - rh) > 1) return -1;
+        return 1 + Math.max(lh, rh);
+    }
+    return check(root) !== -1;
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the space complexity of iterative in-order traversal using a stack?**
+   - a) O(1)
+   - b) O(log n)
+   - c) O(h) where h = height ✓
+   - d) O(n)
+
+10. **In a complete binary tree with n nodes, the height is:**
+    - a) n
+    - b) n/2
+    - c) ⌊log₂(n)⌋ ✓
+    - d) log₂(n+1)
+
+11. **Which traversal produces the nodes in sorted order for a BST?**
+    - a) Pre-order
+    - b) In-order ✓
+    - c) Post-order
+    - d) Level-order
+
+12. **The diameter of a binary tree is defined as:**
+    - a) The height of the tree
+    - b) The longest path between any two nodes (may or may not pass through root) ✓
+    - c) The maximum number of nodes in any level
+    - d) The number of leaf nodes
+
+13. **A tree where every node has either 0 or 2 children is called:**
+    - a) Complete binary tree
+    - b) Full (strict) binary tree ✓
+    - c) Perfect binary tree
+    - d) Skewed binary tree
+
+14. **Morris traversal achieves O(1) space by:**
+    - a) Using a queue
+    - b) Using threaded binary tree concepts ✓
+    - c) Using recursion
+    - d) Using hash set
+
+**Answers:** 9-c, 10-c, 11-b, 12-b, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+12. **Construct a binary tree from inorder and preorder traversals**: Given inorder and preorder arrays, rebuild the binary tree. Solve recursively.
+
+13. **Boundary traversal of a binary tree**: Print the boundary nodes of a binary tree in anti-clockwise direction (left boundary → leaves → right boundary reversed).
+
+14. **Maximum path sum**: Find the maximum path sum in a binary tree. A path can start and end at any node.
+
+15. **Lowest common ancestor (LCA) in a binary tree**: Given two nodes, find their lowest common ancestor. Solve recursively in O(n).
+
+16. **Vertical order traversal**: Print nodes of a binary tree in vertical order. Use a hash map to group nodes by horizontal distance from root.
+
+17. **Serialize and deserialize a binary tree**: Design algorithms to convert a binary tree to a string and reconstruct it from that string.
+
+18. **Zigzag level order traversal**: Traverse the tree in level order, alternating direction at each level (L→R, R→L, L→R, …).
+
+19. **Check if a binary tree is symmetric (mirror of itself)**: A tree is symmetric if the left subtree is a mirror of the right subtree.
+
+20. **Maximum width of a binary tree**: Find the maximum width (number of nodes at any level) including null nodes between nodes.
+
+21. **Connect nodes at the same level**: Given a binary tree with an additional `next` pointer, connect each node to the next node on its level.
+
+### Tree Types Comparison
+
+| Property | Full Binary | Complete Binary | Perfect Binary | Balanced | Skewed |
+|----------|-------------|-----------------|----------------|----------|--------|
+| Every node has 0 or 2 children | Yes | No | Yes | No | No |
+| Levels filled left-to-right | No | Yes | Yes | No | No |
+| Height | O(n) worst | ⌊log₂n⌋ | log₂(n+1) | O(log n) | n |
+| Leaves (max) | ≈ n/2 | ≈ n/2 | 2ʰ | — | 1 |
+| Array representation possible | No | Yes | Yes | No | No |
+| Search time | O(n) worst | O(log n) avg | O(log n) | O(log n) | O(n) |
    - c) n/2
    - d) 2^(i+1) - 1
 

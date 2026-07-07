@@ -1305,6 +1305,123 @@ int main() {
 }
 ```
 
+### Example 3: TypeScript RAID Performance Calculator
+
+```typescript
+/**
+ * RaidPerformanceCalculator: Models RAID 0, 1, 5, 6, and 10
+ * to compute effective capacity, IOPS, throughput, and fault tolerance.
+ */
+interface RaidConfig {
+  level: number;
+  numDisks: number;
+  diskSizeGB: number;
+  diskIOPS: number;
+  diskThroughputMBs: number; // sequential MB/s per disk
+}
+
+interface RaidResult {
+  level: number;
+  usableCapacityGB: number;
+  capacityEfficiency: number;  // %
+  readIOPS: number;
+  writeIOPS: number;
+  readThroughputMBs: number;
+  writeThroughputMBs: number;
+  maxFailures: number;
+  rebuildTimeHours: number;    // estimated for full disk
+}
+
+class RaidCalculator {
+  compute(config: RaidConfig): RaidResult {
+    const { level, numDisks, diskSizeGB, diskIOPS, diskThroughputMBs } = config;
+    const totalRaw = numDisks * diskSizeGB;
+
+    let usableCapacityGB: number;
+    let writePenalty: number;
+    let maxFailures: number;
+
+    switch (level) {
+      case 0: // Striping
+        usableCapacityGB = totalRaw;
+        writePenalty = 1;
+        maxFailures = 0;
+        break;
+      case 1: // Mirroring
+        usableCapacityGB = diskSizeGB; // N/2 disks usable (assuming 2-disk mirror sets)
+        writePenalty = 2;
+        maxFailures = Math.floor(numDisks / 2);
+        break;
+      case 5: // Striping with parity
+        usableCapacityGB = (numDisks - 1) * diskSizeGB;
+        writePenalty = 4; // Read old data, read old parity, write new data, write new parity
+        maxFailures = 1;
+        break;
+      case 6: // Striping with double parity
+        usableCapacityGB = (numDisks - 2) * diskSizeGB;
+        writePenalty = 6; // Two data reads, two parity reads, two writes
+        maxFailures = 2;
+        break;
+      case 10: // Mirror + Stripe
+        usableCapacityGB = (numDisks / 2) * diskSizeGB;
+        writePenalty = 2;
+        maxFailures = Math.floor(numDisks / 2);
+        break;
+      default:
+        throw new Error(`Unsupported RAID level: ${level}`);
+    }
+
+    const capacityEfficiency = (usableCapacityGB / totalRaw) * 100;
+    const readIOPS = numDisks * diskIOPS; // All disks can serve reads
+    const writeIOPS = (numDisks * diskIOPS) / writePenalty; // Penalty reduces effective write IOPS
+    const readThroughputMBs = numDisks * diskThroughputMBs;
+    const writeThroughputMBs = (numDisks * diskThroughputMBs) / writePenalty;
+    // Estimate rebuild time: reading all data from surviving disks
+    const rebuildTimeHours = (usableCapacityGB / diskThroughputMBs) / 3600 * 1.1; // 10% overhead
+
+    return {
+      level, usableCapacityGB: Math.round(usableCapacityGB * 10) / 10,
+      capacityEfficiency: Math.round(capacityEfficiency * 10) / 10,
+      readIOPS: Math.round(readIOPS), writeIOPS: Math.round(writeIOPS),
+      readThroughputMBs: Math.round(readThroughputMBs),
+      writeThroughputMBs: Math.round(writeThroughputMBs),
+      maxFailures, rebuildTimeHours: Math.round(rebuildTimeHours * 10) / 10
+    };
+  }
+
+  compare(configs: RaidConfig[]): void {
+    console.log('='.repeat(120));
+    console.log('RAID Level Comparison');
+    console.log('='.repeat(120));
+    console.log(
+      'Level | Disks | Raw(TB) | Usable(TB) | Eff.% | Read IOPS | Write IOPS | Read(MB/s) | Write(MB/s) | MaxFail | Rebuild(h)'
+    );
+    console.log('-'.repeat(120));
+
+    for (const cfg of configs) {
+      const r = this.compute(cfg);
+      console.log(
+        `  ${String(r.level).padEnd(4)} | ${cfg.numDisks} | ${(cfg.numDisks * cfg.diskSizeGB / 1000).toFixed(1)}TB | ` +
+        `${(r.usableCapacityGB / 1000).toFixed(1)}TB | ${r.capacityEfficiency}% | ` +
+        `${r.readIOPS.toLocaleString()} | ${r.writeIOPS.toLocaleString()} | ` +
+        `${r.readThroughputMBs} | ${r.writeThroughputMBs} | ${r.maxFailures} | ${r.rebuildTimeHours}h`
+      );
+    }
+  }
+}
+
+// Example: 6 × 1TB SAS disks, each 180 IOPS, 200 MB/s sequential
+const calc = new RaidCalculator();
+const configs: RaidConfig[] = [
+  { level: 0, numDisks: 6, diskSizeGB: 1000, diskIOPS: 180, diskThroughputMBs: 200 },
+  { level: 1, numDisks: 6, diskSizeGB: 1000, diskIOPS: 180, diskThroughputMBs: 200 },
+  { level: 5, numDisks: 6, diskSizeGB: 1000, diskIOPS: 180, diskThroughputMBs: 200 },
+  { level: 6, numDisks: 6, diskSizeGB: 1000, diskIOPS: 180, diskThroughputMBs: 200 },
+  { level: 10, numDisks: 6, diskSizeGB: 1000, diskIOPS: 180, diskThroughputMBs: 200 },
+];
+calc.compare(configs);
+```
+
 > [TIP]
 > **SCAN (elevator)** moves in one direction, services all requests, then reverses. **C-SCAN** provides uniform wait times by servicing only in one direction then jumping back.
 
@@ -1404,7 +1521,49 @@ int main() {
    - c) Rotational latency
    - d) Controller overhead
 
-**Answers:** 1-b, 2-a, 3-c, 4-b, 5-b, 6-d, 7-c, 8-b
+9. What is the effective capacity of RAID 5 with 6 × 2 TB disks?
+   - a) 12 TB
+   - b) 10 TB
+   - c) 8 TB
+   - d) 6 TB
+
+10. Which I/O scheduler is best suited for NVMe SSDs?
+    - a) CFQ
+    - b) Deadline
+    - c) NOOP (or None)
+    - d) BFQ
+
+11. What is the total access time for a 7200 RPM drive with 5 ms seek time and 4 KB transfer at 150 MB/s?
+    - a) 9.17 ms
+    - b) 9.20 ms
+    - c) 9.24 ms
+    - d) 13.34 ms
+
+12. In GPT, where is the backup partition table stored?
+    - a) At the beginning of the disk
+    - b) At the end of the disk
+    - c) In the MBR
+    - d) On a separate disk
+
+13. What is the purpose of Native Command Queuing (NCQ)?
+    - a) Enable hot-swapping of drives
+    - b) Allow the drive to reorder commands for efficiency
+    - c) Provide encryption at the drive level
+    - d) Monitor drive health via S.M.A.R.T.
+
+14. Which term describes a group of sectors as the smallest file system allocation unit?
+    - a) Track
+    - b) Cylinder
+    - c) Cluster (block)
+    - d) Platter
+
+15. What is the RAID 6 write penalty?
+    - a) 2 I/Os
+    - b) 4 I/Os
+    - c) 6 I/Os
+    - d) 8 I/Os
+
+**Answers:** 1-b, 2-a, 3-c, 4-b, 5-b, 6-d, 7-c, 8-b, 9-b, 10-c, 11-c, 12-b, 13-b, 14-c, 15-c
 
 ## Summary
 
@@ -1441,9 +1600,27 @@ int main() {
 9. Implement a FUSE file system presenting a RAID 0 view of two directories. Stripe data across both in 4 KB chunks.
 10. Compute RAID reliability: For a 6-disk RAID 5 array with 6 TB disks, MTTF=800K hr, rebuild=16 hr, what is the probability of data loss within 5 years?
 
----
+### Additional Exercises
 
-## Appendix A: Additional Disk Scheduling Examples
+11. **IOPS vs throughput benchmark**: Write a program that measures both IOPS (random 4 KB reads) and sequential throughput (1 MB reads) on a real disk. Use direct I/O (O_DIRECT on Linux) to bypass the page cache. Run 5 iterations and report min, max, avg, and standard deviation.
+
+12. **Disk scheduling visualizer**: Extend the disk scheduling simulator to generate Gantt-chart-style output showing when each request is serviced under FCFS, SSTF, SCAN, C-SCAN, LOOK, and C-LOOK. For a given queue, print a horizontal timeline showing service order and wait times.
+
+13. **SSTF starvation detector**: Write a simulation that demonstrates SSTF starvation. Generate a continuous stream of requests in cylinders 0-50 while a single request sits at cylinder 199. Count how many local requests arrive before the distant request is serviced. Show that with SCAN, the distant request is always serviced within one sweep.
+
+14. **RAID reliability calculator**: Extend the TypeScript RaidCalculator to compute probability of data loss over a given time period using the formula: P_loss = 1 - e^(-N * (N-1) * MTTF_disk * rebuild_time / MTTF²). Compare RAID 5, RAID 6, and RAID 10 for a 10-disk array over 5 years.
+
+15. **Swap sizing simulator**: Write a program that monitors system memory usage over time (using `/proc/meminfo` on Linux) and recommends swap size based on: peak memory pressure, hibernation requirements, and a configurable safety margin (default 20%). Test by running a memory-intensive workload and measuring peak swap usage.
+
+16. **Zoned storage simulator**: Implement a simplified ZNS (Zoned Namespaces) SSD simulator in TypeScript. Create zones of 256 MB each. Each zone must be written sequentially and reset before rewriting. Simulate a workload of random writes and measure write amplification factor (WAF = total physical writes / total logical writes).
+
+17. **NVMe vs HDD latency analyzer**: Create a mathematical model comparing NVMe SSD latency vs HDD latency. For HDD: seek(5ms) + rotation(4.17ms) + transfer(0.04ms) = 9.2ms. For NVMe: queue_dispatch(10μs) + NAND_access(50μs) + transfer(5μs) = 65μs. Compute the ratio and show how queue depth affects performance for each.
+
+18. **blk-mq simulator**: Implement a simplified multi-queue block layer. Create N software submission queues (one per CPU core), each with a lockless ring buffer. A hardware dispatch queue pulls from software queues in round-robin. Measure throughput scaling from 1 to 32 cores vs a single-queue implementation.
+
+19. **Power-aware disk scheduler**: Design and implement a disk scheduler that batches idle periods to allow the disk to enter a low-power state. If the queue is empty for longer than `idle_threshold` (e.g., 100ms), send the disk to sleep. Wake on next I/O. Measure power savings vs throughput impact using a simulation.
+
+20. **SMR drive simulator**: Implement a shingled magnetic recording (SMR) drive simulator where tracks overlap. Writes to a zone must be sequential. Random writes require a read-merge-write cycle. Track the number of drive-managed vs host-managed operations and compute the write amplification for a random workload.
 
 ### A.1 SSTF Starvation → Full Worked Example
 

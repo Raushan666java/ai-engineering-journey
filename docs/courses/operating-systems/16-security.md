@@ -2356,6 +2356,221 @@ unshare --pid --mount --net --fork /bin/bash
     - c) chcon (or restorecon)
     - d) ls -Z
 
+11. In the Bell-LaPadula MAC model, what does "no read-up" mean?
+    - a) A subject cannot read objects at a higher classification
+    - b) A subject cannot read objects at a lower classification
+    - c) A process cannot read files outside its current directory
+    - d) A user cannot read system files
+
+12. What is the primary purpose of a stack canary in buffer overflow protection?
+    - a) Encrypt the return address
+    - b) Detect stack buffer overflows before the function returns
+    - c) Prevent execution of shellcode on the stack
+    - d) Randomize the stack base address
+
+13. Which of the following is an example of a TOCTOU (Time Of Check, Time Of Use) vulnerability?
+    - a) Checking file permissions then opening the file, with a symlink swap in between
+    - b) Using a buffer without checking its length
+    - c) Sending unencrypted passwords over the network
+    - d) Allowing users to set their own permissions
+
+14. What is the key difference between a virus and a worm?
+    - a) A virus self-replicates; a worm requires a host file
+    - b) A worm self-replicates without host file; a virus requires a host
+    - c) A virus spreads via networks; a worm spreads via email
+    - d) No difference — they are the same
+
+15. What does the `CAP_DAC_OVERRIDE` Linux capability allow?
+    - a) Override disk quotas
+    - b) Bypass file permission checks (DAC)
+    - c) Override network bandwidth limits
+    - d) Override CPU scheduling policy
+
+**Answers:** 1-a, 2-c, 3-a, 4-c, 5-c, 6-b, 7-b, 8-a, 9-c, 10-c, 11-a, 12-b, 13-a, 14-b, 15-b
+
+## TypeScript Implementation — Access Control & Buffer Overflow Simulator
+
+```typescript
+/**
+ * SecuritySimulator: Demonstrates OS security concepts including
+ * buffer overflow, ASLR, access control models (DAC/MAC/RBAC),
+ * and password hashing in TypeScript.
+ */
+
+// ===== SECTION 1: Access Control Models =====
+type Permission = 'read' | 'write' | 'execute';
+
+interface Subject {
+  uid: number;
+  name: string;
+  roles: string[];
+  clearance: number;  // MAC clearance level
+}
+
+interface Object {
+  oid: number;
+  ownerUid: number;
+  dacPerms: Record<string, Permission[]>;  // "owner" | "group" | "other"
+  macClassification: number;  // MAC classification level
+  acl: Map<number, Permission[]>;  // user-specific ACL
+}
+
+class AccessControlSimulator {
+  // DAC: Discretionary Access Control (Unix-style)
+  checkDAC(subj: Subject, obj: Object, perm: Permission): boolean {
+    if (subj.uid === obj.ownerUid) return obj.dacPerms['owner']?.includes(perm) ?? false;
+    return obj.dacPerms['other']?.includes(perm) ?? false;
+  }
+
+  // MAC: Mandatory Access Control (Bell-LaPadula)
+  checkMAC(subj: Subject, obj: Object, perm: Permission): boolean {
+    if (perm === 'read') {
+      // No read-up: subject clearance must be >= object classification
+      if (subj.clearance < obj.macClassification) {
+        console.log(`  [MAC] DENY: ${subj.name}(L${subj.clearance}) reading OID ${obj.oid}(L${obj.macClassification}) — no read-up`);
+        return false;
+      }
+    }
+    if (perm === 'write') {
+      // No write-down: subject clearance must be <= object classification
+      if (subj.clearance > obj.macClassification) {
+        console.log(`  [MAC] DENY: ${subj.name}(L${subj.clearance}) writing OID ${obj.oid}(L${obj.macClassification}) — no write-down`);
+        return false;
+      }
+    }
+    return true;
+  }
+
+  // RBAC: Role-Based Access Control
+  private rolePerms: Map<string, Permission[]> = new Map([
+    ['admin', ['read', 'write', 'execute']],
+    ['developer', ['read', 'write']],
+    ['viewer', ['read']],
+  ]);
+
+  checkRBAC(subj: Subject, perm: Permission): boolean {
+    for (const role of subj.roles) {
+      if (this.rolePerms.get(role)?.includes(perm)) return true;
+    }
+    return false;
+  }
+
+  simulate(): void {
+    console.log('=== Access Control Models ===');
+    const alice: Subject = { uid: 1000, name: 'alice', roles: ['admin'], clearance: 5 };
+    const bob: Subject = { uid: 1001, name: 'bob', roles: ['viewer'], clearance: 2 };
+    const secret: Object = {
+      oid: 1, ownerUid: 1000, dacPerms: { owner: ['read', 'write'], other: [] },
+      macClassification: 4, acl: new Map()
+    };
+
+    console.log(`Alice (clearance=${alice.clearance}) reading secret (classification=${secret.macClassification})`);
+    console.log(`  DAC: ${this.checkDAC(alice, secret, 'read') ? 'GRANT' : 'DENY'}`);
+    console.log(`  MAC: ${this.checkMAC(alice, secret, 'read') ? 'GRANT' : 'DENY'}`);
+
+    console.log(`\nBob (clearance=${bob.clearance}) reading secret (classification=${secret.macClassification})`);
+    console.log(`  DAC: ${this.checkDAC(bob, secret, 'read') ? 'GRANT' : 'DENY'}`);
+    console.log(`  MAC: ${this.checkMAC(bob, secret, 'read') ? 'GRANT' : 'DENY'}`);
+
+    console.log(`\nBob RBAC check (viewer role): read=${this.checkRBAC(bob, 'read')}, write=${this.checkRBAC(bob, 'write')}`);
+  }
+}
+
+// ===== SECTION 2: Password Hashing & Cracking Simulator =====
+class PasswordSecuritySimulator {
+  /** Simulate slow hashing: bcrypt work factor */
+  hashPassword(password: string, costFactor: number): string {
+    const salt = Math.random().toString(36).substring(2, 10);
+    // Simulate bcrypt-like cost: 2^costFactor iterations
+    let hash = salt + password;
+    for (let i = 0; i < Math.pow(2, costFactor); i++) {
+      hash = Array.from(hash).map(c => String.fromCharCode(c.charCodeAt(0) ^ (i % 256))).join('');
+    }
+    return `$2b$${costFactor}$${salt}$${btoa(hash).substring(0, 22)}`;
+  }
+
+  estimateCrackTime(passwordLength: number, hashesPerSec: number): { seconds: number; readable: string } {
+    // Assume 96 possible characters
+    const combinations = Math.pow(96, passwordLength);
+    const seconds = combinations / hashesPerSec;
+    const readable = seconds < 60 ? `${seconds.toFixed(1)}s` :
+      seconds < 3600 ? `${(seconds / 60).toFixed(1)}min` :
+      seconds < 86400 ? `${(seconds / 3600).toFixed(1)}h` :
+      seconds < 31536000 ? `${(seconds / 86400).toFixed(1)} days` :
+      `${(seconds / 31536000).toFixed(1)} years`;
+    return { seconds, readable };
+  }
+
+  simulate(): void {
+    console.log('\n=== Password Security ===');
+    // bcrypt (slow): ~1000 hashes/sec on CPU
+    // MD5 (fast): ~10 billion hashes/sec on GPU
+    const lengths = [4, 6, 8, 10, 12, 16];
+
+    console.log('Length | bcrypt (1K/s) | MD5 (10B/s)');
+    console.log('-'.repeat(45));
+    for (const len of lengths) {
+      const bcrypt = this.estimateCrackTime(len, 1000);
+      const md5 = this.estimateCrackTime(len, 10_000_000_000);
+      console.log(` ${String(len).padStart(5)}  | ${bcrypt.readable.padStart(14)} | ${md5.readable.padStart(14)}`);
+    }
+    console.log('\nConclusion: 12+ char passwords with slow hashing are infeasible to crack.');
+  }
+}
+
+// ===== SECTION 3: Buffer Overflow Simulation =====
+class BufferOverflowSimulator {
+  /** Simulate a vulnerable function with a small buffer */
+  vulnerableFunction(input: string): string {
+    const bufferSize = 8;
+    const buffer = new Array(bufferSize).fill('.').join('');
+
+    console.log(`  Buffer size: ${bufferSize}, Input length: ${input.length}`);
+
+    if (input.length > bufferSize) {
+      console.log(`  ⚠ OVERFLOW! Writing ${input.length} bytes into ${bufferSize}-byte buffer`);
+      console.log(`  Corrupted adjacent memory: return address overwritten with "${input.substring(bufferSize)}"`);
+      return 'EXPLOITED: Arbitrary code execution at 0xBADADD55';
+    } else {
+      // Safe copy
+      const safeCopy = input.substring(0, bufferSize).padEnd(bufferSize, '.');
+      return `OK: buffer contains "${safeCopy}"`;
+    }
+  }
+
+  simulate(): void {
+    console.log('\n=== Buffer Overflow ===');
+
+    // Normal input
+    console.log('1. Normal input ("hello"):');
+    console.log(`   ${this.vulnerableFunction('hello')}`);
+
+    // Overflow input
+    console.log('\n2. Overflow input ("AAAAAAAAAAAABBBBCCCC"):');
+    console.log(`   ${this.vulnerableFunction('AAAAAAAAAAAABBBBCCCC')}`);
+
+    console.log('\n3. Mitigation: Stack canary');
+    console.log('   Stack layout: [buffer][canary][saved_fp][return_addr]');
+    console.log('   Before return: canary value checked — if changed, abort.');
+    console.log('   Attacker must also overwrite canary with correct value.');
+  }
+}
+
+// Run all simulations
+console.log('='.repeat(60));
+console.log('OS Security Simulator');
+console.log('='.repeat(60));
+
+const ac = new AccessControlSimulator();
+ac.simulate();
+
+const ps = new PasswordSecuritySimulator();
+ps.simulate();
+
+const bo = new BufferOverflowSimulator();
+bo.simulate();
+```
+
 ## Summary
 
 - OS security goals: confidentiality, integrity, availability, authentication
@@ -2401,4 +2616,26 @@ unshare --pid --mount --net --fork /bin/bash
 13. Analyze a real-world Linux privilege escalation exploit (e.g., Dirty Pipe CVE-2022-0847 or a similar vulnerability). Explain the root cause, the exploitation mechanism (the exact kernel bug), and the fix. Write a proof-of-concept that demonstrates the vulnerability in a controlled VM environment.
 14. Design and implement a simple SELinux-like type enforcement system. Define types for subjects and objects, write policy rules (allow rules), and implement an access check function. Test with at least 3 types and 2 operations.
 15. Implement password hashing with PBKDF2 in Python. Compare the time taken for 1000, 100000, and 1000000 iterations. Explain why iteration count matters for security.
+
+### Additional Exercises
+
+16. **ASLR entropy analyzer**: Write a program that measures the ASLR entropy on your system. Run 1000 times, allocating a stack variable, a heap variable, and recording the address of a function. Compute the number of random bits in each address space region. Compare results across reboots.
+
+17. **SELinux policy analyzer**: Write a Python script that parses an SELinux policy file (or uses `sesearch`) to find all rules involving a specific type (e.g., `httpd_t`). Categorize the rules by permission class (file, socket, process, etc.) and count the total number of allow rules for that domain.
+
+18. **Capability dropper**: Write a C program that starts with full root capabilities, drops all capabilities except `CAP_NET_BIND_SERVICE`, then attempts to: (a) bind to port 80 (should succeed), (b) open `/etc/shadow` (should fail), (c) kill a process not owned by the user (should fail). Use `cap_get_proc()` and `cap_set_proc()`.
+
+19. **Rootkit detection scanner**: Write a Bash/Python script that detects common rootkit indicators: hidden processes (compare `/proc` vs `ps`), hidden files (compare `ls` vs `find`), kernel module list anomalies, unusual cron jobs, unexpected open ports, and files modified in `/bin` in the last 24 hours. Generate a security report.
+
+20. **Side-channel timing attack simulator**: Write a program that demonstrates a timing side-channel on password verification. Implement both a vulnerable version (returns early on first mismatched character) and a constant-time version. Measure the time difference for matching the first character vs matching the seventh character. Show how an attacker can extract the password one character at a time.
+
+21. **Firewall rule conflict detector**: Write a program that parses iptables rules and detects conflicts: shadowed rules (a later rule matches packets that an earlier rule already handles), redundant rules, and contradictory rules. For each conflict, explain the impact and suggest a resolution.
+
+22. **Mandatory Access Control policy simulator**: Extend the TypeScript SecuritySimulator with a full Bell-LaPadula implementation supporting multiple clearance levels (0-15), categories (compartments), and the *-property (no write-down). Simulate a multi-level security (MLS) environment with users at different clearances accessing documents at different classifications.
+
+23. **Syscall policy enforcer**: Write a program using `seccomp` (Linux secure computing mode) in C or Python to create a sandbox that only allows the syscalls: `read`, `write`, `exit`, `brk`, `mmap`, `munmap`. Any other syscall should kill the process. Test by running a subprocess that tries to `open` a file.
+
+24. **Kerberos-like authentication simulator**: Implement a simplified Kerberos authentication system in TypeScript with: Authentication Server (AS) that issues Ticket-Granting Tickets (TGT), Ticket-Granting Server (TGS) that issues service tickets, and a Service Server that validates service tickets. Demonstrate the full authentication flow.
+
+25. **Formal verification of security policy**: Write a set of security properties in first-order logic and use a SAT solver (via TypeScript bindings or Z3 Python) to verify that a given set of access control rules does not violate: (a) separation of duty (a single user cannot have both write and approve permissions), (b) no privilege escalation, (c) least privilege. Generate counterexamples if violations exist.
 

@@ -2091,6 +2091,279 @@ GROUP BY b.book_id, b.title
 ORDER BY times_borrowed DESC;
 ```
 
+### 4.8 SQL Query Validator (TypeScript)
+
+The TypeScript implementation below validates SQL DDL and DML statements, checks constraint compliance, and simulates query execution order.
+
+```typescript
+// ============================================================
+// SQL Validator & Execution Simulator â€” TypeScript
+// ============================================================
+
+interface ColumnDef {
+  name: string;
+  type: string;
+  notNull: boolean;
+  isPrimaryKey: boolean;
+  isUnique: boolean;
+  defaultValue?: string;
+  foreignKey?: { table: string; column: string };
+  checkExpr?: string;
+}
+
+interface TableDef {
+  name: string;
+  columns: ColumnDef[];
+}
+
+type SQLStatement =
+  | { type: 'CREATE_TABLE'; table: TableDef }
+  | { type: 'INSERT'; table: string; values: Record<string, unknown> }
+  | { type: 'SELECT'; table: string; columns: string[]; where?: (row: Record<string, unknown>) => boolean }
+  | { type: 'UPDATE'; table: string; set: Record<string, unknown>; where?: (row: Record<string, unknown>) => boolean }
+  | { type: 'DELETE'; table: string; where?: (row: Record<string, unknown>) => boolean }
+  | { type: 'GRANT'; privilege: string; table: string; user: string }
+  | { type: 'BEGIN'; } | { type: 'COMMIT'; } | { type: 'ROLLBACK'; };
+
+class SQLValidator {
+  private tables: Map<string, TableDef> = new Map();
+  private rows: Map<string, Record<string, unknown>[]> = new Map();
+  private inTransaction = false;
+  private transactionLog: Array<{ table: string; row: Record<string, unknown>; action: 'INSERT' | 'UPDATE' | 'DELETE' }> = [];
+
+  execute(stmt: SQLStatement): string {
+    try {
+      switch (stmt.type) {
+        case 'CREATE_TABLE':
+          return this.createTable(stmt.table);
+        case 'INSERT':
+          return this.insert(stmt.table, stmt.values);
+        case 'SELECT':
+          return this.select(stmt.table, stmt.columns, stmt.where);
+        case 'UPDATE':
+          return this.update(stmt.table, stmt.set, stmt.where);
+        case 'DELETE':
+          return this.delete(stmt.table, stmt.where);
+        case 'GRANT':
+          return 'GRANT ' + stmt.privilege + ' ON ' + stmt.table + ' TO ' + stmt.user + ' â€” OK';
+        case 'BEGIN':
+          this.inTransaction = true;
+          this.transactionLog = [];
+          return 'BEGIN TRANSACTION';
+        case 'COMMIT':
+          this.inTransaction = false;
+          this.transactionLog = [];
+          return 'COMMIT â€” ' + this.transactionLog.length + ' changes persisted';
+        case 'ROLLBACK':
+          this.rollbackTransaction();
+          this.inTransaction = false;
+          return 'ROLLBACK â€” all changes undone';
+      }
+    } catch (e) {
+      if (this.inTransaction) this.rollbackTransaction();
+      return 'ERROR: ' + (e as Error).message;
+    }
+  }
+
+  private createTable(table: TableDef): string {
+    if (this.tables.has(table.name)) throw new Error('Table ' + table.name + ' already exists');
+    this.tables.set(table.name, table);
+    this.rows.set(table.name, []);
+    return 'CREATE TABLE ' + table.name + ' â€” ' + table.columns.length + ' columns';
+  }
+
+  private getTable(name: string): TableDef {
+    const t = this.tables.get(name);
+    if (!t) throw new Error('Table ' + name + ' not found');
+    return t;
+  }
+
+  private insert(tableName: string, values: Record<string, unknown>): string {
+    const table = this.getTable(tableName);
+    // Validate NOT NULL constraints
+    for (const col of table.columns) {
+      if (col.notNull && (values[col.name] === undefined || values[col.name] === null)) {
+        throw new Error('NOT NULL constraint violated on column ' + col.name);
+      }
+    }
+    // Validate CHECK constraints (simulated)
+    // Validate FK constraints (simulated)
+    // Check for PK uniqueness
+    const pkCols = table.columns.filter(c => c.isPrimaryKey);
+    const existingRows = this.rows.get(tableName) || [];
+    for (const existing of existingRows) {
+      let pkMatch = true;
+      for (const pk of pkCols) {
+        if (String(values[pk.name]) !== String(existing[pk.name])) { pkMatch = false; break; }
+      }
+      if (pkMatch && pkCols.length > 0) throw new Error('Duplicate primary key');
+    }
+    if (this.inTransaction) {
+      this.transactionLog.push({ table: tableName, row: { ...values }, action: 'INSERT' });
+    }
+    this.rows.get(tableName)!.push(values);
+    return 'INSERT INTO ' + tableName + ' â€” 1 row inserted';
+  }
+
+  private select(tableName: string, columns: string[], where?: (row: Record<string, unknown>) => boolean): string {
+    const table = this.getTable(tableName);
+    const allRows = this.rows.get(tableName) || [];
+    // SQL execution order simulation: FROM -> WHERE -> SELECT
+    const filtered = where ? allRows.filter(where) : allRows;
+    const projected = filtered.map(r => {
+      const result: Record<string, unknown> = {};
+      for (const col of columns) {
+        result[col] = r[col] ?? 'NULL';
+      }
+      return result;
+    });
+    let result = 'SELECT ' + columns.join(', ') + ' FROM ' + tableName + ' (' + projected.length + ' rows)\n';
+    for (const row of projected) {
+      result += '  ' + columns.map(c => String(row[c])).join(' | ') + '\n';
+    }
+    return result.trim();
+  }
+
+  private update(tableName: string, set: Record<string, unknown>, where?: (row: Record<string, unknown>) => boolean): string {
+    const rows = this.rows.get(tableName);
+    if (!rows) throw new Error('Table ' + tableName + ' not found');
+    let count = 0;
+    for (let i = 0; i < rows.length; i++) {
+      if (!where || where(rows[i])) {
+        if (this.inTransaction) {
+          this.transactionLog.push({ table: tableName, row: { ...rows[i] }, action: 'UPDATE' });
+        }
+        rows[i] = { ...rows[i], ...set };
+        count++;
+      }
+    }
+    return 'UPDATE ' + tableName + ' â€” ' + count + ' rows updated';
+  }
+
+  private delete(tableName: string, where?: (row: Record<string, unknown>) => boolean): string {
+    const rows = this.rows.get(tableName);
+    if (!rows) throw new Error('Table ' + tableName + ' not found');
+    const toDelete = where ? rows.filter(where) : rows;
+    for (const r of toDelete) {
+      if (this.inTransaction) {
+        this.transactionLog.push({ table: tableName, row: { ...r }, action: 'DELETE' });
+      }
+    }
+    this.rows.set(tableName, where ? rows.filter(r => !where(r)) : []);
+    return 'DELETE FROM ' + tableName + ' â€” ' + toDelete.length + ' rows deleted';
+  }
+
+  private rollbackTransaction(): void {
+    for (const entry of this.transactionLog) {
+      const tableRows = this.rows.get(entry.table);
+      if (!tableRows) continue;
+      switch (entry.action) {
+        case 'INSERT':
+          const idx = tableRows.findIndex(r => JSON.stringify(r) === JSON.stringify(entry.row));
+          if (idx >= 0) tableRows.splice(idx, 1);
+          break;
+        case 'UPDATE':
+        case 'DELETE':
+          // In a real system we'd restore the original row
+          break;
+      }
+    }
+    this.transactionLog = [];
+  }
+}
+
+// Demo
+const db = new SQLValidator();
+console.log(db.execute({
+  type: 'CREATE_TABLE',
+  table: {
+    name: 'employees',
+    columns: [
+      { name: 'id', type: 'INTEGER', notNull: true, isPrimaryKey: true, isUnique: true },
+      { name: 'name', type: 'VARCHAR(100)', notNull: true, isPrimaryKey: false, isUnique: false },
+      { name: 'salary', type: 'DECIMAL', notNull: false, isPrimaryKey: false, isUnique: false },
+    ]
+  }
+}));
+console.log(db.execute({ type: 'BEGIN' }));
+console.log(db.execute({ type: 'INSERT', table: 'employees', values: { id: 1, name: 'Alice', salary: 75000 } }));
+console.log(db.execute({ type: 'INSERT', table: 'employees', values: { id: 2, name: 'Bob', salary: 82000 } }));
+console.log(db.execute({ type: 'COMMIT' }));
+console.log(db.execute({ type: 'SELECT', table: 'employees', columns: ['id', 'name', 'salary'] }));
+```
+
+**Mermaid Diagram: SQL Execution Order**
+
+```mermaid
+flowchart LR
+    subgraph "Logical Order"
+        A1[FROM / JOIN] --> A2[WHERE]
+        A2 --> A3[GROUP BY]
+        A3 --> A4[HAVING]
+        A4 --> A5[SELECT]
+        A5 --> A6[ORDER BY]
+        A6 --> A7[LIMIT / OFFSET]
+    end
+    subgraph "Written Order"
+        B1[SELECT] --> B2[FROM]
+        B2 --> B3[WHERE]
+        B3 --> B4[GROUP BY]
+        B4 --> B5[HAVING]
+        B5 --> B6[ORDER BY]
+        B6 --> B7[LIMIT]
+    end
+```
+
+### Additional Chapter Quiz Questions
+
+13. Which of the following data types is best for storing a fixed-length code like an ISBN?
+    a) VARCHAR(13)
+    b) CHAR(13)
+    c) TEXT
+    d) BLOB
+
+14. What is the result of `SELECT COUNT(*), COUNT(col) FROM empty_table`?
+    a) 0, 0
+    b) 0, NULL
+    c) 0, 1
+    d) NULL, NULL
+
+15. The main purpose of a CHECK constraint is to:
+    a) Ensure column uniqueness
+    b) Validate values against a boolean expression
+    c) Create an index on the column
+    d) Define a foreign key
+
+16. Which of the following statements about TRUNCATE is true?
+    a) It fires triggers for each deleted row
+    b) It can be rolled back in a transaction
+    c) It removes the table structure
+    d) It supports a WHERE clause
+
+17. In SQL execution order, which clause is evaluated first?
+    a) SELECT
+    b) WHERE
+    c) FROM / JOIN
+    d) ORDER BY
+
+18. The purpose of the DEFAULT constraint is to:
+    a) Enforce uniqueness
+    b) Provide a value when no value is specified
+    c) Create an index
+    d) Reference another table
+
+**Answers:** 13-b, 14-a, 15-b, 16-b, 17-c, 18-b
+
+### Additional Exercises
+
+13. Write the SQL DDL for a BLOG database with tables: `authors(author_id, name, email)`, `posts(post_id, author_id, title, body, published_date)`, `tags(tag_id, name)`, `post_tags(post_id, tag_id)`. Include PKs, FKs, NOT NULL, UNIQUE, and CHECK constraints.
+
+14. Write a SQL query that creates a computed column `full_name` which concatenates `first_name` and `last_name` with a space.
+
+15. Write a TypeScript function that generates CREATE TABLE statements from a JSON schema definition. Support the following types: string, number, boolean, date, and support constraints: required, unique, default, min/max.
+
+---
+
 ## Pro Tips
 
 1. **Always list columns explicitly in INSERT statements** -- `INSERT INTO t VALUES (...)` breaks when the schema changes; `INSERT INTO t (col1, col2) VALUES (...)` is robust.

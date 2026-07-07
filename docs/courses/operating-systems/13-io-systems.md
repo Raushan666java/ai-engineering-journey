@@ -2902,6 +2902,167 @@ int main() {
 10. Which feature prevents DMA from accessing unauthorized memory?
    a) Page cache  b) IOMMU  c) VFS  d) Device mapper
 
+11. What is the sequence of events in an interrupt-driven I/O operation?
+    a) Device signals IRQ → CPU saves context → ISR runs → CPU restores context
+    b) CPU polls device → reads data → clears flag
+    c) DMA controller transfers → CPU saves context → IRQ fires
+    d) CPU writes command → device writes to memory → CPU reads
+
+12. In a double-buffering scheme, what is the primary advantage over single buffering?
+    a) Less memory usage
+    b) Producer and consumer can work concurrently on different buffers
+    c) Simpler implementation
+    d) No need for synchronization
+
+13. What is the main purpose of the IOMMU?
+    a) Accelerate file system operations
+    b) Translate device DMA addresses to physical memory addresses
+    c) Manage interrupt routing between devices
+    d) Provide virtual memory for GPU
+
+14. Which of the following is NOT a benefit of using spooling?
+    a) Allows multiple processes to share a device without conflict
+    b) Decouples the producer from the device speed
+    c) Reduces the total amount of I/O performed
+    d) Enables scheduling and prioritization of I/O jobs
+
+15. In the Linux I/O stack, what is the correct order from top to bottom?
+    a) Device driver → Block layer → Page cache → VFS → Application
+    b) Application → VFS → Page cache → Block layer → Device driver → Device
+    c) Application → Page cache → VFS → Device driver → Device
+    d) Application → Block layer → VFS → Page cache → Device driver
+
+**Answers:** 1-c, 2-a, 3-b, 4-c, 5-a, 6-c, 7-c, 8-b, 9-b, 10-b, 11-a, 12-b, 13-b, 14-c, 15-b
+
+### TypeScript I/O Simulator — DMA vs Interrupt vs Polling
+
+```typescript
+/**
+ * IOSimulator: Compares three I/O methods — Polling, Interrupt-Driven, and DMA —
+ * in terms of CPU utilization, transfer time, and concurrency.
+ */
+interface IoConfig {
+  method: 'polling' | 'interrupt' | 'dma';
+  dataSizeBytes: number;
+  transferRateBps: number;  // device throughput (bytes/sec)
+  cpuSpeed: number;         // instructions per second
+  cpuInstPerCheck: number;  // instructions per polling check
+  interruptOverhead: number; // microseconds for ISR save/restore
+  dmaSetupOverhead: number;  // microseconds to program DMA controller
+}
+
+interface IoResult {
+  method: string;
+  transferTimeMs: number;
+  cpuBusyTimeMs: number;
+  cpuUtilization: number;   // %
+  totalTimeMs: number;
+  concurrencyPossible: boolean;
+}
+
+class IOAnalyzer {
+  analyze(config: IoConfig): IoResult {
+    const transferTimeSec = config.dataSizeBytes / config.transferRateBps;
+    const transferTimeMs = transferTimeSec * 1000;
+
+    let cpuBusyTimeMs: number;
+    let concurrencyPossible: boolean;
+
+    switch (config.method) {
+      case 'polling': {
+        // CPU busy-waits checking device status register
+        const checksPerSec = config.cpuSpeed / config.cpuInstPerCheck;
+        const totalChecks = transferTimeSec * checksPerSec;
+        const overheadPerCheckUs = (config.cpuInstPerCheck / config.cpuSpeed) * 1_000_000;
+        cpuBusyTimeMs = (totalChecks * overheadPerCheckUs) / 1000;
+        concurrencyPossible = false;
+        break;
+      }
+      case 'interrupt': {
+        // CPU initiates I/O, gets interrupt per block (assume 4KB blocks)
+        const numBlocks = Math.ceil(config.dataSizeBytes / 4096);
+        const isrTimeMs = (numBlocks * config.interruptOverhead) / 1000;
+        // During I/O, CPU can run other processes between interrupts
+        cpuBusyTimeMs = config.dmaSetupOverhead / 1000 + isrTimeMs;
+        concurrencyPossible = true;
+        break;
+      }
+      case 'dma': {
+        // Setup DMA, device transfers directly to memory
+        cpuBusyTimeMs = config.dmaSetupOverhead / 1000 + 0.005; // tiny completion IRQ
+        concurrencyPossible = true;
+        break;
+      }
+    }
+
+    const totalTimeMs = transferTimeMs + cpuBusyTimeMs;
+    const cpuUtilization = (cpuBusyTimeMs / totalTimeMs) * 100;
+
+    return {
+      method: config.method,
+      transferTimeMs: Math.round(transferTimeMs * 100) / 100,
+      cpuBusyTimeMs: Math.round(cpuBusyTimeMs * 100) / 100,
+      cpuUtilization: Math.round(cpuUtilization * 100) / 100,
+      totalTimeMs: Math.round(totalTimeMs * 100) / 100,
+      concurrencyPossible
+    };
+  }
+
+  compare(configs: IoConfig[]): void {
+    console.log('='.repeat(100));
+    console.log('I/O Method Comparison (1 MB transfer)');
+    console.log('='.repeat(100));
+    console.log(
+      'Method       | Transfer(ms) | CPU Busy(ms) | CPU Util(%) | Total(ms) | Concurrent?'
+    );
+    console.log('-'.repeat(100));
+
+    for (const cfg of configs) {
+      const r = this.analyze(cfg);
+      console.log(
+        `${r.method.padEnd(12)} | ${String(r.transferTimeMs).padStart(11)} | ` +
+        `${String(r.cpuBusyTimeMs).padStart(11)} | ${String(r.cpuUtilization).padStart(10)} | ` +
+        `${String(r.totalTimeMs).padStart(9)} | ${r.concurrencyPossible ? 'Yes' : 'No '}`
+      );
+    }
+  }
+}
+
+// Simulate reading 1 MB from a 500 MB/s NVMe device on a 3 GHz CPU
+const analyzer = new IOAnalyzer();
+const scenarios: IoConfig[] = [
+  {
+    method: 'polling',
+    dataSizeBytes: 1_048_576,
+    transferRateBps: 500_000_000,
+    cpuSpeed: 3_000_000_000,
+    cpuInstPerCheck: 10,
+    interruptOverhead: 2,
+    dmaSetupOverhead: 5,
+  },
+  {
+    method: 'interrupt',
+    dataSizeBytes: 1_048_576,
+    transferRateBps: 500_000_000,
+    cpuSpeed: 3_000_000_000,
+    cpuInstPerCheck: 10,
+    interruptOverhead: 2,
+    dmaSetupOverhead: 5,
+  },
+  {
+    method: 'dma',
+    dataSizeBytes: 1_048_576,
+    transferRateBps: 500_000_000,
+    cpuSpeed: 3_000_000_000,
+    cpuInstPerCheck: 10,
+    interruptOverhead: 2,
+    dmaSetupOverhead: 5,
+  },
+];
+
+analyzer.compare(scenarios);
+```
+
 ### Summary
 
 - I/O devices communicate via ports, memory-mapped registers, or a hybrid approach
@@ -2943,6 +3104,24 @@ int main() {
 14. Implement zero-copy file transfer using splice() or sendfile().
 15. Create a DMA controller simulator in C++ with scatter-gather descriptor lists.
 
----
+### Additional Exercises
 
-*End of Chapter 13 - I/O Systems*
+16. **I/O method latency analyzer**: Extend the TypeScript IOSimulator to include: memory-mapped I/O (MMIO) with bus transaction overhead, port-mapped I/O with IN/OUT instruction overhead, and hybrid approaches. Compare all five methods across small (64B), medium (64KB), and large (64MB) transfers.
+
+17. **Zero-copy vs buffered I/O benchmark**: Write a benchmark comparing `read()`/`write()` (buffered I/O) vs `sendfile()` (zero-copy) for transferring a 1 GB file over a TCP socket. Measure: CPU utilization, throughput, latency percentiles (p50, p95, p99), and context switches per second.
+
+18. **Interrupt coalescing simulator**: Implement a model of interrupt coalescing where the device waits for a batch of events before raising an IRQ. Compare latency (increased due to batching) vs CPU utilization (decreased due to fewer IRQs). Find the optimal coalescing threshold for a 10 GbE NIC producing 1M packets/sec.
+
+19. **Block device scheduler comparison**: Implement three I/O schedulers in TypeScript — NOOP (FIFO), Deadline (per-request deadlines), and CFQ (per-process fairness). Generate a mixed workload of 80% reads (latency-sensitive) and 20% writes (throughput-oriented). Measure avg read latency, write throughput, and fairness index.
+
+20. **io_uring async I/O simulator**: Design and implement a simplified io_uring model in TypeScript. Features: submission queue (SQ) and completion queue (CQ) as shared ring buffers, batched submission with `io_uring_enter()`, support for `readv`, `writev`, and `fsync` operations, and polled I/O mode (SQPOLL). Compare throughput vs traditional synchronous I/O for random 4KB reads.
+
+21. **Spooling system with priorities**: Implement a print spooler that supports priority levels (1=urgent, 5=normal, 10=low). Jobs are queued by priority, then FIFO within priority. Support `submitJob(name, priority, data)`, `listQueue()`, `cancelJob(id)`, and `processNext()`. Measure average wait time by priority level.
+
+22. **Circular buffer with overflow handling**: Implement three variants of a circular buffer in TypeScript: overwrite-oldest (for real-time data), block-when-full (for reliable data transfer), and discard-newest (for sensor data where fresh data is less important). Benchmark throughput and data loss percentage for each variant under a bursty producer.
+
+23. **Interrupt handler latency profiler**: Write a program that measures interrupt handling latency on a real Linux system. Use `perf` or `ftrace` to measure: time from IRQ assertion to ISR entry, ISR execution time (top half), bottom half scheduling delay, and bottom half execution time (tasklet/workqueue). Report average, min, max, and distribution.
+
+24. **MMIO vs Port I/O benchmark**: On an x86 system, write a kernel module that benchmarks: MMIO reads/writes (via `ioread32`/`iowrite32`) and port I/O (via `inl`/`outl`). Measure latency per access and throughput. Explain differences in terms of bus transaction types.
+
+25. **Energy-aware I/O scheduling**: Design and implement an I/O scheduler that minimizes energy consumption by: backing idle periods to allow device power state transitions, prioritizing small requests to complete quickly, and batching large transfer requests for efficiency. Model energy vs latency trade-offs for a simulated SSD with 4 power states (active, idle, standby, sleep).

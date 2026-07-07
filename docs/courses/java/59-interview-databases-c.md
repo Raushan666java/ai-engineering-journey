@@ -699,15 +699,310 @@ Common fixes by symptom:
 
 The most impactful single change: **enable slow query logging in both Hibernate and the database**, correlate the logs, and fix the top 5 queries. That typically resolves 80% of database performance issues.
 
+---
+
+### Q23: What is the N+1 problem in the context of GraphQL vs JPA?
+
+**Answer:**
+
+Both GraphQL and JPA can suffer from N+1 problems, but the manifestation differs:
+
+**JPA N+1:** Occurs when an entity loads lazy collections iteratively.
+```java
+// JPA N+1: 1 query for posts + N queries for comments
+List<Post> posts = postRepository.findAll();
+for (Post p : posts) {
+    System.out.println(p.getComments().size());  // Triggers N lazy loads
+}
+```
+
+**GraphQL N+1:** Occurs when a resolver fetches data per parent entity.
+```graphql
+# GraphQL query
+query {
+  posts {
+    title
+    comments {     # This resolver runs once per post!
+      text
+    }
+  }
+}
+```
+
+```java
+// ❌ N+1 in GraphQL resolver
+@Component
+public class PostResolver implements GraphQLResolver<Post> {
+    public List<Comment> getComments(Post post) {
+        // This executes a query for EVERY post!
+        return commentRepository.findByPostId(post.getId());
+    }
+}
+
+// ✅ Fix with DataLoader (batch loading)
+@Component
+public class CommentDataLoader implements DataLoader<Long, List<Comment>> {
+    @Override
+    public CompletionStage<List<Comment>> load(Long postId) {
+        return CompletableFuture.supplyAsync(() ->
+            commentRepository.findByPostId(postId));
+    }
+}
+```
+
+**DataLoader pattern:** Batches individual loads into a single query:
+```java
+@Configuration
+public class DataLoaderConfig {
+    @Bean
+    public DataLoader<Long, List<Comment>> commentLoader(CommentRepository repo) {
+        return new DataLoader<>(postIds -> {
+            // Single query: WHERE post_id IN (:ids)
+            Map<Long, List<Comment>> grouped = repo.findByPostIdIn(postIds)
+                .stream()
+                .collect(Collectors.groupingBy(Comment::getPostId));
+            return CompletableFuture.completedFuture(
+                postIds.stream()
+                    .map(id -> grouped.getOrDefault(id, List.of()))
+                    .toList()
+            );
+        });
+    }
+}
+```
+
+The root cause is the same in both: fetching parent entities and loading children one-by-one. The fix is also the same: batch loading (JOIN FETCH, DataLoader, or @BatchSize).
+
+---
+
+### Q24: What is write skew and how does it differ from dirty write?
+
+**Answer:**
+
+**Write skew** occurs when two concurrent transactions read overlapping data and make conflicting decisions based on stale reads. Each transaction individually maintains database consistency, but together they violate a business rule.
+
+**Scenario:** Doctor on-call scheduling (two doctors must not both be off-call):
+
+```sql
+-- Database: doctors(id, name, on_call BOOLEAN)
+-- Constraint: at least one doctor must be on_call = true
+
+-- Transaction 1 (Doctor A removes self):
+BEGIN;
+SELECT COUNT(*) FROM doctors WHERE on_call = true;  -- Returns 2
+UPDATE doctors SET on_call = false WHERE id = 1;     -- A goes off
+COMMIT;
+
+-- Transaction 2 (Doctor B removes self, concurrent):
+BEGIN;
+SELECT COUNT(*) FROM doctors WHERE on_call = true;  -- Returns 2 (same stale value!)
+UPDATE doctors SET on_call = false WHERE id = 2;     -- B goes off
+COMMIT;
+
+-- Result: 0 doctors on call — constraint violated!
+-- No serialization anomaly detected by standard isolation levels.
+```
+
+```java
+// ❌ Write skew in JPA (REPEATABLE_READ)
+@Transactional
+public void takeOffCall(Long doctorId) {
+    long onCallCount = doctorRepo.countByOnCallTrue();
+    if (onCallCount > 1) {
+        Doctor doc = doctorRepo.findById(doctorId).orElseThrow();
+        doc.setOnCall(false);
+        // Two concurrent calls → both succeed, no constraint violation detected
+    }
+}
+
+// ✅ Fix: SERIALIZABLE isolation or pessimistic lock
+@Transactional(isolation = Isolation.SERIALIZABLE)
+public void takeOffCallSafe(Long doctorId) {
+    // Or use SELECT ... FOR UPDATE on the entire on-call set
+    List<Doctor> onCall = doctorRepo.findAllByOnCallTrueWithLock();  // PESSIMISTIC_WRITE
+    if (onCall.size() > 1) {
+        Doctor doc = doctorRepo.findById(doctorId).orElseThrow();
+        doc.setOnCall(false);
+    }
+}
+```
+
+**Dirty write** (simpler): Transaction A writes a value, Transaction B overwrites it before A commits or rolls back. This is prevented by READ_COMMITTED+ and is not the same as write skew.
+
+| Anomaly | Isolation level that prevents it | Example |
+|---------|--------------------------------|---------|
+| Dirty read | READ_COMMITTED | Read uncommitted data |
+| Dirty write | READ_COMMITTED | Overwrite uncommitted data |
+| Non-repeatable read | REPEATABLE_READ | Different values on re-read |
+| Phantom read | SERIALIZABLE | New rows appear in range query |
+| Write skew | SERIALIZABLE (or explicit lock) | Conflicting decisions from stale snapshot |
+
+Write skew is subtle because each transaction's individual actions are correct — only the combination violates the constraint. Use `SERIALIZABLE` isolation or explicit range locks to prevent it.
+
+---
+
+## Common Mistakes in Database Performance (GFG-Style)
+
+### Mistake 1: Ignoring the query plan
+```sql
+-- ❌ WRONG: Guessing at slow queries instead of checking EXPLAIN ANALYZE
+-- "I think adding an index will help" → no data-driven decision
+
+-- ✅ CORRECT: Check the query plan first
+EXPLAIN ANALYZE SELECT * FROM orders
+WHERE customer_id = 42 AND created_at > '2024-01-01';
+-- Look for: Seq Scan → needs index, Nested Loop → may benefit from JOIN
+```
+
+### Mistake 2: Not using database-specific types
+```sql
+-- ❌ WRONG: Using VARCHAR for everything
+CREATE TABLE products (
+    id BIGSERIAL PRIMARY KEY,
+    price VARCHAR(20),  -- ❌ Sorting requires type conversion
+    tags VARCHAR(500)   -- ❌ Can't index JSON fields
+);
+
+-- ✅ CORRECT: Use proper types
+CREATE TABLE products (
+    id BIGSERIAL PRIMARY KEY,
+    price NUMERIC(10,2),  -- ✅ Proper numeric comparison
+    tags TEXT[]            -- ✅ PostgreSQL array type
+);
+```
+
+### Mistake 3: Missing composite indexes for multi-column filters
+```sql
+-- Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at > '2024-01-01'
+
+-- ❌ Separate indexes — database picks one, filters the other in memory
+CREATE INDEX idx_orders_status ON orders(status);
+CREATE INDEX idx_orders_created ON orders(created_at);
+
+-- ✅ Composite index — both conditions use the index
+CREATE INDEX idx_orders_status_created ON orders(status, created_at);
+-- Equality columns first (status), range column last (created_at)
+```
+
+### Mistake 4: No pagination on unbounded queries
+```java
+// ❌ WRONG: Fetching all rows without limit
+List<Order> allOrders = orderRepository.findAll();
+// With 10M orders → OOM or network timeout
+
+// ✅ CORRECT: Always paginate
+@GetMapping("/orders")
+public Page<Order> getOrders(@PageableDefault(size = 20) Pageable pageable) {
+    return orderRepository.findAll(pageable);
+}
+
+// Or use Stream for batch processing
+@Transactional(readOnly = true)
+public void processAllOrders() {
+    try (Stream<Order> stream = orderRepository.streamAll()) {
+        stream.forEach(this::processOrder);  // Processes in streaming fashion
+    }
+}
+```
+
+### Mistake 5: Using SELECT * in production queries
+```sql
+-- ❌ WRONG: SELECT * pulls all columns including BLOBs, TEXT, unused fields
+SELECT * FROM users WHERE email = 'test@example.com';
+
+-- ✅ CORRECT: Specify only needed columns — faster I/O, less network
+SELECT id, name, email FROM users WHERE email = 'test@example.com';
+
+-- In JPA: Use projections or DTOs
+public interface UserSummary {
+    String getName();
+    String getEmail();
+}
+```
+
+## Index Type Comparison Table
+
+| Index Type | Use Case | Best For | Limitations |
+|-----------|----------|----------|-------------|
+| B-tree | Default, general purpose | Equality and range queries | Inefficient for pattern matching |
+| Hash | Equality lookups only | Simple key-value lookups | No range queries, not WAL-logged in PostgreSQL |
+| GIN | Composite types (arrays, JSONB, tsvector) | Full-text search, JSON containment queries | Slower writes, larger index size |
+| GiST | Spatial, range, full-text | Geometric data, ranges, fuzzy matching | Lower performance for simple equality |
+| BRIN | Massive, naturally ordered tables | Time-series, sequential IDs | Poor for random access patterns |
+| Covering (PostgreSQL 11+) | Avoiding table lookups | Index-only scans when all columns in index | Larger index storage |
+
+## Mermaid: Query Plan Visualization
+
+```mermaid
+flowchart TD
+    subgraph Client
+        A[SELECT * FROM orders<br/>WHERE status = 'PENDING'<br/>AND created_at > '2024-01-01']
+    end
+
+    subgraph PostgreSQL
+        B[Query Planner]
+        C{Index available?}
+
+        D[Seq Scan on orders]
+        E[Index Scan: status_idx]
+        F[Bitmap Index Scan]
+        G[Bitmap Heap Scan]
+        H[Filter: created_at]
+        I[Result]
+
+        B --> C
+        C -->|No| D
+        C -->|Single-column index| E
+        C -->|Composite index| F
+
+        E --> H
+        H --> I
+
+        F --> G
+        G --> I
+
+        D --> I
+    end
+
+    I --> J[(Disk)]
+```
+
+## Chapter Quiz — Database Performance (Part 4)
+
+4. What is the difference between write skew and dirty write?
+    - A) They are the same thing
+    - B) Write skew involves conflicting decisions based on stale snapshots; dirty write overwrites uncommitted data
+    - C) Dirty write is unique to MongoDB
+    - D) Write skew only happens in READ_COMMITTED
+
+<details>
+<summary>Answer</summary>
+**B) Write skew involves conflicting decisions based on stale snapshots.** Each transaction's writes are individually valid, but the combination violates a constraint. Dirty write is simpler: writing over uncommitted data from another transaction.
+</details>
+
+5. Which index type is best for JSONB containment queries (e.g., `WHERE data @> '{"active": true}'`)?
+    - A) B-tree
+    - B) Hash
+    - C) GIN with jsonb_path_ops
+    - D) BRIN
+
+<details>
+<summary>Answer</summary>
+**C) GIN with jsonb_path_ops.** GIN indexes are designed for composite types. The `jsonb_path_ops` operator class optimizes the `@>` containment operator, making JSONB queries fast.
+</details>
+
+6. What is the recommended fix for GraphQL N+1 queries?
+    - A) Increase the timeout
+    - B) Use DataLoader for batch loading
+    - C) Disable lazy loading
+    - D) Use REST instead
+
+<details>
+<summary>Answer</summary>
+**B) Use DataLoader for batch loading.** DataLoader batches individual resolver calls into a single query using `WHERE id IN (...)`, solving the N+1 problem at the GraphQL layer.
+</details>
+
 ## Concept Comparison Table
-
-| Concept | Definition | Key Distinction | Use Case |
-|---------|-----------|-----------------|----------|
-| Interface | Contract without state | Multiple inheritance of type | API contracts |
-| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
-| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
-
-## Quick Reference
 
 | Topic | Key Points | Interview Frequency |
 |-------|-----------|-------------------|

@@ -102,15 +102,15 @@ The tokens are assembled into a parse tree according to SQL grammar rules.
 
 ```
 QUERY
-├── SELECT
-│   ├── e.name
-│   └── (implicit all columns not shown)
-├── FROM
-│   └── employees AS e
-└── WHERE
-    └── Comparison (>)
-        ├── Attribute: e.salary
-        └── Literal: 50000
+â”œâ”€â”€ SELECT
+â”‚   â”œâ”€â”€ e.name
+â”‚   â””â”€â”€ (implicit all columns not shown)
+â”œâ”€â”€ FROM
+â”‚   â””â”€â”€ employees AS e
+â””â”€â”€ WHERE
+    â””â”€â”€ Comparison (>)
+        â”œâ”€â”€ Attribute: e.salary
+        â””â”€â”€ Literal: 50000
 ```
 
 The parser uses a context-free grammar (CFG) with rules like:
@@ -199,20 +199,20 @@ WHERE e.salary > 50000;
 Parse tree (conceptual):
 ```
 QUERY (type: SELECT)
-├── SELECT_LIST
-│   ├── QUALIFIED_COLUMN: e.name
-│   └── QUALIFIED_COLUMN: d.dept_name
-├── FROM_CLAUSE
-│   ├── TABLE_REFERENCE: employees (alias: e)
-│   └── TABLE_REFERENCE: departments (alias: d)
-├── JOIN_CONDITION
-│   └── EQUALS
-│       ├── QUALIFIED_COLUMN: e.dept_id
-│       └── QUALIFIED_COLUMN: d.dept_id
-└── WHERE_CLAUSE
-    └── GREATER_THAN
-        ├── QUALIFIED_COLUMN: e.salary
-        └── LITERAL: 50000
+â”œâ”€â”€ SELECT_LIST
+â”‚   â”œâ”€â”€ QUALIFIED_COLUMN: e.name
+â”‚   â””â”€â”€ QUALIFIED_COLUMN: d.dept_name
+â”œâ”€â”€ FROM_CLAUSE
+â”‚   â”œâ”€â”€ TABLE_REFERENCE: employees (alias: e)
+â”‚   â””â”€â”€ TABLE_REFERENCE: departments (alias: d)
+â”œâ”€â”€ JOIN_CONDITION
+â”‚   â””â”€â”€ EQUALS
+â”‚       â”œâ”€â”€ QUALIFIED_COLUMN: e.dept_id
+â”‚       â””â”€â”€ QUALIFIED_COLUMN: d.dept_id
+â””â”€â”€ WHERE_CLAUSE
+    â””â”€â”€ GREATER_THAN
+        â”œâ”€â”€ QUALIFIED_COLUMN: e.salary
+        â””â”€â”€ LITERAL: 50000
 ```
 
 **Preprocessing (Semantic Analysis):**
@@ -2568,6 +2568,166 @@ EXPLAIN SELECT * FROM skewed WHERE category = 1;
 | Transparent (EXPLAIN shows choices) | Depends on accurate statistics |
 | Can handle complex queries | Stale statistics cause bad plans |
 | Extensible (new algorithms, indexes) | Overhead for simple queries |
+
+---
+
+### 13.10 TypeScript Query Cost Model
+
+The following code simulates a query optimizer that estimates costs for different join strategies and access paths.
+
+```typescript
+// ============================================================
+// Query Cost Model Simulator â€” TypeScript
+// ============================================================
+
+interface TableStats {
+  name: string;
+  rows: number;
+  pages: number;
+  indexPages: number;
+}
+
+interface JoinPlan {
+  type: 'NestedLoop' | 'HashJoin' | 'SortMerge';
+  outerTable: string;
+  innerTable: string;
+  estimatedCost: number;
+  estimatedRows: number;
+}
+
+class QueryOptimizer {
+  private stats: Map<string, TableStats> = new Map();
+
+  addStats(stat: TableStats): void {
+    this.stats.set(stat.name, stat);
+  }
+
+  estimateSeqScanCost(tableName: string): number {
+    const stat = this.stats.get(tableName);
+    if (!stat) return Infinity;
+    // Cost = pages read (assuming full table scan)
+    return stat.pages;
+  }
+
+  estimateIndexScanCost(tableName: string, selectivity: number): number {
+    const stat = this.stats.get(tableName);
+    if (!stat) return Infinity;
+    // Cost = index pages + selectivity * data pages
+    return stat.indexPages + selectivity * stat.pages;
+  }
+
+  estimateJoinCost(
+    outer: string, inner: string,
+    joinKey: string
+  ): JoinPlan[] {
+    const outerStat = this.stats.get(outer);
+    const innerStat = this.stats.get(inner);
+    if (!outerStat || !innerStat) return [];
+
+    const plans: JoinPlan[] = [];
+
+    // Nested Loop: O(outer * inner)
+    const nlCost = outerStat.rows * innerStat.rows;
+    plans.push({
+      type: 'NestedLoop',
+      outerTable: outer,
+      innerTable: inner,
+      estimatedCost: nlCost,
+      estimatedRows: outerStat.rows * innerStat.rows / Math.max(outerStat.rows, innerStat.rows)
+    });
+
+    // Hash Join: O(outer + inner) for build + probe
+    const hjCost = outerStat.pages + innerStat.pages;
+    plans.push({
+      type: 'HashJoin',
+      outerTable: outer,
+      innerTable: inner,
+      estimatedCost: hjCost,
+      estimatedRows: outerStat.rows * innerStat.rows / Math.max(outerStat.rows, innerStat.rows)
+    });
+
+    // Sort-Merge: O(outer log outer + inner log inner)
+    const smCost = outerStat.rows * Math.log2(outerStat.rows) + innerStat.rows * Math.log2(innerStat.rows);
+    plans.push({
+      type: 'SortMerge',
+      outerTable: outer,
+      innerTable: inner,
+      estimatedCost: smCost,
+      estimatedRows: outerStat.rows * innerStat.rows / Math.max(outerStat.rows, innerStat.rows)
+    });
+
+    return plans.sort((a, b) => a.estimatedCost - b.estimatedCost);
+  }
+
+  optimize(query: string, tables: string[], joins: Array<{ t1: string; t2: string; key: string }>): void {
+    console.log('=== Query Optimizer ===');
+    console.log('Query: ' + query);
+    console.log('Tables: ' + tables.join(', '));
+    console.log('');
+
+    for (const join of joins) {
+      console.log('Join: ' + join.t1 + '.' + join.key + ' = ' + join.t2 + '.' + join.key);
+      const plans = this.estimateJoinCost(join.t1, join.t2, join.key);
+      for (const plan of plans) {
+        console.log('  [' + plan.type + '] Cost=' + plan.estimatedCost.toFixed(0) + ', EstRows=' + plan.estimatedRows.toFixed(0));
+      }
+      console.log('  Recommended: ' + plans[0].type);
+      console.log('');
+    }
+  }
+}
+
+// Demo
+const opt = new QueryOptimizer();
+opt.addStats({ name: 'employees', rows: 10000, pages: 500, indexPages: 50 });
+opt.addStats({ name: 'departments', rows: 50, pages: 5, indexPages: 2 });
+opt.addStats({ name: 'salaries', rows: 100000, pages: 5000, indexPages: 200 });
+
+opt.optimize(
+  'SELECT e.name, d.name FROM employees e JOIN departments d ON e.dept_id = d.dept_id',
+  ['employees', 'departments'],
+  [{ t1: 'employees', t2: 'departments', key: 'dept_id' }]
+);
+```
+
+**Mermaid Diagram: Query Processing Pipeline**
+
+```mermaid
+flowchart LR
+    SQL[SQL Query] --> Parser[Parser<br/>Syntax check<br/>Parse tree]
+    Parser --> Validator[Validator<br/>Semantic check<br/>Catalog lookup]
+    Validator --> Optimizer[Optimizer<br/>Rule-based + Cost-based<br/>Plan generation]
+    Optimizer --> Executor[Executor<br/>Iterators<br/>Pipeline execution]
+    Executor --> Result[Result Set]
+```
+
+### Additional Chapter Quiz Questions
+
+11. The main goal of query optimization is to:
+    a) Rewrite the SQL query
+    b) Find the most efficient execution plan
+    c) Validate the SQL syntax
+    d) Create indexes
+
+12. A full table scan is preferred over an index scan when:
+    a) The table is very large
+    b) The query selects a large fraction of rows (> 10-20%)
+    c) The table has no primary key
+    d) The query uses ORDER BY
+
+13. The cost of a Hash Join is primarily determined by:
+    a) The size of the outer table only
+    b) The size of both tables
+    c) The number of indexes
+    d) The number of columns selected
+
+14. In query optimization, selectivity of a predicate Ïƒ<col='value'>(R) is:
+    a) The number of rows in R
+    b) The fraction of rows that satisfy the predicate
+    c) The size of the index
+    d) The cost of the query
+
+**Answers:** 11-b, 12-b, 13-b, 14-b
 
 ---
 

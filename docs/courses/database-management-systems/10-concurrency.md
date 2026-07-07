@@ -466,7 +466,7 @@ Two employees write cell phone numbers on the same form. Employee A writes "555-
 
 1. T1 writes A ? 100 (uncommitted)
 
-2. T2 writes A ? 200 (uncommitted) → overwrites T1's uncommitted write
+2. T2 writes A ? 200 (uncommitted) â†’ overwrites T1's uncommitted write
 
 3. T1 commits ? A = 100? 
 
@@ -2924,27 +2924,27 @@ Txn C (ts=35): sees X_v3 (value=300)
 
 +-------------------------------------+
 
-¦ Row: id=1, name='Alice', amount=500 ¦
+Â¦ Row: id=1, name='Alice', amount=500 Â¦
 
-¦ xmin=100 (created by txn 100)        ¦
+Â¦ xmin=100 (created by txn 100)        Â¦
 
-¦ xmax=150 (deleted by txn 150)        ¦
+Â¦ xmax=150 (deleted by txn 150)        Â¦
 
-¦ ctid=(0,2) (next version pointer)    ¦
-
-+-------------------------------------+
-
-
+Â¦ ctid=(0,2) (next version pointer)    Â¦
 
 +-------------------------------------+
 
-¦ Row: id=1, name='Alice', amount=600 ¦
 
-¦ xmin=150 (created by txn 150)        ¦
 
-¦ xmax=0 (current version)             ¦
++-------------------------------------+
 
-¦ ctid=(0,0) (end of chain)            ¦
+Â¦ Row: id=1, name='Alice', amount=600 Â¦
+
+Â¦ xmin=150 (created by txn 150)        Â¦
+
+Â¦ xmax=0 (current version)             Â¦
+
+Â¦ ctid=(0,0) (end of chain)            Â¦
 
 +-------------------------------------+
 
@@ -2962,9 +2962,9 @@ Clustered Index:                    UNDO Log:
 
 +---------------------+           +----------------------+
 
-¦ id=1, amount=600    ¦ ? - - -  ¦ amount=500 (txn 100) ¦
+Â¦ id=1, amount=600    Â¦ ? - - -  Â¦ amount=500 (txn 100) Â¦
 
-¦ roll_ptr=0xABCD1234 ¦    roll  ¦ amount=400 (txn 50)  ¦
+Â¦ roll_ptr=0xABCD1234 Â¦    roll  Â¦ amount=400 (txn 50)  Â¦
 
 +---------------------+   back   +----------------------+
 
@@ -4497,6 +4497,191 @@ do {
 > **Warning:** Deadlocks are a natural consequence of locking - write code that retries on deadlock (40001).
 
 
+
+### 10.12 TypeScript Lock Manager and Deadlock Detector
+
+The TypeScript code below simulates a lock manager with shared/exclusive locks, deadlock detection via wait-for graph.
+
+```typescript
+// ============================================================
+// Lock Manager & Deadlock Detector â€” TypeScript
+// ============================================================
+
+enum LockMode { SHARED, EXCLUSIVE }
+
+class LockManager {
+  private locks = new Map<string, { mode: LockMode; owner: number }>();
+  private waitFor = new Map<number, Set<number>>(); // txId -> set of txIds it's waiting for
+
+  acquire(txId: number, resource: string, mode: LockMode): boolean {
+    const existing = this.locks.get(resource);
+    if (!existing) {
+      this.locks.set(resource, { mode, owner: txId });
+      return true;
+    }
+    // Same transaction already holds the lock
+    if (existing.owner === txId) {
+      // Upgrade: SHARED -> EXCLUSIVE
+      if (existing.mode === LockMode.SHARED && mode === LockMode.EXCLUSIVE) {
+        return true;
+      }
+      return true; // Already holds lock
+    }
+    // Check compatibility
+    if (existing.mode === LockMode.SHARED && mode === LockMode.SHARED) {
+      // Multiple shared locks allowed (simplified: we track only one for demo)
+      return true;
+    }
+    // Must wait
+    if (!this.waitFor.has(txId)) this.waitFor.set(txId, new Set());
+    this.waitFor.get(txId)!.add(existing.owner);
+    return false;
+  }
+
+  release(txId: number, resource?: string): void {
+    if (resource) {
+      const lock = this.locks.get(resource);
+      if (lock && lock.owner === txId) this.locks.delete(resource);
+    } else {
+      // Release all locks held by this transaction
+      for (const [res, lock] of this.locks) {
+        if (lock.owner === txId) this.locks.delete(res);
+      }
+    }
+    // Remove from wait-for graph
+    this.waitFor.delete(txId);
+    for (const waiting of this.waitFor.values()) waiting.delete(txId);
+  }
+
+  detectDeadlock(): number[] {
+    // Build full graph
+    const graph = new Map<number, Set<number>>();
+    for (const [waiter, waitsFor] of this.waitFor) {
+      if (!graph.has(waiter)) graph.set(waiter, new Set());
+      for (const target of waitsFor) {
+        graph.get(waiter)!.add(target);
+      }
+    }
+    // DFS cycle detection
+    const visited = new Set<number>();
+    const recStack = new Set<number>();
+    const cyclePath: number[] = [];
+
+    function dfs(node: number, graph: Map<number, Set<number>>, path: number[]): boolean {
+      visited.add(node);
+      recStack.add(node);
+      path.push(node);
+      const neighbors = graph.get(node) || new Set();
+      for (const next of neighbors) {
+        if (!visited.has(next)) {
+          if (dfs(next, graph, path)) return true;
+        } else if (recStack.has(next)) {
+          // Found cycle â€” extract it from path
+          const cycleStart = path.indexOf(next);
+          path.splice(0, cycleStart);
+          path.push(next);
+          return true;
+        }
+      }
+      recStack.delete(node);
+      path.pop();
+      return false;
+    }
+
+    for (const node of graph.keys()) {
+      if (!visited.has(node)) {
+        if (dfs(node, graph, cyclePath)) {
+          return cyclePath;
+        }
+      }
+    }
+    return [];
+  }
+
+  printState(): void {
+    console.log('\nLock Manager State:');
+    console.log(' Held locks:');
+    for (const [res, lock] of this.locks) {
+      console.log('   ' + res + ': ' + LockMode[lock.mode] + ' by T' + lock.owner);
+    }
+    console.log(' Wait-for graph:');
+    for (const [waiter, waitsFor] of this.waitFor) {
+      for (const target of waitsFor) {
+        console.log('   T' + waiter + ' -> T' + target);
+      }
+    }
+    const deadlock = this.detectDeadlock();
+    if (deadlock.length > 0) {
+      console.log(' DEADLOCK DETECTED: ' + deadlock.join(' -> '));
+    } else {
+      console.log(' No deadlock detected.');
+    }
+  }
+}
+
+// Demo: Create deadlock scenario
+const lm = new LockManager();
+console.log('T1 acquires X(A)');
+lm.acquire(1, 'A', LockMode.EXCLUSIVE);
+console.log('T2 acquires X(B)');
+lm.acquire(2, 'B', LockMode.EXCLUSIVE);
+console.log('T1 requests X(B) â€” WAIT');
+lm.acquire(1, 'B', LockMode.EXCLUSIVE);
+console.log('T2 requests X(A) â€” WAIT (DEADLOCK!)');
+lm.acquire(2, 'A', LockMode.EXCLUSIVE);
+lm.printState();
+```
+
+**Mermaid Diagram: Two-Phase Locking (2PL)**
+
+```mermaid
+flowchart LR
+    subgraph "Growing Phase"
+        G1[Acquire Lock A] --> G2[Acquire Lock B]
+        G2 --> G3[Acquire Lock C]
+    end
+    subgraph "Shrinking Phase"
+        S1[Release Lock A] --> S2[Release Lock B]
+        S2 --> S3[Release Lock C]
+    end
+    G3 -->|Lock Point| S1
+    style G1 fill:#90EE90
+    style G2 fill:#90EE90
+    style G3 fill:#90EE90
+    style S1 fill:#FFB6C1
+    style S2 fill:#FFB6C1
+    style S3 fill:#FFB6C1
+```
+
+### Additional Chapter Quiz Questions
+
+11. Two-Phase Locking (2PL) guarantees:
+    a) Deadlock freedom
+    b) Conflict serializability
+    c) Cascadeless schedules
+    d) View serializability
+
+12. The main disadvantage of strict 2PL is:
+    a) It allows dirty reads
+    b) It can cause deadlocks and reduces concurrency
+    c) It does not guarantee serializability
+    d) It requires timestamps
+
+13. In timestamp-based concurrency control, if T1 (timestamp 10) and T2 (timestamp 20) both want to write to X, who wins?
+    a) T1 (older transaction)
+    b) T2 (younger transaction)
+    c) Both can proceed
+    d) Neither
+
+14. Optimistic concurrency control is best suited for:
+    a) High-contention workloads
+    b) Low-contention workloads with infrequent conflicts
+    c) Read-only workloads
+    d) Write-heavy workloads
+
+**Answers:** 11-b, 12-b, 13-a (older timestamp wins â€” Thomas Write Rule), 14-b
+
+---
 
 ## Pro Tips
 

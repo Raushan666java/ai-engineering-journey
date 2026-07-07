@@ -1807,11 +1807,208 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ---
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **BFS uses what data structure?**
-   - a) Stack
-   - b) Queue ✅
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Using recursion for BFS (recursion uses a stack, BFS needs a queue) | BFS is inherently iterative — recursion gives depth-first ordering | Always use an explicit queue for BFS |
+| Not marking visited when pushing to queue (only when processing) | Same node gets enqueued multiple times, leading to exponential work | Mark visited at enqueue time, not dequeue time |
+| DFS recursion on large graphs causing stack overflow | Call stack limit is ~10^4; graph may have 10^5+ vertices | Use explicit stack-based DFS for large graphs |
+| Confusing iterative DFS order with recursive DFS order | Stack LIFO reverses neighbor order compared to recursion | Recursive DFS visits neighbors in order; stack-based visits them in reverse unless you push in reverse |
+| BFS for shortest path in weighted graphs | BFS finds minimum number of edges, not minimum weight | Use Dijkstra for weighted shortest paths |
+| Forgetting to handle disconnected components | Running DFS/BFS from only one node misses other components | Loop all vertices and run traversal from each unvisited one |
+| Not resetting visited state between multiple traversals | State leaks across runs, giving incorrect results | Create a fresh visited array/set for each independent traversal |
+| Wrong bidirectional BFS termination condition | Two frontiers expand; stop when they intersect, but intersection check must be O(1) | Use a hash set for visited nodes from each direction; stop on overlap |
+
+### TypeScript BFS & DFS Implementations
+
+```typescript
+interface Graph {
+    getNeighbors(v: number): number[];
+}
+
+// BFS returning distances and parent tree
+function bfs(graph: Graph, start: number): { dist: number[]; parent: number[] } {
+    const n = 1000; // assume graph size
+    const dist = new Array(n).fill(-1);
+    const parent = new Array(n).fill(-1);
+    const queue: number[] = [start];
+    dist[start] = 0;
+    
+    while (queue.length > 0) {
+        const u = queue.shift()!;
+        for (const v of graph.getNeighbors(u)) {
+            if (dist[v] === -1) { // unvisited
+                dist[v] = dist[u] + 1;
+                parent[v] = u;
+                queue.push(v);
+            }
+        }
+    }
+    return { dist, parent };
+}
+
+// Reconstruct path from BFS parent array
+function reconstructPath(parent: number[], target: number): number[] {
+    const path: number[] = [];
+    let curr = target;
+    while (curr !== -1) {
+        path.push(curr);
+        curr = parent[curr];
+    }
+    return path.reverse();
+}
+
+// Iterative DFS with pre/post order
+function dfsIterative(graph: Graph, start: number): { pre: number[]; post: number[] } {
+    const visited = new Set<number>();
+    const pre: number[] = [];
+    const post: number[] = [];
+    const stack: { v: number; state: 'enter' | 'exit' }[] = [{ v: start, state: 'enter' }];
+    
+    while (stack.length > 0) {
+        const { v, state } = stack.pop()!;
+        if (state === 'enter') {
+            if (visited.has(v)) continue;
+            visited.add(v);
+            pre.push(v);
+            stack.push({ v, state: 'exit' });
+            // Push neighbors in reverse so original order is preserved
+            const neighbors = graph.getNeighbors(v);
+            for (let i = neighbors.length - 1; i >= 0; i--) {
+                if (!visited.has(neighbors[i])) {
+                    stack.push({ v: neighbors[i], state: 'enter' });
+                }
+            }
+        } else {
+            post.push(v);
+        }
+    }
+    return { pre, post };
+}
+
+// Bidirectional BFS for shortest path in unweighted graph
+function bidirectionalBFS(graph: Graph, start: number, target: number): number[] | null {
+    if (start === target) return [start];
+    const n = 1000;
+    const distF = new Array(n).fill(-1);
+    const distB = new Array(n).fill(-1);
+    const parentF = new Array(n).fill(-1);
+    const parentB = new Array(n).fill(-1);
+    const queueF: number[] = [start];
+    const queueB: number[] = [target];
+    distF[start] = 0;
+    distB[target] = 0;
+    
+    const expand = (queue: number[], dist: number[], parent: number[], otherDist: number[]): number | null => {
+        const u = queue.shift()!;
+        for (const v of graph.getNeighbors(u)) {
+            if (dist[v] === -1) {
+                dist[v] = dist[u] + 1;
+                parent[v] = u;
+                if (otherDist[v] !== -1) return v; // intersection
+                queue.push(v);
+            }
+        }
+        return null;
+    };
+    
+    while (queueF.length > 0 && queueB.length > 0) {
+        const intersect = queueF.length <= queueB.length
+            ? expand(queueF, distF, parentF, distB)
+            : expand(queueB, distB, parentB, distF);
+        if (intersect !== null) {
+            // Reconstruct combined path
+            const path1: number[] = [];
+            let curr = intersect;
+            while (curr !== -1) { path1.push(curr); curr = parentF[curr]; }
+            path1.reverse();
+            const path2: number[] = [];
+            curr = intersect;
+            while (curr !== -1) { path2.push(curr); curr = parentB[curr]; }
+            return [...path1, ...path2.slice(1).reverse()];
+        }
+    }
+    return null;
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the worst-case time complexity of DFS on a graph with V vertices and E edges?**
+   - a) O(V)
+   - b) O(E)
+   - c) O(V + E) ✓
+   - d) O(V²)
+
+10. **BFS can be used to find:**
+    - a) Shortest path in an unweighted graph ✓
+    - b) Shortest path in a weighted graph
+    - c) Topological ordering
+    - d) Strongly connected components
+
+11. **The space complexity of BFS (queue + visited) is:**
+    - a) O(1)
+    - b) O(V) ✓
+    - c) O(E)
+    - d) O(V + E)
+
+12. **In which scenario is iterative DFS preferred over recursive DFS?**
+    - a) The graph is small
+    - b) The graph is deep (tall) ✓
+    - c) The graph is dense
+    - d) The graph is directed
+
+13. **Bidirectional BFS reduces the search space from b^d to approximately:**
+    - a) b^(d/2) ✓
+    - b) b^(2d)
+    - c) 2b^d
+    - d) b^d / 2
+
+14. **Which traversal guarantees a node is processed after all its descendants?**
+    - a) Pre-order DFS
+    - b) Post-order DFS ✓
+    - c) BFS
+    - d) In-order DFS
+
+**Answers:** 9-c, 10-a, 11-b, 12-b, 13-a, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+12. **Word ladder (BFS)**: Given a start word, end word, and a dictionary, find the length of the shortest transformation sequence from start to end, changing one letter at a time.
+
+13. **Rotting oranges (BFS multi-source)**: Given a grid where 0=empty, 1=fresh orange, 2=rotten orange, find the minimum time for all oranges to rot (rot spreads to adjacent cells each minute).
+
+14. **Number of islands (DFS/BFS)**: Given a binary grid (1=land, 0=water), count the number of islands (connected components of 1s).
+
+15. **Clone a graph (DFS/BFS)**: Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the entire graph.
+
+16. **Detect cycle in a directed graph**: Use DFS with a recursion stack (white/gray/black coloring) to detect cycles in a directed graph.
+
+17. **Topological sort using DFS**: Implement topological sorting using DFS (post-order) for a DAG.
+
+18. **Minimum knight moves on chessboard (BFS)**: Find the minimum number of moves a knight needs to reach a target square on an infinite chessboard.
+
+19. **Course schedule (cycle detection/DFS)**: Given numCourses and prerequisites pairs, determine if all courses can be completed (no cycle in the dependency graph).
+
+20. **Alien dictionary**: Given a sorted dictionary of an alien language, find the order of characters using topological sort.
+
+21. **Find the shortest cycle in an undirected graph**: Use BFS from each vertex, stop when finding an already-visited neighbor (not parent).
+
+### Traversal Comparison
+
+| Property | BFS | DFS (Recursive) | DFS (Iterative) | Bidirectional BFS |
+|----------|-----|-----------------|-----------------|-------------------|
+| Data structure | Queue | Call stack (implicit) | Stack (explicit) | Two queues |
+| Space | O(width) = O(V) | O(depth) = O(V) | O(depth) = O(V) | O(b^(d/2)) |
+| Shortest path (unweighted) | Yes | No | No | Yes |
+| Completeness | Yes | No (can go infinite) | No (can go infinite) | Yes |
+| Optimal | Yes | No | No | Yes |
+| Cycle detection | Yes | Yes | Yes | N/A |
+| Topological sort | Kahn's | Post-order | Post-order | N/A |
+| Connected components | Yes | Yes | Yes | N/A |
    - c) Priority queue
    - d) Hash table
 

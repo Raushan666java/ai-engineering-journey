@@ -2928,7 +2928,236 @@ Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the
 
 **Answers**: 1-b, 2-c, 3-c, 4-b, 5-b, 6-c, 7-c, 8-b, 9-a, 10-b, 11-b, 12-d, 13-b, 14-b, 15-b
 
+16. Which file system is the default for Windows NT?
+    - a) FAT32
+    - b) NTFS
+    - c) ReFS
+    - d) ext4
+
+17. What feature allows Android apps to run in a sandboxed environment?
+    - a) Docker containers
+    - b) App sandbox with per-app UID isolation
+    - c) Virtual machines
+    - d) Java security manager
+
+18. Which of the following is a feature unique to macOS's memory management?
+    - a) Swap compression (WKdm)
+    - b) Buddy allocator
+    - c) SLUB allocator
+    - d) Page coloring
+
+19. In FreeRTOS, what is the purpose of a queue?
+    - a) Store task control blocks
+    - b) Pass data between tasks in a thread-safe manner
+    - c) Manage heap memory allocation
+    - d) Schedule tasks in round-robin order
+
+20. What is the size of seL4's trusted computing base (TCB)?
+    - a) ~8700 LOC
+    - b) ~50,000 LOC
+    - c) ~500,000 LOC
+    - d) ~8,700,000 LOC
+
+**Answers**: 1-b, 2-c, 3-c, 4-b, 5-b, 6-c, 7-c, 8-b, 9-a, 10-b, 11-b, 12-d, 13-b, 14-b, 15-b, 16-b, 17-b, 18-a, 19-b, 20-a
+
 ---
+
+## TypeScript Implementation — OS Architecture Comparison Framework
+
+```typescript
+/**
+ * OSComparisonFramework: A TypeScript model for comparing operating
+ * system kernel architectures across key design dimensions.
+ * Enables quantitative comparison of Windows, Linux, macOS, Android,
+ * iOS, FreeRTOS, VxWorks, FreeBSD, and seL4.
+ */
+type KernelType = 'monolithic' | 'hybrid' | 'microkernel' | 'unikernel';
+type SchedulerType = 'priority' | 'cfs' | 'eevdf' | 'round-robin' | 'fixed-priority' | 'deadline';
+type MemoryModel = 'virtual' | 'flat' | 'paged' | 'segmented';
+type IpcMechanism = 'message-passing' | 'shared-memory' | 'binder' | 'xpc' | 'pipes' | 'signals';
+
+interface OSArchitecture {
+  name: string;
+  kernelType: KernelType;
+  kernelLOC: number;       // estimated lines of code
+  scheduler: SchedulerType;
+  preemptive: boolean;
+  rtCapable: boolean;
+  memoryModel: MemoryModel;
+  addressSpaceBits: number;
+  ipc: IpcMechanism;
+  driverModel: string;
+  posixCompliant: boolean;
+  certifiable: boolean;    // DO-178C / ISO 26262
+  minRAM: string;          // minimum RAM requirement
+  bootTime: string;        // typical boot time
+  primaryUse: string;
+}
+
+class OSArchitectureAnalyzer {
+  private oss: OSArchitecture[] = [
+    {
+      name: 'Windows NT', kernelType: 'hybrid', kernelLOC: 50_000_000,
+      scheduler: 'priority', preemptive: true, rtCapable: false,
+      memoryModel: 'virtual', addressSpaceBits: 48,
+      ipc: 'message-passing', driverModel: 'WDDM/UMDF',
+      posixCompliant: false, certifiable: false,
+      minRAM: '2 GB', bootTime: '10-30s', primaryUse: 'Desktop/Server'
+    },
+    {
+      name: 'Linux', kernelType: 'monolithic', kernelLOC: 28_000_000,
+      scheduler: 'eevdf', preemptive: true, rtCapable: true,
+      memoryModel: 'virtual', addressSpaceBits: 48,
+      ipc: 'shared-memory', driverModel: 'LKM + Device Tree',
+      posixCompliant: true, certifiable: false,
+      minRAM: '256 MB', bootTime: '3-10s', primaryUse: 'Server/Embedded/Desktop'
+    },
+    {
+      name: 'macOS XNU', kernelType: 'hybrid', kernelLOC: 8_000_000,
+      scheduler: 'cfs', preemptive: true, rtCapable: false,
+      memoryModel: 'virtual', addressSpaceBits: 48,
+      ipc: 'message-passing', driverModel: 'I/O Kit',
+      posixCompliant: true, certifiable: false,
+      minRAM: '4 GB', bootTime: '10-20s', primaryUse: 'Desktop/Mobile'
+    },
+    {
+      name: 'Android', kernelType: 'monolithic', kernelLOC: 30_000_000,
+      scheduler: 'cfs', preemptive: true, rtCapable: false,
+      memoryModel: 'virtual', addressSpaceBits: 48,
+      ipc: 'binder', driverModel: 'HAL + LKM',
+      posixCompliant: true, certifiable: false,
+      minRAM: '2 GB', bootTime: '15-30s', primaryUse: 'Mobile/Embedded'
+    },
+    {
+      name: 'iOS/XNU', kernelType: 'hybrid', kernelLOC: 10_000_000,
+      scheduler: 'cfs', preemptive: true, rtCapable: false,
+      memoryModel: 'virtual', addressSpaceBits: 48,
+      ipc: 'xpc', driverModel: 'I/O Kit (modified)',
+      posixCompliant: true, certifiable: false,
+      minRAM: '1 GB', bootTime: '10-20s', primaryUse: 'Mobile'
+    },
+    {
+      name: 'FreeRTOS', kernelType: 'microkernel', kernelLOC: 15_000,
+      scheduler: 'fixed-priority', preemptive: true, rtCapable: true,
+      memoryModel: 'flat', addressSpaceBits: 32,
+      ipc: 'message-passing', driverModel: 'Simple HAL',
+      posixCompliant: false, certifiable: true,
+      minRAM: '2 KB', bootTime: '< 100ms', primaryUse: 'MCU/Embedded'
+    },
+    {
+      name: 'VxWorks', kernelType: 'microkernel', kernelLOC: 1_000_000,
+      scheduler: 'fixed-priority', preemptive: true, rtCapable: true,
+      memoryModel: 'virtual', addressSpaceBits: 64,
+      ipc: 'message-passing', driverModel: 'VxBus',
+      posixCompliant: true, certifiable: true,
+      minRAM: '1 MB', bootTime: '< 500ms', primaryUse: 'Safety-Critical/Embedded'
+    },
+    {
+      name: 'FreeBSD', kernelType: 'monolithic', kernelLOC: 10_000_000,
+      scheduler: 'cfs', preemptive: true, rtCapable: false,
+      memoryModel: 'virtual', addressSpaceBits: 48,
+      ipc: 'shared-memory', driverModel: 'KLD modules',
+      posixCompliant: true, certifiable: false,
+      minRAM: '512 MB', bootTime: '3-8s', primaryUse: 'Server/Network'
+    },
+    {
+      name: 'seL4', kernelType: 'microkernel', kernelLOC: 8_700,
+      scheduler: 'round-robin', preemptive: true, rtCapable: true,
+      memoryModel: 'virtual', addressSpaceBits: 64,
+      ipc: 'message-passing', driverModel: 'User-space servers',
+      posixCompliant: false, certifiable: true,
+      minRAM: '1 MB', bootTime: '< 50ms', primaryUse: 'Safety-Critical/Formal'
+    }
+  ];
+
+  /** Compare a specific metric across all OSes */
+  compareByMetric(metric: keyof OSArchitecture): void {
+    console.log(`\n=== Comparison by: ${metric} ===`);
+    console.log('OS'.padEnd(20) + ' | ' + String(metric).padEnd(20));
+    console.log('-'.repeat(45));
+    
+    for (const os of this.oss) {
+      const value = String(os[metric]);
+      console.log(os.name.padEnd(20) + ' | ' + value.padEnd(20));
+    }
+  }
+
+  /** Find the best OS for a given set of requirements */
+  recommendOS(requirements: Partial<OSArchitecture>): string[] {
+    const scores: { name: string; score: number }[] = [];
+
+    for (const os of this.oss) {
+      let score = 0;
+      let matches = 0;
+
+      if (requirements.kernelType && os.kernelType === requirements.kernelType) { score += 10; matches++; }
+      if (requirements.rtCapable !== undefined && os.rtCapable === requirements.rtCapable) { score += 10; matches++; }
+      if (requirements.certifiable !== undefined && os.certifiable === requirements.certifiable) { score += 10; matches++; }
+      if (requirements.posixCompliant !== undefined && os.posixCompliant === requirements.posixCompliant) { score += 5; matches++; }
+      if (requirements.preemptive !== undefined && os.preemptive === requirements.preemptive) { score += 5; matches++; }
+
+      if (matches > 0) scores.push({ name: os.name, score });
+    }
+
+    return scores.sort((a, b) => b.score - a.score).map(s => s.name);
+  }
+
+  generateReport(): void {
+    console.log('='.repeat(90));
+    console.log('OS Architecture Comparison Report');
+    console.log('='.repeat(90));
+
+    // Kernel type distribution
+    const types = new Map<KernelType, number>();
+    for (const os of this.oss) {
+      types.set(os.kernelType, (types.get(os.kernelType) || 0) + 1);
+    }
+    console.log('\nKernel Type Distribution:');
+    for (const [type, count] of types) {
+      console.log(`  ${type}: ${count} OSes`);
+    }
+
+    // Scheduler comparison
+    console.log('\nScheduler Strategies:');
+    for (const os of this.oss) {
+      console.log(`  ${os.name.padEnd(15)}: ${os.scheduler}${os.rtCapable ? ' (RT-capable)' : ''}`);
+    }
+
+    // Size comparison
+    console.log('\nKernel Size (LOC):');
+    const sortedBySize = [...this.oss].sort((a, b) => b.kernelLOC - a.kernelLOC);
+    for (const os of sortedBySize) {
+      const sizeStr = os.kernelLOC >= 1_000_000
+        ? `${(os.kernelLOC / 1_000_000).toFixed(1)}M` : `${(os.kernelLOC / 1000).toFixed(0)}K`;
+      console.log(`  ${os.name.padEnd(15)}: ${sizeStr.padStart(8)} LOC`);
+    }
+
+    // Recommendation examples
+    console.log('\n=== Scenario-Based Recommendations ===');
+    const scenarios: { name: string; req: Partial<OSArchitecture> }[] = [
+      { name: 'Safety-critical avionics', req: { rtCapable: true, certifiable: true, posixCompliant: true } },
+      { name: 'Mobile consumer device', req: { kernelType: 'monolithic', rtCapable: false, posixCompliant: true } },
+      { name: 'Tiny IoT sensor', req: { rtCapable: true, minRAM: '2 KB', certifiable: false } },
+      { name: 'Cloud server', req: { kernelType: 'monolithic', posixCompliant: true } },
+      { name: 'Formally verified system', req: { certifiable: true, rtCapable: true } },
+    ];
+
+    for (const scenario of scenarios) {
+      const recs = this.recommendOS(scenario.req);
+      console.log(`  ${scenario.name.padEnd(35)}: ${recs.slice(0, 3).join(', ') || 'No match'}`);
+    }
+  }
+}
+
+// Run the comparison
+const analyzer = new OSArchitectureAnalyzer();
+analyzer.generateReport();
+
+console.log('\n=== Selected Comparisons ===');
+analyzer.compareByMetric('kernelLOC');
+analyzer.compareByMetric('scheduler');
+analyzer.compareByMetric('kernelType');
+```
 
 ## Summary
 
@@ -3011,6 +3240,28 @@ Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the
     - CertiKOS (Coq, layer-based verification)
     - Hyper-V (VCC, verified hypervisor)
     - For each: what properties are proven, what is the TCB size, how much of the kernel is verified, and what are the practical limitations of the approach?
+
+### Additional Exercises
+
+16. **Kernel build time analysis**: Build the Linux kernel from source. Measure: total build time with `make -jN`, time per subsystem (kernel/, mm/, fs/, net/, drivers/), most time-consuming modules, and disk space used by the build. Compare with a `make tinyconfig` build.
+
+17. **Android vs iOS background execution benchmark**: Write applications for both Android and iOS that: start a background service, download a 10MB file every 5 minutes, and display a local notification. Measure: how long the background task runs before being suspended, total data downloaded per hour, battery drain percentage per hour, and the latest OS version tested.
+
+18. **FreeBSD Jails vs Linux Containers**: Set up a FreeBSD jail and a Docker container with equivalent configurations. Compare: security isolation (syscall filtering, root capabilities), filesystem layout, networking models (VNET vs bridge), resource limits, and administrative commands. Create a comprehensive comparison table.
+
+19. **Microkernel IPC latency benchmark**: Write a benchmark that measures IPC latency for message passing across: Linux pipe, Linux Unix socket, Linux TCP loopback, seL4 IPC (simulated with shared memory and spin-wait), and QNX message passing. Measure round-trip time for 64-byte and 4096-byte messages. Explain the differences in terms of context switches and buffer copies.
+
+20. **RTOS scheduling analysis**: Compare scheduling behavior of FreeRTOS vs a PREEMPT_RT Linux kernel. Create a test workload with 3 tasks at different priorities performing periodic work. Measure: task activation jitter, deadline miss rate, context switch overhead, and interrupt latency. Show which system provides more deterministic behavior.
+
+21. **Windows vs Linux driver model comparison**: Write a simple driver concept for both Windows (using WDF) and Linux (using platform device driver framework). The driver should: register with the system, handle an interrupt, and read a hardware register. Compare: lines of code, boilerplate required, debugging tools (WinDbg vs kgdb), and community documentation quality.
+
+22. **OS energy efficiency benchmark**: Create a benchmark that measures energy efficiency across Linux, Windows, and macOS on identical hardware (same CPU, RAM, storage). The workload should include: web browsing, video playback, idle with email, and compile-intensive task. Measure: power draw (watts), performance score, and perf-per-watt ratio.
+
+23. **Binder vs XPC deep dive**: Research and compare the internal implementations of Android's Binder and iOS's XPC. Analyze: data serialization format (Parcel vs XPC dictionary), memory management for large transfers (ashmem vs mmap), security context checking, and latency characteristics. Write a benchmark that transfers 1KB, 64KB, and 1MB messages through each IPC mechanism.
+
+24. **seL4 capability delegation simulation**: Implement a capability-based access control system in TypeScript based on seL4's model. Define: CNode (capability node) with slots, endpoint capabilities for IPC, untyped memory capabilities, and delegation (copy/mint/move) operations. Simulate a boot sequence where the root task delegates access to a device driver task and a user application task.
+
+25. **Multi-OS boot time comparison**: Write a script that measures boot time for Linux, Windows, and FreeBSD on the same hardware. Use systemd-analyze (Linux), Performance Monitor boot trace (Windows), and dmesg timestamps (FreeBSD). Break down boot time into: firmware/BIOS, bootloader, kernel init, service startup, and login screen ready. Explain the architectural differences that cause the variation.
 
 **Next Chapter: [Back to Overview](./index.md) >>**
 

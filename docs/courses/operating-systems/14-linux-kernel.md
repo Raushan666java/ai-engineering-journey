@@ -1844,6 +1844,107 @@ Containers leverage cgroups + namespaces for lightweight virtualization:
 
 ---
 
+## TypeScript Implementation — CFS Scheduler Simulator
+
+```typescript
+/**
+ * CfsSimulator: A TypeScript model of the Linux Completely Fair Scheduler.
+ * Demonstrates how vruntime, weights, and the red-black tree interact.
+ */
+interface SchedEntity {
+  pid: number;
+  nice: number;
+  weight: number;
+  vruntime: number;  // virtual runtime in ms
+}
+
+class CfsRunQueue {
+  private tasks: SchedEntity[] = [];
+  private readonly NICE_0_WEIGHT = 1024;
+  
+  /** Convert nice value to weight (simplified kernel weight table) */
+  private niceToWeight(nice: number): number {
+    const weights: Record<number, number> = {
+      -20: 88761, -19: 71755, -18: 56483, -17: 46273,
+      -16: 36291, -15: 29154, -14: 23254, -13: 18705,
+      -12: 14949, -11: 11916, -10: 9548,  -9: 7620,
+      -8: 6100,   -7: 4904,   -6: 3906,   -5: 3121,
+      -4: 2501,   -3: 1991,   -2: 1586,   -1: 1277,
+      0: 1024,    1: 820,     2: 655,     3: 526,
+      4: 423,     5: 339,     6: 271,     7: 217,
+      8: 174,     9: 139,     10: 110,    11: 87,
+      12: 70,     13: 56,     14: 45,     15: 36,
+      16: 29,     17: 23,     18: 19,     19: 15,
+    };
+    return weights[nice] ?? this.NICE_0_WEIGHT;
+  }
+
+  constructor() {}
+
+  addTask(pid: number, nice: number): void {
+    this.tasks.push({
+      pid, nice,
+      weight: this.niceToWeight(nice),
+      vruntime: 0
+    });
+  }
+
+  /** The CFS "pick next" using scanned minimum (simulating RB-tree leftmost) */
+  private pickNext(): SchedEntity {
+    // In real CFS: red-black tree leftmost node = minimum vruntime
+    return this.tasks.reduce((min, t) => t.vruntime < min.vruntime ? t : min);
+  }
+
+  /**
+   * Simulate one scheduling round.
+   * Each task runs for a time slice proportional to its weight.
+   */
+  run(timeQuantumMs: number = 20): void {
+    console.log(`\n=== CFS Simulation: ${timeQuantumMs}ms time slice ===`);
+    console.log(`PID | Nice | Weight | vruntime_before | vruntime_after`);
+
+    for (let round = 0; round < 3; round++) {
+      for (const task of this.tasks) {
+        const before = task.vruntime;
+        // CFS: vruntime += (actual_runtime * NICE_0_WEIGHT) / task.weight
+        const actualRuntime = timeQuantumMs;
+        task.vruntime += (actualRuntime * this.NICE_0_WEIGHT) / task.weight;
+        const after = Math.round(task.vruntime * 100) / 100;
+        console.log(
+          `${String(task.pid).padStart(3)} | ${String(task.nice).padStart(4)} | ` +
+          `${String(task.weight).padStart(6)} | ${before.toFixed(2).padStart(13)} | ${after.toFixed(2)}`
+        );
+      }
+    }
+
+    // Show fairness: tasks with higher priority should have closer vruntime values
+    const maxVruntime = Math.max(...this.tasks.map(t => t.vruntime));
+    const minVruntime = Math.min(...this.tasks.map(t => t.vruntime));
+    console.log(`\nFairness metric (max-min vruntime): ${(maxVruntime - minVruntime).toFixed(2)}ms`);
+    console.log(`Smaller values = fairer scheduling.`);
+  }
+
+  /** Print current task states */
+  dump(): void {
+    console.log('\nTask State:');
+    for (const t of this.tasks) {
+      const weightRatio = (t.weight / this.NICE_0_WEIGHT).toFixed(2);
+      console.log(`  PID=${t.pid} nice=${t.nice} weight=${t.weight} (${weightRatio}x) vruntime=${t.vruntime.toFixed(2)}`);
+    }
+  }
+}
+
+// Example: Create 3 tasks with different priorities
+const cfs = new CfsRunQueue();
+cfs.addTask(100, 0);    // default priority
+cfs.addTask(101, -10);  // higher priority (weight ~9548 vs 1024)
+cfs.addTask(102, 10);   // lower priority (weight ~110)
+cfs.dump();
+cfs.run(20);
+```
+
+---
+
 ## Chapter Quiz
 
 1. What type of kernel does Linux use?
@@ -1906,6 +2007,38 @@ Containers leverage cgroups + namespaces for lightweight virtualization:
     - c) Process creation
     - d) Network routing
 
+11. What is the role of the buddy allocator in Linux?
+    - a) Allocate kernel objects (task_struct, inodes)
+    - b) Manage physical page frames using power-of-two free lists
+    - c) Allocate virtual memory for user processes
+    - d) Manage the dentry cache
+
+12. Which Linux kernel feature allows a module to be loaded without recompiling the entire kernel?
+    - a) Device mapper
+    - b) Loadable Kernel Module (LKM)
+    - c) kprobes
+    - d) ftrace
+
+13. What happens when a process in a cgroup exceeds its memory.limit_in_bytes?
+    - a) The process is killed immediately
+    - b) The process is swapped out
+    - c) The OOM killer may terminate processes in the cgroup
+    - d) The kernel returns ENOMEM to every malloc
+
+14. In the Linux VFS, what does the dentry (directory entry) cache store?
+    - a) File data blocks
+    - b) Mappings from file names to inode numbers
+    - c) Disk block allocation bitmaps
+    - d) Superblock metadata
+
+15. Which of the following is NOT a Linux namespace type?
+    - a) PID namespace
+    - b) Network namespace
+    - c) Memory namespace
+    - d) Mount namespace
+
+**Answers:** 1-c, 2-b, 3-b, 4-c, 5-b, 6-b, 7-b, 8-b, 9-b, 10-b, 11-b, 12-b, 13-c, 14-b, 15-c
+
 ---
 
 ## Exercises
@@ -1931,6 +2064,28 @@ Containers leverage cgroups + namespaces for lightweight virtualization:
 11. Create a cgroup with 50MB memory limit, run a memory-hungry process inside it, and observe OOM kills via `memory.events`.
 12. Write a Python script using `ctypes` to call `sched_setscheduler()` to set a process to SCHED_FIFO with priority 50. What privileges are needed?
 
----
+### Additional Exercises
 
-***End of Chapter 14: Linux Kernel Internals***
+13. **CFS weight calculator**: Extend the CfsSimulator TypeScript code to support `set_weight()` at runtime, `removeTask(pid)`, and `getFairness()` that returns the max-min vruntime spread. Run a simulation with 5 tasks at nice values -20, -10, 0, 10, 19 and show the execution time each receives over 10 rounds.
+
+14. **SLUB allocator simulator**: Implement a simplified SLUB allocator in TypeScript. Maintain per-CPU freelists of pre-allocated objects. When a CPU's freelist is empty, fetch a slab of objects from the central allocator. When freeing, return to the per-CPU freelist. Compare allocation latency vs a simple malloc/free model.
+
+15. **System call tracer**: Write a Python script that uses `strace` to trace all system calls made by a command (e.g., `ls -R /`). Categorize syscalls by type (file, process, network, memory, etc.), count occurrences, and compute the percentage of total. Generate a pie chart of the distribution.
+
+16. **RCU vs mutex benchmark**: Implement a linked-list protected by: (a) a single mutex, (b) an RCU-style mechanism with read-side lock-free traversal and synchronized updates. Benchmark with 8 reader threads and 1 writer thread doing 100,000 operations. Measure read throughput and write latency for both approaches.
+
+17. **Buddy allocator fragmentation analyzer**: Implement a buddy allocator in C or TypeScript with power-of-2 free lists. Simulate a workload of allocate/free requests of varying sizes (from 1 page to 512 pages). Track: external fragmentation percentage, allocation success rate, average search time, and coalescing effectiveness.
+
+18. **cgroup memory pressure test**: Write a script that creates a cgroup with 100 MB memory limit, then runs a process that allocates memory in a loop until it is OOM-killed. Log `/sys/fs/cgroup/<cgroup>/memory.events` during the test. Show the sequence of events leading to the OOM kill.
+
+19. **VFS path resolution walker**: Write a program that traces the path resolution for a given absolute path (e.g., `/usr/bin/python3`). For each component, show: the dentry cache lookup (hit/miss), the parent directory inode number, the resolved inode number, and the final file system type. Use `strace -e trace=openat,statx` to observe the real system calls.
+
+20. **Kernel module stack depth analyzer**: Write a kernel module that tracks the maximum call stack depth in the kernel. Use `dump_stack()` at key points. Compare the stack depth in process context vs interrupt context vs softirq context. Explain why kernel stack overflows are dangerous.
+
+21. **OOM killer behavior analyzer**: Write a program that triggers the OOM killer by allocating memory until killed. Capture `/proc/<pid>/oom_score` and `/proc/<pid>/oom_score_adj` before the kill. Analyze which process was killed and why (oom_badness calculation). Repeat with different `oom_score_adj` values.
+
+22. **Namespaces deep dive**: Write a C program that creates a child process in new PID, mount, and user namespaces using `clone()` with `CLONE_NEWPID | CLONE_NEWNS | CLONE_NEWUSER`. Inside the namespace: show PID 1, remount `/proc`, create a temp file, and show it cannot see the host's processes or files.
+
+23. **eBPF program for syscall counting**: Write an eBPF program that attaches to the `sys_enter` tracepoint and counts system calls per process per second. Output the top 5 syscalls by count every second. Use BCC or libbpf. Compare overhead vs `perf stat -e syscalls:sys_enter_*`.
+
+24. **PREEMPT_RT latency test**: Install PREEMPT_RT kernel patches. Write a real-time test program with a SCHED_FIFO thread (priority 90) that measures maximum scheduling latency by waking up every 1 ms and recording the actual wake-up time. Compare results with a standard kernel.

@@ -792,15 +792,269 @@ class OrderServiceWireMockTest {
 
 End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service. Rely on contract tests for cross-service integration and unit tests for business logic.
 
+---
+
+### Q17: How do you implement feature flags for continuous deployment?
+
+**Answer:**
+
+Feature flags (toggles) allow deploying code to production without activating it. This enables trunk-based development, canary releases, and instant rollbacks.
+
+```java
+// ── Feature flag service ──
+@Service
+public class FeatureFlagService {
+
+    private final Map<String, Boolean> flags = new ConcurrentHashMap<>();
+
+    public FeatureFlagService() {
+        // Load from config server, database, or external service
+        flags.put("new-checkout-flow", false);
+        flags.put("recommendation-engine-v2", true);
+        flags.put("dark-mode", false);
+    }
+
+    public boolean isEnabled(String feature, String userId) {
+        Boolean globalEnabled = flags.get(feature);
+        if (globalEnabled == null) return false;
+
+        // Gradual rollout: enable for a percentage of users
+        if (feature.equals("recommendation-engine-v2")) {
+            return userId != null && Math.abs(userId.hashCode()) % 100 < 10;
+        }
+
+        return globalEnabled;
+    }
+
+    public void setFlag(String feature, boolean enabled) {
+        flags.put(feature, enabled);
+    }
+}
+
+// ── Usage in service layer ──
+@Service
+public class CheckoutService {
+
+    private final FeatureFlagService featureFlags;
+    private final CheckoutServiceV1 v1;
+    private final CheckoutServiceV2 v2;
+
+    public CheckoutResult checkout(OrderRequest request, String userId) {
+        if (featureFlags.isEnabled("new-checkout-flow", userId)) {
+            return v2.checkout(request);  // New implementation
+        }
+        return v1.checkout(request);  // Old implementation
+    }
+}
+```
+
+**Feature flag best practices:**
+- Use a centralized store (Spring Cloud Config, LaunchDarkly, Unleash) — not hardcoded maps
+- Name flags clearly: `checkout.v2.enabled`, `payment.new-processor`
+- Remove flags once the feature is stable — don't accumulate dead flags
+- Use gradual rollouts: 1% → 10% → 50% → 100%
+- Monitor flag usage — if a flag hasn't been accessed in 30 days, schedule removal
+
+---
+
+### Q18: How do you handle API versioning in microservices?
+
+**Answer:**
+
+There are four main API versioning strategies, each with tradeoffs:
+
+**1. URI path versioning (most common):**
+```java
+@RestController
+@RequestMapping("/api/v1/orders")
+public class OrderControllerV1 { /* ... */ }
+
+@RestController
+@RequestMapping("/api/v2/orders")
+public class OrderControllerV2 { /* ... */ }
+```
+- Pros: Clear, cacheable, easy to route
+- Cons: URL pollution, requires backward-compatible routing
+
+**2. Request header versioning (Accept header or custom header):**
+```java
+@GetMapping(value = "/orders", headers = "API-Version=1")
+public List<Order> getOrdersV1() { /* ... */ }
+
+@GetMapping(value = "/orders", headers = "API-Version=2")
+public List<Order> getOrdersV2() { /* ... */ }
+```
+- Pros: Clean URLs, no URL pollution
+- Cons: Harder to test from browser, cache keys must include headers
+
+**3. Query parameter versioning:**
+```java
+@GetMapping("/orders")
+public List<Order> getOrders(
+        @RequestParam(defaultValue = "1") int version) {
+    if (version == 1) return orderService.getAllV1();
+    return orderService.getAllV2();
+}
+```
+- Pros: Easy to implement, visible in URLs
+- Cons: URL pollution, cache fragmentation
+
+**4. Content negotiation (Accept header with custom media type):**
+```java
+@GetMapping(value = "/orders", produces = "application/vnd.company.v1+json")
+public List<Order> getOrdersV1() { /* ... */ }
+
+@GetMapping(value = "/orders", produces = "application/vnd.company.v2+json")
+public List<Order> getOrdersV2() { /* ... */ }
+```
+- Pros: RESTful, clean URLs, clear version contract
+- Cons: Complex client setup, harder debugging
+
+| Strategy | URL clarity | Caching | Client complexity | Ease of deprecation |
+|----------|-------------|---------|-------------------|-------------------|
+| URI path | Excellent | Excellent | Low | Easy |
+| Header | Good | Moderate | High | Moderate |
+| Query param | Moderate | Low | Low | Hard |
+| Content negotiation | Excellent | Excellent | High | Easy |
+
+**Versioning philosophy:** Minimize breaking changes. Add fields instead of modifying them. Deprecate endpoints with `Sunset` and `Deprecation` HTTP headers. Support old versions for a defined period (e.g., 6 months) and return 410 Gone after.
+
+---
+
+## Common Mistakes in Microservices Testing (GFG-Style)
+
+### Mistake 1: Only writing unit tests, no contract or integration tests
+```java
+// ❌ WRONG: Unit test passes, but service fails in production
+// because the actual user-service returns a different response shape
+
+// ✅ CORRECT: Add contract test with Spring Cloud Contract or Pact
+@SpringBootTest
+@AutoConfigureStubRunner(ids = "com.example:user-service:+:stubs:8080")
+class OrderServiceContractTest {
+    @Autowired private OrderService orderService;
+
+    @Test
+    void shouldGetUserFromStub() {
+        UserDto user = orderService.getUser(1L);
+        assertThat(user.name()).isNotBlank();
+    }
+}
+```
+
+### Mistake 2: Flaky E2E tests blocking the pipeline
+```yaml
+# ❌ WRONG 10+ E2E tests that fail randomly
+# Pipeline fails 3 times a day → team starts ignoring failures
+
+# ✅ CORRECT: Keep E2E smoke tests minimal, treat flaky tests as bugs
+# - 3-5 critical E2E paths only
+# - Quarantine flaky tests automatically
+# - Run integration tests in parallel, not sequentially
+```
+
+### Mistake 3: Not testing failure scenarios
+```java
+// ❌ WRONG: Only testing the happy path
+@Test
+void shouldCreateOrder() { /* ... */ }
+
+// ✅ CORRECT: Test timeouts, circuit breakers, and fallbacks
+@Test
+void shouldFallbackWhenPaymentServiceIsDown() {
+    // Simulate timeout from payment-service
+    stubFor(post(urlEqualTo("/payments"))
+        .willReturn(aResponse().withFixedDelay(10000)));
+
+    assertThrows(CircuitBreakerOpenException.class,
+        () -> orderService.createOrder(testRequest()));
+}
+```
+
+### Mistake 4: Shared test databases between developers
+```java
+// ❌ WRONG: All developers use the same shared PostgreSQL instance
+// Tests collide → "someone deleted my test data!"
+
+// ✅ CORRECT: TestContainers for isolated databases
+@Container
+static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16");
+// Every developer, every CI run gets a fresh, isolated database
+```
+
+## Testing Strategy Comparison Table
+
+| Test Type | Speed | Reliability | Scope | Cost to Write | Debugging Ease |
+|-----------|-------|-------------|-------|---------------|----------------|
+| Unit test | Milliseconds | High | Single class | Low | Excellent |
+| Integration test | Seconds | Medium | Service + DB | Medium | Good |
+| Contract test | Seconds | Medium | API contract | Medium | Good |
+| Component test | Seconds | Medium | Multiple services | Medium | Moderate |
+| End-to-end test | Minutes | Low | Full system | High | Poor |
+| Smoke test | Seconds | High | Critical paths | Low | Good |
+
+**Recommended distribution:** 50% unit, 30% integration, 10% contract, 5% component, 5% E2E. Known as the "testing trophy" — invert the traditional pyramid for microservices.
+
+## Mermaid: Microservices Testing Strategy
+
+```mermaid
+flowchart TD
+    subgraph "Testing Trophy (Inverted Pyramid)"
+        A[Unit Tests<br/>50% - Fast, isolated]
+        B[Integration Tests<br/>30% - DB, Kafka, containers]
+        C[Contract Tests<br/>10% - Service boundaries]
+        D[Component Tests<br/>5% - Sliding test scope]
+        E[E2E Tests<br/>5% - Critical paths only]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    style A fill:#4caf50,color:#fff
+    style B fill:#2196f3,color:#fff
+    style C fill:#ff9800,color:#fff
+    style D fill:#9c27b0,color:#fff
+    style E fill:#f44336,color:#fff
+```
+
+## Chapter Quiz — Microservices Testing
+
+4. Which test type is best for verifying that your service correctly handles the API contract of a downstream dependency?
+    - A) Unit test
+    - B) Contract test (Pact/Spring Cloud Contract)
+    - C) End-to-end test
+    - D) Load test
+
+<details>
+<summary>Answer</summary>
+**B) Contract test.** Contract tests verify that the interaction between two services matches the agreed contract. They run faster than E2E tests and catch contract breakage early.
+</details>
+
+5. What is the recommended percentage of unit tests in a microservices testing strategy?
+    - A) 10%
+    - B) 25%
+    - C) 50%
+    - D) 80%
+
+<details>
+<summary>Answer</summary>
+**C) 50%.** Unit tests should form the largest category (50%) — they are fast, reliable, and catch logic errors. Integration, contract, component, and E2E tests fill the remaining 50%.
+</details>
+
+6. Which API versioning strategy is most cache-friendly?
+    - A) Query parameter
+    - B) URI path
+    - C) Custom header
+    - D) Body parameter
+
+<details>
+<summary>Answer</summary>
+**B) URI path** (and also content negotiation). URI path versioning creates unique URLs for each version, making them independently cacheable. Header-based versioning requires cache keys to account for header values.
+</details>
+
 ## Concept Comparison Table
-
-| Concept | Definition | Key Distinction | Use Case |
-|---------|-----------|-----------------|----------|
-| Interface | Contract without state | Multiple inheritance of type | API contracts |
-| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
-| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
-
-## Quick Reference
 
 | Topic | Key Points | Interview Frequency |
 |-------|-----------|-------------------|

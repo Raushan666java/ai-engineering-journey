@@ -2950,6 +2950,148 @@ validate_file "$2" "config"
 - Subshells `( )` isolate changes; sourcing `. file` executes in current shell
 - Debug with `set -x`, syntax check with `bash -n`, trace with `bash -v`
 
+## TypeScript Implementation — Shell Interpreter Simulator
+
+```typescript
+/**
+ * ShellSimulator: A minimal Unix shell interpreter in TypeScript
+ * demonstrating command parsing, execution, pipes, and redirection
+ * as the kernel would handle them.
+ */
+interface Command {
+  program: string;
+  args: string[];
+  redirectInput?: string;   // < file
+  redirectOutput?: string;  // > file
+  redirectAppend?: string;  // >> file
+  pipeTo?: Command;         // | next command
+}
+
+class ShellParser {
+  /** Parse a command line into a Command AST */
+  parse(line: string): Command | null {
+    line = line.trim();
+    if (!line || line.startsWith('#')) return null;
+
+    // Handle pipes (split on |)
+    const pipeParts = line.split('|').map(s => s.trim());
+    if (pipeParts.length > 1) {
+      const first = this.parseSingle(pipeParts[0]);
+      let current = first;
+      for (let i = 1; i < pipeParts.length; i++) {
+        current!.pipeTo = this.parseSingle(pipeParts[i]);
+        current = current!.pipeTo;
+      }
+      return first;
+    }
+    return this.parseSingle(line);
+  }
+
+  private parseSingle(part: string): Command {
+    const cmd: Command = { program: '', args: [] };
+    const tokens: string[] = [];
+    let current = '';
+    let inQuote: string | null = null;
+
+    // Tokenize respecting quotes
+    for (const ch of part) {
+      if (inQuote) {
+        if (ch === inQuote) inQuote = null;
+        else current += ch;
+      } else if (ch === '"' || ch === "'") {
+        inQuote = ch;
+      } else if (ch === ' ') {
+        if (current) { tokens.push(current); current = ''; }
+      } else {
+        current += ch;
+      }
+    }
+    if (current) tokens.push(current);
+
+    // Identify redirection operators and program
+    for (let i = 0; i < tokens.length; i++) {
+      if (tokens[i] === '<') cmd.redirectInput = tokens[++i];
+      else if (tokens[i] === '>') cmd.redirectOutput = tokens[++i];
+      else if (tokens[i] === '>>') cmd.redirectAppend = tokens[++i];
+      else if (!cmd.program) { cmd.program = tokens[i]; }
+      else cmd.args.push(tokens[i]);
+    }
+    return cmd;
+  }
+}
+
+/** Execute a command AST (simulated — prints what the kernel would do) */
+class ShellExecutor {
+  private fileSystem: Map<string, string> = new Map();
+
+  constructor() {
+    // Simulate some files
+    this.fileSystem.set('/bin/echo', 'builtin');
+    this.fileSystem.set('/bin/ls', 'builtin');
+    this.fileSystem.set('/bin/cat', 'builtin');
+    this.fileSystem.set('/tmp/data.txt', 'hello world\nline 2\nline 3');
+  }
+
+  execute(ast: Command): number {
+    if (!ast) return 0;
+
+    console.log(`[KERNEL] fork+exec: ${ast.program} ${ast.args.join(' ')}`);
+
+    // Handle redirections
+    if (ast.redirectInput) {
+      const content = this.fileSystem.get(ast.redirectInput);
+      console.log(`[KERNEL] fd 0 (stdin) redirected from ${ast.redirectInput}`);
+      console.log(`[DATA] Input contains: ${content ? content.substring(0, 40) : '(empty)'}`);
+    }
+    if (ast.redirectOutput) {
+      console.log(`[KERNEL] fd 1 (stdout) redirected to ${ast.redirectOutput}`);
+    }
+    if (ast.redirectAppend) {
+      console.log(`[KERNEL] fd 1 (stdout) appended to ${ast.redirectAppend}`);
+    }
+
+    // Handle pipe
+    if (ast.pipeTo) {
+      console.log(`[KERNEL] pipe() created — fd[0] for reading, fd[1] for writing`);
+      console.log(`[KERNEL] stdout of ${ast.program} → pipe fd[1]`);
+      console.log(`[KERNEL] pipe fd[0] → stdin of ${ast.pipeTo.program}`);
+      this.execute(ast.pipeTo);
+    }
+
+    // Simulate command execution
+    switch (ast.program) {
+      case 'echo': console.log(`  [stdout] ${ast.args.join(' ')}`); break;
+      case 'ls':   console.log(`  [stdout] file1.txt  file2.txt  script.sh`); break;
+      case 'cat':
+        if (ast.redirectInput) {
+          const content = this.fileSystem.get(ast.redirectInput);
+          console.log(`  [stdout] ${content || '(file not found)'}`);
+        }
+        break;
+      default:
+        console.log(`  [KERNEL] exec failed: ${ast.program}: not found`);
+        return 127;
+    }
+    return 0;
+  }
+
+  runCommand(line: string): void {
+    console.log(`\n$ ${line}`);
+    const parser = new ShellParser();
+    const ast = parser.parse(line);
+    if (ast) this.execute(ast);
+  }
+}
+
+// Example usage
+const shell = new ShellExecutor();
+shell.runCommand('echo "Hello, World"');
+shell.runCommand('cat < /tmp/data.txt');
+shell.runCommand('ls -la | grep txt');
+shell.runCommand('echo "log entry" >> /var/log/app.log');
+shell.runCommand('unknown_command');
+```
+
 ## Quick Reference
 
 | Term | Definition |
@@ -3036,7 +3178,37 @@ validate_file "$2" "config"
     - c) Submits a process to the background
     - d) Replaces one process with another
 
-**Answers**: 1-a, 2-b, 3-b, 4-b, 5-a, 6-c, 7-a, 8-b, 9-b, 10-b
+11. What does `set -x` do in a Bash script?
+    - a) Exit on errors
+    - b) Print commands and their arguments as they execute
+    - c) Export all variables
+    - d) Enable extended globbing
+
+12. What is the difference between `[ ]` and `[[ ]]` in Bash?
+    - a) No difference
+    - b) `[ ]` is a POSIX test command; `[[ ]]` is a Bash keyword with more features
+    - c) `[[ ]]` is faster
+    - d) `[ ]` works only with numbers
+
+13. What does the `trap` command do in Bash?
+    - a) Trace command execution
+    - b) Set a handler for when a signal is received
+    - c) Trap errors in a pipeline
+    - d) Capture command output into a variable
+
+14. Which statement about `read -r` is correct?
+    - a) -r makes read return immediately without waiting
+    - b) -r disables backslash escape interpretation
+    - c) -r reads from a file instead of stdin
+    - d) -r reads only raw binary data
+
+15. What is the purpose of `exec 3<> /dev/tcp/host/port` in Bash?
+    - a) Execute a command on a remote host
+    - b) Open a bidirectional TCP connection on file descriptor 3
+    - c) Redirect stderr to a network socket
+    - d) It is invalid syntax in Bash
+
+**Answers**: 1-a, 2-b, 3-b, 4-b, 5-a, 6-c, 7-a, 8-b, 9-b, 10-b, 11-b, 12-b, 13-b, 14-b, 15-b
 
 ## Exercises
 
@@ -3057,3 +3229,27 @@ validate_file "$2" "config"
 7. Write a shell script that implements a simple **pipeline scheduler**: given a file listing commands and their estimated run times, schedule them across N parallel workers. Use job control (`wait -n`, background processes) to execute up to N tasks in parallel. Report completion times.
 8. Write a script that performs **fuzzy file search**. Given a partial filename, search the entire filesystem and show matches. Use a fast find strategy: search home directory first, then common locations (`/etc`, `/var/log`), and only if not found search `/usr` and `/opt`. Show the search path and time taken.
 9. Write a **shell-based REPL** calculator that supports variables, arithmetic, and a history command. Use `read -e` (readline) for line editing, store history in a file, and support `+`, `-`, `*`, `/`, `%` operators with `$((...))` evaluation.
+
+### Additional Exercises
+
+10. **Shell pipeline latency benchmark**: Write a script that measures the latency of a pipeline by piping 1 million lines through `cat | grep | sort | uniq | wc -l`. Use `time` to measure real, user, and sys time. Run 5 times and report average, min, and max. Explain where the time goes (context switches, buffer copies, process scheduling).
+
+11. **Self-modifying script**: Write a Bash script that reads its own source code, adds a comment with the current timestamp to the end of the file, and then re-executes itself. Be careful to avoid infinite loops. Use this to demonstrate how scripts can modify themselves.
+
+12. **Parallel SSH executor**: Write a script that takes a list of hostnames and a command, then executes the command on all hosts in parallel using background SSH processes. Collect stdout and stderr from each host separately. Show which hosts succeeded and which failed. Use a timeout of 30 seconds per host.
+
+13. **Interactive menu system**: Write a Bash script that displays an interactive menu using `select`. Options should include: show disk usage, show memory info, show network connections, show running processes, show system uptime, show logged-in users. Use `case` for handling each selection. Add a confirmation prompt for destructive actions.
+
+14. **CSV to Markdown table converter**: Write a Bash script that reads a CSV file from stdin and outputs a Markdown-formatted table. Support: header detection (first row), column alignment (left/right/center), quoted fields with commas inside them, and empty fields. Benchmark against a Python implementation using `pandas`.
+
+15. **Recursive dependency resolver**: Write a Bash script that simulates a package manager dependency resolver. Given a file listing packages and their dependencies (e.g., `openssl: zlib,ca-certificates`), compute the full dependency closure in topological order. Detect circular dependencies and report them. Use associative arrays.
+
+16. **Log rotation with compression**: Write a script that rotates log files: when a log file exceeds a configurable max size (e.g., 100 MB), compress it with `gzip`, rename with timestamp suffix, and keep only the last N rotated logs. Support: daily rotation at midnight (using `cron`), size-based rotation, and manual rotation via signal.
+
+17. **Regex-based log summarizer**: Write a Bash script using `grep`, `sed`, and `awk` that takes an Apache access log and produces: number of requests per hour, top 10 IP addresses by request count, top 10 URLs by request count, HTTP status code distribution (2xx, 3xx, 4xx, 5xx), and average response size by endpoint. Output as a formatted table.
+
+18. **Markov chain text generator in Bash**: Write a Bash script that generates random text using a Markov chain approach. Read a text file, build a frequency table of word triplets, then generate text by picking the next word based on the previous two. Use `awk` for the frequency table and sorting. Compare output quality with input text.
+
+19. **Bash-based unit test framework**: Design and implement a minimal unit test framework in Bash. Support: `assert_eq`, `assert_ne`, `assert_true`, `assert_false`, `describe`/`it` blocks, test setup/teardown functions, and a summary report with pass/fail counts and execution time. Write tests for the framework itself (self-testing).
+
+20. **Environment migration script**: Write a script that migrates a development environment configuration: export all environment variables (filtering out sensitive ones), installed package list, aliases, functions, and shell options from one machine. The script should generate a "restore" script that can recreate the environment on another machine.

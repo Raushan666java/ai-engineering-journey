@@ -999,66 +999,403 @@ An e-commerce system processes 1,000 orders/second:
 | Caching layer | \(O(1)\) get/set | Must not become bottleneck |
 | Graph traversal | \(O(V + E)\) | Must visit every node and edge |
 
-## Chapter Quiz
+## Common Mistakes & How to Avoid Them (GFG-Style)
 
-1. **What does Big-O describe?**
-   - a) Exact running time
-   - b) Upper bound on growth rate ✓
-   - c) Average case
-   - d) Lower bound
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Claiming O(n + n²) = O(n) | n² dominates n asymptotically | O(n²) — keep only highest-order term |
+| Saying O(2n) = O(2n) | Constants are dropped in asymptotic notation | O(n) — 2n is still linear growth |
+| Confusing Ω(n) with worst-case | Ω describes lower bound, not worst-case input | Ω(1) is best-case for linear search; O(n) is worst-case |
+| Ignoring recursion stack in space analysis | The call stack uses O(depth) memory | Always count stack frames — factorial recursive uses O(n) space |
+| Assuming Θ(n) when best-case is better | Θ requires matching upper AND lower bounds | Use O(n) worst-case, Ω(1) best-case — no tight bound exists |
+| Saying "log n" without specifying base | In CS, log means log₂ unless stated | Binary search on 10⁶ takes log₂ 10⁶ ≈ 20 steps |
+| Forgetting that Big-O is an upper bound | O(n²) is technically correct for linear search too | Always give the tightest meaningful bound |
 
-2. **Which notation provides the tightest bound?**
-   - a) \(O\)
-   - b) \(\Omega\)
-   - c) \(\Theta\) ✓
-   - d) \(o\)
+## Interview Corner Expansion (GFG Pattern)
 
-3. **What is the complexity of binary search?**
-   - a) \(O(n)\)
-   - b) \(O(\log n)\) ✓
-   - c) \(O(n \log n)\)
-   - d) \(O(n^2)\)
+### TypeScript Complexity Analyzer
 
-4. **What is the amortized cost of push_back in a dynamic array?**
-   - a) \(O(1)\) ✓
-   - b) \(O(\log n)\)
-   - c) \(O(n)\)
-   - d) \(O(n^2)\)
+```typescript
+/**
+ * Runtime complexity analyzer — measures execution time of functions
+ * Usage: wrap any function to see its running time
+ */
+function measureTime<T>(fn: () => T, label: string): T {
+    const start = performance.now();
+    const result = fn();
+    const elapsed = performance.now() - start;
+    console.log(`${label}: ${elapsed.toFixed(3)}ms`);
+    return result;
+}
 
-5. **Which growth rate is faster than \(O(n^2)\)?**
-   - a) \(O(n^3)\)
-   - b) \(O(n!)\)
-   - c) Both ✓
-   - d) Neither
+// Example: Compare O(n) vs O(n²)
+const n = 10000;
+const arr = Array.from({ length: n }, (_, i) => i);
 
-6. **What is the worst-case space complexity of recursive binary search?**
-   - a) \(O(1)\)
-   - b) \(O(\log n)\) ✓
-   - c) \(O(n)\)
-   - d) \(O(n^2)\)
+measureTime(() => {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) sum += arr[i];
+    return sum;
+}, "O(n) sum");
 
-7. **Which data structure offers O(1) average-case search?**
-   - a) Linked List
-   - b) Array
-   - c) Hash Table ✓
-   - d) Binary Search Tree
+measureTime(() => {
+    let pairs = 0;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === 100) pairs++;
+        }
+    }
+    return pairs;
+}, "O(n²) pair count");
+```
 
-8. **If an algorithm makes 3 recursive calls per level dividing input by 2, what is the complexity?**
-   - a) \(O(\log n)\)
-   - b) \(O(n)\)
-   - c) \(O(n^{\log_2 3})\) ✓
-   - d) \(O(3^n)\)
+### Master Theorem Calculator
 
-**Answers:** 1-b, 2-c, 3-b, 4-a, 5-c, 6-b, 7-c, 8-c
+```typescript
+/**
+ * Solves recurrences of form T(n) = a*T(n/b) + f(n)
+ * Returns the complexity class based on Master Theorem
+ */
+function masterTheorem(a: number, b: number, fExponent: number): string {
+    const logBA = Math.log(a) / Math.log(b);
+    const epsilon = 0.0001;
 
-## Summary
+    if (fExponent < logBA - epsilon) {
+        return `Θ(n^${logBA.toFixed(2)})`; // Case 1
+    } else if (Math.abs(fExponent - logBA) < epsilon) {
+        return `Θ(n^${logBA.toFixed(2)} log n)`; // Case 2
+    } else if (fExponent > logBA + epsilon) {
+        return `Θ(n^${fExponent})`; // Case 3
+    }
+    return "Need regularity condition check";
+}
 
-- Asymptotic notation abstracts away machine details and focuses on growth rate.
-- Big-O provides an upper bound; Omega provides a lower bound; Theta provides a tight bound.
-- Worst-case analysis is the most common guarantee used in algorithm design.
+// Examples:
+console.log("T(n) = 2T(n/2) + n →", masterTheorem(2, 2, 1));    // Merge sort: Θ(n log n)
+console.log("T(n) = T(n/2) + 1 →", masterTheorem(1, 2, 0));     // Binary search: Θ(log n)
+console.log("T(n) = 2T(n/2) + 1 →", masterTheorem(2, 2, 0));    // Tree traversal: Θ(n)
+console.log("T(n) = 3T(n/2) + n →", masterTheorem(3, 2, 1));    // Karatsuba-like: Θ(n^1.58)
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the time complexity of accessing the middle element in a singly linked list?**
+   - a) O(1)
+   - b) O(log n)
+   - c) O(n) ✓
+   - d) O(n²)
+
+10. **Which of the following is true about amortized analysis?**
+    - a) It analyzes worst-case of every single operation
+    - b) It averages cost over a sequence of operations ✓
+    - c) It ignores the cost of resizing
+    - d) It is the same as average-case analysis
+
+11. **An algorithm runs in 2μs for n=100 and 8μs for n=200. Its complexity is likely:**
+    - a) O(1)
+    - b) O(log n)
+    - c) O(n) ✓
+    - d) O(n²)
+
+12. **What is the space complexity of an in-place algorithm?**
+    - a) O(1) auxiliary ✓
+    - b) O(n) auxiliary
+    - c) O(log n) auxiliary
+    - d) O(n²) auxiliary
+
+13. **Which recurrence represents the complexity of binary search?**
+    - a) T(n) = 2T(n/2) + O(1)
+    - b) T(n) = T(n/2) + O(1) ✓
+    - c) T(n) = T(n-1) + O(1)
+    - d) T(n) = 2T(n-1) + O(1)
+
+14. **The inverse Ackermann function α(n) appears in which data structure's complexity?**
+    - a) Hash Table
+    - b) Disjoint Set Union ✓
+    - c) Binary Search Tree
+    - d) Segment Tree
+
+**Answers:** 9-c, 10-b, 11-c, 12-a, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+**14.** Determine the complexity of this recursive function:
+```cpp
+int mystery(int n) {
+    if (n <= 1) return 1;
+    return mystery(n / 2) + mystery(n / 2);
+}
+```
+
+**15.** What is the worst-case time complexity of searching in a hash table with chaining where load factor α = n/m? Explain why.
+
+**16.** Write a TypeScript function to verify whether a given code snippet runs in O(n), O(n log n), or O(n²) by measuring execution time at different input sizes.
+
+**17.** A nested loop runs `for (i = 0; i < n; i++) { for (j = i; j < n; j += 2) { ... } }`. What is the exact number of inner iterations? What is the Big-O complexity?
+
+**18.** Compare the space complexity of Merge Sort (which uses O(n) auxiliary space) and Quick Sort (which uses O(log n) auxiliary space). When would you choose one over the other for a memory-constrained system?
+
+**19.** An algorithm has time complexity T(n) = 4T(n/2) + n². Apply the Master Theorem and determine its complexity class.
+
+**20.** Design an O(1) time and O(1) space function to check whether two strings are anagrams. Is this possible? Explain the space-time tradeoff.
+
+**21.** Prove that for any comparison-based sorting algorithm, the worst-case time complexity is Ω(n log n).
+
+**22.** Given two algorithms with complexities O(n²) and O(n log n), for n = 10⁶, estimate how many times faster the O(n log n) algorithm is (assume each operation takes 1ns).
+
+**23.** Implement a TypeScript decorator `@logComplexity` that automatically logs execution time for any method it decorates.
+
+**24.** Write a brief analysis: Why does the "two-pointer technique" for finding a pair with given sum in a sorted array achieve O(n) time instead of O(n²)?
+
+**Answers for exercises 14-24:** (14) O(n) — the recurrence is T(n)=2T(n/2)+O(1), case 1 of Master Theorem gives Θ(n). (15) O(1+α) average, O(n) worst-case. (16-24) Solutions available in instructor materials.
+
+---
+
+## Little-o and Little-omega Notation (Strict Bounds)
+
+### Real-World Analogy
+
+**Little-o** is like saying "strictly less than." If Big-O says "≤ 100 kg," little-o says "< 100 kg" — the algorithm is *strictly* faster than the bound, not just equal to it. **Little-omega** is the strict greater-than counterpart.
+
+### Definition
+
+- **Little-o**: \( f(n) = o(g(n)) \) means for *every* constant \( c > 0 \), there exists \( n_0 > 0 \) such that \( 0 \le f(n) < c \cdot g(n) \) for all \( n \ge n_0 \). The bound does not hold for any constant — \( f(n) \) grows strictly slower than \( g(n) \).
+- **Little-omega**: \( f(n) = \omega(g(n)) \) means for *every* constant \( c > 0 \), there exists \( n_0 > 0 \) such that \( 0 \le c \cdot g(n) < f(n) \) for all \( n \ge n_0 \).
+
+### Key Intuition
+
+| Notation | Meaning | Example |
+|----------|---------|---------|
+| \( f(n) = O(g(n)) \) | \( f \) grows no faster than \( g \) | \( n = O(n^2) \) ✓ |
+| \( f(n) = o(g(n)) \) | \( f \) grows strictly slower than \( g \) | \( n = o(n^2) \) ✓, but \( n^2 \neq o(n^2) \) |
+| \( f(n) = \Omega(g(n)) \) | \( f \) grows no slower than \( g \) | \( n^2 = \Omega(n) \) ✓ |
+| \( f(n) = \omega(g(n)) \) | \( f \) grows strictly faster than \( g \) | \( n^2 = \omega(n) \) ✓, but \( n \neq \omega(n) \) |
+
+### Dry Run — Comparing Growth Rates
+
+| Function Pair | Big-O? | Little-o? | Why |
+|---------------|--------|-----------|-----|
+| \( f(n)=n, g(n)=n^2 \) | \( n = O(n^2) \) ✓ | \( n = o(n^2) \) ✓ | n grows slower; for c=1, n < n² for n>1 |
+| \( f(n)=2n, g(n)=n \) | \( 2n = O(n) \) ✓ | \( 2n \neq o(n) \) ✗ | No c makes 2n < cn for all n (pick c=3? 2n<3n holds, but need for *every* c) |
+| \( f(n)=n^2, g(n)=n^2 \) | \( n^2 = O(n^2) \) ✓ | \( n^2 \neq o(n^2) \) ✗ | Equal growth; cannot find c<1 to make n² < cn² |
+
+### When Little-o Matters
+
+In algorithm analysis, little-o appears in:
+- **Strict optimality proofs**: Showing that an algorithm is \( o(g(n)) \) proves it is strictly better than the \( \Theta(g(n)) \) class.
+- **Limits and calculus**: \( \lim_{n\to\infty} f(n)/g(n) = 0 \) iff \( f(n) = o(g(n)) \).
+- **Advanced complexity theory**: Separating complexity classes (e.g., P vs NP uses strict containment).
+
+### TypeScript — Growth Rate Classifier
+
+```typescript
+function classifyGrowth(
+    f: (n: number) => number,
+    g: (n: number) => number,
+    n0: number = 1000,
+    trials: number = 10
+): string {
+    const ratios: number[] = [];
+    for (let t = 1; t <= trials; t++) {
+        const n = n0 * t;
+        const ratio = f(n) / g(n);
+        ratios.push(ratio);
+    }
+    const trend = ratios[ratios.length - 1] / ratios[0];
+    if (trend < 0.1) return "f = o(g) — f grows strictly slower";
+    if (trend > 10) return "f = ω(g) — f grows strictly faster";
+    if (Math.abs(trend - 1) < 0.1) return "f = Θ(g) — same growth rate";
+    return "f = O(g) but not o(g) — needs more data";
+}
+
+// Example: Compare n vs n²
+const f = (n: number) => n;
+const g = (n: number) => n * n;
+console.log(classifyGrowth(f, g)); // "f = o(g)"
+```
+
+### Additional MCQs (GFG Pattern)
+
+15. **If f(n) = n² and g(n) = n³, which statement is true?**
+    - a) f = o(g) ✓
+    - b) g = o(f)
+    - c) f = Θ(g)
+    - d) f = ω(g)
+
+16. **Which of the following is true for f(n) = 100n + log n?**
+    - a) f = o(n)
+    - b) f = Θ(n) ✓
+    - c) f = ω(n²)
+    - d) f = o(log n)
+
+17. **The statement "n = o(n²)" is:**
+    - a) True ✓
+    - b) False
+    - c) Neither true nor false
+    - d) Only true for n ≥ 2
+
+18. **For which pair does f(n) = ω(g(n)) hold?**
+    - a) f = n, g = n²
+    - b) f = n², g = n ✓
+    - c) f = n, g = n
+    - d) f = log n, g = n
+
+**Answers:** 15-a, 16-b, 17-a, 18-b
+
+---
+
+## NP-Completeness and Complexity Classes
+
+### Real-World Analogy
+
+Imagine you have a **jigsaw puzzle** with 10,000 pieces. Checking whether someone's proposed solution is correct is easy (O(n) — just look at the picture). But *finding* the solution from scratch is exponentially hard. NP-complete problems are exactly this: solutions are easy to verify, but hard to find.
+
+### Complexity Classes Overview
+
+```mermaid
+flowchart TD
+    subgraph "Complexity Zoo"
+        P["<b>P</b><br/>Polynomial Time<br/>O(n), O(n²), O(n³)...<br/>Solved efficiently"]
+        NP["<b>NP</b><br/>Nondeterministic Polynomial<br/>Verified in polynomial time<br/>SAT, TSP, Knapsack"]
+        NPC["<b>NP-Complete</b><br/>Hardest in NP<br/>SAT → 3SAT → Vertex Cover<br/>→ Ham Path → TSP"]
+        NPH["<b>NP-Hard</b><br/>At least as hard as NP<br/>(may not be in NP)<br/>Halting Problem"]
+        EXP["<b>EXP</b><br/>Exponential Time<br/>O(2ⁿ), O(n!)<br/>Intractable for large n"]
+    end
+
+    P --> NP
+    NP --> NPC
+    NPC --> NPH
+    NPH -.-> EXP
+```
+
+### Definitions
+
+| Class | Full Name | Description | Example |
+|-------|-----------|-------------|---------|
+| **P** | Polynomial Time | Solvable in O(n^k) time on a deterministic Turing machine | Sorting, searching, shortest path |
+| **NP** | Nondeterministic Polynomial Time | Verifiable in polynomial time (given a certificate) | Sudoku (checking a filled board) |
+| **NP-Complete** | NP + NP-Hard | In NP *and* every NP problem reduces to it | SAT, 3SAT, Traveling Salesman, Knapsack |
+| **NP-Hard** | NP-Hard | At least as hard as every NP problem (may not be in NP) | Halting problem, optimization TSP |
+| **EXP** | Exponential Time | Solvable in O(2^{n^k}) time | Generalized Chess (n×n board) |
+
+### The P vs NP Question
+
+**The million-dollar question:** Is P = NP? If true, every problem whose solution can be quickly verified can also be quickly solved. Most computer scientists believe P ≠ NP.
+
+**Practical implication:** For NP-complete problems, we don't expect polynomial-time algorithms. Instead, use:
+- **Approximation algorithms** (guaranteed near-optimal)
+- **Heuristics** (good in practice, no guarantee)
+- **Exact algorithms** (exponential but optimized for small n)
+- **Parameterized complexity** (exponential only in a small parameter k)
+
+### Dry Run — Reducing 3SAT to Vertex Cover
+
+| Step | Transformation | Complexity |
+|------|---------------|------------|
+| 1 | Start with 3SAT formula φ with n variables, m clauses | O(n + m) |
+| 2 | Create a variable gadget: for each variable x, create edge (x, ¬x) | O(n) |
+| 3 | Create a clause gadget: for each clause, create a triangle of 3 literals | O(m) |
+| 4 | Connect each literal in clause gadget to its corresponding variable gadget node | O(m) |
+| 5 | Set k = n + 2m (one variable per variable gadget + 2 per clause) | O(1) |
+| 6 | φ is satisfiable iff graph has a vertex cover of size k | — |
+
+This is a polynomial-time reduction, proving Vertex Cover is NP-Complete.
+
+### What This Means for Data Structures
+
+| Problem Type | Expected Complexity | Acceptable DS Approach |
+|-------------|-------------------|----------------------|
+| In P (sorting, search) | O(n log n) or O(n) | Standard DS suffice |
+| In P (shortest path) | O(V log V + E) | Priority queue + adjacency list |
+| NP-Complete (small n) | O(2ⁿ) for n ≤ 30 | Branch and bound + pruning |
+| NP-Complete (large n) | Approximation | Greedy, local search |
+| NP-Hard optimization | Heuristic | Simulated annealing, genetic algorithms |
+
+### Additional MCQs (GFG Pattern)
+
+19. **Which is true about NP-Complete problems?**
+    - a) They can be solved in polynomial time
+    - b) They are the hardest problems in NP ✓
+    - c) They cannot be verified in polynomial time
+    - d) They never have practical solutions
+
+20. **If problem A reduces to problem B in polynomial time and B ∈ P, then:**
+    - a) A ∈ P ✓
+    - b) A ∈ NP-Complete
+    - c) B ∈ NP-Complete
+    - d) A is unsolvable
+
+21. **Which of the following is NOT in NP?**
+    - a) Graph coloring
+    - b) Traveling Salesman decision version
+    - c) Halting Problem ✓
+    - d) Subset Sum
+
+22. **A problem that is in NP and every NP problem reduces to it is called:**
+    - a) NP-Hard
+    - b) NP-Complete ✓
+    - c) P
+    - d) EXP
+
+**Answers:** 19-b, 20-a, 21-c, 22-b
+
+### Additional Exercises (GFG Pattern)
+
+25. **Classify each problem** as P, NP-Complete, or NP-Hard: (a) Finding MST, (b) Finding Hamiltonian Cycle, (c) Halting Problem, (d) Sorting n integers.
+
+26. **Prove that if a polynomial-time reduction from Problem A to Problem B exists, and B is in P, then A is also in P.**
+
+27. **Explain why the Traveling Salesman Problem (TSP) optimization version is NP-Hard but the decision version ("Is there a tour of length ≤ k?") is NP-Complete.**
+
+28. **Design a polynomial-time reduction from Vertex Cover to Independent Set.** (Hint: A vertex cover's complement is an independent set.)
+
+29. **For n=20, an O(2ⁿ) algorithm takes ~1 second. How long would it take for n=30? n=40? Explain why exponential algorithms become infeasible so quickly.**
+
+30. **Implement a TypeScript function that checks whether a given graph coloring (assignment of colors to vertices) is valid — and explain why this verification is in P while finding the minimum coloring is NP-Hard.**
+
+---
+
+### Algorithm Selection Decision Flowchart
+
+```mermaid
+flowchart TD
+    Start["Given a computational problem"] --> Q1["Is input size small<br/>(n ≤ 1000)?"]
+    Q1 -->|Yes| Q2["Is exact solution needed?"]
+    Q1 -->|No| Q3["Is the problem in P?"]
+    
+    Q2 -->|"Yes"| Exact["Use exact algorithm<br/>O(n³) or better acceptable"]
+    Q2 -->|"No"| Approx["Use approximation<br/>or heuristic"]
+    
+    Q3 -->|"Yes"| Poly["Use polynomial algorithm<br/>O(n), O(n log n), O(n²)"]
+    Q3 -->|"No (NP-Hard)"| Q4["How large is n?"]
+    
+    Q4 -->|"n ≤ 30"| Branch["Branch and bound<br/>with pruning"]
+    Q4 -->|"n ≤ 500"| Approx2["Approximation algorithm<br/>with guarantee"]
+    Q4 -->|"n ≥ 500"| Heuristic["Heuristic / Metaheuristic<br/>GA, SA, Local Search"]
+    
+    Exact --> Choose["Choose data structure<br/>for the exact algorithm"]
+    Poly --> Choose
+    Approx --> Choose
+    Branch --> Choose
+    Approx2 --> Choose
+    Heuristic --> Choose
+    
+    Choose --> DS["Map to optimal DS:<br/>• Array: O(1) access<br/>• Hash: O(1) lookup<br/>• Heap: O(log n) min<br/>• BST: O(log n) search"]
+```
+
+---
+
+## One-Sentence Takeaways
+
+- Big-O is an upper bound; Omega is a lower bound; Theta is a tight bound; Little-o and Little-omega are strict bounds.
+- Worst-case analysis gives the strongest guarantee and is the default in algorithm design.
+- Recurrence relations model recursive algorithm complexity; the Master Theorem solves many common forms.
+- Amortized analysis averages costs over a sequence, revealing true performance.
 - Space complexity must account for both auxiliary data structures and recursion depth.
-- Amortized analysis reveals the true average cost over a sequence of operations.
-- Choosing the right data structure is complexity analysis in action — real systems depend on it.
+- O(n) which is linear in input size is the most common achievable efficiency goal.
+- Every major real-world system chooses data structures based on complexity analysis.
+- Problems in P are tractable; NP-Complete problems likely require exponential time for exact solutions.
+- Algorithm selection depends on input size, exactness requirement, and problem complexity class.
 
 ## Exercises
 

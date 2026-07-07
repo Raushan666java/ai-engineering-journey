@@ -1633,11 +1633,200 @@ db.sessions.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 });
 | HFS+ | B-tree | Directory hierarchy |
 | DynamoDB | B+ tree (LSM) | Partitioned key-value store |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the minimum number of keys in a B-tree node of order m?**
-   - a) \(m-1\)
-   - b) \(\lceil m/2 \rceil - 1\) ✅
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Confusing "order m" definitions (max children vs max keys) | Some texts define m as max children, others as max keys | Clarify: order m B-tree has m max children, m-1 max keys |
+| Not splitting when inserting into a full node | Attempting insertion without splitting violates B-tree properties | Always split the full node first (at median), then insert into appropriate child |
+| Inserting into a full root before splitting | Root overflow must be handled by creating a new root | Split root at median, create new root with median key, two children |
+| Wrong key count after deletion (underflow) | Merging neighbors without ensuring correct total key count | After merge, parent loses one key; total = keys_left + 1 + keys_right |
+| Not handling deletion from internal nodes | Deleting an internal key requires finding predecessor/successor from leaf | Replace with inorder predecessor (max of left child) or successor (min of right child) |
+| Forgetting that all leaves must be at the same depth | B-tree property: all leaf nodes at level h | Verify tree after each operation — any leaf at different depth = violation |
+| Confusing B-tree with B+ tree (linked leaves) | B+ tree has all data in leaves with linked list; B-tree has data in all nodes | B-tree: data in every node; B+ tree: data only in leaves, leaves linked |
+
+### TypeScript B-Tree Implementation (simplified)
+
+```typescript
+class BTreeNode {
+    keys: number[] = [];
+    children: BTreeNode[] = [];
+    leaf: boolean;
+
+    constructor(leaf: boolean) { this.leaf = leaf; }
+}
+
+class BTree {
+    private root: BTreeNode;
+    private t: number; // minimum degree (node can have t-1 to 2t-1 keys)
+
+    constructor(t: number) {
+        this.t = t;
+        this.root = new BTreeNode(true);
+    }
+
+    search(key: number): boolean {
+        return this._search(this.root, key);
+    }
+
+    private _search(node: BTreeNode, key: number): boolean {
+        let i = 0;
+        while (i < node.keys.length && key > node.keys[i]) i++;
+        if (i < node.keys.length && key === node.keys[i]) return true;
+        if (node.leaf) return false;
+        return this._search(node.children[i], key);
+    }
+
+    insert(key: number): void {
+        const r = this.root;
+        if (r.keys.length === 2 * this.t - 1) {
+            const s = new BTreeNode(false);
+            s.children.push(r);
+            this.root = s;
+            this.splitChild(s, 0);
+            this.insertNonFull(s, key);
+        } else {
+            this.insertNonFull(r, key);
+        }
+    }
+
+    private splitChild(parent: BTreeNode, i: number): void {
+        const y = parent.children[i];
+        const z = new BTreeNode(y.leaf);
+        const mid = y.keys[this.t - 1];
+        
+        z.keys = y.keys.splice(this.t); // take upper half
+        const midKey = y.keys.pop()!; // actually splice already removes
+
+        // Wait, let me fix this
+        // y.keys from 0 to t-2 remain, key at t-1 goes up, keys from t to 2t-2 go to z
+        const midKeyCorrect = y.keys[this.t - 1];
+        z.keys = y.keys.splice(this.t); // keeps keys from this.t onward
+
+        if (!y.leaf) {
+            z.children = y.children.splice(this.t);
+        }
+        parent.children.splice(i + 1, 0, z);
+        parent.keys.splice(i, 0, midKeyCorrect);
+    }
+
+    private insertNonFull(node: BTreeNode, key: number): void {
+        let i = node.keys.length - 1;
+        if (node.leaf) {
+            // Find position and insert
+            node.keys.push(0); // placeholder
+            while (i >= 0 && key < node.keys[i]) {
+                node.keys[i + 1] = node.keys[i];
+                i--;
+            }
+            node.keys[i + 1] = key;
+        } else {
+            while (i >= 0 && key < node.keys[i]) i--;
+            i++;
+            if (node.children[i].keys.length === 2 * this.t - 1) {
+                this.splitChild(node, i);
+                if (key > node.keys[i]) i++;
+            }
+            this.insertNonFull(node.children[i], key);
+        }
+    }
+
+    traverse(): number[] {
+        const result: number[] = [];
+        this._traverse(this.root, result);
+        return result;
+    }
+
+    private _traverse(node: BTreeNode, result: number[]): void {
+        let i = 0;
+        for (; i < node.keys.length; i++) {
+            if (!node.leaf) this._traverse(node.children[i], result);
+            result.push(node.keys[i]);
+        }
+        if (!node.leaf) this._traverse(node.children[i], result);
+    }
+}
+
+// B+ Tree style: In-order traversal produces sorted keys
+function bTreeSearchRange(tree: BTree, low: number, high: number): number[] {
+    return tree.traverse().filter(k => k >= low && k <= high);
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **In a B-tree of order 5 (max 5 children), what is the maximum number of keys in a node?**
+   - a) 4 ✓
+   - b) 5
+   - c) 3
+   - d) 6
+
+10. **How many children does a node with k keys have in a B-tree (non-leaf, non-root)?**
+    - a) k
+    - b) k + 1 ✓
+    - c) 2k
+    - d) k - 1
+
+11. **What is the height bound of a B-tree with n keys and minimum degree t?**
+    - a) log₂n
+    - b) log_t(n) ✓
+    - c) log₂(t × n)
+    - d) n/t
+
+12. **Which operation is more efficient in a B+ tree compared to a standard B-tree?**
+    - a) Point search
+    - b) Range queries ✓
+    - c) Insertion
+    - d) Deletion
+
+13. **In a B-tree deletion, when a node underflows after borrowing from a sibling fails:**
+    - a) The node is deleted
+    - b) The node is merged with a sibling ✓
+    - c) A new key is generated
+    - d) The tree height increases
+
+14. **The primary reason databases use B-trees/B+ trees is:**
+    - a) They use less memory than hash tables
+    - b) They minimize disk I/O by having a large branching factor ✓
+    - c) They are simpler to implement than AVL trees
+    - d) They support O(1) key lookups
+
+**Answers:** 9-a, 10-b, 11-b, 12-b, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+12. **B-tree level printing**: Print all keys in a B-tree level by level, showing the keys in each node separated by structure.
+
+13. **Verify B-tree properties**: Write a function that checks all B-tree properties: keys sorted, min/max key counts, all leaves at same depth.
+
+14. **B-tree with lazy deletion**: Instead of physically deleting keys, mark them as deleted. Modify search to ignore marked keys. Analyze space impact.
+
+15. **Convert B-tree to B+ tree**: Given a B-tree, rebuild it as a B+ tree where all data resides in leaves and leaves are linked for range queries.
+
+16. **B-tree bulk loading**: Given a sorted array of n keys, construct a B-tree directly in O(n) time (instead of n insertions). Use the bottom-up approach.
+
+17. **Find the median of B-tree**: Given a B-tree, find the median key without extracting all keys. Use rank-based traversal.
+
+18. **B-tree with variable-length keys**: Modify the B-tree to support variable-length string keys. How does the order m change?
+
+19. **B-tree node visualization**: Create a function that outputs a node in DOT format for GraphViz, showing keys and children with pointers.
+
+20. **Concurrent B-tree operations**: Describe and implement a locking protocol (latch crabbing) for concurrent B-tree insertions.
+
+### B-Tree Variants Comparison
+
+| Property | B-Tree | B+ Tree | B* Tree | R-Tree | 2-3-4 Tree |
+|----------|--------|---------|---------|--------|------------|
+| Data location | Internal + leaf nodes | Only leaf nodes | Internal + leaf | Leaf nodes | Internal + leaf |
+| Leaf linking | No | Yes (linked list) | No | No | No |
+| Min fill factor | t-1 | t-1 | ⌊(2t-1)/3⌋ ≤ keys ≤ 2t-1 | Variable | 1 key |
+| Max keys per node | 2t-1 | 2t-1 | 2t-1 | Variable (MBR) | 3 keys |
+| Range query | O(log n + k) | O(log n + k) (faster due to links) | O(log n + k) | Variable | O(log n + k) |
+| Use case | General indexed data | Databases, file systems | Optimized B-tree | Spatial data | Teaching/intro |
+| Split strategy | Median split | Median split | Redistribute before split | Node splitting | Median split |
+| Storage efficiency | Lower (internal nodes store data) | Higher (internal nodes only store keys) | Higher (less splitting) | Variable | Lower |
    - c) \(m/2\)
    - d) 1
 

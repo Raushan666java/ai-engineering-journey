@@ -641,15 +641,318 @@ Key Docker best practices:
 - Non-root user prevents container breakout from gaining root access
 - docker-compose for local dev, Kubernetes for production
 
+---
+
+## Common Mistakes in Microservices (GFG-Style)
+
+### Mistake 1: Synchronous communication chains
+```java
+// ❌ WRONG: Request threads through 3+ services synchronously
+// Order Service → Payment Service → Inventory Service → Shipping Service
+// If Shipping is slow, ALL upstream threads block → cascading failure
+
+// ✅ CORRECT: Use async messaging for non-critical path
+// Order Service publishes "OrderCreated" event
+// Inventory, Payment, Shipping subscribe independently
+@Service
+public class OrderService {
+    private final KafkaTemplate<String, OrderEvent> kafka;
+
+    public void createOrder(OrderRequest req) {
+        Order order = orderRepo.save(req.toOrder());
+        kafka.send("order-events", new OrderCreatedEvent(order.getId()));
+        // Return immediately → downstream services process in parallel
+    }
+}
+```
+
+### Mistake 2: Shared database across services
+```java
+// ❌ WRONG: Multiple services access the same database
+// OrderService → orders_db
+// PaymentService → orders_db  (same DB!)
+// ShippingService → orders_db  (same DB!)
+// Schema changes require coordinated deployments → no autonomy
+
+// ✅ CORRECT: Database per service
+// OrderService → orders_db (owns orders and order_items)
+// PaymentService → payments_db (owns payments table)
+// ShippingService → shipping_db (owns shipments table)
+// Services communicate via API calls or events, not shared tables
+```
+
+### Mistake 3: No circuit breaker on external calls
+```java
+// ❌ WRONG: Direct HTTP call with no protection
+@Service
+public class OrderService {
+    public UserDto getUser(Long id) {
+        // If user-service is down, this thread blocks for timeout seconds
+        // With 50 threads × 30s timeout = 1500 thread-seconds wasted
+        return restTemplate.getForObject("/users/{id}", UserDto.class, id);
+    }
+}
+
+// ✅ CORRECT: Wrap with Resilience4j CircuitBreaker
+@Service
+public class OrderService {
+    @CircuitBreaker(name = "userService", fallbackMethod = "getUserFallback")
+    public UserDto getUser(Long id) {
+        return restTemplate.getForObject("/users/{id}", UserDto.class, id);
+    }
+
+    public UserDto getUserFallback(Long id, Throwable t) {
+        return new UserDto(id, "Unknown", "unavailable@fallback.com");
+    }
+}
+```
+
+### Mistake 4: Missing observability (logs, metrics, traces)
+```yaml
+# ❌ WRONG: No structured logging, no distributed tracing
+# When a request fails across 5 services, you have 5 separate log files
+# with no correlation ID → impossible to debug
+
+# ✅ CORRECT: Always include traceId and spanId
+spring.application.name=order-service
+logging.pattern.level=trace_id=%mdc{traceId:-no-trace} span_id=%mdc{spanId:-no-span} %5p
+management.tracing.sampling.probability=1.0  # 100% sampling in dev
+```
+
+### Mistake 5: Over-engineering (starting with microservices)
+```java
+// ❌ WRONG: New project with 12 microservices, event bus, CQRS, service mesh
+// 6 months later → still not shipping features, infrastructure complexity dominates
+
+// ✅ CORRECT: Start as modular monolith, extract when needed
+// Phase 1: Single deployable with clear module boundaries
+// Phase 2: Extract hottest path (e.g., payment processing) as first service
+// Phase 3: Extract read models (CQRS) when scaling read traffic
+// Phase 4: Add event bus when async processing is proven necessary
+```
+
+---
+
+## Monolith vs Microservices Comparison Table
+
+| Aspect | Monolith | Microservices |
+|--------|----------|---------------|
+| Deployment | Single artifact | N independent services |
+| Scaling | Scale entire app | Scale individual services |
+| Team autonomy | Shared codebase — coordination needed | Each team owns services end-to-end |
+| Database | Single database (or few) | Database per service |
+| Testing | Easier (single process) | Complex (contract tests, integration tests) |
+| Debugging | Single log stream | Distributed tracing needed |
+| Startup time | Minutes (large WAR/JAR) | Seconds (each service is small) |
+| Complexity | Low initial | High initial (service discovery, config, gateway) |
+| Change velocity | Slows as team grows | Scales with team size |
+| Network latency | None (in-process calls) | Added (remote calls, serialization) |
+
+**When to choose monolith:** Team < 10, product-market fit not validated, simple domain, no need for polyglot tech stack.
+
+**When to choose microservices:** Team > 20, multiple subdomains with clear boundaries, different scaling requirements per service, need for independent deployability.
+
+---
+
+## TypeScript Microservice Orchestration Simulator
+
+```typescript
+interface ServiceInstance {
+  serviceId: string;
+  host: string;
+  port: number;
+  healthy: boolean;
+  lastHeartbeat: Date;
+}
+
+type CircuitState = 'CLOSED' | 'OPEN' | 'HALF_OPEN';
+
+interface CircuitBreakerState {
+  serviceName: string;
+  state: CircuitState;
+  failureCount: number;
+  lastFailureTime: Date | null;
+  threshold: number;
+  timeoutMs: number;
+}
+
+class ServiceOrchestrator {
+  private registry = new Map<string, ServiceInstance[]>();
+  private circuits = new Map<string, CircuitBreakerState>();
+
+  /** Register a service instance */
+  register(service: ServiceInstance): void {
+    const instances = this.registry.get(service.serviceId) || [];
+    instances.push(service);
+    this.registry.set(service.serviceId, instances);
+    console.log(`[REGISTER] ${service.serviceId} at ${service.host}:${service.port}`);
+  }
+
+  /** Get healthy instances for a service */
+  discover(serviceId: string): ServiceInstance[] {
+    const instances = this.registry.get(serviceId) || [];
+    const healthy = instances.filter(i => i.healthy);
+    if (healthy.length === 0) {
+      console.log(`[DISCOVERY] WARNING: No healthy instances for ${serviceId}`);
+    }
+    return healthy;
+  }
+
+  /** Circuit breaker state machine */
+  callService(
+    serviceId: string,
+    action: () => Promise<unknown>,
+    fallback: () => Promise<unknown>
+  ): Promise<unknown> {
+    let cb = this.circuits.get(serviceId);
+    if (!cb) {
+      cb = { serviceName: serviceId, state: 'CLOSED', failureCount: 0,
+             lastFailureTime: null, threshold: 5, timeoutMs: 30000 };
+      this.circuits.set(serviceId, cb);
+    }
+
+    if (cb.state === 'OPEN') {
+      const timeSinceFailure = Date.now() - (cb.lastFailureTime?.getTime() || 0);
+      if (timeSinceFailure > cb.timeoutMs) {
+        console.log(`[CIRCUIT] ${serviceId}: OPEN → HALF_OPEN (timeout elapsed)`);
+        cb.state = 'HALF_OPEN';
+      } else {
+        console.log(`[CIRCUIT] ${serviceId}: OPEN — falling back immediately`);
+        return fallback();
+      }
+    }
+
+    return action()
+      .then(result => {
+        if (cb.state === 'HALF_OPEN') {
+          console.log(`[CIRCUIT] ${serviceId}: HALF_OPEN → CLOSED (success)`);
+          cb.state = 'CLOSED';
+        }
+        cb.failureCount = 0;
+        return result;
+      })
+      .catch(err => {
+        cb.failureCount++;
+        cb.lastFailureTime = new Date();
+        if (cb.failureCount >= cb.threshold || cb.state === 'HALF_OPEN') {
+          console.log(`[CIRCUIT] ${serviceId}: ${cb.state} → OPEN (failures=${cb.failureCount})`);
+          cb.state = 'OPEN';
+        }
+        return fallback();
+      });
+  }
+
+  /** Load balance using round-robin */
+  getNextInstance(serviceId: string): ServiceInstance | null {
+    const healthy = this.discover(serviceId);
+    if (healthy.length === 0) return null;
+    const index = Math.floor(Math.random() * healthy.length);
+    return healthy[index];
+  }
+
+  /** Simulate a request through the full chain */
+  async request(
+    serviceChain: string[],
+    action: (svc: ServiceInstance) => Promise<unknown>
+  ): Promise<void> {
+    console.log(`\n[REQUEST] Chain: ${serviceChain.join(' → ')}`);
+    for (const serviceId of serviceChain) {
+      const instance = this.getNextInstance(serviceId);
+      if (!instance) {
+        console.log(`[FAIL] ${serviceId}: No available instances`);
+        return;
+      }
+      console.log(`[ROUTE] ${serviceId} → ${instance.host}:${instance.port}`);
+
+      await this.callService(
+        serviceId,
+        () => action(instance),
+        async () => ({ status: 503, message: `${serviceId} fallback response` })
+      );
+    }
+    console.log(`[COMPLETE] Chain executed successfully`);
+  }
+}
+
+// ── Demonstration ──
+const orchestrator = new ServiceOrchestrator();
+orchestrator.register({ serviceId: 'auth', host: '10.0.1.1', port: 8081, healthy: true, lastHeartbeat: new Date() });
+orchestrator.register({ serviceId: 'orders', host: '10.0.1.2', port: 8082, healthy: true, lastHeartbeat: new Date() });
+orchestrator.register({ serviceId: 'payment', host: '10.0.1.3', port: 8083, healthy: true, lastHeartbeat: new Date() });
+
+orchestrator.request(
+  ['auth', 'orders', 'payment'],
+  async (svc) => {
+    console.log(`  → Calling ${svc.serviceId} on port ${svc.port}`);
+    return { success: true };
+  }
+);
+```
+
+## Mermaid: Circuit Breaker State Machine
+
+```mermaid
+stateDiagram-v2
+    [*] --> CLOSED
+    CLOSED --> OPEN : Failure threshold exceeded
+    OPEN --> HALF_OPEN : Timeout elapsed
+    HALF_OPEN --> CLOSED : Success (reset counter)
+    HALF_OPEN --> OPEN : Failure (stay open)
+
+    state CLOSED {
+        [*] --> NormalOperation
+        NormalOperation --> CountingFailures : Request fails
+        CountingFailures --> [*] : Failure < threshold
+    }
+
+    state OPEN {
+        [*] --> RejectingRequests
+        RejectingRequests --> [*] : Fast-fail with fallback
+    }
+
+    state HALF_OPEN {
+        [*] --> Probing
+        Probing --> Success : Allow single request
+        Probing --> Failure : Reject immediately
+    }
+```
+
+## Chapter Quiz — Microservices (Part 2)
+
+4. What is the primary disadvantage of synchronous communication chains in microservices?
+    - A) They are more complex to code
+    - B) A slow downstream service blocks threads upstream → cascading latency
+    - C) They use more memory
+    - D) They require HTTP/2
+
+<details>
+<summary>Answer</summary>
+**B) A slow downstream service blocks threads upstream.** If Service D is slow, Services A, B, and C all accumulate blocked threads. This can exhaust thread pools and cause system-wide failures.
+</details>
+
+5. Which pattern prevents cascading failures from an unresponsive downstream service?
+    - A) Service discovery
+    - B) Circuit breaker
+    - C) Database per service
+    - D) API gateway
+
+<details>
+<summary>Answer</summary>
+**B) Circuit breaker.** The circuit breaker detects failures and opens the circuit, preventing further calls to the failing service. This stops failures from cascading through the system.
+</details>
+
+6. What is the recommended starting architecture for a new product with an unknown scaling profile?
+    - A) Full microservices with event sourcing
+    - B) Modular monolith — extract services when needed
+    - C) Serverless functions only
+    - D) Monolith with no module boundaries
+
+<details>
+<summary>Answer</summary>
+**B) Modular monolith.** Starting with microservices adds complexity before product-market fit is proven. A modular monolith with clear bounded contexts allows easy extraction later.
+</details>
+
 ## Concept Comparison Table
-
-| Concept | Definition | Key Distinction | Use Case |
-|---------|-----------|-----------------|----------|
-| Interface | Contract without state | Multiple inheritance of type | API contracts |
-| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
-| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
-
-## Quick Reference
 
 | Topic | Key Points | Interview Frequency |
 |-------|-----------|-------------------|

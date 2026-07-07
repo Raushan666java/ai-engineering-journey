@@ -1708,11 +1708,185 @@ Text editors and design tools (Photoshop, Figma) use a DLL of states:
 
 ---
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **Why can a DLL delete at the tail in $O(1)$?**
-   - a) Tail pointer with prev from last node
-   - b) Binary search
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Forgetting to update both `prev` and `next` during insertion | Only updating one pointer direction leaves the list in an inconsistent state | Always update 4 pointers symmetrically: newNode.prev, newNode.next, prevNode.next, nextNode.prev |
+| Dereferencing `head->prev` on an empty list | head is null, so head->prev crashes | Always check head/tail is not null before accessing their prev/next |
+| Not updating tail on popBack when list becomes empty | tail = null, but head may still point to deleted node | After popBack, if tail becomes null, also set head = null |
+| Wrong reversal - not swapping head and tail after pointer swap | List pointers are swapped but head/tail references point to wrong ends | After swapping each node's prev/next, always swap head and tail |
+| Circular list traversal never terminates | Missing the condition `current != head` in the loop condition | Use do-while: `do { ... } while (current != head)` |
+| Memory leak from not deleting nodes in destructor | Only head/tail pointers are freed, middle nodes remain allocated | Traverse and delete each node in the destructor |
+
+### TypeScript Doubly Linked List Implementation
+
+```typescript
+class DListNode<T> {
+    constructor(
+        public data: T,
+        public prev: DListNode<T> | null = null,
+        public next: DListNode<T> | null = null
+    ) {}
+}
+
+class DoublyLinkedList<T> {
+    private head: DListNode<T> | null = null;
+    private tail: DListNode<T> | null = null;
+    private _count: number = 0;
+
+    get count(): number { return this._count; }
+
+    pushFront(data: T): void {
+        const node = new DListNode(data);
+        if (!this.head) {
+            this.head = this.tail = node;
+        } else {
+            node.next = this.head;
+            this.head.prev = node;
+            this.head = node;
+        }
+        this._count++;
+    }
+
+    pushBack(data: T): void {
+        const node = new DListNode(data);
+        if (!this.tail) {
+            this.head = this.tail = node;
+        } else {
+            this.tail.next = node;
+            node.prev = this.tail;
+            this.tail = node;
+        }
+        this._count++;
+    }
+
+    popFront(): T | null {
+        if (!this.head) return null;
+        const data = this.head.data;
+        this.head = this.head.next;
+        if (this.head) this.head.prev = null;
+        else this.tail = null;
+        this._count--;
+        return data;
+    }
+
+    popBack(): T | null {
+        if (!this.tail) return null;
+        const data = this.tail.data;
+        this.tail = this.tail.prev;
+        if (this.tail) this.tail.next = null;
+        else this.head = null;
+        this._count--;
+        return data;
+    }
+
+    reverse(): void {
+        let curr = this.head;
+        while (curr) {
+            const temp = curr.prev;
+            curr.prev = curr.next;
+            curr.next = temp;
+            curr = curr.prev; // move to original next
+        }
+        const temp = this.head;
+        this.head = this.tail;
+        this.tail = temp;
+    }
+
+    toArrayForward(): T[] {
+        const result: T[] = [];
+        let curr = this.head;
+        while (curr) { result.push(curr.data); curr = curr.next; }
+        return result;
+    }
+
+    toArrayBackward(): T[] {
+        const result: T[] = [];
+        let curr = this.tail;
+        while (curr) { result.push(curr.data); curr = curr.prev; }
+        return result;
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+8. **What is the primary advantage of a doubly linked list over a singly linked list?**
+   - a) Less memory usage
+   - b) O(1) deletion at tail ✓
+   - c) Faster search
+   - d) Simpler code
+
+9. **In an LRU cache implemented with a DLL + hash map, what happens when a key is accessed?**
+   - a) It is moved to the tail
+   - b) It is moved to the head ✓
+   - c) It is deleted
+   - d) It stays in place
+
+10. **What is the time complexity of inserting a node before a given node when you have a pointer to the given node in a DLL?**
+    - a) O(n)
+    - b) O(1) ✓
+    - c) O(log n)
+    - d) O(n²)
+
+11. **How many pointer updates are needed to delete a middle node in a DLL (excluding deallocation)?**
+    - a) 1
+    - b) 2 ✓
+    - c) 4
+    - d) 3
+
+12. **A circular doubly linked list can be traversed:**
+    - a) Only forward
+    - b) Only backward
+    - c) Both forward and backward, infinitely ✓
+    - d) Only once
+
+13. **What is the memory per node in a DLL on a 64-bit system?**
+    - a) 8 bytes
+    - b) 16 bytes ✓
+    - c) 24 bytes
+    - d) 32 bytes
+
+**Answers:** 8-b, 9-b, 10-b, 11-b, 12-c, 13-b
+
+### Additional Exercises (GFG Pattern)
+
+12. **Flatten a multilevel doubly linked list**: Given a DLL where each node has a `child` pointer to another DLL, flatten the entire structure into a single DLL.
+
+13. **Rotate a doubly linked list by N nodes**: Given a DLL, rotate it counter-clockwise by N nodes. Change links, not data.
+
+14. **Remove all occurrences of a key in a DLL**: Delete every occurrence of a given key in a DLL. O(n) time.
+
+15. **Find pairs with given sum in a sorted DLL**: Given a sorted DLL and a target sum, find all pairs whose sum equals the target.
+
+16. **Count triplets with sum equal to target in a sorted DLL**: Count all triplets that sum to a given value in O(n²) time.
+
+17. **Convert a binary tree to a DLL (in-place)**: Given a binary tree, convert it to a DLL following the inorder traversal.
+
+18. **Merge sort on a doubly linked list**: Implement merge sort for a DLL in O(n log n) time and O(log n) space (recursion).
+
+19. **Reverse a doubly linked list in groups of K**: Given a DLL, reverse every group of K nodes.
+
+20. **Sort a DLL containing 0s, 1s, and 2s**: Sort a DLL by changing links, not by swapping data.
+
+21. **Josephus circle using circular DLL**: Solve the Josephus problem for N people and K steps using a circular DLL.
+
+### Complexity Comparison: DLL vs Singly vs Circular
+
+| Operation | Singly | Doubly | Circular Singly | Circular Doubly |
+|-----------|--------|--------|-----------------|-----------------|
+| Forward traversal | O(n) | O(n) | O(n) (infinite) | O(n) (infinite) |
+| Backward traversal | Not supported | O(n) | Not supported | O(n) |
+| Insert at head | O(1) | O(1) | O(1) | O(1) |
+| Delete at head | O(1) | O(1) | O(1) | O(1) |
+| Insert at tail | O(1) w/ tail ptr | O(1) | O(n) | O(1) |
+| Delete at tail | O(n) or O(1) w/ tail | O(1) | O(n) | O(1) |
+| Delete known node | O(n) | O(1) | O(n) | O(1) |
+| Reverse traversal | No | Yes | No | Yes |
+| Memory per node | 1 ptr | 2 ptrs | 1 ptr | 2 ptrs |
    - c) Hash table lookup
    - d) Circular indexing
 

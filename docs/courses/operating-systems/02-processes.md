@@ -2608,6 +2608,198 @@ int main() {
 | **task_struct** | Linux kernel's PCB structure |
 | **createProcess()** | Windows API for process creation |
 
+### TypeScript Process Lifecycle Simulator
+
+The following TypeScript code models process states, transitions, context switching, and IPC:
+
+```typescript
+/**
+ * Process Lifecycle & IPC Simulator
+ * Demonstrates 5-state model, context switching, and pipe IPC
+ */
+type ProcessState = 'new' | 'ready' | 'running' | 'waiting' | 'terminated';
+
+interface Process {
+  pid: number;
+  state: ProcessState;
+  programCounter: number;
+  registers: number[];
+  priority: number;
+  arrivalTime: number;
+  burstTime: number;
+  memorySize: number;
+  waitTime: number;
+  turnaroundTime: number;
+}
+
+class ProcessManager {
+  private processes: Map<number, Process> = new Map();
+  private readyQueue: Process[] = [];
+  private running: Process | null = null;
+  private nextPid = 1;
+  private clock = 0;
+  private totalContextSwitches = 0;
+  private log: string[] = [];
+
+  createProcess(priority: number, burstTime: number): number {
+    const pid = this.nextPid++;
+    const proc: Process = {
+      pid, state: 'new', programCounter: 0,
+      registers: Array(16).fill(0), priority,
+      arrivalTime: this.clock, burstTime,
+      memorySize: 1024 * (1 + Math.floor(Math.random() * 8)),
+      waitTime: 0, turnaroundTime: 0
+    };
+    this.processes.set(pid, proc);
+    this.log.push(`[t=${this.clock}] Process ${pid} created (priority=${priority}, burst=${burstTime})`);
+    this.admitProcess(pid);
+    return pid;
+  }
+
+  private admitProcess(pid: number): void {
+    const proc = this.processes.get(pid);
+    if (!proc || proc.state !== 'new') return;
+    proc.state = 'ready';
+    this.readyQueue.push(proc);
+    this.log.push(`[t=${this.clock}] Process ${pid} admitted → READY queue`);
+  }
+
+  scheduleRoundRobin(quantum: number): void {
+    if (this.readyQueue.length === 0 && !this.running) {
+      this.log.push(`[t=${this.clock}] CPU idle — no processes ready`);
+      this.clock += 1;
+      return;
+    }
+
+    // Preempt running process if quantum expired
+    if (this.running) {
+      this.totalContextSwitches++;
+      this.log.push(`[t=${this.clock}] Context switch: saving state of P${this.running.pid}`);
+      
+      // Save register state (simplified)
+      this.running.registers = this.running.registers.map(r => r + 1);
+      
+      if (this.running.burstTime > 0) {
+        this.running.state = 'ready';
+        this.readyQueue.push(this.running);
+        this.log.push(`[t=${this.clock}] P${this.running.pid} preempted → READY (burst remaining: ${this.running.burstTime})`);
+      }
+    }
+
+    // Pick next process from ready queue
+    if (this.readyQueue.length > 0) {
+      const next = this.readyQueue.shift()!;
+      this.running = next;
+      next.state = 'running';
+
+      // Execute for quantum or until completion
+      const execTime = Math.min(quantum, next.burstTime);
+      next.burstTime -= execTime;
+      this.clock += execTime;
+
+      this.log.push(`[t=${this.clock}] P${next.pid} RUNNING for ${execTime}ms`);
+
+      if (next.burstTime <= 0) {
+        next.state = 'terminated';
+        next.turnaroundTime = this.clock - next.arrivalTime;
+        this.log.push(`[t=${this.clock}] P${next.pid} TERMINATED (turnaround=${next.turnaroundTime})`);
+        this.running = null;
+      }
+    }
+  }
+
+  simulatePipeIPC(senderPid: number, receiverPid: number, data: string): void {
+    this.log.push(`[t=${this.clock}] IPC: P${senderPid} writes "${data}" to pipe`);
+    this.log.push(`[t=${this.clock}] IPC: P${receiverPid} reads "${data}" from pipe`);
+    this.log.push(`[t=${this.clock}] Pipe buffer: kernel-managed ${data.length}-byte transfer`);
+  }
+
+  getStats(): string {
+    const processes = Array.from(this.processes.values());
+    const avgTurnaround = processes.reduce((s, p) => s + p.turnaroundTime, 0) / processes.length;
+    return JSON.stringify({
+      totalProcesses: this.processes.size,
+      contextSwitches: this.totalContextSwitches,
+      avgTurnaroundTime: avgTurnaround.toFixed(2),
+      currentClock: this.clock,
+      runningPid: this.running?.pid ?? null,
+      readyQueueLength: this.readyQueue.length
+    }, null, 2);
+  }
+
+  getLog(): string[] {
+    return [...this.log];
+  }
+}
+
+// Usage: simulate 3 processes with RR scheduling (quantum=5ms)
+const pm = new ProcessManager();
+pm.createProcess(1, 12);  // pid=1, burst=12
+pm.createProcess(1, 8);   // pid=2, burst=8
+pm.createProcess(2, 20);  // pid=3, burst=20
+
+for (let i = 0; i < 15; i++) {
+  pm.scheduleRoundRobin(5);
+}
+
+pm.simulatePipeIPC(1, 2, "Hello from P1 to P2 via pipe");
+console.log(pm.getLog().join('\n'));
+console.log(pm.getStats());
+```
+
+### Additional Chapter Quiz Questions
+
+9. What is the minimum number of process states in the five-state model?
+   - a) 3
+   - b) 4
+   - c) 5
+   - d) 7
+
+10. In Linux, what does the `WCHAN` field in `ps` output represent?
+    - a) The CPU core the process is running on
+    - b) The kernel function the process is blocked in
+    - c) The wait channel for I/O
+    - d) The priority level
+
+11. Which of the following is true about Copy-On-Write (COW)?
+    - a) Pages are copied immediately after fork
+    - b) Pages are shared until one process writes to them
+    - c) COW eliminates the need for fork
+    - d) COW only works with threads
+
+12. What happens when a child process calls `exec()`?
+    - a) The child continues running the parent's code
+    - b) The child's address space is replaced with a new program
+    - c) The parent process is terminated
+    - d) The child becomes a zombie
+
+13. In the `fork()` system call, what value does the child process receive as the return value?
+    - a) The parent's PID
+    - b) 0
+    - c) -1
+    - d) The child's own PID
+
+14. Which IPC mechanism requires the least kernel intervention after setup?
+    - a) Pipes
+    - b) Message queues
+    - c) Shared memory
+    - d) Sockets
+
+**Answers:** 9-c, 10-b, 11-b, 12-b, 13-b, 14-c
+
+### Additional Exercises
+
+#### Basic
+13. Trace the process state transitions of a program that reads a file: start with NEW, show every state change through READY, RUNNING, WAITING (during I/O), back to READY, RUNNING, and finally TERMINATED.
+
+#### Intermediate
+14. Write a TypeScript program that simulates process scheduling using a priority queue. Create 10 processes with random burst times (1-20ms) and priorities (1-5). Schedule them using preemptive priority scheduling and report average waiting time, turnaround time, and CPU utilization.
+15. Use `ps -eo pid,ppid,stat,wchan,comm` on a Linux system and identify: which process has the most children, which processes are in uninterruptible sleep (D state), and what kernel functions they're blocked on. Explain each WCHAN value.
+
+#### Advanced
+16. Implement a complete process lifecycle simulator in TypeScript with: process creation (fork simulation), scheduling (Round Robin), context switching (with register save/restore), IPC via shared memory (simulated with typed arrays), and termination with zombie detection. Measure context switch overhead.
+17. Research and implement the Linux `clone()` syscall's flag-based resource sharing in TypeScript. Create a function `cloneProcess(flags: CloneFlags): number` where `CLONE_VM`, `CLONE_FILES`, `CLONE_SIGHAND`, and `CLONE_THREAD` control whether memory, file descriptors, signal handlers, and thread group are shared. Show how `fork()` and `pthread_create()` are both special cases of `clone()`.
+
 ## Cross-Application Matrix
 
 | Concept | Web Server | Database | Embedded System | Smartphone |

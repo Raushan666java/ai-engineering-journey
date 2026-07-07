@@ -1273,11 +1273,274 @@ def find(self, x: int) -> int:
 | Image segmentation | Union adjacent same-color pixels | O(pixels α(pixels)) |
 | Percolation | Union open sites; check top-bottom connectivity | O(n² α(n²)) |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What is the near-constant time complexity of optimized DSU?**
-   - a) O(1)
-   - b) O(α(n)) ✓
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Forgetting path compression in find | Without compression, find chains stay O(n) after many unions | Always set `parent[x] = find(parent[x])` during find |
+| Union without rank/size heuristic | Always attaching the larger set under the smaller leads to tall trees | Use union by size or rank: attach smaller tree under larger |
+| Using only path compression without union by rank | Still better than naive, but union-by-rank gives optimal amortized O(α(n)) | Use both path compression AND union by rank for inverse-Ackermann complexity |
+| Off-by-one in 0-indexed vs 1-indexed parent array | Parent array initialized with 0 or n+1 gives wrong sentinel values | Initialize `parent[i] = i` for all valid indices; use -1 sentinel only if tracking size separately |
+| Not handling the case where both elements are already in the same set | Union-ing same set decrements component count incorrectly | Check `rootX === rootY` before merging; if equal, return without decrementing |
+| Using DSU for undirected graphs only without adapting for directed | DSU works naturally for undirected connectivity; directed requires SCC algorithms (Tarjan/Kosaraju) | Use DSU for undirected graphs; use SCC algorithms for directed connectivity |
+| Not resetting DSU between test cases | Parent array retains state from previous test case | Reinitialize DSU for each test case with `new DSU(n)` |
+| Confusing parent array index with node label | If node labels are [1..n] but array is 0-indexed, accessing parent[i] uses wrong index | Always use internal 0-indexing or map external labels to 0..n-1 |
+
+### TypeScript Disjoint Set Union Implementation
+
+```typescript
+class DSU {
+    private parent: number[];
+    private rank: number[];
+    private components: number;
+
+    constructor(n: number) {
+        this.parent = new Array(n).fill(0).map((_, i) => i);
+        this.rank = new Array(n).fill(0);
+        this.components = n;
+    }
+
+    find(x: number): number {
+        if (this.parent[x] !== x) {
+            this.parent[x] = this.find(this.parent[x]); // path compression
+        }
+        return this.parent[x];
+    }
+
+    findIterative(x: number): number {
+        // Iterative find with path compression
+        let root = x;
+        while (this.parent[root] !== root) root = this.parent[root];
+        // Path compression: make all nodes point to root
+        while (x !== root) {
+            const next = this.parent[x];
+            this.parent[x] = root;
+            x = next;
+        }
+        return root;
+    }
+
+    union(x: number, y: number): boolean {
+        const rootX = this.find(x);
+        const rootY = this.find(y);
+        if (rootX === rootY) return false;
+
+        // Union by rank
+        if (this.rank[rootX] < this.rank[rootY]) {
+            this.parent[rootX] = rootY;
+        } else if (this.rank[rootX] > this.rank[rootY]) {
+            this.parent[rootY] = rootX;
+        } else {
+            this.parent[rootY] = rootX;
+            this.rank[rootX]++;
+        }
+        this.components--;
+        return true;
+    }
+
+    connected(x: number, y: number): boolean {
+        return this.find(x) === this.find(y);
+    }
+
+    countComponents(): number {
+        return this.components;
+    }
+
+    // Track size instead of rank
+    getComponentSize(x: number): number {
+        const root = this.find(x);
+        // Assumes size stored in negative values; alternative implementation
+        return this.rank[root] + 1; // approximate based on rank
+    }
+}
+
+// DSU with size tracking
+class DSUWithSize {
+    private parent: number[];
+    private size: number[];
+
+    constructor(n: number) {
+        this.parent = new Array(n).fill(0).map((_, i) => i);
+        this.size = new Array(n).fill(1);
+    }
+
+    find(x: number): number {
+        while (this.parent[x] !== x) {
+            this.parent[x] = this.parent[this.parent[x]]; // path halving
+            x = this.parent[x];
+        }
+        return x;
+    }
+
+    union(x: number, y: number): boolean {
+        let rootX = this.find(x);
+        let rootY = this.find(y);
+        if (rootX === rootY) return false;
+
+        // Union by size: attach smaller to larger
+        if (this.size[rootX] < this.size[rootY]) {
+            [rootX, rootY] = [rootY, rootX]; // ensure rootX is larger
+        }
+        this.parent[rootY] = rootX;
+        this.size[rootX] += this.size[rootY];
+        return true;
+    }
+
+    getSize(x: number): number {
+        return this.size[this.find(x)];
+    }
+}
+
+// DSU with rollback (for offline dynamic connectivity)
+class DSUWithRollback {
+    private parent: number[];
+    private size: number[];
+    private history: { u: number; v: number; sizeU: number }[] = [];
+
+    constructor(n: number) {
+        this.parent = new Array(n).fill(0).map((_, i) => i);
+        this.size = new Array(n).fill(1);
+    }
+
+    find(x: number): number {
+        while (this.parent[x] !== x) x = this.parent[x];
+        return x;
+    }
+
+    union(x: number, y: number): boolean {
+        let rootX = this.find(x);
+        let rootY = this.find(y);
+        if (rootX === rootY) return false;
+        if (this.size[rootX] < this.size[rootY]) [rootX, rootY] = [rootY, rootX];
+        this.history.push({ u: rootX, v: rootY, sizeU: this.size[rootX] });
+        this.parent[rootY] = rootX;
+        this.size[rootX] += this.size[rootY];
+        return true;
+    }
+
+    snapshot(): number { return this.history.length; }
+
+    rollback(snap: number): void {
+        while (this.history.length > snap) {
+            const { u, v, sizeU } = this.history.pop()!;
+            this.parent[v] = v;
+            this.size[u] = sizeU;
+        }
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+8. **The inverse Ackermann function α(n) for practical values of n (≤ 10⁶) is:**
+   - a) ≤ 5 ✓
+   - b) ≤ 10
+   - c) ≤ log₂n
+   - d) ≤ n
+
+9. **What is the worst-case time for m operations on a DSU with union by rank and path compression?**
+   - a) O(m)
+   - b) O(m α(n)) ✓
+   - c) O(m log n)
+   - d) O(m n)
+
+10. **Path compression alone (without union by rank) gives amortized complexity of:**
+    - a) O(α(n))
+    - b) O(log n) ✓
+    - c) O(n)
+    - d) O(1)
+
+11. **DSU with union by rank without path compression has height:**
+    - a) O(n)
+    - b) O(log n) ✓
+    - c) O(α(n))
+    - d) O(1)
+
+12. **In Kruskal's algorithm, DSU is used to:**
+    - a) Sort the edges by weight
+    - b) Detect cycles in O(α(n)) time ✓
+    - c) Find shortest paths
+    - d) Build the adjacency list
+
+13. **Number of Islands II (LC 305): Initially all cells are water. When land appears, DSU can track islands in:**
+    - a) O(1) per operation
+    - b) O(α(n)) per operation ✓
+    - c) O(log n) per operation
+    - d) O(n²) per operation
+
+**Answers:** 8-a, 9-b, 10-b, 11-b, 12-b, 13-b
+
+### Additional Exercises (GFG Pattern)
+
+11. **Number of provinces (LC 547)**: Given an adjacency matrix of friend connections, find the total number of friend circles (provinces).
+
+12. **Accounts merge (LC 721)**: Given a list of accounts where each account has a name and emails, merge accounts belonging to the same person. Use DSU on email indices.
+
+13. **Redundant connection (LC 684)**: Given a graph (tree + 1 extra edge), find the edge whose removal makes it a tree. Use DSU; the first edge that connects already-connected nodes is the answer.
+
+14. **Redundant connection II (LC 685)**: Find the redundant edge in a rooted directed graph. Same concept but with directed edges — handle cases of two parents and cycles.
+
+15. **Minimum cost to connect cities (Kruskal's MST)**: Given n cities and roads with costs, find the minimum cost to connect all cities. Use DSU + sort edges by weight.
+
+16. **Longest consecutive sequence (LC 128)**: Given an unsorted array, find the length of the longest consecutive elements sequence. Solve in O(n) using a hash map of DSU-like intervals.
+
+17. **Number of connected components in an undirected graph (LC 323)**: Given n nodes and edges list, count connected components using DSU.
+
+18. **Regions cut by slashes (LC 959)**: n×n grid with slashes '/' and '\\'. Find the number of regions created. Use DSU on subdivided cells.
+
+19. **Evaluating division (LC 399)**: Given equations like a/b = 2.0, evaluate queries like a/c. Use DSU with weight tracking (weighted union-find) to maintain ratios.
+
+20. **Swim in rising water (LC 778)**: An n×n grid with elevation values. Rain falls, water rises. Find the minimum time when there's a path from (0,0) to (n-1,n-1). Use DSU with increasing time.
+
+### DSU Variants Comparison
+
+| Variant | find | union | Space | Additional Features | Use Case |
+|---------|------|-------|-------|-------------------|----------|
+| Naive | O(n) | O(n) | O(n) | None | Educational only |
+| Union by rank | O(log n) | O(log n) | O(n) | Rank array | Teaching basics |
+| Path compression | O(log n) amortized | O(log n) amortized | O(n) | None | When rank not needed |
+| Union by rank + path compression | O(α(n)) amortized | O(α(n)) | O(n) | Both arrays | Production standard |
+| Union by size | O(α(n)) amortized | O(α(n)) | O(n) | Component sizes | Size queries needed |
+| Weighted DSU | O(α(n)) amortized | O(α(n)) | O(n) | Ratio/difference array | Equations with ratios |
+| DSU with rollback | O(log n) (no path compression) | O(log n) | O(n) | History stack | Offline dynamic connectivity |
+| Persistent DSU | O(log n) | O(log n) | O(n log n) | Versioned arrays | Time-travel queries |
+| 2D DSU | O(α(n)) amortized | O(α(n)) | O(n²) | Grid neighbor mapping | Grid/pixel connectivity |
+
+### Classic Graph Algorithms with DSU
+
+```typescript
+// Kruskal's MST
+type Edge = { u: number; v: number; weight: number };
+
+function kruskalMST(vertices: number, edges: Edge[]): Edge[] {
+    const dsu = new DSU(vertices);
+    edges.sort((a, b) => a.weight - b.weight);
+    const mst: Edge[] = [];
+    for (const e of edges) {
+        if (dsu.union(e.u, e.v)) {
+            mst.push(e);
+            if (mst.length === vertices - 1) break;
+        }
+    }
+    return mst;
+}
+
+// Connected components after each edge addition (online)
+function connectedComponentsTimeline(
+    n: number, 
+    edges: [number, number][]
+): number[] {
+    const dsu = new DSU(n);
+    const result: number[] = [];
+    for (const [u, v] of edges) {
+        dsu.union(u, v);
+        result.push(dsu.countComponents());
+    }
+    return result;
+}
+```
    - c) O(log n)
    - d) O(n)
 

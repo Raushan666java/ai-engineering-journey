@@ -403,6 +403,347 @@ List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 
 **Caveat:** Multiple JOIN FETCHs on multiple collections create a Cartesian product. Fetch one collection per query, or use `@BatchSize`.
 
+---
+
+### Q16: What is the difference between `@SequenceGenerator` `allocationSize` and database sequence increment?
+
+**Answer:**
+
+This is a critical configuration point that causes subtle bugs. `allocationSize` in `@SequenceGenerator` tells Hibernate how many IDs to pre-allocate in memory. The database sequence `INCREMENT BY` value must match — otherwise, IDs will collide or leave gaps.
+
+```java
+// CORRECT: allocationSize = DB sequence increment
+@Id
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "order_seq")
+@SequenceGenerator(name = "order_seq", sequenceName = "order_sequence", allocationSize = 50)
+private Long id;
+
+// Database: CREATE SEQUENCE order_sequence INCREMENT BY 50;
+// Hibernate pre-allocates 50 IDs (1, 51, 101, 151...)
+// Each app instance gets its own block of 50 → no contention
+```
+
+**Mismatch scenarios:**
+
+| allocationSize | DB INCREMENT BY | Behavior |
+|---------------|-----------------|----------|
+| 50 | 50 | ✅ Correct — IDs: 1, 51, 101 (no waste, no collision) |
+| 50 | 1 | ❌ Hibernate assumes next ID is 51, DB gives 2 — collision! |
+| 1 | 50 | ⚠️ Hibernate calls sequence for every INSERT — wastes DB round-trips |
+| 50 | 50 (2 instances) | ✅ Instance A gets 1-50, Instance B gets 51-100 — no conflict |
+
+**Best practice:** Set `allocationSize` to the same value as `INCREMENT BY` in your DDL. Use 50 as a reasonable default — it balances pre-allocation memory against DB round-trips.
+
+```sql
+-- PostgreSQL
+CREATE SEQUENCE order_sequence INCREMENT BY 50 START 1;
+
+-- Oracle
+CREATE SEQUENCE order_sequence INCREMENT BY 50 START WITH 1;
+```
+
+**Hibernate 6 `PooledLo` optimizer** (default): Pre-allocates IDs in blocks. If the application restarts, some IDs in the pre-allocated block may be lost — that's expected and harmless.
+
+---
+
+### Q17: How do you map PostgreSQL `jsonb` columns with Hibernate 6?
+
+**Answer:**
+
+Hibernate 6 provides first-class support for JSON columns via the `JsonType` from the `hibernate-types` library (or the built-in Hibernate 6.2+ `@JdbcType` and `@JdbcTypeCode`).
+
+```xml
+<dependency>
+    <groupId>com.vladmihalcea</groupId>
+    <artifactId>hibernate-types-6</artifactId>
+    <version>2.21.1</version>
+</dependency>
+```
+
+```java
+@Entity
+@Table(name = "documents")
+@TypeDef(name = "jsonb", typeClass = JsonType.class)
+public class Document {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @Type(JsonType.class)
+    @Column(name = "metadata", columnDefinition = "jsonb")
+    private Map<String, Object> metadata;
+
+    @Type(JsonType.class)
+    @Column(name = "tags", columnDefinition = "jsonb")
+    private List<String> tags;
+
+    @Type(JsonType.class)
+    @Column(name = "audit_trail", columnDefinition = "jsonb")
+    private List<AuditEntry> auditTrail;
+}
+
+// POJO for JSON deserialization
+public class AuditEntry {
+    private String action;
+    private String performedBy;
+    private LocalDateTime timestamp;
+    // Must have no-arg constructor, getters, setters
+}
+```
+
+**Native Hibernate 6.2+ approach (no extra dependency):**
+
+```java
+@Entity
+@Table(name = "products")
+public class Product {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(columnDefinition = "jsonb")
+    private Map<String, String> attributes;
+
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(columnDefinition = "jsonb")
+    private List<String> tags;
+}
+```
+
+**Querying JSON fields with native SQL:**
+
+```java
+@Query(value = """
+    SELECT * FROM documents
+    WHERE metadata @> '{"status": "active"}'::jsonb
+    ORDER BY id DESC
+    """, nativeQuery = true)
+List<Document> findActiveDocuments();
+```
+
+> **Pro Tip:** Native queries are needed for JSON path queries — JPQL does not support JSON operators. Keep JSON columns for semi-structured data only; use proper normalized columns for query-critical fields.
+
+---
+
+### Q18: How do you handle database migrations in a distributed team without conflicts?
+
+**Answer:**
+
+In a team of 5+ developers, migration version conflicts are inevitable. Here's a strategy to minimize them:
+
+**Strategy 1: Timestamp-based versions** — use `V20240707_120000__description.sql` instead of `V1`, `V2`, etc. This eliminates the "who gets V4?" problem:
+
+```sql
+-- Each developer creates migrations with the current timestamp
+-- V20240707_120000__add_product_table.sql  (Alice, 10 AM)
+-- V20240707_143000__add_reviews_table.sql  (Bob, 2:30 PM)
+-- V20240708_090000__add_index_on_products.sql (Alice, next day)
+```
+
+**Strategy 2: Git-based conflict detection** — use a CI check that detects version collisions:
+
+```typescript
+// TypeScript migration conflict detector
+interface MigrationFile {
+  version: string;
+  path: string;
+  author: string;
+  checksum: string;
+}
+
+class MigrationConflictDetector {
+  detectConflicts(migrations: MigrationFile[]): string[] {
+    const conflicts: string[] = [];
+    const versionMap = new Map<string, MigrationFile[]>();
+
+    for (const m of migrations) {
+      if (!versionMap.has(m.version)) {
+        versionMap.set(m.version, []);
+      }
+      versionMap.get(m.version)!.push(m);
+    }
+
+    for (const [version, files] of versionMap) {
+      if (files.length > 1) {
+        conflicts.push(
+          `Version ${version} conflict: ${files.map(f => `${f.path} (${f.author})`).join(', ')}`
+        );
+      }
+    }
+    return conflicts;
+  }
+}
+```
+
+**Strategy 3: Per-developer version ranges** — each developer claims a version block:
+- Alice: V001–V099
+- Bob: V100–V199
+- Charlie: V200–V299
+
+```sql
+-- V042__alice_feature.sql
+-- V142__bob_refactor.sql
+-- V243__charlie_fix.sql
+```
+
+**Strategy 4: Always use Flyway's `baseline-on-migrate: true`** for existing databases:
+
+```yaml
+spring:
+  flyway:
+    baseline-on-migrate: true
+    baseline-version: 0
+```
+
+This allows Flyway to start tracking migrations on a database that already has tables, without failing.
+
+---
+
+## Common Mistakes with Database Migrations (GFG-Style)
+
+### Mistake 1: Editing an already-applied migration
+```sql
+-- ❌ WRONG: You changed V2 after it was applied to production
+-- Flyway checksums the file content — any change fails validation
+-- FlywayException: "Migration checksum mismatch for migration version 2"
+
+-- ✅ CORRECT: Create V3 with the corrected schema
+-- V3__fix_email_column_type.sql
+ALTER TABLE users ALTER COLUMN email TYPE VARCHAR(320);
+```
+
+### Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations
+```sql
+-- ❌ WRONG: Fails if the column was already dropped
+ALTER TABLE users DROP COLUMN temp_field;
+
+-- ✅ CORRECT: Safe even if column doesn't exist
+ALTER TABLE users DROP COLUMN IF EXISTS temp_field;
+```
+
+### Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production
+```properties
+# ❌ WRONG: Hibernate can drop columns or change types unexpectedly
+spring.jpa.hibernate.ddl-auto=update
+
+# ✅ CORRECT: Use Flyway/Liquibase for all schema changes
+spring.jpa.hibernate.ddl-auto=validate
+spring.flyway.enabled=true
+```
+
+### Mistake 4: Not testing migrations against a real database
+```java
+// ✅ CORRECT: Testcontainers migration test
+@SpringBootTest
+@Testcontainers
+class MigrationTest {
+
+    @Container
+    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16");
+
+    @DynamicPropertySource
+    static void configure(DynamicPropertyRegistry reg) {
+        reg.add("spring.datasource.url", postgres::getJdbcUrl);
+        reg.add("spring.datasource.username", postgres::getUsername);
+        reg.add("spring.datasource.password", postgres::getPassword);
+    }
+
+    @Test
+    void allMigrationsApplySuccessfully() {
+        // If Flyway applies without exception, migrations are valid
+        assertThat(postgres.isRunning()).isTrue();
+    }
+}
+```
+
+## JPA vs Hibernate Comparison Table
+
+| Aspect | JPA (Jakarta Persistence) | Hibernate |
+|--------|--------------------------|-----------|
+| Type | Specification (interface) | Implementation |
+| Provider-neutral | Yes — any JPA implementation works | No — proprietary APIs are Hibernate-specific |
+| Caching | Defines L1 cache concept | Adds L2 cache, query cache, custom regions |
+| Criteria API | Type-safe but verbose | Hibernate Criteria (legacy) vs JPA Criteria |
+| @GeneratedValue | SEQUENCE, IDENTITY, TABLE, AUTO | Adds GENERATION_TYPE.UUID (Hibernate 6+) |
+| JSON support | None (no standard) | @Type(JsonType.class), @JdbcTypeCode(SqlTypes.JSON) |
+| Batch fetching | No standard | @BatchSize, FetchMode.SUBSELECT |
+| Multitenancy | Limited | Full discriminator/SCHEMA/DATABASE support |
+| Performance tuning | Basic | Query plan hints, statistics, SQL logging |
+
+**When to use pure JPA:** You want to switch between providers (e.g., Hibernate → EclipseLink). **When to use Hibernate-specific features:** You need caching, JSON mapping, batch fetching, or multitenancy — which covers most production applications.
+
+## Mermaid: Sequence Generation Flow
+
+```mermaid
+sequenceDiagram
+    participant App as Application
+    participant H as Hibernate
+    participant DB as Database
+
+    App->>H: persist(entity)
+    H->>H: Check ID generation strategy
+
+    alt IDENTITY
+        H->>DB: INSERT INTO table (cols) VALUES (vals)
+        DB-->>H: RETURNING id
+        H-->>App: Entity with ID assigned
+
+    else SEQUENCE
+        H->>H: Any pre-allocated IDs left?
+        alt Yes (allocationSize buffer)
+            H->>H: Use next ID from buffer
+        else No
+            H->>DB: SELECT nextval('seq_name')
+            DB-->>H: Next block start (e.g., 51)
+            H->>H: Pre-allocate 50 IDs (51-100)
+        end
+        H->>DB: INSERT ... WITH KNOWN ID
+        DB-->>H: Success
+    else UUID
+        H->>H: Generate UUID v4
+        H->>DB: INSERT ... WITH KNOWN UUID
+        DB--->>H: Success
+    end
+```
+
+## Chapter Quiz — Database (Part 2)
+
+4. What happens when `allocationSize` in `@SequenceGenerator` does not match the database `INCREMENT BY` value?
+    - A) Nothing — Hibernate auto-detects the correct value
+    - B) IDs may collide or be wasted
+    - C) The application fails to start
+    - D) Hibernate reverts to IDENTITY strategy
+
+<details>
+<summary>Answer</summary>
+**B) IDs may collide or be wasted.** If `allocationSize` > `INCREMENT BY`, Hibernate assumes the next ID is higher than what the DB will return, causing collisions. They must match exactly.
+</details>
+
+5. Which dependency is NOT needed for mapping JSON columns in Hibernate 6.2+?
+    - A) hibernate-types-6
+    - B) `@JdbcTypeCode(SqlTypes.JSON)`
+    - C) `@Column(columnDefinition = "jsonb")`
+    - D) Hibernate Validator
+
+<details>
+<summary>Answer</summary>
+**D) Hibernate Validator.** Hibernate 6.2+ has built-in JSON support via `@JdbcTypeCode`. The hibernate-types library is optional. Validator is for bean validation, not JSON mapping.
+</details>
+
+6. What is the best strategy to avoid migration version conflicts in a large team?
+    - A) Use a single V1.sql file that everyone edits
+    - B) Use timestamp-based versions (V20240707_120000)
+    - C) Use random version numbers
+    - D) Store all migrations in a single directory without versioning
+
+<details>
+<summary>Answer</summary>
+**B) Timestamp-based versions.** Timestamps eliminate the "who gets V4?" problem because every developer's migration has a unique, ordered timestamp. Git merge conflicts are also easier to resolve.
+</details>
+
 ## Concept Comparison Table
 
 | Concept | Definition | Key Distinction | Use Case |

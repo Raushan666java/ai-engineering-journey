@@ -613,15 +613,439 @@ public class ProductService {
 
 Use cache-aside with TTL for most services. Never cache sensitive data (PII, financial details) without explicit TTL and encryption. Always consider the cache-to-DB consistency window and whether stale data is acceptable for the use case.
 
+---
+
+### Q24: What is idempotency and how do you implement it in microservices?
+
+**Answer:**
+
+Idempotency means that executing the same operation multiple times has the same effect as executing it once. In distributed systems, retries are inevitable (network timeouts, leader elections), and without idempotency, retries cause duplicate orders, double charges, and data corruption.
+
+**Idempotency key pattern:**
+
+```java
+@Service
+public class PaymentService {
+
+    private final PaymentRepository paymentRepo;
+    private final IdempotencyRegistry idempotencyRegistry;
+
+    @Transactional
+    public PaymentResult processPayment( PaymentRequest request) {
+        // 1. Check idempotency — has this key been processed?
+        String idempotencyKey = request.idempotencyKey();
+        if (idempotencyRegistry.exists(idempotencyKey)) {
+            // Return the previously computed result — safe retry
+            return idempotencyRegistry.getResult(idempotencyKey);
+        }
+
+        // 2. Process the payment (deduct funds, etc.)
+        PaymentResult result = paymentGateway.charge(
+            request.amount(), request.currency());
+
+        // 3. Store the result keyed by idempotency key
+        idempotencyRegistry.store(idempotencyKey, result);
+
+        return result;
+    }
+}
+
+// Idempotency registry implementations:
+// 1. Redis with TTL: SET idempotency:key result NX EX 86400
+// 2. Database with unique constraint: idempotency_key VARCHAR(255) UNIQUE
+// 3. In-memory HashMap (for single-instance, not for production)
+```
+
+**Database-level idempotency with unique constraints:**
+
+```java
+@Entity
+@Table(name = "payment_events", uniqueConstraints =
+    @UniqueConstraint(name = "uk_idempotency_key", columnNames = "idempotency_key"))
+public class PaymentEvent {
+    @Id @GeneratedValue private Long id;
+    @Column(name = "idempotency_key", nullable = false)
+    private String idempotencyKey;
+    private String status;
+    // ...
+}
+
+@Transactional
+public PaymentResult processPayment(PaymentRequest request) {
+    try {
+        PaymentEvent event = new PaymentEvent();
+        event.setIdempotencyKey(request.idempotencyKey());
+        event.setStatus("PROCESSING");
+        paymentEventRepo.save(event);  // Unique constraint prevents duplicates
+
+        PaymentResult result = paymentGateway.charge(request.amount());
+        event.setStatus("COMPLETED");
+        return result;
+    } catch (DataIntegrityViolationException e) {
+        // Duplicate idempotency key → return stored result
+        return paymentEventRepo.findByStatus("COMPLETED")
+            .orElseThrow(() -> new RetryableException("Previous request in progress"));
+    }
+}
+```
+
+**Idempotency requirements by HTTP method:**
+| Method | Idempotent? | Safe to retry? |
+|--------|------------|----------------|
+| GET | Yes | Always |
+| PUT | Yes (full update) | Yes |
+| DELETE | Yes | Yes (second delete returns 404 — same state) |
+| POST | No | ❌ Must use idempotency-key header |
+| PATCH | Depends | ❌ Use idempotency-key |
+
+---
+
+### Q25: How do you handle schema changes in event-driven microservices?
+
+**Answer:**
+
+Event schemas evolve over time. In event-driven systems, consumers and producers are deployed independently, so you must support multiple schema versions simultaneously.
+
+**Strategy 1: Schema registry (Avro/Protobuf with Schema Registry):**
+
+```java
+// Producer sends schema-compatible events
+// Schema Registry enforces compatibility rules
+
+// Avro schema v1
+record OrderEventV1 {
+    string orderId;
+    string customerId;
+    double total;
+}
+
+// Avro schema v2 (backward compatible — added optional field)
+record OrderEventV2 {
+    string orderId;
+    string customerId;
+    double total;
+    union {null, string} couponCode = null;  // default null
+}
+
+// Compatibility types:
+// BACKWARD: New schema can read old data (default) — add optional fields
+// FORWARD: Old schema can read new data — add fields with defaults
+// FULL: Both backward and forward compatible
+// NONE: No compatibility checks — use with caution
+```
+
+**Strategy 2: Event versioning in the payload:**
+
+```java
+// JSON event with version field
+public class OrderEvent {
+    private int eventVersion;          // 1, 2, 3...
+    private String eventType;          // "OrderCreated"
+    private Map<String, Object> data;  // Version-specific payload
+
+    public OrderEvent(int version, String type, Map<String, Object> data) {
+        this.eventVersion = version;
+        this.eventType = type;
+        this.data = data;
+    }
+}
+
+// Consumer handles multiple versions
+@Component
+public class OrderEventConsumer {
+
+    @KafkaListener(topics = "order-events")
+    public void consume(OrderEvent event) {
+        switch (event.getEventVersion()) {
+            case 1 -> handleV1(event.getData());
+            case 2 -> handleV2(event.getData());
+            default -> throw new UnsupportedEventException(
+                "Version " + event.getEventVersion() + " not supported");
+        }
+    }
+
+    private void handleV1(Map<String, Object> data) {
+        String orderId = (String) data.get("orderId");
+        double total = (double) data.get("total");
+        // V1 has no couponCode
+    }
+
+    private void handleV2(Map<String, Object> data) {
+        String orderId = (String) data.get("orderId");
+        double total = (double) data.get("total");
+        String couponCode = (String) data.getOrDefault("couponCode", null);
+        // V2 added couponCode
+    }
+}
+```
+
+**Strategy 3: Dual-write and event migration:**
+- Write to both old and new event topics during migration
+- Consumers gradually switch from old to new topic
+- Once all consumers migrate, stop writing to the old topic
+
+---
+
+## Common Mistakes in Advanced Microservices (GFG-Style)
+
+### Mistake 1: Not setting timeouts on all external calls
+```java
+// ❌ WRONG: No timeout — thread blocks indefinitely
+restTemplate.getForObject("/users/{id}", UserDto.class, id);
+
+// ✅ CORRECT: Always set connect and read timeouts
+@Bean
+public RestTemplate restTemplate() {
+    return new RestTemplateBuilder()
+        .connectTimeout(Duration.ofSeconds(2))
+        .readTimeout(Duration.ofSeconds(5))
+        .build();
+}
+
+// With WebClient:
+WebClient.builder()
+    .baseUrl("http://user-service")
+    .clientConnector(new ReactorClientHttpConnector(
+        HttpClient.create()
+            .responseTimeout(Duration.ofSeconds(5))
+            .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 2000)
+    ))
+    .build();
+```
+
+### Mistake 2: Cache stampede without protection
+```java
+// ❌ WRONG: 100 concurrent requests all miss cache, all hit DB
+public Product getProduct(Long id) {
+    Product cached = cache.get(id);
+    if (cached == null) {
+        cached = productRepo.findById(id).orElseThrow();
+        cache.put(id, cached);  // 100 threads all do this
+    }
+    return cached;
+}
+
+// ✅ CORRECT: Use locking to allow only one DB hit
+public Product getProduct(Long id) {
+    Product cached = cache.get(id);
+    if (cached == null) {
+        synchronized (this) {
+            cached = cache.get(id);  // Double-check
+            if (cached == null) {
+                cached = productRepo.findById(id).orElseThrow();
+                cache.put(id, cached);
+            }
+        }
+    }
+    return cached;
+}
+
+// For distributed apps: Redis Redlock or SET NX
+```
+
+### Mistake 3: Treating all services the same in deployment
+```yaml
+# ❌ WRONG: Same resources for all services
+# order-service: 2 CPU, 4GB RAM
+# audit-service: 2 CPU, 4GB RAM (over-provisioned — audit is I/O bound)
+
+# ✅ CORRECT: Right-size per service
+# order-service: 4 CPU, 8GB RAM (CPU-intensive, large heap)
+# audit-service: 1 CPU, 2GB RAM (light, async writes)
+# payment-service: 2 CPU, 4GB RAM (balanced, strict latency requirements)
+```
+
+## Event-Driven vs Request-Driven Comparison Table
+
+| Aspect | Request-Driven (REST) | Event-Driven (Kafka/RabbitMQ) |
+|--------|----------------------|------------------------------|
+| Coupling | Temporal — caller waits for response | Temporal decoupling — fire and forget |
+| Availability | Requires all services up | Partial availability — events queued |
+| Consistency | Strong (if transactional) | Eventually consistent |
+| Debugging | Easy — linear request flow | Complex — need tracing across events |
+| Scaling | Scale by request volume | Scale by event throughput + consumer groups |
+| Retry | Client-side retry with idempotency | Broker-based retry (DLQ pattern) |
+| Schema evolution | API versioning (URL/header) | Schema registry compatibility |
+| Best for | CRUD, queries, real-time responses | Notifications, workflows, data synchronization |
+
+**When to use request-driven:** User-facing operations that need immediate response (checkout, login). **When to use event-driven:** Background processing, cross-service coordination, data replication.
+
+## TypeScript Distributed Cache Simulator
+
+```typescript
+interface CacheEntry<T> {
+  value: T;
+  expiresAt: number;
+}
+
+class DistributedCacheSimulator {
+  private store = new Map<string, CacheEntry<unknown>>();
+  private locks = new Map<string, string>();  // key → lock owner
+
+  async get<T>(key: string): Promise<T | null> {
+    const entry = this.store.get(key);
+    if (!entry) return null;
+    if (Date.now() > entry.expiresAt) {
+      this.store.delete(key);
+      return null;
+    }
+    return entry.value as T;
+  }
+
+  async set<T>(key: string, value: T, ttlMs: number): Promise<void> {
+    this.store.set(key, { value, expiresAt: Date.now() + ttlMs });
+  }
+
+  /** Cache stampede prevention using distributed lock */
+  async getOrCompute<T>(
+    key: string,
+    ttlMs: number,
+    computeFn: () => Promise<T>,
+    lockTimeoutMs = 5000
+  ): Promise<T> {
+    // Fast path: return cached value
+    const cached = await this.get<T>(key);
+    if (cached !== null) return cached;
+
+    // Try to acquire lock
+    const lockId = `lock:${key}`;
+    const lockToken = Math.random().toString(36);
+
+    if (this.locks.has(lockId)) {
+      // Another thread is computing — wait and retry
+      await new Promise(resolve => setTimeout(resolve, 100));
+      const retry = await this.get<T>(key);
+      if (retry !== null) return retry;
+    }
+
+    this.locks.set(lockId, lockToken);
+    try {
+      // Double-check cache
+      const again = await this.get<T>(key);
+      if (again !== null) return again;
+
+      // Compute value
+      const value = await computeFn();
+      await this.set(key, value, ttlMs);
+      return value;
+    } finally {
+      if (this.locks.get(lockId) === lockToken) {
+        this.locks.delete(lockId);
+      }
+    }
+  }
+
+  /** Distributed cache stats */
+  stats(): { entries: number; locks: number; keys: string[] } {
+    return {
+      entries: this.store.size,
+      locks: this.locks.size,
+      keys: [...this.store.keys()]
+    };
+  }
+}
+
+// Demonstration
+const cache = new DistributedCacheSimulator();
+async function demo() {
+  const result = await cache.getOrCompute(
+    'product:42',
+    60000,
+    async () => {
+      console.log('[COMPUTE] Loading from database...');
+      await new Promise(r => setTimeout(r, 200));
+      return { id: 42, name: 'Widget', price: 29.99 };
+    }
+  );
+  console.log('[RESULT]', result);
+  console.log('[STATS]', cache.stats());
+}
+demo();
+```
+
+## Mermaid: Distributed Caching Architecture
+
+```mermaid
+flowchart TD
+    subgraph Clients
+        A[API Gateway]
+    end
+
+    subgraph Cache Layer
+        B[Redis Cluster<br/>Primary]
+        C[Redis Replica 1]
+        D[Redis Replica 2]
+    end
+
+    subgraph Services
+        E[Order Service]
+        F[Product Service]
+        G[User Service]
+    end
+
+    subgraph Database
+        H[(PostgreSQL<br/>Primary)]
+        I[(PostgreSQL<br/>Replica)]
+    end
+
+    A --> B
+    B --> C
+    B --> D
+
+    E --> B
+    E --> H
+    F --> B
+    F --> H
+    G --> B
+    G --> H
+
+    H -.->|Streaming Replication| I
+    B -.->|Cache invalidation| E
+    B -.->|Cache invalidation| F
+
+    style B fill:#4caf50,color:#fff
+    style C fill:#81c784,color:#fff
+    style D fill:#81c784,color:#fff
+    style H fill:#2196f3,color:#fff
+    style I fill:#64b5f6,color:#fff
+```
+
+## Chapter Quiz — Advanced Microservices
+
+4. What is the primary mechanism for idempotency in REST APIs?
+    - A) Using POST for all requests
+    - B) An idempotency-key header that the client sends
+    - C) Using HTTP Basic Auth
+    - D) Sending requests twice
+
+<details>
+<summary>Answer</summary>
+**B) An idempotency-key header.** The client generates a unique key for each operation. The server stores the result keyed by this value, so retries with the same key return the stored result instead of executing the operation again.
+</details>
+
+5. Which schema evolution strategy allows new consumers to read old events?
+    - A) BACKWARD compatibility
+    - B) FORWARD compatibility
+    - C) FULL compatibility
+    - D) NONE
+
+<details>
+<summary>Answer</summary>
+**A) BACKWARD compatibility.** Backward compatibility means the new schema can read data written with the old schema — achieved by making new fields optional with defaults.
+</details>
+
+6. What is the most effective cache stampede prevention pattern in distributed systems?
+    - A) Longer TTL
+    - B) Cache-aside with distributed locking
+    - C) Using a larger cache
+    - D) Disabling the cache
+
+<details>
+<summary>Answer</summary>
+**B) Cache-aside with distributed locking.** A distributed lock (Redis SET NEX) ensures only one request hits the database on cache miss. Other requests wait briefly and read the populated cache.
+</details>
+
 ## Concept Comparison Table
-
-| Concept | Definition | Key Distinction | Use Case |
-|---------|-----------|-----------------|----------|
-| Interface | Contract without state | Multiple inheritance of type | API contracts |
-| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
-| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
-
-## Quick Reference
 
 | Topic | Key Points | Interview Frequency |
 |-------|-----------|-------------------|

@@ -1931,11 +1931,237 @@ bool isAVL(AVLNode<T>* node) {
 | Network routing table | Fast prefix lookup, stable |
 | Gaming (entity lookup) | Low latency, search-heavy workload |
 
-## Chapter Quiz
+## Common Mistakes & GFG Deepening
 
-1. **What balance factor values does AVL permit?**
-   - a) 0, 1, 2
-   - b) -1, 0, 1 ✅
+### Common Mistakes (GFG-Style)
+
+| Mistake | Why It's Wrong | Correct Approach |
+|---------|----------------|------------------|
+| Forgetting to update height after rotation | Height of subtrees changes after rotation — old height gives wrong balance | Always recompute height = 1 + max(left.height, right.height) after each rotation |
+| Checking balance before updating heights | Balance factor uses stale height values → false violation or false pass | Update heights first, then check balance |
+| Wrong rotation case classification for insertion | Insert into left-left vs left-right of heavy subtree determines single vs double rotation | Map violation pattern → rotation type: LL (right-rotate), RR (left-rotate), LR (left-right), RL (right-left) |
+| Applying rotation to wrong node (not the imbalanced ancestor) | Rotating the inserted node instead of the first imbalanced ancestor | Always find the deepest imbalanced node, then apply rotation on that node |
+| Not rebalancing bottom-up after deletion | Deleting a node may leave ancestors imbalanced, not just the parent | After deletion, traverse up the path to root, updating heights and rebalancing |
+| Forgetting that AVL deletion is harder than insertion | Insertion requires at most 2 rotations; deletion may require O(log n) rotations | Rebalance every node on the path from deleted node to root |
+| Double rotation implementation: only rotating once | Doing only the first rotation (e.g., left) without the second (right) leaves the tree still imbalanced | LR = left-rotate(left child) then right-rotate(node); RL = right-rotate(right child) then left-rotate(node) |
+
+### TypeScript AVL Tree Implementation
+
+```typescript
+class AVLNode {
+    data: number;
+    left: AVLNode | null = null;
+    right: AVLNode | null = null;
+    height: number = 1;
+
+    constructor(data: number) {
+        this.data = data;
+    }
+}
+
+class AVLTree {
+    private root: AVLNode | null = null;
+
+    private height(node: AVLNode | null): number {
+        return node ? node.height : 0;
+    }
+
+    private balanceFactor(node: AVLNode | null): number {
+        return node ? this.height(node.left) - this.height(node.right) : 0;
+    }
+
+    private updateHeight(node: AVLNode): void {
+        node.height = 1 + Math.max(this.height(node.left), this.height(node.right));
+    }
+
+    private rightRotate(y: AVLNode): AVLNode {
+        const x = y.left!;
+        const T2 = x.right;
+        x.right = y;
+        y.left = T2;
+        this.updateHeight(y);
+        this.updateHeight(x);
+        return x;
+    }
+
+    private leftRotate(x: AVLNode): AVLNode {
+        const y = x.right!;
+        const T2 = y.left;
+        y.left = x;
+        x.right = T2;
+        this.updateHeight(x);
+        this.updateHeight(y);
+        return y;
+    }
+
+    insert(data: number): void {
+        this.root = this._insert(this.root, data);
+    }
+
+    private _insert(node: AVLNode | null, data: number): AVLNode {
+        if (!node) return new AVLNode(data);
+        if (data < node.data) node.left = this._insert(node.left, data);
+        else if (data > node.data) node.right = this._insert(node.right, data);
+        else return node; // no duplicates
+
+        this.updateHeight(node);
+        const bf = this.balanceFactor(node);
+
+        // LL Case
+        if (bf > 1 && data < node.left!.data) return this.rightRotate(node);
+        // RR Case
+        if (bf < -1 && data > node.right!.data) return this.leftRotate(node);
+        // LR Case
+        if (bf > 1 && data > node.left!.data) {
+            node.left = this.leftRotate(node.left!);
+            return this.rightRotate(node);
+        }
+        // RL Case
+        if (bf < -1 && data < node.right!.data) {
+            node.right = this.rightRotate(node.right!);
+            return this.leftRotate(node);
+        }
+        return node;
+    }
+
+    delete(data: number): void {
+        this.root = this._delete(this.root, data);
+    }
+
+    private _delete(node: AVLNode | null, data: number): AVLNode | null {
+        if (!node) return null;
+        if (data < node.data) node.left = this._delete(node.left, data);
+        else if (data > node.data) node.right = this._delete(node.right, data);
+        else {
+            if (!node.left) return node.right;
+            if (!node.right) return node.left;
+            const succ = this._min(node.right!);
+            node.data = succ.data;
+            node.right = this._delete(node.right, succ.data);
+        }
+        if (!node) return null;
+
+        this.updateHeight(node);
+        const bf = this.balanceFactor(node);
+
+        // LL
+        if (bf > 1 && this.balanceFactor(node.left) >= 0) return this.rightRotate(node);
+        // LR
+        if (bf > 1 && this.balanceFactor(node.left) < 0) {
+            node.left = this.leftRotate(node.left!);
+            return this.rightRotate(node);
+        }
+        // RR
+        if (bf < -1 && this.balanceFactor(node.right) <= 0) return this.leftRotate(node);
+        // RL
+        if (bf < -1 && this.balanceFactor(node.right) > 0) {
+            node.right = this.rightRotate(node.right!);
+            return this.leftRotate(node);
+        }
+        return node;
+    }
+
+    private _min(node: AVLNode): AVLNode {
+        let curr = node;
+        while (curr.left) curr = curr.left;
+        return curr;
+    }
+
+    search(data: number): boolean {
+        let curr = this.root;
+        while (curr) {
+            if (data === curr.data) return true;
+            curr = data < curr.data ? curr.left : curr.right;
+        }
+        return false;
+    }
+
+    toArray(): number[] {
+        const result: number[] = [];
+        const stack: AVLNode[] = [];
+        let curr = this.root;
+        while (curr || stack.length > 0) {
+            while (curr) { stack.push(curr); curr = curr.left; }
+            curr = stack.pop()!;
+            result.push(curr.data);
+            curr = curr.right;
+        }
+        return result;
+    }
+}
+```
+
+### Additional MCQs (GFG Pattern)
+
+9. **What is the maximum possible height of an AVL tree with 7 nodes?**
+   - a) 2
+   - b) 3 ✓
+   - c) 4
+   - d) 6
+
+10. **How many rotations are needed at most during an AVL insertion?**
+    - a) 1
+    - b) 2 ✓
+    - c) O(log n)
+    - d) O(n)
+
+11. **What is the worst-case time for searching in an AVL tree with n nodes?**
+    - a) O(1)
+    - b) O(log n) ✓
+    - c) O(n)
+    - d) O(n log n)
+
+12. **What distinguishes an LR case from an LL case in AVL insertion?**
+    - a) The imbalance is at the right child
+    - b) The inserted node is in the right subtree of the left child ✓
+    - c) Balance factor = 2
+    - d) No rotation needed
+
+13. **An AVL tree with height h has at least how many nodes (recursive formula)?**
+    - a) N(h) = 2^h - 1
+    - b) N(h) = N(h-1) + N(h-2) + 1 ✓ (Fibonacci-like)
+    - c) N(h) = 2 × N(h-1)
+    - d) N(h) = h²
+
+14. **If an AVL deletion causes imbalance at multiple ancestors:**
+    - a) Only one needs rebalancing
+    - b) All ancestors on the path must be rebalanced ✓
+    - c) The root is always rebalanced
+    - d) No rebalancing is needed
+
+**Answers:** 9-b, 10-b, 11-b, 12-b, 13-b, 14-b
+
+### Additional Exercises (GFG Pattern)
+
+14. **AVL tree property verification**: Write functions to verify that a given binary tree is a valid AVL tree (BST invariant + balance factor ≤ 1 + correct heights).
+
+15. **Count nodes in range [L, R]**: Given an AVL tree and a range, count the number of nodes whose values lie in [L, R] in O(log n + k) time.
+
+16. **AVL tree with augmentation**: Support `findKthSmallest(k)` in O(log n) by storing subtree sizes. Implement the insertion and rotation with size updates.
+
+17. **Merge two AVL trees**: Given two AVL trees, merge them into one AVL tree. If the total size is m + n, aim for O(m + n) time by flattening to sorted array and building balanced tree.
+
+18. **Split an AVL tree by key**: Given a key K, split the AVL tree into two trees: one with values ≤ K and one with values > K. Each must remain a valid AVL tree.
+
+19. **AVL tree serialization**: Design an algorithm to serialize and deserialize an AVL tree, preserving both the BST property and the balance information.
+
+20. **Largest BST in a binary tree**: Given a binary tree (not necessarily BST), find the largest subtree that is a valid BST. Use a bottom-up approach returning (min, max, size, isBST) from each node.
+
+21. **AVL tree with duplicates**: Modify the AVL tree to support duplicate keys (e.g., using a count field per node). All operations should remain O(log n).
+
+### Self-Balancing Trees Comparison
+
+| Property | AVL | Red-Black | Splay | Treap | B-Tree |
+|----------|-----|-----------|-------|-------|--------|
+| Height bound | 1.44 log₂n | 2 log₂n | O(log n) amortized | O(log n) expected | log_{m/2}(n) |
+| Search (worst) | O(log n) | O(log n) | O(log n) amortized | O(log n) | O(log n) |
+| Insert (worst) | O(log n) | O(log n) | O(log n) amortized | O(log n) | O(log n) |
+| Delete (worst) | O(log n) | O(log n) | O(log n) amortized | O(log n) | O(log n) |
+| Rotations per insert | ≤ 2 | ≤ 2 | 0 (splay) | 0 (rotate after insert) | Node split |
+| Balance strictness | Strict | Relaxed | None (amortized) | Probabilistic | Degree-based |
+| Space overhead | Height field | Color bit | Parent ptr (optional) | Priority field | Multiple keys/pointers |
+| Use case | Lookup-heavy | Insert-heavy | Locality of reference | Simple impl | Disk-based |
+| Locality | Poor | Poor | Good (recent nodes near root) | Poor | Good (blocks/pages) |
    - c) -2, -1, 0, 1, 2
    - d) 0 only
 

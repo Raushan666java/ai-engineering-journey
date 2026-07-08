@@ -148,7 +148,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="course-grid" markdown>
 
--   <span class="course-icon">🕉️</span> __[Vigyan Bhairav Tantra](courses/vigyan-bhairav-tantra/)__ <span class="course-chaps">18 Ch</span>
+-   <span class="course-icon">🕉️</span> __[Vigyan Bhairav Tantra (Osho)](courses/vigyan-bhairav-tantra/)__ <span class="course-chaps">18 Ch</span>
 
 </div>
 

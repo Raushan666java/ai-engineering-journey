@@ -1242,6 +1242,10 @@ Industry benchmarks:
 
 ---
 
+## Summary
+
+Web application security addresses vulnerabilities that arise from the fundamental nature of HTTP, browser-based execution, and the complexity of modern web stacks. This chapter covered the OWASP Top 10 (2021), with deep dives into the most exploited categories: broken access control (IDOR), injection (SQLi, XSS, CSRF, SSRF, XXE), and cryptographic failures (JWT flaws, weak TLS). The importance of defense-in-depth was illustrated through layered protections — WAF, CSP, HSTS, CORS configuration, input validation, parameterized queries, and client-side sanitization. Real-world breaches (Equifax, GitHub Stars, SolarWinds, Atlassian) demonstrated that even well-funded organizations fall victim to preventable vulnerabilities when secure development practices are not followed. Key takeaways include: always use parameterized queries for database access, implement CSP with strict directives, treat all user input as untrusted, use SameSite cookies to mitigate CSRF, and conduct regular dependency scans for known vulnerabilities. The TypeScript implementations provided working examples of CSP generators, SQLi scanners, session analyzers, and SSRF detectors that can be integrated into security testing pipelines.
+
 ## Exercises
 
 ### Review Questions

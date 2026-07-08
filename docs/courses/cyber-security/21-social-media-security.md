@@ -21,6 +21,29 @@ By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance
 
+```mermaid
+flowchart TD
+    A["Social Media<br/>Attack Surface"] --> B["Credential<br/>Attacks"]
+    A --> C["Social<br/>Engineering"]
+    A --> D["Session<br/>Hijacking"]
+    A --> E["MFA<br/>Bypass"]
+    A --> F["Platform<br/>Exploits"]
+    B --> B1["Phishing"]
+    B --> B2["Credential Stuffing"]
+    B --> B3["Password Spraying"]
+    C --> C1["Pretexting"]
+    C --> C2["BEC"]
+    C --> C3["Deepfakes"]
+    D --> D1["Session Token Theft"]
+    D --> D2["OAuth Token Abuse"]
+    E --> E1["SIM Swapping"]
+    E --> E2["Push Fatigue"]
+    F --> F1["API Abuse"]
+    F --> F2["Zero-Day Exploits"]
+    style A fill:#1a1a2e,stroke:#e94560,color:#fff
+    style E1 fill:#e94560,stroke:#fff,color:#fff
+```
+
 | Section | Key Concept | Why It Matters |
 |---------|-------------|----------------|
 | Account Takeover Attack Taxonomy | 12 attack vectors classified by method | Know your enemy — every attack exploits one of these |
@@ -1402,6 +1425,30 @@ STRONGEST
 ## 5. SIM Swapping — The Most Devastating Attack
 
 ### 5.1 How SIM Swapping Works
+
+SIM swapping (also called SIM hijacking, SIM splitting, or port-out scam) is when an attacker convinces your mobile carrier to transfer your phone number to a SIM card they control.
+
+```mermaid
+sequenceDiagram
+    participant A as Attacker
+    participant OSINT as OSINT Sources
+    participant Carrier as Mobile Carrier
+    participant Victim as Victim
+    participant Platforms as Social Platforms
+
+    A->>OSINT: Gather PII (name, DOB, SSN, address)
+    A->>Carrier: Call/chat support impersonating victim
+    Carrier->>A: Verify with PII details
+    A->>Carrier: Confirm PII, request SIM transfer
+    Carrier-->>Victim: Original SIM deactivated
+    Carrier-->>A: New SIM activated with victim's number
+    Victim->>Victim: Phone shows "No Service"
+    A->>Platforms: Request password reset via SMS
+    Platforms->>A: SMS OTP sent to attacker's phone
+    A->>Platforms: Enter OTP, reset password
+    A->>Platforms: Change email, enable 2FA, lock out victim
+    Note over A,Platforms: Account fully compromised in under 30 minutes
+```
 
 SIM swapping (also called SIM hijacking, SIM splitting, or port-out scam) is when an attacker convinces your mobile carrier to transfer your phone number to a SIM card they control.
 
@@ -2997,9 +3044,50 @@ RECOVERY:
 
 ---
 
-## 7. Personal Defense Architecture
+## 8. Personal Defense Architecture
 
 ### 7.1 The Layered Defense Model
+
+```mermaid
+flowchart LR
+    subgraph L1["Layer 1 &mdash; Password Hygiene"]
+        PM[Password Manager<br/>Bitwarden/1Password]
+        UP[Unique 20+ char<br/>passwords]
+        BF[Breach Monitoring<br/>HIBP Integration]
+    end
+    subgraph L2["Layer 2 &mdash; Two-Factor Auth"]
+        HSK[Hardware Key<br/>YubiKey FIDO2]
+        TOTP["TOTP App<br/>Authy/Ente"]
+        NO_SMS["&#10060; SMS as Primary"]
+    end
+    subgraph L3["Layer 3 &mdash; Session Management"]
+        BP[Separate Browser<br/>Profiles]
+        SE[Session Expiry<br/>Auto-logout]
+        CI[Container Isolation<br/>Multi-Account]
+    end
+    subgraph L4["Layer 4 &mdash; Recovery"]
+        DE[Dedicated Recovery<br/>Email]
+        RC[Recovery Codes<br/>Offline Backup]
+        PI[PIN &amp; Security<br/>Questions]
+    end
+    subgraph L5["Layer 5 &mdash; OPSEC"]
+        CD[Communication<br/>Discipline]
+        SF[Social Media<br/>Footprint Reduction]
+        DP[Deepfake &amp; Phishing<br/>Awareness]
+    end
+    subgraph L6["Layer 6 &mdash; Monitoring"]
+        AM[Account Activity<br/>Monitoring]
+        AL[Alerts &amp;<br/>Notifications]
+        AR[Automated<br/>Remediation]
+    end
+    L1 --> L2 --> L3 --> L4 --> L5 --> L6
+    style L1 fill:#1b4332,stroke:#fff,color:#fff
+    style L2 fill:#2d6a4f,stroke:#fff,color:#fff
+    style L3 fill:#40916c,stroke:#fff,color:#fff
+    style L4 fill:#52b788,stroke:#fff,color:#fff
+    style L5 fill:#74c69d,stroke:#fff,color:#fff
+    style L6 fill:#95d5b2,stroke:#fff,color:#222
+```
 
 ```
 LAYER 1 — PASSWORD HYGIENE
@@ -3176,7 +3264,7 @@ class AccountSecurityScanner {
 
 ---
 
-## 8. Incident Response Playbook
+## 9. Incident Response Playbook
 
 ### 8.1 Immediate Action — The First 15 Minutes
 
@@ -3309,7 +3397,7 @@ Date: ${new Date().toISOString().split('T')[0]}
 
 ---
 
-## 9. Real-World Case Studies
+## 10. Real-World Case Studies
 
 ### 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack
 
@@ -4206,7 +4294,7 @@ AFTER THE CALL:
 
 ---
 
-## 10. Monitoring Tools & Services
+## 11. Monitoring Tools & Services
 
 | Tool | Type | What It Monitors | Cost |
 |------|------|-----------------|------|
@@ -4223,7 +4311,7 @@ AFTER THE CALL:
 
 ---
 
-## 11. Password Manager Setup Guide
+## 12. Password Manager Setup Guide
 
 ### 11.1 Recommended Password Managers
 
@@ -4464,9 +4552,9 @@ AFTER THE CALL:
 
 4. Create a BEC prevention playbook for a small business (50 employees) with a $500K annual revenue. Include: email authentication (DMARC/DKIM/SPF), dual approval process for wire transfers, employee training, vendor verification protocol, and incident response for when a BEC attack is suspected.
 
-5. Analyze the Hong Kong $25M deepfake video call attack from Section 9.9 and design a "deepfake video call verification protocol" with at least 8 specific steps that would have prevented the attack.
+5. Analyze the Hong Kong $25M deepfake video call attack from Section 10.9 and design a "deepfake video call verification protocol" with at least 8 specific steps that would have prevented the attack.
 
-6. For the Twitter 2020 Bitcoin Scam (Section 9.1), create a post-incident security overhaul plan for Twitter addressing all 6 root causes. Include specific technical controls, process changes, and training requirements.
+6. For the Twitter 2020 Bitcoin Scam (Section 10.1), create a post-incident security overhaul plan for Twitter addressing all 6 root causes. Include specific technical controls, process changes, and training requirements.
 
 ### Challenge Problems
 

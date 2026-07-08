@@ -12,8 +12,8 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 <p class="hero-tagline">Laravel developer → AI Automation Engineer. 850+ lessons across 45+ courses, one documented transition at a time.</p>
 
 <div class="hero-stats">
-  <span class="hero-stat"><strong>45+</strong> Courses</span>
-  <span class="hero-stat"><strong>850+</strong> Lessons</span>
+  <span class="hero-stat"><strong>46+</strong> Courses</span>
+  <span class="hero-stat"><strong>870+</strong> Lessons</span>
   <span class="hero-stat"><strong>170K+</strong> Lines</span>
   <span class="hero-stat"><strong>220</strong> Coding Problems</span>
 </div>
@@ -141,6 +141,14 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 -   <span class="course-icon">📋</span> __[Mock Tests](courses/mock-tests/)__ <span class="course-chaps">6 Exams</span>
 -   <span class="course-icon">⚡</span> __[Speed Drills](courses/speed-drills/)__ <span class="course-chaps">255 Sets</span>
 -   <span class="course-icon">📄</span> __[Government PYQs](courses/government-pyqs/)__ <span class="course-chaps">14 Years</span>
+
+</div>
+
+### Philosophy & Spirituality
+
+<div class="course-grid" markdown>
+
+-   <span class="course-icon">🕉️</span> __[Vigyan Bhairav Tantra](courses/vigyan-bhairav-tantra/)__ <span class="course-chaps">18 Ch</span>
 
 </div>
 

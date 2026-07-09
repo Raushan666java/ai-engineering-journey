@@ -1,4 +1,4 @@
-# GATE CS Mock Test 5 → Full-Length Practice Paper
+﻿# GATE CS Mock Test 5 â†’ Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -66,18 +66,18 @@ flowchart LR
 
 | Questions | Type | Marks | Negative Marking |
 |-----------|------|-------|-----------------|
-| Q1â€“Q10 (GA) | MCQ | 1 each | âˆ’1/3 |
-| Q11â€“Q15 (GA) | MCQ | 2 each | âˆ’2/3 |
-| Q16â€“Q20 (Math) | MCQ | 1 each | âˆ’1/3 |
-| Q21â€“Q25 (Math) | MCQ | 2 each | âˆ’2/3 |
-| Q26â€“Q45 (Technical) | MCQ | 1 each | âˆ’1/3 |
-| Q46â€“Q55 (Technical) | MCQ | 2 each | âˆ’2/3 |
+| Q1Ã¢â‚¬â€œQ10 (GA) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
+| Q11Ã¢â‚¬â€œQ15 (GA) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
+| Q16Ã¢â‚¬â€œQ20 (Math) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
+| Q21Ã¢â‚¬â€œQ25 (Math) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
+| Q26Ã¢â‚¬â€œQ45 (Technical) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
+| Q46Ã¢â‚¬â€œQ55 (Technical) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
 
 All questions are MCQs with one correct answer.
 
 ---
 
-## Section A: General Aptitude (Questions 1â€“15)
+## Section A: General Aptitude (Questions 1Ã¢â‚¬â€œ15)
 
 **Q1 (1 Mark):** Select the word that is OPPOSITE in meaning to "RECONDITE":
 
@@ -207,14 +207,14 @@ All questions are MCQs with one correct answer.
 
 **Q15 (2 Marks):** Find the odd one out: Arithmetic, Geometric, Harmonic, Exponential. Explain.
 
-(A) Arithmetic → it is a sequence, others are means  
-(B) Geometric → it is a sequence, others are means  
-(C) Harmonic → it is a sequence, others are means  
-(D) Exponential → it is a progression, others are means
+(A) Arithmetic â†’ it is a sequence, others are means  
+(B) Geometric â†’ it is a sequence, others are means  
+(C) Harmonic â†’ it is a sequence, others are means  
+(D) Exponential â†’ it is a progression, others are means
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16â€“25)
+## Section B: Engineering Mathematics (Questions 16Ã¢â‚¬â€œ25)
 
 **Q16 (1 Mark):** The rank of matrix [[1, 2, 3], [2, 4, 6], [3, 6, 9]] is:
 
@@ -234,7 +234,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q18 (1 Mark):** d/dx(ln(xÂ² + 1)) evaluated at x = 1 is:
+**Q18 (1 Mark):** d/dx(ln(xÃ‚Â² + 1)) evaluated at x = 1 is:
 
 (A) 1/2  
 (B) 2/3  
@@ -243,7 +243,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q19 (1 Mark):** If P(A) = 0.4, P(B) = 0.5, P(A âˆ© B) = 0.2, then P(A|B) = ?
+**Q19 (1 Mark):** If P(A) = 0.4, P(B) = 0.5, P(A Ã¢Ë†Â© B) = 0.2, then P(A|B) = ?
 
 (A) 0.2  
 (B) 0.3  
@@ -252,16 +252,16 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q20 (1 Mark):** Which proposition is the contrapositive of P → Q?
+**Q20 (1 Mark):** Which proposition is the contrapositive of P â†’ Q?
 
-(A) Â¬Q → Â¬P  
-(B) Â¬P → Â¬Q  
-(C) Q → P  
-(D) Â¬P âˆ¨ Q
+(A) Ã‚Â¬Q â†’ Ã‚Â¬P  
+(B) Ã‚Â¬P â†’ Ã‚Â¬Q  
+(C) Q â†’ P  
+(D) Ã‚Â¬P Ã¢Ë†Â¨ Q
 
 ---
 
-**Q21 (2 Marks):** The value of âˆ¬_R xy dA over R = [0,1] Ã— [0,1] is:
+**Q21 (2 Marks):** The value of Ã¢Ë†Â¬_R xy dA over R = [0,1] Ãƒâ€” [0,1] is:
 
 (A) 1/4  
 (B) 1/3  
@@ -279,7 +279,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q23 (2 Marks):** For A = [[1, 1], [1, 1]], find the sum of all eigenvalues of AÂ³.
+**Q23 (2 Marks):** For A = [[1, 1], [1, 1]], find the sum of all eigenvalues of AÃ‚Â³.
 
 (A) 6  
 (B) 8  
@@ -301,12 +301,12 @@ All questions are MCQs with one correct answer.
 
 (A) O(n)  
 (B) O(n log n)  
-(C) O(nÂ²)  
-(D) O(n logÂ² n)
+(C) O(nÃ‚Â²)  
+(D) O(n logÃ‚Â² n)
 
 ---
 
-## Section C: Technical Subjects (Questions 26â€“55)
+## Section C: Technical Subjects (Questions 26Ã¢â‚¬â€œ55)
 
 **Q26 (1 Mark) [DS&A]:** Which data structure gives the minimum time to insert and delete in a First-In-First-Out manner?
 
@@ -346,10 +346,10 @@ All questions are MCQs with one correct answer.
 
 **Q30 (1 Mark) [TOC]:** Which language is context-free but not regular?
 
-(A) {aâ¿báµ | n,m â‰¥ 0}  
-(B) {aâ¿bâ¿ | n â‰¥ 0}  
-(C) {aâ¿ | n is even}  
-(D) {aâ¿ | n is prime}
+(A) {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n,m Ã¢â€°Â¥ 0}  
+(B) {aÃ¢ÂÂ¿bÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0}  
+(C) {aÃ¢ÂÂ¿ | n is even}  
+(D) {aÃ¢ÂÂ¿ | n is prime}
 
 ---
 
@@ -443,7 +443,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q41 (1 Mark) [CO]:** The number of address lines needed for a 4K Ã— 8 memory chip is:
+**Q41 (1 Mark) [CO]:** The number of address lines needed for a 4K Ãƒâ€” 8 memory chip is:
 
 (A) 8  
 (B) 10  
@@ -515,7 +515,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** R(A, B, C, D) with FDs: A → B, C → D. The highest normal form is:
+**Q49 (2 Marks) [DBMS]:** R(A, B, C, D) with FDs: A â†’ B, C â†’ D. The highest normal form is:
 
 (A) 1NF  
 (B) 2NF  
@@ -533,7 +533,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q51 (2 Marks) [DS&A]:** For a complete graph Kâ‚† (6 vertices), how many edges must be removed to obtain a tree?
+**Q51 (2 Marks) [DS&A]:** For a complete graph KÃ¢â€šâ€  (6 vertices), how many edges must be removed to obtain a tree?
 
 (A) 5  
 (B) 10  
@@ -551,7 +551,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q53 (2 Marks) [CD]:** For the expression (a + b) * c âˆ’ (d / e) * f, the three-address code will contain how many temporary variables (assuming no optimization)?
+**Q53 (2 Marks) [CD]:** For the expression (a + b) * c Ã¢Ë†â€™ (d / e) * f, the three-address code will contain how many temporary variables (assuming no optimization)?
 
 (A) 3  
 (B) 4  
@@ -600,57 +600,57 @@ All questions are MCQs with one correct answer.
 
 **Q1:** Recondite means difficult to understand / abstruse. Opposite: Superficial (shallow, lacking depth).
 
-**Q2:** Let original price = P, consumption = C. Expenditure = PÃ—C. New price = 1.2P. To keep expenditure same: 1.2P Ã— C' = P Ã— C → C' = C/1.2 = 0.833C. Reduction = (1 âˆ’ 0.833) Ã— 100% = 16.67%.
+**Q2:** Let original price = P, consumption = C. Expenditure = PÃƒâ€”C. New price = 1.2P. To keep expenditure same: 1.2P Ãƒâ€” C' = P Ãƒâ€” C â†’ C' = C/1.2 = 0.833C. Reduction = (1 Ã¢Ë†â€™ 0.833) Ãƒâ€” 100% = 16.67%.
 
 **Q3:** The correct punctuation has the question mark inside the closing quotation mark, followed by a comma outside: "Can you please help me," she asked. Answer A.
 
-**Q4:** Sum of student weights = 30Ã—45 = 1350. Sum including teacher = 31Ã—46 = 1426. Teacher's weight = 1426 âˆ’ 1350 = 76 kg.
+**Q4:** Sum of student weights = 30Ãƒâ€”45 = 1350. Sum including teacher = 31Ãƒâ€”46 = 1426. Teacher's weight = 1426 Ã¢Ë†â€™ 1350 = 76 kg.
 
-**Q5:** All politicians are public speakers (P âŠ† PS). Some public speakers are charismatic (PS âˆ© C â‰  âˆ…). This does not imply P âˆ© C â‰  âˆ… (conclusion I fails). Conclusion II is the converse of "some public speakers are charismatic" → valid. Only II follows.
+**Q5:** All politicians are public speakers (P Ã¢Å â€  PS). Some public speakers are charismatic (PS Ã¢Ë†Â© C Ã¢â€°Â  Ã¢Ë†â€¦). This does not imply P Ã¢Ë†Â© C Ã¢â€°Â  Ã¢Ë†â€¦ (conclusion I fails). Conclusion II is the converse of "some public speakers are charismatic" â†’ valid. Only II follows.
 
-**Q6:** Pattern: nÃ—(n+1). 1Ã—2=2, 2Ã—3=6, 3Ã—4=12, 4Ã—5=20, 5Ã—6=30, 6Ã—7=42.
+**Q6:** Pattern: nÃƒâ€”(n+1). 1Ãƒâ€”2=2, 2Ãƒâ€”3=6, 3Ãƒâ€”4=12, 4Ãƒâ€”5=20, 5Ãƒâ€”6=30, 6Ãƒâ€”7=42.
 
-**Q7:** Each letter is encoded by its alphabetical position (A=1,...,Z=26). H=8, A=1, R=18, D=4 → 815184. S=19, O=15, F=6, T=20 → 1915620. E=5, A=1, S=19, Y=25 → 511925.
+**Q7:** Each letter is encoded by its alphabetical position (A=1,...,Z=26). H=8, A=1, R=18, D=4 â†’ 815184. S=19, O=15, F=6, T=20 â†’ 1915620. E=5, A=1, S=19, Y=25 â†’ 511925.
 
-**Q8:** Ravi is 12th from left → 11 persons to his left. Total = 40. Persons to his right = 40 âˆ’ 12 = 28.
+**Q8:** Ravi is 12th from left â†’ 11 persons to his left. Total = 40. Persons to his right = 40 Ã¢Ë†â€™ 12 = 28.
 
-**Q9:** North 3 âˆ’ South 3 = 0 net north-south. East 4. Distance = 4 km.
+**Q9:** North 3 Ã¢Ë†â€™ South 3 = 0 net north-south. East 4. Distance = 4 km.
 
-**Q10:** 13 mod 7 = 6. 6Â² mod 7 = 36 mod 7 = 1. So 6^100 = (6Â²)âµâ° = 1âµâ° = 1 mod 7. Remainder = 1.
+**Q10:** 13 mod 7 = 6. 6Ã‚Â² mod 7 = 36 mod 7 = 1. So 6^100 = (6Ã‚Â²)Ã¢ÂÂµÃ¢ÂÂ° = 1Ã¢ÂÂµÃ¢ÂÂ° = 1 mod 7. Remainder = 1.
 
-**Q11:** SI: Amount = P + (PÃ—rÃ—t)/100. For doubling: 2P = P + (PÃ—rÃ—8)/100 → P = (PÃ—rÃ—8)/100 → r = 12.5%. For quadrupling: 4P = P + (PÃ—12.5Ã—t)/100 → 3P = (PÃ—12.5Ã—t)/100 → t = 300/12.5 = 24 years.
+**Q11:** SI: Amount = P + (PÃƒâ€”rÃƒâ€”t)/100. For doubling: 2P = P + (PÃƒâ€”rÃƒâ€”8)/100 â†’ P = (PÃƒâ€”rÃƒâ€”8)/100 â†’ r = 12.5%. For quadrupling: 4P = P + (PÃƒâ€”12.5Ãƒâ€”t)/100 â†’ 3P = (PÃƒâ€”12.5Ãƒâ€”t)/100 â†’ t = 300/12.5 = 24 years.
 
-Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ã—2 = 16 years at compound interest, but at simple interest, additional 8 years adds another P: 3P takes 16 years, 4P takes 24 years.
+Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ãƒâ€”2 = 16 years at compound interest, but at simple interest, additional 8 years adds another P: 3P takes 16 years, 4P takes 24 years.
 
-**Q12:** A and B together in 5 min: 5Ã—(1/20 + 1/30) = 5Ã—1/12 = 5/12. Remaining: 7/12. If A was closed: B needs (7/12)/(1/30) = 17.5 min more → total 22.5 min. If B was closed: A needs (7/12)/(1/20) â‰ˆ 11.67 min more → total 16.67 min. Since total is given as 22.5 min, A was closed.
+**Q12:** A and B together in 5 min: 5Ãƒâ€”(1/20 + 1/30) = 5Ãƒâ€”1/12 = 5/12. Remaining: 7/12. If A was closed: B needs (7/12)/(1/30) = 17.5 min more â†’ total 22.5 min. If B was closed: A needs (7/12)/(1/20) Ã¢â€°Ë† 11.67 min more â†’ total 16.67 min. Since total is given as 22.5 min, A was closed.
 
-**Q13:** Total ways = C(10,4) = 210. 0 women: C(5,4)Ã—C(5,0) = 5. 1 woman: C(5,3)Ã—C(5,1) = 10Ã—5 = 50. P(at least 2) = 1 âˆ’ (5+50)/210 = 1 âˆ’ 55/210 = 155/210 = 31/42.
+**Q13:** Total ways = C(10,4) = 210. 0 women: C(5,4)Ãƒâ€”C(5,0) = 5. 1 woman: C(5,3)Ãƒâ€”C(5,1) = 10Ãƒâ€”5 = 50. P(at least 2) = 1 Ã¢Ë†â€™ (5+50)/210 = 1 Ã¢Ë†â€™ 55/210 = 155/210 = 31/42.
 
-**Q14:** Train speed = 240/12 = 20 m/s. In 30 s, train covers = 20Ã—30 = 600 m. Platform length = 600 âˆ’ 240 = 360 m.
+**Q14:** Train speed = 240/12 = 20 m/s. In 30 s, train covers = 20Ãƒâ€”30 = 600 m. Platform length = 600 Ã¢Ë†â€™ 240 = 360 m.
 
 **Q15:** Arithmetic, Geometric, and Harmonic are types of means (ways to compute averages). Exponential is a type of progression (sequence), not a mean. So Exponential is the odd one out. Answer D.
 
-**Q16:** Rows: R2 = 2Ã—R1, R3 = 3Ã—R1. All rows are scalar multiples. Rank = 1.
+**Q16:** Rows: R2 = 2Ãƒâ€”R1, R3 = 3Ãƒâ€”R1. All rows are scalar multiples. Rank = 1.
 
-**Q17:** A tree with n vertices has nâˆ’1 edges. 10âˆ’1 = 9.
+**Q17:** A tree with n vertices has nÃ¢Ë†â€™1 edges. 10Ã¢Ë†â€™1 = 9.
 
-**Q18:** d/dx ln(xÂ²+1) = (2x)/(xÂ²+1). At x=1: 2/(1+1) = 1.
+**Q18:** d/dx ln(xÃ‚Â²+1) = (2x)/(xÃ‚Â²+1). At x=1: 2/(1+1) = 1.
 
-**Q19:** P(A|B) = P(Aâˆ©B)/P(B) = 0.2/0.5 = 0.4.
+**Q19:** P(A|B) = P(AÃ¢Ë†Â©B)/P(B) = 0.2/0.5 = 0.4.
 
-**Q20:** Contrapositive of P→Q is Â¬Q → Â¬P. It is logically equivalent to the original statement.
+**Q20:** Contrapositive of Pâ†’Q is Ã‚Â¬Q â†’ Ã‚Â¬P. It is logically equivalent to the original statement.
 
-**Q21:** âˆ«â‚€Â¹âˆ«â‚€Â¹ xy dx dy = âˆ«â‚€Â¹ x dx Ã— âˆ«â‚€Â¹ y dy = (1/2)(1/2) = 1/4.
+**Q21:** Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ xy dx dy = Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ x dx Ãƒâ€” Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ y dy = (1/2)(1/2) = 1/4.
 
-**Q22:** Number of onto functions from 5 elements to 3 elements = Î£_{i=0}^{3} (âˆ’1)â± C(3,i) (3âˆ’i)âµ = C(3,0)(3âµ) âˆ’ C(3,1)(2âµ) + C(3,2)(1âµ) âˆ’ C(3,3)(0âµ) = 243 âˆ’ 3Ã—32 + 3Ã—1 âˆ’ 0 = 243 âˆ’ 96 + 3 = 150.
+**Q22:** Number of onto functions from 5 elements to 3 elements = ÃŽÂ£_{i=0}^{3} (Ã¢Ë†â€™1)Ã¢ÂÂ± C(3,i) (3Ã¢Ë†â€™i)Ã¢ÂÂµ = C(3,0)(3Ã¢ÂÂµ) Ã¢Ë†â€™ C(3,1)(2Ã¢ÂÂµ) + C(3,2)(1Ã¢ÂÂµ) Ã¢Ë†â€™ C(3,3)(0Ã¢ÂÂµ) = 243 Ã¢Ë†â€™ 3Ãƒâ€”32 + 3Ãƒâ€”1 Ã¢Ë†â€™ 0 = 243 Ã¢Ë†â€™ 96 + 3 = 150.
 
-**Q23:** For A = [[1,1],[1,1]]: det([[1âˆ’Î»,1],[1,1âˆ’Î»]]) = (1âˆ’Î»)Â² âˆ’ 1 = Î»Â² âˆ’ 2Î» = Î»(Î»âˆ’2). Eigenvalues = 0, 2. Eigenvalues of AÂ³: 0Â³ = 0, 2Â³ = 8. Sum = 8.
+**Q23:** For A = [[1,1],[1,1]]: det([[1Ã¢Ë†â€™ÃŽÂ»,1],[1,1Ã¢Ë†â€™ÃŽÂ»]]) = (1Ã¢Ë†â€™ÃŽÂ»)Ã‚Â² Ã¢Ë†â€™ 1 = ÃŽÂ»Ã‚Â² Ã¢Ë†â€™ 2ÃŽÂ» = ÃŽÂ»(ÃŽÂ»Ã¢Ë†â€™2). Eigenvalues = 0, 2. Eigenvalues of AÃ‚Â³: 0Ã‚Â³ = 0, 2Ã‚Â³ = 8. Sum = 8.
 
 **Q24:** Primes from 1 to 100: 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97 = 25 primes. 25/100 = 0.25.
 
-**Q25:** T(n) = T(n/2) + 2T(n/4) + n. Using recursion tree: at level 0: n. Level 1: n/2 + 2(n/4) = n/2 + n/2 = n. Level 2: n/4 + 2(n/8) + 2(n/8) + 4(n/16) = n/4 + n/4 + n/4 + n/4 = n. Each level sums to n. Number of levels: the smallest subproblem is n/4áµ = 1 → k = logâ‚„ n. So total = n Ã— logâ‚„ n = O(n log n).
+**Q25:** T(n) = T(n/2) + 2T(n/4) + n. Using recursion tree: at level 0: n. Level 1: n/2 + 2(n/4) = n/2 + n/2 = n. Level 2: n/4 + 2(n/8) + 2(n/8) + 4(n/16) = n/4 + n/4 + n/4 + n/4 = n. Each level sums to n. Number of levels: the smallest subproblem is n/4Ã¡ÂµÂ = 1 â†’ k = logÃ¢â€šâ€ž n. So total = n Ãƒâ€” logÃ¢â€šâ€ž n = O(n log n).
 
-**Q26:** Queue: FIFO structure. Insert at rear (enqueue) and delete from front (dequeue) → both O(1) in array/linked list implementation.
+**Q26:** Queue: FIFO structure. Insert at rear (enqueue) and delete from front (dequeue) â†’ both O(1) in array/linked list implementation.
 
 **Q27:** Preemptive Priority scheduling may cause starvation: a low-priority process may never execute if higher-priority processes keep arriving.
 
@@ -658,21 +658,21 @@ Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ã—2
 
 **Q29:** In B+ trees, all data records are stored in leaf nodes. Internal nodes contain only key values and pointers for navigation.
 
-**Q30:** {aâ¿bâ¿ | n â‰¥ 0} is context-free (generated by S → aSb | Îµ) but provably not regular by the pumping lemma. aâ¿báµ is regular. Even-length a's is regular. Primes is context-sensitive.
+**Q30:** {aÃ¢ÂÂ¿bÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0} is context-free (generated by S â†’ aSb | ÃŽÂµ) but provably not regular by the pumping lemma. aÃ¢ÂÂ¿bÃ¡ÂµÂ is regular. Even-length a's is regular. Primes is context-sensitive.
 
 **Q31:** A constant's value is known at compile time (e.g., const int x = 5;). The compiler uses this for constant folding optimization.
 
-**Q32:** NAND is a universal gate → any Boolean function can be implemented using only NAND gates. NOR is also universal.
+**Q32:** NAND is a universal gate â†’ any Boolean function can be implemented using only NAND gates. NOR is also universal.
 
 **Q33:** Cache memory sits between CPU and main memory, providing faster access to frequently used data.
 
-**Q34:** h(50) = 50 mod 7 = 1 → index 1. h(72) = 72 mod 7 = 2 → index 2. h(89) = 89 mod 7 = 5 → index 5. h(35) = 35 mod 7 = 0 → index 0. h(63) = 63 mod 7 = 0. Index 0 occupied by 35. Linear probe: index 1 (occupied by 50), index 2 (occupied by 72), index 3 (free). 63 → index 3.
+**Q34:** h(50) = 50 mod 7 = 1 â†’ index 1. h(72) = 72 mod 7 = 2 â†’ index 2. h(89) = 89 mod 7 = 5 â†’ index 5. h(35) = 35 mod 7 = 0 â†’ index 0. h(63) = 63 mod 7 = 0. Index 0 occupied by 35. Linear probe: index 1 (occupied by 50), index 2 (occupied by 72), index 3 (free). 63 â†’ index 3.
 
 **Q35:** LRU (Least Recently Used) is a page replacement algorithm. SSTF and SCAN are disk scheduling. Banker's is deadlock avoidance.
 
-**Q36:** Nyquist theorem: Max data rate = 2B logâ‚‚ V. B = 4 kHz = 4000 Hz, V = 8 levels. Rate = 2 Ã— 4000 Ã— logâ‚‚(8) = 2 Ã— 4000 Ã— 3 = 24,000 bps = 24 kbps.
+**Q36:** Nyquist theorem: Max data rate = 2B logÃ¢â€šâ€š V. B = 4 kHz = 4000 Hz, V = 8 levels. Rate = 2 Ãƒâ€” 4000 Ãƒâ€” logÃ¢â€šâ€š(8) = 2 Ãƒâ€” 4000 Ãƒâ€” 3 = 24,000 bps = 24 kbps.
 
-Given the options, the maximum data rate with noise (Shannon) limits to 12 kbps. But Nyquist with unlimited levels could go higher. The question is ambiguous but the SNR=15 hints at using Shannon: C = 3000 logâ‚‚(16) = 12 kbps. But 12 kbps is option B. The answer key says C (24 kbps), which would be 2Ã—3000Ã—4 (16 levels). Let me check: Nyquist for this channel: if we have 16 signal levels, max = 2Ã—3000Ã—4 = 24 kbps. And Shannon limit is 12 kbps. Since Shannon is the fundamental limit (accounts for noise), 24 kbps > 12 kbps, so the actual max is 12 kbps. So answer should be B.
+Given the options, the maximum data rate with noise (Shannon) limits to 12 kbps. But Nyquist with unlimited levels could go higher. The question is ambiguous but the SNR=15 hints at using Shannon: C = 3000 logÃ¢â€šâ€š(16) = 12 kbps. But 12 kbps is option B. The answer key says C (24 kbps), which would be 2Ãƒâ€”3000Ãƒâ€”4 (16 levels). Let me check: Nyquist for this channel: if we have 16 signal levels, max = 2Ãƒâ€”3000Ãƒâ€”4 = 24 kbps. And Shannon limit is 12 kbps. Since Shannon is the fundamental limit (accounts for noise), 24 kbps > 12 kbps, so the actual max is 12 kbps. So answer should be B.
 
 Let me fix the question to avoid ambiguity. I'll remove the SNR value or clarify.
 
@@ -680,7 +680,7 @@ Actually any channel has noise. Nyquist doesn't account for noise. Shannon does.
 
 Let me just change the question to directly ask for the Shannon capacity. Or better, make the numbers work so Nyquist is the limiting factor and the answer is C.
 
-I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquist max = 2Ã—4000Ã—3 = 24 kbps. That's clean. Let me edit.
+I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquist max = 2Ãƒâ€”4000Ãƒâ€”3 = 24 kbps. That's clean. Let me edit.
 
 **Q37:** A foreign key in one table references the primary key (or a candidate key) in the referenced table. The referenced column must be a primary key in the referenced table.
 
@@ -690,54 +690,190 @@ I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquis
 
 **Q40:** A full adder has 3 inputs (A, B, and Carry-in).
 
-**Q41:** 4K = 4Ã—1024 = 4096 = 2Â¹Â². So 12 address lines are needed. The Ã—8 indicates 8 data lines (byte-wide).
+**Q41:** 4K = 4Ãƒâ€”1024 = 4096 = 2Ã‚Â¹Ã‚Â². So 12 address lines are needed. The Ãƒâ€”8 indicates 8 data lines (byte-wide).
 
-**Q42:** Merge Sort has O(n log n) worst-case time complexity. Quick Sort is O(nÂ²) worst-case. Bubble and Selection are O(nÂ²).
+**Q42:** Merge Sort has O(n log n) worst-case time complexity. Quick Sort is O(nÃ‚Â²) worst-case. Bubble and Selection are O(nÃ‚Â²).
 
 **Q43:** The critical section is a segment of code where a process accesses shared resources. It requires synchronization mechanisms to prevent race conditions.
 
-**Q44:** 3NF eliminates transitive dependencies (non-prime attribute → non-prime attribute). 2NF eliminates partial dependencies. BCNF requires every determinant to be a superkey.
+**Q44:** 3NF eliminates transitive dependencies (non-prime attribute â†’ non-prime attribute). 2NF eliminates partial dependencies. BCNF requires every determinant to be a superkey.
 
 **Q45:** SMTP (Simple Mail Transfer Protocol) is used for sending email from client to server and between servers. POP3/IMAP are for receiving.
 
-**Q46:** Number of distinct BSTs with 4 nodes = Catalan(4) = (1/(4+1))Ã—C(8,4) = (1/5)Ã—70 = 14.
+**Q46:** Number of distinct BSTs with 4 nodes = Catalan(4) = (1/(4+1))Ãƒâ€”C(8,4) = (1/5)Ãƒâ€”70 = 14.
 
 **Q47:** RR with q=4: P1=8, P2=4, P3=9.
 Sequence: P1(0-4, rem=4), P2(4-8, rem=0 done at 8), P3(8-12, rem=5), P1(12-16, rem=0 done at 16), P3(16-21, rem=0 done at 21).
-Waiting = Turnaround âˆ’ Burst. P1: wait = 16âˆ’8 = 8. P2: wait = 8âˆ’4 = 4. P3: wait = 21âˆ’9 = 12. Average = (8+4+12)/3 = 24/3 = 8.0 ms.
+Waiting = Turnaround Ã¢Ë†â€™ Burst. P1: wait = 16Ã¢Ë†â€™8 = 8. P2: wait = 8Ã¢Ë†â€™4 = 4. P3: wait = 21Ã¢Ë†â€™9 = 12. Average = (8+4+12)/3 = 24/3 = 8.0 ms.
 
-**Q48:** Total payload = 4000 âˆ’ 20 = 3980 bytes. MTU = 1500 bytes, payload per fragment = 1500 âˆ’ 20 = 1480 bytes. 3980/1480 = 2.689 → 3 fragments. Fragments: first two with 1480 bytes each, third with 3980 âˆ’ 2Ã—1480 = 1020 bytes.
+**Q48:** Total payload = 4000 Ã¢Ë†â€™ 20 = 3980 bytes. MTU = 1500 bytes, payload per fragment = 1500 Ã¢Ë†â€™ 20 = 1480 bytes. 3980/1480 = 2.689 â†’ 3 fragments. Fragments: first two with 1480 bytes each, third with 3980 Ã¢Ë†â€™ 2Ãƒâ€”1480 = 1020 bytes.
 
-**Q49:** Candidate key = ACD or... hmm. R(A,B,C,D) with A→B, C→D. The only way to get all attributes is to start with AC (ACâº = ACBD = ABCD). So candidate key is AC. B is determined by A (a proper subset of the key) → partial dependency. So R is in 1NF only.
+**Q49:** Candidate key = ACD or... hmm. R(A,B,C,D) with Aâ†’B, Câ†’D. The only way to get all attributes is to start with AC (ACÃ¢ÂÂº = ACBD = ABCD). So candidate key is AC. B is determined by A (a proper subset of the key) â†’ partial dependency. So R is in 1NF only.
 
 **Q50:** Emptiness problem for PDA (whether a PDA's language is empty) is decidable. Equivalence of PDAs, ambiguity of CFGs, and universality of PDAs are undecidable.
 
-**Q51:** Kâ‚† has C(6,2) = 15 edges. A tree with 6 vertices has 5 edges. Edges to remove = 15 âˆ’ 5 = 10.
+**Q51:** KÃ¢â€šâ€  has C(6,2) = 15 edges. A tree with 6 vertices has 5 edges. Edges to remove = 15 Ã¢Ë†â€™ 5 = 10.
 
-**Q52:** Cache = 32 KB = 2Â¹âµ bytes. Block = 64 = 2â¶ bytes. Blocks = 2Â¹âµ/2â¶ = 2â¹. 2-way set associative → sets = 2â¹/2 = 2â¸. Index = 8 bits. Offset = 6 bits. Tag = 32 âˆ’ 8 âˆ’ 6 = 18 bits.
+**Q52:** Cache = 32 KB = 2Ã‚Â¹Ã¢ÂÂµ bytes. Block = 64 = 2Ã¢ÂÂ¶ bytes. Blocks = 2Ã‚Â¹Ã¢ÂÂµ/2Ã¢ÂÂ¶ = 2Ã¢ÂÂ¹. 2-way set associative â†’ sets = 2Ã¢ÂÂ¹/2 = 2Ã¢ÂÂ¸. Index = 8 bits. Offset = 6 bits. Tag = 32 Ã¢Ë†â€™ 8 Ã¢Ë†â€™ 6 = 18 bits.
 
-**Q53:** Three-address code for (a + b) * c âˆ’ (d / e) * f:
+**Q53:** Three-address code for (a + b) * c Ã¢Ë†â€™ (d / e) * f:
 t1 = a + b
 t2 = t1 * c
 t3 = d / e
 t4 = t3 * f
-t5 = t2 âˆ’ t4
+t5 = t2 Ã¢Ë†â€™ t4
 5 temporary variables.
 
 **Q54:** T flip-flop with T=1 toggles. Current Q=0, next Q = 1.
 
 **Q55:** FIFO page replacement with 3 frames:
 Reference: 1,2,3,4,1,2,5,1,2,3,4,5
-Step 1 (1): miss → [1]. f=1
-Step 2 (2): miss → [1,2]. f=2
-Step 3 (3): miss → [1,2,3]. f=3
-Step 4 (4): miss, evict 1 (oldest) → [2,3,4]. f=4
-Step 5 (1): miss, evict 2 → [3,4,1]. f=5
-Step 6 (2): miss, evict 3 → [4,1,2]. f=6
-Step 7 (5): miss, evict 4 → [1,2,5]. f=7
-Step 8 (1): hit → [1,2,5]
-Step 9 (2): hit → [1,2,5]
-Step 10 (3): miss, evict 1 → [2,5,3]. f=8
-Step 11 (4): miss, evict 2 → [5,3,4]. f=9
-Step 12 (5): hit → [5,3,4]
+Step 1 (1): miss â†’ [1]. f=1
+Step 2 (2): miss â†’ [1,2]. f=2
+Step 3 (3): miss â†’ [1,2,3]. f=3
+Step 4 (4): miss, evict 1 (oldest) â†’ [2,3,4]. f=4
+Step 5 (1): miss, evict 2 â†’ [3,4,1]. f=5
+Step 6 (2): miss, evict 3 â†’ [4,1,2]. f=6
+Step 7 (5): miss, evict 4 â†’ [1,2,5]. f=7
+Step 8 (1): hit â†’ [1,2,5]
+Step 9 (2): hit â†’ [1,2,5]
+Step 10 (3): miss, evict 1 â†’ [2,5,3]. f=8
+Step 11 (4): miss, evict 2 â†’ [5,3,4]. f=9
+Step 12 (5): hit â†’ [5,3,4]
 Total page faults = 9.
+
+## Summary
+
+Mock Test 5 emphasizes algorithm analysis, operating systems memory management, and formal language theory. Key takeaways:
+- **Operating Systems**: Page replacement algorithms (FIFO, LRU, Optimal), disk scheduling, CPU scheduling (Round Robin, SRTF), and deadlock are high-weightage.
+- **Data Structures & Algorithms**: BST counting (Catalan numbers), graph theory (spanning trees, handshaking lemma), and sorting lower bounds are recurring themes.
+- **Computer Networks**: Fragmentation (MTU), SMTP/POP3 protocols, and subnetting are frequently tested numerical topics.
+- **Discrete Mathematics**: Catalan numbers for BST counting, chromatic numbers, and combinatorial counting problems appear in the mathematics section.
+
+Master page replacement tracing with frame tables and practice Catalan number derivations for tree-counting problems.
+
+## TypeScript Implementations
+
+The \WeakTopicAnalyzer\ class identifies a student's weakest GATE subjects from mock test performance data.
+
+\\\	ypescript
+/**
+ * WeakTopicAnalyzer — Analyzes mock test results
+ * to identify weakest subjects and suggest focus areas.
+ */
+interface TopicScore {
+  topic: string;
+  correct: number;
+  wrong: number;
+  total: number;
+}
+
+class WeakTopicAnalyzer {
+  private topics: Map<string, { correct: number; wrong: number; total: number }> = new Map();
+
+  /** Record performance for a topic. */
+  recordTopic(topic: string, correct: number, wrong: number, total: number): void {
+    const existing = this.topics.get(topic) ?? { correct: 0, wrong: 0, total: 0 };
+    existing.correct += correct;
+    existing.wrong += wrong;
+    existing.total += total;
+    this.topics.set(topic, existing);
+  }
+
+  /** Accuracy per topic (%). */
+  topicAccuracy(topic: string): number {
+    const data = this.topics.get(topic);
+    if (!data || data.total === 0) return 0;
+    return Math.round((data.correct / data.total) * 10000) / 100;
+  }
+
+  /** Net score per topic (with negative marking). */
+  topicNetScore(topic: string, marksPerQ: number = 1, penalty: number = 0.25): number {
+    const data = this.topics.get(topic);
+    if (!data) return 0;
+    return data.correct * marksPerQ - data.wrong * penalty;
+  }
+
+  /** Rank topics by weakness (ascending accuracy). */
+  weakestTopics(topN: number = 3): { topic: string; accuracy: number; netScore: number }[] {
+    const entries: { topic: string; accuracy: number; netScore: number }[] = [];
+    for (const [topic] of this.topics) {
+      entries.push({
+        topic,
+        accuracy: this.topicAccuracy(topic),
+        netScore: this.topicNetScore(topic),
+      });
+    }
+    entries.sort((a, b) => a.accuracy - b.accuracy);
+    return entries.slice(0, topN);
+  }
+
+  /** Generate an improvement plan based on weak areas. */
+  improvementPlan(): string[] {
+    const weak = this.weakestTopics(3);
+    const recommendations: string[] = [];
+    for (const w of weak) {
+      if (w.accuracy < 40) {
+        recommendations.push(\\: Accuracy is critically low (\%). Revise fundamentals and practice 20+ problems.\);
+      } else if (w.accuracy < 60) {
+        recommendations.push(\\: Below average (\%). Focus on past GATE questions and concept clarity.\);
+      } else if (w.accuracy < 75) {
+        recommendations.push(\\: Moderate (\%). Improve speed with timed practice.\);
+      } else {
+        recommendations.push(\\: Good (\%). Maintain with weekly review.\);
+      }
+    }
+    return recommendations;
+  }
+
+  /** Overall accuracy across all topics. */
+  overallAccuracy(): number {
+    let correct = 0, total = 0;
+    for (const [, data] of this.topics) {
+      correct += data.correct;
+      total += data.total;
+    }
+    return total > 0 ? Math.round((correct / total) * 10000) / 100 : 0;
+  }
+}
+
+// Example
+const analyzer = new WeakTopicAnalyzer();
+analyzer.recordTopic('Algorithms', 8, 4, 15);
+analyzer.recordTopic('OS', 12, 3, 15);
+analyzer.recordTopic('DBMS', 6, 6, 15);
+analyzer.recordTopic('Networks', 10, 2, 15);
+console.log('Weakest:', analyzer.weakestTopics(2));
+console.log('Plan:', analyzer.improvementPlan());
+\\\
+
+## Chapter Quiz
+
+**Q1.** Number of distinct BSTs with 4 nodes equals:
+- A) 10  B) 12  C) 14  D) 16
+
+**Q2.** Edges to remove from K6 to get a spanning tree:
+- A) 5  B) 10  C) 12  D) 15
+
+**Q3.** Round Robin with time quantum 4 ms for P1(8), P2(4), P3(9) — average waiting time?
+- A) 6.0  B) 7.0  C) 8.0  D) 9.0
+
+**Q4.** FIFO with 3 frames, reference string 1,2,3,4,1,2,5,1,2,3,4,5 yields how many page faults?
+- A) 7  B) 8  C) 9  D) 10
+
+**Q5.** SMTP is used for:
+- A) Receiving email  B) Sending email  C) File transfer  D) Web browsing
+
+**Answer Key**: 1-C, 2-B, 3-C, 4-C, 5-B
+
+## Exercises
+
+1. **Weak Topic Identifier**: Input mock test scores for 6 GATE subjects (Algorithms, OS, DBMS, Networks, COA, TOC) with 10 questions each. Identify the 3 weakest topics using \WeakTopicAnalyzer\.
+
+2. **Improvement Tracker**: After recording topic-wise accuracy from 3 consecutive mock tests, generate an improvement plan and track accuracy changes week-over-week.
+
+3. **Accuracy vs Speed**: For each topic, compute the correlation between time spent and accuracy. Determine if slower solving leads to higher accuracy.
+
+4. **Target Score Simulator**: Given current topic accuracies and the GATE exam weightage per topic, compute the expected total score with 95% confidence interval using Monte Carlo simulation.
+
+5. **Adaptive Study Planner**: Build a \StudyPlanner\ that allocates study hours proportionally to weakness (lower accuracy = more hours) and outputs a weekly study schedule.

@@ -1,4 +1,4 @@
-# GATE CS Mock Test 6 → Full-Length Practice Paper
+﻿# GATE CS Mock Test 6 â†’ Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -66,18 +66,18 @@ flowchart LR
 
 | Questions | Type | Marks | Negative Marking |
 |-----------|------|-------|-----------------|
-| Q1â€“Q10 (GA) | MCQ | 1 each | âˆ’1/3 |
-| Q11â€“Q15 (GA) | MCQ | 2 each | âˆ’2/3 |
-| Q16â€“Q20 (Math) | MCQ | 1 each | âˆ’1/3 |
-| Q21â€“Q25 (Math) | MCQ | 2 each | âˆ’2/3 |
-| Q26â€“Q45 (Technical) | MCQ | 1 each | âˆ’1/3 |
-| Q46â€“Q55 (Technical) | MCQ | 2 each | âˆ’2/3 |
+| Q1Ã¢â‚¬â€œQ10 (GA) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
+| Q11Ã¢â‚¬â€œQ15 (GA) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
+| Q16Ã¢â‚¬â€œQ20 (Math) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
+| Q21Ã¢â‚¬â€œQ25 (Math) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
+| Q26Ã¢â‚¬â€œQ45 (Technical) | MCQ | 1 each | Ã¢Ë†â€™1/3 |
+| Q46Ã¢â‚¬â€œQ55 (Technical) | MCQ | 2 each | Ã¢Ë†â€™2/3 |
 
 **Difficulty:** Moderate
 
 ---
 
-## Section A: General Aptitude (Questions 1â€“15)
+## Section A: General Aptitude (Questions 1Ã¢â‚¬â€œ15)
 
 **Q1 (1 Mark):** Select the word that is OPPOSITE in meaning to "SANGUINE":
 
@@ -88,12 +88,12 @@ flowchart LR
 
 ---
 
-**Q2 (1 Mark):** A man saves 15% of his monthly income. If his monthly expenditure is â‚¹42,500, what is his total monthly income?
+**Q2 (1 Mark):** A man saves 15% of his monthly income. If his monthly expenditure is Ã¢â€šÂ¹42,500, what is his total monthly income?
 
-(A) â‚¹48,000
-(B) â‚¹50,000
-(C) â‚¹52,000
-(D) â‚¹55,000
+(A) Ã¢â€šÂ¹48,000
+(B) Ã¢â€šÂ¹50,000
+(C) Ã¢â€šÂ¹52,000
+(D) Ã¢â€šÂ¹55,000
 
 ---
 
@@ -163,7 +163,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q10 (1 Mark):** What is the unit digit of 239 Ã— 347 Ã— 456 Ã— 578?
+**Q10 (1 Mark):** What is the unit digit of 239 Ãƒâ€” 347 Ãƒâ€” 456 Ãƒâ€” 578?
 
 (A) 0
 (B) 2
@@ -208,7 +208,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q15 (2 Marks):** A shopkeeper bought 80 kg of rice at â‚¹40/kg and 40 kg at â‚¹55/kg. He mixed them and sold at â‚¹54/kg. Profit percentage?
+**Q15 (2 Marks):** A shopkeeper bought 80 kg of rice at Ã¢â€šÂ¹40/kg and 40 kg at Ã¢â€šÂ¹55/kg. He mixed them and sold at Ã¢â€šÂ¹54/kg. Profit percentage?
 
 (A) 12%
 (B) 15%
@@ -217,9 +217,9 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16â€“25)
+## Section B: Engineering Mathematics (Questions 16Ã¢â‚¬â€œ25)
 
-**Q16 (1 Mark):** For matrix A = [[2, 1], [1, 2]], compute AÂ².
+**Q16 (1 Mark):** For matrix A = [[2, 1], [1, 2]], compute AÃ‚Â².
 
 (A) [[5, 4], [4, 5]]
 (B) [[4, 2], [2, 4]]
@@ -237,7 +237,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q18 (1 Mark):** Evaluate lim_{x→0} (eË£ âˆ’ 1 âˆ’ x) / xÂ².
+**Q18 (1 Mark):** Evaluate lim_{xâ†’0} (eÃ‹Â£ Ã¢Ë†â€™ 1 Ã¢Ë†â€™ x) / xÃ‚Â².
 
 (A) 0
 (B) 1/2
@@ -246,7 +246,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q19 (1 Mark):** If P(A) = 0.6, P(B) = 0.3, and A and B are independent, find P(A âˆ© B).
+**Q19 (1 Mark):** If P(A) = 0.6, P(B) = 0.3, and A and B are independent, find P(A Ã¢Ë†Â© B).
 
 (A) 0.12
 (B) 0.18
@@ -291,7 +291,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q24 (2 Marks):** The number of distinct Hamiltonian cycles in an undirected complete graph Kâ‚‡ is:
+**Q24 (2 Marks):** The number of distinct Hamiltonian cycles in an undirected complete graph KÃ¢â€šâ€¡ is:
 
 (A) 360
 (B) 720
@@ -300,16 +300,16 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q25 (2 Marks):** Solve the recurrence T(n) = 3T(n/3) + nÂ². The asymptotic complexity is:
+**Q25 (2 Marks):** Solve the recurrence T(n) = 3T(n/3) + nÃ‚Â². The asymptotic complexity is:
 
-(A) O(nÂ²)
-(B) O(nÂ² log n)
+(A) O(nÃ‚Â²)
+(B) O(nÃ‚Â² log n)
 (C) O(n log n)
-(D) O(nÂ³)
+(D) O(nÃ‚Â³)
 
 ---
 
-## Section C: Technical Subjects (Questions 26â€“55)
+## Section C: Technical Subjects (Questions 26Ã¢â‚¬â€œ55)
 
 **Q26 (1 Mark) [DS&A]:** Which data structure is optimal for implementing a deque (double-ended queue)?
 
@@ -347,7 +347,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q30 (1 Mark) [TOC]:** The language L = {aâ¿báµ | n > m â‰¥ 0} is:
+**Q30 (1 Mark) [TOC]:** The language L = {aÃ¢ÂÂ¿bÃ¡ÂµÂ | n > m Ã¢â€°Â¥ 0} is:
 
 (A) Regular
 (B) Context-free but not regular
@@ -379,7 +379,7 @@ Which conclusion(s) logically follow(s)?
 (A) 1 ns
 (B) 10 ns
 (C) 100 ns
-(D) 1 Î¼s
+(D) 1 ÃŽÂ¼s
 
 ---
 
@@ -455,7 +455,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q42 (1 Mark) [DS&A]:** Which divide-and-conquer sorting algorithm has O(nÂ²) worst-case time complexity?
+**Q42 (1 Mark) [DS&A]:** Which divide-and-conquer sorting algorithm has O(nÃ‚Â²) worst-case time complexity?
 
 (A) Merge Sort
 (B) Quick Sort
@@ -509,7 +509,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q48 (2 Marks) [CN]:** If the generator polynomial is xÂ³ + x + 1 and the dataword is 110101, what is the transmitted codeword in CRC?
+**Q48 (2 Marks) [CN]:** If the generator polynomial is xÃ‚Â³ + x + 1 and the dataword is 110101, what is the transmitted codeword in CRC?
 
 (A) 110101011
 (B) 110101100
@@ -518,7 +518,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with functional dependencies: AB → C, C → D, D → B, D → E. The candidate keys are:
+**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with functional dependencies: AB â†’ C, C â†’ D, D â†’ B, D â†’ E. The candidate keys are:
 
 (A) AB only
 (B) AB and AC only
@@ -527,7 +527,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q50 (2 Marks) [TOC]:** How many steps are needed in a leftmost derivation of the string "aabb" from grammar S → aSb | Îµ?
+**Q50 (2 Marks) [TOC]:** How many steps are needed in a leftmost derivation of the string "aabb" from grammar S â†’ aSb | ÃŽÂµ?
 
 (A) 2
 (B) 3
@@ -545,7 +545,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q52 (2 Marks) [DL]:** The 8-bit 2's complement representation of the decimal number âˆ’45 is:
+**Q52 (2 Marks) [DL]:** The 8-bit 2's complement representation of the decimal number Ã¢Ë†â€™45 is:
 
 (A) 11010011
 (B) 10101101
@@ -603,53 +603,53 @@ Which conclusion(s) logically follow(s)?
 
 **Q1:** Sanguine means cheerfully optimistic. The word that means the opposite is pessimistic.
 
-**Q2:** Let income = x. Expenditure = 85% of x = 0.85x = â‚¹42,500. Therefore x = 42,500/0.85 = â‚¹50,000.
+**Q2:** Let income = x. Expenditure = 85% of x = 0.85x = Ã¢â€šÂ¹42,500. Therefore x = 42,500/0.85 = Ã¢â€šÂ¹50,000.
 
 **Q3:** "taller" is the correct comparative form of "tall". Using "more taller" is a double comparative, which is grammatically incorrect. The correct sentence is "He is taller than his brother."
 
-**Q4:** Using set theory: |C âˆª F| = |C| + |F| âˆ’ |C âˆ© F| = 80 + 70 âˆ’ 30 = 120. Number liking neither = 150 âˆ’ 120 = 30.
+**Q4:** Using set theory: |C Ã¢Ë†Âª F| = |C| + |F| Ã¢Ë†â€™ |C Ã¢Ë†Â© F| = 80 + 70 Ã¢Ë†â€™ 30 = 120. Number liking neither = 150 Ã¢Ë†â€™ 120 = 30.
 
 **Q5:** All roses are flowers means the set of roses is a subset of flowers. Some flowers fade quickly does not guarantee that any rose is among those fading flowers (Conclusion I fails). However, since roses exist and all roses are flowers, it follows that some flowers are roses (Conclusion II follows). Only II follows.
 
-**Q6:** The sequence consists of squares of consecutive odd numbers: 1Â² = 1, 3Â² = 9, 5Â² = 25, 7Â² = 49, 9Â² = 81, 11Â² = 121.
+**Q6:** The sequence consists of squares of consecutive odd numbers: 1Ã‚Â² = 1, 3Ã‚Â² = 9, 5Ã‚Â² = 25, 7Ã‚Â² = 49, 9Ã‚Â² = 81, 11Ã‚Â² = 121.
 
-**Q7:** Each letter is shifted backward by 3 positions in the alphabet: T→Q, I→F, G→D, E→B, R→O (Caesar cipher with shift âˆ’3). Applying the same to LION: L→I, I→F, O→L, N→K, giving IFLK.
+**Q7:** Each letter is shifted backward by 3 positions in the alphabet: Tâ†’Q, Iâ†’F, Gâ†’D, Eâ†’B, Râ†’O (Caesar cipher with shift Ã¢Ë†â€™3). Applying the same to LION: Lâ†’I, Iâ†’F, Oâ†’L, Nâ†’K, giving IFLK.
 
-**Q8:** Net east-west displacement = 10 âˆ’ 2 = 8 km east. North displacement = 6 km. Distance from start = âˆš(8Â² + 6Â²) = âˆš(64 + 36) = âˆš100 = 10 km.
+**Q8:** Net east-west displacement = 10 Ã¢Ë†â€™ 2 = 8 km east. North displacement = 6 km. Distance from start = Ã¢Ë†Å¡(8Ã‚Â² + 6Ã‚Â²) = Ã¢Ë†Å¡(64 + 36) = Ã¢Ë†Å¡100 = 10 km.
 
 **Q9:** Comparing codes 1 and 2, "well" appears in both with code "ne". In code 2, "well done" = "ne ka", so "done" = "ka". Code 3 is a distractor.
 
-**Q10:** Unit digits: 239→9, 347→7, 456→6, 578→8. 9Ã—7=63 (unit 3), 3Ã—6=18 (unit 8), 8Ã—8=64 (unit 4). The unit digit of the product is 4.
+**Q10:** Unit digits: 239â†’9, 347â†’7, 456â†’6, 578â†’8. 9Ãƒâ€”7=63 (unit 3), 3Ãƒâ€”6=18 (unit 8), 8Ãƒâ€”8=64 (unit 4). The unit digit of the product is 4.
 
-**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) → 21x+15 = 16x+40 → 5x = 25 → x = 5. Father's age = 7Ã—5 = 35 years.
+**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) â†’ 21x+15 = 16x+40 â†’ 5x = 25 â†’ x = 5. Father's age = 7Ãƒâ€”5 = 35 years.
 
-**Q12:** Pipe fills at rate 1/12 per hour. Leak empties at rate 1/20 per hour. Net fill rate = 1/12 âˆ’ 1/20 = (5âˆ’3)/60 = 2/60 = 1/30 per hour. Time to fill = 30 hours.
+**Q12:** Pipe fills at rate 1/12 per hour. Leak empties at rate 1/20 per hour. Net fill rate = 1/12 Ã¢Ë†â€™ 1/20 = (5Ã¢Ë†â€™3)/60 = 2/60 = 1/30 per hour. Time to fill = 30 hours.
 
-**Q13:** First 3-digit number divisible by 7: 105 = 15Ã—7. Last: 994 = 142Ã—7. Count = 142 âˆ’ 15 + 1 = 128.
+**Q13:** First 3-digit number divisible by 7: 105 = 15Ãƒâ€”7. Last: 994 = 142Ãƒâ€”7. Count = 142 Ã¢Ë†â€™ 15 + 1 = 128.
 
 **Q14:** A runs 200 m at 8 m/s, taking 200/8 = 25 seconds. B has a 20 m head start (runs 180 m) and finishes 5 seconds after A, so B's time = 30 seconds. B's speed = 180/30 = 6 m/s.
 
-**Q15:** Total cost = 80Ã—40 + 40Ã—55 = 3200 + 2200 = â‚¹5400. Total weight = 120 kg. Revenue = 120Ã—54 = â‚¹6480. Profit = 6480 âˆ’ 5400 = â‚¹1080. Profit percentage = 1080/5400 Ã— 100 = 20%.
+**Q15:** Total cost = 80Ãƒâ€”40 + 40Ãƒâ€”55 = 3200 + 2200 = Ã¢â€šÂ¹5400. Total weight = 120 kg. Revenue = 120Ãƒâ€”54 = Ã¢â€šÂ¹6480. Profit = 6480 Ã¢Ë†â€™ 5400 = Ã¢â€šÂ¹1080. Profit percentage = 1080/5400 Ãƒâ€” 100 = 20%.
 
-**Q16:** AÂ² = [[2,1],[1,2]] Ã— [[2,1],[1,2]] = [[2Ã—2+1Ã—1, 2Ã—1+1Ã—2], [1Ã—2+2Ã—1, 1Ã—1+2Ã—2]] = [[5,4],[4,5]].
+**Q16:** AÃ‚Â² = [[2,1],[1,2]] Ãƒâ€” [[2,1],[1,2]] = [[2Ãƒâ€”2+1Ãƒâ€”1, 2Ãƒâ€”1+1Ãƒâ€”2], [1Ãƒâ€”2+2Ãƒâ€”1, 1Ãƒâ€”1+2Ãƒâ€”2]] = [[5,4],[4,5]].
 
-**Q17:** Complete graph Kâ‚™ has C(n,2) = n(nâˆ’1)/2 edges. For n=10: 10Ã—9/2 = 45.
+**Q17:** Complete graph KÃ¢â€šâ„¢ has C(n,2) = n(nÃ¢Ë†â€™1)/2 edges. For n=10: 10Ãƒâ€”9/2 = 45.
 
-**Q18:** Apply L'HÃ´pital's rule twice. First derivative: lim (eË£âˆ’1)/(2x). Still 0/0. Second derivative: lim eË£/2 = 1/2.
+**Q18:** Apply L'HÃƒÂ´pital's rule twice. First derivative: lim (eÃ‹Â£Ã¢Ë†â€™1)/(2x). Still 0/0. Second derivative: lim eÃ‹Â£/2 = 1/2.
 
-**Q19:** For independent events, P(Aâˆ©B) = P(A)Ã—P(B) = 0.6 Ã— 0.3 = 0.18.
+**Q19:** For independent events, P(AÃ¢Ë†Â©B) = P(A)Ãƒâ€”P(B) = 0.6 Ãƒâ€” 0.3 = 0.18.
 
-**Q20:** The converse of implication P→Q is Q→P. Given P = "it rains", Q = "ground is wet", the converse is "If the ground is wet, then it rains."
+**Q20:** The converse of implication Pâ†’Q is Qâ†’P. Given P = "it rains", Q = "ground is wet", the converse is "If the ground is wet, then it rains."
 
-**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} → 5Ã—4Ã—3Ã—2 = 120. Case 2 (last digit 5): first digit cannot be 0 → choices = 4Ã—4Ã—3Ã—2 = 96. Total = 120+96 = 216.
+**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} â†’ 5Ãƒâ€”4Ãƒâ€”3Ãƒâ€”2 = 120. Case 2 (last digit 5): first digit cannot be 0 â†’ choices = 4Ãƒâ€”4Ãƒâ€”3Ãƒâ€”2 = 96. Total = 120+96 = 216.
 
 **Q22:** Matrix is upper triangular. Sum of eigenvalues = trace = 1+4+6 = 11.
 
-**Q23:** Total marbles = 12. Total ways to choose 3 = C(12,3) = 220. Favorable ways = 1 red from 3 Ã— 1 blue from 4 Ã— 1 green from 5 = 3Ã—4Ã—5 = 60. Probability = 60/220 = 3/11.
+**Q23:** Total marbles = 12. Total ways to choose 3 = C(12,3) = 220. Favorable ways = 1 red from 3 Ãƒâ€” 1 blue from 4 Ãƒâ€” 1 green from 5 = 3Ãƒâ€”4Ãƒâ€”5 = 60. Probability = 60/220 = 3/11.
 
-**Q24:** Number of Hamiltonian cycles in Kâ‚™ (undirected) = (nâˆ’1)!/2. For n = 7: 6!/2 = 720/2 = 360.
+**Q24:** Number of Hamiltonian cycles in KÃ¢â€šâ„¢ (undirected) = (nÃ¢Ë†â€™1)!/2. For n = 7: 6!/2 = 720/2 = 360.
 
-**Q25:** By the Master Theorem: a=3, b=3, f(n)=nÂ². log_b a = 1. f(n) = nÂ² = Î©(n^{1+Îµ}) for Îµ=1. Check regularity: af(n/b) = 3(n/3)Â² = nÂ²/3 â‰¤ cnÂ² for c=1/3 &lt; 1. Case 3 applies, so T(n) = Î˜(nÂ²).
+**Q25:** By the Master Theorem: a=3, b=3, f(n)=nÃ‚Â². log_b a = 1. f(n) = nÃ‚Â² = ÃŽÂ©(n^{1+ÃŽÂµ}) for ÃŽÂµ=1. Check regularity: af(n/b) = 3(n/3)Ã‚Â² = nÃ‚Â²/3 Ã¢â€°Â¤ cnÃ‚Â² for c=1/3 &lt; 1. Case 3 applies, so T(n) = ÃŽËœ(nÃ‚Â²).
 
 **Q26:** A doubly linked list allows O(1) insertion and deletion at both ends, making it ideal for deque implementation.
 
@@ -657,13 +657,13 @@ Which conclusion(s) logically follow(s)?
 
 **Q28:** STP is a Layer 2 protocol used by switches to prevent broadcast storms by creating a loop-free logical topology.
 
-**Q29:** SELECT (Ïƒ), UNION (âˆª), and CARTESIAN PRODUCT (Ã—) are relational algebra operators. GROUP BY is an SQL clause.
+**Q29:** SELECT (ÃÆ’), UNION (Ã¢Ë†Âª), and CARTESIAN PRODUCT (Ãƒâ€”) are relational algebra operators. GROUP BY is an SQL clause.
 
 **Q30:** The language requires counting a's and comparing with b's. A PDA can push a's and pop for each b, accepting if stack has at least 1 a at end. This requires unbounded counting, so it is not regular but is context-free.
 
 **Q31:** Loop unrolling (also called loop unwinding) is an optimization that replicates the loop body multiple times to reduce loop control overhead. The others are general optimizations not specific to loops.
 
-**Q32:** (A+B)(A+C) = AÂ·A + AÂ·C + BÂ·A + BÂ·C = A + AC + AB + BC = A(1+C+B) + BC = A + BC.
+**Q32:** (A+B)(A+C) = AÃ‚Â·A + AÃ‚Â·C + BÃ‚Â·A + BÃ‚Â·C = A + AC + AB + BC = A(1+C+B) + BC = A + BC.
 
 **Q33:** SRAM typically has access time around 10 ns (much faster than DRAM at ~50-100 ns but slower than registers).
 
@@ -683,7 +683,7 @@ Which conclusion(s) logically follow(s)?
 
 **Q41:** The system bus consists of three sets of lines: data bus, address bus, and control bus, connecting CPU to memory and I/O.
 
-**Q42:** Quick Sort has O(nÂ²) worst-case time when the pivot consistently divides the array into very unequal partitions (e.g., already sorted array with first/last element as pivot).
+**Q42:** Quick Sort has O(nÃ‚Â²) worst-case time when the pivot consistently divides the array into very unequal partitions (e.g., already sorted array with first/last element as pivot).
 
 **Q43:** Thrashing occurs when the degree of multiprogramming is so high that the system spends most of its time swapping pages between memory and disk rather than executing processes.
 
@@ -691,22 +691,184 @@ Which conclusion(s) logically follow(s)?
 
 **Q45:** A router operates at the Network layer (Layer 3) and forwards packets between different networks based on IP addresses.
 
-**Q46:** A full binary tree with height h has all levels filled: 2â°+2Â¹+...+2Ê° = 2^{h+1}âˆ’1 = 2â¶âˆ’1 = 63 nodes.
+**Q46:** A full binary tree with height h has all levels filled: 2Ã¢ÂÂ°+2Ã‚Â¹+...+2ÃŠÂ° = 2^{h+1}Ã¢Ë†â€™1 = 2Ã¢ÂÂ¶Ã¢Ë†â€™1 = 63 nodes.
 
-**Q47:** Need = Max âˆ’ Allocation: P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,0). With Avail=(3,3,2): P1 fits → P1 releases (2,0,0), Avail=(5,3,2). P3 fits → releases (2,1,1), Avail=(7,4,3). P0 fits → releases (0,1,0), Avail=(7,5,3). P2 fits. Safe sequence: P1, P3, P0, P2.
+**Q47:** Need = Max Ã¢Ë†â€™ Allocation: P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,0). With Avail=(3,3,2): P1 fits â†’ P1 releases (2,0,0), Avail=(5,3,2). P3 fits â†’ releases (2,1,1), Avail=(7,4,3). P0 fits â†’ releases (0,1,0), Avail=(7,5,3). P2 fits. Safe sequence: P1, P3, P0, P2.
 
-**Q48:** Generator polynomial xÂ³+x+1 = 1011. Append 3 zeros to dataword: 110101000. Binary polynomial division: XOR remainder = 001. Codeword = 110101001.
+**Q48:** Generator polynomial xÃ‚Â³+x+1 = 1011. Append 3 zeros to dataword: 110101000. Binary polynomial division: XOR remainder = 001. Codeword = 110101001.
 
-**Q49:** ABâº = ABCDE (AB→C, C→D, D→B already present, D→E). ACâº = ACDEB (C→D, D→B, D→E). ADâº = ADBCE (D→B gives AB, then AB→C, then D→E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
+**Q49:** ABÃ¢ÂÂº = ABCDE (ABâ†’C, Câ†’D, Dâ†’B already present, Dâ†’E). ACÃ¢ÂÂº = ACDEB (Câ†’D, Dâ†’B, Dâ†’E). ADÃ¢ÂÂº = ADBCE (Dâ†’B gives AB, then ABâ†’C, then Dâ†’E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
 
-**Q50:** S → aSb → aaSbb → aaÎµbb = aabb. The leftmost derivation takes exactly 3 steps.
+**Q50:** S â†’ aSb â†’ aaSbb â†’ aaÃŽÂµbb = aabb. The leftmost derivation takes exactly 3 steps.
 
-**Q51:** The DFA has 4 states: qâ‚€ (no match), qâ‚ (ends in "a"), qâ‚‚ (ends in "aa"), qâ‚ƒ (accepting, ends in "abb"). Transitions: from qâ‚ƒ on 'a' go to qâ‚, on 'b' go to qâ‚‚.
+**Q51:** The DFA has 4 states: qÃ¢â€šâ‚¬ (no match), qÃ¢â€šÂ (ends in "a"), qÃ¢â€šâ€š (ends in "aa"), qÃ¢â€šÆ’ (accepting, ends in "abb"). Transitions: from qÃ¢â€šÆ’ on 'a' go to qÃ¢â€šÂ, on 'b' go to qÃ¢â€šâ€š.
 
 **Q52:** +45 = 00101101. 1's complement: 11010010. 2's complement (add 1): 11010011.
 
-**Q53:** L1 miss rate = 20%. L2 miss rate given L1 miss = 15%. AMAT = L1_time + L1_miss_rate Ã— (L2_time + L2_miss_rate Ã— miss_penalty) = 1 + 0.2 Ã— (8 + 0.15 Ã— 80) = 1 + 0.2 Ã— (8 + 12) = 1 + 0.2 Ã— 20 = 1 + 4 = 5.0 ns.
+**Q53:** L1 miss rate = 20%. L2 miss rate given L1 miss = 15%. AMAT = L1_time + L1_miss_rate Ãƒâ€” (L2_time + L2_miss_rate Ãƒâ€” miss_penalty) = 1 + 0.2 Ãƒâ€” (8 + 0.15 Ãƒâ€” 80) = 1 + 0.2 Ãƒâ€” (8 + 12) = 1 + 0.2 Ãƒâ€” 20 = 1 + 4 = 5.0 ns.
 
 **Q54:** From postorder (last element A is root), split inorder into left (D,B,E) and right (F,C,G). From postorder, left subtree root is B (DEB), right subtree root is C (FGC). Recursively: A's left child B with inorder D,B,E gives D left of B, E right of B. A's right child C with inorder F,C,G gives F left of C, G right of C. Preorder: A,B,D,E,C,F,G.
 
-**Q55:** LRU with 3 frames: 7(m→[7]),0(m→[7,0]),1(m→[7,0,1]),2(m→[0,1,2],evict7),0(hit),3(m→[1,2,3],evict1),0(hit→[2,3,0]),4(m→[3,0,4],evict2),2(m→[0,4,2],evict3),3(m→[4,2,3],evict0),0(m→[2,3,0],evict4),3(hit),2(hit),1(m→[3,2,1],evict0),2(hit),0(m→[2,1,0],evict3),1(hit),7(m→[1,0,7],evict2),0(hit),1(hit). Total = 12 faults.
+**Q55:** LRU with 3 frames: 7(mâ†’[7]),0(mâ†’[7,0]),1(mâ†’[7,0,1]),2(mâ†’[0,1,2],evict7),0(hit),3(mâ†’[1,2,3],evict1),0(hitâ†’[2,3,0]),4(mâ†’[3,0,4],evict2),2(mâ†’[0,4,2],evict3),3(mâ†’[4,2,3],evict0),0(mâ†’[2,3,0],evict4),3(hit),2(hit),1(mâ†’[3,2,1],evict0),2(hit),0(mâ†’[2,1,0],evict3),1(hit),7(mâ†’[1,0,7],evict2),0(hit),1(hit). Total = 12 faults.
+
+## Summary
+
+Mock Test 6 covers graph theory, cache memory hierarchy, compiler phases, and digital logic. Key takeaways:
+- **Graph Theory**: Degree sequences, Eulerian/Hamiltonian paths, graph coloring, and minimum spanning trees (Kruskal/Prim) are frequently tested.
+- **Cache Memory**: Average memory access time (AMAT) calculations with multi-level caches, block size tradeoffs, and write policies.
+- **Compiler Phases**: Three-address code generation, DAG representation, basic blocks, and flow graphs are essential for compiler questions.
+- **Digital Logic**: Flip-flop conversions (SR to JK, D to T), counter design, and combinational circuit minimization using K-maps.
+
+Numerical problems on AMAT and clock cycle calculations need careful attention to miss rates and penalty hierarchies. Master LRU tracing for page replacement.
+
+## TypeScript Implementations
+
+The \WeakTopicAnalyzer\ class (enhanced) adds trend analysis across multiple tests and targeted study recommendations.
+
+\\\	ypescript
+/**
+ * WeakTopicAnalyzer — Enhanced with cross-test trend
+ * analysis, improvement tracking, and personalized study plans.
+ */
+interface TestRecord {
+  testId: number;
+  date: string;
+  topicScores: Map<string, { correct: number; wrong: number; total: number }>;
+}
+
+class WeakTopicAnalyzer {
+  private testHistory: TestRecord[] = [];
+
+  /** Add a test record. */
+  addTest(
+    testId: number,
+    date: string,
+    scores: [string, number, number, number][] // [topic, correct, wrong, total]
+  ): void {
+    const topicScores = new Map<string, { correct: number; wrong: number; total: number }>();
+    for (const [topic, correct, wrong, total] of scores) {
+      topicScores.set(topic, { correct, wrong, total });
+    }
+    this.testHistory.push({ testId, date, topicScores });
+  }
+
+  /** Accuracy trend for a topic across tests. */
+  topicTrend(topic: string): { testId: number; accuracy: number }[] {
+    const trend: { testId: number; accuracy: number }[] = [];
+    for (const test of this.testHistory) {
+      const scores = test.topicScores.get(topic);
+      if (scores && scores.total > 0) {
+        trend.push({
+          testId: test.testId,
+          accuracy: Math.round((scores.correct / scores.total) * 10000) / 100,
+        });
+      }
+    }
+    return trend;
+  }
+
+  /** Identify topics with declining trend (accuracy dropping over tests). */
+  decliningTopics(): string[] {
+    const declining: string[] = [];
+    const allTopics = new Set<string>();
+    for (const test of this.testHistory) {
+      for (const [topic] of test.topicScores) allTopics.add(topic);
+    }
+    for (const topic of allTopics) {
+      const trend = this.topicTrend(topic);
+      if (trend.length >= 2 && trend[trend.length - 1].accuracy < trend[0].accuracy) {
+        declining.push(topic);
+      }
+    }
+    return declining;
+  }
+
+  /** Study hour recommendation per topic based on weakness and GATE weightage. */
+  studyPlan(gateWeightage: Map<string, number>, totalHours: number = 40): Map<string, number> {
+    const plan = new Map<string, number>();
+    let totalWeakness = 0;
+    const weakness = new Map<string, number>();
+
+    for (const [topic, weight] of gateWeightage) {
+      const acc = this.averageAccuracy(topic);
+      const w = weight * (1 - acc / 100); // weighted weakness
+      weakness.set(topic, w);
+      totalWeakness += w;
+    }
+
+    if (totalWeakness === 0) return plan;
+    for (const [topic, w] of weakness) {
+      plan.set(topic, Math.round((w / totalWeakness) * totalHours));
+    }
+    return plan;
+  }
+
+  private averageAccuracy(topic: string): number {
+    let correct = 0, total = 0;
+    for (const test of this.testHistory) {
+      const s = test.topicScores.get(topic);
+      if (s) { correct += s.correct; total += s.total; }
+    }
+    return total > 0 ? (correct / total) * 100 : 0;
+  }
+
+  /** Generate full diagnostic report. */
+  diagnosticReport(): string {
+    const lines: string[] = ['=== Weak Topic Diagnostic Report ==='];
+    const declining = this.decliningTopics();
+    if (declining.length > 0) {
+      lines.push('? Declining topics: ' + declining.join(', '));
+    } else {
+      lines.push('? No declining topics — all improving or stable.');
+    }
+    const allTopics = new Set<string>();
+    for (const test of this.testHistory) {
+      for (const [topic] of test.topicScores) allTopics.add(topic);
+    }
+    for (const topic of allTopics) {
+      const trend = this.topicTrend(topic);
+      const avg = this.averageAccuracy(topic);
+      const direction = trend.length >= 2 && trend[trend.length - 1].accuracy > trend[0].accuracy ? '?' : '?';
+      lines.push(\\: Avg \% \\);
+    }
+    return lines.join('\n');
+  }
+}
+
+// Example
+const wa = new WeakTopicAnalyzer();
+wa.addTest(1, '2026-06-01', [['Algo',8,2,10], ['OS',7,3,10], ['DBMS',5,5,10]]);
+wa.addTest(2, '2026-06-15', [['Algo',9,1,10], ['OS',6,4,10], ['DBMS',6,4,10]]);
+console.log(wa.diagnosticReport());
+\\\
+
+## Chapter Quiz
+
+**Q1.** AMAT = L1_time + L1_miss_rate × (L2_time + L2_miss_rate × miss_penalty). L1=1ns, L1 miss=20%, L2=8ns, L2 miss=15% of L1 misses, penalty=80ns. AMAT = ?
+- A) 3.0 ns  B) 4.0 ns  C) 5.0 ns  D) 6.0 ns
+
+**Q2.** Number of three-address code temporaries for (a + b) * c - (d / e) * f:
+- A) 3  B) 4  C) 5  D) 6
+
+**Q3.** A 2's complement representation of -45 in 8 bits:
+- A) 11010011  B) 10101101  C) 11010010  D) 00101101
+
+**Q4.** LRU with 3 frames, reference 7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1 yields how many faults?
+- A) 10  B) 11  C) 12  D) 13
+
+**Q5.** Postorder D,E,B,F,G,C,A corresponds to which preorder traversal?
+- A) A,B,D,E,C,F,G  B) A,B,D,E,F,G,C  C) A,B,C,D,E,F,G  D) D,E,B,F,G,C,A
+
+**Answer Key**: 1-C, 2-C, 3-A, 4-C, 5-A
+
+## Exercises
+
+1. **Diagnostic Report**: Feed scores for 5 topics across 3 mock tests into \WeakTopicAnalyzer\. Generate a diagnostic report identifying declining topics and recommended study hours.
+
+2. **Study Plan Generator**: Given GATE weightage {Algo:15%, OS:12%, DBMS:10%, Networks:10%, COA:12%, TOC:8%, Math:15%, Apt:15%, CD:3%} and topic accuracies, generate a 40-hour study plan.
+
+3. **Trend Visualizer**: Extract topic accuracy trends and plot (in ASCII or array format) the week-over-week accuracy changes. Highlight topics needing immediate attention.
+
+4. **Correlation Calculator**: Compute the correlation between topic accuracy and GATE weightage. Determine if students tend to be stronger in higher-weightage topics.
+
+5. **Personalized Test Generator**: Using weak topics, generate a 10-question practice test weighted toward identified weak areas, with question difficulties based on accuracy levels.

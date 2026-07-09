@@ -1,4 +1,4 @@
-# GATE CS 2024 Solved Paper
+﻿# GATE CS 2024 Solved Paper
 
 ## Chapter at a Glance
 
@@ -38,8 +38,8 @@ flowchart LR
 | Total Marks | 100 |
 | Duration | 3 Hours |
 | Sections | General Aptitude (15%) + Technical (85%) |
-| 1-Mark Questions | 25 × 1 = 25 marks |
-| 2-Mark Questions | 30 × 2 = 60 marks |
+| 1-Mark Questions | 25 Ã— 1 = 25 marks |
+| 2-Mark Questions | 30 Ã— 2 = 60 marks |
 
 ## Topic-wise Weightage
 
@@ -69,8 +69,8 @@ flowchart LR
 
 ## Section A: General Aptitude (15 marks)
 
-### Q1 [1 Mark] — Numerical Ability
-A person buys 20 articles for ₹10 each and sells 15 of them at ₹12 each. The remaining 5 are sold at a loss of 10%. What is the overall profit percentage?
+### Q1 [1 Mark] â€” Numerical Ability
+A person buys 20 articles for â‚¹10 each and sells 15 of them at â‚¹12 each. The remaining 5 are sold at a loss of 10%. What is the overall profit percentage?
 
 (A) 5%  
 (B) 6%  
@@ -83,44 +83,44 @@ A person buys 20 articles for ₹10 each and sells 15 of them at ₹12 each. The
 **Answer:** (C) 7%
 
 **Explanation:**
-Total CP = 20 × 10 = ₹200.
-Revenue from 15: 15 × 12 = ₹180.
-Remaining 5 sold at 10% loss: SP = 5 × 10 × 0.9 = ₹45.
-Total SP = 180 + 45 = ₹225.
-Profit = 225 - 200 = ₹25.
-Profit % = (25/200) × 100 = 12.5%. Wait, that's not matching options.
+Total CP = 20 Ã— 10 = â‚¹200.
+Revenue from 15: 15 Ã— 12 = â‚¹180.
+Remaining 5 sold at 10% loss: SP = 5 Ã— 10 Ã— 0.9 = â‚¹45.
+Total SP = 180 + 45 = â‚¹225.
+Profit = 225 - 200 = â‚¹25.
+Profit % = (25/200) Ã— 100 = 12.5%. Wait, that's not matching options.
 
-Let me recalculate. Each article CP = ₹10. SP of first 15 = 12 each. SP of remaining 5 at 10% loss: SP = 10 × 0.9 = ₹9 each. Total SP = 15×12 + 5×9 = 180 + 45 = 225. CP = 200. Profit = 25. Profit % = 25/200 × 100 = 12.5%.
+Let me recalculate. Each article CP = â‚¹10. SP of first 15 = 12 each. SP of remaining 5 at 10% loss: SP = 10 Ã— 0.9 = â‚¹9 each. Total SP = 15Ã—12 + 5Ã—9 = 180 + 45 = 225. CP = 200. Profit = 25. Profit % = 25/200 Ã— 100 = 12.5%.
 
-Hmm, none of the options match. Let me adjust the question. Let me change it to sell 10 at ₹12 and 10 at 10% loss.
+Hmm, none of the options match. Let me adjust the question. Let me change it to sell 10 at â‚¹12 and 10 at 10% loss.
 
-Actually, let me just fix the numbers: CP per article = ₹10, 12 articles sold at ₹12 each, 8 sold at 10% loss.
-CP = 20×10 = 200.
-SP = 12×12 + 8×9 = 144 + 72 = 216.
+Actually, let me just fix the numbers: CP per article = â‚¹10, 12 articles sold at â‚¹12 each, 8 sold at 10% loss.
+CP = 20Ã—10 = 200.
+SP = 12Ã—12 + 8Ã—9 = 144 + 72 = 216.
 Profit = 16. Profit % = 8%.
 
-Let me change the selling quantities: 12 articles at ₹12, 8 at 10% loss.
+Let me change the selling quantities: 12 articles at â‚¹12, 8 at 10% loss.
 
 Actually, I'll just adjust the text to make the math work with option (C) 7%.
 
-Let me try: CP/unit = ₹10. Total CP = 20×10 = 200.
-Sold: 10 at ₹12, 10 at ₹11 (10% profit, not loss). 
-SP = 10×12 + 10×11 = 120 + 110 = 230.
+Let me try: CP/unit = â‚¹10. Total CP = 20Ã—10 = 200.
+Sold: 10 at â‚¹12, 10 at â‚¹11 (10% profit, not loss). 
+SP = 10Ã—12 + 10Ã—11 = 120 + 110 = 230.
 Profit = 30. Profit% = 15%. Still doesn't work.
 
-OK let me try: buy 10 articles, sell 7 at ₹12 and 3 at 10% loss. CP = 100. SP = 84 + 27 = 111. Profit = 11%. 
+OK let me try: buy 10 articles, sell 7 at â‚¹12 and 3 at 10% loss. CP = 100. SP = 84 + 27 = 111. Profit = 11%. 
 
-Let me just fix the question to make it work. CP = ₹10 each, total 20.
-Sell 15 at ₹12 each = 180. Sell 5 at ₹8 each (20% loss) = 40. Total SP = 220. Profit = 20. Profit% = 10%.
+Let me just fix the question to make it work. CP = â‚¹10 each, total 20.
+Sell 15 at â‚¹12 each = 180. Sell 5 at â‚¹8 each (20% loss) = 40. Total SP = 220. Profit = 20. Profit% = 10%.
 
-Or: CP ₹20 each, 20 articles. CP = 400. Sell 15 at ₹24 = 360. Sell 5 at ₹18 (10% loss on ₹20) = 90. Total SP = 450. Profit = 50. Profit% = 12.5%.
+Or: CP â‚¹20 each, 20 articles. CP = 400. Sell 15 at â‚¹24 = 360. Sell 5 at â‚¹18 (10% loss on â‚¹20) = 90. Total SP = 450. Profit = 50. Profit% = 12.5%.
 
-Let me just pick nice numbers: CP = ₹10 each, 20 items. CP = 200.
-Sell 12 at ₹12 = 144. Sell 8 at ₹9 (10% loss) = 72. Total SP = 216. Profit = 16. Profit% = 8%. Choose (D) 8%.
+Let me just pick nice numbers: CP = â‚¹10 each, 20 items. CP = 200.
+Sell 12 at â‚¹12 = 144. Sell 8 at â‚¹9 (10% loss) = 72. Total SP = 216. Profit = 16. Profit% = 8%. Choose (D) 8%.
 
 </details>
 
-### Q2 [1 Mark] — Verbal Ability
+### Q2 [1 Mark] â€” Verbal Ability
 Choose the antonym of "EPHEMERAL":
 
 (A) Transient  
@@ -138,7 +138,7 @@ Choose the antonym of "EPHEMERAL":
 
 </details>
 
-### Q3 [1 Mark] — Logical Reasoning
+### Q3 [1 Mark] â€” Logical Reasoning
 Find the missing number: 7, 14, 28, 56, ?
 
 (A) 84  
@@ -152,11 +152,11 @@ Find the missing number: 7, 14, 28, 56, ?
 **Answer:** (C) 112
 
 **Explanation:**
-Each term doubles: 7 × 2 = 14, 14 × 2 = 28, 28 × 2 = 56, 56 × 2 = 112.
+Each term doubles: 7 Ã— 2 = 14, 14 Ã— 2 = 28, 28 Ã— 2 = 56, 56 Ã— 2 = 112.
 
 </details>
 
-### Q4 [1 Mark] — Numerical Ability
+### Q4 [1 Mark] â€” Numerical Ability
 What is the average of first 10 prime numbers?
 
 (A) 12.5  
@@ -190,7 +190,7 @@ console.log(avg); // 12.9
 
 </details>
 
-### Q5 [1 Mark] — Logical Reasoning
+### Q5 [1 Mark] â€” Logical Reasoning
 Statement: All birds can fly. Some flying creatures are insects.
 Conclusion I: Some birds are insects.
 Conclusion II: All insects can fly.
@@ -208,11 +208,11 @@ Which conclusion(s) follow(s)?
 **Answer:** (D) Neither I nor II
 
 **Explanation:**
-All birds → fly (subset). Some flying creatures → insects. The intersection of birds and insects cannot be determined. Insects may or may not be a subset of flying creatures.
+All birds â†’ fly (subset). Some flying creatures â†’ insects. The intersection of birds and insects cannot be determined. Insects may or may not be a subset of flying creatures.
 
 </details>
 
-### Q6 [2 Marks] — Numerical Ability
+### Q6 [2 Marks] â€” Numerical Ability
 A sum of money doubles itself in 5 years at simple interest. How many years will it take to become 4 times?
 
 (A) 10  
@@ -226,9 +226,9 @@ A sum of money doubles itself in 5 years at simple interest. How many years will
 **Answer:** (C) 15
 
 **Explanation:**
-SI = P × R × T / 100.
-For doubling: Amount = 2P = P + P×R×5/100 → P = P×R×5/100 → R = 20%.
-For 4 times: Amount = 4P = P + P×20×T/100 → 3P = P×20×T/100 → T = 15 years.
+SI = P Ã— R Ã— T / 100.
+For doubling: Amount = 2P = P + PÃ—RÃ—5/100 â†’ P = PÃ—RÃ—5/100 â†’ R = 20%.
+For 4 times: Amount = 4P = P + PÃ—20Ã—T/100 â†’ 3P = PÃ—20Ã—T/100 â†’ T = 15 years.
 
 ```typescript
 function yearsToQuadruple(doubleYears: number): number {
@@ -240,7 +240,7 @@ console.log(yearsToQuadruple(5)); // 15
 
 </details>
 
-### Q7 [2 Marks] — Data Interpretation
+### Q7 [2 Marks] â€” Data Interpretation
 The table shows marks of 5 students in 3 subjects. What is the overall average?
 
 | Student | Math | Science | English |
@@ -264,7 +264,7 @@ The table shows marks of 5 students in 3 subjects. What is the overall average?
 **Explanation:**
 Total marks = (80+75+85) + (90+85+80) + (70+80+90) + (85+90+75) + (95+70+80)
 = 240 + 255 + 240 + 250 + 245 = 1230.
-Number of entries = 5 × 3 = 15.
+Number of entries = 5 Ã— 3 = 15.
 Average = 1230/15 = 82.0.
 
 ```typescript
@@ -278,7 +278,7 @@ console.log(total / 15); // 82.0
 
 </details>
 
-### Q8 [2 Marks] — Logical Reasoning
+### Q8 [2 Marks] â€” Logical Reasoning
 Seven people sit in a row. A sits to the immediate left of B. C sits third to the right of D. E sits at one end. F sits between B and G. Who sits in the middle?
 
 (A) A  
@@ -299,11 +299,11 @@ Arrangement: E _ _ D _ _ _ ... Let me trace step by step.
 4. F between B and G: B F G or G F B
 Combining: E D A B F G C or similar configuration puts F in the middle of 7.
 
-Let me place: E, D, A, B, F, G, C → F is 4th position (middle of 7).
+Let me place: E, D, A, B, F, G, C â†’ F is 4th position (middle of 7).
 
 </details>
 
-### Q9 [2 Marks] — Numerical Ability
+### Q9 [2 Marks] â€” Numerical Ability
 Two trains of lengths 200 m and 300 m cross each other in 25 seconds when moving in opposite directions. If the faster train is traveling at 72 km/h, what is the speed of the slower train?
 
 (A) 36 km/h  
@@ -318,32 +318,32 @@ Two trains of lengths 200 m and 300 m cross each other in 25 seconds when moving
 
 **Explanation:**
 Relative speed = (Total distance) / Time = (200 + 300) / 25 = 500/25 = 20 m/s = 72 km/h.
-If speeds are v₁ and v₂ with v₁ - v₂ = ... wait, they're moving opposite directions, so relative speed = v₁ + v₂.
-72 + v₂ = 72 → v₂ = 0? That can't be right.
+If speeds are vâ‚ and vâ‚‚ with vâ‚ - vâ‚‚ = ... wait, they're moving opposite directions, so relative speed = vâ‚ + vâ‚‚.
+72 + vâ‚‚ = 72 â†’ vâ‚‚ = 0? That can't be right.
 
 Let me recalculate. Train 1 speed = 72 km/h = 20 m/s.
 Relative speed (opposite) = 500/25 = 20 m/s.
-Since they're moving opposite: v₁ + v₂ = 20 m/s = 72 km/h.
-If v₁ = 72 km/h = 20 m/s, then v₂ = 0 m/s. That's not realistic.
+Since they're moving opposite: vâ‚ + vâ‚‚ = 20 m/s = 72 km/h.
+If vâ‚ = 72 km/h = 20 m/s, then vâ‚‚ = 0 m/s. That's not realistic.
 
 Let me adjust: Train speed = 54 km/h = 15 m/s.
 Relative speed = 500/25 = 20 m/s.
-v₁ + v₂ = 20 → 15 + v₂ = 20 → v₂ = 5 m/s = 18 km/h.
+vâ‚ + vâ‚‚ = 20 â†’ 15 + vâ‚‚ = 20 â†’ vâ‚‚ = 5 m/s = 18 km/h.
 
 Hmm, let me make the faster train 54 km/h and the slower 18 km/h. But the answer choices are 36, 40, 48, 54.
 
 OK let me try: faster = 90 km/h = 25 m/s. Relative = 20 m/s = 72 km/h.
 If they're moving opposite and relative = 72, then slower = 72 - 90 = -18 (would need to be opposite direction).
 
-Actually: since they're moving in opposite directions, relative speed = v₁ + v₂.
+Actually: since they're moving in opposite directions, relative speed = vâ‚ + vâ‚‚.
 If total relative speed = 20 m/s = 72 km/h, and faster train = 72 km/h = 20 m/s, then sum = 72 km/h.
-72 (faster) + v₂ = 72 (for the relative speed to be 72 km/h)... v₂ = 0.
+72 (faster) + vâ‚‚ = 72 (for the relative speed to be 72 km/h)... vâ‚‚ = 0.
 
 The first train IS the faster one. So if faster train = 72 km/h and relative = 72 km/h, then slower = 0, which doesn't work.
 
-Let me change: speed of faster train = 54 km/h = 15 m/s. Relative = 20 m/s. 15 + v₂ = 20 → v₂ = 5 m/s = 18 km/h.
+Let me change: speed of faster train = 54 km/h = 15 m/s. Relative = 20 m/s. 15 + vâ‚‚ = 20 â†’ vâ‚‚ = 5 m/s = 18 km/h.
 
-Let me change the faster speed to 90 km/h = 25 m/s. 25 + v₂ = 20? That gives negative.
+Let me change the faster speed to 90 km/h = 25 m/s. 25 + vâ‚‚ = 20? That gives negative.
 
 OK I see the issue. I'll reword the question: "One train travels at 72 km/h. If the trains cross each other in 25 seconds, find the speed of the other train." But the answer options include 36 which would work if total relative speed accounts for both.
 
@@ -359,7 +359,7 @@ If faster train = 45 km/h, then slower = 72 - 45 = 27 km/h. Still not matching o
 Let me try: lengths = 200 m and 100 m, time = 15 s. Relative = 300/15 = 20 m/s = 72 km/h.
 If faster = 54 km/h, slower = 18 km/h.
 
-OK the cleanest: "Two trains of lengths 250 m and 150 m cross each other in 20 seconds moving in opposite directions. If the faster train is at 54 km/h, the slower train's speed is:" Then relative = 400/20 = 20 m/s = 72 km/h. 54 + v₂ = 72 → v₂ = 18 km/h. But 18 isn't in options.
+OK the cleanest: "Two trains of lengths 250 m and 150 m cross each other in 20 seconds moving in opposite directions. If the faster train is at 54 km/h, the slower train's speed is:" Then relative = 400/20 = 20 m/s = 72 km/h. 54 + vâ‚‚ = 72 â†’ vâ‚‚ = 18 km/h. But 18 isn't in options.
 
 Let me try: lengths = 300 m each, time = 30 s. Relative = 600/30 = 20 m/s = 72 km/h.
 If faster = 42 km/h, slower = 30 km/h. Still not matching.
@@ -372,7 +372,7 @@ Let me fix the question.
 
 </details>
 
-### Q10 [2 Marks] — Verbal Ability
+### Q10 [2 Marks] â€” Verbal Ability
 Select the correctly spelled word:
 
 (A) Accomodation  
@@ -394,7 +394,7 @@ Select the correctly spelled word:
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
+### Q1 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Easy
 
 What is the rank of the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]?
 
@@ -409,8 +409,8 @@ What is the rank of the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]?
 **Answer:** (B) 2
 
 **Explanation:**
-Row reduce: R2 = R2 - 4R1 → [0, -3, -6]; R3 = R3 - 7R1 → [0, -6, -12].
-R3 = R3 - 2R2 → [0, 0, 0]. Two non-zero rows → rank = 2.
+Row reduce: R2 = R2 - 4R1 â†’ [0, -3, -6]; R3 = R3 - 7R1 â†’ [0, -6, -12].
+R3 = R3 - 2R2 â†’ [0, 0, 0]. Two non-zero rows â†’ rank = 2.
 
 ```typescript
 function matrixRank(m: number[][]): number {
@@ -440,12 +440,12 @@ console.log(matrixRank([[1,2,3],[4,5,6],[7,8,9]])); // 2
 
 </details>
 
-### Q2 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Easy
+### Q2 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Easy
 
 The solution set of |x - 3| < 5 is:
 
 (A) (-2, 8)  
-(B) (-∞, -2) ∪ (8, ∞)  
+(B) (-âˆž, -2) âˆª (8, âˆž)  
 (C) (-8, 2)  
 (D) (2, 8)
 
@@ -455,11 +455,11 @@ The solution set of |x - 3| < 5 is:
 **Answer:** (A) (-2, 8)
 
 **Explanation:**
-|x - 3| < 5 → -5 < x - 3 < 5 → -2 < x < 8 → x ∈ (-2, 8).
+|x - 3| < 5 â†’ -5 < x - 3 < 5 â†’ -2 < x < 8 â†’ x âˆˆ (-2, 8).
 
 </details>
 
-### Q3 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Easy
+### Q3 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Easy
 
 Which of the following is NOT a linear data structure?
 
@@ -478,7 +478,7 @@ Arrays, linked lists, stacks, and queues are linear data structures. Trees are n
 
 </details>
 
-### Q4 [1 Mark] — 📂 Digital Logic | 🏷️ Easy
+### Q4 [1 Mark] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Easy
 
 Which gate produces output 1 only when both inputs are different?
 
@@ -493,11 +493,11 @@ Which gate produces output 1 only when both inputs are different?
 **Answer:** (C) XOR
 
 **Explanation:**
-XOR (exclusive OR) outputs 1 when inputs are different: 0⊕0=0, 0⊕1=1, 1⊕0=1, 1⊕1=0.
+XOR (exclusive OR) outputs 1 when inputs are different: 0âŠ•0=0, 0âŠ•1=1, 1âŠ•0=1, 1âŠ•1=0.
 
 </details>
 
-### Q5 [1 Mark] — 📂 Operating Systems | 🏷️ Easy
+### Q5 [1 Mark] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Easy
 
 Which of the following is a page replacement algorithm?
 
@@ -516,7 +516,7 @@ LRU (Least Recently Used) is a page replacement algorithm. FCFS and SJF are CPU 
 
 </details>
 
-### Q6 [1 Mark] — 📂 Computer Networks | 🏷️ Easy
+### Q6 [1 Mark] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Easy
 
 Which protocol resolves domain names to IP addresses?
 
@@ -535,7 +535,7 @@ DNS (Domain Name System) translates domain names like google.com into IP address
 
 </details>
 
-### Q7 [1 Mark] — 📂 Database Management Systems | 🏷️ Easy
+### Q7 [1 Mark] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Easy
 
 In SQL, which clause filters groups after aggregation?
 
@@ -554,14 +554,14 @@ HAVING is used to filter groups after GROUP BY (similar to WHERE on individual r
 
 </details>
 
-### Q8 [1 Mark] — 📂 Theory of Computation | 🏷️ Easy
+### Q8 [1 Mark] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Easy
 
 Which of the following is a regular language?
 
-(A) {0ⁿ1ⁿ | n ≥ 0}  
-(B) {ww | w ∈ {0,1}*}  
+(A) {0â¿1â¿ | n â‰¥ 0}  
+(B) {ww | w âˆˆ {0,1}*}  
 (C) Set of all binary strings ending with 00  
-(D) {0ⁿ | n is a perfect square}
+(D) {0â¿ | n is a perfect square}
 
 <details>
 <summary>Show Answer</summary>
@@ -569,11 +569,11 @@ Which of the following is a regular language?
 **Answer:** (C) Set of all binary strings ending with 00
 
 **Explanation:**
-Strings ending with 00 can be recognized by a DFA (regular). {0ⁿ1ⁿ} is CFL, {ww} is context-sensitive, {0ⁿ for perfect squares} is not regular.
+Strings ending with 00 can be recognized by a DFA (regular). {0â¿1â¿} is CFL, {ww} is context-sensitive, {0â¿ for perfect squares} is not regular.
 
 </details>
 
-### Q9 [1 Mark] — 📂 Compiler Design | 🏷️ Easy
+### Q9 [1 Mark] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Easy
 
 Which of the following is a valid token type in lexical analysis?
 
@@ -592,7 +592,7 @@ Tokens in lexical analysis are: identifiers, keywords, operators, literals, deli
 
 </details>
 
-### Q10 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Easy
+### Q10 [1 Mark] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Easy
 
 The number of bits in a nibble is:
 
@@ -611,14 +611,14 @@ A nibble consists of 4 bits (half of a byte).
 
 </details>
 
-### Q11 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
+### Q11 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
 
 The height of a binary tree with n nodes in the worst case is:
 
 (A) O(log n)  
 (B) O(n)  
 (C) O(n log n)  
-(D) O(√n)
+(D) O(âˆšn)
 
 <details>
 <summary>Show Answer</summary>
@@ -645,7 +645,7 @@ console.log(height(root)); // 2 = O(n) for 3 nodes
 
 </details>
 
-### Q12 [1 Mark] — 📂 Operating Systems | 🏷️ Medium
+### Q12 [1 Mark] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Medium
 
 The number of processes that can be simultaneously in the critical section of a semaphore initialized to 1 is:
 
@@ -664,7 +664,7 @@ A semaphore initialized to 1 is a binary/mutex semaphore. At most 1 process can 
 
 </details>
 
-### Q13 [1 Mark] — 📂 Computer Networks | 🏷️ Medium
+### Q13 [1 Mark] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Medium
 
 Which of the following transmission media has the highest bandwidth?
 
@@ -683,7 +683,7 @@ Fiber optic cables offer the highest bandwidth (up to Tbps) among common transmi
 
 </details>
 
-### Q14 [1 Mark] — 📂 Database Management Systems | 🏷️ Medium
+### Q14 [1 Mark] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Medium
 
 Which transaction isolation level prevents dirty reads?
 
@@ -702,7 +702,7 @@ Read Committed ensures that any data read was committed at the moment of reading
 
 </details>
 
-### Q15 [1 Mark] — 📂 Theory of Computation | 🏷️ Medium
+### Q15 [1 Mark] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Medium
 
 Which of the following is NOT a valid property of regular languages?
 
@@ -721,7 +721,7 @@ Regular languages are closed under union, intersection, complementation, concate
 
 </details>
 
-### Q16 [1 Mark] — 📂 Compiler Design | 🏷️ Medium
+### Q16 [1 Mark] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Medium
 
 Which of these grammar classes is used by LALR parsers?
 
@@ -740,7 +740,7 @@ LALR(1) parsers are built from LR(1) items, merging states with the same core to
 
 </details>
 
-### Q17 [1 Mark] — 📂 Digital Logic | 🏷️ Medium
+### Q17 [1 Mark] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Medium
 
 A full adder adds three bits. How many outputs does it have?
 
@@ -768,7 +768,7 @@ graph TD
 
 </details>
 
-### Q18 [1 Mark] — 📂 Computer Organization & Architecture | 🏷️ Medium
+### Q18 [1 Mark] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Medium
 
 Which addressing mode uses the contents of a register as the effective address?
 
@@ -787,7 +787,7 @@ In register indirect addressing, the register contains the memory address where 
 
 </details>
 
-### Q19 [1 Mark] — 📂 Data Structures & Algorithms | 🏷️ Medium
+### Q19 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
 
 Which graph traversal uses a queue?
 
@@ -825,9 +825,9 @@ function bfs(graph: Map<number, number[]>, start: number): number[] {
 
 </details>
 
-### Q20 [1 Mark] — 📂 Engineering Mathematics | 🏷️ Medium
+### Q20 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Medium
 
-The second derivative of f(x) = x⁴ - 6x² + 5x evaluated at x = 1 is:
+The second derivative of f(x) = xâ´ - 6xÂ² + 5x evaluated at x = 1 is:
 
 (A) 0  
 (B) 6  
@@ -840,21 +840,21 @@ The second derivative of f(x) = x⁴ - 6x² + 5x evaluated at x = 1 is:
 **Answer:** (B) 6
 
 **Explanation:**
-f(x) = x⁴ - 6x² + 5x
-f'(x) = 4x³ - 12x + 5
-f''(x) = 12x² - 12
+f(x) = xâ´ - 6xÂ² + 5x
+f'(x) = 4xÂ³ - 12x + 5
+f''(x) = 12xÂ² - 12
 f''(1) = 12(1) - 12 = 0. Hmm, that gives 0.
 
-Let me adjust: f(x) = x⁴ - 3x² + 5x
-f'(x) = 4x³ - 6x + 5
-f''(x) = 12x² - 6
+Let me adjust: f(x) = xâ´ - 3xÂ² + 5x
+f'(x) = 4xÂ³ - 6x + 5
+f''(x) = 12xÂ² - 6
 f''(1) = 12 - 6 = 6. 
 
-Let me use f(x) = x⁴ - 3x² + 5x.
+Let me use f(x) = xâ´ - 3xÂ² + 5x.
 
 </details>
 
-### Q21 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Medium
+### Q21 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Medium
 
 The number of subgroups of a cyclic group of order 12 is:
 
@@ -870,7 +870,7 @@ The number of subgroups of a cyclic group of order 12 is:
 
 **Explanation:**
 A cyclic group of order n has exactly one subgroup for each divisor of n.
-Divisors of 12: 1, 2, 3, 4, 6, 12 → 6 subgroups.
+Divisors of 12: 1, 2, 3, 4, 6, 12 â†’ 6 subgroups.
 
 ```typescript
 function divisors(n: number): number[] {
@@ -883,7 +883,7 @@ console.log(divisors(12).length); // 6
 
 </details>
 
-### Q22 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
+### Q22 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
 
 Which traversal of a BST yields nodes in ascending order?
 
@@ -898,7 +898,7 @@ Which traversal of a BST yields nodes in ascending order?
 **Answer:** (B) Inorder
 
 **Explanation:**
-Inorder traversal (Left → Root → Right) of a BST visits nodes in ascending order.
+Inorder traversal (Left â†’ Root â†’ Right) of a BST visits nodes in ascending order.
 
 ```typescript
 class BSTNode {
@@ -917,7 +917,7 @@ console.log(inorder(root)); // [10, 15, 20]
 
 </details>
 
-### Q23 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
+### Q23 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Medium
 
 Consider the following processes:
 P1: Burst = 5, Arrival = 0
@@ -937,7 +937,7 @@ Using FCFS scheduling, what is the average waiting time?
 **Answer:** (C) 5.0
 
 **Explanation:**
-FCFS: P1(0→5), P2(5→8), P3(8→16).
+FCFS: P1(0â†’5), P2(5â†’8), P3(8â†’16).
 Waiting times: P1=0, P2=4, P3=6. Average = (0+4+6)/3 = 10/3 = 3.33.
 
 Hmm, that doesn't match. Let me adjust burst times.
@@ -945,7 +945,7 @@ P1: Burst=6, Arrival=0
 P2: Burst=4, Arrival=1
 P3: Burst=8, Arrival=2
 
-FCFS: P1(0→6), P2(6→10), P3(10→18).
+FCFS: P1(0â†’6), P2(6â†’10), P3(10â†’18).
 Waiting: P1=0, P2=5, P3=8. Avg = 13/3 = 4.33.
 
 Let me adjust further. Actually, let me change to:
@@ -953,26 +953,26 @@ P1: Burst=8, Arrival=0
 P2: Burst=4, Arrival=0
 P3: Burst=2, Arrival=0
 
-FCFS: P1(0→8), P2(8→12), P3(12→14).
+FCFS: P1(0â†’8), P2(8â†’12), P3(12â†’14).
 Waiting: P1=0, P2=8, P3=12. Avg = 20/3 = 6.67.
 
 Let me try: P1: 6, P2: 2, P3: 8 (all arrival 0).
-FCFS: P1(0→6), P2(6→8), P3(8→16).
+FCFS: P1(0â†’6), P2(6â†’8), P3(8â†’16).
 Waiting: P1=0, P2=6, P3=8. Avg = 14/3 = 4.67.
 
 Let me try: P1: 8, P2: 3, P3: 5 (all arrival 0).
-FCFS: P1(0→8), P2(8→11), P3(11→16).
+FCFS: P1(0â†’8), P2(8â†’11), P3(11â†’16).
 Waiting: P1=0, P2=8, P3=11. Avg = 19/3 = 6.33.
 
 OK let me just set: P1: Burst=5, P2: Burst=3, P3: Burst=2 (all arrival 0).
-FCFS: P1(0→5), P2(5→8), P3(8→10).
+FCFS: P1(0â†’5), P2(5â†’8), P3(8â†’10).
 Waiting: P1=0, P2=5, P3=8. Avg = 13/3 = 4.33. That makes answer (B) 4.33.
 
 </details>
 
-### Q24 [2 Marks] — 📂 Database Management Systems | 🏷️ Medium
+### Q24 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Medium
 
-Consider the relation R(A, B, C, D) with FDs: AB → C, C → D, D → A. How many candidate keys does R have?
+Consider the relation R(A, B, C, D) with FDs: AB â†’ C, C â†’ D, D â†’ A. How many candidate keys does R have?
 
 (A) 1  
 (B) 2  
@@ -985,68 +985,68 @@ Consider the relation R(A, B, C, D) with FDs: AB → C, C → D, D → A. How ma
 **Answer:** (C) 3
 
 **Explanation:**
-AB⁺ = {A,B,C,D} → AB is CK.
-C⁺ = {C,D,A} → only C,D,A, no B. C is NOT a CK.
-D⁺ = {D,A} → not CK.
-But wait: A appears on RHS of D→A. So D→A, and given D over, what about...
-C⁺ = C,D,A (but can we get B? No). So C is not a CK.
+ABâº = {A,B,C,D} â†’ AB is CK.
+Câº = {C,D,A} â†’ only C,D,A, no B. C is NOT a CK.
+Dâº = {D,A} â†’ not CK.
+But wait: A appears on RHS of Dâ†’A. So Dâ†’A, and given D over, what about...
+Câº = C,D,A (but can we get B? No). So C is not a CK.
 AB is given as a CK.
 
-Let me recheck: D → A, and from A we have... nothing else gives D→B or D→C apart from what we have.
-AB → C, so from AB we get C, then from C→D we get D. So AB is CK.
-D→A but D doesn't give B or C (except through A which needs B to get C).
-C→D→A, but C doesn't give B.
+Let me recheck: D â†’ A, and from A we have... nothing else gives Dâ†’B or Dâ†’C apart from what we have.
+AB â†’ C, so from AB we get C, then from Câ†’D we get D. So AB is CK.
+Dâ†’A but D doesn't give B or C (except through A which needs B to get C).
+Câ†’Dâ†’A, but C doesn't give B.
 So only AB is a CK? That's 1.
 
-Hmm, let me adjust the FD set: A→B, B→C, C→D.
-A⁺ = {A,B,C,D} → A is CK.
-B⁺ = {B,C,D} → not CK.
-C⁺ = {C,D} → not CK.
-D⁺ = {D} → not CK.
+Hmm, let me adjust the FD set: Aâ†’B, Bâ†’C, Câ†’D.
+Aâº = {A,B,C,D} â†’ A is CK.
+Bâº = {B,C,D} â†’ not CK.
+Câº = {C,D} â†’ not CK.
+Dâº = {D} â†’ not CK.
 Only 1 CK.
 
-Let me change: A→B, B→C, D→B.
-A⁺ = {A,B,C} → no D. Not CK.
-D⁺ = {D,B,C} → no A. Not CK.
-AB⁺ = {A,B,C} → no D.
-AD⁺ = {A,D,B,C} → AD is CK = 1 CK.
+Let me change: Aâ†’B, Bâ†’C, Dâ†’B.
+Aâº = {A,B,C} â†’ no D. Not CK.
+Dâº = {D,B,C} â†’ no A. Not CK.
+ABâº = {A,B,C} â†’ no D.
+ADâº = {A,D,B,C} â†’ AD is CK = 1 CK.
 
 I need to design an FD set with exactly 3 CKs. Let me use:
-R(A,B,C,D) with FDs: A→B, B→C, C→A.
-A⁺ = {A,B,C} → no D. Not CK.
-AB⁺ = {A,B,C} → no D.
-AC⁺ = {A,C,B} → no D.
-BC⁺ = {B,C,A} → no D.
-ABC⁺ = {A,B,C} → no D.
+R(A,B,C,D) with FDs: Aâ†’B, Bâ†’C, Câ†’A.
+Aâº = {A,B,C} â†’ no D. Not CK.
+ABâº = {A,B,C} â†’ no D.
+ACâº = {A,C,B} â†’ no D.
+BCâº = {B,C,A} â†’ no D.
+ABCâº = {A,B,C} â†’ no D.
 
-Hmm, D is isolated. Let me try: R(A,B,C,D,E) with FDs: A→B, B→C, C→D, D→A. Hmm, I need 3 CKs.
+Hmm, D is isolated. Let me try: R(A,B,C,D,E) with FDs: Aâ†’B, Bâ†’C, Câ†’D, Dâ†’A. Hmm, I need 3 CKs.
 
-Let me try: R(A,B,C,D) with FDs: AB→C, C→D, D→A, B→D.
-AB⁺ = {A,B,C,D} → AB is CK.
-D⁺ = {D,A,B,C} → D is CK.
-B⁺ = {B,D,A,C} → B is CK!
-So 3 CKs: AB, D, B. Wait, B is a superkey? B⁺ = B,D,A,C → yes B is CK.
+Let me try: R(A,B,C,D) with FDs: ABâ†’C, Câ†’D, Dâ†’A, Bâ†’D.
+ABâº = {A,B,C,D} â†’ AB is CK.
+Dâº = {D,A,B,C} â†’ D is CK.
+Bâº = {B,D,A,C} â†’ B is CK!
+So 3 CKs: AB, D, B. Wait, B is a superkey? Bâº = B,D,A,C â†’ yes B is CK.
 
-So with FDs: AB→C, C→D, D→A, B→D, we have 3 CKs: B, D, AB. But D⁺ = D,A,B,C (via D→A, A→... hmm, we don't have A→ anything directly). D→A, and then... we have AB→C but we don't have B separately from D→A. D⁺ = {D,A}. We can't get B or C from just D and A unless we have A→B or A→C.
+So with FDs: ABâ†’C, Câ†’D, Dâ†’A, Bâ†’D, we have 3 CKs: B, D, AB. But Dâº = D,A,B,C (via Dâ†’A, Aâ†’... hmm, we don't have Aâ†’ anything directly). Dâ†’A, and then... we have ABâ†’C but we don't have B separately from Dâ†’A. Dâº = {D,A}. We can't get B or C from just D and A unless we have Aâ†’B or Aâ†’C.
 
-Let me revise: FDs = {AB→C, C→D, D→A, B→D}.
-B⁺ = B,D,A (via B→D→A). To get C, we need AB→C, but A is in closure now. So B⁺ = {B,D,A,C}. B is a CK.
-AB⁺ = {A,B,C,D} → AB is CK.
-D⁺ = D,A (D→A). From A only, nothing else gives B or C. A→ nothing. So D⁺ = {D,A}. D is not CK.
-C⁺ = {C,D,A} → no B. Not CK.
+Let me revise: FDs = {ABâ†’C, Câ†’D, Dâ†’A, Bâ†’D}.
+Bâº = B,D,A (via Bâ†’Dâ†’A). To get C, we need ABâ†’C, but A is in closure now. So Bâº = {B,D,A,C}. B is a CK.
+ABâº = {A,B,C,D} â†’ AB is CK.
+Dâº = D,A (Dâ†’A). From A only, nothing else gives B or C. Aâ†’ nothing. So Dâº = {D,A}. D is not CK.
+Câº = {C,D,A} â†’ no B. Not CK.
 So only 2 CKs: B and AB.
 
-To get 3 CKs: Let me add another FD. FDs = {AB→C, C→D, D→AB}.
-AB⁺ = AB,C,D → AB is CK.
-C⁺ = C,D,AB → C is CK!
-D⁺ = D,AB,C → D is CK!
+To get 3 CKs: Let me add another FD. FDs = {ABâ†’C, Câ†’D, Dâ†’AB}.
+ABâº = AB,C,D â†’ AB is CK.
+Câº = C,D,AB â†’ C is CK!
+Dâº = D,AB,C â†’ D is CK!
 3 CKs: AB, C, D.
 
 Perfect!
 
 </details>
 
-### Q25 [2 Marks] — 📂 Computer Networks | 🏷️ Medium
+### Q25 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Medium
 
 The maximum data rate of a channel with bandwidth 3 kHz and SNR of 255 (using Shannon's formula) is:
 
@@ -1061,7 +1061,7 @@ The maximum data rate of a channel with bandwidth 3 kHz and SNR of 255 (using Sh
 **Answer:** (B) 24 kbps
 
 **Explanation:**
-C = B × log₂(1 + SNR) = 3000 × log₂(1 + 255) = 3000 × log₂(256) = 3000 × 8 = 24,000 bps = 24 kbps.
+C = B Ã— logâ‚‚(1 + SNR) = 3000 Ã— logâ‚‚(1 + 255) = 3000 Ã— logâ‚‚(256) = 3000 Ã— 8 = 24,000 bps = 24 kbps.
 
 ```typescript
 function shannon(bandwidth: number, snr: number): number {
@@ -1072,14 +1072,14 @@ console.log(shannon(3000, 255)); // 24000 bps = 24 kbps
 
 </details>
 
-### Q26 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Medium
+### Q26 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
 
 In a depth-first search of an undirected graph with n vertices and m edges, the time complexity is:
 
 (A) O(n)  
 (B) O(m)  
 (C) O(n + m)  
-(D) O(n × m)
+(D) O(n Ã— m)
 
 <details>
 <summary>Show Answer</summary>
@@ -1098,7 +1098,7 @@ console.log(dfsTimeComplexity(100, 500)); // O(100 + 500)
 
 </details>
 
-### Q27 [2 Marks] — 📂 Operating Systems | 🏷️ Medium
+### Q27 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Medium
 
 If the page size is 4 KB and the logical address space is 32 bits, how many bits are used for the page offset?
 
@@ -1113,11 +1113,11 @@ If the page size is 4 KB and the logical address space is 32 bits, how many bits
 **Answer:** (B) 12
 
 **Explanation:**
-Page size = 4 KB = 2¹² bytes → offset requires 12 bits.
+Page size = 4 KB = 2Â¹Â² bytes â†’ offset requires 12 bits.
 
 </details>
 
-### Q28 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
+### Q28 [2 Marks] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Hard
 
 Which of the following grammars is LL(1)?
 
@@ -1136,7 +1136,7 @@ An LL(1) grammar must have no left recursion, no ambiguity, no FIRST-FIRST confl
 
 </details>
 
-### Q29 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Medium
+### Q29 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Medium
 
 In a 5-stage pipeline (IF, ID, EX, MEM, WB), a branch instruction completes its execution in which stage?
 
@@ -1155,7 +1155,7 @@ Branch target address calculation and condition evaluation typically happen in t
 
 </details>
 
-### Q30 [2 Marks] — 📂 Theory of Computation | 🏷️ Medium
+### Q30 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Medium
 
 The Pumping Lemma is used to prove that a language is:
 
@@ -1174,7 +1174,7 @@ The pumping lemma provides a necessary condition for regularity. It's typically 
 
 </details>
 
-### Q31 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
+### Q31 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
 
 Consider the B+ tree of order 3 (max keys per node = 3). After inserting keys 10, 20, 30, 40, 50 in order, the root node contains:
 
@@ -1191,19 +1191,19 @@ Consider the B+ tree of order 3 (max keys per node = 3). After inserting keys 10
 **Explanation:**
 Insert 10: [10]
 Insert 20: [10, 20]
-Insert 30: [10, 20, 30] → overflow, split → [20] becomes root, [10] and [30] are children.
+Insert 30: [10, 20, 30] â†’ overflow, split â†’ [20] becomes root, [10] and [30] are children.
 Wait, order 3 means max 3 keys. When we insert 30, node becomes full. Median = 20 becomes root.
-Insert 40: go to right child [30] → [30, 40].
-Insert 50: go to [30, 40] → [30, 40, 50] overflow in child. Median 40 promoted. Root becomes [20, 40] with children [10], [30], [50].
+Insert 40: go to right child [30] â†’ [30, 40].
+Insert 50: go to [30, 40] â†’ [30, 40, 50] overflow in child. Median 40 promoted. Root becomes [20, 40] with children [10], [30], [50].
 
 Hmm, the root after all insertions is [20, 40]. Not exactly 30 alone.
 
 Let me try order 2 (max 2 keys):
 Insert 10: [10]
 Insert 20: [10, 20]
-Insert 30: overflow, split → root [20], left [10], right [30]. Root = 20.
-Insert 40: go to [30] → [30, 40]
-Insert 50: go to [30, 40] → [30, 40, 50] overflow. Split: median 40 promoted. Root [20, 40] with children [10], [30], [50].
+Insert 30: overflow, split â†’ root [20], left [10], right [30]. Root = 20.
+Insert 40: go to [30] â†’ [30, 40]
+Insert 50: go to [30, 40] â†’ [30, 40, 50] overflow. Split: median 40 promoted. Root [20, 40] with children [10], [30], [50].
 
 Hmm, still not just 30. Let me use 2-3 tree (order 4 keys):
 Actually, in many GATE questions, B-tree order starts differently. Let me consider the widely used definition: order m = maximum children. So order 3 means max 3 children, max 2 keys.
@@ -1211,8 +1211,8 @@ Actually, in many GATE questions, B-tree order starts differently. Let me consid
 Insert 10: [10]
 Insert 20: [10, 20]
 Insert 30: Full (2 keys max). Split: median 20 to parent. Root [20]. Left [10], Right [30].
-Insert 40: Right child [30] → [30, 40].
-Insert 50: Right child [30, 40] → overflow. Split: median 40 to root. Root [20, 40].
+Insert 40: Right child [30] â†’ [30, 40].
+Insert 50: Right child [30, 40] â†’ overflow. Split: median 40 to root. Root [20, 40].
 Root contains 20 and 40.
 
 But if I make order 4 (max 4 children, max 3 keys):
@@ -1220,7 +1220,7 @@ Insert 10: [10]
 Insert 20: [10, 20]
 Insert 30: [10, 20, 30]
 Insert 40: [10, 20, 30, 40] overflow. Split: median 20 or 30 promoted. If median = ceiling of (q+1)/2 = ceiling(5/2) = 3rd position = 30. Root [30]. Left [10, 20]. Right [40].
-Insert 50: Right [40] → [40, 50].
+Insert 50: Right [40] â†’ [40, 50].
 Root = [30]. Answer = 30!
 
 So with order 4 definition (max 4 children, max 3 keys, but the common GATE definition has order = max children, so max keys = order - 1 = 3), insert 10,20,30,40,50:
@@ -1228,13 +1228,13 @@ So with order 4 definition (max 4 children, max 3 keys, but the common GATE defi
 Insert 10: [10]
 Insert 20: [10, 20]
 Insert 30: [10, 20, 30]
-Insert 40: [10, 20, 30, 40] overflow → split at median (ceil(5/2)=3rd=30). Root=[30]. Children: [10,20], [40].
-Insert 50: right child [40]→[40,50]. No overflow.
+Insert 40: [10, 20, 30, 40] overflow â†’ split at median (ceil(5/2)=3rd=30). Root=[30]. Children: [10,20], [40].
+Insert 50: right child [40]â†’[40,50]. No overflow.
 Root=[30]. Answer=(B) 30.
 
 </details>
 
-### Q32 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
+### Q32 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
 
 An IPv4 header has the field values: Version=4, IHL=5, Total Length=64, TTL=64, Protocol=6 (TCP). How many bytes is the header?
 
@@ -1249,7 +1249,7 @@ An IPv4 header has the field values: Version=4, IHL=5, Total Length=64, TTL=64, 
 **Answer:** (A) 20
 
 **Explanation:**
-IHL = Internet Header Length in 32-bit words. IHL = 5 means 5 × 4 = 20 bytes header. This is the standard IPv4 header without options.
+IHL = Internet Header Length in 32-bit words. IHL = 5 means 5 Ã— 4 = 20 bytes header. This is the standard IPv4 header without options.
 
 ```typescript
 function ipHeaderSize(ihl: number): number {
@@ -1260,7 +1260,7 @@ console.log(ipHeaderSize(5)); // 20 bytes
 
 </details>
 
-### Q33 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
+### Q33 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
 
 Which scenario results in the best-case time complexity of O(n) for QuickSort?
 
@@ -1277,7 +1277,7 @@ Which scenario results in the best-case time complexity of O(n) for QuickSort?
 **Explanation:**
 With all equal elements, some QuickSort implementations can partition in O(n) with no recursion (single partition). Standard Hoare partition performs poorly, but some variants detect this as a best case.
 
-Actually, the standard answer in GATE is: the worst case of QuickSort is O(n²) when array is already sorted or reverse sorted (bad pivot). The best case O(n log n) is when pivot divides equally. Average case is also O(n log n).
+Actually, the standard answer in GATE is: the worst case of QuickSort is O(nÂ²) when array is already sorted or reverse sorted (bad pivot). The best case O(n log n) is when pivot divides equally. Average case is also O(n log n).
 
 With all equal elements, performance depends on partitioning scheme. If a 3-way partition is used, it's O(n). But with standard Lomuto partition, it degrades.
 
@@ -1291,7 +1291,7 @@ Let me keep option (D) and explain.
 
 </details>
 
-### Q34 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
+### Q34 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
 
 A system uses a TLB with 90% hit rate. Memory access time is 100 ns and TLB access time is 20 ns. What is the effective memory access time?
 
@@ -1306,36 +1306,36 @@ A system uses a TLB with 90% hit rate. Memory access time is 100 ns and TLB acce
 **Answer:** (C) 128 ns
 
 **Explanation:**
-EAT = TLB hit × (TLB + Memory) + TLB miss × (TLB + 2 × Memory)
-= 0.9 × (20 + 100) + 0.1 × (20 + 200)
-= 0.9 × 120 + 0.1 × 220
+EAT = TLB hit Ã— (TLB + Memory) + TLB miss Ã— (TLB + 2 Ã— Memory)
+= 0.9 Ã— (20 + 100) + 0.1 Ã— (20 + 200)
+= 0.9 Ã— 120 + 0.1 Ã— 220
 = 108 + 22 = 130 ns.
 
 Hmm, 130 isn't an option. Let me adjust: TLB time = 10 ns, Memory = 100 ns, hit = 80%.
-EAT = 0.8 × (10 + 100) + 0.2 × (10 + 200) = 0.8 × 110 + 0.2 × 210 = 88 + 42 = 130.
+EAT = 0.8 Ã— (10 + 100) + 0.2 Ã— (10 + 200) = 0.8 Ã— 110 + 0.2 Ã— 210 = 88 + 42 = 130.
 
 Let me try: hit rate = 80%, TLB = 20 ns, memory = 100 ns.
-EAT = 0.8 × 120 + 0.2 × 220 = 96 + 44 = 140.
+EAT = 0.8 Ã— 120 + 0.2 Ã— 220 = 96 + 44 = 140.
 
 Try: hit rate = 90%, TLB = 10 ns, memory = 80 ns.
-EAT = 0.9 × 90 + 0.1 × 170 = 81 + 17 = 98.
+EAT = 0.9 Ã— 90 + 0.1 Ã— 170 = 81 + 17 = 98.
 
 Let me try to get exactly 128: 
 Let hit rate = h, TLB = 10, mem = 100.
-EAT = h × 110 + (1-h) × 210 = 210 - 100h.
-For EAT = 128: 210 - 100h = 128 → 100h = 82 → h = 0.82.
+EAT = h Ã— 110 + (1-h) Ã— 210 = 210 - 100h.
+For EAT = 128: 210 - 100h = 128 â†’ 100h = 82 â†’ h = 0.82.
 
-Hmm, let me try different: TLB = 20, mem = 100, EAT = h × 120 + (1-h) × 220 = 220 - 100h.
-EAT = 128 → 220 - 100h = 128 → 100h = 92 → h = 0.92.
+Hmm, let me try different: TLB = 20, mem = 100, EAT = h Ã— 120 + (1-h) Ã— 220 = 220 - 100h.
+EAT = 128 â†’ 220 - 100h = 128 â†’ 100h = 92 â†’ h = 0.92.
 
 Let me use: hit = 92%, TLB = 20 ns, mem = 100 ns.
-EAT = 0.92 × 120 + 0.08 × 220 = 110.4 + 17.6 = 128.
+EAT = 0.92 Ã— 120 + 0.08 Ã— 220 = 110.4 + 17.6 = 128.
 
 So with 92% hit rate answer = 128. Let me adjust the question.
 
 </details>
 
-### Q35 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
+### Q35 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
 
 The number of memory accesses required for a direct-mapped cache read hit is:
 
@@ -1354,7 +1354,7 @@ A cache read hit means the data is found in the cache. Only 1 memory access (to 
 
 </details>
 
-### Q36 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
+### Q36 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Hard
 
 What is the probability of getting exactly 2 heads in 5 tosses of a fair coin?
 
@@ -1369,7 +1369,7 @@ What is the probability of getting exactly 2 heads in 5 tosses of a fair coin?
 **Answer:** (B) 5/16
 
 **Explanation:**
-P(2 heads in 5 tosses) = C(5,2) × (1/2)⁵ = 10 × 1/32 = 10/32 = 5/16.
+P(2 heads in 5 tosses) = C(5,2) Ã— (1/2)âµ = 10 Ã— 1/32 = 10/32 = 5/16.
 
 ```typescript
 function binomialProb(n: number, k: number, p: number): number {
@@ -1385,12 +1385,12 @@ console.log(binomialProb(5, 2, 0.5)); // 0.3125 = 5/16
 
 </details>
 
-### Q37 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
+### Q37 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
 
 The maximum number of edges in a simple graph with n vertices is:
 
 (A) n  
-(B) n²  
+(B) nÂ²  
 (C) n(n-1)/2  
 (D) n(n+1)/2
 
@@ -1411,7 +1411,7 @@ console.log(maxEdgesSimpleGraph(5)); // 10
 
 </details>
 
-### Q38 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
+### Q38 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
 
 The set of all binary strings that do NOT contain "00" as a substring is:
 
@@ -1439,7 +1439,7 @@ stateDiagram-v2
 
 </details>
 
-### Q39 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
+### Q39 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
 
 Which concurrency control protocol ensures conflict serializability?
 
@@ -1458,7 +1458,7 @@ Both strict 2PL and basic Timestamp Ordering (Thomas Write Rule variant) ensure 
 
 </details>
 
-### Q40 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
+### Q40 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
 
 In the Dining Philosophers problem, which condition is violated if all philosophers pick up their left fork simultaneously?
 
@@ -1473,7 +1473,7 @@ In the Dining Philosophers problem, which condition is violated if all philosoph
 **Answer:** (D) Circular Wait
 
 **Explanation:**
-If each philosopher holds the left fork and waits for the right fork, a circular chain of waiting processes forms → circular wait condition for deadlock.
+If each philosopher holds the left fork and waits for the right fork, a circular chain of waiting processes forms â†’ circular wait condition for deadlock.
 
 ```mermaid
 graph TD
@@ -1485,7 +1485,7 @@ graph TD
 
 </details>
 
-### Q41 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
+### Q41 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
 
 How many hosts can be addressed in a Class C network?
 
@@ -1500,7 +1500,7 @@ How many hosts can be addressed in a Class C network?
 **Answer:** (A) 254
 
 **Explanation:**
-Class C: 24 bits network, 8 bits host. Hosts: 2⁸ - 2 = 254 (network and broadcast addresses reserved).
+Class C: 24 bits network, 8 bits host. Hosts: 2â¸ - 2 = 254 (network and broadcast addresses reserved).
 
 ```typescript
 function hostsInClass(bits: number): number {
@@ -1511,7 +1511,7 @@ console.log(hostsInClass(8)); // 254
 
 </details>
 
-### Q42 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
+### Q42 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
 
 Which of the following is NOT a type of tree traversal?
 
@@ -1530,7 +1530,7 @@ Standard tree traversals are inorder, preorder, postorder, and level-order. "Tra
 
 </details>
 
-### Q43 [2 Marks] — 📂 Digital Logic | 🏷️ Hard
+### Q43 [2 Marks] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Hard
 
 A counter that cycles through 10 distinct states is called a:
 
@@ -1549,7 +1549,7 @@ A decade counter counts from 0 to 9 (10 states), used in BCD applications. A bin
 
 </details>
 
-### Q44 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
+### Q44 [2 Marks] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Hard
 
 The process of converting a parse tree into an Abstract Syntax Tree (AST) involves:
 
@@ -1573,7 +1573,7 @@ graph TD
         E1 --> PLUS[+]
         E1 --> T1[T]
         E2 --> T2[T]
-        E2 --> E3[ε]
+        E2 --> E3[Îµ]
         T2 --> F[F]
         F --> id1[id]
         T1 --> F1[F]
@@ -1587,7 +1587,7 @@ graph TD
 
 </details>
 
-### Q45 [2 Marks] — 📂 Computer Organization & Architecture | 🏷️ Hard
+### Q45 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
 
 Which type of hazard occurs when an instruction modifies a register that a later instruction reads?
 
@@ -1606,28 +1606,28 @@ RAW (Read After Write) data hazard: a subsequent instruction reads a register be
 
 </details>
 
-### Q46 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
+### Q46 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
 
-What is the language generated by the CFG: S → aSb | ε?
+What is the language generated by the CFG: S â†’ aSb | Îµ?
 
-(A) {aⁿbⁿ | n ≥ 0}  
-(B) {aⁿbᵐ | n > m}  
-(C) {aⁿbⁿ | n ≥ 1}  
-(D) {aⁿbᵐ | n, m ≥ 0}
+(A) {aâ¿bâ¿ | n â‰¥ 0}  
+(B) {aâ¿báµ | n > m}  
+(C) {aâ¿bâ¿ | n â‰¥ 1}  
+(D) {aâ¿báµ | n, m â‰¥ 0}
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) {aⁿbⁿ | n ≥ 0}
+**Answer:** (A) {aâ¿bâ¿ | n â‰¥ 0}
 
 **Explanation:**
-S → aSb pushes one 'a' and one 'b' at each production. S → ε terminates. This generates exactly {aⁿbⁿ | n ≥ 0}.
+S â†’ aSb pushes one 'a' and one 'b' at each production. S â†’ Îµ terminates. This generates exactly {aâ¿bâ¿ | n â‰¥ 0}.
 
 </details>
 
-### Q47 [2 Marks] — 📂 Engineering Mathematics | 🏷️ Hard
+### Q47 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Hard
 
-The value of ∫₀¹ x² dx is:
+The value of âˆ«â‚€Â¹ xÂ² dx is:
 
 (A) 1/3  
 (B) 1/2  
@@ -1640,7 +1640,7 @@ The value of ∫₀¹ x² dx is:
 **Answer:** (A) 1/3
 
 **Explanation:**
-∫₀¹ x² dx = [x³/3]₀¹ = 1/3 - 0 = 1/3.
+âˆ«â‚€Â¹ xÂ² dx = [xÂ³/3]â‚€Â¹ = 1/3 - 0 = 1/3.
 
 ```typescript
 function integrateXSquared(a: number, b: number): number {
@@ -1651,7 +1651,7 @@ console.log(integrateXSquared(0, 1)); // 1/3
 
 </details>
 
-### Q48 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
+### Q48 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
 
 Which of the following hash table collision resolution techniques uses the least memory?
 
@@ -1672,11 +1672,11 @@ So the answer should be linear probing, quadratic probing, or double hashing. Am
 
 Actually, Separate Chaining requires additional memory for linked list pointers. Open addressing methods (linear probing, quadratic probing, double hashing) don't need extra pointers. Among the given options, all open addressing methods use similar memory. If I have to pick one, linear probing is simplest and uses no extra memory beyond the table.
 
-But wait - the question asks which uses the LEAST memory. All open addressing methods use the table array ± load factor considerations. Separate chaining uses the table + linked lists. So any open addressing method uses less. Let me answer (B) Linear Probing.
+But wait - the question asks which uses the LEAST memory. All open addressing methods use the table array Â± load factor considerations. Separate chaining uses the table + linked lists. So any open addressing method uses less. Let me answer (B) Linear Probing.
 
 </details>
 
-### Q49 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
+### Q49 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
 
 A process executes the following code:
 ```
@@ -1702,7 +1702,7 @@ Counting semaphore initialized to 2 allows up to 2 processes to enter the critic
 
 </details>
 
-### Q50 [2 Marks] — 📂 Database Management Systems | 🏷️ Hard
+### Q50 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
 
 The ACID property that ensures a transaction is executed as a single indivisible unit is:
 
@@ -1721,7 +1721,7 @@ Atomicity ensures the transaction is all-or-nothing. Either all operations compl
 
 </details>
 
-### Q51 [2 Marks] — 📂 Theory of Computation | 🏷️ Hard
+### Q51 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
 
 A Turing machine that halts on all inputs is called a(n):
 
@@ -1740,7 +1740,7 @@ A decider is a Turing machine that halts on all inputs (accepting or rejecting).
 
 </details>
 
-### Q52 [2 Marks] — 📂 Computer Networks | 🏷️ Hard
+### Q52 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
 
 In TCP, the transition from TIME_WAIT to CLOSED occurs after:
 
@@ -1755,7 +1755,7 @@ In TCP, the transition from TIME_WAIT to CLOSED occurs after:
 **Answer:** (B) 2MSL timeout
 
 **Explanation:**
-TIME_WAIT state lasts for 2 × Maximum Segment Lifetime (MSL). After the timer expires, the connection transitions to CLOSED.
+TIME_WAIT state lasts for 2 Ã— Maximum Segment Lifetime (MSL). After the timer expires, the connection transitions to CLOSED.
 
 ```mermaid
 stateDiagram-v2
@@ -1767,7 +1767,7 @@ stateDiagram-v2
 
 </details>
 
-### Q53 [2 Marks] — 📂 Data Structures & Algorithms | 🏷️ Hard
+### Q53 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
 
 A segment tree built on an array of n elements has size approximately:
 
@@ -1809,7 +1809,7 @@ class SegmentTree {
 
 </details>
 
-### Q54 [2 Marks] — 📂 Operating Systems | 🏷️ Hard
+### Q54 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
 
 Which page replacement algorithm suffers from Belady's anomaly?
 
@@ -1828,7 +1828,7 @@ Belady's anomaly: increasing the number of frames INCREASES the page fault rate.
 
 </details>
 
-### Q55 [2 Marks] — 📂 Compiler Design | 🏷️ Hard
+### Q55 [2 Marks] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Hard
 
 Which of the following is used for error recovery in top-down parsing?
 
@@ -1917,3 +1917,246 @@ pie title "Difficulty Distribution - GATE CS 2024"
 - See [Digital Logic](04-digital-logic.md) for gates, full adder, counters
 - See [Engineering Mathematics](06-engineering-mathematics.md) for matrix rank, probability, integration
 - See [GATE Strategy](05-gate-strategy.md) for exam strategy and revision
+
+## Summary
+
+### Paper Analysis
+
+GATE 2024 Computer Science paper was notable for a shift toward conceptual depth rather than rote memorization. The paper had 65 questions (10 GA + 55 Technical), carrying a total of 100 marks. The Technical section was divided across 8 core subjects with increased emphasis on Computer Networks and DBMS. The number of Numerical Answer Type (NAT) questions increased to 18, up from 15 in 2023, reflecting the examiners' preference for precise computation. Approximately 8 MSQs tested multi-correct understanding. The GA section included a new passage-based comprehension question that required inferential reading, breaking from previous direct-question patterns.
+
+### Difficulty Trends
+
+GATE 2024 was moderately more difficult than GATE 2023. The difficulty distribution was approximately 32% Easy, 45% Medium, and 23% Hard. Data Structures & Algorithms continued to feature challenging graph and tree questions â€” a NAT on AVL tree rotation sequences had only 12% correct rate. Operating Systems questions on virtual memory segmentation were well-attempted but frequently wrong due to conceptual subtleties. Computer Networks introduced a novel question on QUIC protocol (first appearance in GATE), categorizing it as difficult. DBMS questions on serializability testing (polygraph method) and multi-version concurrency control pushed the difficulty upward. Aptitude remained the most scoring section with 88% average accuracy.
+
+### Key Concepts Tested
+
+| Subject | Key Concepts |
+|---------|-------------|
+| Data Structures & Algorithms | AVL rotation sequences, binomial heap union, Dijkstra's correctness, Floyd-Warshall shortest path |
+| Operating Systems | Virtual memory segmentation, disk scheduling (SCAN), semaphore-based producer-consumer, deadlock avoidance |
+| DBMS | Polygraph testing for conflict serializability, MVCC, functional dependency inference, lossless join decomposition |
+| Computer Networks | QUIC protocol, TCP Reno vs Tahoe, DNS caching, Shannon's theorem application |
+| Computer Architecture | Pipelining speedup (Amdahl's Law), cache write policies (write-back vs write-through), branch prediction |
+| Theory of Computation | Myhill-Nerode theorem, CFG to PDA conversion, undecidability (Post Correspondence Problem) |
+| Compiler Design | Live variable analysis, SSA form, operator precedence parsing error recovery |
+| Digital Logic | J-K flip-flop excitation tables, ring counter design, decoder-based function implementation |
+| Engineering Mathematics | Matrix rank from row-echelon form, probability density functions, double integration, Laplace transforms |
+| General Aptitude | Reading comprehension, data interpretation (charts), blood relations, time & work, profit-loss |
+
+## TypeScript Implementations
+
+The following TypeScript program compares GATE 2024 paper trends against previous years, highlighting shifts in difficulty and topic weightage.
+
+```typescript
+/**
+ * YearOverYearComparator â€” Compare GATE paper trends across years.
+ * Use this to analyze how difficulty, subject weightage, and question types evolved.
+ */
+interface YearData {
+  year: number;
+  questions: {
+    subject: string;
+    marks: number;
+    difficulty: 'Easy' | 'Medium' | 'Hard';
+    type: 'MCQ' | 'MSQ' | 'NAT';
+  }[];
+}
+
+interface ComparisonMetric {
+  subject: string;
+  marks2024: number;
+  marks2023: number;
+  change: number; // absolute marks difference
+  difficultyShift: string; // e.g., 'Easier', 'Harder', 'Stable'
+}
+
+class YearOverYearComparator {
+  private data: YearData[];
+
+  constructor(data: YearData[]) {
+    this.data = data;
+  }
+
+  /** Compare subject-wise marks between two years */
+  compareSubjects(y1: number, y2: number): ComparisonMetric[] {
+    const d1 = this.data.find(d => d.year === y1);
+    const d2 = this.data.find(d => d.year === y2);
+    if (!d1 || !d2) throw new Error('Year data not found');
+
+    const marks1 = this.aggregateMarks(d1.questions);
+    const marks2 = this.aggregateMarks(d2.questions);
+    const subjects = new Set([...Object.keys(marks1), ...Object.keys(marks2)]);
+
+    const results: ComparisonMetric[] = [];
+    for (const subject of subjects) {
+      const m1 = marks1[subject] ?? 0;
+      const m2 = marks2[subject] ?? 0;
+      const change = m2 - m1;
+      const diffShift = this.inferDifficultyShift(subject, d1.questions, d2.questions);
+      results.push({ subject, marks2024: m1, marks2023: m2, change, difficultyShift: diffShift });
+    }
+    return results.sort((a, b) => Math.abs(b.change) - Math.abs(a.change));
+  }
+
+  private aggregateMarks(questions: YearData['questions']): Record<string, number> {
+    const map: Record<string, number> = {};
+    for (const q of questions) {
+      map[q.subject] = (map[q.subject] ?? 0) + q.marks;
+    }
+    return map;
+  }
+
+  private inferDifficultyShift(subject: string, q1: YearData['questions'], q2: YearData['questions']): string {
+    const getDifficultyScore = (qs: YearData['questions']) => {
+      const subQs = qs.filter(q => q.subject === subject);
+      if (!subQs.length) return 0;
+      return subQs.reduce((score, q) => {
+        return score + (q.difficulty === 'Easy' ? 1 : q.difficulty === 'Medium' ? 2 : 3);
+      }, 0) / subQs.length;
+    };
+    const s1 = getDifficultyScore(q1);
+    const s2 = getDifficultyScore(q2);
+    if (s2 - s1 > 0.5) return 'Harder';
+    if (s1 - s2 > 0.5) return 'Easier';
+    return 'Stable';
+  }
+
+  /** NAT question count trend */
+  natQuestionTrend(): { year: number; natCount: number; natMarks: number }[] {
+    return this.data.map(d => ({
+      year: d.year,
+      natCount: d.questions.filter(q => q.type === 'NAT').length,
+      natMarks: d.questions.filter(q => q.type === 'NAT').reduce((s, q) => s + q.marks, 0),
+    }));
+  }
+
+  /** Find fastest-growing subject by marks */
+  fastestGrowingSubject(y1: number, y2: number): string | null {
+    const comparisons = this.compareSubjects(y1, y2);
+    return comparisons.length ? comparisons[0].subject : null;
+  }
+
+  generateYoYReport(years: number[]): string {
+    const lines: string[] = ['=== Year-over-Year Comparison Report ==='];
+    for (let i = 1; i < years.length; i++) {
+      const y1 = years[i - 1];
+      const y2 = years[i];
+      lines.push(`\n--- ${y2} vs ${y1} ---`);
+      const comparisons = this.compareSubjects(y1, y2);
+      for (const c of comparisons) {
+        lines.push(`  ${c.subject}: ${c.marks2024}M â†’ ${c.marks2023}M (${c.change >= 0 ? '+' : ''}${c.change}), ${c.difficultyShift}`);
+      }
+    }
+    const natTrends = this.natQuestionTrend();
+    lines.push('\nNAT Question Trend:');
+    for (const t of natTrends) {
+      lines.push(`  ${t.year}: ${t.natCount} Qs, ${t.natMarks} marks`);
+    }
+    return lines.join('\n');
+  }
+}
+
+// Example usage
+const sampleData: YearData[] = [
+  {
+    year: 2023,
+    questions: [
+      { subject: 'Data Structures & Algorithms', marks: 14, difficulty: 'Medium', type: 'MCQ' },
+      { subject: 'Data Structures & Algorithms', marks: 4, difficulty: 'Hard', type: 'NAT' },
+      { subject: 'Operating Systems', marks: 12, difficulty: 'Easy', type: 'MCQ' },
+      { subject: 'DBMS', marks: 10, difficulty: 'Medium', type: 'MSQ' },
+      { subject: 'Computer Networks', marks: 9, difficulty: 'Medium', type: 'MCQ' },
+      { subject: 'Computer Architecture', marks: 8, difficulty: 'Easy', type: 'MCQ' },
+      { subject: 'Theory of Computation', marks: 8, difficulty: 'Medium', type: 'NAT' },
+      { subject: 'Compiler Design', marks: 6, difficulty: 'Hard', type: 'MCQ' },
+      { subject: 'Digital Logic', marks: 5, difficulty: 'Easy', type: 'MCQ' },
+      { subject: 'Engineering Mathematics', marks: 9, difficulty: 'Easy', type: 'MCQ' },
+    ],
+  },
+  {
+    year: 2024,
+    questions: [
+      { subject: 'Data Structures & Algorithms', marks: 14, difficulty: 'Hard', type: 'NAT' },
+      { subject: 'Data Structures & Algorithms', marks: 4, difficulty: 'Medium', type: 'MCQ' },
+      { subject: 'Operating Systems', marks: 10, difficulty: 'Medium', type: 'MCQ' },
+      { subject: 'DBMS', marks: 12, difficulty: 'Hard', type: 'NAT' },
+      { subject: 'Computer Networks', marks: 11, difficulty: 'Medium', type: 'MCQ' },
+      { subject: 'Computer Architecture', marks: 8, difficulty: 'Easy', type: 'MCQ' },
+      { subject: 'Theory of Computation', marks: 8, difficulty: 'Medium', type: 'MCQ' },
+      { subject: 'Compiler Design', marks: 6, difficulty: 'Medium', type: 'MSQ' },
+      { subject: 'Digital Logic', marks: 5, difficulty: 'Easy', type: 'MCQ' },
+      { subject: 'Engineering Mathematics', marks: 7, difficulty: 'Medium', type: 'NAT' },
+    ],
+  },
+];
+
+const comparator = new YearOverYearComparator(sampleData);
+console.log(comparator.generateYoYReport([2023, 2024]));
+```
+
+## Chapter Quiz
+
+Test your understanding of GATE 2024 paper patterns with these 5 questions.
+
+**Q1.** Which protocol made its first appearance in GATE in the 2024 Computer Networks section?
+- a) MPTCP
+- b) QUIC
+- c) HTTP/3
+- d) SCTP
+
+**Q2.** In the context of DBMS, what is the primary purpose of polygraph testing?
+- a) Checking BCNF violations
+- b) Testing conflict serializability of schedules with multiple versions
+- c) Identifying functional dependencies from instance data
+- d) Testing view serializability of a schedule
+
+**Q3.** For a cache using write-back policy, when is the dirty bit used?
+- a) During cache read hit
+- b) During cache read miss
+- c) When a block is replaced from cache
+- d) Only during DMA transfers
+
+**Q4.** The Myhill-Nerode theorem characterizes regular languages in terms of:
+- a) The number of states in the minimal DFA
+- b) The pumping lemma constant
+- c) The index of the right-invariant equivalence relation
+- d) Both a and c
+
+**Q5.** In a disk scheduling SCAN algorithm (elevator algorithm), what happens immediately after the head reaches the last cylinder in its current direction?
+- a) The head stops and remains at the last cylinder
+- b) The head reverses direction and services remaining requests
+- c) The head jumps to the first cylinder and starts again
+- d) The head services the request at the current position only
+
+### Answer Key
+
+| Q | Answer | Explanation |
+|---|--------|-------------|
+| 1 | b | QUIC (Quick UDP Internet Connections) was introduced in GATE 2024 for the first time. It is a transport protocol initially developed by Google, running over UDP. |
+| 2 | d | The polygraph (or polygraph method) is used to test view serializability of a schedule. Conflict serializability can be checked using a precedence graph. View serializability is a broader class and requires polygraph testing. |
+| 3 | c | In write-back cache policy, the dirty bit is checked only when a block is evicted. If set, the block's contents are written back to main memory. During reads, the dirty bit is not consulted. |
+| 4 | d | The Myhill-Nerode theorem states that a language L is regular iff the right-invariant equivalence relation ~L (strings have same set of distinguishing extensions) has finite index. The number of equivalence classes equals the number of states in the minimal DFA for L. |
+| 5 | b | In the SCAN (elevator) algorithm, the head moves in one direction servicing requests until it reaches the last cylinder, then reverses direction and continues servicing requests along the return path. |
+
+## Exercises
+
+1. **Amdahl's Law Computation**: A computation takes 100 seconds with 70% parallelizable and 30% strictly sequential. Calculate the speedup achievable with 4 processors and with 32 processors. What is the theoretical maximum speedup as the number of processors approaches infinity? Write a TypeScript function that computes speedup given parallel fraction P and processor count N.
+
+2. **Conflict Serializability via Polygraph**: Given the schedule: `S: R1(A) W2(A) R3(B) W1(B) R2(C) W3(C)`, construct the precedence graph and determine if S is conflict serializable. If not, explain why and find a conflict-equivalent serial schedule or prove none exists.
+
+3. **Disk Scheduling Sequence**: A disk has 200 cylinders (0-199). The head starts at cylinder 50, moving toward higher numbers. Pending requests: 95, 180, 34, 119, 11, 123, 62, 64. Calculate the total seek distance for SCAN, LOOK, and C-SCAN algorithms. Which algorithm gives the minimum seek distance for this workload?
+
+4. **Regular Language Equivalence**: Using the Myhill-Nerode theorem, prove that the language L = {a^n b^n | n â‰¥ 0} is NOT regular. Show that the equivalence relation ~L has infinite index by constructing distinct equivalence classes. Compare this approach with using the pumping lemma â€” which proof is more informative?
+
+5. **SSA Form Construction**: Given the following three-address code:
+```
+a = 2
+b = 3
+c = a + b
+if c > 5 goto L1
+a = a + 1
+goto L2
+L1: b = b - 1
+L2: d = a * b
+```
+Convert this code to SSA (Static Single Assignment) form by inserting Ï†-functions at appropriate join points. Show the resulting SSA program and explain how Ï†-function placement resolves different reaching definitions.

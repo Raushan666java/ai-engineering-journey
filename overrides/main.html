@@ -29,7 +29,8 @@
     '<div class="lb-prev" title="Previous (&larr;)">&#10094;</div>',
     '<div class="lb-next" title="Next (&rarr;)">&#10095;</div>',
     '<div class="lb-counter"></div>',
-    '<div class="lb-download" title="Download" download>&#10515;</div>',
+    '<div class="lb-download" title="Download">&#10515;</div>',
+    '<div class="lb-zoom-toggle" title="Toggle Actual Size (0)">&#9670;</div>',
     '<div class="lb-stage">',
     '  <div class="lb-zoom-hint">Scroll to zoom &bull; Drag to pan &bull; Click edge to close</div>',
     '  <div class="lb-content"></div>',
@@ -43,6 +44,8 @@
   var lbCounter = overlay.querySelector('.lb-counter');
   var lbStage = overlay.querySelector('.lb-stage');
   var lbZoomHint = overlay.querySelector('.lb-zoom-hint');
+  var lbZoomToggle = overlay.querySelector('.lb-zoom-toggle');
+  var fitMode = true; // true = fit screen, false = native resolution
 
   var galleryItems = [];
   var currentIndex = 0;
@@ -63,7 +66,7 @@
   function openLightbox(items, index) {
     galleryItems = items;
     currentIndex = index;
-    zoomLevel = 1; panX = 0; panY = 0;
+    zoomLevel = 1; panX = 0; panY = 0; fitMode = true;
     renderItem();
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -75,10 +78,38 @@
     lbContent.innerHTML = '';
   }
 
+  function toggleFitMode() {
+    fitMode = !fitMode;
+    if (fitMode) { zoomLevel = 1; panX = 0; panY = 0; }
+    else { zoomLevel = 2; panX = 0; panY = 0; }
+    lbZoomToggle.classList.toggle('lb-active', !fitMode);
+    applyContentStyles();
+    applyTransform();
+  }
+
+  function applyContentStyles() {
+    var img = lbContent.querySelector('img');
+    var svg = lbContent.querySelector('svg');
+    var el = img || svg;
+    if (!el) return;
+    if (fitMode) {
+      el.style.maxWidth = '98vw';
+      el.style.maxHeight = '95vh';
+      el.style.width = '';
+      el.style.height = '';
+    } else {
+      el.style.maxWidth = '';
+      el.style.maxHeight = '';
+      el.style.width = el.naturalWidth ? el.naturalWidth + 'px' : '';
+      el.style.height = el.naturalHeight ? el.naturalHeight + 'px' : '';
+    }
+  }
+
   function renderItem() {
     if (!galleryItems.length) return;
     var item = galleryItems[currentIndex];
-    zoomLevel = 1; panX = 0; panY = 0;
+    zoomLevel = 1; panX = 0; panY = 0; fitMode = true;
+    if (lbZoomToggle) lbZoomToggle.classList.remove('lb-active');
     lbZoomHint.style.opacity = '1';
 
     // Counter
@@ -91,13 +122,16 @@
     var el;
     if (item.isMermaid) {
       el = item.svg.cloneNode(true);
-      el.style.cssText = 'max-width: 100%; max-height: 85vh; width: auto; height: auto; display: block; margin: 0 auto; background: #fff; border-radius: 8px;';
+      el.style.cssText = 'max-width: 98vw; max-height: 95vh; width: auto; height: auto; display: block; margin: 0 auto; background: #fff; border-radius: 8px;';
     } else {
       el = document.createElement('img');
       el.src = item.src;
       el.alt = item.alt;
-      el.style.cssText = 'max-width: 100%; max-height: 85vh; width: auto; height: auto; display: block; margin: 0 auto; border-radius: 8px; cursor: grab;';
+      el.style.cssText = 'max-width: 98vw; max-height: 95vh; width: auto; height: auto; display: block; margin: 0 auto; border-radius: 8px; cursor: grab;';
       el.draggable = false;
+      el.style.imageRendering = 'auto';
+      el.style.WebkitOptimizeContrast = 'true';
+      el.style.MsInterpolationMode = 'bicubic';
     }
     el.style.transform = 'scale(' + zoomLevel + ') translate(' + panX + 'px, ' + panY + 'px)';
     el.style.transition = 'transform 0.15s ease';
@@ -132,6 +166,7 @@
     if (e.target.closest('.lb-close')) closeLightbox();
     if (e.target.closest('.lb-prev')) { navigate(-1); }
     if (e.target.closest('.lb-next')) { navigate(1); }
+    if (e.target.closest('.lb-zoom-toggle')) { toggleFitMode(); }
     if (e.target.closest('.lb-download')) {
       var src = e.target.closest('.lb-download').getAttribute('data-src');
       if (src) {
@@ -156,7 +191,7 @@
       case 'ArrowRight': navigate(1); e.preventDefault(); break;
       case '+': case '=': zoomLevel = Math.min(10, zoomLevel + 0.25); applyTransform(); e.preventDefault(); break;
       case '-': zoomLevel = Math.max(0.25, zoomLevel - 0.25); applyTransform(); e.preventDefault(); break;
-      case '0': zoomLevel = 1; panX = 0; panY = 0; applyTransform(); e.preventDefault(); break;
+      case '0': toggleFitMode(); e.preventDefault(); break;
     }
   });
 
@@ -730,9 +765,21 @@
   user-select: none;
   -webkit-user-drag: none;
   pointer-events: none;
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
+}
+.lb-content img {
+  max-width: 98vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
 }
 .lb-content svg {
   background: #fff;
+  max-width: 98vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
 }
 .lb-close,
 .lb-prev,
@@ -800,6 +847,32 @@
   background: rgba(0,0,0,0.3);
 }
 .lb-download:hover { opacity: 1; background: rgba(0,0,0,0.5); }
+.lb-zoom-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 8rem;
+  font-size: 1.1rem;
+  opacity: 0.6;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.3);
+  z-index: 10000;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s;
+  transform: rotate(45deg);
+}
+.lb-zoom-toggle:hover { opacity: 1; background: rgba(0,0,0,0.5); }
+.lb-zoom-toggle.lb-active {
+  background: rgba(76,175,80,0.6);
+  opacity: 1;
+  box-shadow: 0 0 8px rgba(76,175,80,0.4);
+}
 .lb-caption {
   position: fixed;
   bottom: 3.2rem;

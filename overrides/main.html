@@ -28,13 +28,35 @@
   });
   document.body.appendChild(overlay);
 
-  // Fullscreen for Mermaid SVGs
+  // Collapsible Mermaid wrappers
+  document.querySelectorAll('.mermaid').forEach(function(el) {
+    if (el.closest('.tp-mermaid-wrap')) return;
+    var wrap = document.createElement('details');
+    wrap.className = 'tp-mermaid-wrap';
+    wrap.style.cssText = 'margin: 1.2rem 0; border: 1px solid var(--md-default-fg-color--lightest, #e0e0e0); border-radius: 8px; overflow: hidden;';
+    var summary = document.createElement('summary');
+    summary.style.cssText = 'padding: 0.5rem 1rem; cursor: pointer; font-size: 0.82rem; font-weight: 500; background: var(--md-code-bg-color, #f5f5f5); border-bottom: 1px solid var(--md-default-fg-color--lightest, #e0e0e0); user-select: none;';
+    summary.textContent = '\u{1F4CA} Click to expand diagram';
+    var inner = document.createElement('div');
+    inner.style.cssText = 'padding: 1rem;';
+    el.parentNode.insertBefore(wrap, el);
+    wrap.appendChild(summary);
+    wrap.appendChild(inner);
+    inner.appendChild(el);
+  });
+
+  // Lightbox for Mermaid & Images
   document.addEventListener('click', function(e) {
+    // Mermaid lightbox (SVG)
     var mermaid = e.target.closest('.mermaid');
-    if (mermaid) {
+    if (mermaid && !e.target.closest('summary')) {
       var svg = mermaid.querySelector('svg');
-      if (svg && svg.requestFullscreen) {
-        svg.requestFullscreen();
+      if (svg) {
+        var cloneSvg = svg.cloneNode(true);
+        cloneSvg.style.cssText = 'max-width: 95vw; max-height: 90vh; width: auto; height: auto; display: block; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 8px 40px rgba(0,0,0,0.2);';
+        overlay.innerHTML = '';
+        overlay.appendChild(cloneSvg);
+        overlay.classList.add('active');
         e.preventDefault();
         return;
       }
@@ -44,7 +66,7 @@
     var img = e.target.closest('img');
     if (img && img.closest('.md-content')) {
       var clone = img.cloneNode();
-      clone.style.cssText = '';
+      clone.style.cssText = 'max-width: 95vw; max-height: 90vh; width: auto; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 8px 40px rgba(0,0,0,0.2);';
       overlay.innerHTML = '';
       overlay.appendChild(clone);
       overlay.classList.add('active');
@@ -437,6 +459,32 @@
 })();
 </script>
 <style>
+:root {
+  --tp-border: #e0e0e0;
+  --tp-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --tp-shadow-lg: 0 4px 12px rgba(0,0,0,0.12);
+}
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.lightbox-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 .mermaid {
   cursor: zoom-in !important;
   border-radius: 6px !important;
@@ -444,7 +492,7 @@
   padding: 1rem !important;
   background: #fff !important;
   box-shadow: var(--tp-shadow) !important;
-  margin: 1.2rem 0 !important;
+  margin: 0 !important;
   transition: box-shadow 0.2s !important;
   overflow: auto !important;
 }
@@ -456,6 +504,11 @@
   height: auto !important;
   display: block !important;
   margin: 0 auto !important;
+}
+.tp-mermaid-wrap .mermaid {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.5rem !important;
 }
 pre {
   border-radius: 6px !important;

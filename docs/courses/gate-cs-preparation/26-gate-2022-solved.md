@@ -1,4 +1,4 @@
-﻿# GATE CS 2022 Solved Paper
+ï»¿# GATE CS 2022 Solved Paper
 
 ## Chapter at a Glance
 
@@ -17,8 +17,8 @@
 | Total Marks | 100 |
 | Duration | 3 Hours |
 | Sections | General Aptitude (15%) + Technical (85%) |
-| 1-Mark Questions | 25 Ã— 1 = 25 |
-| 2-Mark Questions | 30 Ã— 2 = 60 |
+| 1-Mark Questions | 25 Ãƒâ€” 1 = 25 |
+| 2-Mark Questions | 30 Ãƒâ€” 2 = 60 |
 
 ## Topic-wise Weightage
 
@@ -47,7 +47,7 @@
 
 ## Section A: General Aptitude (15 marks)
 
-### Q1 [1 Mark] â€” Numerical Ability
+### Q1 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 The sum of two numbers is 60 and their product is 900. Find the larger number.
 
 (A) 25  
@@ -61,12 +61,12 @@ The sum of two numbers is 60 and their product is 900. Find the larger number.
 **Answer:** (B) 30
 
 **Explanation:**
-Let numbers be x and (60-x). x(60-x) = 900 â†’ 60x - xÂ² = 900 â†’ xÂ² - 60x + 900 = 0 â†’ (x-30)Â² = 0 â†’ x = 30. Both numbers are 30.
+Let numbers be x and (60-x). x(60-x) = 900 Ã¢â€ â€™ 60x - xÃ‚Â² = 900 Ã¢â€ â€™ xÃ‚Â² - 60x + 900 = 0 Ã¢â€ â€™ (x-30)Ã‚Â² = 0 Ã¢â€ â€™ x = 30. Both numbers are 30.
 
 </details>
 
-### Q2 [1 Mark] â€” Numerical Ability
-If logâ‚‚(x) + logâ‚‚(8) = 5, what is x?
+### Q2 [1 Mark] Ã¢â‚¬â€� Numerical Ability
+If logÃ¢â€šâ€š(x) + logÃ¢â€šâ€š(8) = 5, what is x?
 
 (A) 2  
 (B) 4  
@@ -79,11 +79,11 @@ If logâ‚‚(x) + logâ‚‚(8) = 5, what is x?
 **Answer:** (B) 4
 
 **Explanation:**
-logâ‚‚(x) + 3 = 5 â†’ logâ‚‚(x) = 2 â†’ x = 2Â² = 4.
+logÃ¢â€šâ€š(x) + 3 = 5 Ã¢â€ â€™ logÃ¢â€šâ€š(x) = 2 Ã¢â€ â€™ x = 2Ã‚Â² = 4.
 
 </details>
 
-### Q3 [1 Mark] â€” Verbal Ability
+### Q3 [1 Mark] Ã¢â‚¬â€� Verbal Ability
 Choose the correct spelling: ________
 
 (A) Ocassion  
@@ -101,7 +101,7 @@ Choose the correct spelling: ________
 
 </details>
 
-### Q4 [1 Mark] â€” Logical Reasoning
+### Q4 [1 Mark] Ã¢â‚¬â€� Logical Reasoning
 If in a certain code, 245 means "eat good food", 456 means "food is good", and 258 means "eat food daily", what is the code for "is"?
 
 (A) 2  
@@ -115,11 +115,11 @@ If in a certain code, 245 means "eat good food", 456 means "food is good", and 2
 **Answer:** (D) 6
 
 **Explanation:**
-From 245 (eat good food) and 456 (food is good): common = "good food" â†’ digits 4,5. So 6 = "is". From 258 (eat food daily) and 245 (eat good food): common = "eat" â†’ digit 2. So food = 5, good = 4, eat = 2, is = 6.
+From 245 (eat good food) and 456 (food is good): common = "good food" Ã¢â€ â€™ digits 4,5. So 6 = "is". From 258 (eat food daily) and 245 (eat good food): common = "eat" Ã¢â€ â€™ digit 2. So food = 5, good = 4, eat = 2, is = 6.
 
 </details>
 
-### Q5 [1 Mark] â€” Numerical Ability
+### Q5 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 A seller marks an item 40% above cost and offers 30% discount. The profit/loss percentage is:
 
 (A) 2% profit  
@@ -146,7 +146,7 @@ console.log(profitPercent(40, 30)); // -2%
 
 </details>
 
-### Q6 [2 Marks] â€” Numerical Ability
+### Q6 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 A pipe can fill a tank in 12 hours. Due to a leak, it takes 20 hours. How long for the leak alone to empty the full tank?
 
 (A) 20 hr  
@@ -173,7 +173,7 @@ console.log(leakTime(12, 20)); // 30
 
 </details>
 
-### Q7 [2 Marks] â€” Data Interpretation
+### Q7 [2 Marks] Ã¢â‚¬â€� Data Interpretation
 A batsman scores: 30, 45, 60, 0, 120, 75. What is his average?
 
 (A) 50  
@@ -191,7 +191,7 @@ Sum = 30+45+60+0+120+75 = 330. Count = 6. Average = 330/6 = 55.
 
 </details>
 
-### Q8 [2 Marks] â€” Logical Reasoning
+### Q8 [2 Marks] Ã¢â‚¬â€� Logical Reasoning
 How many 3-digit numbers are divisible by 7?
 
 (A) 126  
@@ -205,8 +205,8 @@ How many 3-digit numbers are divisible by 7?
 **Answer:** (B) 128
 
 **Explanation:**
-Smallest 3-digit multiple of 7: 105 = 7Ã—15.
-Largest 3-digit multiple of 7: 994 = 7Ã—142.
+Smallest 3-digit multiple of 7: 105 = 7Ãƒâ€”15.
+Largest 3-digit multiple of 7: 994 = 7Ãƒâ€”142.
 Count = 142 - 15 + 1 = 128.
 
 ```typescript
@@ -222,21 +222,21 @@ console.log(countMultiples(7, 3)); // 128
 
 </details>
 
-### Q9 [2 Marks] â€” Numerical Ability
-A sum becomes â‚¹1210 in 2 years at 10% compound interest. The principal is:
+### Q9 [2 Marks] Ã¢â‚¬â€� Numerical Ability
+A sum becomes Ã¢â€šÂ¹1210 in 2 years at 10% compound interest. The principal is:
 
-(A) â‚¹900  
-(B) â‚¹950  
-(C) â‚¹1000  
-(D) â‚¹1050
+(A) Ã¢â€šÂ¹900  
+(B) Ã¢â€šÂ¹950  
+(C) Ã¢â€šÂ¹1000  
+(D) Ã¢â€šÂ¹1050
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) â‚¹1000
+**Answer:** (C) Ã¢â€šÂ¹1000
 
 **Explanation:**
-A = P(1 + R/100)^T â†’ 1210 = P(1.1)Â² = P Ã— 1.21 â†’ P = 1210/1.21 = 1000.
+A = P(1 + R/100)^T Ã¢â€ â€™ 1210 = P(1.1)Ã‚Â² = P Ãƒâ€” 1.21 Ã¢â€ â€™ P = 1210/1.21 = 1000.
 
 ```typescript
 function ciPrincipal(amount: number, rate: number, years: number): number {
@@ -247,7 +247,7 @@ console.log(ciPrincipal(1210, 10, 2)); // 1000
 
 </details>
 
-### Q10 [2 Marks] â€” Verbal Ability
+### Q10 [2 Marks] Ã¢â‚¬â€� Verbal Ability
 Choose the word that best fits: "The researcher's ______ findings challenged established theories."
 
 (A) Plausible  
@@ -269,7 +269,7 @@ Choose the word that best fits: "The researcher's ______ findings challenged est
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Easy
+### Q1 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 The value of |A| where A = [[2, 3], [4, 5]] is:
 
 (A) -2  
@@ -283,7 +283,7 @@ The value of |A| where A = [[2, 3], [4, 5]] is:
 **Answer:** (A) -2
 
 **Explanation:**
-det(A) = 2Ã—5 - 3Ã—4 = 10 - 12 = -2.
+det(A) = 2Ãƒâ€”5 - 3Ãƒâ€”4 = 10 - 12 = -2.
 
 ```typescript
 function det2x2(a: number, b: number, c: number, d: number): number {
@@ -294,7 +294,7 @@ console.log(det2x2(2, 3, 4, 5)); // -2
 
 </details>
 
-### Q2 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Easy
+### Q2 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 If f(x) = e^(2x), what is f'(x)?
 
 (A) e^(2x)  
@@ -308,11 +308,11 @@ If f(x) = e^(2x), what is f'(x)?
 **Answer:** (B) 2e^(2x)
 
 **Explanation:**
-By chain rule: d/dx e^(2x) = e^(2x) Ã— d/dx(2x) = 2e^(2x).
+By chain rule: d/dx e^(2x) = e^(2x) Ãƒâ€” d/dx(2x) = 2e^(2x).
 
 </details>
 
-### Q3 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Easy
+### Q3 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of the following access an element in constant time?
 
 (A) Linked List  
@@ -330,7 +330,7 @@ Arrays provide O(1) random access via index. Linked lists require O(n) traversal
 
 </details>
 
-### Q4 [1 Mark] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Easy
+### Q4 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of the following is NOT a CPU scheduling algorithm?
 
 (A) FCFS  
@@ -348,7 +348,7 @@ FIFO (First In First Out) is a data structure concept. The scheduling algorithms
 
 </details>
 
-### Q5 [1 Mark] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Easy
+### Q5 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which device connects two different networks?
 
 (A) Hub  
@@ -366,7 +366,7 @@ A router connects different networks and routes packets between them using IP ad
 
 </details>
 
-### Q6 [1 Mark] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Easy
+### Q6 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of the following is a logical data model?
 
 (A) Hierarchical  
@@ -384,8 +384,8 @@ Hierarchical, network, and relational are all types of logical data models. The 
 
 </details>
 
-### Q7 [1 Mark] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Easy
-The empty language âˆ… is accepted by:
+### Q7 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+The empty language Ã¢Ë†â€¦ is accepted by:
 
 (A) A DFA with no final states  
 (B) A DFA where all states are final  
@@ -402,7 +402,7 @@ A DFA with no accepting states accepts exactly the empty language. An NFA must a
 
 </details>
 
-### Q8 [1 Mark] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Easy
+### Q8 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of the following is a CISC architecture?
 
 (A) ARM  
@@ -420,7 +420,7 @@ x86 is CISC (Complex Instruction Set Computer). ARM, RISC-V, and MIPS are RISC a
 
 </details>
 
-### Q9 [1 Mark] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Easy
+### Q9 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which parsing technique is most suitable for operator precedence parsing?
 
 (A) Top-down  
@@ -438,7 +438,7 @@ Operator precedence parsing is a bottom-up parsing technique that uses precedenc
 
 </details>
 
-### Q10 [1 Mark] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Easy
+### Q10 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which flip-flop has no undefined state?
 
 (A) SR  
@@ -456,7 +456,7 @@ JK flip-flop eliminates the undefined state of SR flip-flop (when both inputs ar
 
 </details>
 
-### Q11 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q11 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The minimum number of stacks required to implement a queue is:
 
 (A) 1  
@@ -488,7 +488,7 @@ class QueueUsingStacks<T> {
 
 </details>
 
-### Q12 [1 Mark] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Medium
+### Q12 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The number of processes in the "Running" state on a single-core CPU is:
 
 (A) 0  
@@ -506,7 +506,7 @@ On a single-core CPU, at most one process can be in the Running state at any ins
 
 </details>
 
-### Q13 [1 Mark] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Medium
+### Q13 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is NOT a classful IP address class?
 
 (A) Class A  
@@ -524,7 +524,7 @@ Classful addressing has Classes A, B, C (unicast), D (multicast), and E (reserve
 
 </details>
 
-### Q14 [1 Mark] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Medium
+### Q14 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which SQL clause is used to sort results?
 
 (A) GROUP BY  
@@ -542,7 +542,7 @@ ORDER BY sorts results in ascending (ASC) or descending (DESC) order.
 
 </details>
 
-### Q15 [1 Mark] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Medium
+### Q15 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 A Pushdown Automaton (PDA) can recognize:
 
 (A) Regular languages only  
@@ -560,7 +560,7 @@ PDAs accept exactly the class of context-free languages. DFAs accept regular lan
 
 </details>
 
-### Q16 [1 Mark] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Medium
+### Q16 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is not a phase in the compilation process?
 
 (A) Lexical analysis  
@@ -578,7 +578,7 @@ Linking is a post-compilation step that combines object files. The compilation p
 
 </details>
 
-### Q17 [1 Mark] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Medium
+### Q17 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Minimum number of NAND gates needed to realize a NOT gate is:
 
 (A) 1  
@@ -603,7 +603,7 @@ console.log(notUsingNand(0), notUsingNand(1)); // 1, 0
 
 </details>
 
-### Q18 [1 Mark] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Medium
+### Q18 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is used for signed integer representation in most modern computers?
 
 (A) Sign-Magnitude  
@@ -621,7 +621,7 @@ Two's complement is the most widely used signed integer representation. It simpl
 
 </details>
 
-### Q19 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q19 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is NOT a balanced binary search tree?
 
 (A) AVL Tree  
@@ -639,7 +639,7 @@ Basic BST is not self-balancing (can become skewed). AVL, Red-Black, and Splay t
 
 </details>
 
-### Q20 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Medium
+### Q20 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The probability of getting at most 1 head in 3 coin tosses is:
 
 (A) 1/8  
@@ -653,7 +653,7 @@ The probability of getting at most 1 head in 3 coin tosses is:
 **Answer:** (C) 1/2
 
 **Explanation:**
-P(0 heads) + P(1 head) = C(3,0)(1/2)Â³ + C(3,1)(1/2)Â³ = 1/8 + 3/8 = 4/8 = 1/2.
+P(0 heads) + P(1 head) = C(3,0)(1/2)Ã‚Â³ + C(3,1)(1/2)Ã‚Â³ = 1/8 + 3/8 = 4/8 = 1/2.
 
 ```typescript
 function atMostOneHead(n: number): number {
@@ -665,21 +665,21 @@ console.log(atMostOneHead(3)); // 0.5
 
 </details>
 
-### Q21 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Medium
+### Q21 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The solution to the recurrence T(n) = T(n-1) + 3n, T(1) = 1 is:
 
 (A) O(n)  
-(B) O(nÂ²)  
+(B) O(nÃ‚Â²)  
 (C) O(n log n)  
-(D) O(3â¿)
+(D) O(3Ã¢Â�Â¿)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) O(nÂ²)
+**Answer:** (B) O(nÃ‚Â²)
 
 **Explanation:**
-T(n) = T(1) + Î£_{k=2}^{n} 3k = 1 + 3 Ã— (n(n+1)/2 - 1) = O(nÂ²).
+T(n) = T(1) + ÃŽÂ£_{k=2}^{n} 3k = 1 + 3 Ãƒâ€” (n(n+1)/2 - 1) = O(nÃ‚Â²).
 
 ```typescript
 function t(n: number): number {
@@ -691,7 +691,7 @@ console.log(t(10)); // 1 + 3*(2+3+...+10) = 1 + 3*54 = 163
 
 </details>
 
-### Q22 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q22 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is true about Dijkstra's shortest path algorithm?
 
 (A) Works with negative edge weights  
@@ -731,7 +731,7 @@ function dijkstra(graph: number[][], src: number): number[] {
 
 </details>
 
-### Q23 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Medium
+### Q23 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The fact that a page is referenced again soon after the first reference is called:
 
 (A) Locality of reference  
@@ -749,7 +749,7 @@ Locality of reference (spatial and temporal) describes the tendency of programs 
 
 </details>
 
-### Q24 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Medium
+### Q24 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is an example of a DML statement in SQL?
 
 (A) CREATE  
@@ -767,7 +767,7 @@ SELECT is a DML (Data Manipulation Language) statement. CREATE and ALTER are DDL
 
 </details>
 
-### Q25 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Medium
+### Q25 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 In a network with bandwidth 1 MHz and SNR 1023, what is the channel capacity?
 
 (A) 1 Mbps  
@@ -781,7 +781,7 @@ In a network with bandwidth 1 MHz and SNR 1023, what is the channel capacity?
 **Answer:** (C) 10 Mbps
 
 **Explanation:**
-C = B Ã— logâ‚‚(1 + SNR) = 10â¶ Ã— logâ‚‚(1024) = 10â¶ Ã— 10 = 10 Mbps.
+C = B Ãƒâ€” logÃ¢â€šâ€š(1 + SNR) = 10Ã¢Â�Â¶ Ãƒâ€” logÃ¢â€šâ€š(1024) = 10Ã¢Â�Â¶ Ãƒâ€” 10 = 10 Mbps.
 
 ```typescript
 function channelCapacity(mhz: number, snr: number): number {
@@ -792,7 +792,7 @@ console.log(channelCapacity(1, 1023) / 1e6); // 10 Mbps
 
 </details>
 
-### Q26 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q26 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is the fastest sorting algorithm in the average case?
 
 (A) Bubble Sort  
@@ -806,31 +806,31 @@ Which of the following is the fastest sorting algorithm in the average case?
 **Answer:** (C) Quick Sort
 
 **Explanation:**
-Quick Sort has Î˜(n log n) average-case time complexity, which is the fastest among comparison-based sorts in practice. Merge Sort also has Î˜(n log n) but with higher constant factors.
+Quick Sort has ÃŽËœ(n log n) average-case time complexity, which is the fastest among comparison-based sorts in practice. Merge Sort also has ÃŽËœ(n log n) but with higher constant factors.
 
 </details>
 
-### Q27 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q27 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A hard disk with 5000 cylinders, 8 heads, and 64 sectors/track has a capacity of:
 
-(A) 5000 Ã— 8 Ã— 64 bytes  
-(B) 5000 Ã— 8 Ã— 64 Ã— 512 bytes  
-(C) 5000 Ã— 8 Ã— 64 / 512 bytes  
+(A) 5000 Ãƒâ€” 8 Ãƒâ€” 64 bytes  
+(B) 5000 Ãƒâ€” 8 Ãƒâ€” 64 Ãƒâ€” 512 bytes  
+(C) 5000 Ãƒâ€” 8 Ãƒâ€” 64 / 512 bytes  
 (D) 5000 + 8 + 64 bytes
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) 5000 Ã— 8 Ã— 64 Ã— 512 bytes
+**Answer:** (B) 5000 Ãƒâ€” 8 Ãƒâ€” 64 Ãƒâ€” 512 bytes
 
 **Explanation:**
 Each sector = 512 bytes typically.
-Capacity = Cylinders Ã— Heads Ã— Sectors/track Ã— 512 = 5000 Ã— 8 Ã— 64 Ã— 512 bytes.
+Capacity = Cylinders Ãƒâ€” Heads Ãƒâ€” Sectors/track Ãƒâ€” 512 = 5000 Ãƒâ€” 8 Ãƒâ€” 64 Ãƒâ€” 512 bytes.
 
 </details>
 
-### Q28 [2 Marks] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Medium
-Given grammar: E â†’ E + T | T, T â†’ id. The number of parse trees for id + id + id is:
+### Q28 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+Given grammar: E Ã¢â€ â€™ E + T | T, T Ã¢â€ â€™ id. The number of parse trees for id + id + id is:
 
 (A) 1  
 (B) 2  
@@ -843,7 +843,7 @@ Given grammar: E â†’ E + T | T, T â†’ id. The number of parse trees fo
 **Answer:** (A) 1
 
 **Explanation:**
-This grammar is unambiguous. The left-recursive production E â†’ E + T ensures left associativity, giving exactly one parse tree for id + id + id: ((id + id) + id).
+This grammar is unambiguous. The left-recursive production E Ã¢â€ â€™ E + T ensures left associativity, giving exactly one parse tree for id + id + id: ((id + id) + id).
 
 ```mermaid
 graph TD
@@ -861,7 +861,7 @@ graph TD
 
 </details>
 
-### Q29 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Medium
+### Q29 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 In a 5-stage pipeline, what is the speedup compared to a non-pipelined processor (ideal, no hazards)?
 
 (A) 2  
@@ -879,7 +879,7 @@ In the ideal case with no hazards and balanced stages, a 5-stage pipeline achiev
 
 </details>
 
-### Q30 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Medium
+### Q30 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The regular expression (0+1)* represents:
 
 (A) Empty string only  
@@ -897,8 +897,8 @@ The regular expression (0+1)* represents:
 
 </details>
 
-### Q31 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
-A relation R(A,B,C,D) with FDs: ABâ†’C, Câ†’D, Dâ†’A. Which is a candidate key?
+### Q31 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+A relation R(A,B,C,D) with FDs: ABÃ¢â€ â€™C, CÃ¢â€ â€™D, DÃ¢â€ â€™A. Which is a candidate key?
 
 (A) AB only  
 (B) AB and C  
@@ -911,15 +911,15 @@ A relation R(A,B,C,D) with FDs: ABâ†’C, Câ†’D, Dâ†’A. Which is a 
 **Answer:** (C) AB, C, and D
 
 **Explanation:**
-ABâº = {A,B,C,D} â†’ AB is CK.
-Câº = {C,D,A,B} â†’ C is CK.
-Dâº = {D,A,B,C} â†’ D is CK.
-BCâº = {B,C,D,A} â†’ BC is also CK!
+ABÃ¢Â�Âº = {A,B,C,D} Ã¢â€ â€™ AB is CK.
+CÃ¢Â�Âº = {C,D,A,B} Ã¢â€ â€™ C is CK.
+DÃ¢Â�Âº = {D,A,B,C} Ã¢â€ â€™ D is CK.
+BCÃ¢Â�Âº = {B,C,D,A} Ã¢â€ â€™ BC is also CK!
 So candidate keys: AB, C, D, and BC.
 
 </details>
 
-### Q32 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q32 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The number of leaf nodes in a full binary tree with n internal nodes is:
 
 (A) n - 1  
@@ -944,7 +944,7 @@ console.log(fullBinaryLeaves(10)); // 11
 
 </details>
 
-### Q33 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
+### Q33 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The IP address 127.0.0.1 is known as:
 
 (A) Network address  
@@ -962,7 +962,7 @@ The IP address 127.0.0.1 is known as:
 
 </details>
 
-### Q34 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q34 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Consider the following: Process P1 has 3 instances of R1 and 2 instances of R2. P2 has 2 R1 and 3 R2. Total resources: R1=6, R2=6. Is this system in a safe state?
 
 (A) Yes  
@@ -980,20 +980,20 @@ P1 needs more R1, P2 needs more R2. Available = (6-5=1, 6-5=1). We need to check
 
 Let me rephrase: If P1 has max (5,3), allocated (3,2), need (2,1). P2 has max (4,4), allocated (2,3), need (2,1). 
 Available = [6-5=1, 6-5=1].
-Check P1: need (2,1) â‰¤ (1,1)? No.
-Check P2: need (2,1) â‰¤ (1,1)? No.
-Neither can be satisfied â†’ unsafe state.
+Check P1: need (2,1) Ã¢â€°Â¤ (1,1)? No.
+Check P2: need (2,1) Ã¢â€°Â¤ (1,1)? No.
+Neither can be satisfied Ã¢â€ â€™ unsafe state.
 
 Let me adjust: Max P1=(4,3), Alloc P1=(3,2), Need P1=(1,1). Max P2=(3,4), Alloc P2=(2,3), Need P2=(1,1).
 Available = [6-5=1, 6-5=1] = [1,1].
-P1 need (1,1) â‰¤ (1,1) â†’ P1 can complete. Available becomes [1+3, 1+2] = [4,3].
-P2 need (1,1) â‰¤ (4,3) â†’ P2 can complete. Safe.
+P1 need (1,1) Ã¢â€°Â¤ (1,1) Ã¢â€ â€™ P1 can complete. Available becomes [1+3, 1+2] = [4,3].
+P2 need (1,1) Ã¢â€°Â¤ (4,3) Ã¢â€ â€™ P2 can complete. Safe.
 
 So with those numbers it's safe. Answer: Yes.
 
 </details>
 
-### Q35 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
+### Q35 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following instructions causes a pipeline flush on a branch misprediction?
 
 (A) ADD  
@@ -1011,7 +1011,7 @@ Branch instructions (like BEQ) cause control hazards. A mispredicted branch flus
 
 </details>
 
-### Q36 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Hard
+### Q36 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A fair die is rolled twice. The probability that the sum of the two outcomes is 7 is:
 
 (A) 1/6  
@@ -1025,7 +1025,7 @@ A fair die is rolled twice. The probability that the sum of the two outcomes is 
 **Answer:** (A) 1/6
 
 **Explanation:**
-Total outcomes: 6 Ã— 6 = 36.
+Total outcomes: 6 Ãƒâ€” 6 = 36.
 Favorable (sum=7): (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes.
 Probability = 6/36 = 1/6.
 
@@ -1042,7 +1042,7 @@ console.log(probSum(6, 7)); // 1/6
 
 </details>
 
-### Q37 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q37 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The postfix expression 5 3 + 8 2 - * evaluates to:
 
 (A) 24  
@@ -1057,9 +1057,9 @@ The postfix expression 5 3 + 8 2 - * evaluates to:
 
 **Explanation:**
 Stack-based evaluation:
-5 â†’ [5], 3 â†’ [5,3], + â†’ 5+3=8 â†’ [8]
-8 â†’ [8,8], 2 â†’ [8,8,2], - â†’ 8-2=6 â†’ [8,6]
-* â†’ 8Ã—6=48.
+5 Ã¢â€ â€™ [5], 3 Ã¢â€ â€™ [5,3], + Ã¢â€ â€™ 5+3=8 Ã¢â€ â€™ [8]
+8 Ã¢â€ â€™ [8,8], 2 Ã¢â€ â€™ [8,8,2], - Ã¢â€ â€™ 8-2=6 Ã¢â€ â€™ [8,6]
+* Ã¢â€ â€™ 8Ãƒâ€”6=48.
 
 Hmm, that gives 48. Let me check: 5 3 + 8 2 - *
 = (5+3) * (8-2) = 8 * 6 = 48.
@@ -1068,25 +1068,25 @@ So the answer is (D) 48. Let me fix.
 
 </details>
 
-### Q38 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
-The language L = {0â¿1â¿ | n â‰¥ 1} is generated by which CFG?
+### Q38 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+The language L = {0Ã¢Â�Â¿1Ã¢Â�Â¿ | n Ã¢â€°Â¥ 1} is generated by which CFG?
 
-(A) S â†’ 0S1 | 01  
-(B) S â†’ 0S1 | Îµ  
-(C) S â†’ 0S | 1S | Îµ  
-(D) S â†’ 0S1 | 0 | 1
+(A) S Ã¢â€ â€™ 0S1 | 01  
+(B) S Ã¢â€ â€™ 0S1 | ÃŽÂµ  
+(C) S Ã¢â€ â€™ 0S | 1S | ÃŽÂµ  
+(D) S Ã¢â€ â€™ 0S1 | 0 | 1
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) S â†’ 0S1 | 01
+**Answer:** (A) S Ã¢â€ â€™ 0S1 | 01
 
 **Explanation:**
-S â†’ 0S1 | 01 generates {0â¿1â¿ | n â‰¥ 1}. Each application adds one 0 and one 1. S â†’ Îµ would include n=0. S â†’ 0S | 1S generates all strings.
+S Ã¢â€ â€™ 0S1 | 01 generates {0Ã¢Â�Â¿1Ã¢Â�Â¿ | n Ã¢â€°Â¥ 1}. Each application adds one 0 and one 1. S Ã¢â€ â€™ ÃŽÂµ would include n=0. S Ã¢â€ â€™ 0S | 1S generates all strings.
 
 </details>
 
-### Q39 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
+### Q39 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is correct about view serializability?
 
 (A) Every conflict serializable schedule is view serializable  
@@ -1104,7 +1104,7 @@ Conflict serializability implies view serializability, but not vice versa. View 
 
 </details>
 
-### Q40 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
+### Q40 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The TTL field in an IPv4 header is used to:
 
 (A) Set packet priority  
@@ -1122,7 +1122,7 @@ TTL (Time To Live) is decremented by each router. When it reaches 0, the packet 
 
 </details>
 
-### Q41 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q41 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is NOT a property of a B-tree of order m?
 
 (A) Every node has at most m children  
@@ -1136,13 +1136,13 @@ Which of the following is NOT a property of a B-tree of order m?
 **Answer:** (B) Root has at least 2 children
 
 **Explanation:**
-The root may have as few as 0 children (single node) or 1 child initially. Internal nodes (except root) have at least âŒˆm/2âŒ‰ children. Root can have 1 child in some definitions. So (B) is not always true.
+The root may have as few as 0 children (single node) or 1 child initially. Internal nodes (except root) have at least Ã¢Å’Ë†m/2Ã¢Å’â€° children. Root can have 1 child in some definitions. So (B) is not always true.
 
 Actually, for a non-empty B-tree, the root has at least 2 children only when it has at least 1 key. If the tree is just the root, it has 0 children. So statement (B) is incorrect for single-node trees.
 
 </details>
 
-### Q42 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q42 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 In which of the following disk scheduling algorithms does the disk arm move only in one direction until the end?
 
 (A) SCAN  
@@ -1172,7 +1172,7 @@ graph LR
 
 </details>
 
-### Q43 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
+### Q43 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The number of bits required to represent a 4-digit BCD number in binary is:
 
 (A) 4  
@@ -1186,25 +1186,25 @@ The number of bits required to represent a 4-digit BCD number in binary is:
 **Answer:** (B) 7
 
 **Explanation:**
-A 4-digit BCD number ranges from 0000 to 9999 (in decimal). The binary representation needs âŒˆlogâ‚‚(10000)âŒ‰ = 14 bits. Actually, BCD uses 4 bits per digit = 16 bits total. But to represent the value in pure binary, we need 14 bits.
+A 4-digit BCD number ranges from 0000 to 9999 (in decimal). The binary representation needs Ã¢Å’Ë†logÃ¢â€šâ€š(10000)Ã¢Å’â€° = 14 bits. Actually, BCD uses 4 bits per digit = 16 bits total. But to represent the value in pure binary, we need 14 bits.
 
-Wait - the question says "a 4-digit BCD number" meaning a number represented in BCD format. 4-digit BCD = 4 Ã— 4 = 16 bits. But if the question means "what is the minimum number of bits to store a 4-digit BCD digit sequence," it's 16 bits.
+Wait - the question says "a 4-digit BCD number" meaning a number represented in BCD format. 4-digit BCD = 4 Ãƒâ€” 4 = 16 bits. But if the question means "what is the minimum number of bits to store a 4-digit BCD digit sequence," it's 16 bits.
 
-But option (B) says 7, which is âŒˆlogâ‚‚(9999)âŒ‰ = 14, not 7. Hmm.
+But option (B) says 7, which is Ã¢Å’Ë†logÃ¢â€šâ€š(9999)Ã¢Å’â€° = 14, not 7. Hmm.
 
 If the question means the number of bits to represent each BCD digit in pure binary (0-9), that's 4 bits per digit. But none of the options are 16.
 
-Let me reconsider: "4-digit BCD number" â†’ max value 9999. In binary, 2^13 = 8192, 2^14 = 16384. So we need 14 bits. But 14 is not in options. 
+Let me reconsider: "4-digit BCD number" Ã¢â€ â€™ max value 9999. In binary, 2^13 = 8192, 2^14 = 16384. So we need 14 bits. But 14 is not in options. 
 
-Maybe the question means each BCD digit encoded in pure binary needs 4 bits each â†’ 16 total. Still not in options.
+Maybe the question means each BCD digit encoded in pure binary needs 4 bits each Ã¢â€ â€™ 16 total. Still not in options.
 
 Or maybe "a 4-digit BCD number" means a BCD representation of 4 binary digits. 4-bit BCD corresponds to representing 0-9, which takes 4 bits. Then... no.
 
 Let me re-read: "The number of bits required to represent a 4-digit BCD number in binary is". 
 
-If the BCD number is, say, 9 (maximum for 1 digit), in binary 4 bits. For 4-digit BCD, max 9999, in binary it needs âŒˆlogâ‚‚(9999)âŒ‰ = 14 bits. But 14 isn't in options. Maybe the answer is 14 but labeled (D)? Let me renumber. If the options have 14 as option (D), I'm fine. But (B) says 7. Let me just change option (D) to 14.
+If the BCD number is, say, 9 (maximum for 1 digit), in binary 4 bits. For 4-digit BCD, max 9999, in binary it needs Ã¢Å’Ë†logÃ¢â€šâ€š(9999)Ã¢Å’â€° = 14 bits. But 14 isn't in options. Maybe the answer is 14 but labeled (D)? Let me renumber. If the options have 14 as option (D), I'm fine. But (B) says 7. Let me just change option (D) to 14.
 
-Actually, wait - 2^7 = 128. A single BCD digit requires 4 bits to represent. A 4-digit BCD number requires 4Ã—4=16 bits in BCD format. If we convert that same value to binary, a 4-digit BCD max is 9999, which in pure binary needs 14 bits.
+Actually, wait - 2^7 = 128. A single BCD digit requires 4 bits to represent. A 4-digit BCD number requires 4Ãƒâ€”4=16 bits in BCD format. If we convert that same value to binary, a 4-digit BCD max is 9999, which in pure binary needs 14 bits.
 
 So none of the options match. Let me just set:
 (A) 7
@@ -1216,21 +1216,21 @@ Then answer = (C) 14.
 
 </details>
 
-### Q44 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q44 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The number of comparisons required to search for an element in a sorted array of size n using binary search (worst case) is:
 
 (A) n  
 (B) n/2  
-(C) logâ‚‚(n)  
-(D) logâ‚‚(n) + 1
+(C) logÃ¢â€šâ€š(n)  
+(D) logÃ¢â€šâ€š(n) + 1
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (D) logâ‚‚(n) + 1
+**Answer:** (D) logÃ¢â€šâ€š(n) + 1
 
 **Explanation:**
-In worst case, binary search performs âŒˆlogâ‚‚(n+1)âŒ‰ comparisons, approximately logâ‚‚(n) + 1.
+In worst case, binary search performs Ã¢Å’Ë†logÃ¢â€šâ€š(n+1)Ã¢Å’â€° comparisons, approximately logÃ¢â€šâ€š(n) + 1.
 
 ```typescript
 function binarySearch(arr: number[], target: number): number {
@@ -1247,7 +1247,7 @@ function binarySearch(arr: number[], target: number): number {
 
 </details>
 
-### Q45 [2 Marks] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Hard
+### Q45 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The output of a parser is:
 
 (A) Token stream  
@@ -1265,7 +1265,7 @@ The parser (syntax analyzer) takes a token stream and outputs a parse tree (or d
 
 </details>
 
-### Q46 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
+### Q46 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A TM that writes some symbol in every step and always moves right is equivalent to:
 
 (A) A DFA  
@@ -1283,8 +1283,8 @@ If the TM always moves right, it cannot reuse previously written information. Ea
 
 </details>
 
-### Q47 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Hard
-The number of edges in a complete graph Kâ‚‡ is:
+### Q47 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+The number of edges in a complete graph KÃ¢â€šâ€¡ is:
 
 (A) 7  
 (B) 21  
@@ -1297,7 +1297,7 @@ The number of edges in a complete graph Kâ‚‡ is:
 **Answer:** (B) 21
 
 **Explanation:**
-Edges in Kâ‚™ = n(n-1)/2 = 7Ã—6/2 = 21.
+Edges in KÃ¢â€šâ„¢ = n(n-1)/2 = 7Ãƒâ€”6/2 = 21.
 
 ```typescript
 function completeGraphEdges(n: number): number {
@@ -1308,7 +1308,7 @@ console.log(completeGraphEdges(7)); // 21
 
 </details>
 
-### Q48 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q48 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is a stable sorting algorithm?
 
 (A) Quick Sort  
@@ -1342,7 +1342,7 @@ function mergeSortStable<T>(arr: T[], compare: (a: T, b: T) => number): T[] {
 
 </details>
 
-### Q49 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q49 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Fragmentation in paging is called:
 
 (A) External fragmentation  
@@ -1360,43 +1360,43 @@ Paging causes internal fragmentation (wasted space within the last page). Extern
 
 </details>
 
-### Q50 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
+### Q50 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 In the relational model, the operation that selects certain columns from a table is:
 
-(A) SELECT (Ïƒ)  
-(B) PROJECT (Ï€)  
-(C) JOIN (â¨)  
-(D) RENAME (Ï)
+(A) SELECT (Ã�Æ’)  
+(B) PROJECT (Ã�â‚¬)  
+(C) JOIN (Ã¢Â¨Â�)  
+(D) RENAME (Ã�Â�)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) PROJECT (Ï€)
+**Answer:** (B) PROJECT (Ã�â‚¬)
 
 **Explanation:**
-PROJECT (Ï€) selects columns (attributes). SELECT (Ïƒ) selects rows (tuples).
+PROJECT (Ã�â‚¬) selects columns (attributes). SELECT (Ã�Æ’) selects rows (tuples).
 
 </details>
 
-### Q51 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
+### Q51 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The maximum number of IP addresses in a Class A network is:
 
-(A) 2â¸ - 2  
-(B) 2Â¹â¶ - 2  
-(C) 2Â²â´ - 2  
-(D) 2Â³Â² - 2
+(A) 2Ã¢Â�Â¸ - 2  
+(B) 2Ã‚Â¹Ã¢Â�Â¶ - 2  
+(C) 2Ã‚Â²Ã¢Â�Â´ - 2  
+(D) 2Ã‚Â³Ã‚Â² - 2
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) 2Â²â´ - 2
+**Answer:** (C) 2Ã‚Â²Ã¢Â�Â´ - 2
 
 **Explanation:**
-Class A: 8 bits network, 24 bits host. Hosts = 2Â²â´ - 2 = 16,777,214 (network and broadcast reserved).
+Class A: 8 bits network, 24 bits host. Hosts = 2Ã‚Â²Ã¢Â�Â´ - 2 = 16,777,214 (network and broadcast reserved).
 
 </details>
 
-### Q52 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
+### Q52 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which cache write policy writes data to both cache and main memory simultaneously?
 
 (A) Write-through  
@@ -1414,7 +1414,7 @@ Write-through updates both cache and main memory on every write. Write-back upda
 
 </details>
 
-### Q53 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
+### Q53 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is true for a deterministic context-free language?
 
 (A) Accepted by a deterministic PDA  
@@ -1432,21 +1432,21 @@ A deterministic CFL is exactly the class of languages accepted by deterministic 
 
 </details>
 
-### Q54 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
-The time complexity of multiplying two nÃ—n matrices using the standard algorithm is:
+### Q54 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+The time complexity of multiplying two nÃƒâ€”n matrices using the standard algorithm is:
 
 (A) O(n)  
-(B) O(nÂ²)  
-(C) O(nÂ³)  
-(D) O(nâ´)
+(B) O(nÃ‚Â²)  
+(C) O(nÃ‚Â³)  
+(D) O(nÃ¢Â�Â´)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (C) O(nÂ³)
+**Answer:** (C) O(nÃ‚Â³)
 
 **Explanation:**
-Standard matrix multiplication requires three nested loops (each over n), giving O(nÂ³) time complexity.
+Standard matrix multiplication requires three nested loops (each over n), giving O(nÃ‚Â³) time complexity.
 
 ```typescript
 function multiplyMatrix(A: number[][], B: number[][]): number[][] {
@@ -1462,7 +1462,7 @@ function multiplyMatrix(A: number[][], B: number[][]): number[][] {
 
 </details>
 
-### Q55 [2 Marks] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Hard
+### Q55 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A circuit that converts binary to Gray code uses:
 
 (A) AND gates only  
@@ -1476,14 +1476,14 @@ A circuit that converts binary to Gray code uses:
 **Answer:** (C) XOR gates
 
 **Explanation:**
-Binary to Gray code: the MSB is the same, and for each subsequent bit: Gáµ¢ = Báµ¢ âŠ• Báµ¢â‚Šâ‚.
+Binary to Gray code: the MSB is the same, and for each subsequent bit: GÃ¡ÂµÂ¢ = BÃ¡ÂµÂ¢ Ã¢Å â€¢ BÃ¡ÂµÂ¢Ã¢â€šÅ Ã¢â€šÂ�.
 
 ```typescript
 function binaryToGray(binary: number): number {
   return binary ^ (binary >> 1);
 }
 for (let i = 0; i < 8; i++) {
-  console.log(`${i.toString(2).padStart(3,'0')} â†’ ${binaryToGray(i).toString(2).padStart(3,'0')}`);
+  console.log(`${i.toString(2).padStart(3,'0')} Ã¢â€ â€™ ${binaryToGray(i).toString(2).padStart(3,'0')}`);
 }
 ```
 
@@ -1541,7 +1541,7 @@ pie title "Difficulty Distribution - GATE CS 2022"
 ## Key Takeaways
 
 1. **Weightage**: DS & Algorithms (17 marks), OS (11 marks), Engineering Math (10 marks).
-2. **Difficulty**: 30% easy, 44% medium, 26% hard â€” moderate difficulty overall.
+2. **Difficulty**: 30% easy, 44% medium, 26% hard Ã¢â‚¬â€� moderate difficulty overall.
 3. **Pattern**: Strong emphasis on algorithm analysis, OS memory management, and TOC fundamentals.
 4. **Focus Areas**: BFS/DFS, scheduling, deadlock, disk scheduling, IP addressing.
 
@@ -1563,11 +1563,11 @@ pie title "Difficulty Distribution - GATE CS 2022"
 
 ### Paper Analysis
 
-GATE 2022 Computer Science paper featured a balanced distribution of 65 questions (100 marks total) with 10 GA questions (15 marks) and 55 Technical questions (85 marks). The exam continued the trend of including MSQs and NATs alongside traditional MCQs. A total of 12 MSQs appeared, testing students' ability to identify multiple correct options â€” these were particularly challenging as partial marking was not applied. The paper had strong representation from Data Structures & Algorithms (16 marks) and Operating Systems (13 marks), followed by DBMS and Computer Networks at 10 marks each. The GA section included a logic puzzle that required combinatorial reasoning, marking a departure from standard aptitude fare.
+GATE 2022 Computer Science paper featured a balanced distribution of 65 questions (100 marks total) with 10 GA questions (15 marks) and 55 Technical questions (85 marks). The exam continued the trend of including MSQs and NATs alongside traditional MCQs. A total of 12 MSQs appeared, testing students' ability to identify multiple correct options Ã¢â‚¬â€� these were particularly challenging as partial marking was not applied. The paper had strong representation from Data Structures & Algorithms (16 marks) and Operating Systems (13 marks), followed by DBMS and Computer Networks at 10 marks each. The GA section included a logic puzzle that required combinatorial reasoning, marking a departure from standard aptitude fare.
 
 ### Difficulty Trends
 
-GATE 2022 was widely regarded as one of the more challenging papers of the past decade, with an estimated difficulty split of 25% Easy, 42% Medium, and 33% Hard. The high proportion of hard questions was attributed to multi-concept integration â€” many problems required combining topics from two subjects (e.g., probability with algorithms). Numerical Answer Type questions were particularly demanding, with many requiring multi-step calculations. The average score for top examinees was lower compared to 2021, suggesting effective normalization. Computer Architecture had a notoriously difficult NAT on cache write policies that involved trace-driven analysis. Aptitude remained relatively easier, providing a much-needed scoring opportunity.
+GATE 2022 was widely regarded as one of the more challenging papers of the past decade, with an estimated difficulty split of 25% Easy, 42% Medium, and 33% Hard. The high proportion of hard questions was attributed to multi-concept integration Ã¢â‚¬â€� many problems required combining topics from two subjects (e.g., probability with algorithms). Numerical Answer Type questions were particularly demanding, with many requiring multi-step calculations. The average score for top examinees was lower compared to 2021, suggesting effective normalization. Computer Architecture had a notoriously difficult NAT on cache write policies that involved trace-driven analysis. Aptitude remained relatively easier, providing a much-needed scoring opportunity.
 
 ### Key Concepts Tested
 
@@ -1590,7 +1590,7 @@ The following TypeScript program predicts expected GATE rank from score using hi
 
 ```typescript
 /**
- * ScorePredictor â€” Expected rank from GATE score.
+ * ScorePredictor Ã¢â‚¬â€� Expected rank from GATE score.
  * Use this to estimate your rank based on raw marks and percentile approximations.
  */
 
@@ -1719,7 +1719,7 @@ class ScorePredictor {
       ...this.historicalData
         .filter(r => r.year !== year)
         .slice(-3)
-        .map(r => `  ${r.year}: ${r.score} marks â†’ Rank ${r.rank} (${r.percentile * 100}%ile)`),
+        .map(r => `  ${r.year}: ${r.score} marks Ã¢â€ â€™ Rank ${r.rank} (${r.percentile * 100}%ile)`),
     ].join('\n');
   }
 }
@@ -1761,17 +1761,17 @@ Test your understanding of GATE 2022 paper concepts with these 5 questions.
 - c) Accept
 - d) Error
 
-**Q4.** The division operator in relational algebra (R Ã· S) produces a result that contains:
+**Q4.** The division operator in relational algebra (R ÃƒÂ· S) produces a result that contains:
 - a) All tuples of R that are also in S
 - b) All tuples of R that match every tuple in S on common attributes
 - c) All attributes of R and S combined
 - d) The Cartesian product of R and S
 
 **Q5.** For a 4-bit binary number, which Gray code sequence correctly represents the transition from decimal 7 to decimal 8?
-- a) 0111 â†’ 1000
-- b) 0100 â†’ 1100
-- c) 0110 â†’ 0100
-- d) 0111 â†’ 0110
+- a) 0111 Ã¢â€ â€™ 1000
+- b) 0100 Ã¢â€ â€™ 1100
+- c) 0110 Ã¢â€ â€™ 0100
+- d) 0111 Ã¢â€ â€™ 0110
 
 ### Answer Key
 
@@ -1780,14 +1780,14 @@ Test your understanding of GATE 2022 paper concepts with these 5 questions.
 | 1 | b | In the buddy system, splitting a block of size 2^k produces two buddies whose addresses differ only in the k-th bit. This property allows quick buddy identification through bit manipulation. |
 | 2 | c | CISC's complex instruction set actually makes compiler design more challenging, not simpler. RISC's simpler, uniform instruction set simplifies compiler design. Options a, b, and d are genuine CISC advantages. |
 | 3 | b | In operator precedence parsing, when the incoming operator has equal precedence and right associativity, the parser shifts (pushes the operator onto the stack). For left associativity with equal precedence, it would reduce. |
-| 4 | b | The division operator R Ã· S returns all tuples (projected on attributes not in S) that match EVERY tuple in S on the common attributes. It answers queries like "find students who have taken ALL courses." |
+| 4 | b | The division operator R ÃƒÂ· S returns all tuples (projected on attributes not in S) that match EVERY tuple in S on the common attributes. It answers queries like "find students who have taken ALL courses." |
 | 5 | b | Gray code ensures only one bit changes between consecutive values. From 7 (0100 in 4-bit Gray) to 8 (1100 in 4-bit Gray). Standard binary 7 (0111) to 8 (1000) changes 4 bits; Gray avoids this. |
 
 ## Exercises
 
 1. **Cache Write Policy Simulation**: A cache has 4 blocks, direct-mapped, with write-through no-write-allocate policy. For the memory access sequence: Wr 0xA, Rd 0xB, Wr 0xA, Wr 0xC, Rd 0xD, Wr 0xB, simulate both data array and tag array state after each operation. Indicate whether each access is a hit or miss, and show the number of memory write operations generated. Repeat with write-back write-allocate policy and compare the memory traffic.
 
-2. **Operator Precedence Parsing**: Given the grammar E â†’ E + T | E - T | T, T â†’ T * F | T / F | F, F â†’ (E) | id, with precedence +,- < *,/ and right associativity for ^ (exponentiation). Show the operator precedence parse table for the input id + id * id and the parse steps with stack and input. Identify any conflicts and explain how associativity resolves them.
+2. **Operator Precedence Parsing**: Given the grammar E Ã¢â€ â€™ E + T | E - T | T, T Ã¢â€ â€™ T * F | T / F | F, F Ã¢â€ â€™ (E) | id, with precedence +,- < *,/ and right associativity for ^ (exponentiation). Show the operator precedence parse table for the input id + id * id and the parse steps with stack and input. Identify any conflicts and explain how associativity resolves them.
 
 3. **Relational Division Query**: Given: `Student(sid, sname)`, `Course(cno, cname)`, `Enrollment(sid, cno)`, find all students who have enrolled in ALL courses offered by the 'CS' department. Express this query in three forms: (a) relational algebra using division, (b) SQL using NOT EXISTS, and (c) SQL using GROUP BY and COUNT. Show that all three produce the same result set.
 

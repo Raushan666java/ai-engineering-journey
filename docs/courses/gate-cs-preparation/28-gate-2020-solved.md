@@ -1,4 +1,4 @@
-﻿# GATE CS 2020 Solved Paper
+ï»¿# GATE CS 2020 Solved Paper
 
 ## Chapter at a Glance
 
@@ -16,8 +16,8 @@
 | Total Marks | 100 |
 | Duration | 3 Hours |
 | Sections | General Aptitude + Technical |
-| 1-Mark Questions | 25 Ã— 1 = 25 marks |
-| 2-Mark Questions | 30 Ã— 2 = 60 marks |
+| 1-Mark Questions | 25 Ãƒâ€” 1 = 25 marks |
+| 2-Mark Questions | 30 Ãƒâ€” 2 = 60 marks |
 
 ## Topic-wise Weightage
 
@@ -46,7 +46,7 @@
 
 ## Section A: General Aptitude (15 marks)
 
-### Q1 [1 Mark] â€” Numerical Ability
+### Q1 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 The ratio of ages of A and B is 3:4. After 5 years, ratio becomes 4:5. What is A's present age?
 
 (A) 10  
@@ -60,7 +60,7 @@ The ratio of ages of A and B is 3:4. After 5 years, ratio becomes 4:5. What is A
 **Answer:** (C) 15
 
 **Explanation:**
-Let A = 3x, B = 4x. (3x+5)/(4x+5) = 4/5 â†’ 5(3x+5) = 4(4x+5) â†’ 15x+25 = 16x+20 â†’ x = 5. A = 3Ã—5 = 15.
+Let A = 3x, B = 4x. (3x+5)/(4x+5) = 4/5 Ã¢â€ â€™ 5(3x+5) = 4(4x+5) Ã¢â€ â€™ 15x+25 = 16x+20 Ã¢â€ â€™ x = 5. A = 3Ãƒâ€”5 = 15.
 
 ```typescript
 function findAge(ratio1: number[], ratio2: number[], years: number): number {
@@ -73,7 +73,7 @@ console.log(findAge([3, 4], [4, 5], 5)); // 15
 
 </details>
 
-### Q2 [1 Mark] â€” Numerical Ability
+### Q2 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 A number when divided by 7 leaves remainder 4. What is the remainder when twice the number is divided by 7?
 
 (A) 1  
@@ -98,7 +98,7 @@ console.log(doubleRemainder(7, 4)); // 1
 
 </details>
 
-### Q3 [1 Mark] â€” Verbal Ability
+### Q3 [1 Mark] Ã¢â‚¬â€� Verbal Ability
 Choose the synonym of "BENEVOLENT":
 
 (A) Malevolent  
@@ -116,7 +116,7 @@ Choose the synonym of "BENEVOLENT":
 
 </details>
 
-### Q4 [1 Mark] â€” Logical Reasoning
+### Q4 [1 Mark] Ã¢â‚¬â€� Logical Reasoning
 Which number replaces the question mark? 5, 9, 17, 33, ?
 
 (A) 55  
@@ -130,8 +130,8 @@ Which number replaces the question mark? 5, 9, 17, 33, ?
 **Answer:** (C) 65
 
 **Explanation:**
-Pattern: 5â†’9 (+4), 9â†’17 (+8), 17â†’33 (+16), 33â†’? (+32). Next = 33+32 = 65.
-Alternatively: each term = 2â¿âºÂ¹ + 1: 2Â²+1=5, 2Â³+1=9, 2â´+1=17, 2âµ+1=33, 2â¶+1=65.
+Pattern: 5Ã¢â€ â€™9 (+4), 9Ã¢â€ â€™17 (+8), 17Ã¢â€ â€™33 (+16), 33Ã¢â€ â€™? (+32). Next = 33+32 = 65.
+Alternatively: each term = 2Ã¢Â�Â¿Ã¢Â�ÂºÃ‚Â¹ + 1: 2Ã‚Â²+1=5, 2Ã‚Â³+1=9, 2Ã¢Â�Â´+1=17, 2Ã¢Â�Âµ+1=33, 2Ã¢Â�Â¶+1=65.
 
 ```typescript
 function sequenceTerm(n: number): number {
@@ -142,7 +142,7 @@ console.log(sequenceTerm(5)); // 65
 
 </details>
 
-### Q5 [1 Mark] â€” Numerical Ability
+### Q5 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 If the price of sugar increases by 25%, by what percent must consumption be reduced to keep expenditure the same?
 
 (A) 10%  
@@ -168,7 +168,7 @@ console.log(consumptionReduction(25)); // 20%
 
 </details>
 
-### Q6 [2 Marks] â€” Numerical Ability
+### Q6 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 A train running at 54 km/h crosses a pole in 12 seconds. The length of the train is:
 
 (A) 150 m  
@@ -182,8 +182,8 @@ A train running at 54 km/h crosses a pole in 12 seconds. The length of the train
 **Answer:** (B) 180 m
 
 **Explanation:**
-Speed = 54 km/h = 54 Ã— 5/18 = 15 m/s.
-Distance (train length) = Speed Ã— Time = 15 Ã— 12 = 180 m.
+Speed = 54 km/h = 54 Ãƒâ€” 5/18 = 15 m/s.
+Distance (train length) = Speed Ãƒâ€” Time = 15 Ãƒâ€” 12 = 180 m.
 
 ```typescript
 function trainLength(kmph: number, seconds: number): number {
@@ -194,7 +194,7 @@ console.log(trainLength(54, 12)); // 180
 
 </details>
 
-### Q7 [2 Marks] â€” Data Interpretation
+### Q7 [2 Marks] Ã¢â‚¬â€� Data Interpretation
 Find the mean of: 12, 15, 18, 21, 24.
 
 (A) 15  
@@ -212,7 +212,7 @@ Sum = 12+15+18+21+24 = 90. Count = 5. Mean = 90/5 = 18.
 
 </details>
 
-### Q8 [2 Marks] â€” Logical Reasoning
+### Q8 [2 Marks] Ã¢â‚¬â€� Logical Reasoning
 In a code language, WATER is coded as XBUFST. How is FIRE coded?
 
 (A) GJSF  
@@ -226,7 +226,7 @@ In a code language, WATER is coded as XBUFST. How is FIRE coded?
 **Answer:** (A) GJSF
 
 **Explanation:**
-Each letter is shifted by +1: Wâ†’X, Aâ†’B, Tâ†’U, Eâ†’F, Râ†’S. So Fâ†’G, Iâ†’J, Râ†’S, Eâ†’F â†’ GJSF.
+Each letter is shifted by +1: WÃ¢â€ â€™X, AÃ¢â€ â€™B, TÃ¢â€ â€™U, EÃ¢â€ â€™F, RÃ¢â€ â€™S. So FÃ¢â€ â€™G, IÃ¢â€ â€™J, RÃ¢â€ â€™S, EÃ¢â€ â€™F Ã¢â€ â€™ GJSF.
 
 ```typescript
 function shiftCode(word: string): string {
@@ -237,7 +237,7 @@ console.log(shiftCode('FIRE')); // GJSF
 
 </details>
 
-### Q9 [2 Marks] â€” Numerical Ability
+### Q9 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 How many 4-letter words can be formed from the letters of "GATE" without repetition?
 
 (A) 12  
@@ -262,7 +262,7 @@ console.log(factorial(4)); // 24
 
 </details>
 
-### Q10 [2 Marks] â€” Verbal Ability
+### Q10 [2 Marks] Ã¢â‚¬â€� Verbal Ability
 Choose the correct form: "Neither the students nor the teacher _____ present."
 
 (A) is  
@@ -276,7 +276,7 @@ Choose the correct form: "Neither the students nor the teacher _____ present."
 **Answer:** (A) is
 
 **Explanation:**
-With "neither...nor", the verb agrees with the nearer subject. "Teacher" (singular) â†’ "is".
+With "neither...nor", the verb agrees with the nearer subject. "Teacher" (singular) Ã¢â€ â€™ "is".
 
 </details>
 
@@ -284,8 +284,8 @@ With "neither...nor", the verb agrees with the nearer subject. "Teacher" (singul
 
 ## Section B: Technical (85 marks)
 
-### Q1 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Easy
-If A is a square matrix, then (A + Aáµ€) is:
+### Q1 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+If A is a square matrix, then (A + AÃ¡Âµâ‚¬) is:
 
 (A) Skew-symmetric  
 (B) Symmetric  
@@ -298,12 +298,12 @@ If A is a square matrix, then (A + Aáµ€) is:
 **Answer:** (B) Symmetric
 
 **Explanation:**
-Let B = A + Aáµ€. Then Báµ€ = (A+Aáµ€)áµ€ = Aáµ€ + A = B. So B is symmetric.
+Let B = A + AÃ¡Âµâ‚¬. Then BÃ¡Âµâ‚¬ = (A+AÃ¡Âµâ‚¬)Ã¡Âµâ‚¬ = AÃ¡Âµâ‚¬ + A = B. So B is symmetric.
 
 </details>
 
-### Q2 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Easy
-P(A) = 0.4, P(B) = 0.3, P(Aâˆ©B) = 0.1. P(AâˆªB) =
+### Q2 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
+P(A) = 0.4, P(B) = 0.3, P(AÃ¢Ë†Â©B) = 0.1. P(AÃ¢Ë†ÂªB) =
 
 (A) 0.5  
 (B) 0.6  
@@ -316,11 +316,11 @@ P(A) = 0.4, P(B) = 0.3, P(Aâˆ©B) = 0.1. P(AâˆªB) =
 **Answer:** (B) 0.6
 
 **Explanation:**
-P(AâˆªB) = P(A) + P(B) - P(Aâˆ©B) = 0.4 + 0.3 - 0.1 = 0.6.
+P(AÃ¢Ë†ÂªB) = P(A) + P(B) - P(AÃ¢Ë†Â©B) = 0.4 + 0.3 - 0.1 = 0.6.
 
 </details>
 
-### Q3 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Easy
+### Q3 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 The best case for Insertion Sort occurs when the array is:
 
 (A) Reverse sorted  
@@ -349,7 +349,7 @@ function insertionSort(arr: number[]): number[] {
 
 </details>
 
-### Q4 [1 Mark] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Easy
+### Q4 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 A deadlock will occur if all four necessary conditions hold simultaneously. Which of the following is NOT one of them?
 
 (A) Mutual Exclusion  
@@ -367,7 +367,7 @@ The necessary conditions are: Mutual Exclusion, Hold and Wait, No Preemption, Ci
 
 </details>
 
-### Q5 [1 Mark] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Easy
+### Q5 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 The device that amplifies signals in a network is called:
 
 (A) Switch  
@@ -385,7 +385,7 @@ A repeater amplifies and regenerates signals to extend the transmission distance
 
 </details>
 
-### Q6 [1 Mark] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Easy
+### Q6 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of these is a tuple in a relational database?
 
 (A) A column  
@@ -403,7 +403,7 @@ In relational model, a tuple corresponds to a row, an attribute corresponds to a
 
 </details>
 
-### Q7 [1 Mark] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Easy
+### Q7 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of the following is NOT a valid DFA state?
 
 (A) Start state  
@@ -421,7 +421,7 @@ DFA states include start, accepting, and dead states. "Push state" is a concept 
 
 </details>
 
-### Q8 [1 Mark] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Easy
+### Q8 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of the following is a combinational circuit?
 
 (A) Flip-flop  
@@ -439,7 +439,7 @@ Multiplexer is a combinational circuit (output depends only on current inputs). 
 
 </details>
 
-### Q9 [1 Mark] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Easy
+### Q9 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 Which of the following is an intermediate code representation?
 
 (A) Token  
@@ -457,7 +457,7 @@ Three-Address Code (TAC) is a common intermediate representation. Tokens are fro
 
 </details>
 
-### Q10 [1 Mark] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Easy
+### Q10 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 How many bits does a 7-segment display need to show decimal digits 0-9?
 
 (A) 4  
@@ -475,7 +475,7 @@ How many bits does a 7-segment display need to show decimal digits 0-9?
 
 </details>
 
-### Q11 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q11 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which data structure is used for BFS?
 
 (A) Stack  
@@ -493,7 +493,7 @@ BFS uses a queue for level-order traversal. DFS uses a stack.
 
 </details>
 
-### Q12 [1 Mark] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Medium
+### Q12 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 A critical section problem's solution must satisfy:
 
 (A) Mutual exclusion only  
@@ -511,7 +511,7 @@ Three requirements: Mutual Exclusion (only one process in CS), Progress (if no o
 
 </details>
 
-### Q13 [1 Mark] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Medium
+### Q13 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of these uses the Go-Back-N protocol?
 
 (A) TCP  
@@ -529,7 +529,7 @@ TCP uses a variant of Go-Back-N (or Selective Repeat) for reliable data transfer
 
 </details>
 
-### Q14 [1 Mark] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Medium
+### Q14 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 A lossless join decomposition ensures:
 
 (A) No data is lost when joining tables  
@@ -547,25 +547,25 @@ Lossless join decomposition guarantees that joining the decomposed relations yie
 
 </details>
 
-### Q15 [1 Mark] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Medium
-The PDA transition Î´(q, a, Z) = (p, Î³) means:
+### Q15 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+The PDA transition ÃŽÂ´(q, a, Z) = (p, ÃŽÂ³) means:
 
-(A) Read a, pop Z, push Î³, move to p  
-(B) Read a, push Z, pop Î³, move to p  
-(C) Read a, replace top Z with Î³, move to p  
-(D) Read a, push Î³, move to p
+(A) Read a, pop Z, push ÃŽÂ³, move to p  
+(B) Read a, push Z, pop ÃŽÂ³, move to p  
+(C) Read a, replace top Z with ÃŽÂ³, move to p  
+(D) Read a, push ÃŽÂ³, move to p
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (A) Read a, pop Z, push Î³, move to p
+**Answer:** (A) Read a, pop Z, push ÃŽÂ³, move to p
 
 **Explanation:**
-Standard PDA transition: Î´(q, input, stack_top) = (new_state, new_stack_content). Z is popped, Î³ is pushed.
+Standard PDA transition: ÃŽÂ´(q, input, stack_top) = (new_state, new_stack_content). Z is popped, ÃŽÂ³ is pushed.
 
 </details>
 
-### Q16 [1 Mark] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Medium
+### Q16 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which parsing method is also called predictive parsing?
 
 (A) LR(1)  
@@ -583,7 +583,7 @@ LL(1) is called predictive parsing because it predicts the production to use bas
 
 </details>
 
-### Q17 [1 Mark] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Medium
+### Q17 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 A 3-to-8 decoder has how many outputs?
 
 (A) 3  
@@ -597,11 +597,11 @@ A 3-to-8 decoder has how many outputs?
 **Answer:** (D) 8
 
 **Explanation:**
-A 3-to-8 decoder has 3 input lines and 2Â³ = 8 output lines.
+A 3-to-8 decoder has 3 input lines and 2Ã‚Â³ = 8 output lines.
 
 </details>
 
-### Q18 [1 Mark] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Medium
+### Q18 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 In a pipelined processor, the stage that fetches instructions is:
 
 (A) EX  
@@ -619,7 +619,7 @@ Classic 5-stage pipeline: IF (Instruction Fetch), ID (Instruction Decode), EX (E
 
 </details>
 
-### Q19 [1 Mark] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q19 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following has the lowest time complexity for searching in a sorted array?
 
 (A) Linear Search  
@@ -637,7 +637,7 @@ Binary search has O(log n) time. Interpolation has O(log log n) average but O(n)
 
 </details>
 
-### Q20 [1 Mark] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Medium
+### Q20 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 What is the number of ways to choose 2 out of 5 students?
 
 (A) 5  
@@ -664,13 +664,13 @@ console.log(comb(5, 2)); // 10
 
 </details>
 
-### Q21 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Medium
-Value of lim_{xâ†’0} (eË£ - 1 - x)/xÂ² is:
+### Q21 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
+Value of lim_{xÃ¢â€ â€™0} (eÃ‹Â£ - 1 - x)/xÃ‚Â² is:
 
 (A) 0  
 (B) 1/2  
 (C) 1  
-(D) âˆž
+(D) Ã¢Ë†Å¾
 
 <details>
 <summary>Show Answer</summary>
@@ -678,8 +678,8 @@ Value of lim_{xâ†’0} (eË£ - 1 - x)/xÂ² is:
 **Answer:** (B) 1/2
 
 **Explanation:**
-Using L'HÃ´pital's rule or series expansion: eË£ = 1 + x + xÂ²/2! + xÂ³/3! + ...
-(eË£ - 1 - x)/xÂ² = (xÂ²/2 + xÂ³/6 + ...)/xÂ² = 1/2 + x/6 + ... â†’ 1/2 as xâ†’0.
+Using L'HÃƒÂ´pital's rule or series expansion: eÃ‹Â£ = 1 + x + xÃ‚Â²/2! + xÃ‚Â³/3! + ...
+(eÃ‹Â£ - 1 - x)/xÃ‚Â² = (xÃ‚Â²/2 + xÃ‚Â³/6 + ...)/xÃ‚Â² = 1/2 + x/6 + ... Ã¢â€ â€™ 1/2 as xÃ¢â€ â€™0.
 
 ```typescript
 function limitExp(): number {
@@ -689,7 +689,7 @@ function limitExp(): number {
 
 </details>
 
-### Q22 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q22 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 A stack is implemented with an array of size 5. If the stack is empty and we push 1, 2, 3, 4, 5, then pop twice, the top element is:
 
 (A) 1  
@@ -721,7 +721,7 @@ console.log(s.top()); // 3
 
 </details>
 
-### Q23 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Medium
+### Q23 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 A system has 3 processes and 4 instances of a resource. Each process needs at most 2 instances. Can deadlock occur?
 
 (A) Yes  
@@ -735,13 +735,13 @@ A system has 3 processes and 4 instances of a resource. Each process needs at mo
 **Answer:** (B) No
 
 **Explanation:**
-Maximum total need = 3 Ã— 2 = 6. Available = 4. But the condition for deadlock: each process needs 2, if all 3 hold 1 each (total 3), 1 resource is free. That 1 can be allocated to any process, which then needs 1 more and can eventually complete. Even in worst case, max 3 resources held, 1 free â†’ progress possible. Deadlock NOT possible.
+Maximum total need = 3 Ãƒâ€” 2 = 6. Available = 4. But the condition for deadlock: each process needs 2, if all 3 hold 1 each (total 3), 1 resource is free. That 1 can be allocated to any process, which then needs 1 more and can eventually complete. Even in worst case, max 3 resources held, 1 free Ã¢â€ â€™ progress possible. Deadlock NOT possible.
 
 Actually, more precisely: if each process requires 2 max, deadlock occurs only if each holds 1 and waits for another, needing 3 more resources but only 1 available. But with 4 total resources: worst case, 3 processes hold 1 each (3 resources used), 1 free. That 1 free goes to one process (now has 2), it finishes and releases 2. System is safe. So deadlock cannot occur.
 
 </details>
 
-### Q24 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Medium
+### Q24 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 Which of the following is true about a primary key?
 
 (A) Unique but can be NULL  
@@ -759,7 +759,7 @@ Primary key is unique and NOT NULL. It uniquely identifies each row in a table.
 
 </details>
 
-### Q25 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Medium
+### Q25 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The maximum throughput of pure ALOHA is:
 
 (A) 18.4%  
@@ -773,8 +773,8 @@ The maximum throughput of pure ALOHA is:
 **Answer:** (A) 18.4%
 
 **Explanation:**
-Pure ALOHA maximum throughput = 1/(2e) â‰ˆ 0.184 = 18.4%.
-Slotted ALOHA maximum throughput = 1/e â‰ˆ 36.8%.
+Pure ALOHA maximum throughput = 1/(2e) Ã¢â€°Ë† 0.184 = 18.4%.
+Slotted ALOHA maximum throughput = 1/e Ã¢â€°Ë† 36.8%.
 
 ```typescript
 function alohaThroughput(slotted: boolean): number {
@@ -785,7 +785,7 @@ console.log(alohaThroughput(false)); // 0.184
 
 </details>
 
-### Q26 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Medium
+### Q26 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 In a max-heap of n elements, the minimum element can be found in:
 
 (A) O(1)  
@@ -803,7 +803,7 @@ In a max-heap, the minimum element is always in a leaf node. With approximately 
 
 </details>
 
-### Q27 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q27 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is NOT a valid page size in Linux/x86?
 
 (A) 4 KB  
@@ -823,7 +823,7 @@ The question is tricky. Standard page size is 4 KB. Huge pages support 2 MB on x
 
 </details>
 
-### Q28 [2 Marks] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Medium
+### Q28 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 A variable is live if:
 
 (A) It is declared  
@@ -841,7 +841,7 @@ A variable is live at a program point if its value will be referenced (used) in 
 
 </details>
 
-### Q29 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Medium
+### Q29 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The sum of two binary numbers 1011 and 1101 is:
 
 (A) 10101  
@@ -873,7 +873,7 @@ console.log(sum.toString(2)); // 11000
 
 </details>
 
-### Q30 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Medium
+### Q30 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 The complement of a CFL is:
 
 (A) Always a CFL  
@@ -891,7 +891,7 @@ CFLs are not closed under complementation. The complement of a CFL may not be a 
 
 </details>
 
-### Q31 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
+### Q31 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which schedule is allowed in conflict serializability?
 
 (A) T1:R(A), T2:W(A), T1:W(A), T2:R(A)  
@@ -907,35 +907,35 @@ Which schedule is allowed in conflict serializability?
 **Explanation:**
 (B) has no conflicting operations between T1 and T2 on the same data item (T1 works on A,B; T2 on A,B but only reads A which T1 read, and writes B which T1 wrote - but T1 writes B then T2 writes B is a conflict).
 
-Wait: T1:W(B) then T2:W(B) is a write-write conflict. So T1â†’T2.
+Wait: T1:W(B) then T2:W(B) is a write-write conflict. So T1Ã¢â€ â€™T2.
 And T1:R(A) then T2:R(A) - read-read is not a conflict. 
-T1:W(B) then T2:W(B) gives T1â†’T2. No T2â†’T1 edge. No cycle. So conflict serializable.
+T1:W(B) then T2:W(B) gives T1Ã¢â€ â€™T2. No T2Ã¢â€ â€™T1 edge. No cycle. So conflict serializable.
 
-For (C): T1:W(A), T2:W(A), T1:R(A), T2:R(A). Conflicts: W1(A)-W2(A) gives T1â†’T2 or T2â†’T1. W2(A)-R1(A) gives T2â†’T1. W1(A)-R2(A) gives T1â†’T2. Cycle: T1â†’T2 and T2â†’T1. Not serializable.
+For (C): T1:W(A), T2:W(A), T1:R(A), T2:R(A). Conflicts: W1(A)-W2(A) gives T1Ã¢â€ â€™T2 or T2Ã¢â€ â€™T1. W2(A)-R1(A) gives T2Ã¢â€ â€™T1. W1(A)-R2(A) gives T1Ã¢â€ â€™T2. Cycle: T1Ã¢â€ â€™T2 and T2Ã¢â€ â€™T1. Not serializable.
 
 So (B) is conflict serializable.
 
 </details>
 
-### Q32 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
-Consider the function: f(n) = 3nÂ² + 2n + 1. Which of the following is true?
+### Q32 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+Consider the function: f(n) = 3nÃ‚Â² + 2n + 1. Which of the following is true?
 
 (A) f(n) = O(n)  
-(B) f(n) = O(nÂ²)  
+(B) f(n) = O(nÃ‚Â²)  
 (C) f(n) = O(log n)  
-(D) f(n) = O(2â¿)
+(D) f(n) = O(2Ã¢Â�Â¿)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** (B) f(n) = O(nÂ²)
+**Answer:** (B) f(n) = O(nÃ‚Â²)
 
 **Explanation:**
-f(n) = 3nÂ² + 2n + 1. The dominant term is nÂ². So f(n) = Î˜(nÂ²). Therefore f(n) = O(nÂ²) is true.
+f(n) = 3nÃ‚Â² + 2n + 1. The dominant term is nÃ‚Â². So f(n) = ÃŽËœ(nÃ‚Â²). Therefore f(n) = O(nÃ‚Â²) is true.
 
 </details>
 
-### Q33 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
+### Q33 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The subnet mask 255.255.255.0 corresponds to:
 
 (A) /16  
@@ -949,11 +949,11 @@ The subnet mask 255.255.255.0 corresponds to:
 **Answer:** (C) /24
 
 **Explanation:**
-255.255.255.0 = 11111111.11111111.11111111.00000000 â†’ 24 bits.
+255.255.255.0 = 11111111.11111111.11111111.00000000 Ã¢â€ â€™ 24 bits.
 
 </details>
 
-### Q34 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q34 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Given 3 processes with burst times: P1=4, P2=8, P3=3 (all arrive at 0). Using Round Robin with time quantum 3, the average waiting time is:
 
 (A) 3.66  
@@ -968,8 +968,8 @@ Given 3 processes with burst times: P1=4, P2=8, P3=3 (all arrive at 0). Using Ro
 
 **Explanation:**
 RR with quantum 3:
-P1: 0â†’3 (remaining 1), P2: 3â†’6 (remaining 5), P3: 6â†’9 (remaining 0, done).
-P1: 9â†’10 (done), P2: 10â†’15 (done).
+P1: 0Ã¢â€ â€™3 (remaining 1), P2: 3Ã¢â€ â€™6 (remaining 5), P3: 6Ã¢â€ â€™9 (remaining 0, done).
+P1: 9Ã¢â€ â€™10 (done), P2: 10Ã¢â€ â€™15 (done).
 Completion times: P1=10, P2=15, P3=9.
 TAT: P1=10, P2=15, P3=9.
 Waiting = TAT - Burst: P1=6, P2=7, P3=6.
@@ -996,7 +996,7 @@ Completion: P1=11, P2=14, P3=9.
 Wait: P1=11-5=6, P2=14-6=8, P3=9-3=6.
 Avg=20/3=6.67.
 
-For 5.66 = 17/3 â‰ˆ 5.67.
+For 5.66 = 17/3 Ã¢â€°Ë† 5.67.
 Let me try different bursts and Q:
 P1=3, P2=4, P3=5, Q=3.
 P1: 0-3 (done), P2: 3-6 (rem 1), P3: 6-9 (rem 2).
@@ -1045,7 +1045,7 @@ So P1=6, P2=4, P3=2, quantum=3 works.
 
 </details>
 
-### Q35 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
+### Q35 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 If the CPI of a processor is 2 and clock rate is 2 GHz, the MIPS rating is:
 
 (A) 500  
@@ -1070,7 +1070,7 @@ console.log(mipsRate(2, 2)); // 1000
 
 </details>
 
-### Q36 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Hard
+### Q36 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The variance of the random variable X with PDF f(x) = 2x for 0<x<1 is:
 
 (A) 1/18  
@@ -1084,9 +1084,9 @@ The variance of the random variable X with PDF f(x) = 2x for 0<x<1 is:
 **Answer:** (A) 1/18
 
 **Explanation:**
-E[X] = âˆ«â‚€Â¹ xÂ·2x dx = âˆ«â‚€Â¹ 2xÂ² dx = [2xÂ³/3]â‚€Â¹ = 2/3.
-E[XÂ²] = âˆ«â‚€Â¹ xÂ²Â·2x dx = âˆ«â‚€Â¹ 2xÂ³ dx = [2xâ´/4]â‚€Â¹ = 1/2.
-Var(X) = E[XÂ²] - (E[X])Â² = 1/2 - 4/9 = 9/18 - 8/18 = 1/18.
+E[X] = Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ xÃ‚Â·2x dx = Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ 2xÃ‚Â² dx = [2xÃ‚Â³/3]Ã¢â€šâ‚¬Ã‚Â¹ = 2/3.
+E[XÃ‚Â²] = Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ xÃ‚Â²Ã‚Â·2x dx = Ã¢Ë†Â«Ã¢â€šâ‚¬Ã‚Â¹ 2xÃ‚Â³ dx = [2xÃ¢Â�Â´/4]Ã¢â€šâ‚¬Ã‚Â¹ = 1/2.
+Var(X) = E[XÃ‚Â²] - (E[X])Ã‚Â² = 1/2 - 4/9 = 9/18 - 8/18 = 1/18.
 
 ```typescript
 function variancePDF(): number {
@@ -1098,7 +1098,7 @@ console.log(variancePDF()); // 0.0555... = 1/18
 
 </details>
 
-### Q37 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q37 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Greedy algorithms are optimal for which of the following?
 
 (A) Fractional Knapsack  
@@ -1116,7 +1116,7 @@ Greedy (by value/weight ratio) is optimal for Fractional Knapsack. 0/1 Knapsack 
 
 </details>
 
-### Q38 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
+### Q38 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is NOT a decidable problem?
 
 (A) Membership in regular languages  
@@ -1134,7 +1134,7 @@ TM equivalence is undecidable. Membership and emptiness for regular languages an
 
 </details>
 
-### Q39 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
+### Q39 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is NOT a property of the relational model?
 
 (A) Atomic attributes  
@@ -1152,7 +1152,7 @@ The relational model requires each relation to be a set of tuples (no duplicates
 
 </details>
 
-### Q40 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
+### Q40 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is true about persistent HTTP connections?
 
 (A) Multiple objects can be sent over a single TCP connection  
@@ -1170,7 +1170,7 @@ Persistent HTTP keeps the TCP connection open for multiple requests/responses, r
 
 </details>
 
-### Q41 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q41 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is the postfix form of (a+b)*c-(d/e)?
 
 (A) ab+c*de/-  
@@ -1205,7 +1205,7 @@ function evalPostfix(expr: string): number {
 
 </details>
 
-### Q42 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q42 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Suppose the memory access time is 100 ns and page fault overhead is 5 ms. If the effective access time is 150 ns, the page fault rate is:
 
 (A) 0.001%  
@@ -1219,12 +1219,12 @@ Suppose the memory access time is 100 ns and page fault overhead is 5 ms. If the
 **Answer:** (A) 0.001%
 
 **Explanation:**
-EAT = (1-p) Ã— 100 + p Ã— 5Ã—10â¶ = 100 + pÃ—5Ã—10â¶.
-150 = 100 + pÃ—5Ã—10â¶ â†’ p = 50/5Ã—10â¶ = 10â»âµ = 0.001%.
+EAT = (1-p) Ãƒâ€” 100 + p Ãƒâ€” 5Ãƒâ€”10Ã¢Â�Â¶ = 100 + pÃƒâ€”5Ãƒâ€”10Ã¢Â�Â¶.
+150 = 100 + pÃƒâ€”5Ãƒâ€”10Ã¢Â�Â¶ Ã¢â€ â€™ p = 50/5Ãƒâ€”10Ã¢Â�Â¶ = 10Ã¢Â�Â»Ã¢Â�Âµ = 0.001%.
 
 </details>
 
-### Q43 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
+### Q43 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A direct-mapped cache has 64 blocks with 16 bytes per block. The cache size is:
 
 (A) 512 bytes  
@@ -1238,7 +1238,7 @@ A direct-mapped cache has 64 blocks with 16 bytes per block. The cache size is:
 **Answer:** (B) 1024 bytes
 
 **Explanation:**
-Cache size = blocks Ã— block_size = 64 Ã— 16 = 1024 bytes = 1 KB.
+Cache size = blocks Ãƒâ€” block_size = 64 Ãƒâ€” 16 = 1024 bytes = 1 KB.
 
 ```typescript
 function cacheSize(blocks: number, blockSize: number): number {
@@ -1249,7 +1249,7 @@ console.log(cacheSize(64, 16)); // 1024 bytes
 
 </details>
 
-### Q44 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q44 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A circular queue is implemented using an array of size 5. The front is at index 2 and rear is at index 4. How many elements are in the queue?
 
 (A) 1  
@@ -1270,7 +1270,7 @@ Elements = (4 - 2 + 5) % 5 = 7 % 5 = 2? Wait, that's not right.
 Actually: elements = (rear - front + 1 + capacity) % capacity.
 If front=2, rear=4: (4 - 2 + 1 + 5) % 5 = 8 % 5 = 3.
 
-Or more simply: front=2, rear=4. Indices 2,3,4 are occupied â†’ 3 elements.
+Or more simply: front=2, rear=4. Indices 2,3,4 are occupied Ã¢â€ â€™ 3 elements.
 
 ```typescript
 function circularQueueSize(front: number, rear: number, capacity: number): number {
@@ -1281,8 +1281,8 @@ console.log(circularQueueSize(2, 4, 5)); // 3
 
 </details>
 
-### Q45 [2 Marks] â€” ðŸ“‚ Compiler Design | ðŸ·ï¸ Hard
-The grammar S â†’ aS | Îµ is:
+### Q45 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
+The grammar S Ã¢â€ â€™ aS | ÃŽÂµ is:
 
 (A) Right-linear  
 (B) Left-linear  
@@ -1295,11 +1295,11 @@ The grammar S â†’ aS | Îµ is:
 **Answer:** (A) Right-linear
 
 **Explanation:**
-S â†’ aS | Îµ is a right-linear grammar (non-terminal at the right end). Right-linear grammars generate regular languages.
+S Ã¢â€ â€™ aS | ÃŽÂµ is a right-linear grammar (non-terminal at the right end). Right-linear grammars generate regular languages.
 
 </details>
 
-### Q46 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
+### Q46 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A language accepted by a TM that halts on all inputs is:
 
 (A) Recursive  
@@ -1317,7 +1317,7 @@ A TM that halts on all inputs (always either accepts or rejects) decides a recur
 
 </details>
 
-### Q47 [2 Marks] â€” ðŸ“‚ Engineering Mathematics | ðŸ·ï¸ Hard
+### Q47 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Eigen vectors corresponding to distinct eigen values of a real symmetric matrix are:
 
 (A) Orthogonal  
@@ -1335,7 +1335,7 @@ Eigenvectors corresponding to distinct eigenvalues of a real symmetric matrix ar
 
 </details>
 
-### Q48 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q48 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The number of binary strings of length 8 with exactly 4 ones is:
 
 (A) 56  
@@ -1362,7 +1362,7 @@ console.log(comb(8, 4)); // 70
 
 </details>
 
-### Q49 [2 Marks] â€” ðŸ“‚ Operating Systems | ðŸ·ï¸ Hard
+### Q49 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is used for inter-process communication in UNIX?
 
 (A) Pipes  
@@ -1380,7 +1380,7 @@ UNIX supports multiple IPC mechanisms: pipes, FIFOs, shared memory, message queu
 
 </details>
 
-### Q50 [2 Marks] â€” ðŸ“‚ Database Management Systems | ðŸ·ï¸ Hard
+### Q50 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which is true about the outer join?
 
 (A) It only returns matching rows  
@@ -1398,7 +1398,7 @@ Outer join (LEFT, RIGHT, FULL) returns all rows from one or both tables, filling
 
 </details>
 
-### Q51 [2 Marks] â€” ðŸ“‚ Computer Networks | ðŸ·ï¸ Hard
+### Q51 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which protocol is used to map IP addresses to physical addresses?
 
 (A) DNS  
@@ -1416,7 +1416,7 @@ ARP (Address Resolution Protocol) resolves IP addresses to MAC (physical) addres
 
 </details>
 
-### Q52 [2 Marks] â€” ðŸ“‚ Computer Organization & Architecture | ðŸ·ï¸ Hard
+### Q52 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 The instruction that reads data from memory into a register is:
 
 (A) STORE  
@@ -1434,7 +1434,7 @@ LOAD transfers data from memory to a register. STORE transfers from register to 
 
 </details>
 
-### Q53 [2 Marks] â€” ðŸ“‚ Theory of Computation | ðŸ·ï¸ Hard
+### Q53 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 CFL is closed under:
 
 (A) Union  
@@ -1452,7 +1452,7 @@ CFLs are closed under union, concatenation, Kleene star, and substitution. They 
 
 </details>
 
-### Q54 [2 Marks] â€” ðŸ“‚ Data Structures & Algorithms | ðŸ·ï¸ Hard
+### Q54 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 Which of the following is used in Huffman coding to build the optimal prefix code tree?
 
 (A) Min-heap  
@@ -1480,7 +1480,7 @@ class HuffmanNode {
 
 </details>
 
-### Q55 [2 Marks] â€” ðŸ“‚ Digital Logic | ðŸ·ï¸ Hard
+### Q55 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 A master-slave flip-flop is used to avoid:
 
 (A) Propagation delay  
@@ -1569,11 +1569,11 @@ pie title "Difficulty Distribution - GATE CS 2020"
 
 ### Paper Analysis
 
-GATE 2020 Computer Science paper followed the established format of 65 questions (10 GA + 55 Technical) worth a total of 100 marks. The paper was notable for having the highest number of NAT questions up to that point â€” 18 NATs compared to 15 in 2019 â€” signaling the exam's increasing emphasis on numerical precision. The MSQ count remained at 8. Subject-wise, Operating Systems and Computer Networks each received 12 marks, the highest weightage in the Technical section. A distinctive feature was the inclusion of multi-subject integrated questions â€” one notable question combined probability with algorithms (expected value of hash table operations). The GA section included a new "caselet" format where multiple questions were based on a single paragraph of data, testing sustained reasoning.
+GATE 2020 Computer Science paper followed the established format of 65 questions (10 GA + 55 Technical) worth a total of 100 marks. The paper was notable for having the highest number of NAT questions up to that point Ã¢â‚¬â€� 18 NATs compared to 15 in 2019 Ã¢â‚¬â€� signaling the exam's increasing emphasis on numerical precision. The MSQ count remained at 8. Subject-wise, Operating Systems and Computer Networks each received 12 marks, the highest weightage in the Technical section. A distinctive feature was the inclusion of multi-subject integrated questions Ã¢â‚¬â€� one notable question combined probability with algorithms (expected value of hash table operations). The GA section included a new "caselet" format where multiple questions were based on a single paragraph of data, testing sustained reasoning.
 
 ### Difficulty Trends
 
-GATE 2020 had a difficulty distribution of approximately 28% Easy, 50% Medium, and 22% Hard. The paper was considered comparable to 2019 in overall difficulty but with more tricky conceptual traps. Data Structures & Algorithms questions were moderate â€” a stack-based postfix evaluation question had many failing due to not accounting for multi-digit numbers. Operating Systems had a subtle question on critical section requirements that tested the nuance of Peterson's solution. Computer Networks introduced a question on ALOHA that required understanding of the throughput formula in a new context (non-standard frame sizes). DBMS featured a question on join ordering that required cost-based optimization understanding. Aptitude questions on data interpretation were time-consuming but accurate if read carefully.
+GATE 2020 had a difficulty distribution of approximately 28% Easy, 50% Medium, and 22% Hard. The paper was considered comparable to 2019 in overall difficulty but with more tricky conceptual traps. Data Structures & Algorithms questions were moderate Ã¢â‚¬â€� a stack-based postfix evaluation question had many failing due to not accounting for multi-digit numbers. Operating Systems had a subtle question on critical section requirements that tested the nuance of Peterson's solution. Computer Networks introduced a question on ALOHA that required understanding of the throughput formula in a new context (non-standard frame sizes). DBMS featured a question on join ordering that required cost-based optimization understanding. Aptitude questions on data interpretation were time-consuming but accurate if read carefully.
 
 ### Key Concepts Tested
 
@@ -1582,12 +1582,12 @@ GATE 2020 had a difficulty distribution of approximately 28% Easy, 50% Medium, a
 | Data Structures & Algorithms | Sorting stability (merge vs quick), stack-based postfix evaluation, queue implementation with stacks, Huffman coding prefix property |
 | Operating Systems | RR scheduling (time quantum impact), critical section requirements, page fault rate (locality of reference), semaphore-based synchronization |
 | DBMS | Primary key constraints, natural join vs theta join, relational model decomposition, SQL aggregate functions with GROUP BY |
-| Computer Networks | ALOHA throughput (G Â· e^(-2G) for slotted), HTTP persistent vs non-persistent, ARP protocol functioning, subnet mask calculation |
+| Computer Networks | ALOHA throughput (G Ã‚Â· e^(-2G) for slotted), HTTP persistent vs non-persistent, ARP protocol functioning, subnet mask calculation |
 | Computer Architecture | Combinational circuit delay analysis, pipeline stage balancing, MIPS instruction encoding, cache associativity impact |
 | Theory of Computation | PDA acceptance by final state, DFA equivalence, CFL closure properties, TM as language recognizer |
 | Compiler Design | Three-address code generation (quadruples), LL(1) parsing table construction, liveness analysis (dataflow) |
 | Digital Logic | Decoder-based circuit implementation, 7-segment display logic, master-slave flip-flop operation |
-| Engineering Mathematics | Limit evaluation (L'HÃ´pital's), variance of random variables, eigenvector computation, symmetric matrix properties |
+| Engineering Mathematics | Limit evaluation (L'HÃƒÂ´pital's), variance of random variables, eigenvector computation, symmetric matrix properties |
 | General Aptitude | Reading comprehension (passage-based), percentage change, profit-loss, time-speed-distance, Venn diagram logic |
 
 ## TypeScript Implementations
@@ -1596,7 +1596,7 @@ The following TypeScript program computes ideal time allocation per section for 
 
 ```typescript
 /**
- * TimeDistributionAnalyzer â€” Ideal time per section for GATE paper.
+ * TimeDistributionAnalyzer Ã¢â‚¬â€� Ideal time per section for GATE paper.
  * Use this to plan your sectional timing strategy based on marks and difficulty.
  */
 interface Section {
@@ -1692,7 +1692,7 @@ class TimeDistributionAnalyzer {
       tips.push(`These sections consume disproportionate time: ${inefficient.map(s => s.sectionName).join(', ')}.`);
       tips.push(`Consider: (a) Skip the hardest question initially (b) Use elimination for MCQs before solving numerically`);
     }
-    tips.push(`Allocate the first ${Math.round(this.totalTimeMinutes * 0.15)} min for GA â€” it's high efficiency.`);
+    tips.push(`Allocate the first ${Math.round(this.totalTimeMinutes * 0.15)} min for GA Ã¢â‚¬â€� it's high efficiency.`);
     tips.push(`Reserve last ${Math.round(this.totalTimeMinutes * 0.08)} min for review and marking.`);
     return tips;
   }
@@ -1708,7 +1708,7 @@ class TimeDistributionAnalyzer {
       '',
       'Recommended Allocation:',
       ...allocations.map(a =>
-        `  ${a.sectionName.padEnd(30)} ${a.marks}M (${a.marksPercentage}%) â†’ ${a.timeMinutes}min (${a.timePercentage}%) [${a.efficiency} marks/min]`
+        `  ${a.sectionName.padEnd(30)} ${a.marks}M (${a.marksPercentage}%) Ã¢â€ â€™ ${a.timeMinutes}min (${a.timePercentage}%) [${a.efficiency} marks/min]`
       ),
       '',
       `Total Allocated: ${totalAllocated} min / ${this.totalTimeMinutes} min`,
@@ -1745,7 +1745,7 @@ console.log(analyzer.generateReport());
 
 Test your understanding of GATE 2020 concepts with these 5 questions.
 
-**Q1.** In slotted ALOHA, the throughput S is given by S = G Ã— e^(-G), where G is the average number of frames generated per slot. What is the maximum throughput achievable?
+**Q1.** In slotted ALOHA, the throughput S is given by S = G Ãƒâ€” e^(-G), where G is the average number of frames generated per slot. What is the maximum throughput achievable?
 - a) 0.184
 - b) 0.368
 - c) 0.5
@@ -1769,9 +1769,9 @@ Test your understanding of GATE 2020 concepts with these 5 questions.
 - c) Left-to-right scan, Length 1 of stack entries
 - d) Left-associative, 1-step lookahead
 
-**Q5.** For symmetric matrices A and B (both nÃ—n, real), which property is NOT guaranteed?
+**Q5.** For symmetric matrices A and B (both nÃƒâ€”n, real), which property is NOT guaranteed?
 - a) A + B is symmetric
-- b) A Ã— B is symmetric
+- b) A Ãƒâ€” B is symmetric
 - c) All eigenvalues of A are real
 - d) A is diagonalizable
 
@@ -1779,15 +1779,15 @@ Test your understanding of GATE 2020 concepts with these 5 questions.
 
 | Q | Answer | Explanation |
 |---|--------|-------------|
-| 1 | b | Maximum throughput for slotted ALOHA occurs at G = 1, giving S = 1 Ã— e^(-1) = 1/e â‰ˆ 0.368. For pure ALOHA, max throughput is 0.184 (half). |
-| 2 | d | Peterson's solution guarantees Mutual Exclusion, Progress, and Bounded Waiting. Starvation freedom is not explicitly required â€” bounded waiting addresses fairness indirectly. |
+| 1 | b | Maximum throughput for slotted ALOHA occurs at G = 1, giving S = 1 Ãƒâ€” e^(-1) = 1/e Ã¢â€°Ë† 0.368. For pure ALOHA, max throughput is 0.184 (half). |
+| 2 | d | Peterson's solution guarantees Mutual Exclusion, Progress, and Bounded Waiting. Starvation freedom is not explicitly required Ã¢â‚¬â€� bounded waiting addresses fairness indirectly. |
 | 3 | d | The master-slave flip-flop uses complementary clocking: when CLK=1, master is enabled (positive-level); when CLK=0, slave is enabled (negative-level). This is achieved by inverting the clock for the slave (c), resulting in the described behavior (a). |
 | 4 | a | LL(1): First L = Left-to-right scan of input; Second L = Leftmost derivation; (1) = 1 token lookahead for parsing decisions. |
-| 5 | b | A Ã— B is symmetric iff A and B commute (AB = BA), which is not guaranteed. A + B is always symmetric. Real symmetric matrices always have real eigenvalues and are always diagonalizable. |
+| 5 | b | A Ãƒâ€” B is symmetric iff A and B commute (AB = BA), which is not guaranteed. A + B is always symmetric. Real symmetric matrices always have real eigenvalues and are always diagonalizable. |
 
 ## Exercises
 
-1. **Slotted ALOHA Throughput Analysis**: A slotted ALOHA system has N = 50 stations. Each station transmits with probability p = 0.02 per slot. (a) Calculate the total offered load G and throughput S. (b) If the system wants to operate at maximum throughput, what should p be? (c) Write a TypeScript function that simulates slotted ALOHA for 10,000 slots and compares empirical throughput with theoretical S = G Ã— e^(-G). Plot the results for verification.
+1. **Slotted ALOHA Throughput Analysis**: A slotted ALOHA system has N = 50 stations. Each station transmits with probability p = 0.02 per slot. (a) Calculate the total offered load G and throughput S. (b) If the system wants to operate at maximum throughput, what should p be? (c) Write a TypeScript function that simulates slotted ALOHA for 10,000 slots and compares empirical throughput with theoretical S = G Ãƒâ€” e^(-G). Plot the results for verification.
 
 2. **Pipeline Stage Balancing**: A 5-stage pipeline has stage delays: 200ps, 250ps, 180ps, 220ps, 150ps. (a) Calculate the maximum clock frequency. (b) If the third stage can be split into two sub-stages (90ps each), what is the new clock frequency and speedup? (c) What is the throughput in instructions per second for both designs, assuming ideal pipeline with no hazards?
 
@@ -1795,4 +1795,4 @@ Test your understanding of GATE 2020 concepts with these 5 questions.
 
 4. **Postfix Evaluation with Stack**: Evaluate the postfix expression: 15 7 3 - / 5 2 * + 8 - using a stack. Show the stack contents after each operation. Then write a TypeScript function that evaluates arbitrary postfix expressions (handling multi-digit numbers and detecting division by zero). Test it on the given expression.
 
-5. **DFA Equivalence**: Prove that two DFAs that accept the same language L are equivalent. Given DFAâ‚: states {A, B, C}, alphabet {0, 1}, transitions: Î´(A,0)=B, Î´(A,1)=A, Î´(B,0)=C, Î´(B,1)=A, Î´(C,0)=C, Î´(C,1)=C, start=A, final={A}. DFAâ‚‚: states {P, Q}, alphabet {0,1}, transitions: Î´(P,0)=Q, Î´(P,1)=P, Î´(Q,0)=Q, Î´(Q,1)=Q, start=P, final={P}. Use the table-filling algorithm to verify equivalence and find the minimal DFA.
+5. **DFA Equivalence**: Prove that two DFAs that accept the same language L are equivalent. Given DFAÃ¢â€šÂ�: states {A, B, C}, alphabet {0, 1}, transitions: ÃŽÂ´(A,0)=B, ÃŽÂ´(A,1)=A, ÃŽÂ´(B,0)=C, ÃŽÂ´(B,1)=A, ÃŽÂ´(C,0)=C, ÃŽÂ´(C,1)=C, start=A, final={A}. DFAÃ¢â€šâ€š: states {P, Q}, alphabet {0,1}, transitions: ÃŽÂ´(P,0)=Q, ÃŽÂ´(P,1)=P, ÃŽÂ´(Q,0)=Q, ÃŽÂ´(Q,1)=Q, start=P, final={P}. Use the table-filling algorithm to verify equivalence and find the minimal DFA.

@@ -13,7 +13,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="hero-stats">
   <span class="hero-stat"><strong>46+</strong> Courses</span>
-  <span class="hero-stat"><strong>890+</strong> Lessons</span>
+  <span class="hero-stat"><strong>900+</strong> Lessons</span>
   <span class="hero-stat"><strong>170K+</strong> Lines</span>
   <span class="hero-stat"><strong>220</strong> Coding Problems</span>
 </div>

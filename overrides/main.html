@@ -701,6 +701,122 @@
     }
   }
 
+  // ========================================================================
+  // POWER USER FEATURES: keyboard nav, smooth scroll, anchor copy, lazy load, auto-hide header
+  // ========================================================================
+
+  // --- K1: Keyboard shortcuts (n/p for chapter nav, s for search, ? for help) ---
+  var kbHelpShown = false;
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (overlay.classList.contains('active')) return;
+
+    switch (e.key) {
+      case 'n': case 'N': { e.preventDefault();
+        var next = document.querySelector('.md-footer__link--next a');
+        if (next) { window.location.href = next.getAttribute('href'); }
+        break; }
+      case 'p': case 'P': { e.preventDefault();
+        var prev = document.querySelector('.md-footer__link--prev a');
+        if (prev) { window.location.href = prev.getAttribute('href'); }
+        break; }
+      case 's': case 'S': { e.preventDefault();
+        var search = document.querySelector('[data-md-component="search"] input, .md-search__input');
+        if (search) { search.focus(); }
+        break; }
+      case '?': { e.preventDefault();
+        if (kbHelpShown) { document.querySelector('.tp-kb-help')?.remove(); kbHelpShown = false; return; }
+        var help = document.createElement('div');
+        help.className = 'tp-kb-help';
+        help.innerHTML = '<div class="tp-kb-help-inner"><h3>Keyboard Shortcuts</h3>'
+          + '<table><tr><td><kbd>n</kbd></td><td>Next chapter</td></tr>'
+          + '<tr><td><kbd>p</kbd></td><td>Previous chapter</td></tr>'
+          + '<tr><td><kbd>s</kbd></td><td>Search</td></tr>'
+          + '<tr><td><kbd>?</kbd></td><td>Toggle this help</td></tr>'
+          + '<tr><td><kbd>Esc</kbd></td><td>Close lightbox / help</td></tr>'
+          + '<tr><td><kbd>0</kbd></td><td>Actual size (in lightbox)</td></tr>'
+          + '<tr><td>&larr; &rarr;</td><td>Gallery nav (in lightbox)</td></tr>'
+          + '</table><p class="tp-kb-close">Press <kbd>?</kbd> or <kbd>Esc</kbd> to close</p></div>';
+        help.addEventListener('click', function() { help.remove(); kbHelpShown = false; });
+        document.body.appendChild(help);
+        kbHelpShown = true;
+        break; }
+    }
+  });
+
+  // --- K2: Smooth scroll + highlight target on anchor click ---
+  document.addEventListener('click', function(e) {
+    var anchor = e.target.closest('a[href^="#"]');
+    if (!anchor) return;
+    var targetId = anchor.getAttribute('href').slice(1);
+    var target = document.getElementById(targetId);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', anchor.getAttribute('href'));
+    target.classList.add('tp-highlight');
+    setTimeout(function() { target.classList.remove('tp-highlight'); }, 2000);
+  });
+
+  // --- K3: Click heading → copy anchor link with toast ---
+  document.querySelectorAll('.md-content h2, .md-content h3, .md-content h4').forEach(function(h) {
+    if (h._anchorBound) return;
+    h._anchorBound = true;
+    h.style.cursor = 'pointer';
+    h.addEventListener('click', function() {
+      var id = this.id;
+      if (!id) { id = this.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); this.id = id; }
+      var url = window.location.origin + window.location.pathname + '#' + id;
+      navigator.clipboard.writeText(url).then(function() {
+        showToast('Link copied: ' + this.textContent.trim());
+      }.bind(this)).catch(function() {
+        showToast('#' + id);
+      });
+    });
+  });
+
+  function showToast(msg) {
+    var t = document.createElement('div');
+    t.className = 'tp-toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(function() { t.classList.add('tp-toast-show'); }, 10);
+    setTimeout(function() { t.classList.remove('tp-toast-show'); setTimeout(function() { t.remove(); }, 300); }, 2500);
+  }
+
+  // --- K4: Lazy load all images ---
+  document.querySelectorAll('img:not([loading])').forEach(function(img) {
+    if (img.closest('.lightbox-overlay')) return;
+    img.setAttribute('loading', 'lazy');
+  });
+  var lazyObserver = new MutationObserver(function() {
+    document.querySelectorAll('img:not([loading])').forEach(function(img) {
+      if (img.closest('.lightbox-overlay')) return;
+      img.setAttribute('loading', 'lazy');
+    });
+  });
+  lazyObserver.observe(document.body, { childList: true, subtree: true });
+
+  // --- K5: Auto-hide header on scroll down, show on scroll up ---
+  var header = document.querySelector('.md-header');
+  var lastScrollY = window.scrollY;
+  var headerHidden = false;
+  if (header && !header.classList.contains('tp-header-fixed')) {
+    header.classList.add('tp-header-fixed');
+    window.addEventListener('scroll', function() {
+      var sy = window.scrollY;
+      if (sy < 80) { header.style.transform = 'translateY(0)'; headerHidden = false; lastScrollY = sy; return; }
+      if (sy > lastScrollY + 10 && !headerHidden) {
+        header.style.transform = 'translateY(-100%)';
+        headerHidden = true;
+      } else if (sy < lastScrollY - 10 && headerHidden) {
+        header.style.transform = 'translateY(0)';
+        headerHidden = false;
+      }
+      lastScrollY = sy;
+    }, { passive: true });
+  }
+
   // ---- 5. Back to Top scroll progress indicator ----
   const scrollBar = document.createElement('div');
   scrollBar.className = 'tp-scroll-progress';
@@ -938,6 +1054,78 @@
 pre {
   border-radius: 6px !important;
   border: 1px solid var(--tp-border) !important;
+}
+.tp-highlight {
+  animation: tpPulse 2s ease;
+  border-radius: 4px;
+}
+@keyframes tpPulse {
+  0%, 100% { background: transparent; }
+  20% { background: rgba(64, 169, 68, 0.18); box-shadow: 0 0 0 4px rgba(64, 169, 68, 0.08); }
+  80% { background: rgba(64, 169, 68, 0.05); }
+}
+.tp-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--md-default-fg-color, #333);
+  color: var(--md-default-bg-color, #fff);
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  z-index: 10001;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  max-width: 80vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tp-toast-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.tp-kb-help {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10002;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.tp-kb-help-inner {
+  background: var(--md-default-bg-color, #fff);
+  color: var(--md-default-fg-color, #333);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+}
+.tp-kb-help h3 { margin-top: 0; font-size: 1.1rem; }
+.tp-kb-help table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.tp-kb-help td { padding: 0.4rem 0.2rem; border-bottom: 1px solid var(--md-default-fg-color--lightest, #eee); font-size: 0.88rem; }
+.tp-kb-help td:first-child { width: 80px; text-align: center; }
+.tp-kb-help kbd {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.78rem;
+  font-family: inherit;
+  background: var(--md-code-bg-color, #f5f5f5);
+  border: 1px solid var(--md-default-fg-color--lightest, #ddd);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+.tp-kb-close { font-size: 0.78rem; opacity: 0.6; margin-bottom: 0; }
+.tp-header-fixed {
+  transition: transform 0.25s ease !important;
 }
 </style>
 {% endblock %}

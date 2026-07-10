@@ -2,37 +2,53 @@
 
 ## Learning Objectives
 
-After completing this chapter, the student will be able to:
-- Apply the SOLID principles of object-oriented design
-- Explain the DRY, KISS, and YAGNI principles
-- Distinguish between coupling and cohesion and describe their relationship to design quality
-- Implement GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) in TypeScript
-- Apply design by contract principles
-- Conduct a design review
-- Map design to code effectively
+```
+✓ Understand and apply the five SOLID principles of object-oriented design
+✓ Distinguish between coupling and cohesion and their impact on design quality
+✓ Implement GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) in TypeScript
+✓ Apply clean code principles: meaningful names, small functions, no side effects
+✓ Detect code smells and apply refactoring patterns systematically
+✓ Use design by contract with preconditions, postconditions, and invariants
+✓ Conduct structured design reviews with actionable feedback
+✓ Map architectural decisions to implementation-level code effectively
+```
 
 ## Theory
 
 ### Design Principles
 
-Design principles are established guidelines that, when followed, produce designs that are maintainable, understandable, and adaptable. They represent distilled experience about what characterises good software design.
+Design principles are established guidelines that, when followed, produce designs that are maintainable, understandable, and adaptable. They represent distilled experience about what characterises good software design. These principles have been validated through decades of industrial practice and form the foundation of professional software engineering.
+
+The primary goal of design principles is to manage **complexity**. As software systems grow, the cognitive load required to understand them increases non-linearly. Principles like separation of concerns, modularity, and abstraction help keep this complexity bounded.
 
 ### The SOLID Principles
 
-The SOLID principles, articulated by Robert C. Martin, are five principles of object-oriented class design:
+The SOLID principles, articulated by Robert C. Martin, are five principles of object-oriented class design. Together they provide a systematic approach to creating designs that are resilient to change, testable, and maintainable.
 
 ```mermaid
 graph TD
-    S[SRP: Single Responsibility] -->|One reason to change| CLASS[Good Class Design]
-    O[OCP: Open-Closed] -->|Open for extension, closed for modification| CLASS
-    L[LSP: Liskov Substitution] -->|Subtypes must be substitutable| CLASS
-    I[ISP: Interface Segregation] -->|Small, focused interfaces| CLASS
-    D[DIP: Dependency Inversion] -->|Depend on abstractions, not concretions| CLASS
+    classDef principle fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef benefit fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef risk fill:#fce4ec,stroke:#d32f2f,stroke-width:1px
+
+    S[SRP: Single Responsibility]:::principle -->|One reason to change| CLASS[Good Class Design]:::benefit
+    O[OCP: Open-Closed]:::principle -->|Open for extension, closed for modification| CLASS
+    L[LSP: Liskov Substitution]:::principle -->|Subtypes must be substitutable| CLASS
+    I[ISP: Interface Segregation]:::principle -->|Small, focused interfaces| CLASS
+    D[DIP: Dependency Inversion]:::principle -->|Depend on abstractions, not concretions| CLASS
+
+    CLASS --> TEST[✓ Testable]:::benefit
+    CLASS --> MAINTAIN[✓ Maintainable]:::benefit
+    CLASS --> EXTEND[✓ Extensible]:::benefit
+    CLASS --> REUSE[✓ Reusable]:::benefit
+
+    CLASS --> OVERENG[⚠ Risk of over-engineering]:::risk
+    CLASS --> PREMATURE[⚠ Premature abstraction]:::risk
 ```
 
 #### Single Responsibility Principle (SRP)
 
-A class should have only one reason to change. Each class should be responsible for a single part of the functionality. When a class has multiple responsibilities, changes to one responsibility may affect the other.
+A class should have only one reason to change. Each class should be responsible for a single part of the functionality. When a class has multiple responsibilities, changes to one responsibility may affect the other. This principle is closely related to **cohesion** — a class with a single responsibility has maximal functional cohesion.
 
 **Violation:**
 ```typescript
@@ -61,9 +77,11 @@ class InvoiceGenerator {
 }
 ```
 
+The refactored design allows each class to evolve independently. If the email template changes, only `EmailService` is affected. If the database schema changes, only `OrderRepository` needs updating. This isolation dramatically reduces the risk of regression defects.
+
 #### Open-Closed Principle (OCP)
 
-Classes should be open for extension but closed for modification. The behaviour should be extendable without modifying the class itself.
+Classes should be open for extension but closed for modification. The behaviour should be extendable without modifying the class itself. This is achieved through abstraction — typically interfaces or abstract classes.
 
 **Violation:**
 ```typescript
@@ -99,9 +117,11 @@ class DiscountCalculator {
 }
 ```
 
+To add a new discount type, we simply create a new class implementing `DiscountStrategy`. The `DiscountCalculator` class never needs modification — it is closed for modification but open for extension.
+
 #### Liskov Substitution Principle (LSP)
 
-Objects of a superclass should be replaceable with objects of a subclass without affecting correctness.
+Objects of a superclass should be replaceable with objects of a subclass without affecting correctness. This principle constrains inheritance hierarchies: subclasses must honour the contract established by the base class.
 
 **Violation:**
 ```typescript
@@ -134,9 +154,55 @@ class Square implements Shape {
 }
 ```
 
+LSP violations often manifest as runtime type checks (`instanceof`) or conditional logic based on type. These are strong indicators that the inheritance hierarchy is broken.
+
+#### Interface Segregation Principle (ISP)
+
+Clients should not be forced to depend on interfaces they do not use. Large, "fat" interfaces should be split into smaller, more specific ones.
+
+**Violation:**
+```typescript
+interface Worker {
+  work(): void;
+  eat(): void;
+  sleep(): void;
+}
+class HumanWorker implements Worker {
+  work(): void { console.log('Working...'); }
+  eat(): void { console.log('Eating...'); }
+  sleep(): void { console.log('Sleeping...'); }
+}
+class RobotWorker implements Worker {
+  work(): void { console.log('Working...'); }
+  eat(): void { throw new Error('Robots do not eat'); }
+  sleep(): void { throw new Error('Robots do not sleep'); }
+}
+```
+
+**Refactored:**
+```typescript
+interface Workable {
+  work(): void;
+}
+interface Eatable {
+  eat(): void;
+}
+interface Sleepable {
+  sleep(): void;
+}
+class HumanWorker implements Workable, Eatable, Sleepable {
+  work(): void { console.log('Working...'); }
+  eat(): void { console.log('Eating...'); }
+  sleep(): void { console.log('Sleeping...'); }
+}
+class RobotWorker implements Workable {
+  work(): void { console.log('Working...'); }
+}
+```
+
 #### Dependency Inversion Principle (DIP)
 
-High-level modules should not depend on low-level modules; both should depend on abstractions.
+High-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details; details should depend on abstractions.
 
 **Violation:**
 ```typescript
@@ -156,6 +222,8 @@ interface UserRepository {
 }
 ```
 
+DIP is the foundation of dependency injection. By depending on abstractions, we can swap implementations (PostgreSQL → MongoDB, production → test) without modifying the dependent class.
+
 ### DRY, KISS, and YAGNI
 
 | Principle | Meaning | Application |
@@ -164,9 +232,11 @@ interface UserRepository {
 | **KISS** (Keep It Simple, Stupid) | Simplicity over complexity | Avoid unnecessary abstractions and cleverness |
 | **YAGNI** (You Ain't Gonna Need It) | Don't add functionality until needed | Resist anticipating future requirements |
 
+These three principles complement SOLID by providing guardrails against over-engineering. While SOLID guides us toward well-structured code, DRY/KISS/YAGNI remind us to keep things pragmatic.
+
 ### Coupling and Cohesion
 
-**Coupling** measures the degree of interdependence between modules. Low coupling is desirable.
+**Coupling** measures the degree of interdependence between modules. Low coupling is desirable because it means changes in one module are less likely to ripple to others.
 
 | Coupling Type | Description | Rating |
 |---------------|-------------|--------|
@@ -178,7 +248,7 @@ interface UserRepository {
 | Data | Modules share data through parameters | Good |
 | Message | Modules communicate through explicit messages | Best |
 
-**Cohesion** measures the degree to which elements within a module belong together. High cohesion is desirable.
+**Cohesion** measures the degree to which elements within a module belong together. High cohesion is desirable because it means the module's elements are strongly related and focused on a single purpose.
 
 | Cohesion Type | Description | Rating |
 |---------------|-------------|--------|
@@ -189,6 +259,43 @@ interface UserRepository {
 | Communicational | Elements operate on same data | Moderate |
 | Sequential | Output of one is input to next | Good |
 | Functional | All elements contribute to a single function | Best |
+
+The relationship between coupling and cohesion is inverse: as cohesion increases, coupling tends to decrease. Well-designed systems have high cohesion within modules and low coupling between them.
+
+### Clean Code Principles
+
+Clean code is code that is easy to read, understand, and change. Key principles include:
+
+| Principle | Description | Example |
+|-----------|-------------|---------|
+| **Meaningful Names** | Names reveal intent | `calculateTotal()` not `calc()` |
+| **Small Functions** | Functions do one thing | Max 20-30 lines per function |
+| **No Side Effects** | Functions don't modify hidden state | Pure functions preferred |
+| **Command-Query Separation** | Methods either command or query, not both | `setName()` vs `getName()` |
+| **Error Handling** | Exceptions over error codes | `throw new ValidationError()` |
+| **Don't Repeat Yourself** | Single source of truth | Extract repeated logic |
+
+```typescript
+// Clean code example
+class UserRegistrationService {
+  constructor(
+    private readonly validator: RegistrationValidator,
+    private readonly repository: UserRepository,
+    private readonly notificationService: NotificationService
+  ) {}
+
+  async register(dto: RegisterUserDto): Promise<UserResponse> {
+    const validation = this.validator.validate(dto);
+    if (!validation.isValid) {
+      throw new ValidationError(validation.errors);
+    }
+    const user = User.create(dto);
+    const saved = await this.repository.save(user);
+    await this.notificationService.sendWelcome(saved.email);
+    return UserResponse.from(saved);
+  }
+}
+```
 
 ### Design by Contract
 
@@ -228,7 +335,20 @@ class BankAccount {
 }
 ```
 
-### Refactoring Catalog
+### Refactoring Catalog and Code Smells
+
+Code smells are surface indicators that usually correspond to deeper problems in the system.
+
+| Code Smell | Description | Refactoring |
+|------------|-------------|-------------|
+| **Long Method** | Method exceeds 30 lines | Extract Method |
+| **Large Class** | Class exceeds 500 lines | Extract Class |
+| **Feature Envy** | Method uses more features of another class | Move Method |
+| **Shotgun Surgery** | One change requires many small modifications | Move + Inline |
+| **Primitive Obsession** | Using primitives instead of objects | Replace with Value Object |
+| **Data Clumps** | Groups of data that appear together | Extract Parameter Object |
+| **Switch Statements** | Type-based conditionals | Replace with Polymorphism |
+| **Speculative Generality** | Unused abstractions | Collapse Hierarchy |
 
 | Refactoring | Description | When to Apply |
 |-------------|-------------|---------------|
@@ -243,9 +363,9 @@ class BankAccount {
 
 ### Design Patterns (GoF)
 
-Design patterns are reusable solutions to common problems in software design.
+Design patterns are reusable solutions to common problems in software design. The Gang of Four (GoF) catalogued 23 patterns across three categories: creational, structural, and behavioral.
 
-### Singleton Pattern
+#### Singleton Pattern
 
 Ensures a class has only one instance and provides a global point of access.
 
@@ -268,7 +388,9 @@ class DatabaseConnection {
 }
 ```
 
-### Factory Pattern
+Use cases: Configuration managers, connection pools, logging services. However, singletons introduce global state and can make testing difficult. Consider dependency injection as an alternative.
+
+#### Factory Pattern
 
 Provides an interface for creating objects without specifying their concrete classes.
 
@@ -298,7 +420,9 @@ class LoggerFactory {
 }
 ```
 
-### Observer Pattern
+The Factory pattern centralises creation logic, making it easy to add new product types and manage dependencies.
+
+#### Observer Pattern
 
 Defines a one-to-many dependency where state changes in one object notify all dependents.
 
@@ -356,7 +480,7 @@ market.updateStockPrice('AAPL', 175.50, 0.03);
 market.updateStockPrice('TSLA', 245.00, -0.02);
 ```
 
-### Strategy Pattern
+#### Strategy Pattern
 
 Defines a family of algorithms, encapsulates each, and makes them interchangeable.
 
@@ -400,7 +524,7 @@ class Checkout {
 }
 ```
 
-### Adapter Pattern
+#### Adapter Pattern
 
 Allows incompatible interfaces to work together.
 
@@ -425,7 +549,7 @@ class EmailAdapter implements ModernNotificationService {
 }
 ```
 
-### Decorator Pattern
+#### Decorator Pattern
 
 Attaches additional responsibilities to an object dynamically.
 
@@ -470,7 +594,108 @@ console.log(`${coffee.getDescription()} costs $${coffee.getCost()}`);
 // "Simple coffee, milk, sugar, whipped cream costs $9.0"
 ```
 
+### Design Pattern Comparison
+
+```mermaid
+graph TD
+    classDef creational fill:#e3f2fd,stroke:#1565c0
+    classDef structural fill:#f3e5f5,stroke:#7b1fa2
+    classDef behavioral fill:#fff3e0,stroke:#e65100
+
+    subgraph "Creational Patterns"
+        SING[Singleton]:::creational -->|One instance| GLOBAL[Global Access]
+        FACT[Factory]:::creational -->|Object creation| ABSTRACT[Abstracts instantiation]
+        BUILD[Builder]:::creational -->|Complex objects| STEPWISE[Step-by-step construction]
+    end
+
+    subgraph "Structural Patterns"
+        ADAPT[Adapter]:::structural -->|Incompatible interfaces| WRAP[Wraps adaptee]
+        DECOR[Decorator]:::structural -->|Dynamic behavior| WRAP2[Wraps component]
+        COMP[Composite]:::structural -->|Tree structures| UNIFORM[Uniform treatment]
+    end
+
+    subgraph "Behavioral Patterns"
+        OBS[Observer]:::behavioral -->|State changes| NOTIFY[Notifies dependents]
+        STRAT[Strategy]:::behavioral -->|Algorithms| INTERCHANGE[Interchangeable]
+        TEMPL[T Method]:::behavioral -->|Skeleton| STEPS[Defined steps]
+    end
+
+    GLOBAL --> CHOOSE{Choose Pattern}
+    ABSTRACT --> CHOOSE
+    STEPWISE --> CHOOSE
+    WRAP --> CHOOSE
+    WRAP2 --> CHOOSE
+    UNIFORM --> CHOOSE
+    NOTIFY --> CHOOSE
+    INTERCHANGE --> CHOOSE
+    STEPS --> CHOOSE
+
+    CHOOSE --> RESULT[✓ Problem Solved]
+```
+
 ## Examples
+
+### Case Study 1: E-Commerce Platform Redesign
+
+A growing e-commerce company had a monolithic order processing system violating all five SOLID principles. The `OrderManager` class contained 8,000 lines handling validation, pricing, inventory, shipping, notifications, and payment processing. Adding a new payment method required modifying the class and retesting the entire system — a two-week cycle.
+
+**Solution:** The team applied systematic refactoring over three months:
+1. **SRP:** Split `OrderManager` into `OrderValidator`, `PricingEngine`, `InventoryManager`, `ShippingCoordinator`, `NotificationService`, and `PaymentProcessor`.
+2. **OCP:** Introduced `PaymentStrategy` interface — adding PayPal took one day instead of two weeks.
+3. **DIP:** Created repository interfaces — switched from PostgreSQL to MongoDB without changing business logic.
+4. **Factory:** Used a `PaymentProcessorFactory` to instantiate the correct payment handler based on configuration.
+
+**Result:** Cycle time for new payment methods dropped from 10 days to 1 day. Bug rate decreased by 65%. The system could now be tested at the unit level (2,000+ unit tests) instead of requiring full regression.
+
+### Case Study 2: Financial Services API Gateway
+
+A financial institution needed to integrate with 15 third-party data providers, each with different authentication protocols, data formats, and rate limits. The initial implementation used a single class with massive switch statements.
+
+**Solution:** The team applied the Adapter and Strategy patterns:
+1. **Adapter:** Created a `DataProviderAdapter` interface with concrete adapters for each provider.
+2. **Strategy:** Implemented different rate-limiting strategies (token bucket, sliding window, exponential backoff).
+3. **Factory:** A `ProviderFactory` that dynamically loaded the correct adapter based on configuration.
+
+```typescript
+interface DataProviderAdapter {
+  fetchData(symbol: string): Promise<MarketData>;
+}
+
+class BloombergAdapter implements DataProviderAdapter {
+  async fetchData(symbol: string): Promise<MarketData> {
+    // Bloomberg-specific protocol
+  }
+}
+
+class ReutersAdapter implements DataProviderAdapter {
+  async fetchData(symbol: string): Promise<MarketData> {
+    // Reuters-specific protocol
+  }
+}
+
+class DataProviderFactory {
+  static create(config: ProviderConfig): DataProviderAdapter {
+    switch (config.type) {
+      case 'bloomberg': return new BloombergAdapter(config.apiKey);
+      case 'reuters': return new ReutersAdapter(config.endpoint);
+      default: throw new Error(`Unknown provider: ${config.type}`);
+    }
+  }
+}
+```
+
+**Result:** Adding a new data provider took 2-3 days instead of 2-3 weeks. The system handled 100M+ requests daily with 99.99% uptime.
+
+### Case Study 3: Healthcare Records System Modernization
+
+A legacy healthcare records system used a single `PatientRecord` class containing medical data, billing information, insurance details, and appointment scheduling — a clear SRP violation with tight coupling causing frequent bugs.
+
+**Solution:** The team refactored using clean code principles:
+1. Extracted separate domain classes: `MedicalRecord`, `BillingInfo`, `InsurancePolicy`, `AppointmentSchedule`.
+2. Introduced value objects for concepts like `BloodPressure`, `DiagnosisCode`, `Money`.
+3. Applied design by contract with pre/post-condition validation.
+
+**Result:** Test coverage went from 15% to 87%. Defect rate dropped 70%. The redesigned system passed HIPAA audit with zero findings.
 
 ## SOLID Principle Compliance Checker
 
@@ -555,91 +780,145 @@ class SolidComplianceChecker {
     }
     return responsibilities;
   }
+}
 
-  private checkOCP(classes: ClassDescriptor[]): Violation[] {
-    const violations: Violation[] = [];
-    for (const cls of classes) {
-      const switchPattern = /\b(if\s+.*\b(type|kind|categor|variant)\b|switch\s*\(.*\b(type|kind)\b)/i;
-      const riskyMethods = cls.methods.filter((m) => switchPattern.test(m));
-      if (riskyMethods.length > 0) {
-        violations.push({
-          principle: 'OCP',
-          className: cls.name,
-          severity: 'major',
-          description: `Methods ${riskyMethods.join(', ')} use type-checking conditionals that violate Open-Closed`,
-          recommendation: 'Replace type-based conditionals with polymorphic dispatch via interfaces',
+// Usage
+const checker = new SolidComplianceChecker();
+const violations = checker.checkAll([
+  {
+    name: 'OrderService',
+    methods: ['save(order)', 'sendConfirmation(order)', 'generateInvoice(order)', 'validatePayment(order)', 'logActivity(entry)', 'parseWebhook(payload)', 'renderReceipt(order)'],
+    fields: ['repository', 'emailService', 'logger'],
+    dependencies: ['PostgresOrderRepository'],
+    interfaces: ['OrderProcessor'],
+    linesOfCode: 350,
+  },
+]);
+console.log('SOLID Violations:');
+violations.forEach((v) => console.log(`  [${v.severity}] ${v.principle}: ${v.className} — ${v.description}`));
+```
+
+### Refactoring Engine — Code Smell Detector
+
+```typescript
+interface CodeSmell {
+  type: string;
+  location: string;
+  severity: 'low' | 'medium' | 'high';
+  description: string;
+  suggestedRefactoring: string;
+}
+
+interface CodeUnit {
+  name: string;
+  linesOfCode: number;
+  methodCount: number;
+  averageParameterCount: number;
+  cyclomaticComplexity: number;
+  dependencyCount: number;
+  duplicateCodeBlocks: number;
+}
+
+class RefactoringEngine {
+  private thresholdConfig = {
+    maxLines: 300,
+    maxMethods: 15,
+    maxParams: 4,
+    maxComplexity: 10,
+    maxDependencies: 8,
+    maxDuplications: 3,
+  };
+
+  public detectSmells(units: CodeUnit[]): CodeSmell[] {
+    const smells: CodeSmell[] = [];
+    for (const unit of units) {
+      if (unit.linesOfCode > this.thresholdConfig.maxLines) {
+        smells.push({
+          type: 'Long Method / Large Class',
+          location: unit.name,
+          severity: 'high',
+          description: `File exceeds ${this.thresholdConfig.maxLines} lines (actual: ${unit.linesOfCode})`,
+          suggestedRefactoring: 'Extract Module: split into multiple cohesive files',
+        });
+      }
+      if (unit.methodCount > this.thresholdConfig.maxMethods) {
+        smells.push({
+          type: 'Large Class',
+          location: unit.name,
+          severity: 'high',
+          description: `Class has ${unit.methodCount} methods (max: ${this.thresholdConfig.maxMethods})`,
+          suggestedRefactoring: 'Extract Class: group related methods into separate classes',
+        });
+      }
+      if (unit.averageParameterCount > this.thresholdConfig.maxParams) {
+        smells.push({
+          type: 'Long Parameter List',
+          location: unit.name,
+          severity: 'medium',
+          description: `Average parameter count is ${unit.averageParameterCount} (max: ${this.thresholdConfig.maxParams})`,
+          suggestedRefactoring: 'Introduce Parameter Object: wrap parameters in a value object',
+        });
+      }
+      if (unit.cyclomaticComplexity > this.thresholdConfig.maxComplexity) {
+        smells.push({
+          type: 'High Cyclomatic Complexity',
+          location: unit.name,
+          severity: 'high',
+          description: `Complexity score ${unit.cyclomaticComplexity} exceeds ${this.thresholdConfig.maxComplexity}`,
+          suggestedRefactoring: 'Replace Conditional with Polymorphism or extract methods',
+        });
+      }
+      if (unit.dependencyCount > this.thresholdConfig.maxDependencies) {
+        smells.push({
+          type: 'High Coupling',
+          location: unit.name,
+          severity: 'medium',
+          description: `Class depends on ${unit.dependencyCount} other modules (max: ${this.thresholdConfig.maxDependencies})`,
+          suggestedRefactoring: 'Apply DIP: depend on abstractions, reduce direct dependency count',
+        });
+      }
+      if (unit.duplicateCodeBlocks > this.thresholdConfig.maxDuplications) {
+        smells.push({
+          type: 'Duplicate Code',
+          location: unit.name,
+          severity: 'medium',
+          description: `Found ${unit.duplicateCodeBlocks} duplicate code blocks (max: ${this.thresholdConfig.maxDuplications})`,
+          suggestedRefactoring: 'Extract Method: extract duplicate logic into shared utility functions',
         });
       }
     }
-    return violations;
+    return smells;
   }
 
-  private checkLSP(classes: ClassDescriptor[]): Violation[] {
-    const violations: Violation[] = [];
-    for (const cls of classes) {
-      if (cls.superClass) {
-        const overrideMethods = cls.methods.filter((m) =>
-          m.startsWith('override ')
-        );
-        const throwingOverride = cls.methods.filter((m) =>
-          m.includes('throw new Error') && m.includes('Not implemented')
-        );
-        if (throwingOverride.length > 0) {
-          violations.push({
-            principle: 'LSP',
-            className: cls.name,
-            severity: 'critical',
-            description: `${cls.name} overrides methods with "not implemented" exceptions, breaking substitutability`,
-            recommendation: 'Either implement the method properly or use composition instead of inheritance',
-          });
-        }
-      }
-    }
-    return violations;
-  }
-
-  private checkISP(classes: ClassDescriptor[]): Violation[] {
-    const violations: Violation[] = [];
-    for (const cls of classes) {
-      if (cls.interfaces.length > 0) {
-        const methodNames = new Set(cls.methods.map((m) => m.split('(')[0].split(' ').pop()!));
-        for (const iface of cls.interfaces) {
-          if (cls.dependencies.includes(iface)) {
-            violations.push({
-              principle: 'ISP',
-              className: cls.name,
-              severity: 'minor',
-              description: `${cls.name} depends on methods from ${iface} it may not use`,
-              recommendation: `Split ${iface} into smaller, focused interfaces`,
-            });
-          }
-        }
-      }
-    }
-    return violations;
-  }
-
-  private checkDIP(classes: ClassDescriptor[]): Violation[] {
-    const violations: Violation[] = [];
-    const concreteClassPattern = /^(Postgres|Mongo|MySQL|Redis|AWS|Azure|GCP|Concrete)/;
-    for (const cls of classes) {
-      for (const dep of cls.dependencies) {
-        if (concreteClassPattern.test(dep)) {
-          violations.push({
-            principle: 'DIP',
-            className: cls.name,
-            severity: 'major',
-            description: `${cls.name} depends directly on concrete class ${dep} instead of an abstraction`,
-            recommendation: `Create an interface for ${dep} and inject it through the constructor`,
-          });
-        }
-      }
-    }
-    return violations;
+  public generateRefactoringPlan(smells: CodeSmell[]): string[] {
+    const prioritized = [...smells].sort((a, b) => {
+      const rank = { high: 3, medium: 2, low: 1 };
+      return rank[b.severity] - rank[a.severity];
+    });
+    const plan: string[] = ['=== Refactoring Plan ===', '', 'Priority Order:'];
+    prioritized.forEach((smell, i) => {
+      plan.push(`  ${i + 1}. [${smell.severity.toUpperCase()}] ${smell.type} at ${smell.location}`);
+      plan.push(`     ${smell.description}`);
+      plan.push(`     → ${smell.suggestedRefactoring}`);
+    });
+    plan.push('', `Total: ${smells.length} code smells detected. Estimated effort: ${smells.length * 4}h`);
+    return plan;
   }
 }
 
-// Design Pattern Registry
+// Usage
+const engine = new RefactoringEngine();
+const smells = engine.detectSmells([
+  { name: 'OrderProcessor.ts', linesOfCode: 450, methodCount: 22, averageParameterCount: 5.2, cyclomaticComplexity: 14, dependencyCount: 10, duplicateCodeBlocks: 5 },
+  { name: 'PaymentGateway.ts', linesOfCode: 180, methodCount: 8, averageParameterCount: 2.1, cyclomaticComplexity: 4, dependencyCount: 3, duplicateCodeBlocks: 1 },
+  { name: 'UserService.ts', linesOfCode: 320, methodCount: 18, averageParameterCount: 3.5, cyclomaticComplexity: 8, dependencyCount: 7, duplicateCodeBlocks: 2 },
+]);
+console.log(engine.generateRefactoringPlan(smells).join('\n'));
+```
+
+### Design Pattern Registry
+
+```typescript
 interface PatternDefinition {
   name: string;
   type: 'creational' | 'structural' | 'behavioral';
@@ -649,6 +928,7 @@ interface PatternDefinition {
   solution: string;
   applicableWhen: string[];
   consequences: string[];
+  exampleCode?: string;
 }
 
 class DesignPatternRegistry {
@@ -766,79 +1046,18 @@ class DesignPatternRegistry {
 }
 
 // Usage
-const checker = new SolidComplianceChecker();
-const violations = checker.checkAll([
-  {
-    name: 'OrderService',
-    methods: ['save(order)', 'sendConfirmation(order)', 'generateInvoice(order)', 'validatePayment(order)', 'logActivity(entry)', 'parseWebhook(payload)', 'renderReceipt(order)'],
-    fields: ['repository', 'emailService', 'logger'],
-    dependencies: ['PostgresOrderRepository'],
-    interfaces: ['OrderProcessor'],
-    linesOfCode: 350,
-  },
-]);
-console.log('SOLID Violations:');
-violations.forEach((v) => console.log(`  [${v.severity}] ${v.principle}: ${v.className} — ${v.description}`));
-
 const registry = new DesignPatternRegistry();
 console.log('\nAvailable Creational Patterns:');
 registry.findByType('creational').forEach((p) => console.log(`  - ${p.name}: ${p.intent}`));
+console.log('\nPatterns for "event handling":');
+registry.findByProblem('event').forEach((p) => console.log(`  - ${p.name}`));
+console.log('\nSingleton vs Factory:');
+console.log(registry.compare('singleton', 'factory method'));
 ```
 
-```mermaid
-graph TD
-    subgraph "Design Quality Pipeline"
-        SRC[Source Code] --> PARSER[AST Parser]
-        PARSER --> METRICS[Compute Metrics]
-        METRICS --> COHESION[Cohesion Analysis]
-        METRICS --> COUPLING[Coupling Analysis]
-        METRICS --> COMPLEXITY[Complexity Analysis]
-        
-        COHESION --> SRP[SRP Check]
-        COUPLING --> DIP[DIP Check]
-        COMPLEXITY --> OCP[OCP Check]
-        
-        SRP --> AGG2[Aggregate Violations]
-        DIP --> AGG2
-        OCP --> AGG2
-        
-        AGG2 --> REPORT[Generate Report]
-        REPORT --> SCORE[Quality Score]
-        REPORT --> VIOLATIONS[Violations List]
-        REPORT --> RECOMMEND[Recommendations]
-    end
-```
-
-### TypeScript: Design & Implementation Tools
+### Additional TypeScript Design Tools
 
 ```typescript
-// === SOLID Principle Validator ===
-interface ClassAnalysis {
-  className: string;
-  responsibilities: string[];
-  dependencies: string[];
-  methods: number;
-}
-function violatesSRP(cls: ClassAnalysis): string[] {
-  const distinctResponsibilities = [...new Set(cls.responsibilities)];
-  if (distinctResponsibilities.length > 1) return [`SRP violation: ${cls.className} has ${distinctResponsibilities.length} responsibilities: ${distinctResponsibilities.join(", ")}`];
-  return [];
-}
-function violatesDIP(cls: ClassAnalysis): { concreteDeps: string[]; abstractDeps: string[] } {
-  return {
-    concreteDeps: cls.dependencies.filter((d) => d.startsWith("Concrete")),
-    abstractDeps: cls.dependencies.filter((d) => d.startsWith("I") || d.startsWith("Abstract")),
-  };
-}
-const orderSvc: ClassAnalysis = {
-  className: "OrderService",
-  responsibilities: ["process orders", "send emails", "generate invoices"],
-  dependencies: ["ConcreteEmailSender", "ConcreteInvoiceGenerator", "IOrderRepository"],
-  methods: 12,
-};
-console.log(violatesSRP(orderSvc));
-console.log(violatesDIP(orderSvc));
-
 // === Simple Dependency Injector ===
 type Token = string;
 class Container {
@@ -856,13 +1075,18 @@ class Container {
     return entry.factory() as T;
   }
 }
-interface ILogger { log(msg: string): void }
-interface IUserRepo { find(id: number): string }
-const container = new Container();
-container.register("Logger", () => ({ log: (m: string) => console.log(m) }));
-container.register("UserRepo", () => ({
-  find: (id: number) => `User ${id}`,
-}));
+
+// === Design Pattern Detector ===
+function detectPattern(codeLines: string[]): string[] {
+  const patterns: string[] = [];
+  const joined = codeLines.join(" ");
+  if (joined.includes("private constructor")) patterns.push("Singleton");
+  if (joined.includes("implements Observer")) patterns.push("Observer");
+  if (joined.includes("create") && joined.includes(": ")) patterns.push("Factory Method");
+  if (joined.includes("interface") && joined.includes("class") && joined.includes("implements")) patterns.push("Strategy");
+  if (joined.includes("wrapper") || joined.includes("delegate")) patterns.push("Decorator");
+  return patterns;
+}
 
 // === LSP Checker ===
 interface Shape { area(): number }
@@ -878,45 +1102,73 @@ function lspCheck(shapes: Shape[]): number {
   return shapes.reduce((sum, s) => sum + s.area(), 0);
 }
 console.log(lspCheck([new Rectangle(2, 3), new Square(4)])); // 6 + 16 = 22
+```
 
-// === Design Pattern Detector ===
-function detectPattern(codeLines: string[]): string[] {
-  const patterns: string[] = [];
-  const joined = codeLines.join(" ");
-  if (joined.includes("private constructor")) patterns.push("Singleton");
-  if (joined.includes("implements Observer")) patterns.push("Observer");
-  if (joined.includes("create") && joined.includes(": ")) patterns.push("Factory Method");
-  if (joined.includes("interface") && joined.includes("class") && joined.includes("implements")) patterns.push("Strategy");
-  if (joined.includes("wrapper") || joined.includes("delegate")) patterns.push("Decorator");
-  return patterns;
-}
-console.log(detectPattern(["class Config {", "  private constructor() {}", "  static getInstance() {}", "}"]));
+```mermaid
+graph TD
+    classDef source fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    classDef process fill:#e0f2f1,stroke:#00796b,stroke-width:2px
+    classDef output fill:#fff8e1,stroke:#f57f17,stroke-width:2px
+    classDef violation fill:#fce4ec,stroke:#c62828,stroke-width:2px
 
-// === Factory Method Generator ===
-interface Product { operation(): string }
-class ConcreteProductA implements Product { operation(): string { return "Product A"; } }
-class ConcreteProductB implements Product { operation(): string { return "Product B"; } }
-abstract class Creator { abstract factoryMethod(): Product; someOperation(): string { return `Creator: ${this.factoryMethod().operation()}`; } }
-class CreatorA extends Creator { factoryMethod(): Product { return new ConcreteProductA(); } }
-class CreatorB extends Creator { factoryMethod(): Product { return new ConcreteProductB(); } }
-console.log(new CreatorA().someOperation());
-console.log(new CreatorB().someOperation());
+    subgraph "SOLID Compliance Pipeline"
+        SRC[Source Code]:::source --> PARSER[AST Parser]:::process
+        PARSER --> METRICS[Compute Metrics]:::process
+        METRICS --> COHESION[Cohesion Analysis]:::process
+        METRICS --> COUPLING[Coupling Analysis]:::process
+        METRICS --> COMPLEXITY[Complexity Analysis]:::process
+        
+        COHESION --> SRP[SRP Check]:::process
+        COUPLING --> DIP[DIP Check]:::process
+        COMPLEXITY --> OCP[OCP Check]:::process
+        DEPENDENCIES[Dependency Graph]:::source --> LSP[LSP Check]:::process
+        INTERFACES[Interface Definitions]:::source --> ISP[ISP Check]:::process
+        
+        SRP --> AGG2[Aggregate Violations]:::output
+        DIP --> AGG2
+        OCP --> AGG2
+        LSP --> AGG2
+        ISP --> AGG2
+        
+        AGG2 --> REPORT[Generate Report]:::output
+        REPORT --> SCORE[Quality Score]:::output
+        REPORT --> VIO[Violations List]:::violation
+        REPORT --> RECOMMEND[Recommendations]:::output
+        
+        VIO --> CRITICAL[Critical: Must Fix]:::violation
+        VIO --> MAJOR[Major: Should Fix]:::violation
+        VIO --> MINOR[Minor: Consider Fixing]:::violation
+    end
 ```
 
 ## Summary
 
-Design principles guide the creation of maintainable, understandable software. The SOLID principles address class-level design; DRY, KISS, and YAGNI promote simplicity and avoid duplication. Low coupling and high cohesion are the primary indicators of design quality. GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) provide reusable solutions to common problems. Design by contract formalises preconditions, postconditions, and invariants. Refactoring systematically improves design without changing behaviour. Design reviews provide structured evaluation of design quality.
+Design and implementation are the core technical activities of software engineering. Design principles — SOLID, DRY, KISS, YAGNI — provide proven guidance for creating maintainable, testable, and adaptable software. The SOLID principles address class-level design: SRP ensures each class has a single responsibility; OCP enables extension without modification; LSP guarantees substitutability; ISP prevents clients from depending on interfaces they don't use; and DIP decouples high-level modules from low-level implementations.
+
+GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) offer reusable solutions to recurring design problems. Patterns should be applied to solve specific problems, not as decoration. Clean code principles — meaningful names, small functions, no side effects — complement patterns by ensuring the resulting code is readable and maintainable.
+
+Coupling and cohesion are the most practical indicators of design quality. Low coupling between modules and high cohesion within modules consistently correlate with systems that are easier to understand, test, and change. Design by contract formalises expectations through preconditions, postconditions, and invariants. Refactoring systematically improves design without changing external behaviour, and code smell detectors can automatically flag areas needing attention. Together, these principles and practices form the foundation of professional software design and implementation.
 
 ## Practical Takeaways
 
-1. **SOLID is a toolkit, not a checklist** — apply principles where they reduce complexity, not everywhere
-2. **Patterns solve problems, they don't create them** — don't use a pattern just because you studied it
-3. **Design for the specific, not the abstract** — YAGNI and KISS prevent over-engineering
-4. **Testability is a design quality indicator** — if a design is hard to test, it's probably a bad design
-5. **Refactor early, refactor often** — small continuous improvements prevent structural degradation
-6. **Coupling and cohesion are the most practical design metrics** — high cohesion + low coupling = good design
+1. **SOLID is a toolkit, not a checklist** — apply principles where they reduce complexity, not everywhere. Over-applying SOLID leads to unnecessary abstraction.
+2. **Patterns solve problems, they don't create them** — don't use a pattern just because you studied it. Let the problem drive the pattern selection.
+3. **Design for the specific, not the abstract** — YAGNI and KISS prevent over-engineering. Build for what you know today.
+4. **Testability is a design quality indicator** — if a design is hard to test, it's probably a bad design. Write tests first to validate your design decisions.
+5. **Refactor early, refactor often** — small continuous improvements prevent structural degradation. Dedicate 20% of each sprint to refactoring.
+6. **Coupling and cohesion are the most practical design metrics** — high cohesion + low coupling = good design. Use these as your primary quality gates.
+7. **Design reviews catch problems early** — invest in structured design reviews before writing code. A 1-hour review can save 10 hours of rework.
+8. **Clean code is a professional obligation** — readable code reduces maintenance costs. Write code for the next developer, not for the compiler.
 
 ## Chapter Quiz
+
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1 | B | SRP states each class should have a single responsibility and one reason to change. |
+| Q2 | C | DIP requires depending on abstractions (interfaces) rather than concrete implementations. |
+| Q3 | C | The Observer pattern defines a one-to-many dependency for state change notifications. |
+| Q4 | C | Content coupling (directly modifying another module's internal data) is the worst form of coupling. |
+| Q5 | B | The Decorator pattern dynamically adds responsibilities to objects by wrapping them. |
 
 **Q1: Which SOLID principle states that a class should have only one reason to change?**
 - A) Open-Closed Principle
@@ -924,15 +1176,11 @@ Design principles guide the creation of maintainable, understandable software. T
 - C) Liskov Substitution Principle
 - D) Dependency Inversion Principle
 
-**Answer: B** — SRP states each class should have a single responsibility.
-
 **Q2: A class that depends directly on a concrete database implementation rather than an abstraction violates which principle?**
 - A) ISP
 - B) LSP
 - C) DIP
 - D) OCP
-
-**Answer: C** — Dependency Inversion Principle requires depending on abstractions.
 
 **Q3: Which design pattern would you use to notify multiple components when state changes?**
 - A) Singleton
@@ -940,15 +1188,11 @@ Design principles guide the creation of maintainable, understandable software. T
 - C) Observer
 - D) Adapter
 
-**Answer: C** — The Observer pattern defines a one-to-many dependency for state change notifications.
-
 **Q4: The worst type of coupling is:**
 - A) Data coupling
 - B) Stamp coupling
 - C) Content coupling
 - D) Message coupling
-
-**Answer: C** — Content coupling (directly modifying another module's internal data) is the worst.
 
 **Q5: What is the purpose of the Decorator pattern?**
 - A) Ensure a class has only one instance
@@ -956,32 +1200,251 @@ Design principles guide the creation of maintainable, understandable software. T
 - C) Define a family of interchangeable algorithms
 - D) Convert the interface of a class into another interface
 
-**Answer: B** — The Decorator pattern dynamically adds responsibilities to objects.
-
 ## Exercises
 
 ### Review Questions
 
 1. State the Single Responsibility Principle and provide an example of its violation.
+
 2. How does the Liskov Substitution Principle constrain the use of inheritance?
+
 3. What problem does the Dependency Inversion Principle solve?
+
 4. Distinguish between stamp coupling and data coupling.
+
 5. Arrange the coupling types from most desirable to least desirable.
+
 6. Describe the seven levels of cohesion from worst to best.
+
 7. Explain design by contract — what are preconditions, postconditions, and invariants?
+
 8. When would you use the Strategy pattern instead of a switch statement?
 
 ### Application Problems
 
-1. Identify SOLID principle violations in a Report class that retrieves data from a database, formats it as HTML, and sends it by email. Refactor the design in TypeScript.
+1. **SOLID Refactoring:** Identify SOLID principle violations in a Report class that retrieves data from a database, formats it as HTML, and sends it by email. Refactor the design in TypeScript.
 
-2. Analyse the coupling and cohesion of a system with a single Utility class containing methods for string manipulation, date calculation, file I/O, and network connectivity. Propose a refactoring.
+<details>
+<summary>Click for solution</summary>
 
-3. Implement the Observer pattern for a weather station that notifies display devices (current conditions, statistics, forecast) when temperature, humidity, and pressure change.
+```typescript
+// Violation: The Report class has multiple responsibilities (data access, formatting, notification)
+// Refactored:
 
-4. Implement a document processing pipeline using the Decorator pattern where a base Document can be decorated with SpellCheck, GrammarCheck, and PlagiarismCheck decorators.
+interface ReportData {
+  title: string;
+  content: string;
+  generatedAt: Date;
+}
 
-### Challenge Problem
+interface DataRepository {
+  fetchReportData(reportId: string): Promise<ReportData>;
+}
 
-You inherit a codebase with the following characteristics: a single class of over 10,000 lines implementing the entire business logic; all methods are public and directly access the database; global variables are used extensively; the system has no automated tests; and every change requires weeks of regression testing. Develop a systematic refactoring plan over six months. Prioritise the design principles, specify the order of addressing problems, and describe how to manage the risk of introducing defects. Implement the refactored version of at least three core methods in TypeScript.
+interface ReportFormatter {
+  format(data: ReportData): string;
+}
 
+interface NotificationService {
+  send(recipient: string, content: string): Promise<void>;
+}
+
+class ReportService {
+  constructor(
+    private repository: DataRepository,
+    private formatter: ReportFormatter,
+    private notifier: NotificationService
+  ) {}
+
+  async generateAndSendReport(reportId: string, recipient: string): Promise<void> {
+    const data = await this.repository.fetchReportData(reportId);
+    const formatted = this.formatter.format(data);
+    await this.notifier.send(recipient, formatted);
+  }
+}
+```
+</details>
+
+2. **Coupling and Cohesion Analysis:** Analyse the coupling and cohesion of a system with a single Utility class containing methods for string manipulation, date calculation, file I/O, and network connectivity. Propose a refactoring.
+
+<details>
+<summary>Click for solution</summary>
+
+The Utility class exhibits coincidental cohesion (elements arbitrarily grouped) and high coupling (unrelated dependencies). Refactoring:
+
+```typescript
+class StringUtils {
+  static capitalize(str: string): string { /* ... */ }
+  static trim(str: string): string { /* ... */ }
+}
+
+class DateUtils {
+  static formatDate(date: Date): string { /* ... */ }
+  static isWeekend(date: Date): boolean { /* ... */ }
+}
+
+class FileService {
+  readFile(path: string): Promise<string> { /* ... */ }
+  writeFile(path: string, content: string): Promise<void> { /* ... */ }
+}
+
+class NetworkService {
+  fetchUrl(url: string): Promise<Response> { /* ... */ }
+  ping(host: string): Promise<boolean> { /* ... */ }
+}
+```
+</details>
+
+3. **Observer Pattern:** Implement the Observer pattern for a weather station that notifies display devices (current conditions, statistics, forecast) when temperature, humidity, and pressure change.
+
+<details>
+<summary>Click for solution</summary>
+
+```typescript
+interface WeatherObserver {
+  update(temp: number, humidity: number, pressure: number): void;
+}
+
+class WeatherStation {
+  private observers: WeatherObserver[] = [];
+  private temperature = 0;
+  private humidity = 0;
+  private pressure = 0;
+
+  subscribe(observer: WeatherObserver): void {
+    this.observers.push(observer);
+  }
+
+  unsubscribe(observer: WeatherObserver): void {
+    this.observers = this.observers.filter(o => o !== observer);
+  }
+
+  setMeasurements(temp: number, humidity: number, pressure: number): void {
+    this.temperature = temp;
+    this.humidity = humidity;
+    this.pressure = pressure;
+    this.notifyObservers();
+  }
+
+  private notifyObservers(): void {
+    for (const observer of this.observers) {
+      observer.update(this.temperature, this.humidity, this.pressure);
+    }
+  }
+}
+
+class CurrentConditionsDisplay implements WeatherObserver {
+  update(temp: number, humidity: number, _pressure: number): void {
+    console.log(`Current: ${temp}°C, ${humidity}% humidity`);
+  }
+}
+
+class StatisticsDisplay implements WeatherObserver {
+  private temps: number[] = [];
+  update(temp: number, _humidity: number, _pressure: number): void {
+    this.temps.push(temp);
+    const avg = this.temps.reduce((s, t) => s + t, 0) / this.temps.length;
+    console.log(`Avg temperature: ${avg.toFixed(1)}°C`);
+  }
+}
+
+// Usage
+const station = new WeatherStation();
+station.subscribe(new CurrentConditionsDisplay());
+station.subscribe(new StatisticsDisplay());
+station.setMeasurements(25, 60, 1013);
+station.setMeasurements(26, 55, 1012);
+```
+</details>
+
+4. **Decorator Pattern:** Implement a document processing pipeline where a base Document can be decorated with SpellCheck, GrammarCheck, and PlagiarismCheck decorators.
+
+<details>
+<summary>Click for solution</summary>
+
+```typescript
+interface Document {
+  getContent(): string;
+  process(): string;
+}
+
+class TextDocument implements Document {
+  constructor(private content: string) {}
+  getContent(): string { return this.content; }
+  process(): string { return this.content; }
+}
+
+abstract class DocumentDecorator implements Document {
+  constructor(protected doc: Document) {}
+  abstract getContent(): string;
+  abstract process(): string;
+}
+
+class SpellCheckDecorator extends DocumentDecorator {
+  process(): string {
+    const content = this.doc.process();
+    return content.replace(/\b\w+\b/g, (word) =>
+      word === 'teh' ? 'the' : word === 'recieve' ? 'receive' : word
+    );
+  }
+  getContent(): string { return this.doc.getContent(); }
+}
+
+class GrammarCheckDecorator extends DocumentDecorator {
+  process(): string {
+    const content = this.doc.process();
+    return content.replace(/\ba\s+[aeiou]/gi, (match) =>
+      'an ' + match.substring(2)
+    );
+  }
+  getContent(): string { return this.doc.getContent(); }
+}
+
+// Usage
+let doc: Document = new TextDocument('This is teh document with a error');
+doc = new SpellCheckDecorator(doc);
+doc = new GrammarCheckDecorator(doc);
+console.log(doc.process());
+// "This is the document with an error"
+```
+</details>
+
+5. **Challenge Problem:** You inherit a codebase with a single class of over 10,000 lines implementing the entire business logic; all methods are public and directly access the database; global variables are used extensively; the system has no automated tests; and every change requires weeks of regression testing. Develop a systematic refactoring plan over six months.
+
+<details>
+<summary>Click for solution</summary>
+
+**Month 1 — Establish Safety Net:**
+1. Add characterization tests (record input/output of existing behavior)
+2. Set up CI pipeline
+3. Extract database access behind repository interfaces
+
+**Month 2 — Decompose by Responsibility:**
+1. Identify distinct responsibility groups in the monolith (e.g., orders, inventory, payments, users)
+2. Extract each group into its own class (SRP)
+3. Keep the original class as a facade delegating to extracted classes
+
+**Month 3 — Introduce Abstractions:**
+1. Create interfaces for all extracted classes (DIP)
+2. Replace global variables with constructor-injected dependencies
+3. Make methods private where possible
+
+**Month 4 — Apply Patterns:**
+1. Replace type-based conditionals with Strategy pattern (OCP)
+2. Extract object creation into Factory methods
+3. Add Observer for cross-cutting notifications
+
+**Month 5 — Add Unit Tests:**
+1. Write unit tests for each extracted class
+2. Achieve 70%+ code coverage
+3. Remove the facade class
+
+**Month 6 — Continuous Improvement:**
+1. Monitor code quality metrics
+2. Address remaining code smells
+3. Establish refactoring as part of Definition of Done
+</details>
+
+## Summary
+
+Design principles guide the creation of maintainable, understandable software. The SOLID principles address class-level design; DRY, KISS, and YAGNI promote simplicity and avoid duplication. Low coupling and high cohesion are the primary indicators of design quality. GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) provide reusable solutions to common problems. Design by contract formalises preconditions, postconditions, and invariants. Refactoring systematically improves design without changing behaviour. Design reviews provide structured evaluation of design quality. Clean code principles ensure the resulting implementation is readable, testable, and maintainable.

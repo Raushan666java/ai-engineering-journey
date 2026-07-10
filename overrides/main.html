@@ -54,11 +54,22 @@
   var isPanning = false, panStartX, panStartY;
   var touchStartX, touchStartY, touchDist = 0;
 
+  function isExpandableImage(img) {
+    var src = img.getAttribute('src') || '';
+    if (!src || src.startsWith('data:')) return false;
+    if (img.closest('nav') || img.closest('header') || img.closest('footer') || img.closest('.md-header') || img.closest('.md-nav') || img.closest('.md-tabs')) return false;
+    if (img.classList.contains('twemoji') || img.classList.contains('md-icon') || img.classList.contains('emoji')) return false;
+    if (img.hasAttribute('width') && parseInt(img.getAttribute('width')) < 60) return false;
+    if (img.hasAttribute('height') && parseInt(img.getAttribute('height')) < 60) return false;
+    return true;
+  }
+
   function getPageImages() {
     var imgs = [];
-    document.querySelectorAll('.md-content img').forEach(function(img) {
+    document.querySelectorAll('img').forEach(function(img) {
+      if (!isExpandableImage(img)) return;
       var src = img.getAttribute('src') || '';
-      if (src && !src.startsWith('data:')) imgs.push({ src: src, alt: img.getAttribute('alt') || '' });
+      if (src) imgs.push({ src: src, alt: img.getAttribute('alt') || '', element: img });
     });
     return imgs;
   }
@@ -275,38 +286,36 @@
     isPanning = false;
   }, { passive: true });
 
-  // --- Collect images on the page ---
+  // --- Collect images on the page (SITE-WIDE) ---
   function collectAndBindImages() {
-    // Bind existing images
-    document.querySelectorAll('.md-content img').forEach(function(img) {
-      if (img._lbBound) return;
+    document.querySelectorAll('img').forEach(function(img) {
+      if (img._lbBound || !isExpandableImage(img)) return;
       img._lbBound = true;
       img.style.cursor = 'zoom-in';
       img.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        var items = getPageImages();
-        var allImgs = document.querySelectorAll('.md-content img');
-        var idx = 0;
+        var allImgs = document.querySelectorAll('img');
         var src = this.getAttribute('src');
+        var items = [];
+        var idx = 0;
         allImgs.forEach(function(other, i) {
-          if (other.getAttribute('src') === src) idx = i;
+          if (!isExpandableImage(other)) return;
+          var s = other.getAttribute('src');
+          if (s) {
+            if (s === src) idx = items.length;
+            items.push({ src: s, alt: other.getAttribute('alt') || '' });
+          }
         });
-        items = allImgs.map(function(o) {
-          return { src: o.getAttribute('src') || '', alt: o.getAttribute('alt') || '' };
-        }).filter(function(o) { return o.src && !o.src.startsWith('data:'); });
-        idx = items.findIndex(function(o) { return o.src === src; });
-        if (idx < 0) idx = 0;
+        if (idx < 0 || idx >= items.length) idx = 0;
         openLightbox(items, idx);
       });
     });
   }
 
-  // Initial bind + observe for dynamically loaded content
   collectAndBindImages();
   var imgObserver = new MutationObserver(collectAndBindImages);
-  var target = document.querySelector('.md-content') || document.body;
-  imgObserver.observe(target, { childList: true, subtree: true });
+  imgObserver.observe(document.body, { childList: true, subtree: true });
 
   // ========================================================================
   // Collapsible Mermaid wrappers

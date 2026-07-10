@@ -905,6 +905,432 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+### TypeScript: LRU Cache (O(1) Get/Put)
+
+This class implements a true O(1) LRU cache using a doubly linked list and a hash map — the production-grade approach used in Redis, Memcached, and database buffer pools.
+
+```typescript
+class LRUCache<K, V> {
+  private capacity: number;
+  private cache: Map<K, ListNode<K, V>> = new Map();
+  private head: ListNode<K, V>;
+  private tail: ListNode<K, V>;
+
+  constructor(capacity: number) {
+    this.capacity = capacity;
+    this.head = new ListNode<K, V>(null as any, null as any);
+    this.tail = new ListNode<K, V>(null as any, null as any);
+    this.head.next = this.tail;
+    this.tail.prev = this.head;
+  }
+
+  get(key: K): V | -1 {
+    const node = this.cache.get(key);
+    if (!node) return -1;
+    this.moveToHead(node);
+    return node.value;
+  }
+
+  put(key: K, value: V): void {
+    const node = this.cache.get(key);
+    if (node) {
+      node.value = value;
+      this.moveToHead(node);
+      return;
+    }
+    const newNode = new ListNode(key, value);
+    this.cache.set(key, newNode);
+    this.addToHead(newNode);
+    if (this.cache.size > this.capacity) {
+      const removed = this.removeTail();
+      this.cache.delete(removed.key);
+    }
+  }
+
+  has(key: K): boolean { return this.cache.has(key); }
+
+  size(): number { return this.cache.size; }
+
+  clear(): void {
+    this.cache.clear();
+    this.head.next = this.tail;
+    this.tail.prev = this.head;
+  }
+
+  private addToHead(node: ListNode<K, V>): void {
+    node.prev = this.head;
+    node.next = this.head.next;
+    this.head.next!.prev = node;
+    this.head.next = node;
+  }
+
+  private removeNode(node: ListNode<K, V>): void {
+    node.prev!.next = node.next;
+    node.next!.prev = node.prev;
+  }
+
+  private moveToHead(node: ListNode<K, V>): void {
+    this.removeNode(node);
+    this.addToHead(node);
+  }
+
+  private removeTail(): ListNode<K, V> {
+    const node = this.tail.prev!;
+    this.removeNode(node);
+    return node;
+  }
+}
+
+class ListNode<K, V> {
+  constructor(
+    public key: K,
+    public value: V,
+    public prev: ListNode<K, V> | null = null,
+    public next: ListNode<K, V> | null = null
+  ) {}
+}
+
+// -- Example ------------------------------------------------------
+const cache = new LRUCache<string, number>(3);
+cache.put('a', 1);
+cache.put('b', 2);
+cache.put('c', 3);
+console.log('Get a:', cache.get('a')); // 1 — moves 'a' to head
+cache.put('d', 4); // evicts 'b' (LRU)
+console.log('Get b (evicted):', cache.get('b')); // -1
+console.log('Cache size:', cache.size()); // 3
+```
+
+### TypeScript: Cache-Aside Pattern (Read/Write-Through, Write-Behind)
+
+This class implements the three major cache access patterns — cache-aside, read-through, and write-behind — with configurable TTL and batch flush.
+
+```typescript
+interface DataStore<K, V> {
+  get(key: K): Promise<V | null>;
+  set(key: K, value: V): Promise<void>;
+  delete(key: K): Promise<void>;
+}
+
+class CacheAside<K, V> {
+  constructor(
+    private cache: LRUCache<K, V>,
+    private store: DataStore<K, V>,
+    private ttlMs: number = 60000
+  ) {}
+
+  async read(key: K): Promise<V | null> {
+    const cached = this.cache.get(key);
+    if (cached !== -1) return cached as V;
+    const value = await this.store.get(key);
+    if (value !== null) {
+      this.cache.put(key, value);
+      setTimeout(() => this.cache.delete(key), this.ttlMs);
+    }
+    return value;
+  }
+
+  async write(key: K, value: V): Promise<void> {
+    await this.store.set(key, value);
+    this.cache.delete(key); // invalidate, don't update (race condition safe)
+  }
+
+  async invalidate(key: K): Promise<void> {
+    this.cache.delete(key);
+  }
+}
+
+class ReadThroughCache<K, V> {
+  constructor(
+    private cache: LRUCache<K, V>,
+    private loader: (key: K) => Promise<V | null>,
+    private ttlMs: number = 60000
+  ) {}
+
+  async get(key: K): Promise<V | null> {
+    const cached = this.cache.get(key);
+    if (cached !== -1) return cached as V;
+    const value = await this.loader(key);
+    if (value !== null) {
+      this.cache.put(key, value);
+      setTimeout(() => this.cache.delete(key), this.ttlMs);
+    }
+    return value;
+  }
+}
+
+class WriteBehindCache<K, V> {
+  private writeQueue: Map<K, V> = new Map();
+  private flushTimer: ReturnType<typeof setInterval> | null = null;
+  private flushing = false;
+
+  constructor(
+    private cache: LRUCache<K, V>,
+    private store: DataStore<K, V>,
+    private flushIntervalMs: number = 5000,
+    private batchSize: number = 100
+  ) {
+    this.flushTimer = setInterval(() => this.flush(), this.flushIntervalMs);
+  }
+
+  async write(key: K, value: V): Promise<void> {
+    this.cache.put(key, value);
+    this.writeQueue.set(key, value);
+    if (this.writeQueue.size >= this.batchSize) {
+      await this.flush();
+    }
+  }
+
+  async read(key: K): Promise<V | null> {
+    const cached = this.cache.get(key);
+    if (cached !== -1) return cached as V;
+    return this.store.get(key);
+  }
+
+  private async flush(): Promise<void> {
+    if (this.flushing || this.writeQueue.size === 0) return;
+    this.flushing = true;
+    const batch = new Map(this.writeQueue);
+    this.writeQueue.clear();
+    for (const [key, value] of batch) {
+      try { await this.store.set(key, value); } catch (e) {
+        this.writeQueue.set(key, value); // re-queue on failure
+      }
+    }
+    this.flushing = false;
+  }
+
+  destroy(): void {
+    if (this.flushTimer) clearInterval(this.flushTimer);
+    this.flush();
+  }
+}
+
+// -- Example: Cache-aside usage ----------------------------------
+// const store: DataStore<string, string> = { get: async k => null, set: async (k, v) => {}, delete: async k => {} };
+// const aside = new CacheAside(new LRUCache(100), store, 30000);
+// const val = await aside.read('user:42');
+```
+
+### TypeScript: Redis Sentinel (Failover Simulation)
+
+This class simulates the Redis Sentinel failover process — master election, replica promotion, and quorum-based decision making.
+
+```typescript
+interface SentinelNode {
+  id: string;
+  alive: boolean;
+  masterId: string | null;
+  votesFor: string | null;
+  lastHeartbeat: number;
+  configEpoch: number;
+}
+
+class RedisSentinel {
+  private sentinels: Map<string, SentinelNode> = new Map();
+  private master: string | null = null;
+  private replicas: Set<string> = new Set();
+  private failoverInProgress = false;
+
+  constructor(private quorum: number = 2) {}
+
+  addSentinel(id: string): void {
+    this.sentinels.set(id, { id, alive: true, masterId: null, votesFor: null, lastHeartbeat: Date.now(), configEpoch: 0 });
+  }
+
+  setMaster(sentinelId: string, masterId: string): void {
+    this.master = masterId;
+    const s = this.sentinels.get(sentinelId);
+    if (s) s.masterId = masterId;
+  }
+
+  addReplica(replicaId: string): void {
+    this.replicas.add(replicaId);
+  }
+
+  markDown(nodeId: string): void {
+    const s = this.sentinels.get(nodeId);
+    if (s) s.alive = false;
+  }
+
+  markUp(nodeId: string): void {
+    const s = this.sentinels.get(nodeId);
+    if (s) s.alive = true;
+  }
+
+  heartbeat(): void {
+    for (const [, s] of this.sentinels) {
+      if (s.alive) s.lastHeartbeat = Date.now();
+    }
+  }
+
+  detectFailure(timeoutMs: number = 30000): string[] {
+    const now = Date.now();
+    const failed: string[] = [];
+    for (const [id, s] of this.sentinels) {
+      if (s.alive && now - s.lastHeartbeat > timeoutMs) {
+        s.alive = false;
+        failed.push(id);
+      }
+    }
+    return failed;
+  }
+
+  startElection(): { winner: string | null; votes: Map<string, number> } {
+    const votes = new Map<string, number>();
+    const alive = [...this.sentinels.values()].filter(s => s.alive);
+
+    for (const s of alive) {
+      const votedFor = alive[Math.floor(Math.random() * alive.length)].id;
+      s.votesFor = votedFor;
+      votes.set(votedFor, (votes.get(votedFor) ?? 0) + 1);
+    }
+
+    let winner: string | null = null;
+    let maxVotes = 0;
+    for (const [candidate, count] of votes) {
+      if (count > maxVotes && count >= this.quorum) {
+        maxVotes = count;
+        winner = candidate;
+      }
+    }
+    return { winner, votes };
+  }
+
+  failover(): { success: boolean; newMaster: string | null; steps: string[] } {
+    const steps: string[] = [];
+    steps.push('SDOWN: Sentinel detected master failure');
+
+    const { winner, votes } = this.startElection();
+    steps.push(`Election: ${[...votes.entries()].map(([k, v]) => `${k}=${v}`).join(', ')}`);
+
+    if (!winner) {
+      steps.push('FAIL: No sentinel reached quorum');
+      return { success: false, newMaster: null, steps };
+    }
+
+    if (this.replicas.size === 0) {
+      steps.push('FAIL: No replicas available for promotion');
+      return { success: false, newMaster: null, steps };
+    }
+
+    const replicaList = [...this.replicas];
+    const promoted = replicaList[Math.floor(Math.random() * replicaList.length)];
+    this.master = promoted;
+    this.failoverInProgress = true;
+    steps.push(`PROMOTE: Replica ${promoted} promoted to master`);
+
+    for (const rep of replicaList) {
+      if (rep !== promoted) {
+        steps.push(`REPLICAOF: ${rep} now replicates from ${promoted}`);
+      }
+    }
+
+    this.failoverInProgress = false;
+    steps.push('OK: Failover complete');
+    return { success: true, newMaster: promoted, steps };
+  }
+
+  isHealthy(): boolean {
+    const alive = [...this.sentinels.values()].filter(s => s.alive).length;
+    return alive >= this.quorum && this.master !== null;
+  }
+}
+
+// -- Example ------------------------------------------------------
+const sentinel = new RedisSentinel(2);
+for (let i = 0; i < 3; i++) sentinel.addSentinel(`sentinel-${i}`);
+sentinel.setMaster('sentinel-0', 'redis-master-0');
+sentinel.addReplica('redis-replica-1');
+sentinel.addReplica('redis-replica-2');
+
+console.log('=== Simulating master failure ===');
+sentinel.markDown('sentinel-0');
+const result = sentinel.failover();
+result.steps.forEach(s => console.log('  -', s));
+console.log('New master:', result.newMaster);
+```
+
+### Cache Architecture Patterns
+
+```mermaid
+flowchart TD
+    classDef cache fill:#4a90d9,color:#fff,stroke:#2c5f8a,stroke-width:2px
+    classDef db fill:#7ed321,color:#fff,stroke:#4a8c14,stroke-width:2px
+    classDef client fill:#f5a623,color:#fff,stroke:#c47f12,stroke-width:2px
+    classDef infra fill:#9013fe,color:#fff,stroke:#5c0e9e,stroke-width:2px
+
+    subgraph Cache_Aside
+        CA_CLIENT[Application]:::client --> CA_CACHE[Redis/Memcached]:::cache
+        CA_CLIENT --> CA_DB[(Database)]:::db
+        CA_CACHE -.->|Miss| CA_DB
+        CA_DB -.->|Populate| CA_CACHE
+    end
+
+    subgraph Read_Write_Through
+        RT_CLIENT[Application]:::client --> RT_CACHE[Cache Layer]:::cache
+        RT_CACHE --> RT_DB[(Database)]:::db
+    end
+
+    subgraph Write_Behind
+        WB_CLIENT[Application]:::client --> WB_CACHE[Cache Layer]:::cache
+        WB_CACHE -.->|Async Batch| WB_DB[(Database)]:::db
+        WB_CACHE --> WB_QUEUE[Write Queue]:::infra
+        WB_QUEUE -.->|Periodic Flush| WB_DB
+    end
+
+    subgraph Refresh_Ahead
+        RA_CLIENT[Application]:::client --> RA_CACHE[Cache Layer]:::cache
+        RA_CACHE -.->|Near Expiry| RA_DB[(Database)]:::db
+        RA_DB -.->|Async Refresh| RA_CACHE
+    end
+
+    subgraph CDN_Caching
+        CDN_USER[User Browser]:::client --> CDN_EDGE[CDN Edge]:::infra
+        CDN_EDGE --> CDN_ORIGIN[Origin Server]:::infra
+        CDN_EDGE -.->|Cache Hit| CDN_USER
+        CDN_ORIGIN -.->|Cache Miss| CDN_EDGE
+    end
+
+    subgraph Eviction_Policies
+        EV_LRU[LRU: Recently Used]:::cache
+        EV_LFU[LFU: Frequently Used]:::cache
+        EV_ARC[ARC: Adaptive]:::cache
+        EV_TTL[TTL: Time-Based]:::cache
+    end
+```
+
+### Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Cache what you measure, not everything | Profile read patterns first — cache only data with high read-to-write ratio (>10:1) and temporal locality |
+| Cache-aside is the safest default | Application manages both cache and DB; cache failure degrades gracefully to direct DB reads |
+| LRU works for most workloads but is vulnerable to scans | Use ARC or 2Q if your workload has periodic batch scans that would evict hot data |
+| Thundering herd requires both locking and early expiration | Use mutex for cold-start protection; use XFetch (ß=1.5) for smooth pre-expiration of hot keys |
+| Invalidate, don't update | Cache invalidation (delete) is race-condition safe; direct cache updates risk writing stale values |
+| TTL provides bounded staleness | Set TTL = acceptable staleness window, not "how long data is valid" |
+| Multi-tier caching reduces latency by 10-100x | L1 (in-process) for hot keys, L2 (Redis) for warm data, L3 (DB/CDN) for cold reads |
+
+### Case Study
+
+**Twitter's Cache Architecture Evolution.** Twitter's caching infrastructure evolved through three distinct phases as the platform grew from 10M to 330M MAU. Phase 1 (2009): A single Redis instance cached user timelines with cache-aside pattern — each tweet read went to Redis, missed tweets were fetched from MySQL. This worked until a single celebrity tweet caused 50K QPS on a single cache key, melting down the Redis instance. Phase 2 (2011): Twitter deployed Twemproxy (Nutcracker), a proxy layer that distributed cache requests across 100+ Memcached nodes using consistent hashing with virtual nodes. This solved the sharding problem but introduced connection-exhaustion issues — each of 5,000 app servers opened connections to every Memcached node, totaling 500K connections.
+
+**Phase 3 (2013-Present):** Twitter adopted a three-tier cache architecture. L1: Local in-process cache (Guava) on each app server for the hottest 1% of keys (5ms latency, 50MB per server). L2: Twemproxy-managed Redis Cluster with 256 nodes for warm data (5-10ms latency, 250GB total). L3: MySQL with replica reads for cache misses and cold data. The key innovation was probabilistic early expiration (XFetch with ß=1.0) combined with a distributed mutex per key — this eliminated the thundering herd problem entirely. When a key approaches TTL expiry (~80% age), each app server probabilistically decides to refresh; the mutex ensures only one server actually queries MySQL. This smoothed cache reloads from spiky (all servers at TTL boundary) to uniform across the TTL window.
+
+**Business Impact.** The multi-tier cache reduced p99 read latency from 45ms to 8ms and cut MySQL read load by 94%. Twitter's cache infrastructure now handles 300B+ reads per day with a 98.7% overall hit rate. The Twemproxy connection aggregation reduced total cache connections from 500K to 8K, freeing OS resources and eliminating connection-timeout errors. This case demonstrates that caching at scale requires not just the right data structure (LRU with O(1) operations) but the right architecture (tiered, with XFetch for thundering herd prevention and consistent hashing for elastic scaling).
+
+## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which caching pattern is the most common and flexible? | Write-through | Read-through | Cache-aside | Write-behind | **C** |
+| 2 | What is the primary vulnerability of LRU eviction? | High memory usage | Scan attacks | Slow performance | Complexity | **B** |
+| 3 | The XFetch algorithm prevents which problem? | Cache poisoning | Memory fragmentation | Thundering herd | Cache stampede | **C** |
+| 4 | Why should you invalidate rather than update cache on writes? | Invalidating is faster | Avoids race conditions | Reduces memory usage | Simplifies TTL | **B** |
+| 5 | What does Facebook's TAO cache specialize in? | Static assets | User sessions | Graph associations | API responses | **C** |
+
 ## Summary
 
 - Caching exploits temporal and spatial locality. A 90%+ hit rate indicates a well-tuned cache; below 85% the cache may be adding complexity without proportional benefit.
@@ -921,49 +1347,60 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ## Exercises
 
+<details>
+<summary>Review Questions — Click to expand</summary>
+
 ### Review Questions (4-5)
 
 1. Explain the difference between temporal and spatial locality. Provide an example of each from a typical web application workload.
+   **Solution:** Temporal locality: a user's session data accessed on every page load (recently accessed, likely again soon). Spatial locality: loading a page of 50 search results from an array (adjacent data, likely accessed together).
 
 2. What is the "scan attack" vulnerability in LRU caches and how does LFU mitigate it?
+   **Solution:** A scan attack iterates through many unique keys, evicting all hot data from an LRU cache. LFU mitigates this because one-time scans have low frequency counts, so hot frequently-accessed items remain cached despite the scan.
 
 3. Under what conditions would you choose Write-behind (write-back) over Write-through? What risks does this choice introduce?
+   **Solution:** Choose Write-behind when write throughput is critical and some data loss is acceptable (logging, metrics, analytics). Risk: cache failure before flush causes permanent data loss. Write-behind also introduces a consistency window where DB lags behind cache.
 
 4. Describe the XFetch algorithm. Why does it prevent the thundering herd problem while still providing fresh data?
+   **Solution:** XFetch probabilistically refreshes cache entries before TTL expiry using a probability function based on entry age. With ß=1.0, the expected number of concurrent recomputations at TTL boundary ≈ 1, eliminating the herd while ensuring fresh data is loaded smoothly over time.
 
 5. What is the difference between event-driven cache invalidation and TTL-based invalidation? When would you use each?
+   **Solution:** TTL-based invalidation automatically evicts entries after a fixed time (bounded staleness, simple). Event-driven invalidation uses CDC or application events to immediately invalidate on data change (near-instant, but requires message broker). Use TTL for data with natural expiration (sessions); use event-driven for data where freshness is critical (prices, inventory).
+
+</details>
+
+<details>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems (3-4)
 
 1. Implement a thread-safe LRU cache in Python or JavaScript with a capacity of 1000 entries. The cache should support get(key) and put(key, value) operations in O(1) time. Use the doubly-linked-list approach described in the chapter.
+   **Solution:** Use a Map for O(1) key lookups and a doubly linked list for O(1) eviction. On get: move accessed node to head. On put: if key exists, update and move to head; if new and at capacity, remove tail (LRU) and add new node at head. A TypeScript implementation is provided in this chapter's TS section.
 
 2. Design a caching strategy for a product catalog API. Products are read 10,000x more often than written. Product prices change rarely but must be reflected within 30 seconds. Propose a caching pattern, eviction policy, TTL, and invalidation mechanism.
+   **Solution:** Cache-aside pattern. LRU eviction (products have temporal locality). TTL = 30 seconds (matches freshness requirement). Invalidation: on price update, delete cache key so next read fetches fresh data. For popular products, consider write-through to avoid cache miss latency.
 
 3. A cache with a 90% hit rate serves 50,000 QPS. Each cache hit takes 5ms (Redis). Each cache miss takes 100ms (DB query). Calculate the average response time. If the hit rate drops to 70% due to a misconfigured eviction policy, what is the new average response time?
+   **Solution:** At 90%: avg = 0.9 * 5ms + 0.1 * 100ms = 4.5 + 10 = 14.5ms. At 70%: avg = 0.7 * 5ms + 0.3 * 100ms = 3.5 + 30 = 33.5ms. A 20% hit rate drop causes a 2.3x increase in average response time.
 
 4. You have a 10-node Redis Cluster. Each node has 8 GB memory. Keys are 1 KB average. Compute the maximum number of keys the cluster can hold. Assuming 20-byte key names, what percentage of memory is overhead?
+   **Solution:** Total memory = 10 × 8 GB = 80 GB = 80 × 10^9 bytes. Max keys = 80 × 10^9 / 1024 ≈ 78.1M keys. Overhead per key: Redis dict entry (~64 bytes) + key (20 bytes) + value pointer (~8 bytes) + SDS overhead (~16 bytes) ≈ 108 bytes. Data = 1024 bytes, total per key ≈ 1132 bytes. Overhead % = 108/1132 ≈ 9.5%.
+
+</details>
+
+<details>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem (1)
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 You are designing the caching infrastructure for a real-time news aggregation platform. The platform ingests 10,000 articles per minute from sources worldwide and serves 100M daily active users. Each user sees a personalized feed.
 
-The cache must handle:
-- **Global hot articles:** 50 articles that receive 80% of reads (viral content).
-- **Per-user timelines:** Each user's personalized feed, assembled from followed sources.
-- **Category pages:** /technology, /sports, /world — refreshed every 60 seconds.
-- **Article content:** Full text of 5M+ articles, stored in S3, indexed in Elasticsearch.
+**Solution Outline:**
+1. **Three-tier cache:** CDN (Cloudflare) for static assets and top 50 viral articles (TTL=30s). Redis Cluster (distributed) for category pages (TTL=60s) and per-user timeline fragments (TTL=10s). Local in-process cache (Guava/Caffeine) for the hottest 0.1% of articles and user sessions.
+2. **Eviction policies:** CDN: LRU. Redis: ARC (resists scan attacks from breaking news — new articles don't evict hot viral data). Local: LRU with small capacity (10K entries).
+3. **Thundering herd:** For viral articles, use a two-tier approach: (a) Dedicated "hot cache" with longer TTL and pre-warming on trending detection; (b) XFetch (ß=1.0) for the general cache. On viral detection, proactively pre-compute and push to CDN edge.
+4. **Personalization caching:** Cache per-user timeline fragments by computed hash of follow-sources. Invalidate on new article from followed source. Use write-through to ensure consistency within 10s.
+5. **Cache warming:** On new DC deployment, replay the last 24 hours of cache writes from the existing DC at 10% of peak rate. Prioritize viral articles and top 1% of users. Use a dedicated warming service with rate limiting to avoid origin overload.
+6. **CDN cost:** Daily reads = 100M × 50 (assume 50 items/user) = 5B reads. Static: 5B × 0.8 × 200KB = 800 TB/day. Dynamic: 5B × 0.2 × 50KB = 50 TB/day. Total = 850 TB/day × $0.02 = $17,000/day. Optimizations: (a) Use image CDN with WebP/AVIF compression (reduces 30%); (b) Implement Brotli compression for article content (reduces 50%); (c) Tiered CDN with regional edge caching.
 
-Answer the following:
-
-1. **Design a three-tier cache hierarchy** (CDN tier, distributed caching tier, local caching tier). Specify what data lives at each tier and why.
-
-2. **Choose an eviction policy for each tier.** Justify each choice. For the distributed caching tier, consider that a breaking news event triggers a massive scan of new articles — how does your eviction policy handle this?
-
-3. **Solve the thundering herd for viral articles.** When a "Article 42" goes viral, 1M users may request it simultaneously. Design a solution using both probabilistic early expiration and a dedicated "viral article" hot cache.
-
-4. **Handle personalization latency.** Per-user timelines are assembled by a fan-out service that merges articles from followed sources. Computing a full timeline on every request is expensive (500ms DB/ES). Compute a caching strategy that balances freshness (users expect to see articles within 10 seconds) with cache efficiency.
-
-5. **Design a cache warming strategy for new data center deployment.** When a new region comes online, its caches start cold. How do you pre-warm the global hot articles without overwhelming the origin database?
-
-6. **Analyze the CDN cost.** If 80% of read traffic is for images and static assets (average 200KB), and 20% is for article content (average 50KB), compute the daily CDN egress cost at $0.02/GB. Propose a caching strategy to reduce it.
+</details>

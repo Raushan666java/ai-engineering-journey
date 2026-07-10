@@ -47,6 +47,57 @@ flowchart LR
     F --> F3[RSTP Convergence]
 ```
 
+### Learning Bridge Forwarding Decision
+
+```mermaid
+flowchart TD
+    FRAME["Frame arrives on port P<br/>Src MAC = S, Dst MAC = D"] --> LEARN["Learn: table[S] = P<br/>(create or refresh)"]
+    
+    LEARN --> LOOKUP{"Lookup D in<br/>MAC table?"}
+    
+    LOOKUP -->|"Not found"| FLOOD["Flood: forward to all ports<br/>except ingress port P"]
+    LOOKUP -->|"Found on port Q"| CHECK{"Q == P?"}
+    
+    CHECK -->|"Yes (same segment)"| FILTER["Filter: discard frame<br/>(destination local)"]
+    CHECK -->|"No"| FORWARD["Forward: send to port Q only"]
+
+    subgraph Aging["Aging Timer (default 300s)"]
+        AGE["Every 300s: remove<br/>entries older than threshold"]
+        MOBILITY["Station moved?<br/>New entry overwrites old<br/>(different port)"]
+    end
+
+    style FRAME fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style FLOOD fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style FILTER fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style FORWARD fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style AGE fill:#fce4ec,stroke:#c62828,stroke-width:1px
+    style MOBILITY fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+```
+
+### STP Port State Machine and Convergence
+
+```mermaid
+sequenceDiagram
+    participant RP as Root Port
+    participant DP as Designated Port
+    participant AP as Alternate Port
+    participant N as Network Event
+
+    N->>RP: Link failure detected
+    RP->>DP: BPDU: root bridge info
+    DP->>AP: Proposal (superior BPDU)
+    AP->>DP: Agreement
+    Note over DP,AP: Proposal-Agreement handshake (RSTP)
+    
+    DP->>DP: Synced → forwarding state
+    Note over AP: RSTP: 1-3s<br/>STP: 30-50s
+
+    AP->>RP: Alternate port becomes root
+    RP->>DP: Forwarding state
+
+    Note over RP,AP: Convergence complete — loop-free topology
+```
+
 ---
 
 ## 5.1 Ethernet Frame Format
@@ -973,6 +1024,84 @@ if __name__ == "__main__":
 | Store-and-forward underrun | Frame arrives slower than egress requires | Backpressure or pause frames (802.3x flow control) |
 | Cut-through with speed mismatch | Ingress 1G, egress 100M → must buffer entire frame | Fall back to store-and-forward automatically |
 | STP blocking for learning | STP blocks port → no MAC learning occurs on that port | Port must transition through learning state first |
+
+### TypeScript Implementation: Switch Forwarding Table
+
+```typescript
+interface MacEntry {
+  mac: string;
+  port: number;
+  timestamp: number;
+}
+
+class SwitchForwardingTable {
+  private table: Map<string, MacEntry> = new Map();
+  private readonly agingTimeMs: number;
+  private readonly maxEntries: number;
+
+  constructor(agingTimeMs: number = 300_000, maxEntries: number = 8192) {
+    this.agingTimeMs = agingTimeMs;
+    this.maxEntries = maxEntries;
+  }
+
+  learn(mac: string, port: number): void {
+    const existing = this.table.get(mac);
+    if (existing && existing.port === port) {
+      existing.timestamp = Date.now(); // refresh
+      return;
+    }
+    if (this.table.size >= this.maxEntries) {
+      this.evictOldest();
+    }
+    this.table.set(mac, { mac, port, timestamp: Date.now() });
+    console.log(`Learned: ${mac} → port ${port}`);
+  }
+
+  lookup(mac: string): number | null {
+    const entry = this.table.get(mac);
+    if (!entry) return null;
+    if (Date.now() - entry.timestamp > this.agingTimeMs) {
+      this.table.delete(mac);
+      return null;
+    }
+    return entry.port;
+  }
+
+  processFrame(srcMac: string, dstMac: string, ingressPort: number): string {
+    this.learn(srcMac, ingressPort);
+    const egressPort = this.lookup(dstMac);
+    if (egressPort === null) {
+      return `FLOOD to all ports except ${ingressPort}`;
+    }
+    if (egressPort === ingressPort) {
+      return `FILTER (destination on same port ${ingressPort})`;
+    }
+    return `FORWARD to port ${egressPort}`;
+  }
+
+  private evictOldest(): void {
+    let oldest: MacEntry | null = null;
+    for (const entry of this.table.values()) {
+      if (!oldest || entry.timestamp < oldest.timestamp) {
+        oldest = entry;
+      }
+    }
+    if (oldest) this.table.delete(oldest.mac);
+  }
+
+  getStats(): { entries: number; agingMs: number } {
+    return { entries: this.table.size, agingMs: this.agingTimeMs };
+  }
+}
+
+// Demo
+const sw = new SwitchForwardingTable(300_000, 4);
+console.log(sw.processFrame("AA:BB:CC:DD:EE:01", "FF:FF:FF:FF:FF:FF", 1)); // Flood (unknown dst)
+console.log(sw.processFrame("AA:BB:CC:DD:EE:02", "AA:BB:CC:DD:EE:01", 2)); // Learn 02→2, forward 01→1
+console.log(sw.processFrame("AA:BB:CC:DD:EE:02", "AA:BB:CC:DD:EE:02", 2)); // Filter (same port)
+console.log(sw.processFrame("AA:BB:CC:DD:EE:03", "AA:BB:CC:DD:EE:01", 3)); // Learn 03→3, forward 01→1
+console.log(`Table entries: ${sw.getStats().entries}`);
+```
 
 ---
 
@@ -2272,6 +2401,96 @@ if __name__ == "__main__":
 | Interoperability | With all STP devices | Falls back to STP on legacy bridges |
 | Standard | IEEE 802.1D-2004 | IEEE 802.1w (merged into 802.1D-2004) |
 
+### TypeScript Implementation: STP Root Bridge Election
+
+```typescript
+interface BridgeConfig {
+  id: number;
+  priority: number;
+  mac: string;
+}
+
+interface BPDU {
+  rootId: number;
+  rootPathCost: number;
+  bridgeId: number;
+  portId: number;
+}
+
+class STPSimulator {
+  private bridges: Map<number, { config: BridgeConfig; rootId: number; rootCost: number }> = new Map();
+
+  addBridge(id: number, priority: number, mac: string): void {
+    this.bridges.set(id, {
+      config: { id, priority, mac },
+      rootId: id,    // initially each bridge thinks it's root
+      rootCost: 0,
+    });
+  }
+
+  connect(linkCost: number, ...bridgeIds: number[]): void {
+    for (const id of bridgeIds) {
+      const bridge = this.bridges.get(id)!;
+      const candidateRoot = Math.min(...bridgeIds.map(b => this.bridges.get(b)!.rootId));
+      const costToRoot = this.computeCostToBridge(id, candidateRoot, linkCost);
+      
+      if (candidateRoot < bridge.rootId ||
+          (candidateRoot === bridge.rootId && costToRoot < bridge.rootCost)) {
+        bridge.rootId = candidateRoot;
+        bridge.rootCost = costToRoot;
+      }
+    }
+  }
+
+  private computeCostToBridge(from: number, to: number, linkCost: number): number {
+    // Simplified: direct path cost
+    return linkCost;
+  }
+
+  electRoot(): number {
+    let rootId = Infinity;
+    for (const [id, bridge] of this.bridges) {
+      if (id < rootId) rootId = id;
+    }
+    // Update all bridges with true root
+    for (const [id, bridge] of this.bridges) {
+      bridge.rootId = rootId;
+    }
+    return rootId;
+  }
+
+  runElection(): void {
+    const root = this.electRoot();
+    console.log(`Root bridge elected: ${root}`);
+    for (const [id, bridge] of this.bridges) {
+      console.log(`  Bridge ${id} (prio ${bridge.config.priority}): root=${bridge.rootId}, cost=${bridge.rootCost}`);
+    }
+  }
+
+  simulateFailure(failedBridgeId: number): void {
+    console.log(`\nBridge ${failedBridgeId} fails — re-electing...`);
+    this.bridges.delete(failedBridgeId);
+    this.electRoot();
+    this.runElection();
+  }
+}
+
+// Demo: triangle topology
+const net = new STPSimulator();
+net.addBridge(1, 32768, "00:11:22:33:44:01");
+net.addBridge(2, 32768, "00:11:22:33:44:02");
+net.addBridge(3, 4096, "00:11:22:33:44:03"); // lower priority → should be root
+
+net.connect(4, 1, 2);
+net.connect(4, 2, 3);
+net.connect(19, 1, 3);
+
+console.log("Initial STP election:");
+net.runElection();
+
+net.simulateFailure(3); // Root fails → re-election
+```
+
 ---
 
 ## 5.6 Virtual LANs (VLANs)
@@ -2718,6 +2937,90 @@ if __name__ == "__main__":
 | VLAN pruning | Unnecessary broadcast flooding on trunks | VTP pruning or manual allowed-VLAN lists |
 | Router-on-a-stick bottleneck | Single trunk carries inter-VLAN traffic for many VLANs | Use L3 switch with SVIs for wire-rate routing |
 
+### TypeScript Implementation: VLAN Manager
+
+```typescript
+interface VlanConfig {
+  vlanId: number;
+  name: string;
+  memberPorts: Set<number>;
+  isNative: boolean;
+}
+
+class VLANManager {
+  private vlans: Map<number, VlanConfig> = new Map();
+  private trunkPorts: Set<number> = new Set();
+  private vlanPortMap: Map<number, number[]> = new Map(); // port → VLAN list
+
+  createVlan(vlanId: number, name: string): void {
+    if (vlanId < 1 || vlanId > 4094) throw new Error(`Invalid VLAN ID: ${vlanId}`);
+    this.vlans.set(vlanId, { vlanId, name, memberPorts: new Set(), isNative: false });
+    console.log(`Created VLAN ${vlanId} (${name})`);
+  }
+
+  assignPortToVlan(port: number, vlanId: number): void {
+    const vlan = this.vlans.get(vlanId);
+    if (!vlan) throw new Error(`VLAN ${vlanId} does not exist`);
+    vlan.memberPorts.add(port);
+    if (!this.vlanPortMap.has(port)) this.vlanPortMap.set(port, []);
+    const portVlans = this.vlanPortMap.get(port)!;
+    if (!portVlans.includes(vlanId)) portVlans.push(vlanId);
+    console.log(`Port ${port} assigned to VLAN ${vlanId} (${vlan.name})`);
+  }
+
+  setTrunk(port: number, allowedVlans: number[], nativeVlan: number = 1): void {
+    this.trunkPorts.add(port);
+    this.vlanPortMap.set(port, allowedVlans);
+    if (this.vlans.has(nativeVlan)) this.vlans.get(nativeVlan)!.isNative = true;
+    console.log(`Port ${port} configured as trunk, VLANs ${allowedVlans.join(',')}, native=${nativeVlan}`);
+  }
+
+  isFrameAllowed(vlanId: number, port: number): boolean {
+    if (this.trunkPorts.has(port)) {
+      const allowed = this.vlanPortMap.get(port) || [];
+      return allowed.includes(vlanId);
+    }
+    const vlan = this.vlans.get(vlanId);
+    return vlan ? vlan.memberPorts.has(port) : false;
+  }
+
+  getPortsInVlan(vlanId: number): number[] {
+    const vlan = this.vlans.get(vlanId);
+    return vlan ? [...vlan.memberPorts] : [];
+  }
+
+  getVlanSummary(): string[] {
+    const summary: string[] = [];
+    for (const [id, vlan] of this.vlans) {
+      summary.push(`VLAN ${id} (${vlan.name}): ${vlan.memberPorts.size} ports, native=${vlan.isNative}`);
+    }
+    return summary;
+  }
+}
+
+// Demo
+const vm = new VLANManager();
+vm.createVlan(10, "Engineering");
+vm.createVlan(20, "Marketing");
+vm.createVlan(30, "Servers");
+
+vm.assignPortToVlan(1, 10);
+vm.assignPortToVlan(2, 10);
+vm.assignPortToVlan(3, 10);
+vm.assignPortToVlan(4, 20);
+vm.assignPortToVlan(5, 20);
+vm.assignPortToVlan(6, 30);
+vm.assignPortToVlan(7, 30);
+
+vm.setTrunk(24, [10, 20, 30], 1);
+
+console.log("\nVLAN Summary:");
+console.log(vm.getVlanSummary().join('\n'));
+console.log(`\nVLAN 10 members: ports [${vm.getPortsInVlan(10)}]`);
+console.log(`Is VLAN 10 frame allowed on port 24? ${vm.isFrameAllowed(10, 24)}`);
+console.log(`Is VLAN 20 frame allowed on port 1? ${vm.isFrameAllowed(20, 1)}`);
+```
+
 ---
 
 ## 5.7 Link Aggregation (LAG/LACP)
@@ -3103,127 +3406,45 @@ ovs-appctl fdb/show ovs-br0
 
 ### Chapter Quiz
 
-**Q1.** What is the minimum Ethernet frame payload size and why?
-
-- A) 64 bytes → ensures CRC strength
-- B) 46 bytes → guarantees collision detection
-- C) 1500 bytes → maximizes throughput
-- D) 512 bytes → matches slot time
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) 46 bytes → the total frame (excluding preamble) must be at least 64 bytes for CSMA/CD to detect collisions across max network diameter.
-</details>
-
-**Q2.** Which switching mode forwards a frame before checking the FCS?
-
-- A) Store-and-Forward
-- B) Cut-Through
-- C) Fragment-Free
-- D) All of the above
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Cut-through begins forwarding after reading only the destination MAC address, before error checking.
-</details>
-
-**Q3.** How long does STP typically take to converge after a topology change?
-
-- A) 1-3 seconds
-- B) 5-10 seconds
-- C) 30-50 seconds
-- D) 2 minutes
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) 30-50 seconds → RSTP reduces this to 1-3 seconds.
-</details>
-
-**Q4.** What does the 12-bit VLAN ID field support?
-
-- A) 128 VLANs
-- B) 512 VLANs
-- C) 4094 VLANs
-- D) 65535 VLANs
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) 4094 usable VLANs (1-4094; 0 and 4095 reserved).
-</details>
-
-**Q5.** In a learning bridge, what happens when a frame arrives with a destination MAC that matches an entry on the same ingress port?
-
-- A) Forwarded to all other ports
-- B) Forwarded only to that port
-- C) Filtered (dropped)
-- D) Flooded to all ports
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) Filtered → the destination is on the same LAN segment, so no forwarding is needed.
-</details>
-
-**Q6.** How many bytes does 802.1Q add to an Ethernet frame?
-
-- A) 2 bytes
-- B) 4 bytes
-- C) 8 bytes
-- D) 12 bytes
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) 4 bytes → TPID (2B) + TCI (2B) = 4 bytes total.
-</details>
-
-**Q7.** What prevents a broadcast storm in a redundant switch topology?
-
-- A) MAC learning
-- B) Spanning Tree Protocol
-- C) LACP
-- D) Store-and-forward switching
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) STP (or RSTP) blocks redundant ports to eliminate loops, preventing broadcast storms.
-</details>
-
-**Q8.** Which LAG load-balancing method guarantees that frames in the same TCP connection use the same physical link?
-
-- A) Round-robin
-- B) Random distribution
-- C) Hash of L2/L3/L4 header fields
-- D) Least-utilized link
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) Hash of header fields (src/dst MAC, IP, port) ensures all frames in the same flow hash to the same link, preventing reordering.
-</details>
-
-**Q9.** What is the purpose of the Preamble in an Ethernet frame?
-
-- A) Detect collisions
-- B) Synchronize receiver clock
-- C) Carry VLAN information
-- D) Verify frame integrity
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) The 7-byte pattern of alternating 1s and 0s synchronizes the receiver's PLL to the sender's clock rate.
-</details>
-
-**Q10.** What is a MAC flooding attack?
-
-- A) Sending frames with random MACs to overflow the switch's MAC table
-- B) Flooding a broadcast frame to crash the network
-- C) Duplicating MAC addresses to create table conflicts
-- D) Sending ARP requests to map all switch ports
-
-<details>
-<summary>Answer&lt;/summary&gt;
-A) The attacker fills the switch's MAC table with fake entries so it falls back to flooding unknown-unicast traffic, allowing eavesdropping.
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Minimum Ethernet frame payload size? | 64 bytes | 46 bytes | 1500 bytes | 512 bytes | **B** |
+| 2 | Which switching mode forwards before checking FCS? | Store-and-Forward | Cut-Through | Fragment-Free | All | **B** |
+| 3 | Typical STP convergence time? | 1-3 s | 5-10 s | 30-50 s | 2 min | **C** |
+| 4 | How many bytes does 802.1Q add? | 2 | 4 | 8 | 12 | **B** |
+| 5 | What prevents broadcast storms in redundant topologies? | MAC learning | STP | LACP | Store-and-Forward | **B** |
 
 ---
+
+## Case Study: Data Center Leaf-Spine with VLAN Segmentation
+
+**Background:** A fintech company operates a data center with 1000 servers across 25 racks (40 servers/rack). Requirements: (a) low latency for trading applications (< 10 µs switch latency), (b) 10:1 oversubscription ratio max, (c) separate VLANs for production, staging, and management traffic.
+
+**Design — Leaf-Spine Topology:**
+1. **Leaf layer (ToR switches):** 25 switches (one per rack), each with 48×10G server ports, 4×40G uplinks to spines. Each leaf is a L2 switch with 802.1Q trunk uplinks.
+2. **Spine layer:** 4 switches, each with 48×40G ports (total 192 uplink ports — each leaf connects to all 4 spines for redundancy).
+3. **VLAN design:** VLAN 100 (production servers), VLAN 200 (staging), VLAN 300 (management), VLAN 999 (native/unused). All server-facing ports are access ports. All leaf-spine links are 802.1Q trunks carrying all four VLANs.
+
+**Oversubscription calculation:**
+- Downlink capacity per leaf: 48 × 10G = 480 Gbps
+- Uplink capacity per leaf: 4 × 40G = 160 Gbps
+- Oversubscription ratio: 480/160 = 3:1 (within the 10:1 requirement)
+
+**STP considerations:** In a leaf-spine with 4 spines, MSTP creates multiple spanning tree instances — one per VLAN group. VLAN 100 and VLAN 200 can use different spines as root, balancing load across all 4 spines.
+
+**Outcome:** 3:1 oversubscription, < 5 µs leaf-to-spine latency, VLAN isolation between environments, and full redundancy (any single spine failure reduces uplink capacity by 25 % but does not disconnect any server).
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| **Ethernet frame format** has been stable for 40+ years | Always validate FCS when capturing packets — corrupted frames should never pass a switch |
+| **Cut-through switching** minimizes latency at the cost of forwarding corrupted frames | Use only on low-BER links (fiber within same rack); fall back to store-and-forward for WAN |
+| **MAC table size** determines scalability | A 48-port switch with 1000 MACs per port needs ~48K entries — ensure hardware TCAM supports this |
+| **STP convergence** is 30-50s (STP) vs 1-3s (RSTP) | Always use RSTP or MSTP; legacy STP causes unacceptable outages during link failures |
+| **VLAN trunking** requires careful native VLAN management | Change native VLAN from 1 to an unused ID (e.g., 999) to prevent VLAN hopping attacks |
+| **LACP load balancing** must be flow-aware | Use hash of src/dst MAC + IP + port to avoid TCP reordering (never use round-robin) |
+| **Leaf-spine topology** provides predictable latency and scale | Each leaf connects to every spine — no oversubscription at spine if N × leaf_uplink ≤ spine_ports |
 
 ## Summary
 
@@ -3241,25 +3462,37 @@ Ethernet has evolved from 10 Mbps shared-media coaxial segments to 400 Gbps full
 
 ### Review Questions
 
-1. What is the difference between a hub, a bridge, and a switch?
-2. How does a learning bridge discover that a station has moved from one port to another?
-3. Why do cut-through switches sometimes forward corrupted frames?
-4. What problem does the Spanning Tree Protocol solve?
-5. How many bits does a VLAN ID have, and how many distinct VLANs can it represent?
-6. Explain the purpose of each field in the Ethernet frame format.
-7. What are the differences between STP and RSTP port states?
-8. How does LACP ensure that frames in the same flow are not reordered?
-9. What is the native VLAN on a trunk port and why does it matter?
-10. Write the pseudocode for a learning bridge's forwarding decision.
+<details>
+<summary>Solution Hints</summary>
+
+1. Hub (L1): repeats signals to all ports. Bridge (L2): connects segments, learns MACs, filters/forwards. Switch (L2): multi-port bridge with dedicated per-port bandwidth.
+2. When a frame from station S arrives on port Q different from the previously learned port P, the bridge updates the table entry to port Q.
+3. Cut-through starts forwarding after reading only the Dst MAC (first 6 bytes of frame) — it does not wait for the full frame or check FCS, so corrupted frames are forwarded.
+4. STP prevents loops in redundant bridge topologies by blocking selected ports to create a loop-free tree.
+5. 12 bits → 2^12 - 2 = 4094 usable VLANs (VLAN 0 and 4095 reserved).
+6. Preamble (7B, sync), SFD (1B, start), Dst MAC (6B), Src MAC (6B), Type/Len (2B), Payload (46-1500B), FCS (4B, CRC-32).
+7. STP: Blocking → Listening → Learning → Forwarding (30-50s). RSTP: Discarding → Learning → Forwarding (1-3s); adds alternate/backup port roles.
+8. Hash of L2/L3/L4 fields maps each flow to the same link consistently — preventing reordering within a flow.
+9. Native VLAN is the untagged VLAN on a trunk. If both sides disagree on native VLAN, traffic can cross VLANs inadvertently.
+10. See section 5.4.3 pseudocode: learn source MAC, lookup destination MAC, filter if same port, else forward, or flood if unknown.
+</details>
 
 ### Application Problems
 
-11. A switch receives three frames on port 2: source A, source B, source C. Then a frame arrives on port 5 with destination A. On which ports does the switch forward this frame? Explain.
-12. Draw a network of three switches in a triangle configuration. Assign bridge IDs and determine the root bridge, root ports, and designated ports after STP converges.
-13. A 10 Gbps link has a propagation delay of 1 microsecond per kilometer. A 100 km link carries 1500-byte frames. What is the bandwidth-delay product in frames? How many frames must be in flight to achieve 100% utilization?
-14. Configure a Cisco-style switch with VLAN 10 (Engineering, ports 1-6) and VLAN 20 (Marketing, ports 7-12). Port 24 is a trunk to another switch. Write the full configuration.
-15. For a 4-port LAG with hash function `(srcMAC[5] ^ dstMAC[5] ^ srcIP[3] ^ dstIP[3]) % 4`, trace which link is used for three different flows.
+<details>
+<summary>Solution Hints</summary>
+
+11. After learning A→2, B→2, C→2, the frame to A arrives on port 5. Dst = A is found on port 2 → forward to port 2 only.
+12. Assume Bridge IDs: B1(prio 32768:mac1), B2(32768:mac2), B3(4096:mac3). Root = B3 (lowest priority). Root ports: B1 selects port connected to B3, B2 selects port connected to B3. Designated ports: all B3 ports, the B1-B2 link's designated port is on the side closer to root.
+13. BDP = 2 × T_prop × R. T_prop = 100 km × 1 µs/km = 100 µs. BDP = 2 × 100 × 10^-6 × 10^10 = 2 × 10^6 bits = 2,000,000 bits. Frames = 2,000,000 / (1500 × 8) = 166.7 frames.
+14. VLAN 10: ports 1-6, VLAN 20: ports 7-12, int gi0/24 switchport trunk allowed vlan 10,20, switchport mode trunk.
+15. Compute hash for each flow: flow1 hash(AA:BB:CC:DD:EE:01, ...) → link 2, flow2 → link 0, flow3 → link 3.
+</details>
 
 ### Challenge Problem
 
-16. **Design a data center topology.** An enterprise has 5000 servers in rows of 50 racks, each rack containing 40 servers. Design the network topology using top-of-rack (ToR) switches, end-of-row (EoR) aggregation switches, and core switches. Specify the required port counts and speeds at each tier. Then compute the worst-case oversubscription ratio if the core has 4 switches and each ToR has 4 uplinks. Propose a modification to reduce the oversubscription ratio to 3:1 or lower.
+<details>
+<summary>Solution Hints</summary>
+
+16. **Design:** 5000 servers / 40 per rack = 125 ToRs. 125 ToRs × 4 uplinks = 500 uplinks. 4 core switches × 48 ports = 192 uplink capacity. Oversubscription = 5000 × 10G / (4 × 48 × 40G) = 50 Tbps / 7.68 Tbps ≈ 6.5:1. **Modification:** Increase to 8 core switches (96 ports × 40G = 3.84 Tbps per core → 15.36 Tbps total) → oversubscription = 50/15.36 ≈ 3.25:1. Or use 100G uplinks on ToRs with 8 core switches.
+</details>

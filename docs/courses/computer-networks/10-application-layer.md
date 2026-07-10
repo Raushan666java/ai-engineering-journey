@@ -37,6 +37,43 @@
 
 ---
 
+### Chapter Roadmap
+
+```mermaid
+flowchart TD
+    subgraph Architecture["Application Architectures"]
+        A[Client-Server] --> B[HTTP / FTP / SMTP / DNS]
+        C[Peer-to-Peer] --> D[Bittorrent / Blockchain]
+    end
+
+    subgraph Protocols["Core Application Protocols"]
+        E[HTTP/1.1] --> F[HTTP/2]
+        F --> G[HTTP/3 over QUIC]
+        H[DNS] --> I[53/UDP + TCP]
+        J[Email] --> K[SMTP push]
+        K --> L[POP3 / IMAP pull]
+        M[FTP] --> N[Control 21/TCP + Data]
+        O[DHCP] --> P[DORA on 67/68 UDP]
+        Q[SNMP] --> R[GET/SET/TRAP on 161 UDP]
+    end
+
+    subgraph Modern["Modern Protocols"]
+        S[WebSocket] --> T[Full-Duplex over HTTP Upgrade]
+        U[gRPC] --> V[HTTP/2 + Protobuf Streaming]
+    end
+
+    A --> Protocols
+    C --> Modern
+    Protocols --> Modern
+
+    classDef arch fill:#FF9800,color:#fff
+    classDef proto fill:#2196F3,color:#fff
+    classDef modern fill:#4CAF50,color:#fff
+    class A,C arch
+    class E,F,G,H,J,K,L,M,N,O,Q,R proto
+    class S,T,U,V modern
+```
+
 ## 10.1 Application Layer Architecture
 
 The application layer is Layer 7 of the OSI model and the top of the TCP/IP model. It provides network services directly to end-user applications. Two dominant architectures exist: **client-server** and **peer-to-peer (P2P)**.
@@ -806,6 +843,67 @@ class Http3Client:
 - **UDP throttling:** Some middleboxes drop UDP. Fallback to HTTP/2/1.1 required.
 - **QPACK decoder stream loss:** Losing a QPACK instruction stream corrupts header table. Stream-level retransmission handles this.
 
+### TypeScript Implementation: HTTPClient
+
+```typescript
+interface HTTPResponse {
+  statusCode: number;
+  statusText: string;
+  headers: Map<string, string>;
+  body: string;
+}
+
+class HTTPClient {
+  private readonly baseHeaders: Map<string, string>;
+
+  constructor() {
+    this.baseHeaders = new Map([
+      ['User-Agent', 'HTTPClient/1.0'],
+      ['Accept', '*/*'],
+      ['Connection', 'keep-alive'],
+    ]);
+  }
+
+  async request(method: string, url: string, body?: string): Promise<HTTPResponse> {
+    const parsed = new URL(url);
+    const headers = new Map(this.baseHeaders);
+    headers.set('Host', parsed.host);
+    if (body) {
+      headers.set('Content-Length', Buffer.byteLength(body).toString());
+      headers.set('Content-Type', 'application/x-www-form-urlencoded');
+    }
+    const req = `${method} ${parsed.pathname}${parsed.search} HTTP/1.1\r\n` +
+      Array.from(headers).map(([k, v]) => `${k}: ${v}`).join('\r\n') + '\r\n\r\n' + (body || '');
+    // In a real implementation, open TCP socket and send req
+    console.log(`[HTTP] ${method} ${url}`);
+    console.log(`[Request]\n${req}`);
+    return { statusCode: 200, statusText: 'OK', headers: new Map([['Content-Type', 'text/html']]), body: '<html></html>' };
+  }
+
+  async get(url: string): Promise<HTTPResponse> { return this.request('GET', url); }
+  async post(url: string, data: string): Promise<HTTPResponse> { return this.request('POST', url, data); }
+
+  parseResponse(raw: string): HTTPResponse {
+    const [statusLine, ...rest] = raw.split('\r\n');
+    const [, statusCodeStr, ...statusParts] = statusLine.split(' ');
+    const statusCode = parseInt(statusCodeStr);
+    const statusText = statusParts.join(' ');
+    const headerMap = new Map<string, string>();
+    let i = 0;
+    for (; i < rest.length && rest[i] !== ''; i++) {
+      const [key, ...val] = rest[i].split(': ');
+      headerMap.set(key, val.join(': '));
+    }
+    const body = rest.slice(i + 1).join('\r\n');
+    return { statusCode, statusText, headers: headerMap, body };
+  }
+}
+// Usage:
+// const client = new HTTPClient();
+// const resp = await client.get('https://example.com/index.html');
+// console.log(`Status: ${resp.statusCode} ${resp.statusText}`);
+```
+
 ---
 
 ## 10.3 DNS → Domain Name System
@@ -1114,6 +1212,81 @@ if __name__ == "__main__":
 - **DNS over HTTPS (DoH):** Browsers can bypass system resolver. Enterprise filtering must account for DoH.
 - **Stale TTL with server migration:** If TTL is 86400 (24h) and IP changes, clients get wrong IP for up to 24h. Reduce TTL before migration.
 - **EDNS0 large responses:** Responses > 512 bytes use EDNS0 extension or TCP fallback. Some firewalls drop oversized DNS.
+
+### TypeScript Implementation: DNSResolver
+
+```typescript
+type DNSRecordType = 'A' | 'AAAA' | 'CNAME' | 'MX' | 'NS' | 'TXT';
+
+interface DNSRecord {
+  name: string;
+  type: DNSRecordType;
+  ttl: number;
+  value: string;
+}
+
+interface DNSResponse {
+  question: string;
+  records: DNSRecord[];
+  authoritative: boolean;
+  recursive: boolean;
+}
+
+class DNSResolver {
+  private cache: Map<string, { records: DNSRecord[]; expiry: number }> = new Map();
+
+  private cacheKey(name: string, type: DNSRecordType): string {
+    return `${name}:${type}`;
+  }
+
+  resolve(domain: string, type: DNSRecordType = 'A'): DNSRecord[] {
+    const key = this.cacheKey(domain, type);
+    const cached = this.cache.get(key);
+    if (cached && cached.expiry > Date.now()) {
+      console.log(`[DNS] Cache hit: ${domain} ${type}`);
+      return cached.records;
+    }
+    console.log(`[DNS] Resolving ${domain} (${type})`);
+    const records = this.queryNameservers(domain, type);
+    this.cache.set(key, { records, expiry: Date.now() + (records[0]?.ttl || 300) * 1000 });
+    return records;
+  }
+
+  private queryNameservers(domain: string, type: DNSRecordType): DNSRecord[] {
+    const parts = domain.split('.');
+    if (parts.length < 2) return [];
+    const tld = parts[parts.length - 1];
+    // Simplified resolution: mock responses
+    const mockRecords: Record<string, DNSRecord[]> = {
+      'example.com': [
+        { name: 'example.com', type: 'A', ttl: 3600, value: '93.184.216.34' },
+        { name: 'example.com', type: 'MX', ttl: 3600, value: '10 mail.example.com' },
+        { name: 'example.com', type: 'NS', ttl: 3600, value: 'ns1.example.com' },
+      ],
+      'google.com': [
+        { name: 'google.com', type: 'A', ttl: 300, value: '142.250.80.4' },
+        { name: 'google.com', type: 'AAAA', ttl: 300, value: '2607:f8b0:4000:80a::200e' },
+      ],
+    };
+    return mockRecords[domain]?.filter(r => r.type === type) || [];
+  }
+
+  flushCache(): void { this.cache.clear(); }
+
+  resolveRecursive(domain: string): DNSResponse {
+    const rootServers = ['a.root-servers.net', 'b.root-servers.net'];
+    const tldServers = ['a.tld-servers.net'];
+    const authServers = ['ns1.example.com'];
+    console.log(`[DNS] Iterative: root → TLD → authoritative for ${domain}`);
+    const records = this.resolve(domain);
+    return { question: domain, records, authoritative: true, recursive: false };
+  }
+}
+// Usage:
+// const dns = new DNSResolver();
+// const records = dns.resolve('example.com', 'A');
+// console.log(`IP: ${records[0]?.value}`); // 93.184.216.34
+```
 
 ## 10.4 Email Protocols
 
@@ -1478,6 +1651,87 @@ FUNCTION imap_fetch_inbox(server, port, user, password):
 | Bandwidth | High (sends full msg) | High (downloads all) | Medium (headers first) |
 | Storage requirement | Relay storage | Client storage | Server storage |
 | Use case | MTA-to-MTA transfer | Single-device user | Multi-device, power user |
+
+### TypeScript Implementation: SMTPValidator
+
+```typescript
+interface SMTPCommand {
+  command: string;
+  args: string;
+}
+
+interface SMTPResponse {
+  code: number;
+  message: string;
+}
+
+class SMTPValidator {
+  private state: 'CONNECTED' | 'HELO_SENT' | 'MAIL_SENT' | 'RCPT_SENT' | 'DATA_SENT' | 'QUIT_SENT' = 'CONNECTED';
+  private mailFrom: string = '';
+  private rcptTo: string[] = [];
+  private readonly validCommands: Map<string, string[]> = new Map([
+    ['CONNECTED', ['HELO', 'EHLO']],
+    ['HELO_SENT', ['MAIL FROM']],
+    ['MAIL_SENT', ['RCPT TO']],
+    ['RCPT_SENT', ['RCPT TO', 'DATA', 'QUIT']],
+    ['DATA_SENT', ['QUIT']],
+    ['QUIT_SENT', []],
+  ]);
+
+  private validateCommand(cmd: string): boolean {
+    const allowed = this.validCommands.get(this.state);
+    if (!allowed) return false;
+    return allowed.some(a => cmd.startsWith(a));
+  }
+
+  processCommand(raw: string): SMTPResponse {
+    const [cmd, ...args] = raw.split(' ');
+    const argStr = args.join(' ');
+    if (!this.validateCommand(cmd.toUpperCase())) {
+      return { code: 503, message: `Bad sequence: ${cmd} not valid in ${this.state}` };
+    }
+    switch (cmd.toUpperCase()) {
+      case 'HELO':
+      case 'EHLO':
+        this.state = 'HELO_SENT';
+        return { code: 250, message: `Hello ${argStr}, pleased to meet you` };
+      case 'MAIL':
+        this.mailFrom = argStr;
+        this.state = 'MAIL_SENT';
+        return { code: 250, message: 'Mail from accepted' };
+      case 'RCPT':
+        this.rcptTo.push(argStr);
+        this.state = 'RCPT_SENT';
+        return { code: 250, message: 'Recipient accepted' };
+      case 'DATA':
+        this.state = 'DATA_SENT';
+        return { code: 354, message: 'Start mail input; end with . on a line by itself' };
+      case 'QUIT':
+        this.state = 'QUIT_SENT';
+        return { code: 221, message: 'Bye' };
+      default:
+        return { code: 502, message: 'Command not implemented' };
+    }
+  }
+
+  validateEmail(from: string, to: string[], body: string): boolean {
+    const commands = [`HELO client.example.com`, `MAIL FROM:<${from}>`,
+      ...to.map(t => `RCPT TO:<${t}>`), 'DATA', body, '.' , 'QUIT'];
+    for (const cmd of commands) {
+      const resp = this.processCommand(cmd);
+      console.log(`C: ${cmd}\nS: ${resp.code} ${resp.message}`);
+      if (resp.code >= 400) return false;
+    }
+    return true;
+  }
+
+  getState(): string { return this.state; }
+}
+// Usage:
+// const smtp = new SMTPValidator();
+// const ok = smtp.validateEmail('sender@example.com', ['recipient@example.org'], 'Subject: Test\n\nHello world');
+// console.log(`Delivery ${ok ? 'succeeded' : 'failed'}`);
+```
 
 ---
 
@@ -2935,97 +3189,33 @@ pickup → cleanup → qmgr → smtp → Network
 
 ## 10.15 Chapter Quiz
 
-1. **Which of these is NOT a characteristic of P2P architecture?**
-   - a) Self-scaling
-   - b) Centralized server always-on
-   - c) Peers act as both clients and servers
-   - d) Resilient to node failure
+| # | Question | Options | Answer | Explanation |
+|---|----------|---------|--------|-------------|
+| 1 | Which is NOT a characteristic of P2P architecture? | a) Self-scaling, b) Centralized always-on, c) Peers as clients+servers, d) Resilient | **B** | P2P is decentralized by definition. Centralized always-on servers are the defining characteristic of client-server architecture, not P2P. |
+| 2 | HTTP/2 eliminates which type of head-of-line blocking? | a) Transport HOL, b) Application HOL, c) Both, d) Neither | **B** | HTTP/2's multiplexed streams eliminate application-layer HOL (one slow request doesn't block others). However, TCP HOL still exists at the transport layer — one lost packet blocks all streams. |
+| 3 | Which DNS record type is used for email routing? | a) A, b) CNAME, c) MX, d) PTR | **C** | MX (Mail Exchange) records specify the mail server responsible for accepting email on behalf of a domain, along with a priority value. Lower priority = preferred server. |
+| 4 | Which FTP mode works through NAT without configuration? | a) Active, b) Passive, c) Both, d) Neither | **B** | In passive mode (PASV), the server opens a port and the client connects to it. This works through NAT because the client initiates both control and data connections. Active mode requires the server to connect back to the client, which NAT typically blocks. |
+| 5 | What is the correct order of DHCP DORA messages? | a) Request-Offer-Discover-Ack, b) Discover-Offer-Request-Ack, c) Discover-Request-Offer-Ack, d) Offer-Discover-Request-Ack | **B** | DORA: Discover (client broadcasts), Offer (server offers IP), Request (client requests specific offer), Acknowledge (server confirms). This four-message exchange ensures lease agreement between client and server. |
 
-2. **HTTP/2 eliminates which type of head-of-line blocking?**
-   - a) Transport layer (TCP) HOL blocking
-   - b) Application layer HOL blocking
-   - c) Both
-   - d) Neither
+## Case Study: DNS Infrastructure Migration for a Global E-Commerce Platform
 
-3. **Which DNS record type is used for email routing?**
-   - a) A
-   - b) CNAME
-   - c) MX
-   - d) PTR
+**Problem:** A global e-commerce platform serving 200+ countries with 1 billion monthly visits relied on a single anycast DNS provider. During peak shopping seasons (Black Friday, Diwali), DNS query rates exceeded 5 million queries per second (QPS), causing resolver timeouts lasting 3-8 seconds. Page load times spiked from 800ms to 4.2 seconds during these events. Additionally, a DNS cache poisoning attack on a third-party resolver resulted in 30 minutes of traffic misdirection to a fraudulent site, costing $2M in fraudulent transactions before DNSSEC validation caught the inconsistency.
 
-4. **What UDP port does DNS primarily use for queries?**
-   - a) 53
-   - b) 67
-   - c) 161
-   - d) 443
+**Solution:** The infrastructure team implemented a multi-provider DNS architecture with three independent anycast providers (Cloudflare, AWS Route53, and a dedicated DNS appliance in their own data centers). Each domain used NS record delegation with all six nameservers advertised. At the application layer, they reduced DNS dependency by implementing HTTP/3 with connection migration (QUIC connection IDs survive network changes without re-resolution), HTTP/2 server push for critical CSS/JS resources (eliminating concurrent DNS lookups for sub-resources), and a client-side DNS-over-HTTPS (DoH) resolver using stale records with background refresh (serving cached IPs even during resolver failures). They deployed DNSSEC with NSEC (not NSEC3) for all zones, pre-computing RRSIG signatures with a 14-day validity window to reduce signing overhead. For the origin infrastructure, they implemented gRPC-based internal service discovery with 5-second TTLs, bypassing DNS entirely for internal microservice-to-microservice communication.
 
-5. **Which FTP mode works through NAT without configuration?**
-   - a) Active mode
-   - b) Passive mode
-   - c) Both
-   - d) Neither
+**Outcome:** DNS resolution time remained under 20ms during peak traffic (down from 3-8s). The multi-provider approach achieved 99.999% DNS availability (down from 99.9% with single provider). Stale DNS record serving eliminated resolution failures entirely — zero downtime from resolver outages in 18 months of operation. DNSSEC blocked 12 cache poisoning attempts in the first quarter. The gRPC-based internal service mesh reduced inter-service DNS resolution latency from 50ms to under 1ms, and the HTTP/3 deployment reduced page load time by 22% on 3G/4G mobile connections due to connection migration surviving cellular handoffs. The combined infrastructure cost increased by 35%, but annual revenue loss from DNS-related downtime dropped from $8M to $0.
 
-6. **What is the correct order of DHCP DORA messages?**
-   - a) Request, Offer, Discover, Acknowledge
-   - b) Discover, Offer, Request, Acknowledge
-   - c) Discover, Request, Offer, Acknowledge
-   - d) Offer, Discover, Request, Acknowledge
+## Practical Takeaways
 
-7. **Which protocol uses a separate control and data connection?**
-   - a) HTTP
-   - b) SMTP
-   - c) FTP
-   - d) SSH
-
-8. **Which HTTP version introduced multiplexing over a single TCP connection?**
-   - a) HTTP/1.0
-   - b) HTTP/1.1
-   - c) HTTP/2
-   - d) HTTP/3
-
-9. **What is the main advantage of IMAP over POP3?**
-   - a) Faster downloads
-   - b) Server-side message storage and folders
-   - c) Better security
-   - d) Simpler protocol
-
-10. **Which protocol uses HPACK header compression?**
-    - a) HTTP/1.1
-    - b) HTTP/2
-    - c) HTTP/3
-    - d) SMTP
-
-11. **What is the purpose of the Sec-WebSocket-Key in a WebSocket handshake?**
-    - a) Encryption key exchange
-    - b) Proves the server understands WebSocket protocol
-    - c) Authentication
-    - d) Compression negotiation
-
-12. **Which SSH feature allows encryption of other protocols?**
-    - a) SCP
-    - b) Port forwarding
-    - c) SFTP
-    - d) Public key authentication
-
-13. **Which SNMP version adds encryption and authentication?**
-    - a) SNMPv1
-    - b) SNMPv2c
-    - c) SNMPv3
-    - d) SNMPv4
-
-14. **What transport protocol does gRPC use?**
-    - a) TCP (raw)
-    - b) HTTP/2
-    - c) QUIC
-    - d) UDP
-
-15. **Which HTTP/3 feature allows connections to survive IP address changes?**
-    - a) Multiplexing
-    - b) Connection migration
-    - c) 0-RTT
-    - d) QPACK
-
-**Answers:** 1-b, 2-b, 3-c, 4-a, 5-b, 6-b, 7-c, 8-c, 9-b, 10-b, 11-b, 12-b, 13-c, 14-b, 15-b
+| Takeaway | Application |
+|----------|-------------|
+| **Multi-provider DNS** with independent anycast providers | Use at least 2-3 DNS providers with overlapping NS records for high availability |
+| **Stale DNS serving** prevents downtime during resolver failures | Serve cached records past TTL during resolver outages; refresh in background |
+| **HTTP/3 connection migration** eliminates DNS re-resolution on network change | Enable QUIC on mobile-facing services to survive cellular-to-WiFi handoffs |
+| **gRPC internal service mesh** bypasses DNS for microservices | Use service mesh (Istio/Linkerd) with local endpoint discovery for sub-ms resolution |
+| **DNSSEC with NSEC** prevents cache poisoning | Enable DNSSEC signing with automated key rotation; use NSEC (not NSEC3) for smaller zones |
+| **DoH/DoT** encrypts DNS queries to prevent hijacking | Deploy DNS-over-HTTPS resolvers; enterprise firewalls must account for DoH traffic |
+| **DNS TTL tuning** balances freshness vs resolver load | Reduce TTL before planned migrations; use 30-60s TTLs for critical services behind load balancers |
 
 ---
 
@@ -3059,27 +3249,104 @@ The application layer provides network services directly to end-user application
 ### Review Questions
 
 1. What is the difference between iterative and recursive DNS resolution?
+
+<details>
+<summary>Solution</summary>
+In iterative resolution, the resolver queries each server (root → TLD → authoritative) and receives referrals to the next server. The resolver does all the work. In recursive resolution, the resolver sends one query and the DNS server performs iterative queries on behalf of the resolver, returning only the final answer. Recursive resolvers handle caching; iterative servers (root/TLD/auth) do not cache for clients.
+</details>
+
 2. How does HTTP/2 multiplexing differ from HTTP/1.1 pipelining?
+
+<details>
+<summary>Solution</summary>
+HTTP/1.1 pipelining sends multiple requests on one connection but responses must be returned in order (FIFO) — a slow response blocks all subsequent responses (application-layer HOL). HTTP/2 multiplexing interleaves multiple streams over a single TCP connection, where each stream is independent. Responses can arrive out of order, eliminating application-layer HOL blocking. Additionally, HTTP/2 has binary framing, stream prioritization, and flow control per stream.
+</details>
+
 3. Why is SMTP a push protocol while HTTP is a pull protocol?
+
+<details>
+<summary>Solution</summary>
+SMTP is push because the sender's MTA initiates the TCP connection and pushes the email to the receiver's MTA. The receiver cannot pull mail from the sender. HTTP is pull because the client initiates the connection and requests (pulls) resources from the server. The server cannot push data without a prior request (except HTTP/2 server push, which is initiated in response to a client request).
+</details>
+
 4. What advantage does IMAP offer over POP3 for multi-device email access?
+
+<details>
+<summary>Solution</summary>
+IMAP keeps messages on the server, so all devices see the same mailbox state: read/unread flags, folders, and messages. POP3 downloads messages to the client and typically deletes them from the server, making multi-device access inconsistent. IMAP supports server-side search, partial fetch (download headers first), and concurrent access.
+</details>
+
 5. What is the purpose of the SNMP MIB?
+
+<details>
+<summary>Solution</summary>
+The MIB (Management Information Base) defines a hierarchical namespace (OID tree) of managed objects. Each object has a unique OID, data type, access level, and description. The MIB serves as the schema for SNMP operations — GET retrieves OID values, SET modifies writable objects, and TRAPs/INFORMs send asynchronous notifications. Without the MIB, the manager and agent would have no shared understanding of the managed data.
+</details>
+
 6. Explain why HTTP/3 eliminates head-of-line blocking while HTTP/2 does not.
+
+<details>
+<summary>Solution</summary>
+HTTP/2 runs over TCP. If a TCP segment is lost, it blocks all streams in the TCP connection (transport-layer HOL). HTTP/3 runs over QUIC (UDP), which provides independent stream delivery. A lost packet on one stream does not affect other streams because they have independent sequence number spaces. At the application layer, both HTTP/2 and HTTP/3 eliminate HOL. The difference is TCP-level HOL in HTTP/2.
+</details>
+
 7. How does WebSocket achieve full-duplex communication?
+
+<details>
+<summary>Solution</summary>
+WebSocket starts as an HTTP upgrade request (GET with Upgrade: websocket and Sec-WebSocket-Key). The server responds with 101 Switching Protocols and Sec-WebSocket-Accept. After the handshake, the TCP connection becomes a full-duplex channel using WebSocket frame format (opcode, payload length, masking key). Both client and server can send frames at any time without HTTP request-response semantics.
+</details>
+
 8. What are the four gRPC service types and when would you use each?
+
+<details>
+<summary>Solution</summary>
+(1) Unary RPC: client sends one request, server returns one response — standard RPC. (2) Server streaming: client sends one request, server returns a stream of responses — for large datasets or real-time feeds. (3) Client streaming: client sends a stream of requests, server returns one response — for file uploads or batch processing. (4) Bidirectional streaming: both sides send independent streams — for chat applications or real-time gaming.
+</details>
 
 ### Application Problems
 
-9. Trace the DNS resolution for the domain `mail.example.ac.uk` starting from an empty local resolver cache. List each query and response, identifying the server type at each step.
+9. Trace the DNS resolution for the domain `mail.example.ac.uk` starting from an empty local resolver cache.
 
-10. An HTTP/1.1 web page references 12 CSS files, 20 images, and 5 JavaScript files. Assuming persistence, how many TCP connections are needed? How does this compare with HTTP/2?
+<details>
+<summary>Solution</summary>
+Step 1: Query root server for mail.example.ac.uk → referral to .uk TLD. Step 2: Query .uk TLD → referral to ac.uk nameserver. Step 3: Query ac.uk nameserver → referral to example.ac.uk authoritative. Step 4: Query example.ac.uk authoritative → returns A/AAAA record for mail.example.ac.uk. Each step may involve additional queries for glue records (NS IP addresses). The resolver caches each response according to TTL.
+</details>
 
-11. An SMTP server receives a message for delivery to a recipient at `example.com`. Explain how the server uses MX records to determine the destination mail server. Consider the case where the DNS returns two MX records with different priorities.
+10. An HTTP/1.1 web page references 12 CSS, 20 images, and 5 JS files. How many TCP connections?
 
-12. Calculate the total bytes transferred for an HTTP/1.1 request vs HTTP/2 request for the same resource. Assume: request headers = 500 bytes (HTTP/1.1) vs 75 bytes (HPACK), response headers = 400 bytes vs 60 bytes, body = 50KB. How much bandwidth does HPACK save?
+<details>
+<summary>Solution</summary>
+HTTP/1.1 with persistence: modern browsers use 6-8 parallel connections per domain (Chrome: 6). With 37 resources (12+20+5), using 6 parallel connections: 37/6 ≈ 7 rounds of serialization per connection. However, resources on the same domain share connections — the real bottleneck is application-layer HOL blocking. HTTP/2 uses 1 connection for all 37 resources with multiplexed streams, eliminating the connection overhead and round-robin scheduling.
+</details>
 
-13. Design a simple application-layer protocol for a chat application. Define the protocol messages (connect, send, receive, disconnect), the transport protocol choice, and the message format. Explain why your design choices are appropriate.
+11. An SMTP server receives a message for `example.com`. Explain MX record usage.
+
+<details>
+<summary>Solution</summary>
+The sending MTA queries DNS for MX records of example.com. The DNS returns records with priority values: e.g., MX 10 mail1.example.com (preferred), MX 20 mail2.example.com (backup). The sending MTA connects to the lowest-priority MX (10). If connection fails, it tries the next priority (20). After connecting, the sending MTA issues HELO, MAIL FROM, RCPT TO, DATA commands. The receiving MTA accepts or rejects based on recipient policy.
+</details>
+
+12. Calculate HPACK bandwidth savings for HTTP/2 vs HTTP/1.1.
+
+<details>
+<summary>Solution</summary>
+HTTP/1.1: request headers (500) + response headers (400) + body (51200) = 52100 bytes. HTTP/2: request headers (75) + response headers (60) + body (51200) = 51335 bytes. Savings = 52100 - 51335 = 765 bytes per request (1.5%). For 1000 resources per page load: 765 KB saved. HPACK uses static/dynamic header tables and Huffman coding, with efficiency improving as the session progresses (familiar headers indexed after first occurrence).
+</details>
+
+13. Design a simple application-layer protocol for a chat application.
+
+<details>
+<summary>Solution</summary>
+Protocol: Chat over TCP with JSON framing (length-prefixed). Messages: CONNECT {user, token}, SEND {to, text, timestamp}, RECV {from, text, timestamp}, DISCONNECT {reason}. Transport: TCP for reliable, ordered message delivery. Format: 4-byte length prefix + UTF-8 JSON message. This design provides framing (no message boundary ambiguity), human-readable debugging (JSON), and simple implementation. For production, use WebSocket or gRPC streaming instead of raw TCP.
+</details>
 
 ### Challenge Problem
 
-14. **Design an application-layer protocol for a distributed social network.** The network must be decentralized (no central server), provide user discovery, support text/image/video posts, and ensure message delivery even when recipients are offline. Define the protocol messages, the server roles (if any), the addressing scheme, and the data formats. Explain how your design compares with existing protocols (DNS for discovery, SMTP-like store-and-forward for delivery, and HTTP for content retrieval).
+14. **Design an application-layer protocol for a distributed social network.**
+
+<details>
+<summary>Solution</summary>
+A decentralized social network needs: (1) User discovery: use a DHT (Kademlia-like) mapping user IDs to current IP/port, similar to how BitTorrent finds peers. (2) Content storage: IPFS (content-addressed) for posts, with CIDs referenced in the DHT. (3) Delivery: store-and-forward relay nodes (like SMTP MTAs) buffer messages for offline recipients. (4) Addressing: user@node_id format, where node_id is a public key hash. Protocol messages: PUBLISH {cid, timestamp, signature}, SUBSCRIBE {user_id}, DELIVER {cid, from, to, timestamp}, ACK {cid}. The design combines DNS-inspired DHT discovery, SMTP-inspired store-and-forward, and HTTP-inspired content retrieval via IPFS gateways. Decentralized moderation uses reputation-based filtering.
+</details>
 

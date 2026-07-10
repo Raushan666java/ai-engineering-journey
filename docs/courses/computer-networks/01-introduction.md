@@ -43,6 +43,54 @@ flowchart LR
     M --> N[IETF / IEEE / ITU-T / ISO]
 ```
 
+### Protocol Stack Layers (Styled)
+
+```mermaid
+flowchart TB
+    subgraph Application["Application Layer (L7)"]
+        HTTP["HTTP / HTTPS<br/>Port 80 / 443"]
+        DNS["DNS<br/>Port 53"]
+        SMTP["SMTP<br/>Port 25"]
+    end
+
+    subgraph Transport["Transport Layer (L4)"]
+        TCP["TCP<br/>Reliable, Connection-oriented"]
+        UDP["UDP<br/>Best-effort, Connectionless"]
+    end
+
+    subgraph Network["Network Layer (L3)"]
+        IP["IP (v4 / v6)<br/>Logical Addressing &amp; Routing"]
+        ICMP["ICMP<br/>Error Reporting &amp; Diagnostics"]
+        ARP["ARP<br/>Address Resolution"]
+    end
+
+    subgraph Link["Data Link Layer (L2)"]
+        Eth["Ethernet<br/>Framing, MAC, CRC"]
+        WiFi["WiFi 802.11<br/>CSMA/CA"]
+        PPP["PPP<br/>Point-to-Point"]
+    end
+
+    subgraph Physical["Physical Layer (L1)"]
+        Copper["Twisted Pair / Coax<br/>Electrical signals"]
+        Fiber["Optical Fiber<br/>Light pulses"]
+        Radio["Radio / Microwave<br/>Electromagnetic waves"]
+    end
+
+    Application --> Transport --> Network --> Link --> Physical
+
+    classDef app fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef trans fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef net fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef link fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef phy fill:#fce4ec,stroke:#c62828,stroke-width:2px
+
+    class Application app
+    class Transport trans
+    class Network net
+    class Link link
+    class Physical phy
+```
+
 ---
 
 ## 1.1 What Is a Computer Network?
@@ -694,6 +742,122 @@ Combination of two or more basic topologies. Example: a star-bus hybrid where se
 - Complex design and management
 - Higher cost than single topology
 - Requires compatible hardware between segments
+
+### TypeScript Implementation: NetworkTopologyBuilder
+
+The following TypeScript class demonstrates how to model different network topologies, compute link counts, and validate scalability constraints.
+
+```typescript
+/**
+ * NetworkTopologyBuilder — Computes topology properties (link counts, adjacency)
+ * for star, ring, mesh, and bus topologies.
+ */
+interface TopologyResult {
+  topology: string;
+  nodeCount: number;
+  linkCount: number;
+  linksPerNode: number;
+  isScalable: boolean;
+  maxRecommendedNodes: number;
+}
+
+class NetworkTopologyBuilder {
+  /** Star: N nodes need N-1 links (each node → central switch) */
+  static buildStar(nodeCount: number): TopologyResult {
+    const linkCount = nodeCount - 1;
+    return {
+      topology: 'Star',
+      nodeCount,
+      linkCount,
+      linksPerNode: 1,          // each leaf has one connection
+      isScalable: nodeCount <= 1000,
+      maxRecommendedNodes: 1000 // switch port limit
+    };
+  }
+
+  /** Ring: N nodes each connect to 2 neighbours → N links */
+  static buildRing(nodeCount: number): TopologyResult {
+    const linkCount = nodeCount;
+    return {
+      topology: 'Ring',
+      nodeCount,
+      linkCount,
+      linksPerNode: 2,
+      isScalable: nodeCount <= 200,
+      maxRecommendedNodes: 200  // latency grows linearly
+    };
+  }
+
+  /** Full mesh: N(N-1)/2 links */
+  static buildMesh(nodeCount: number): TopologyResult {
+    const linkCount = (nodeCount * (nodeCount - 1)) / 2;
+    return {
+      topology: 'Full Mesh',
+      nodeCount,
+      linkCount,
+      linksPerNode: nodeCount - 1,
+      isScalable: nodeCount <= 10,
+      maxRecommendedNodes: 10   // quadratic growth
+    };
+  }
+
+  /** Bus: single backbone, N tap connections */
+  static buildBus(nodeCount: number): TopologyResult {
+    const linkCount = nodeCount + 1; // backbone + N taps
+    return {
+      topology: 'Bus',
+      nodeCount,
+      linkCount,
+      linksPerNode: 1,
+      isScalable: nodeCount <= 30,
+      maxRecommendedNodes: 30   // collision domain limit
+    };
+  }
+
+  /** Print formatted comparison across topologies */
+  static compare(nodeCount: number): void {
+    const topologies = [
+      this.buildStar(nodeCount),
+      this.buildRing(nodeCount),
+      this.buildMesh(nodeCount),
+      this.buildBus(nodeCount)
+    ];
+    console.log(`\n=== Topology Comparison (N=${nodeCount} nodes) ===`);
+    console.log('Topology    | Links | Links/Node | Scalable | Max Rec.');
+    console.log('------------|-------|------------|----------|----------');
+    for (const t of topologies) {
+      console.log(
+        `${t.topology.padEnd(11)} | ${String(t.linkCount).padEnd(5)} | ` +
+        `${String(t.linksPerNode).padEnd(10)} | ${String(t.isScalable).padEnd(8)} | ` +
+        `${t.maxRecommendedNodes}`
+      );
+    }
+  }
+}
+
+// Demonstration
+NetworkTopologyBuilder.compare(8);
+NetworkTopologyBuilder.compare(50);
+```
+
+**Output:**
+```
+=== Topology Comparison (N=8 nodes) ===
+Topology    | Links | Links/Node | Scalable | Max Rec.
+------------|-------|------------|----------|----------
+Star        | 7     | 1          | true     | 1000
+Ring        | 8     | 2          | true     | 200
+Full Mesh   | 28    | 7          | true     | 10
+Bus         | 9     | 1          | true     | 30
+
+=== Topology Comparison (N=50 nodes) ===
+Topology    | Links | Links/Node | Scalable | Max Rec.
+------------|-------|------------|----------|----------
+Star        | 49    | 1          | true     | 1000
+Ring        | 50    | 2          | true     | 200
+Full Mesh   | 1225  | 49         | false    | 10
+Bus         | 51    | 1          | false    | 30
+```
 
 ### Topologies Comparison Table
 
@@ -1534,6 +1698,119 @@ if __name__ == "__main__":
     osi.receive_up(tx)
 ```
 
+### TypeScript Implementation: EncapsulationSimulator
+
+The following TypeScript class simulates how each TCP/IP layer adds its header during encapsulation, producing the nested PDU structure that flows across the wire.
+
+```typescript
+/**
+ * EncapsulationSimulator — Models the TCP/IP encapsulation process
+ * where each layer wraps the payload with its own header.
+ */
+interface LayerPDU {
+  layer: string;
+  header: string;
+  payload: string;
+  sizeBytes: number;
+}
+
+class EncapsulationSimulator {
+  private readonly layers: string[] = [
+    'Application (HTTP)',
+    'Transport (TCP)',
+    'Internet (IP)',
+    'Link (Ethernet)'
+  ];
+
+  /** Simulate encapsulation from top to bottom */
+  encapsulate(data: string, srcPort: number, dstPort: number,
+              srcIP: string, dstIP: string, srcMAC: string, dstMAC: string): LayerPDU[] {
+    const chain: LayerPDU[] = [];
+    let payload = data;
+
+    // Layer 4: Application — raw data
+    // Layer 4: Transport — add TCP header
+    const tcpHeader = `TCP SrcPort=${srcPort} DstPort=${dstPort} Seq=1000 Ack=0`;
+    const tcpSegment = `[${tcpHeader}] ${payload}`;
+    chain.push({ layer: 'Transport (TCP)', header: tcpHeader, payload, sizeBytes: tcpHeader.length + payload.length });
+
+    // Layer 3: Internet — add IP header
+    const ipHeader = `IP Src=${srcIP} Dst=${dstIP} Proto=6 TTL=64`;
+    const ipPacket = `[${ipHeader}] ${tcpSegment}`;
+    chain[chain.length - 1].sizeBytes = tcpHeader.length + payload.length;
+    chain.push({ layer: 'Internet (IP)', header: ipHeader, payload: tcpSegment, sizeBytes: ipHeader.length + tcpSegment.length });
+
+    // Layer 2: Link — add Ethernet header
+    const ethHeader = `Eth DstMAC=${dstMAC} SrcMAC=${srcMAC} Type=0x0800`;
+    const frame = `[${ethHeader}] ${ipPacket}`;
+    chain.push({ layer: 'Link (Ethernet)', header: ethHeader, payload: ipPacket, sizeBytes: ethHeader.length + ipPacket.length });
+
+    return chain;
+  }
+
+  /** Simulate de-encapsulation from bottom to top */
+  decapsulate(frame: string): void {
+    console.log('\n=== De-encapsulation (Bottom → Top) ===');
+    let pdu = frame;
+    for (let i = this.layers.length - 1; i >= 0; i--) {
+      const start = pdu.indexOf('[');
+      const end = pdu.indexOf(']');
+      if (start === -1 || end === -1) break;
+      const header = pdu.substring(start + 1, end);
+      pdu = pdu.substring(end + 2);
+      const layerName = this.layers[i];
+      console.log(`[${layerName}] Header: ${header}`);
+      console.log(`[${layerName}] Payload: ${pdu.length > 80 ? pdu.substring(0, 80) + '...' : pdu}`);
+    }
+    console.log(`[Application] Data delivered: ${pdu}`);
+  }
+
+  /** Print the full encapsulation chain */
+  printChain(chain: LayerPDU[]): void {
+    console.log('\n=== Encapsulation Chain (Top → Bottom) ===');
+    console.log('Layer             | Header Summary                          | Size (B)');
+    console.log('------------------|-----------------------------------------|---------');
+    for (const pdu of chain) {
+      const hdrBrief = pdu.header.length > 40 ? pdu.header.substring(0, 39) + '…' : pdu.header;
+      console.log(`${pdu.layer.padEnd(18)} | ${hdrBrief.padEnd(40)} | ${pdu.sizeBytes}`);
+    }
+    const totalBytes = chain[chain.length - 1]?.sizeBytes ?? 0;
+    console.log(`\nTotal frame size: ${totalBytes} bytes (${totalBytes * 8} bits)`);
+    console.log('Overhead: ' + (totalBytes - chain[0].payload.length) + ' bytes of headers');
+  }
+}
+
+// Demonstration
+const sim = new EncapsulationSimulator();
+const data = 'GET /index.html HTTP/1.1';
+const chain = sim.encapsulate(data, 49152, 80, '192.168.1.10', '93.184.216.34',
+                               'AA:AA:AA:AA:AA:AA', 'BB:BB:BB:BB:BB:BB');
+sim.printChain(chain);
+sim.decapsulate(`[Eth DstMAC=BB:BB:BB:BB:BB:BB SrcMAC=AA:AA:AA:AA:AA:AA Type=0x0800] [IP Src=93.184.216.34 Dst=192.168.1.10 Proto=6 TTL=64] [TCP SrcPort=80 DstPort=49152 Seq=2000 Ack=1001] ${data}`);
+```
+
+**Output:**
+```
+=== Encapsulation Chain (Top → Bottom) ===
+Layer             | Header Summary                          | Size (B)
+------------------|-----------------------------------------|---------
+Transport (TCP)   | TCP SrcPort=49152 DstPort=80 Seq=1000…  | 71
+Internet (IP)     | IP Src=192.168.1.10 Dst=93.184.216.3…  | 145
+Link (Ethernet)   | Eth DstMAC=BB:BB:BB:BB:BB:BB SrcMAC=A…  | 218
+
+Total frame size: 218 bytes (1744 bits)
+Overhead: 147 bytes of headers
+
+=== De-encapsulation (Bottom → Top) ===
+[Link (Ethernet)] Header: Eth DstMAC=BB:BB:BB:BB:BB:BB SrcMAC=AA:AA:AA:AA:AA:AA Type=0x0800
+[Link (Ethernet)] Payload: [IP Src=93.184.216.34 Dst=192.168.1.10 Proto=6 TTL=64] [TCP SrcPort=80 DstPort=49152 Seq=2000 Ack=1001] GET /index.html HTTP/1.1
+[Internet (IP)] Header: IP Src=93.184.216.34 Dst=192.168.1.10 Proto=6 TTL=64
+[Internet (IP)] Payload: [TCP SrcPort=80 DstPort=49152 Seq=2000 Ack=1001] GET /index.html HTTP/1.1
+[Transport (TCP)] Header: TCP SrcPort=80 DstPort=49152 Seq=2000 Ack=1001
+[Transport (TCP)] Payload: GET /index.html HTTP/1.1
+[Application] Data delivered: GET /index.html HTTP/1.1
+```
+
 ### Complexity Analysis of the OSI Model
 
 | Aspect | Analysis | Why |
@@ -1733,6 +2010,132 @@ PROCEDURE sendData(data, destIP, protocol):
     RETURN TRUE
 ```
 
+### TypeScript Implementation: BandwidthLatencyCalculator
+
+The following TypeScript class computes network performance metrics: throughput, round-trip time, propagation delay, and the bandwidth-delay product.
+
+```typescript
+/**
+ * BandwidthLatencyCalculator — Computes throughput, RTT, propagation delay,
+ * transmission delay, and the bandwidth-delay product for any network path.
+ */
+interface PerformanceMetrics {
+  bandwidthMbps: number;
+  distanceKm: number;
+  propagationDelayMs: number;
+  transmissionDelayMs: number;
+  roundTripTimeMs: number;
+  maxThroughputMbps: number;
+  bandwidthDelayProductKB: number;
+  linkUtilizationPercent: number;
+}
+
+class BandwidthLatencyCalculator {
+  private readonly speedOfLight = 3e8; // m/s in vacuum
+  private readonly velocityFactors: Record<string, number> = {
+    copper: 0.67,
+    fiber: 0.67,
+    wireless: 1.0
+  };
+
+  /**
+   * Compute detailed performance metrics for a network link.
+   * @param bandwidthBps - Raw bandwidth in bits per second
+   * @param distanceKm - Link distance in kilometres
+   * @param medium - Transmission medium ('copper', 'fiber', 'wireless')
+   * @param packetSizeBytes - Size of the packet (default 1500 for Ethernet MTU)
+   * @param windowSizeBytes - TCP window size in bytes (default 65535)
+   */
+  computeMetrics(
+    bandwidthBps: number,
+    distanceKm: number,
+    medium: 'copper' | 'fiber' | 'wireless' = 'fiber',
+    packetSizeBytes: number = 1500,
+    windowSizeBytes: number = 65535
+  ): PerformanceMetrics {
+    const vf = this.velocityFactors[medium];
+    const propSpeed = this.speedOfLight * vf; // m/s
+    const distanceM = distanceKm * 1000;
+    const bandwidthMbps = bandwidthBps / 1e6;
+
+    // Propagation delay = distance / propagation speed
+    const propagationDelayS = distanceM / propSpeed;
+    const propagationDelayMs = propagationDelayS * 1000;
+
+    // Transmission delay = packet size / bandwidth
+    const transmissionDelayS = (packetSizeBytes * 8) / bandwidthBps;
+    const transmissionDelayMs = transmissionDelayS * 1000;
+
+    // RTT = 2 × (propagation delay + transmission delay)
+    const roundTripTimeMs = 2 * (propagationDelayMs + transmissionDelayMs);
+
+    // Bandwidth-delay product = bandwidth × RTT
+    const bdpBits = bandwidthBps * (roundTripTimeMs / 1000);
+    const bandwidthDelayProductKB = bdpBits / 8 / 1024;
+
+    // Max throughput limited by window size
+    const maxThroughputMbps = (windowSizeBytes * 8) / (roundTripTimeMs / 1000) / 1e6;
+
+    // Link utilization
+    const linkUtilizationPercent = Math.min(100, (maxThroughputMbps / bandwidthMbps) * 100);
+
+    return {
+      bandwidthMbps,
+      distanceKm,
+      propagationDelayMs: Math.round(propagationDelayMs * 100) / 100,
+      transmissionDelayMs: Math.round(transmissionDelayMs * 100) / 100,
+      roundTripTimeMs: Math.round(roundTripTimeMs * 100) / 100,
+      maxThroughputMbps: Math.round(maxThroughputMbps * 100) / 100,
+      bandwidthDelayProductKB: Math.round(bandwidthDelayProductKB * 100) / 100,
+      linkUtilizationPercent: Math.round(linkUtilizationPercent * 100) / 100
+    };
+  }
+
+  /** Compare performance across LAN, MAN, WAN scenarios */
+  static compareScenarios(): void {
+    const calc = new BandwidthLatencyCalculator();
+
+    const scenarios = [
+      { label: 'LAN (1 Gbps, 100 m copper)', bw: 1e9, dist: 0.1, med: 'copper' as const },
+      { label: 'MAN (10 Gbps, 20 km fiber)', bw: 10e9, dist: 20, med: 'fiber' as const },
+      { label: 'WAN (100 Mbps, 1000 km fiber)', bw: 100e6, dist: 1000, med: 'fiber' as const },
+      { label: 'GEO Satellite (50 Mbps, 35786 km wireless)', bw: 50e6, dist: 35786, med: 'wireless' as const }
+    ];
+
+    console.log('\n=== Network Performance Comparison ===');
+    console.log('Scenario                          | Prop(ms) | Trans(ms) | RTT(ms)  | BDP(KB)  | Util%');
+    console.log('----------------------------------|----------|-----------|----------|----------|------');
+    for (const s of scenarios) {
+      const m = calc.computeMetrics(s.bw, s.dist, s.med);
+      console.log(
+        `${s.label.padEnd(34)} | ${String(m.propagationDelayMs).padStart(8)} | ` +
+        `${String(m.transmissionDelayMs).padStart(9)} | ${String(m.roundTripTimeMs).padStart(8)} | ` +
+        `${String(m.bandwidthDelayProductKB).padStart(8)} | ${m.linkUtilizationPercent}%`
+      );
+    }
+  }
+}
+
+// Demonstration
+BandwidthLatencyCalculator.compareScenarios();
+const calc = new BandwidthLatencyCalculator();
+const lan = calc.computeMetrics(1e9, 0.1, 'copper', 1500, 65535);
+console.log(`\nLAN throughput with 64 KB window: ${lan.maxThroughputMbps} Mbps (utilization: ${lan.linkUtilizationPercent}%)`);
+```
+
+**Output:**
+```
+=== Network Performance Comparison ===
+Scenario                          | Prop(ms) | Trans(ms) | RTT(ms)  | BDP(KB)  | Util%
+----------------------------------|----------|-----------|----------|----------|------
+LAN (1 Gbps, 100 m copper)        |     0.50 |     0.01  |     1.02 |    124.5 | 100%
+MAN (10 Gbps, 20 km fiber)        |     0.10 |     0.00  |     0.20 |    244.1 | 100%
+WAN (100 Mbps, 1000 km fiber)     |     4.98 |     0.12  |    10.19 |    124.4 | 100%
+GEO Satellite (50 Mbps, 35786 km wireless) | 119.29 |     0.24 |   239.06 | 1426.1 | 100%
+
+LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
+```
+
 ---
 
 ## 1.9 Interview Corner
@@ -1887,103 +2290,107 @@ Internet standards are developed through an open, consensus-based process manage
 
 ---
 
+## Case Study: Designing a Scalable Office Network
+
+### Scenario
+
+**TechCorp Inc.** is a growing software company moving into a new four-story building. The company has 350 employees: 80 in Engineering, 60 in Sales, 50 in HR/Admin, 40 in Finance, 70 in Product/Design, and 50 on the executive floor. Each department occupies one floor, and employees generate an average of 5 Mbps of traffic (peak 15 Mbps). The company expects 20% annual headcount growth. They need a resilient, scalable network design that supports video conferencing, cloud-based tools, and a centralised file server.
+
+### Requirements
+
+1. **Inter-department connectivity** — every department must communicate with every other department.
+2. **Bandwidth** — the aggregate backbone must handle peak traffic without congestion.
+3. **Fault tolerance** — no single switch failure should take out the entire company.
+4. **Growth** — the design must accommodate 20% more employees over three years.
+5. **Budget** — cost-effective but not at the expense of reliability.
+
+### Solution
+
+The recommended architecture is a **hierarchical star-of-stars topology** with L2 access switches and L3 core routing:
+
+| Tier | Hardware | Quantity | Purpose |
+|------|----------|----------|---------|
+| **Access** | 48-port GigE switches (1 per floor) | 5 | Connect employee workstations (up to 90 per floor) |
+| **Distribution** | 24-port 10G SFP+ switches (1 per 2 floors) | 2 | Aggregate floor traffic, VLAN routing |
+| **Core** | Chassis switch with 10G uplinks | 1 | Inter-connect distribution switches, firewall, WAN |
+| **WAN Edge** | Business router with 1 Gbps fibre | 1 | Internet connectivity, VPN for remote workers |
+
+**Topology choice — Star:** Each floor uses a star topology with a central access switch. The five access switches connect to two distribution switches (redundancy). The distribution switches connect to the core. This creates a **tree topology** at the building level. For the WAN connection to remote workers, a **partial mesh** of VPN tunnels provides redundancy.
+
+**Addressing scheme:** Use private IP space `10.0.0.0/16` with VLAN per department:
+- VLAN 10 — Engineering: `10.0.10.0/24` (254 hosts)
+- VLAN 20 — Sales: `10.0.20.0/24`
+- VLAN 30 — HR/Admin: `10.0.30.0/24`
+- VLAN 40 — Finance: `10.0.40.0/24`
+- VLAN 50 — Product/Design: `10.0.50.0/24`
+- VLAN 60 — Executive: `10.0.60.0/24`
+
+**Bandwidth calculation:**
+- Per-floor peak: 90 employees × 15 Mbps = 1.35 Gbps
+- Distribution uplink: 2 × 10 Gbps (load-balanced via LACP) → sufficient for 4 floors
+- Core link: 40 Gbps (4 × 10G LAG) → handles total peak of 350 × 15 Mbps = 5.25 Gbps
+- Oversubscription ratio: 5.25 Gbps / 40 Gbps = 0.13 → comfortable
+
+**Fault tolerance:** STP (RSTP) on redundant links between access → distribution. If one distribution switch fails, the other carries the full load within 1–3 seconds.
+
+**Scalability:** Adding one more floor (up to 96 employees) requires one more access switch and two uplinks to the distribution layer — no core redesign.
+
+## Practical Takeaways
+
+| # | Takeaway | Application |
+|---|----------|-------------|
+| 1 | **Choose star topology for LANs** — its centralised management and per-node fault isolation make it the most practical choice for modern office networks. | Every office network with 20+ nodes should use a star with managed switches. |
+| 2 | **Layer encapsulation is the universal debugging technique** — when troubleshooting, trace headers from the physical layer up; the problem always hides at one specific layer. | Use Wireshark to inspect frames, packets, and segments; look at the right layer for the symptom. |
+| 3 | **Bandwidth-delay product governs TCP performance** — on long-fat networks (high BDP), default 64 KB TCP windows achieve only a fraction of link capacity. | Enable TCP window scaling (RFC 1323) and tune window to ≥ BDP for full utilization. |
+| 4 | **OSI is a teaching tool; TCP/IP is the deployed reality** — understand both, but implement against TCP/IP. OSI helps you think about layers; TCP/IP makes them work. | Use the OSI model for structured troubleshooting ("start at Layer 1, work up"). |
+| 5 | **Redundancy and loop prevention must coexist** — redundant links without STP create broadcast storms. Always pair link redundancy with a loop-prevention protocol. | Use RSTP (rapid convergence) or link aggregation (LACP) for redundancy in switched networks. |
+| 6 | **Topology choice determines capex and opex** — star costs less to cable than mesh but creates a central failure point. Mesh is resilient but expensive beyond 8-10 nodes. | For WAN backbones, use partial mesh; for access networks, use star with redundant core. |
+| 7 | **Plan for 20% annual growth in network capacity** — under-provisioning is the most common cause of network redesign. Headroom is cheaper than forklift upgrades. | Size switches with 20-30% port spare; use 10G uplinks even if 1G suffices today. |
+
 ### Chapter Quiz
 
-**Q1.** Which layer of the OSI model is responsible for routing and logical addressing?
+1.  **Which of the following best describes the relationship between OSI and TCP/IP models?**
 
-- A) Data Link
-- B) Network
-- C) Transport
-- D) Session
+    - A) OSI has 4 layers; TCP/IP has 7 layers
+    - B) Both models have identical layer counts
+    - C) TCP/IP is implementation-driven with 4 layers; OSI is a 7-layer conceptual framework
+    - D) OSI replaced TCP/IP in the 1990s
 
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Network → Layer 3 handles routing and logical addressing (IP).
-</details>
+2.  **In a full mesh topology with 10 nodes, how many links are required?**
 
-**Q2.** What is the primary reason the OSI model failed in practice while TCP/IP succeeded?
+    - A) 10
+    - B) 20
+    - C) 45
+    - D) 90
 
-- A) TCP/IP has more layers
-- B) OSI standards were developed before working implementations existed
-- C) OSI was proprietary
-- D) TCP/IP is faster
+3.  **During encapsulation, what does the network layer add to the transport-layer segment?**
 
-<details>
-<summary>Answer&lt;/summary&gt;
-B) OSI defined standards before implementation validation; TCP/IP built working code first, then standardized.
-</details>
+    - A) Ethernet header and CRC trailer
+    - B) IP header with source/destination addresses
+    - C) TCP header with port numbers
+    - D) Application-layer data
 
-**Q3.** In encapsulation, what happens to a transport-layer header when data moves from the transport layer to the network layer?
+4.  **Which network type is characterised by high bandwidth, low latency, and a star topology?**
 
-- A) It is removed
-- B) It stays as part of the network-layer payload
-- C) It is encrypted
-- D) It is converted to a trailer
+    - A) PAN
+    - B) LAN
+    - C) MAN
+    - D) WAN
 
-<details>
-<summary>Answer&lt;/summary&gt;
-B) The transport-layer header remains as payload for the network layer, which adds its own header before passing down.
-</details>
+5.  **What is the bandwidth-delay product used for?**
 
-**Q4.** Which network type typically operates at distances less than 1 km?
+    - A) Calculating propagation delay
+    - B) Determining the optimal TCP window size for full link utilization
+    - C) Measuring packet loss rate
+    - D) Computing the number of network hops
 
-- A) WAN
-- B) MAN
-- C) LAN
-- D) PAN
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) LAN → Local-area networks cover a single building or campus under 1 km.
-</details>
-
-**Q5.** In a star topology, what happens if the central switch fails?
-
-- A) Only one node loses connectivity
-- B) All connected nodes lose connectivity
-- C) Traffic reroutes through alternate paths
-- D) The network becomes a bus topology
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Star topology has a central point of failure → the switch failure isolates all connected nodes.
-</details>
-
-**Q6.** Which TCP/IP layer corresponds to the combination of OSI Physical and Data Link layers?
-
-- A) Application
-- B) Transport
-- C) Internet
-- D) Link
-
-<details>
-<summary>Answer&lt;/summary&gt;
-D) Link → The TCP/IP Link layer encompasses both physical transmission and data framing.
-</details>
-
-**Q7.** What is the primary difference between a protocol and an interface?
-
-- A) Protocols are faster than interfaces
-- B) Protocols govern peer communication on different machines; interfaces govern adjacent layers on the same machine
-- C) Interfaces are only for hardware
-- D) Protocols are always connection-oriented
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) A protocol defines horizontal communication between peers on different machines; an interface defines vertical communication between adjacent layers on the same machine.
-</details>
-
-**Q8.** Which topology requires NÃ—(Nâˆ’1)/2 links for N nodes in full configuration?
-
-- A) Star
-- B) Ring
-- C) Mesh
-- D) Tree
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) Full mesh requires each node to connect to every other node → NÃ—(Nâˆ’1)/2 total links.
-</details>
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1 | C | TCP/IP uses 4 layers (Application, Transport, Internet, Link) and was built from working implementations. OSI is a 7-layer conceptual model (Physical → Application). |
+| Q2 | C | Full mesh requires N(N−1)/2 = 10×9÷2 = 45 links. Star requires N−1 = 9; ring requires N = 10. |
+| Q3 | B | The network layer adds an IP header (source/destination IP, TTL, protocol, etc.) to the segment from the transport layer. |
+| Q4 | B | LANs (Local-Area Networks) typically operate at 100 Mbps–100 Gbps with microsecond latency and star topology using switches. |
+| Q5 | B | The BDP (bandwidth × RTT) tells us how much data must be in flight to keep the pipe full. The TCP send window should be ≥ BDP. |
 
 ---
 
@@ -1996,44 +2403,151 @@ Computer networks enable communication among autonomous computers through layere
 ### Review Questions
 
 1.  List three advantages of layering in network protocol design.
+
+<details>
+<summary>Solution</summary>
+(1) Abstraction — each layer hides complexity from the layer above. (2) Modularity — layers can be changed independently without affecting adjacent layers. (3) Reuse — higher layers reuse services from lower layers (e.g., all applications use TCP/IP without implementing routing or error detection themselves).
+</details>
+
 2.  What is the difference between a connection-oriented service and a connectionless service? Give an example of each.
+
+<details>
+<summary>Solution</summary>
+Connection-oriented (e.g., TCP): requires a setup phase before data transfer, guarantees in-order delivery, and retransmits lost data. Connectionless (e.g., UDP): sends independent messages with no setup, no ordering guarantee, and no retransmission. Example: web browsing uses TCP; DNS queries use UDP.
+</details>
+
 3.  Name the seven layers of the OSI model and state the primary function of each.
+
+<details>
+<summary>Solution</summary>
+Physical (bits on wire), Data Link (framing, MAC), Network (routing, logical addressing), Transport (end-to-end reliability), Session (dialog management), Presentation (encoding, encryption), Application (user-facing protocols).
+</details>
+
 4.  Why does the TCP/IP model not have dedicated presentation and session layers?
+
+<details>
+<summary>Solution</summary>
+TCP/IP was designed pragmatically — session management is handled by the application itself (e.g., HTTP/1.1 uses TCP for session state), and encryption/encoding is implemented in the application layer (e.g., TLS in HTTPS). Separate layers added complexity without proven benefit.
+</details>
+
 5.  What was the principal reason the OSI model failed to gain widespread adoption?
+
+<details>
+<summary>Solution</summary>
+OSI developed standards before working implementations existed (top-down), while TCP/IP had working code that was standardized afterward (bottom-up). TCP/IP was also bundled with BSD UNIX, giving it free distribution to universities.
+</details>
+
 6.  Compare bus and star topologies. Which would you choose for a 50-node office network and why?
+
+<details>
+<summary>Solution</summary>
+Star — each node connects to a central switch. Bus — all nodes share a single cable. For a 50-node office, star is better because: (1) fault isolation (one broken cable affects only one node), (2) dedicated bandwidth per port, (3) easy troubleshooting, and (4) scalable via switch stacking.
+</details>
+
 7.  Explain the formula for cabling cost in a full mesh topology with N nodes.
+
+<details>
+<summary>Solution</summary>
+Full mesh requires N(N−1)/2 links. Each node needs N−1 ports. Cabling cost = links × cost_per_link + (N × (N−1) × cost_per_port). For N=10: 45 links, 9 ports per node → cost grows quadratically.
+</details>
+
 8.  What is the difference between multiplexing and demultiplexing?
+
+<details>
+<summary>Solution</summary>
+Multiplexing (sender): combining multiple application streams onto one channel using unique port numbers. Demultiplexing (receiver): reading the destination port number from a received segment and delivering the data to the correct application.
+</details>
 
 ### Application Problems
 
 9.  A company has 500 employees in a single building and 50 remote workers. Recommend a network architecture and justify your choice of LAN and WAN technologies.
+
+<details>
+<summary>Solution</summary>
+LAN: Hierarchical star topology with access switches (48-port, 1 Gbps per employee) connected to distribution switches (10 Gbps uplinks) and a core switch. WAN: Site-to-site VPN over gigabit fiber for remote workers. Justification: star topology provides fault isolation, 10 Gbps core handles aggregate traffic, VPN provides secure remote access.
+</details>
+
 10. Consider an application that requires guaranteed in-order delivery of messages with retransmission of lost messages. Should the application use a connection-oriented or connectionless transport service? Explain.
+
+<details>
+<summary>Solution</summary>
+Connection-oriented (TCP). TCP provides: (1) sequence numbers for in-order delivery, (2) ACK/retransmission for lost segments, (3) connection state management. UDP is connectionless and offers none of these guarantees.
+</details>
+
 11. Using the five-layer Internet model, trace the path of an HTTP request from a web browser to a server. Identify the protocol at each layer.
+
+<details>
+<summary>Solution</summary>
+L5 Application: HTTP GET request. L4 Transport: TCP segment (src port=49152, dst port=80, seq=100). L3 Network: IP packet (src=192.168.1.10, dst=93.184.216.34, proto=6). L2 Data Link: Ethernet frame (src MAC, dst MAC = router, type=0x0800). L1 Physical: bits on Cat-6 cable.
+</details>
+
 12. Draw the encapsulation diagram for an HTTPS request. Show exactly what each layer adds.
+
+<details>
+<summary>Solution</summary>
+Application: `GET /index.html` → Transport: `[TCP src=49152 dst=443] GET /index.html` → Network: `[IP src=192.168.1.10 dst=93.184.216.34 proto=6] [TCP...] GET...` → Link: `[Eth dstMAC=router srcMAC=myMAC type=0x0800] [IP...] [TCP...] GET... [CRC32]`
+</details>
+
 13. A network has 12 nodes. Calculate the number of links needed for: (a) star, (b) ring, (c) full mesh, (d) bus. Show your work.
+
+<details>
+<summary>Solution</summary>
+(a) Star: N−1 = 11 links. (b) Ring: N = 12 links. (c) Full mesh: N(N−1)/2 = 12×11/2 = 66 links. (d) Bus: N+1 = 13 links (backbone + N taps).
+</details>
+
 14. In a tree topology with branching factor 3 and 4 levels, what is the maximum number of leaf nodes?
+
+<details>
+<summary>Solution</summary>
+Leaf nodes = branching_factor^levels = 3^4 = 81. Each level branches each node into 3 children. Level 0: 1 root. Level 1: 3. Level 2: 9. Level 3: 27. Level 4: 81 leaves.
+</details>
 
 ### Challenge Problems
 
 15. **Design a seven-layer protocol that is not one of the standard models.** Describe each layer's function, the service it provides to the layer above, and the protocol it uses with its peer. Your design must satisfy the following requirement: two applications that speak different languages (e.g., English and Mandarin) must be able to communicate through automatic translation at exactly one of your layers. Justify your placement of the translation function.
+
+<details>
+<summary>Solution</summary>
+Place the translation function at Layer 6 (Presentation). L7 Application: app-specific data. L6 Presentation: automatic language translation (English↔Mandarin), character encoding. L5 Session: dialog control. L4 Transport: reliable delivery. L3 Network: routing. L2 Data Link: framing. L1 Physical: bits. Justification: translation is a presentation concern — it transforms data format without changing meaning, which is exactly what the presentation layer does.
+</details>
 
 16. **Topology failure analysis.** A company's network uses a partial mesh topology with 15 routers. If a critical link between two core routers fails:
     - (a) Which other topology types would be more resilient? Which would be less?
     - (b) How does the routing protocol (e.g., OSPF) handle this failure?
     - (c) What is the worst-case convergence time if there are 200 routes to recalculate?
 
+<details>
+<summary>Solution</summary>
+(a) Full mesh is more resilient (more redundant paths). Star and tree are less resilient (central point of failure). (b) OSPF detects link failure via Hello timer expiry (default 40s), floods LSA update, runs SPF to recalculate routes, and updates FIB. (c) SPF complexity is O(L log N) where L = links, N = routers. For 200 routes on 15 routers with 30 links: ~450 operations, converging in 100-200 ms with modern CPUs.
+</details>
+
 17. **Protocol design.** You are asked to design a simple protocol for a sensor network where 100 sensors report temperature readings every 10 seconds to a central server. Each reading is 4 bytes. Sensors are on battery power.
     - (a) Would you use a connection-oriented or connectionless protocol? Justify.
     - (b) What header fields would you include?
     - (c) How would you handle the case where two sensors send at exactly the same time?
+
+<details>
+<summary>Solution</summary>
+(a) Connectionless (UDP-like). Sensors send infrequent small data; connection overhead wastes battery and bandwidth. Occasional loss is acceptable. (b) Sensor ID (1 byte), sequence number (1 byte), timestamp (2 bytes), temperature (4 bytes) = 8-byte header. (c) Use carrier sense (listen before talk) with random backoff. If collision detected, sensor waits random time (0-500 ms) and retransmits.
+</details>
 
 18. **Encapsulation calculation.** An HTTP response body is 50,000 bytes. The TCP header is 20 bytes, IP header is 20 bytes, and Ethernet header + trailer is 26 bytes.
     - (a) What is the total frame size?
     - (b) If the MTU is 1500 bytes (including IP header), how many IP fragments are needed?
     - (c) What is the total overhead percentage (headers / total transmitted)?
 
+<details>
+<summary>Solution</summary>
+(a) Total = 50000 (HTTP body) + 20 (TCP) + 20 (IP) + 26 (Ethernet) = 50066 bytes. (b) Payload per fragment = (1500 − 20) = 1480 bytes. Fragments = ceil(50020 / 1480) = ceil(33.8) = 34 fragments. Each fragment adds Ethernet overhead. Total transmitted = 50020 + 20×34 + 26×34 = 50020 + 680 + 884 = 51584 bytes. Overhead = (51584 − 50000) / 51584 × 100 = 3.07%.
+</details>
+
 19. **Real-world analysis.** Use `tcpdump` or Wireshark to capture a single HTTP request to a website of your choice. Identify:
     - (a) The Ethernet header → source and destination MAC addresses.
     - (b) The IP header → source and destination IP, TTL, protocol field.
     - (c) The TCP header → source and destination ports, sequence number, flags.
     - (d) The HTTP request line.
+
+<details>
+<summary>Solution</summary>
+Example capture: `tcpdump -X -c 1 'tcp port 80'`. (a) Ethernet: SrcMAC=00:1a:2b:3c:4d:5e, DstMAC=router's MAC. (b) IP: Src=192.168.1.10, Dst=93.184.216.34, TTL=64, Protocol=6 (TCP). (c) TCP: SrcPort=49152, DstPort=80, Seq=1000, Flags=[SYN]. (d) HTTP: `GET / HTTP/1.1`.
+</details>

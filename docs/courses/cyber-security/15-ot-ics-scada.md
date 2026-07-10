@@ -1997,6 +1997,20 @@ flowchart TD
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Map the Purdue model before deploying any security controls | Audit your ICS network to identify all devices by Purdue level and enforce zone-based isolation |
+| Inventory all PLCs and their protocol exposure | Deploy passive monitoring to discover all PLCs, RTUs, and HMIs; document which protocols are active |
+| Deploy protocol-aware firewalls with DPI | Configure Modbus/DNP3/S7comm inspection that whitelists allowed function codes and register ranges |
+| Segment safety systems from control networks | Place SIS controllers in a dedicated IEC 62443 SL-4 zone with physical unidirectional gateway isolation |
+| Use passive monitoring before active scanning | Deploy OT-SIEM via SPAN ports to establish baseline traffic patterns before any active probing |
+| Implement jump boxes with MFA and session recording | Set up hardened bastion hosts with TOTP + certificate authentication and full video/keystroke recording |
+| Prepare an offline incident response plan for OT | Keep paper-based runbooks for manual plant shutdown; test air-gapped recovery procedures quarterly |
+
+---
+
 ## Summary
 
 OT/ICS/SCADA security is fundamentally different from traditional IT security. The priority shift from Confidentiality → Availability, combined with 15–30 year device lifetimes, lack of authentication in legacy industrial protocols, and safety-critical process dependencies, requires specialized knowledge and tools.
@@ -2021,69 +2035,25 @@ OT/ICS/SCADA security is fundamentally different from traditional IT security. T
 
 ## Chapter Quiz (10 Questions)
 
-**1. Which Purdue model level contains the actual sensors, actuators, and physical process equipment?**
-- A) Level 0 — Physical Process
-- B) Level 1 — Basic Control
-- C) Level 2 — Supervisory Control
-- D) Level 4 — Enterprise IT
-
-**2. What is the primary difference between IT and OT security priorities?**
-- A) IT prioritizes Availability; OT prioritizes Confidentiality
-- B) IT prioritizes Confidentiality; OT prioritizes Availability
-- C) Both prioritize Integrity above all
-- D) OT has no security priorities
-
-**3. Which Modbus function code writes a single holding register?**
-- A) 0x01 (Read Coils)
-- B) 0x06 (Write Single Register)
-- C) 0x0F (Write Multiple Coils)
-- D) 0x11 (Report Server ID)
-
-**4. In the Stuxnet attack, how did the rootkit hide malicious modifications from the Step 7 engineering software?**
-- A) By encrypting the PLC configuration
-- B) By intercepting `s7blk_read` calls and returning clean data
-- C) By changing the PLC IP address
-- D) By deleting the engineering software logs
-
-**5. What is the correct port number for BACnet/IP?**
-- A) TCP/502
-- B) UDP/47808 (0xBAC0)
-- C) TCP/102
-- D) UDP/20000
-
-**6. Which IEC 62443 security level protects against intentional violation using extended resources (nation-state actors)?**
-- A) SL 1
-- B) SL 2
-- C) SL 3
-- D) SL 4
-
-**7. What protocol did the TRITON/TRISIS attack reverse-engineer to compromise the Triconex safety controller?**
-- A) Modbus TCP
-- B) TriStation 1131 (TCP/1437)
-- C) S7comm (TCP/102)
-- D) DNP3 SAv5
-
-**8. Which of the following is a critical feature of a unidirectional gateway (data diode)?**
-- A) It allows bidirectional traffic with deep packet inspection
-- B) It physically enforces one-way data flow using fiber optics
-- C) It encrypts all OT traffic with AES-256
-- D) It provides VPN access for remote vendors
-
-**9. In the DNP3 protocol, what SAv5 mechanism provides authentication?**
-- A) RSA-2048 public key encryption
-- B) HMAC-SHA-256 with pre-shared keys
-- C) TLS 1.3 mutual authentication
-- D) Kerberos ticket exchange
-
-**10. What was the primary OT technique used by Industroyer/Crashoverride to disconnect power substations in Ukraine?**
-- A) Modbus write coil flood
-- B) IEC 60870-5-104 select/execute commands to open circuit breakers
-- C) S7comm block write to overwrite safety logic
-- D) BACnet Who-Is flood to crash building controllers
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which Purdue model level contains the actual sensors, actuators, and physical process equipment? | Level 0 — Physical Process | Level 1 — Basic Control | Level 2 — Supervisory Control | Level 4 — Enterprise IT | **A** |
+| 2 | What is the primary difference between IT and OT security priorities? | IT prioritizes Availability; OT prioritizes Confidentiality | IT prioritizes Confidentiality; OT prioritizes Availability | Both prioritize Integrity above all | OT has no security priorities | **B** |
+| 3 | Which Modbus function code writes a single holding register? | 0x01 (Read Coils) | 0x06 (Write Single Register) | 0x0F (Write Multiple Coils) | 0x11 (Report Server ID) | **B** |
+| 4 | In the Stuxnet attack, how did the rootkit hide malicious modifications from the Step 7 engineering software? | By encrypting the PLC configuration | By intercepting `s7blk_read` calls and returning clean data | By changing the PLC IP address | By deleting the engineering software logs | **B** |
+| 5 | What is the correct port number for BACnet/IP? | TCP/502 | UDP/47808 (0xBAC0) | TCP/102 | UDP/20000 | **B** |
+| 6 | Which IEC 62443 security level protects against intentional violation using extended resources (nation-state actors)? | SL 1 | SL 2 | SL 3 | SL 4 | **D** |
+| 7 | What protocol did the TRITON/TRISIS attack reverse-engineer to compromise the Triconex safety controller? | Modbus TCP | TriStation 1131 (TCP/1437) | S7comm (TCP/102) | DNP3 SAv5 | **B** |
+| 8 | Which of the following is a critical feature of a unidirectional gateway (data diode)? | It allows bidirectional traffic with deep packet inspection | It physically enforces one-way data flow using fiber optics | It encrypts all OT traffic with AES-256 | It provides VPN access for remote vendors | **B** |
+| 9 | In the DNP3 protocol, what SAv5 mechanism provides authentication? | RSA-2048 public key encryption | HMAC-SHA-256 with pre-shared keys | TLS 1.3 mutual authentication | Kerberos ticket exchange | **B** |
+| 10 | What was the primary OT technique used by Industroyer/Crashoverride to disconnect power substations in Ukraine? | Modbus write coil flood | IEC 60870-5-104 select/execute commands to open circuit breakers | S7comm block write to overwrite safety logic | BACnet Who-Is flood to crash building controllers | **B** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Exercise 1: Modbus Network Discovery
 Using the `modbus-scanner.ts` implementation from Section 8.1, extend it to:
@@ -2148,6 +2118,8 @@ Build a TypeScript script `ot-assessment.ts` that orchestrates the following pip
 - Non-responsive devices should be noted but not fail the pipeline
 - The pipeline must complete within 5 minutes (use timeouts aggressively)
 - Output format must match the template in `ot-report-template.md`
+
+</details>
 
 ---
 

@@ -4336,6 +4336,20 @@ AFTER THE CALL:
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Enable FIDO2 hardware keys (YubiKey/Titan) on every supported account | Use Google Advanced Protection Program, Apple Security Keys, and Twitter/Facebook 2FA with security keys; remove SMS 2FA everywhere |
+| Use a password manager with unique 20+ char passwords per service | Bitwarden/1Password auto-fill prevents phishing; never reuse passwords across services |
+| Set a carrier PIN and enable port freeze on all mobile accounts | Call your carrier today; remove SMS 2FA from banking, crypto exchanges, and email |
+| Monitor account activity with automated email alerts | Enable login notifications on all platforms; review active sessions weekly |
+| Implement a personal incident response playbook | Know the first 15-minute steps: confirm compromise → secure accounts → contain → document |
+| Use dedicated recovery email separate from daily email | Create a free Gmail/Outlook used ONLY for account recovery; never log in on any device |
+| Review and revoke third-party OAuth app access quarterly | Go to each platform's "Connected Apps" settings; remove all apps you don't actively use |
+
+---
+
 ## Summary
 
 - **Account Takeover Taxonomy:** 6 categories (credential, social engineering, session, MFA bypass, fixation, physical) with varying difficulty — credential-based attacks are most common (52%), SIM swapping is most devastating. Each category requires different defenses.
@@ -4358,131 +4372,35 @@ AFTER THE CALL:
 
 ## Chapter Quiz
 
-1. What percentage of breaches involve a human element according to Verizon DBIR?
-   - A) 52%   B) 68%   C) 82%   D) 95%
-
-2. Which MFA method is considered phishing-resistant?
-   - A) SMS 2FA
-   - B) TOTP (Google Authenticator)
-   - C) Push notification (Duo)
-   - D) FIDO2 hardware key (YubiKey)
-
-3. What is the primary defense against credential stuffing attacks?
-   - A) Longer passwords
-   - B) Special characters in passwords
-   - C) Unique password for every service
-   - D) Monthly password changes
-
-4. In the Twitter 2020 Bitcoin scam, how did the attacker gain initial access?
-   - A) Phishing email to a Twitter employee
-   - B) Brute-forcing employee passwords
-   - C) Exploiting a Twitter API vulnerability
-   - D) Social engineering Twitter's internal IT support
-
-5. What is the most effective single protection against SIM swapping attacks?
-   - A) Using a complex password
-   - B) Setting a carrier account PIN
-   - C) Installing antivirus software
-   - D) Using a VPN
-
-6. Which forensic data source from Instagram reveals the IP address of login attempts?
-   - A) Instagram Stories viewer list
-   - B) Instagram Direct Messages
-   - C) Instagram data download (JSON format)
-   - D) Instagram profile page
-
-7. What is "MFA fatigue"?
-   - A) Users tired of entering MFA codes
-   - B) Spamming push notifications until the user accepts
-   - C) MFA server overload from too many requests
-   - D) Battery drain from authentication apps
-
-8. How does a password manager prevent phishing?
-   - A) It encrypts all internet traffic
-   - B) It auto-fills passwords only on the exact correct domain
-   - C) It blocks all unknown websites
-   - D) It generates random usernames
-
-9. What does "impossible travel" detection look for?
-   - A) Logins from countries with no internet infrastructure
-   - B) Logins from two far-apart locations within a time too short for travel
-   - C) Logins using VPNs from sanctioned countries
-   - D) Logins during nighttime hours
-
-10. In SIM swap attacks, what happens after the attacker activates their SIM?
-    - A) The victim's device is remotely wiped
-    - B) SMS 2FA codes go to the attacker's phone
-    - C) The victim's bank account is frozen
-    - D) All of the above
-
-11. Which Cialdini principle is most commonly exploited by attackers creating urgency?
-    - A) Reciprocity
-    - B) Scarcity
-    - C) Authority
-    - D) Social Proof
-
-12. What is pretexting in social engineering?
-    - A) Sending mass phishing emails
-    - B) Creating a fictional scenario over multiple interactions to manipulate a target
-    - C) Using a fake login page to steal credentials
-    - D) Installing malware on a victim's computer
-
-13. What is the single most important security setting for a Telegram account?
-    - A) Setting a profile photo
-    - B) Enabling 2-Step Verification (Cloud Password)
-    - C) Using a username instead of phone number
-    - D) Disabling last seen
-
-14. In the Hong Kong $25 million deepfake fraud, what made the attack exceptional?
-    - A) The attacker used a single deepfake video
-    - B) Every participant on the video call was an AI-generated deepfake
-    - C) The attack took 2 years to execute
-    - D) The attacker was an inside employee
-
-15. What is the golden rule of WhatsApp security?
-    - A) Use a strong password
-    - B) Never share your 6-digit verification code with ANYONE for ANY reason
-    - C) Only add contacts you know in person
-    - D) Disable read receipts
-
-16. How do attackers use email filters in a Gmail compromise?
-    - A) To organize incoming emails by priority
-    - B) To automatically DELETE security notification emails so the victim doesn't see them
-    - C) To forward spam to the junk folder
-    - D) To sort emails by sender
-
-17. What is the primary defense against Discord token loggers?
-    - A) Enabling 2FA on Discord
-    - B) Never running untrusted executable files claiming to be Discord tools
-    - C) Using a VPN while using Discord
-    - D) Changing your Discord username monthly
-
-18. Google Advanced Protection Program (APP) requires what to log in?
-    - A) A strong password
-    - B) SMS 2FA
-    - C) Two physical FIDO2 hardware security keys
-    - D) A recovery email
-
-19. What is BEC (Business Email Compromise)?
-    - A) A virus that infects business computers
-    - B) Social engineering attack targeting finance employees to authorize fraudulent wire transfers
-    - C) A vulnerability in Microsoft Exchange
-    - D) A type of ransomware targeting enterprises
-
-20. In the "I need the code" WhatsApp scam, what is the attacker's method?
-    - A) They hack WhatsApp's servers directly
-    - B) They trigger a verification code to the victim, then ask them to share it by impersonating a friend
-    - C) They use a brute force attack on WhatsApp passwords
-    - D) They send malware via WhatsApp attachments
-
-<details>
-<summary>Quiz Answers</summary>
-1. C, 2. D, 3. C, 4. D, 5. B, 6. C, 7. B, 8. B, 9. B, 10. B, 11. B, 12. B, 13. B, 14. B, 15. B, 16. B, 17. B, 18. C, 19. B, 20. B
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What percentage of breaches involve a human element according to Verizon DBIR? | 52% | 68% | 82% | 95% | **C** |
+| 2 | Which MFA method is considered phishing-resistant? | SMS 2FA | TOTP (Google Authenticator) | Push notification (Duo) | FIDO2 hardware key (YubiKey) | **D** |
+| 3 | What is the primary defense against credential stuffing attacks? | Longer passwords | Special characters in passwords | Unique password for every service | Monthly password changes | **C** |
+| 4 | In the Twitter 2020 Bitcoin scam, how did the attacker gain initial access? | Phishing email to a Twitter employee | Brute-forcing employee passwords | Exploiting a Twitter API vulnerability | Social engineering Twitter's internal IT support | **D** |
+| 5 | What is the most effective single protection against SIM swapping attacks? | Using a complex password | Setting a carrier account PIN | Installing antivirus software | Using a VPN | **B** |
+| 6 | Which forensic data source from Instagram reveals the IP address of login attempts? | Instagram Stories viewer list | Instagram Direct Messages | Instagram data download (JSON format) | Instagram profile page | **C** |
+| 7 | What is "MFA fatigue"? | Users tired of entering MFA codes | Spamming push notifications until the user accepts | MFA server overload from too many requests | Battery drain from authentication apps | **B** |
+| 8 | How does a password manager prevent phishing? | It encrypts all internet traffic | It auto-fills passwords only on the exact correct domain | It blocks all unknown websites | It generates random usernames | **B** |
+| 9 | What does "impossible travel" detection look for? | Logins from countries with no internet infrastructure | Logins from two far-apart locations within a time too short for travel | Logins using VPNs from sanctioned countries | Logins during nighttime hours | **B** |
+| 10 | In SIM swap attacks, what happens after the attacker activates their SIM? | The victim's device is remotely wiped | SMS 2FA codes go to the attacker's phone | The victim's bank account is frozen | All of the above | **B** |
+| 11 | Which Cialdini principle is most commonly exploited by attackers creating urgency? | Reciprocity | Scarcity | Authority | Social Proof | **B** |
+| 12 | What is pretexting in social engineering? | Sending mass phishing emails | Creating a fictional scenario over multiple interactions to manipulate a target | Using a fake login page to steal credentials | Installing malware on a victim's computer | **B** |
+| 13 | What is the single most important security setting for a Telegram account? | Setting a profile photo | Enabling 2-Step Verification (Cloud Password) | Using a username instead of phone number | Disabling last seen | **B** |
+| 14 | In the Hong Kong $25 million deepfake fraud, what made the attack exceptional? | The attacker used a single deepfake video | Every participant on the video call was an AI-generated deepfake | The attack took 2 years to execute | The attacker was an inside employee | **B** |
+| 15 | What is the golden rule of WhatsApp security? | Use a strong password | Never share your 6-digit verification code with ANYONE for ANY reason | Only add contacts you know in person | Disable read receipts | **B** |
+| 16 | How do attackers use email filters in a Gmail compromise? | To organize incoming emails by priority | To automatically DELETE security notification emails so the victim doesn't see them | To forward spam to the junk folder | To sort emails by sender | **B** |
+| 17 | What is the primary defense against Discord token loggers? | Enabling 2FA on Discord | Never running untrusted executable files claiming to be Discord tools | Using a VPN while using Discord | Changing your Discord username monthly | **B** |
+| 18 | Google Advanced Protection Program (APP) requires what to log in? | A strong password | SMS 2FA | Two physical FIDO2 hardware security keys | A recovery email | **C** |
+| 19 | What is BEC (Business Email Compromise)? | A virus that infects business computers | Social engineering attack targeting finance employees to authorize fraudulent wire transfers | A vulnerability in Microsoft Exchange | A type of ransomware targeting enterprises | **B** |
+| 20 | In the "I need the code" WhatsApp scam, what is the attacker's method? | They hack WhatsApp's servers directly | They trigger a verification code to the victim, then ask them to share it by impersonating a friend | They use a brute force attack on WhatsApp passwords | They send malware via WhatsApp attachments | **B** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Review Questions
 
@@ -4604,6 +4522,8 @@ AFTER THE CALL:
    - Stage 5: Create a personalized security improvement plan
    
    Document the full exercise and lessons learned.
+
+</details>
 
 ---
 

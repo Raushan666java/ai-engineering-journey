@@ -2247,6 +2247,17 @@ ${findings.length > 0 ? '  ■ Immediate containment required' : ''}
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Implement a 3-tier SOC model with clear SLAs | Tier 1 triages within 5 min for critical alerts; Tier 2 investigates; Tier 3 hunts proactively — each with measurable KPIs |
+| Deploy SIEM with ELK + Wazuh for centralized visibility | Winlogbeat/Filebeat ship logs → Logstash parses → Elasticsearch indexes → Kibana visualizes — full pipeline in under 2 hours |
+| Automate incident response with SOAR playbooks | Build TypeScript enrichment engines that query VirusTotal, AbuseIPDB, and Shodan in parallel, then score and contain automatically |
+| Hunt using MITRE ATT&CK hypotheses | Start every hunt with a hypothesis (e.g., "Adversaries may be using PowerShell with base64 encoding") and validate with SIEM queries |
+| Tune detection rules to reduce false positives | Measure FPR monthly; target <30% by adjusting thresholds, whitelisting known-good behavior, and using statistical baselines |
+| Operationalize threat intel via MISP feeds | Import STIX/TAXII feeds into MISP, normalize IoCs, and push indicators to SIEM/EDR for automated blocking |
+
 ## Summary
 
 - **SOC Architecture** follows a 3-tier model (Triage, Investigation, Advanced Threat) with defined SLAs per severity level.
@@ -2262,67 +2273,18 @@ ${findings.length > 0 ? '  ■ Immediate containment required' : ''}
 
 ## Chapter Quiz
 
-1. In a SOC architecture, what is the primary responsibility of Tier 1?
-   - A) Reverse engineering malware
-   - B) Alert triage and false positive filtering
-   - C) Proactive threat hunting
-   - D) Building custom detection tools
-
-2. Which Windows Event ID corresponds to a successful logon?
-   - A) 4625   B) 4624   C) 4688   D) 4698
-
-3. What does MTTD measure?
-   - A) Mean Time to Diagnose
-   - B) Mean Time to Detect
-   - C) Mean Time to Deploy
-   - D) Mean Time to Document
-
-4. In the SOC Maturity Model (M0-M4), at which level does SOAR automation appear?
-   - A) M1 (Ad-Hoc)
-   - B) M2 (Defined)
-   - C) M3 (Managed)
-   - D) M4 (Optimized)
-
-5. What format does Sigma use for writing detection rules?
-   - A) JSON
-   - B) XML
-   - C) YAML
-   - D) TOML
-
-6. Which ATT&CK technique corresponds to PowerShell execution?
-   - A) T1059.001
-   - B) T1003.001
-   - C) T1558.003
-   - D) T1078.004
-
-7. In the STIX/TAXII model, what does STIX describe?
-   - A) The protocol for exchanging intel
-   - B) The language for describing threat intel
-   - C) The format for log storage
-   - D) The framework for risk assessment
-
-8. What is the indicator of a C2 beaconing connection?
-   - A) Random intervals with large data transfers
-   - B) Regular intervals with small data transfers
-   - C) Single connection with large payload
-   - D) Continuous TCP connection with no data
-
-9. Which Volatility 3 plugin lists hidden processes using pool scanning?
-   - A) pslist
-   - B) pstree
-   - C) psscan
-   - D) malfind
-
-10. What is the recommended false positive rate target for a mature SOC?
-    - A) < 10%
-    - B) < 20%
-    - C) < 30%
-    - D) < 50%
-
-<details>
-<summary>Quiz Answers</summary>
-1. B, 2. B, 3. B, 4. C, 5. C, 6. A, 7. B, 8. B, 9. C, 10. C
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | In a SOC architecture, what is the primary responsibility of Tier 1? | Reverse engineering malware | Alert triage and false positive filtering | Proactive threat hunting | Building custom detection tools | **B** |
+| 2 | Which Windows Event ID corresponds to a successful logon? | 4625 | 4624 | 4688 | 4698 | **B** |
+| 3 | What does MTTD measure? | Mean Time to Diagnose | Mean Time to Detect | Mean Time to Deploy | Mean Time to Document | **B** |
+| 4 | In the SOC Maturity Model (M0-M4), at which level does SOAR automation appear? | M1 (Ad-Hoc) | M2 (Defined) | M3 (Managed) | M4 (Optimized) | **C** |
+| 5 | What format does Sigma use for writing detection rules? | JSON | XML | YAML | TOML | **C** |
+| 6 | Which ATT&CK technique corresponds to PowerShell execution? | T1059.001 | T1003.001 | T1558.003 | T1078.004 | **A** |
+| 7 | In the STIX/TAXII model, what does STIX describe? | The protocol for exchanging intel | The language for describing threat intel | The format for log storage | The framework for risk assessment | **B** |
+| 8 | What is the indicator of a C2 beaconing connection? | Random intervals with large data transfers | Regular intervals with small data transfers | Single connection with large payload | Continuous TCP connection with no data | **B** |
+| 9 | Which Volatility 3 plugin lists hidden processes using pool scanning? | pslist | pstree | psscan | malfind | **C** |
+| 10 | What is the recommended false positive rate target for a mature SOC? | < 10% | < 20% | < 30% | < 50% | **C** |
 
 ---
 
@@ -2485,11 +2447,46 @@ flowchart LR
 ### Review Questions
 
 1. What are the three tiers of SOC analysts and what are their primary responsibilities?
+
+<details>
+<summary>Solution</summary>
+Tier 1 (Triage): Monitor alerts, validate/classify, escalate true positives, handle false positives. Tier 2 (Investigation): Deep-dive analysis of escalated incidents, containment, threat hunting, root cause analysis. Tier 3 (Advanced/Threat Intel): Malware analysis, reverse engineering, detection engineering, SOC tool optimization, threat intelligence integration.
+</details>
+
 2. Explain the difference between MTTD, MTTR, and MTTI in SOC metrics.
+
+<details>
+<summary>Solution</summary>
+MTTD (Mean Time to Detect): time from compromise to detection. MTTR (Mean Time to Respond): time from detection to containment/remediation. MTTI (Mean Time to Investigate): time spent actively investigating an alert. Goal: minimize MTTD (better detection) and MTTR (faster response). MTTI helps resource planning — high MTTI may indicate need for more Tier 2 analysts.
+</details>
+
 3. What is the Pyramid of Pain and why is it important for threat intelligence?
+
+<details>
+<summary>Solution</summary>
+The Pyramid of Pain ranks indicators of compromise by difficulty for the attacker to change: Hash values (easy) → IP addresses → Domain names → Network artifacts → Host artifacts → Tools → TTPs (hardest). It's important because focusing detection on higher levels (TTPs, tools) forces attackers to change their entire methodology, while lower levels (hashes, IPs) are trivially changed.
+</details>
+
 4. How does the Cyber Kill Chain differ from the MITRE ATT&CK framework?
+
+<details>
+<summary>Solution</summary>
+Cyber Kill Chain (Lockheed Martin): linear, 7 phases (Recon → Weaponization → Delivery → Exploitation → Installation → C2 → Actions). MITRE ATT&CK: non-linear, comprehensive matrix of tactics (14) and techniques (hundreds). Kill Chain is high-level and sequential; ATT&CK is detailed and flexible — it maps multiple techniques per tactic, allows multiple paths, and covers post-compromise activities in depth that the Kill Chain condenses.
+</details>
+
 5. What is a Sigma rule and what problem does it solve for detection engineering?
+
+<details>
+<summary>Solution</summary>
+Sigma is a generic, vendor-agnostic rule format for describing log detection logic (YAML format). It solves the problem of writing the same detection rule multiple times for different SIEMs (Splunk, Elastic, QRadar, Azure Sentinel). A single Sigma rule can be converted to multiple SIEM query languages using sigma-cli, enabling detection-as-code and cross-platform sharing.
+</details>
+
 6. Explain the Diamond Model of Intrusion Analysis and its four core features.
+
+<details>
+<summary>Solution</summary>
+The Diamond Model structures intrusion analysis around four vertices: Adversary (actor/threat group), Capability (tools, malware, exploits), Infrastructure (IPs, domains, C2 servers), Victim (target organization/person). Edges represent relationships: Adversary uses Capability on Infrastructure against Victim. Analysis identifies pivot points — e.g., finding new infrastructure via capability hash, or linking adversaries via shared infrastructure.
+</details>
 
 ### Practical Exercises
 
@@ -2500,6 +2497,11 @@ flowchart LR
    - Verify logs are appearing in the Wazuh dashboard
    - Create a custom alert rule
 
+<details>
+<summary>Solution</summary>
+Follow Wazuh quickstart: install indexer (Elasticsearch), server (Wazuh manager), dashboard (Kibana). Add agents: `wazuh-agent` package on Linux, MSI on Windows. Configure ossec.conf for log collection: `<localfile><log_format>syslog</log_format><location>/var/log/auth.log</location></localfile>`. Verify in dashboard: Agents → agent → Security Events. Custom rule: add to `/var/ossec/etc/rules/local_rules.xml` → `<rule id="100001" level="10"><match>sudo FAILED</match></rule>`.
+</details>
+
 2. **Sigma Rule Development:** Write Sigma rules for the following detection scenarios:
    - PowerShell with encoded command execution
    - Scheduled task creation for persistence
@@ -2507,16 +2509,37 @@ flowchart LR
    - Suspicious LSASS process access (Event ID 4663)
    - Convert each rule to Elasticsearch/KQL format using sigma-cli
 
+<details>
+<summary>Solution</summary>
+PowerShell encoded:
+```yaml
+title: PowerShell Encoded Command
+logsource: { product: windows, service: powershell }
+detection: { selection: { EventID: 4104, ScriptBlockText|contains: "-enc" } }
+```
+Convert: `sigma convert -t es-rule -o rule.json rule.yml`. For Pass-the-hash: detect EventID 4624 with LogonType 3 and AuthenticationPackageName: NTLM. Scheduled task: EventID 4698 (Task Scheduler). LSASS access: EventID 4663 with ObjectName containing lsass.exe.
+</details>
+
 3. **Threat Hunting Exercise:** Using Elastic SIEM or Wazuh with simulated attack data:
    - Hunt for C2 beaconing (regular intervals, small packets, JA3 hashes)
    - Hunt for credential dumping (lsass.exe access events)
    - Hunt for lateral movement (Event ID 4624 with Logon Type 3 from unusual source)
    - Create a hypothesis-driven hunt plan and document your findings
 
+<details>
+<summary>Solution</summary>
+Hypothesis: "An attacker has established C2 beaconing to our environment." Hunt: Search for network connections with regular timing (±2s variance), small payload sizes (100-500 bytes), and known malicious JA3 hashes. Use Elastic query: `network.protocol: tls AND ja3.hash: "6734f37431670b3ab4292b8f60f29984"`. Credential dumping hunt: `event.code: 4663 AND process.name: lsass.exe AND NOT winlog.event_data.AccessMask: "0x1"`. Lateral movement: `event.code: 4624 AND LogonType: 3 AND NOT source.ip: 10.0.0.0/8`. Document findings, false positive rate, and gaps.
+</details>
+
 4. **Alert Triage Simulation:** Given the following 10 alerts from a SIEM, categorize each:
    - Benign / False Positive / Confirm True Positive / Requires Escalation
    - For each, write the triage notes explaining your decision
    - Alert data: PowerShell script execution (admin), Failed logon from known IP (janitor), Outbound DNS to known C2 domain, Large file upload at 3 AM (backup server), New service installed (Windows Update), USB device connected (manager's laptop), Login from Russia (employee on vacation), Process injection detected (game.exe), Firewall rule changed (IT admin during maintenance), Email with "Invoice" attachment from external sender
+
+<details>
+<summary>Solution</summary>
+1) PowerShell (admin) → Benign (admin activity, verify purpose). 2) Failed logon (janitor) → Benign/False Positive (user may have mistyped). 3) DNS to C2 domain → Confirm True Positive, Escalate (lookup domain reputation, check process that made the query). 4) Large file upload 3AM (backup) → Benign (scheduled backup). 5) New service (Windows Update) → Benign (Microsoft signed). 6) USB connect (manager) → Benign (authorized device). 7) Login from Russia (employee on vacation) → Confirm True Positive, Escalate (possible credential theft). 8) Process injection (game.exe) → Confirm True Positive (games should not inject). 9) Firewall change (IT admin) → Benign (maintenance window, verify with change request). 10) Invoice email → Requires Escalation (phishing investigation, sandbox attachment).
+</details>
 
 ### Challenge Problems
 
@@ -2526,11 +2549,21 @@ flowchart LR
    - Ransomware containment (isolate endpoint → kill process → block C2 IP → create memory dump → escalate)
    Each playbook must include at least 5 steps with decision points.
 
+<details>
+<summary>Solution</summary>
+Phishing playbook: 1) Extract attachment hash from email. 2) Check hash on VirusTotal API. Decision: if malicious (VT score > 5/70) → isolate endpoint via EDR API → block sender domain on email gateway → alert SOC with full details. If unknown → sandbox attachment → proceed based on sandbox verdict. Brute force: 1) Query SIEM for failed logons from same IP > 5 in 10 min. 2) Check IP reputation (AbuseIPDB). 3) Decision: if malicious → add to firewall blocklist → notify user via email → create case. Ransomware: 1) EDR detects file encryption. 2) Isolate endpoint via network ACL. 3) Kill malicious process. 4) Block C2 IP on firewall. 5) Create memory dump. 6) Escalate to Tier 3.
+</details>
+
 2. **Full SOC Simulation:** Design and run a 4-hour SOC simulation exercise:
    - Scenario: APT group attack (initial access via phishing → persistence → lateral movement → data exfiltration)
    - Inject 5+ alerts across the kill chain (some true, some false positives)
    - SOC team must: triage each alert, escalate appropriately, contain the threat, write incident report
    - Post-exercise: measure MTTD, MTTR, false positive rate, and identify areas for improvement
+
+<details>
+<summary>Solution</summary>
+Inject timeline: T+0min: Email with malicious macro (real). T+30min: PowerShell connects to external IP (real). T+45min: Scheduled task creation (real). T+1h: Large outbound SMB transfer (false positive — backup). T+1.5h: New admin user created (real). T+2h: Data exfiltration to cloud storage (real). Metrics: MTTD = avg time from inject to first analyst action. MTTR = time from detection to containment. False positive rate = FP alerts / total alerts × 100. Post-exercise: review decision quality, communication, tool usage. Create improvement action items (e.g., add correlation rule for macro + PowerShell).
+</details>
 
 3. **Custom Detection Pipeline:** Build a complete detection pipeline:
    - Data source: Windows Event Logs (simulate with event log generator)
@@ -2539,3 +2572,8 @@ flowchart LR
    - Alerting: Elasticsearch watcher or custom webhook to Slack/Discord
    - Response: Automated action (run script on endpoint via Wazuh active response)
    Test the pipeline by generating a real attack and confirming end-to-end detection.
+
+<details>
+<summary>Solution</summary>
+Setup: 1) Configure Winlogbeat on Windows target to forward Event Logs to Kafka topic. 2) Logstash consumes from Kafka, transforms, outputs to Elasticsearch. 3) Elasticsearch SIEM rules from converted Sigma rules (e.g., detect service creation). 4) Elasticsearch Watcher triggers webhook to Slack when rule matches. 5) Wazuh active response runs script to block the endpoint. Test: Generate event with `New-Service -Name TestMalicious -BinaryPathName cmd.exe`. Verify: alert appears in Slack within 30s, endpoint is quarantined by Wazuh. Document each component's configuration and timing.
+</details>

@@ -864,6 +864,296 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+### TypeScript: Latency Calculator
+
+The following class simulates latency numbers across different data center distances, computes round-trip time (RTT), and models the impact of geographic distance on request latency.
+
+```typescript
+class LatencyCalculator {
+  private readonly speedOfLightInFiber = 200_000; // km/s (fiber optic ~2/3c)
+
+  private readonly distances: Record<string, number> = {
+    'us-east-us-west': 4000,
+    'us-east-eu-west': 5600,
+    'us-east-asia': 13000,
+    'us-west-asia': 9000,
+    'eu-west-asia': 10000,
+    'same-region': 100,
+    'same-dc': 1,
+  };
+
+  private readonly processingDelays: Record<string, number> = {
+    lb: 0.5,        // load balancer
+    cache: 1.5,     // cache hit
+    db: 10,         // database query
+    tls: 2,         // TLS handshake
+    serialize: 0.3, // JSON serialize/deserialize
+  };
+
+  computeRTT(distanceKm: number): number {
+    return (2 * distanceKm) / this.speedOfLightInFiber * 1000; // ms
+  }
+
+  estimateRequestLatency(
+    from: string,
+    to: string,
+    components: (keyof typeof this.processingDelays)[]
+  ): { rttMs: number; processingMs: number; totalMs: number } {
+    const dist = this.distances[`${from}-${to}`] ?? this.distances['us-east-eu-west'];
+    const rttMs = this.computeRTT(dist);
+    const processingMs = components.reduce((s, c) => s + this.processingDelays[c], 0);
+    return { rttMs: Math.round(rttMs * 10) / 10, processingMs, totalMs: Math.round((rttMs + processingMs) * 10) / 10 };
+  }
+
+  simulateReadPath(userRegion: string, dcRegion: string, cacheHit: boolean): { steps: string[]; totalMs: number } {
+    const steps: string[] = [];
+    let total = 0;
+
+    const dns = this.computeRTT(50); // DNS typically ~50km
+    steps.push(`DNS lookup: ${dns.toFixed(1)}ms`);
+    total += dns;
+
+    const lbRtt = this.computeRTT(this.distances['same-region']);
+    steps.push(`Load balancer RTT: ${lbRtt.toFixed(1)}ms`);
+    total += lbRtt + this.processingDelays.lb;
+
+    if (cacheHit) {
+      const cacheRtt = this.computeRTT(this.distances['same-dc']);
+      steps.push(`Cache hit (same DC): ${cacheRtt.toFixed(1)}ms + ${this.processingDelays.cache}ms process`);
+      total += cacheRtt + this.processingDelays.cache;
+    } else {
+      const dbRtt = this.computeRTT(this.distances[`${userRegion}-${dcRegion}`] ?? this.distances['us-east-eu-west']);
+      steps.push(`Cache miss, DB query RTT: ${dbRtt.toFixed(1)}ms + ${this.processingDelays.db}ms process`);
+      total += dbRtt + this.processingDelays.db;
+    }
+
+    return { steps, totalMs: Math.round(total * 10) / 10 };
+  }
+}
+
+// -- Example ------------------------------------------------------
+const latCalc = new LatencyCalculator();
+console.log('RTT US-East to EU-West:', latCalc.computeRTT(5600).toFixed(1), 'ms');
+const result = latCalc.simulateReadPath('us-east', 'eu-west', false);
+console.log('Read path (cache miss):', result.totalMs, 'ms');
+result.steps.forEach(s => console.log('  -', s));
+```
+
+### TypeScript: CAP Theorem Validator
+
+This class simulates CAP theorem trade-offs across multiple nodes, demonstrating how partition tolerance affects consistency and availability decisions in real time.
+
+```typescript
+interface NodeState {
+  id: string;
+  data: Map<string, string>;
+  alive: boolean;
+  partitionGroup: 'majority' | 'minority';
+}
+
+class CAPTheoremValidator {
+  private nodes: NodeState[] = [];
+
+  addNode(id: string): void {
+    this.nodes.push({ id, data: new Map(), alive: true, partitionGroup: 'majority' });
+  }
+
+  simulatePartition(minorityIds: string[]): void {
+    for (const node of this.nodes) {
+      node.partitionGroup = minorityIds.includes(node.id) ? 'minority' : 'majority';
+      node.alive = true;
+    }
+  }
+
+  healPartition(): void {
+    for (const node of this.nodes) {
+      node.partitionGroup = 'majority';
+      node.alive = true;
+    }
+  }
+
+  write(key: string, value: string, preferConsistency: boolean): { success: boolean; nodesWritten: number; message: string } {
+    let written = 0;
+    let total = 0;
+    for (const node of this.nodes) {
+      if (!node.alive) continue;
+      total++;
+      if (preferConsistency && node.partitionGroup === 'minority') {
+        if (node.id === 'coordinator') continue; // CP: reject minority writes
+      }
+      node.data.set(key, value);
+      written++;
+    }
+    const minoritySize = this.nodes.filter(n => n.partitionGroup === 'minority').length;
+    const majoritySize = this.nodes.length - minoritySize;
+
+    if (preferConsistency && minoritySize > 0) {
+      return {
+        success: written >= majoritySize,
+        nodesWritten: written,
+        message: `CP behavior: wrote to ${written}/${total} nodes (rejected ${minoritySize} minority nodes). Availability sacrificed for consistency.`,
+      };
+    }
+    return {
+      success: written > 0,
+      nodesWritten: written,
+      message: `AP behavior: wrote to ${written}/${total} nodes. Consistency sacrificed — minority partition may serve stale reads.`,
+    };
+  }
+
+  read(key: string, preferConsistency: boolean): { value: string | undefined; stalenessRisk: boolean; message: string } {
+    const values = new Set<string>();
+    for (const node of this.nodes) {
+      if (!node.alive) continue;
+      if (preferConsistency && node.partitionGroup === 'minority') continue;
+      const v = node.data.get(key);
+      if (v !== undefined) values.add(v);
+    }
+    const majoritySize = this.nodes.filter(n => n.partitionGroup === 'majority' && n.alive).length;
+    const minoritySize = this.nodes.filter(n => n.partitionGroup === 'minority' && n.alive).length;
+
+    if (preferConsistency && minoritySize > 0 && values.size > 1) {
+      return { value: undefined, stalenessRisk: true, message: `CP read: ${majoritySize} majority nodes disagree with ${minoritySize} minority nodes. Blocking read until partition heals.` };
+    }
+    return {
+      value: values.values().next().value,
+      stalenessRisk: !preferConsistency && values.size > 0,
+      message: `${preferConsistency ? 'CP' : 'AP'} read: returned value from ${values.size > 0 ? 'available' : 'no'} nodes.`,
+    };
+  }
+
+  validateCAP(preferConsistency: boolean, simulateNetworkFailure: boolean): string[] {
+    const events: string[] = [];
+    events.push(`System configured as ${preferConsistency ? 'CP (Consistency优先)' : 'AP (Availability优先)'}`);
+    if (simulateNetworkFailure) {
+      events.push('Network partition injected: nodes split into majority/minority groups');
+      const writeResult = this.write('x', '42', preferConsistency);
+      events.push(writeResult.message);
+      const readResult = this.read('x', preferConsistency);
+      events.push(readResult.message);
+      this.healPartition();
+      events.push('Partition healed. All nodes reconciled.');
+    } else {
+      events.push('Network healthy: both C and A are achievable simultaneously');
+      this.write('x', '42', preferConsistency);
+      const readResult = this.read('x', preferConsistency);
+      events.push(readResult.message);
+    }
+    return events;
+  }
+}
+
+// -- Example ------------------------------------------------------
+const cap = new CAPTheoremValidator();
+cap.addNode('coordinator');
+cap.addNode('replica-1');
+cap.addNode('replica-2');
+cap.addNode('replica-3');
+
+const cpResult = cap.validateCAP(true, true);
+console.log('=== CP Validation with Partition ===');
+cpResult.forEach(e => console.log(e));
+
+const apResult = cap.validateCAP(false, true);
+console.log('=== AP Validation with Partition ===');
+apResult.forEach(e => console.log(e));
+```
+
+### System Design Interview Process Flowchart
+
+```mermaid
+flowchart TD
+    classDef phase fill:#4a90d9,color:#fff,stroke:#2c5f8a,stroke-width:2px
+    classDef decision fill:#f5a623,color:#fff,stroke:#c47f12,stroke-width:2px
+    classDef output fill:#7ed321,color:#fff,stroke:#4a8c14,stroke-width:2px
+    classDef warning fill:#d0021b,color:#fff,stroke:#8b0015,stroke-width:2px
+    classDef action fill:#9013fe,color:#fff,stroke:#5c0e9e,stroke-width:2px
+
+    subgraph Interview_Process
+        START([Interview Start]) --> PHASE1[Phase 1: Requirements]
+        PHASE1 --> CLARIFY{Clarify Questions}
+        CLARIFY -->|DAU, QPS, Features| EST_FUNC[Functional Reqs]
+        CLARIFY -->|Latency, SLA, Scale| EST_NFR[Non-Functional Reqs]
+
+        PHASE1 --> PHASE2[Phase 2: Estimation]
+        PHASE2 --> QPS_CALC[Calculate QPS]
+        PHASE2 --> STORAGE_CALC[Calculate Storage]
+        PHASE2 --> BANDWIDTH_CALC[Calculate Bandwidth]
+
+        PHASE2 --> PHASE3[Phase 3: High-Level Design]
+        PHASE3 --> COMPONENTS[Choose Components]
+        COMPONENTS --> LB[Load Balancer]
+        COMPONENTS --> CACHE[Cache Tier]
+        COMPONENTS --> DB[Database]
+        COMPONENTS --> CDN[CDN]
+        COMPONENTS --> MQ[Message Queue]
+        PHASE3 --> DIAGRAM[Drawing Component Diagram]
+
+        PHASE3 --> PHASE4[Phase 4: Deep Dive]
+        PHASE4 --> BOTTLENECK{Identify Bottlenecks}
+        BOTTLENECK -->|Write Heavy| WRITE_OPT[Write Optimization]
+        BOTTLENECK -->|Read Heavy| READ_OPT[Read Optimization]
+        BOTTLENECK -->|Both| HYBRID[Hybrid Strategy]
+
+        PHASE4 --> TRADE_OFFS{Articulate Trade-Offs}
+        TRADE_OFFS -->|Consistency vs Avail| CAP_DEC[CAP Decision]
+        TRADE_OFFS -->|Latency vs Throughput| LAT_DEC[Latency Tuning]
+        TRADE_OFFS -->|Cost vs Performance| COST_DEC[Cost Analysis]
+
+        WRITE_OPT --> REVIEW(Review & Iterate)
+        READ_OPT --> REVIEW
+        HYBRID --> REVIEW
+        CAP_DEC --> REVIEW
+        LAT_DEC --> REVIEW
+        COST_DEC --> REVIEW
+    end
+
+    START:::action
+    PHASE1:::phase
+    PHASE2:::phase
+    PHASE3:::phase
+    PHASE4:::phase
+    CLARIFY:::decision
+    BOTTLENECK:::decision
+    TRADE_OFFS:::decision
+    QPS_CALC:::output
+    STORAGE_CALC:::output
+    BANDWIDTH_CALC:::output
+    DIAGRAM:::output
+    REVIEW:::action
+```
+
+### Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Start with requirements, not architecture | Spend 3-5 minutes clarifying DAU, QPS, storage needs before drawing boxes |
+| Master back-of-the-envelope estimation | Use QPS, storage, and bandwidth formulas to constrain design choices within 2x accuracy |
+| Understand CAP trade-offs deeply | Choose CP (banking) or AP (social feeds) based on business needs — never both during a partition |
+| Latency vs throughput is the primary tension | Batch for throughput (video processing); stream for latency (chat, gaming) |
+| Read vs write optimization dictates the stack | Read-heavy: cache, CDN, denormalization. Write-heavy: LSM-trees, message queues, append-only logs |
+| Each "nine" of availability adds ~10x cost | Target minimum viable availability that meets the SLA — over-engineering is the most common mistake |
+| Apply the 4-phase process religiously | Requirements ? Estimation ? HLD ? Deep Dive. Skipping any phase leads to incomplete designs |
+
+### Case Study
+
+**Designing Instagram's Story Feature.** Instagram Stories needed to support 500M+ DAU uploading ephemeral content (photos, videos) that disappears after 24 hours. The core challenge was handling massive write throughput (millions of story uploads per minute) while ensuring low-latency reads for followers. The engineering team chose a write-optimized architecture: stories are first written to a local cache (Redis) for immediate availability, then asynchronously persisted to a distributed object store (S3) with metadata in Cassandra. Reads are served from the cache whenever possible, with CDN offload for viral stories. The key trade-off was accepting eventual consistency for story views (a follower might not see a story for 1-2 seconds after upload) in exchange for write throughput that could handle Super Bowl-level traffic spikes.
+
+**Lessons Learned.** The initial monolithic MySQL backend failed at 100K QPS writes — the team migrated to a sharded Cassandra cluster with LSM-tree storage to handle the write-heavy workload. They implemented consistent hashing with virtual nodes (150 vnodes per physical node) to distribute story data evenly across the cluster. Read repair and hinted handoff ensured that even during node failures, no story data was lost. The most important architectural insight was that ephemeral content (24-hour TTL) aligned perfectly with LSM-tree compaction — expired stories were naturally reclaimed during compaction without explicit delete operations, reducing write amplification by 40%.
+
+**Business Impact.** By re-architecting for write throughput rather than read optimization, Instagram reduced story upload latency by 3x (from 1.2s to 400ms p99) and cut infrastructure costs by 35% through efficient compaction-driven storage reclamation. The architecture scaled to handle 4M+ stories uploaded during major events (Super Bowl, World Cup) with zero downtime. This case study demonstrates that identifying the primary NFR (write throughput for stories vs read throughput for feed) and choosing the corresponding storage engine (LSM-tree / Cassandra vs B-Tree / MySQL) is the most consequential design decision in any system.
+
+## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What is the minimum availability for less than 1 hour downtime/year? | 99% | 99.9% | 99.99% | 99.999% | **C** |
+| 2 | Which phase comes after back-of-the-envelope estimation? | Requirements gathering | High-level design | Detailed deep dive | Deployment | **B** |
+| 3 | MTBF=720h, MTTR=4h. What is availability? | 99.0% | 99.45% | 99.94% | 99.99% | **B** |
+| 4 | What does Little's Law state? | Throughput equals capacity | L = λW | Latency is always under 100ms | Storage grows linearly | **B** |
+| 5 | Why is tail latency critical in distributed systems? | It determines median user experience | A single slow request causes head-of-line blocking | It is cheaper to optimize | SLAs only measure tail latency | **B** |
+
 ## Summary
 
 - System design is distinct from software architecture (system-wide concerns) and algorithm design (computational efficiency at bounded scales).
@@ -879,34 +1169,59 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ## Exercises
 
+<details>
+<summary>Review Questions — Click to expand</summary>
+
 ### Review Questions (4-5)
 
 1. Explain the difference between MTBF and MTTR and how they relate to availability. Write the formula.
+   **Solution:** MTBF (Mean Time Between Failures) measures average time between failures; MTTR (Mean Time To Repair) measures average time to restore service. Availability = MTBF / (MTBF + MTTR).
 
 2. A system serves 99.9% availability in its SLA but measures 99.95% as its SLO. Why is the SLO stricter than the SLA?
+   **Solution:** The SLO is an internal target set higher than the SLA to provide a safety buffer. If the SLO is breached, the team can fix issues before the SLA is violated and penalties apply.
 
 3. What is tail latency and why does it matter more in distributed systems than in single-machine systems?
+   **Solution:** Tail latency (p99/p99.9) measures the slowest requests. In distributed systems, fan-out requests mean the overall latency is determined by the slowest component — a single straggler delays the entire response (head-of-line blocking).
 
 4. List the four phases of the system design process and describe the output of each.
+   **Solution:** (1) Requirements — clarified functional/NFR constraints; (2) Estimation — QPS, storage, bandwidth numbers; (3) HLD — component diagram with load balancers, caches, databases; (4) Deep Dive — detailed analysis of bottlenecks, trade-offs, and specific algorithms.
 
 5. How does system design differ from algorithm design in terms of constraints and objectives?
+   **Solution:** Algorithm design focuses on time/space complexity for a single procedure; system design focuses on throughput, latency, availability, and cost at internet scale. System designers routinely trade algorithmic purity for practical scalability.
+
+</details>
+
+<details>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems (3-4)
 
 1. A notification service sends 10M push notifications per day. Each notification payload is 4 KB. Compute daily bandwidth, and estimate the number of servers needed if each server handles 1,000 push operations per second.
+   **Solution:** Daily bandwidth = 10M x 4 KB = 40 GB/day. Peak QPS = 10M / 86,400 ≈ 116 QPS. At 1,000 ops/sec per server, 1 server suffices for average load; 2-3 servers recommended for peak and failover.
 
 2. A video platform with 10M DAU streams 30 minutes of video per user per day at 10 Mbps. Compute daily data transfer, CDN cost (assume $0.02/GB), and suggest two optimizations.
+   **Solution:** Daily transfer = 10M x 30 min x 60 s x 10 Mbps / 8 = 2.25e16 bits = 2.81 PB/day. CDN cost = 2.81e6 GB x $0.02 = $56,200/day. Optimizations: (1) Encode at multiple bitrates and serve lowest acceptable quality; (2) Cache popular content at edge with longer TTL.
 
 3. A search engine needs to return results in under 200ms. The index lookup takes 50ms, query parsing 10ms, ranking 120ms, and network RTT 40ms. Explain the bottleneck and suggest a mitigation.
+   **Solution:** Total = 50+10+120+40 = 220ms, exceeding 200ms. Bottleneck is ranking (120ms). Mitigation: pre-compute ranking features, use tiered ranking (lightweight model first, full model only for top candidates), or parallelize query parsing + index lookup with ranking.
 
 4. Design a simplified rate-limiter for a public API. List the NFRs you would use, estimate QPS for 100M daily requests, and choose between a token-bucket and leaky-bucket algorithm with justification.
+   **Solution:** NFRs: sub-ms latency for rate check, 99.99% availability, scale to 100K QPS. Avg QPS = 100M / 86,400 ≈ 1,157. Peak QPS ≈ 3,500. Choose token-bucket for burst tolerance — users can burst to 2x rate for short periods while long-term average is enforced.
+
+</details>
+
+<details>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem (1)
 
 You are tasked with designing the backend for a real-time collaborative document editor (similar to Google Docs) that supports 10K concurrent editors on a single document and 10M daily active users overall. The system must support conflict resolution, real-time sync (sub-500ms propagation), version history (30-day retention), and offline editing.
 
-1. Perform a back-of-the-envelope estimation for storage, bandwidth, and QPS.
-2. Identify the primary non-functional requirements and rank them by priority.
-3. Propose a high-level architecture with load balancers, app servers, database, cache, and any specialized components (e.g., WebSocket gateway, CRDT server).
-4. Explain your conflict resolution strategy. Justify why you chose CRDTs (or OT) and describe a specific CRDT (or OT algorithm) that fits the use case.
-5. Analyze the bottleneck: what component will fail first at 10x scale and how would you redesign for it?
+**Solution Outline:**
+1. **Estimation:** Assume 10M users, 100 docs/user, avg doc size 50 KB. Storage = 10M x 100 x 50 KB = 50 TB. Peak writes = 10K concurrent ops x 10 ops/sec = 100K ops/sec. Bandwidth ≈ 100K x 1 KB = 100 MB/s.
+2. **NFR Priority:** Performance (sub-500ms sync) > Reliability (zero data loss) > Availability > Consistency (eventual with CRDTs).
+3. **Architecture:** WebSocket gateway cluster, CRDT-based operation transformation service, Redis for active document state, Cassandra for persistent history, S3 for document snapshots.
+4. **Conflict Resolution:** Use CRDTs (specifically RGA — Replicated Growable Array) for text operations. RGA ensures convergence without central coordination because concurrent insertions commute.
+5. **Bottleneck:** At 10x scale, the WebSocket gateway becomes the bottleneck (connection count). Mitigation: shard connections by document_id, use consistent hashing across gateway nodes, and implement connection coalescing.
+
+</details>

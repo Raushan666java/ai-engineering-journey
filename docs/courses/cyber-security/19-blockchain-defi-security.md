@@ -1722,6 +1722,20 @@ console.log(`Signer: ${signer}`);
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Apply Check-Effects-Interactions to prevent reentrancy | Always update contract state before making external calls; use OpenZeppelin's ReentrancyGuard |
+| Use hardware security keys (FIDO2) for all crypto accounts | Store seed phrases on steel plates; use Ledger/Trezor for transaction signing; never type seed online |
+| Audit smart contracts for tx.origin and delegatecall misuse | Run the SolidityVulnScanner on all contracts before deployment; never use tx.origin for auth |
+| Use multiple oracles with long TWAP windows | Combine Chainlink, MakerOSM, and Tellor; set TWAP to 30+ minutes to resist flash loan manipulation |
+| Implement multisig wallets for all protocol treasuries | Deploy Gnosis Safe with 3-of-5 signers; require hardware-wallet signatures for all admin transactions |
+| Deploy circuit breakers and timelocks on admin functions | Add 48-hour timelock delays to all privileged operations; implement pause/unpause for emergency stops |
+| Monitor mempool for front-running and MEV attacks | Use Flashbots RPC for private transaction submission; set tight slippage bounds on swaps |
+
+---
+
 ## Summary
 
 Blockchain, smart contract, and DeFi security span a unique attack surface where economic incentives, cryptographic primitives, and software correctness converge. Key takeaways:
@@ -1743,71 +1757,25 @@ Over $7B has been lost to blockchain security exploits since 2016. Understanding
 
 ## Chapter Quiz (10 MCQ)
 
-**1. What percentage of hash rate does an attacker need for selfish mining to become more profitable than honest mining?**
-- A) 20%
-- B) 25%
-- C) 40%
-- D) 51%
-
-**2. In PBFT consensus, how many Byzantine nodes can be tolerated with 7 nodes?**
-- A) 1
-- B) 2
-- C) 3
-- D) 4
-
-**3. Which of the following is the correct mitigation for reentrancy attacks?**
-- A) Use tx.origin for authentication
-- B) Update state before making external calls
-- C) Use delegatecall instead of call
-- D) Increase gas limit
-
-**4. What is the constant product formula used by Uniswap?**
-- A) x + y = k
-- B) x × y = k
-- C) x² + y² = k
-- D) x − y = k
-
-**5. Which attack involves buying an asset before a victim's transaction executes and selling immediately after?**
-- A) Flash loan attack
-- B) Sandwich attack
-- C) Long-range attack
-- D) Eclipse attack
-
-**6. In Solidity, which of the following is safer for authentication?**
-- A) tx.origin
-- B) msg.sender
-- C) block.coinbase
-- D) address(this)
-
-**7. What was the root cause of the 2017 Parity Wallet hack that froze $280M?**
-- A) Reentrancy
-- B) Integer overflow
-- C) Exploitable delegatecall to a selfdestructed library
-- D) 51% attack on Ethereum
-
-**8. The Ronin bridge hack ($625M) was caused by:**
-- A) A smart contract reentrancy bug
-- B) Compromise of 5 out of 9 validator keys
-- C) An oracle manipulation attack
-- D) A flash loan attack
-
-**9. What is the BIP44 derivation path for an Ethereum account?**
-- A) m/44'/0'/0'/0/0
-- B) m/44'/60'/0'/0/0
-- C) m/60'/44'/0'/0/0
-- D) m/0'/44'/60'/0/0
-
-**10. Which cryptographic vulnerability allowed recovery of Bitcoin private keys from Android wallets in 2013?**
-- A) Signature malleability
-- B) ECDSA nonce reuse
-- C) Weak SHA-256 collision
-- D) Merkle tree second preimage attack
-
-**Answers:** 1-C, 2-B, 3-B, 4-B, 5-B, 6-B, 7-C, 8-B, 9-B, 10-B
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What percentage of hash rate does an attacker need for selfish mining to become more profitable than honest mining? | 20% | 25% | 40% | 51% | **C** |
+| 2 | In PBFT consensus, how many Byzantine nodes can be tolerated with 7 nodes? | 1 | 2 | 3 | 4 | **B** |
+| 3 | Which of the following is the correct mitigation for reentrancy attacks? | Use tx.origin for authentication | Update state before making external calls | Use delegatecall instead of call | Increase gas limit | **B** |
+| 4 | What is the constant product formula used by Uniswap? | x + y = k | x × y = k | x² + y² = k | x − y = k | **B** |
+| 5 | Which attack involves buying an asset before a victim's transaction executes and selling immediately after? | Flash loan attack | Sandwich attack | Long-range attack | Eclipse attack | **B** |
+| 6 | In Solidity, which of the following is safer for authentication? | tx.origin | msg.sender | block.coinbase | address(this) | **B** |
+| 7 | What was the root cause of the 2017 Parity Wallet hack that froze $280M? | Reentrancy | Integer overflow | Exploitable delegatecall to a selfdestructed library | 51% attack on Ethereum | **C** |
+| 8 | The Ronin bridge hack ($625M) was caused by: | A smart contract reentrancy bug | Compromise of 5 out of 9 validator keys | An oracle manipulation attack | A flash loan attack | **B** |
+| 9 | What is the BIP44 derivation path for an Ethereum account? | m/44'/0'/0'/0/0 | m/44'/60'/0'/0/0 | m/60'/44'/0'/0/0 | m/0'/44'/60'/0/0 | **B** |
+| 10 | Which cryptographic vulnerability allowed recovery of Bitcoin private keys from Android wallets in 2013? | Signature malleability | ECDSA nonce reuse | Weak SHA-256 collision | Merkle tree second preimage attack | **B** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Theory
 
@@ -1889,6 +1857,8 @@ function redeem(uint256 amount) external {
         }
     }
     ```
+
+</details>
 
 ---
 

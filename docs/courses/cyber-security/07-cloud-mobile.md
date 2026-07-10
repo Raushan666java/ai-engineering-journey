@@ -2112,6 +2112,20 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Shared Responsibility Model | Know your boundary — in IaaS you patch the OS, in PaaS you secure the app, in SaaS you manage access; never assume the provider secures your data |
+| Container & Kubernetes Security | Run containers as non-root, use read-only rootfs, implement Pod Security Standards, enforce Network Policies, scan images with Trivy |
+| Cloud IAM Least Privilege | Start with implicit deny, use resource-level permissions, simulate policies before deployment, review unused permissions quarterly |
+| Cloud Data Protection | Use envelope encryption with KMS, enforce IMDSv2 on EC2, enable S3 Block Public Access, encrypt data at rest and in transit |
+| Serverless Security | Validate all event inputs, use least-privilege IAM roles, store secrets in Secrets Manager, set function concurrency limits |
+| Mobile OS & App Security | Harden Android with Work Profile and iOS with User Enrollment; follow OWASP Mobile Top 10 — focus on M5 and M7 |
+| Cloud Compliance Automation | Use CSPM tools (AWS Config, Azure Policy) for continuous compliance, IaC scanning (Checkov, tfsec) pre-deployment, and CIEM for permission hygiene |
+
+---
+
 ## Summary
 
 - **Cloud Service Models:** IaaS, PaaS, SaaS — each shifts responsibility boundaries. Know exactly what you secure in each model.
@@ -2135,24 +2149,160 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 
 ### Review Questions
 1. In the Shared Responsibility Model for PaaS, who is responsible for patching the runtime environment?
+
+<details>
+<summary>Solution</summary>
+The cloud provider patches the runtime environment (OS, middleware, runtime engine). The customer is responsible for patching their application code and managing access controls. The split varies by service — serverless (Lambda) the provider patches everything below the code; container platforms (EKS) the customer patches the container OS.
+</details>
+
 2. What is the difference between IMDSv1 and IMDSv2? Why did AWS make IMDSv2 the default?
+
+<details>
+<summary>Solution</summary>
+IMDSv1: direct request to 169.254.169.254 — vulnerable to SSRF (any HTTP request can read metadata). IMDSv2: requires a PUT request to obtain a session token, then includes the token in subsequent GET requests — prevents simple SSRF because the token fetch is a separate step. AWS made v2 default because v1 is a common attack vector (Capital One 2019 breach).
+</details>
+
 3. Explain how a Kubernetes Network Policy enforces micro-segmentation.
+
+<details>
+<summary>Solution</summary>
+NetworkPolicies are firewall rules at the pod level using label selectors. Default-deny ingress/egress is applied at the namespace level. Allow rules specify which pods (by labels), namespaces, IP blocks, and ports can communicate. This isolates workloads — a compromised pod in namespace A cannot reach pods in namespace B unless explicitly allowed.
+</details>
+
 4. What is the difference between KMS and HSM? When would you use each?
+
+<details>
+<summary>Solution</summary>
+KMS (Key Management Service): software-based key management, FIPS 140-2 Level 2/3, lower cost, regional, automatic rotation. HSM (Hardware Security Module): dedicated hardware, FIPS 140-2 Level 3/4, tamper-resistant, higher throughput, lower latency. Use KMS for most use cases (encryption at rest, key rotation). Use HSM for regulatory compliance (PCI-DSS), high-frequency signing, or when keys must never leave dedicated hardware.
+</details>
+
 5. How does Android's Work Profile protect corporate data without compromising user privacy?
+
+<details>
+<summary>Solution</summary>
+Work Profile creates a separate encrypted container on the device. Corporate apps and data are isolated from personal apps — no cross-access. IT can manage work apps (wipe, enforce passcode) without accessing personal data. Separation is enforced at the kernel level via SELinux. When the work profile is removed, only corporate data is deleted.
+</details>
+
 6. What is the purpose of Falco's syscall monitoring? How does it differ from vulnerability scanning?
+
+<details>
+<summary>Solution</summary>
+Falco monitors kernel syscalls at runtime to detect anomalous behavior (e.g., shell in container, privilege escalation, file access outside allowed paths). Vulnerability scanning is static — it checks container images for known CVEs before deployment. Falco catches runtime attacks that bypass static checks — zero-day exploits, compromised credentials, malicious insiders.
+</details>
+
 7. Explain the FORCEDENTRY exploit chain from initial access to data exfiltration.
+
+<details>
+<summary>Solution</summary>
+FORCEDENTRY (2021) exploited a CoreGraphics PDF parsing vulnerability (CVE-2021-30860) in iMessage. Chain: 1) Attacker sends a malicious PDF via iMessage. 2) PDF parser overflow leads to kernel-level code execution. 3) Pegasus spyware installed with full device access (mic, camera, messages, location). 4) Data exfiltration via encrypted C2. No user interaction required — zero-click exploit.
+</details>
 
 ### Application Problems
 1. You are migrating a web application from IaaS (EC2) to serverless (Lambda + API Gateway). Map the security controls that change for each OWASP category.
+
+<details>
+<summary>Solution</summary>
+A01 (Broken Access Control): EC2 security groups → API Gateway resource policies + Lambda IAM roles. A03 (Injection): WAF on ALB → API Gateway WAF integration. A05 (Misconfiguration): OS patching (EC2) → provider-managed runtime (Lambda). A06 (Vulnerable Components): container/image scanning → Lambda layer scanning. A10 (SSRF): IMDS protection → Lambda execution role (no IMDS access by default). Network isolation shifts from VPC/subnet to IAM permissions.
+</details>
+
 2. Design a least-privilege IAM policy for a CI/CD pipeline that deploys to EKS, reads from ECR, and writes logs to CloudWatch.
+
+<details>
+<summary>Solution</summary>
+```json
+{
+  "Effect": "Allow", "Action": ["ecr:GetDownloadUrlForLayer","ecr:BatchGetImage","ecr:BatchCheckLayerAvailability"],
+  "Resource": "arn:aws:ecr:*:account:repository/*"
+}
+{
+  "Effect": "Allow", "Action": ["eks:DescribeCluster","eks:UpdateClusterConfig"],
+  "Resource": "arn:aws:eks:*:account:cluster/*"
+}
+{
+  "Effect": "Allow", "Action": ["logs:CreateLogGroup","logs:CreateLogStream","logs:PutLogEvents"],
+  "Resource": "arn:aws:logs:*:account:log-group:/ci/*"
+}
+```
+Use OIDC for ephemeral credentials instead of long-lived access keys.
+</details>
+
 3. Create a Kubernetes Network Policy that isolates a PCI-DSS payment processing namespace from all other namespaces except a monitoring namespace.
+
+<details>
+<summary>Solution</summary>
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata: { name: pci-isolation, namespace: payment }
+spec:
+  podSelector: {}
+  policyTypes: [Ingress, Egress]
+  ingress:
+  - from:
+    - namespaceSelector: { matchLabels: { name: monitoring } }
+  egress:
+  - to:
+    - namespaceSelector: { matchLabels: { name: monitoring } }
+```
+Default-deny for all other ingress/egress — only monitoring namespace can reach payment pods.
+</details>
+
 4. Write an Android application snippet that uses EncryptedSharedPreferences and explain each configuration parameter.
+
+<details>
+<summary>Solution</summary>
+```kotlin
+val prefs = EncryptedSharedPreferences.create(
+  "secure_prefs",  // file name
+  MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC),  // master key (AES-256-GCM)
+  context,
+  EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,  // key encryption
+  EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM   // value encryption
+)
+prefs.edit().putString("api_token", token).apply()
+```
+AES256_SIV for keys (deterministic, allows key lookup), AES256_GCM for values (authenticated encryption).
+</details>
+
 5. Design a Falco rule that detects a container attempting to mount the host's Docker socket.
+
+<details>
+<summary>Solution</summary>
+```yaml
+- rule: Detect Docker Socket Mount
+  desc: A container attempted to mount the host Docker socket
+  condition: >
+    evt.type=open and
+    container.id != host and
+    fd.name=/var/run/docker.sock
+  output: >
+    Docker socket mount detected (user=%user.name command=%proc.cmdline container=%container.id)
+  priority: CRITICAL
+  tags: [container, mitre_privilege_escalation]
+```
+</details>
 
 ### Challenge Problems
 1. Research and explain the "Cloud Hopper" attack (APT10, 2014-2017). How did the attackers exploit managed service providers? Map each phase to the MITRE ATT&CK framework.
+
+<details>
+<summary>Solution</summary>
+APT10 targeted managed service providers (MSPs) to gain access to their clients. Phase 1 (Initial Access T1078): Spear-phishing MSP employees. Phase 2 (Persistence T1133): VPN credentials theft. Phase 3 (Lateral Movement T1021): Move from MSP to client environments using trusted connections. Phase 4 (Collection T1005): Exfiltrate IP and trade secrets. Significance: supply chain attack — compromising one MSP gave access to dozens of clients.
+</details>
+
 2. Design a zero-trust architecture for a mobile workforce. Include: conditional access policies, device compliance rules, app protection policies, and data loss prevention controls for both iOS and Android devices.
+
+<details>
+<summary>Solution</summary>
+Conditional Access: MFA required, device must be MDM-enrolled, OS version ≥ current-1, geo-fencing for sensitive apps. Device Compliance: disk encryption enabled, no root/jailbreak, passcode ≥ 6 digits, recent security patch. App Protection: app-level PIN, app proxy for data access, prevent screenshots of work apps, encrypted shared storage. DLP: prevent copy/paste from work to personal apps, block file downloads to personal cloud, remote wipe of corporate data only.
+</details>
+
 3. Design a secure CI/CD pipeline that uses ephemeral credentials (OIDC), container image signing (Cosign), and admission controller enforcement (Kyverno) to prevent attackers from injecting malicious code through the build pipeline.
+
+<details>
+<summary>Solution</summary>
+1) Developer pushes code → GitHub Actions triggered. 2) OIDC-based authentication to AWS/GCP (no static secrets). 3) Build container image, scan for CVEs (Trivy). 4) Sign image with Cosign using keyless signing (OIDC + Fulcio). 5) Push to registry, store attestation (signed SBOM). 6) Kyverno admission controller in cluster verifies: image is signed, attestation matches, CVE score below threshold. 7) If valid → pod is admitted. If invalid → deployment is blocked.
+</details>
 
 ### Concept Comparison
 
@@ -2182,52 +2332,15 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 
 ## Chapter Quiz
 
-1. In IaaS, who patches the guest OS?
-   - A) Cloud provider
-   - B) Customer
-   - C) Shared between provider and customer
-   - D) No one — IaaS doesn't have guest OS
-
-2. Which tool runs a CIS benchmark against a Kubernetes cluster?
-   - A) kube-bench
-   - B) kube-hunter
-   - C) Trivy
-   - D) Falco
-
-3. The Capital One 2019 breach was caused by:
-   - A) SQL injection
-   - B) SSRF to EC2 metadata endpoint
-   - C) Weak S3 bucket password
-   - D) Compromised employee credentials
-
-4. OWASP Mobile Top 10 M7 is:
-   - A) Insecure Communication
-   - B) Insecure Data Storage
-   - C) Improper Platform Usage
-   - D) Insufficient Cryptography
-
-5. Which Android component enforces mandatory access control?
-   - A) Android Permission Manager
-   - B) SELinux
-   - C) Google Play Protect
-   - D) SafetyNet
-
-6. What does CIEM focus on?
-   - A) Container image vulnerability scanning
-   - B) Cloud IAM permissions management at scale
-   - C) Cloud workload anti-malware protection
-   - D) Cloud network security group management
-
-7. The FORCEDENTRY exploit targeted which iOS component?
-   - A) Safari WebKit
-   - B) CoreGraphics PDF parser
-   - C) iMessage BlastDoor
-   - D) Secure Enclave
-
-<details>
-<summary>Answers&lt;/summary&gt;
-1. B, 2. A, 3. B, 4. B, 5. B, 6. B, 7. B
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | In IaaS, who patches the guest OS? | Cloud provider | Customer | Shared between provider and customer | No one — IaaS doesn't have guest OS | B |
+| 2 | Which tool runs a CIS benchmark against a Kubernetes cluster? | kube-bench | kube-hunter | Trivy | Falco | A |
+| 3 | The Capital One 2019 breach was caused by: | SQL injection | SSRF to EC2 metadata endpoint | Weak S3 bucket password | Compromised employee credentials | B |
+| 4 | OWASP Mobile Top 10 M7 is: | Insecure Communication | Insecure Data Storage | Improper Platform Usage | Insufficient Cryptography | B |
+| 5 | Which Android component enforces mandatory access control? | Android Permission Manager | SELinux | Google Play Protect | SafetyNet | B |
+| 6 | What does CIEM focus on? | Container image vulnerability scanning | Cloud IAM permissions management at scale | Cloud workload anti-malware protection | Cloud network security group management | B |
+| 7 | The FORCEDENTRY exploit targeted which iOS component? | Safari WebKit | CoreGraphics PDF parser | iMessage BlastDoor | Secure Enclave | B |
 
 ---
 

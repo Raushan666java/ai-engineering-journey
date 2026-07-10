@@ -996,29 +996,13 @@ class RateLimiterFactory:
 
 ## Chapter Quiz
 
-**Q1:** What is the key takeaway from this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most critical for distributed systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q3:** How does this topic apply to FAANG-level system design?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | In UML, what does a filled diamond arrow represent? | A) Aggregation (part can exist independently), B) Composition (part lifecycle tied to whole), C) Inheritance, D) Dependency | B) Composition — the part's lifetime is tied to the whole (filled diamond on owner side) |
+| 2 | What is LCOM4 and what does a value of 1 indicate? | A) Lines of Code Metric; 1 = too small, B) Lack of Cohesion of Methods; 1 = high cohesion, C) Loop Complexity Metric; 1 = simple, D) Coupling Metric; 1 = loose | B) LCOM4 counts connected components in the method-field graph; LCOM4 = 1 means all methods share fields (high cohesion) |
+| 3 | In the Elevator System, what algorithm does the controller use for dispatching? | A) FCFS (First-Come-First-Served), B) SCAN (service requests in current direction before reversing), C) SSTF (Shortest Seek Time First), D) Random | B) SCAN algorithm — the elevator continues in its current direction, picking up requests along the way, before reversing direction |
+| 4 | In the Parking Lot design, why is `ParkingSpot.park()` locked but `ParkingLot.park_vehicle()` is not? | A) Both should be locked, B) Spot-level lock prevents concurrent parking in the same spot; scanning floors without a lock is safe because spot lock ensures correctness, C) Neither needs locking, D) The whole lot scan must be locked | B) The fine-grained spot lock prevents double-booking a single spot; scanning for available spots without a global lock is safe because the actual parking operation (locked at spot level) atomically checks and occupies |
+| 5 | What is the purpose of the "make-move, check-for-self-check, undo" cycle in the Chess Game implementation? | A) To reduce computation, B) To validate all rule interactions including discovered checks, C) To simplify the board representation, D) To enable AI move generation | B) It validates all rule interactions — by executing the move, checking if the king is in check, and undoing, the system catches discovered checks, pins, and all other rule interactions without implementing special-case logic |
 
 ---
 
@@ -1143,7 +1127,396 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
+
+### TypeScript: TicTacToe, LibrarySystem, and VendingMachine
+
+```typescript
+class TicTacToe {
+  private board: string[][];
+  private currentPlayer: string;
+  private gameOver = false;
+  private winner: string | null = null;
+  private moveHistory: { row: number; col: number; player: string }[] = [];
+
+  constructor() {
+    this.board = Array.from({ length: 3 }, () => Array(3).fill(""));
+    this.currentPlayer = "X";
+  }
+
+  makeMove(row: number, col: number): boolean {
+    if (this.gameOver || row < 0 || row > 2 || col < 0 || col > 2 || this.board[row][col] !== "") {
+      return false;
+    }
+    this.board[row][col] = this.currentPlayer;
+    this.moveHistory.push({ row, col, player: this.currentPlayer });
+
+    if (this.checkWin(row, col)) {
+      this.gameOver = true;
+      this.winner = this.currentPlayer;
+      return true;
+    }
+    if (this.moveHistory.length === 9) {
+      this.gameOver = true;
+      this.winner = null;
+      return true;
+    }
+    this.currentPlayer = this.currentPlayer === "X" ? "O" : "X";
+    return true;
+  }
+
+  private checkWin(row: number, col: number): boolean {
+    const p = this.board[row][col];
+    const rowWin = this.board[row].every(c => c === p);
+    const colWin = this.board.every(r => r[col] === p);
+    const diag1Win = row === col && this.board.every((_, i) => this.board[i][i] === p);
+    const diag2Win = row + col === 2 && this.board.every((_, i) => this.board[i][2 - i] === p);
+    return rowWin || colWin || diag1Win || diag2Win;
+  }
+
+  minimax(board: string[][], depth: number, isMaximizing: boolean): number {
+    const result = this.evaluateBoard(board);
+    if (result !== 0) return result;
+    if (this.isBoardFull(board)) return 0;
+
+    if (isMaximizing) {
+      let best = -Infinity;
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          if (board[i][j] === "") {
+            board[i][j] = "O";
+            best = Math.max(best, this.minimax(board, depth + 1, false));
+            board[i][j] = "";
+          }
+        }
+      }
+      return best;
+    } else {
+      let best = Infinity;
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          if (board[i][j] === "") {
+            board[i][j] = "X";
+            best = Math.min(best, this.minimax(board, depth + 1, true));
+            board[i][j] = "";
+          }
+        }
+      }
+      return best;
+    }
+  }
+
+  getBestMove(): { row: number; col: number } | null {
+    let bestScore = -Infinity;
+    let bestMove: { row: number; col: number } | null = null;
+    const boardCopy = this.board.map(r => [...r]);
+
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 3; j++) {
+        if (boardCopy[i][j] === "") {
+          boardCopy[i][j] = "O";
+          const score = this.minimax(boardCopy, 0, false);
+          boardCopy[i][j] = "";
+          if (score > bestScore) {
+            bestScore = score;
+            bestMove = { row: i, col: j };
+          }
+        }
+      }
+    }
+    return bestMove;
+  }
+
+  private evaluateBoard(board: string[][]): number {
+    for (let i = 0; i < 3; i++) {
+      if (board[i][0] && board[i][0] === board[i][1] && board[i][1] === board[i][2]) {
+        return board[i][0] === "O" ? 10 : -10;
+      }
+      if (board[0][i] && board[0][i] === board[1][i] && board[1][i] === board[2][i]) {
+        return board[0][i] === "O" ? 10 : -10;
+      }
+    }
+    if (board[0][0] && board[0][0] === board[1][1] && board[1][1] === board[2][2]) {
+      return board[0][0] === "O" ? 10 : -10;
+    }
+    if (board[0][2] && board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
+      return board[0][2] === "O" ? 10 : -10;
+    }
+    return 0;
+  }
+
+  private isBoardFull(board: string[][]): boolean {
+    return board.every(row => row.every(c => c !== ""));
+  }
+
+  getBoard(): string[][] { return this.board.map(r => [...r]); }
+  getCurrentPlayer(): string { return this.currentPlayer; }
+  isGameOver(): boolean { return this.gameOver; }
+  getWinner(): string | null { return this.winner; }
+  getMoveCount(): number { return this.moveHistory.length; }
+}
+
+class LibrarySystem {
+  private books = new Map<string, Book>();
+  private members = new Map<string, Member>();
+  private borrowRecords = new Map<string, BorrowRecord>();
+  private reservations = new Map<string, Reservation[]>();
+  private fineRate = 1.0;
+
+  addBook(book: Book): void { this.books.set(book.isbn, book); }
+  registerMember(member: Member): void { this.members.set(member.id, member); }
+
+  borrowBook(memberId: string, isbn: string): BorrowRecord | null {
+    const book = this.books.get(isbn);
+    const member = this.members.get(memberId);
+    if (!book || !member || !book.isAvailable) return null;
+    if (member.outstandingFine > 50) return null;
+    book.isAvailable = false;
+    const record = new BorrowRecord(memberId, isbn);
+    this.borrowRecords.set(record.id, record);
+    member.activeBorrowings++;
+    return record;
+  }
+
+  returnBook(borrowId: string): number {
+    const record = this.borrowRecords.get(borrowId);
+    if (!record || record.returned) return 0;
+    record.returned = true;
+    record.returnDate = new Date();
+    const book = this.books.get(record.isbn);
+    if (book) book.isAvailable = true;
+    const member = this.members.get(record.memberId);
+    if (member) member.activeBorrowings--;
+    const overdueDays = Math.max(0, Math.floor((record.returnDate.getTime() - record.dueDate.getTime()) / 86400000));
+    const fine = overdueDays * this.fineRate;
+    if (fine > 0 && member) member.outstandingFine += fine;
+    return fine;
+  }
+
+  reserveBook(memberId: string, isbn: string): boolean {
+    const book = this.books.get(isbn);
+    const member = this.members.get(memberId);
+    if (!book || !member) return false;
+    if (!this.reservations.has(isbn)) this.reservations.set(isbn, []);
+    const reservations = this.reservations.get(isbn)!;
+    if (reservations.some(r => r.memberId === memberId)) return false;
+    reservations.push(new Reservation(memberId, isbn));
+    return true;
+  }
+
+  processReservations(isbn: string): string | null {
+    const reservations = this.reservations.get(isbn);
+    if (!reservations || reservations.length === 0) return null;
+    const next = reservations.shift()!;
+    return next.memberId;
+  }
+
+  getBook(isbn: string): Book | undefined { return this.books.get(isbn); }
+  getMember(id: string): Member | undefined { return this.members.get(id); }
+}
+
+class Book {
+  isAvailable = true;
+  constructor(public isbn: string, public title: string, public author: string, public totalCopies: number) {}
+}
+
+class Member {
+  activeBorrowings = 0;
+  outstandingFine = 0;
+  constructor(public id: string, public name: string) {}
+}
+
+class BorrowRecord {
+  readonly id: string;
+  readonly borrowDate: Date;
+  readonly dueDate: Date;
+  returned = false;
+  returnDate: Date | null = null;
+  constructor(public memberId: string, public isbn: string) {
+    this.id = `BR-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
+    this.borrowDate = new Date();
+    this.dueDate = new Date(this.borrowDate.getTime() + 14 * 86400000);
+  }
+}
+
+class Reservation {
+  constructor(public memberId: string, public isbn: string) {}
+}
+
+class VendingMachine {
+  private inventory = new Map<string, { product: VendingProduct; quantity: number }>();
+  private balance = 0;
+  private insertedCoins: number[] = [];
+  private acceptedDenominations = [1, 5, 10, 25, 100, 500, 1000];
+  private transactionLog: Transaction[] = [];
+  private state: "idle" | "hasMoney" | "dispensing" = "idle";
+  private selectedCode: string | null = null;
+
+  addProduct(code: string, product: VendingProduct, quantity: number): void {
+    this.inventory.set(code, { product, quantity });
+  }
+
+  insertCoin(amount: number): boolean {
+    if (!this.acceptedDenominations.includes(amount)) return false;
+    this.balance += amount;
+    this.insertedCoins.push(amount);
+    this.state = "hasMoney";
+    return true;
+  }
+
+  insertBill(amount: number): boolean {
+    return this.insertCoin(amount);
+  }
+
+  selectProduct(code: string): { success: boolean; message: string } {
+    const slot = this.inventory.get(code);
+    if (!slot) return { success: false, message: "Invalid code" };
+    if (slot.quantity <= 0) return { success: false, message: "Out of stock" };
+    if (this.balance < slot.product.price) {
+      return { success: false, message: `Insufficient funds. Need ${slot.product.price}, have ${this.balance}` };
+    }
+    this.selectedCode = code;
+    this.state = "dispensing";
+    return { success: true, message: `Selected ${slot.product.name}` };
+  }
+
+  dispense(): { product: VendingProduct | null; change: number[] } {
+    if (this.state !== "dispensing" || !this.selectedCode) {
+      return { product: null, change: this.calculateChange(this.balance) };
+    }
+    const slot = this.inventory.get(this.selectedCode)!;
+    slot.quantity--;
+    const changeAmount = this.balance - slot.product.price;
+    const change = this.calculateChange(changeAmount);
+    const transaction = new Transaction(slot.product, this.balance, changeAmount);
+    this.transactionLog.push(transaction);
+    this.balance = 0;
+    this.insertedCoins = [];
+    this.selectedCode = null;
+    this.state = "idle";
+    return { product: slot.product, change };
+  }
+
+  private calculateChange(amount: number): number[] {
+    const coins: number[] = [];
+    let remaining = amount;
+    const denominations = [1000, 500, 100, 25, 10, 5, 1];
+    for (const denom of denominations) {
+      while (remaining >= denom) {
+        coins.push(denom);
+        remaining -= denom;
+      }
+    }
+    return coins;
+  }
+
+  cancel(): number[] {
+    const change = this.calculateChange(this.balance);
+    this.balance = 0;
+    this.insertedCoins = [];
+    this.selectedCode = null;
+    this.state = "idle";
+    return change;
+  }
+
+  getBalance(): number { return this.balance; }
+  getState(): string { return this.state; }
+  getInventory(): Map<string, { product: VendingProduct; quantity: number }> { return new Map(this.inventory); }
+  getTransactionLog(): Transaction[] { return [...this.transactionLog]; }
+}
+
+class VendingProduct {
+  constructor(public code: string, public name: string, public price: number) {}
+}
+
+class Transaction {
+  readonly timestamp: Date;
+  constructor(public product: VendingProduct, public amountPaid: number, public change: number) {
+    this.timestamp = new Date();
+  }
+}
+```
+
+### Mermaid: Component Design Workflow
+
+```mermaid
+graph TD
+    classDef start fill#c8e6c9,stroke#2e7d32,stroke-width:2px
+    classDef design fill#e3f2fd,stroke#1565c0,stroke-width:2px
+    classDef uml fill#fff9c4,stroke#f57f17,stroke-width:2px
+    classDef impl fill#fce4ec,stroke#c62828,stroke-width:2px
+    classDef test fill#f3e5f5,stroke#7b1fa2,stroke-width:2px
+    classDef review fill#e8f5e9,stroke#388e3c,stroke-width:2px
+
+    subgraph "Requirements Analysis"
+        REQ["Gather Requirements<br/>Functional + Non-Functional"]:::start
+        USECASE["Identify Use Cases<br/>Actors & Scenarios"]:::start
+        DOMAIN["Domain Modeling<br/>Entities, Value Objects, Aggregates"]:::start
+    end
+
+    subgraph "Component Design"
+        DECOMP["Decomposition<br/>Split into Components"]:::design
+        INTF["Interface Design<br/>APIs, Contracts, Protocols"]:::design
+        DEP["Dependency Analysis<br/>Fan-in / Fan-out / Cycles"]:::design
+        STATE["State Machine Design<br/>States & Transitions"]:::design
+    end
+
+    subgraph "UML Modeling"
+        CD["Class Diagram<br/>Relationships, Multiplicity"]:::uml
+        SD["Sequence Diagram<br/>Message Flow, Combined Fragments"]:::uml
+        ACT["Activity Diagram<br/>Parallel Flows, Decisions"]:::uml
+    end
+
+    subgraph "Implementation"
+        SOLID["Apply SOLID Principles"]:::impl
+        PATTERN["Choose Design Patterns"]:::impl
+        CODECLASS["Code Classes & Components"]:::impl
+    end
+
+    subgraph "Verification"
+        UT["Unit Tests<br/>LCOM, Coverage"]:::test
+        CT["Contract Tests<br/>API Compatibility"]:::test
+        INT["Integration Tests<br/>Component Interaction"]:::test
+    end
+
+    subgraph "Review & Refine"
+        CR["Code Review<br/>Pattern Compliance, Coupling Check"]:::review
+        REF["Refactor<br/>Extract, Rename, Reorganize"]:::review
+        DOC["Document Design Decisions"]:::review
+    end
+
+    REQ --> USECASE --> DOMAIN
+    DOMAIN --> DECOMP --> INTF --> DEP --> STATE
+    DEP --> CD --> SD --> ACT
+    STATE --> CD
+    CD --> SOLID --> PATTERN --> CODECLASS
+    CODECLASS --> UT --> CT --> INT
+    INT --> CR --> REF --> DOC
+    REF -.->|iterate| DECOMP
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| UML class diagrams model structural relationships with precise notation | Use class diagrams for documenting architecture; use aggregation (hollow diamond) for independent parts and composition (filled diamond) for lifecycle-bound parts |
+| Sequence diagrams capture dynamic interaction flow over time | Use combined fragments (alt, opt, loop, par) to model branching, optional paths, loops, and parallel execution in system design documents |
+| The Parking Lot design demonstrates entity modeling with thread safety | Lock the spot-level operation (park/leave) rather than the entire lot scan to maximize concurrency |
+| The Vending Machine State pattern eliminates complex conditionals | Each state is a separate class with explicit transitions — the machine object delegates behavior to the current state |
+| The Elevator SCAN algorithm with dual heaps minimizes starvation | Use two priority queues (min-heap for up, max-heap for down) for O(log n) request insertion instead of linear floor scans |
+| The Chess Game validates moves through a make-check-undo cycle | Execute the move on a copy of the board, check for self-check, then undo — this trivially validates all rule interactions |
+| The Logger library separates formatting, output, and level filtering as swappable components | Design for composability: Formatter (Strategy), Appender (Observer), Level Filter (Chain of Responsibility), all wired together at configuration time |
+
+## Case Study
+
+**Designing a Library Management System**
+
+A public library system serving 50,000 members needed a digital catalog and borrowing system to replace their paper-based process. The system required: book cataloging with ISBN lookup, member registration, borrowing with 14-day loans, fine calculation ($1/day overdue), reservations with FIFO queue, and multi-branch support. The senior engineer led a component design process following the UML workflow described in this chapter.
+
+The design phase began with entity identification: `Book`, `Member`, `BorrowRecord`, `Reservation`, `Branch`, `Librarian`. The class diagram showed composition between `Branch` and `BookCopy` (copies belong to a branch), aggregation between `Member` and `BorrowRecord` (records exist independently for audit purposes). The sequence diagram for `borrowBook` showed the flow: Member -> LibrarySystem -> validate member -> check book availability -> check fines -> create BorrowRecord -> update book availability. An `alt` fragment modeled the "fines exceeded" rejection path. The state machine defined book statuses: AVAILABLE, BORROWED, RESERVED, LOST, DAMAGED.
+
+The implementation applied SRP strictly: `BorrowingService` handled loans, `FineCalculator` computed overdue charges, `ReservationQueue` managed FIFO waiting lists, `CatalogSearch` handled queries. The Observer pattern was used for notifications — when a reserved book was returned, the `NotificationService` (observer) was notified and contacted the next member in the reservation queue. The Strategy pattern allowed different fine policies (standard $1/day, student $0.50/day, senior citizen free). The system handled 10,000 daily transactions with 99.9% uptime. A post-deployment review showed the design's extensibility: adding a new "digital lending" feature required only two new classes (`DigitalBook`, `DigitalRightsManager`) without modifying any existing code.
+
+---
 - UML class diagrams use rectangles for classes, with `/` italicization for abstract entities, specific arrow types for inheritance (hollow triangle), composition (filled diamond), aggregation (hollow diamond), and dependency (dashed arrow).
 - Sequence diagrams model message flow across time with activation bars and combined fragments (alt, opt, loop, par) for control logic.
 - The Parking Lot design demonstrates entity modeling (Vehicle hierarchy, ParkingSpot, Ticket, Payment) with thread-safe parking allocation.
@@ -1155,24 +1528,163 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 ## Exercises
 ### Review Questions
-1. What is the difference between aggregation and composition in UML? Give a real-world example where confusing them would cause bugs.
-2. In the parking lot design, why is it important to lock the `ParkingSpot.park()` method but not the `ParkingLot.park_vehicle()` iteration? What could go wrong?
-3. The chess implementation validates legal moves by executing, checking for self-check, and undoing. What are the performance implications of this approach, and how could you optimize it for a chess engine?
-4. In the elevator system, what advantage does the SCAN algorithm provide over FCFS (First-Come-First-Served)? Under what conditions does SCAN perform worse?
+<details>
+<summary>Solution for Review Question 1</summary>
+**Aggregation** (hollow diamond): the part can exist independently of the whole. Example: `Department` aggregates `Professor` — if the department dissolves, professors still exist. **Composition** (filled diamond): the part's lifetime is tied to the whole. Example: `House` composes `Room` — if the house is demolished, the rooms cease to exist. Confusing them would cause bugs: if `Order` uses composition with `OrderItem` (items deleted with order), but the design incorrectly uses aggregation, deleting an order would leak items in memory/database. Conversely, if a `Team` incorrectly uses composition for `Player`, releasing a team would delete player records.
+</details>
+
+<details>
+<summary>Solution for Review Question 2</summary>
+`ParkingSpot.park()` must be locked to prevent two threads from simultaneously parking different vehicles in the same spot (race condition). The lock ensures that the check-and-occupy operation (`isAvailable` check + `vehicle` assignment) is atomic. `ParkingLot.park_vehicle()` iterates floors without a global lock because: (a) if a spot becomes available between the check and the `park()` call, the `park()` lock handles the conflict; (b) holding a global lock during the entire floor scan would block all other parking/exit operations, severely limiting concurrency. What could go wrong without spot-level locking: two vehicles could both find the same spot available and both execute `park()` — both would receive tickets for the same spot.
+</details>
+
+<details>
+<summary>Solution for Review Question 3</summary>
+The make-check-undo approach generates O(moves × checks) — for each candidate move, we execute it, generate all opponent moves, check for check, and undo. For a typical position with 40 candidate moves each generating 40 opponent moves, this is 1,600 board copies per move iteration. Performance implications: (a) board copy overhead for each candidate move, (b) generating opponent moves twice (once for check detection, once later), (c) undo is O(1) if using move state snapshots. Optimizations: use a bitboard representation (no copies — just XOR bit masks), generate only opponent captures + king checks (fast check detection), use a "check mask" that pre-computes which pieces can give check, and cache legal moves across iterations.
+</details>
+
+<details>
+<summary>Solution for Review Question 4</summary>
+SCAN processes requests in the current direction before reversing — it reduces starvation because a request that arrived at floor 3 going up will be serviced on the current upward pass rather than waiting for the elevator to reach the bottom and come back up. FCFS services requests in arrival order regardless of direction — this causes excessive back-and-forth movement (thrashing). SCAN performs worse than FCFS when: (a) requests are clustered in one direction but the elevator is moving in the opposite direction (SCAN forces the elevator to continue to the end before reversing), (b) real-time systems where worst-case wait time must be bounded (FCFS has more predictable timing), (c) very low request density (SCAN wastes time traversing empty floors).
+</details>
 
 ### Application Problems
-1. Draw a UML class diagram for the parking lot system including: `ParkingLot`, `ParkingFloor`, `ParkingSpot`, `Vehicle` (abstract), `Car`, `Motorcycle`, `Truck`, `Ticket`, `Payment` (abstract), `CashPayment`, `CardPayment`. Show all multiplicities, inheritance, and composition relationships.
-2. Implement a "parking spot occupancy display" for the parking lot using the Observer pattern. The display should update whenever a spot becomes occupied or free. Add the necessary `register_observer` and `notify` methods without modifying the existing `ParkingSpot` interface.
-3. Extend the vending machine to support a "Restocking" state that is only accessible to authorized personnel with an access code. The restocking state should allow adding inventory without going through the normal usage flow.
+<details>
+<summary>Solution for Application Problem 1: Parking Lot UML Class Diagram</summary>
+```
+ParkingLot "1" *-- "*" ParkingFloor  (composition)
+ParkingFloor "1" *-- "20" ParkingSpot  (composition)
+ParkingLot "1" --> "0..*" Ticket  (association)
+Vehicle <|-- Car  (inheritance)
+Vehicle <|-- Motorcycle  (inheritance)
+Vehicle <|-- Truck  (inheritance)
+ParkingSpot "1" --> "0..1" Vehicle  (association)
+Ticket "1" --> "1" ParkingSpot  (association)
+Ticket "1" --> "1" Vehicle  (association)
+Payment <|-- CashPayment  (inheritance)
+Payment <|-- CardPayment  (inheritance)
+Multiplicities: ParkingFloor has 20-100 spots; ParkingLot has 3-10 floors; each spot holds 0-1 vehicle.
+```
+</details>
+
+<details>
+<summary>Solution for Application Problem 2: Observer-Based Occupancy Display</summary>
+```python
+from abc import ABC, abstractmethod
+class SpotObserver(ABC):
+    @abstractmethod
+    def on_spot_changed(self, spot_id: str, is_occupied: bool): ...
+class ObservableParkingSpot:
+    def __init__(self, spot_id: str, size):
+        self.spot_id = spot_id; self.size = size; self._observers = []; self._occupied = False
+    def register(self, obs): self._observers.append(obs)
+    def occupy(self):
+        if not self._occupied:
+            self._occupied = True
+            for o in self._observers: o.on_spot_changed(self.spot_id, True)
+    def vacate(self):
+        if self._occupied:
+            self._occupied = False
+            for o in self._observers: o.on_spot_changed(self.spot_id, False)
+class DisplayBoard(SpotObserver):
+    def __init__(self): self._spots = {}
+    def on_spot_changed(self, spot_id, occupied):
+        self._spots[spot_id] = occupied
+        occupied_count = sum(1 for v in self._spots.values() if v)
+        print(f"Display: Spot {spot_id} {'occupied' if occupied else 'free'}. Total occupied: {occupied_count}")
+```
+</details>
+
+<details>
+<summary>Solution for Application Problem 3: Vending Machine Restocking State</summary>
+Add a `RestockingState` accessed via an access code:
+```python
+class RestockingState(VendingMachineState):
+    def __init__(self, machine, access_code):
+        self.machine = machine; self._code = access_code
+    def enter(self, code):
+        if code == self._code:
+            self.machine.set_state(self)
+            return True
+        return False
+    def add_inventory(self, code, product, qty):
+        self.machine.add_product(code, product, qty)
+    def exit(self):
+        self.machine.set_state(self.machine.idle_state)
+    # Other methods (insert_money, etc.) display "Restocking in progress"
+```
+Add to VendingMachine: `restocking_state = RestockingState(self, "1234")`, `def restock(self, code): self.restocking_state.enter(code)`.
+</details>
 
 ### Challenge Problem
-Design and implement a **Movie Ticket Booking System** covering:
-- **Theaters** with multiple screens, each with a seating layout and showtimes
-- **Seat types** (standard, premium, recliner) each with different pricing
-- **Booking flow**: select movie ? showtime ? seats ? payment ? confirmation
-- **Concurrency handling**: two users must not book the same seat within 50ms
-- **State machine**: a booking starts as `PENDING`, moves to `CONFIRMED` on payment, or `CANCELLED` on timeout (15-minute hold expiry)
-- **Seat locking**: seats are temporarily locked during booking and released on timeout or cancellation
-- **Notifications**: email confirmations sent asynchronously after successful booking
+<details>
+<summary>Solution: Movie Ticket Booking System</summary>
+```python
+import threading, time, uuid
+from enum import Enum
+from datetime import datetime, timedelta
 
-Write UML class and sequence diagrams, then implement the core classes in Python with thread safety. Include a scheduled timer task that releases expired holds.
+class BookingStatus(Enum): PENDING = 0; CONFIRMED = 1; CANCELLED = 2
+
+class Seat:
+    def __init__(self, id, type_name, price_multiplier=1.0):
+        self.id = id; self.type = type_name; self.price_mult = price_multiplier
+        self.is_locked = False; self.lock = threading.Lock()
+
+class Showtime:
+    def __init__(self, movie, time, base_price):
+        self.movie = movie; self.time = time; self.base_price = base_price
+        self.seats = {}; self._lock = threading.Lock()
+
+class Booking:
+    def __init__(self, user_id, showtime, seats):
+        self.id = str(uuid.uuid4()); self.user_id = user_id; self.showtime = showtime
+        self.seats = seats; self.status = BookingStatus.PENDING
+        self.created_at = datetime.now(); self.expires_at = self.created_at + timedelta(minutes=15)
+
+class BookingSystem:
+    def __init__(self): self.bookings = {}; self._lock = threading.Lock()
+
+    def lock_seats(self, showtime, seat_ids, user_id):
+        with showtime._lock:
+            for sid in seat_ids:
+                seat = showtime.seats[sid]
+                with seat.lock:
+                    if seat.is_locked: return False
+            for sid in seat_ids: showtime.seats[sid].is_locked = True
+            booking = Booking(user_id, showtime, seat_ids)
+            with self._lock: self.bookings[booking.id] = booking
+            timer = threading.Timer(900, self._expire_booking, [booking.id])
+            timer.start()
+            return booking.id
+
+    def confirm_booking(self, booking_id):
+        with self._lock:
+            booking = self.bookings.get(booking_id)
+            if not booking or booking.status != BookingStatus.PENDING: return False
+            booking.status = BookingStatus.CONFIRMED
+            # Send notification asynchronously
+            threading.Thread(target=self._send_confirmation, args=(booking,)).start()
+            return True
+
+    def _expire_booking(self, booking_id):
+        with self._lock:
+            booking = self.bookings.get(booking_id)
+            if booking and booking.status == BookingStatus.PENDING:
+                booking.status = BookingStatus.CANCELLED
+                with booking.showtime._lock:
+                    for sid in booking.seats:
+                        booking.showtime.seats[sid].is_locked = False
+
+    def _send_confirmation(self, booking):
+        print(f"Email sent: Booking {booking.id} confirmed for {booking.showtime.movie}")
+
+# Usage
+system = BookingSystem()
+st = Showtime("Dune: Part Two", "2024-03-15 19:00", 15.00)
+for i in range(100): st.seats[str(i)] = Seat(str(i), "standard")
+booking_id = system.lock_seats(st, ["10", "11"], "user42")
+if booking_id: system.confirm_booking(booking_id)
+```
+UML: `BookingSystem` *-- `Booking`, `Showtime` *-- `Seat`, `Booking` --> `Showtime`, `Booking` --> `User`. State machine: `PENDING --[payment]--> CONFIRMED`, `PENDING --[timeout]--> CANCELLED`.
+</details>

@@ -739,82 +739,13 @@ A critical quality issue: subtitles that render differently on different devices
 
 ## Chapter Quiz
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-## Concept Comparison
-> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
-
-| Concept | Definition | Key Insight |
-|---------|-----------|-------------|
-| Theory | Core topic in Chapter 20: Case Study — Netflix and Video Streaming | Fundamental to system design |
-| Case Study: Netflix Playback Startup | Core topic in Chapter 20: Case Study — Netflix and Video Streaming | Fundamental to system design |
-
----
-
-## Quick Reference
-> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
-
-| Topic | Key Point |
-|-------|-----------|
-| Theory | Essential concept for Chapter 20: Case Study — Netflix and Video Streaming |
-
----
-
-## Cross-Application Matrix
-
-| Concept | Application Context | Trade-Off |
-|--------|-------------------|-----------|
-| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
-
----
-
-## Chapter Quiz
-
-**Q1:** What is the primary trade-off discussed in this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most fundamental to the topic of Chapter 20
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
-
-**Q3:** How does this chapter's main concept apply to real-world systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What is the primary advantage of Netflix's Open Connect CDN over commercial CDNs? | A) Lower latency, B) Cost savings at scale + control over cache policy, C) Better codec support, D) Simpler deployment | B |
+| 2 | How does per-title encoding optimization reduce bandwidth without quality loss? | A) Fixed bitrate for all titles, B) Probe encodes with VMAF scoring build custom ladders per title, C) Use only H.265 codec, D) Reduce resolution uniformly | B |
+| 3 | What is the correct sequence of the three-stage recommendation pipeline? | A) Ranking → Re-ranking → Candidate Generation, B) Candidate Generation → Ranking → Re-ranking, C) Re-ranking → Candidate Generation → Ranking, D) Candidate Generation → Re-ranking → Ranking | B |
+| 4 | How does Chaos Kong differ from Chaos Monkey in blast radius? | A) Chaos Kong terminates instances, Chaos Monkey fails regions, B) Chaos Monkey terminates instances, Chaos Kong simulates entire region failure, C) Both are identical, D) Chaos Monkey is for databases only | B |
+| 5 | What mechanism prevents cascading failures across Netflix's 800+ microservices? | A) Synchronous calls only, B) Hystrix circuit breakers with thread pool isolation, C) Single database for all services, D) Manual failover | B |
 
 ---
 
@@ -900,6 +831,315 @@ class ChaosMonkey {
 }
 ```
 
+### TypeScript: Advanced Video Transcoder with HLS Playlist, Collaborative Filtering Engine, and Fault Injection Simulator
+
+```typescript
+class HLSVideoTranscoder {
+  private readonly segmentDuration = 4;
+  private readonly codecs = ["h264", "hevc", "av1"];
+
+  generatePlaylist(sourceDuration: number, profiles: { name: string; bitrate: number; resolution: string }[]): string {
+    let playlist = "#EXTM3U\n#EXT-X-VERSION:7\n";
+    for (const profile of profiles) {
+      playlist += `#EXT-X-STREAM-INF:BANDWIDTH=${profile.bitrate},RESOLUTION=${profile.resolution},CODECS="${this.codecs[0]}"\n`;
+      playlist += `${profile.name}/index.m3u8\n`;
+    }
+    return playlist;
+  }
+
+  generateMediaPlaylist(profileName: string, totalSegments: number): string {
+    let playlist = "#EXTM3U\n#EXT-X-TARGETDURATION:" + this.segmentDuration + "\n#EXT-X-VERSION:7\n";
+    for (let i = 0; i < totalSegments; i++) {
+      playlist += `#EXTINF:${this.segmentDuration}.0,\n${profileName}/segment-${i.toString().padStart(5, "0")}.ts\n`;
+    }
+    return playlist;
+  }
+
+  segmentTimestamps(totalDuration: number): { start: number; end: number }[] {
+    const segments: { start: number; end: number }[] = [];
+    for (let t = 0; t < totalDuration; t += this.segmentDuration) {
+      segments.push({ start: t, end: Math.min(t + this.segmentDuration, totalDuration) });
+    }
+    return segments;
+  }
+
+  estimateQuality(vmafScores: number[]): { average: number; min: number; p95: number } {
+    const sorted = [...vmafScores].sort((a, b) => a - b);
+    return {
+      average: vmafScores.reduce((s, v) => s + v, 0) / vmafScores.length,
+      min: sorted[0],
+      p95: sorted[Math.floor(sorted.length * 0.95)],
+    };
+  }
+}
+
+class CollaborativeFilteringEngine {
+  private userItemMatrix = new Map<string, Map<string, number>>();
+  private itemFeatures = new Map<string, number[]>();
+  private userFactors = new Map<string, number[]>();
+  private readonly latentDim = 20;
+
+  rateItem(userId: string, itemId: string, rating: number): void {
+    if (!this.userItemMatrix.has(userId)) this.userItemMatrix.set(userId, new Map());
+    this.userItemMatrix.get(userId)!.set(itemId, rating);
+  }
+
+  trainALS(iterations = 10): void {
+    const users = [...this.userItemMatrix.keys()];
+    const items = new Set<string>();
+    for (const ratings of this.userItemMatrix.values()) {
+      for (const itemId of ratings.keys()) items.add(itemId);
+    }
+    for (const userId of users) {
+      this.userFactors.set(userId, Array.from({ length: this.latentDim }, () => Math.random() * 0.1));
+    }
+    for (const itemId of items) {
+      this.itemFeatures.set(itemId, Array.from({ length: this.latentDim }, () => Math.random() * 0.1));
+    }
+    for (let iter = 0; iter < iterations; iter++) {
+      for (const [userId, ratings] of this.userItemMatrix) {
+        const uf = this.userFactors.get(userId)!;
+        for (const [itemId, rating] of ratings) {
+          const ifVec = this.itemFeatures.get(itemId)!;
+          const pred = uf.reduce((s, v, i) => s + v * ifVec[i], 0);
+          const err = rating - pred;
+          for (let k = 0; k < this.latentDim; k++) {
+            uf[k] += 0.01 * (err * ifVec[k] - 0.02 * uf[k]);
+            ifVec[k] += 0.01 * (err * uf[k] - 0.02 * ifVec[k]);
+          }
+        }
+      }
+    }
+  }
+
+  hybridRecommend(userId: string, history: string[], limit = 10): { itemId: string; score: number }[] {
+    const collabScores = new Map<string, number>();
+    const contentScores = new Map<string, number>();
+    const uf = this.userFactors.get(userId);
+    if (uf) {
+      for (const [itemId, ifVec] of this.itemFeatures) {
+        const score = uf.reduce((s, v, i) => s + v * ifVec[i], 0);
+        collabScores.set(itemId, score);
+      }
+    }
+    const historySet = new Set(history);
+    for (const [userId2, ratings] of this.userItemMatrix) {
+      if (userId2 === userId) continue;
+      for (const [itemId, rating] of ratings) {
+        if (!historySet.has(itemId)) {
+          contentScores.set(itemId, (contentScores.get(itemId) ?? 0) + rating);
+        }
+      }
+    }
+    const combined = new Map<string, number>();
+    for (const [itemId, score] of collabScores) {
+      combined.set(itemId, score * 0.7 + (contentScores.get(itemId) ?? 0) * 0.3);
+    }
+    for (const [itemId, score] of contentScores) {
+      if (!combined.has(itemId)) combined.set(itemId, score * 0.3);
+    }
+    const historyS = new Set(history);
+    return [...combined.entries()]
+      .filter(([id]) => !historyS.has(id))
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit)
+      .map(([itemId, score]) => ({ itemId, score }));
+  }
+}
+
+class FaultInjectionSimulator {
+  private targets = new Map<string, { failureRate: number; latencyMs: number; enabled: boolean }>();
+
+  registerService(name: string, failureRate: number, latencyMs: number): void {
+    this.targets.set(name, { failureRate, latencyMs, enabled: false });
+  }
+
+  enableChaos(): void {
+    for (const target of this.targets.values()) target.enabled = true;
+  }
+
+  disableChaos(): void {
+    for (const target of this.targets.values()) target.enabled = false;
+  }
+
+  async call<T>(serviceName: string, fn: () => Promise<T>): Promise<T> {
+    const target = this.targets.get(serviceName);
+    if (!target || !target.enabled) return fn();
+    if (Math.random() < target.failureRate) throw new Error(`FaultInjection: ${serviceName} failure`);
+    if (target.latencyMs > 0) await new Promise(r => setTimeout(r, target.latencyMs * Math.random()));
+    return fn();
+  }
+
+  runExperiment<T>(scenario: { durationMs: number; targets: string[] }, fn: () => Promise<T>): Promise<{ success: boolean; errors: string[]; latencyMs: number }> {
+    const errors: string[] = [];
+    const start = Date.now();
+    return fn().then(
+      () => ({ success: true, errors, latencyMs: Date.now() - start }),
+      (err) => { errors.push(err.message); return { success: false, errors, latencyMs: Date.now() - start }; }
+    );
+  }
+}
+```
+
+### TypeScript: Streaming Pipeline with Per-Title Encoding and Chaos Kong Region Failover
+
+```typescript
+class StreamingPipeline {
+  private encodingJobs = new Map<string, { status: string; progress: number; profiles: string[] }>();
+
+  async perTitleEncode(sourceId: string, complexity: { spatial: number; temporal: number }): Promise<string[]> {
+    const profileCount = complexity.spatial > 0.7 && complexity.temporal > 0.7 ? 40 : 12;
+    const profiles: string[] = [];
+    for (let i = 0; i < profileCount; i++) {
+      profiles.push(`profile-${i}`);
+      this.encodingJobs.set(`job-${sourceId}-${i}`, { status: "encoding", progress: 0, profiles });
+    }
+    for (let i = 0; i < profileCount; i++) {
+      await new Promise(r => setTimeout(r, 50));
+      const job = this.encodingJobs.get(`job-${sourceId}-${i}`)!;
+      job.progress = 100;
+      job.status = "complete";
+    }
+    return profiles;
+  }
+
+  measureVMAF(encodedChunk: Buffer, referenceChunk: Buffer): number {
+    const mse = encodedChunk.reduce((s, b, i) => s + (b - (referenceChunk[i] ?? 0)) ** 2, 0) / encodedChunk.length;
+    const maxSignal = 255;
+    const psnr = 10 * Math.log10((maxSignal ** 2) / Math.max(mse, 0.001));
+    return Math.min(100, Math.max(0, psnr * 2.5));
+  }
+}
+
+class ChaosKong {
+  private regions = new Map<string, { active: boolean; trafficPercent: number; services: string[] }>();
+
+  addRegion(name: string, services: string[]): void {
+    this.regions.set(name, { active: true, trafficPercent: 100 / this.regions.size || 100, services });
+  }
+
+  async failRegion(regionName: string): Promise<{ healthy: boolean; redistributedTraffic: string[] }> {
+    const region = this.regions.get(regionName);
+    if (!region) return { healthy: false, redistributedTraffic: [] };
+    region.active = false;
+    const healthyRegions = [...this.regions.entries()].filter(([_, r]) => r.active);
+    const redistribution: string[] = [];
+    if (healthyRegions.length > 0) {
+      const share = region.trafficPercent / healthyRegions.length;
+      for (const [, r] of healthyRegions) {
+        r.trafficPercent += share;
+        redistribution.push(`${r.trafficPercent.toFixed(0)}%`);
+      }
+    }
+    region.trafficPercent = 0;
+    return { healthy: healthyRegions.length > 0, redistributedTraffic: redistribution };
+  }
+
+  async validateFailover(regionName: string, testFn: () => Promise<boolean>): Promise<{ passed: boolean; failoverTimeMs: number }> {
+    const start = Date.now();
+    const failed = await this.failRegion(regionName);
+    const healthy = await testFn();
+    return { passed: healthy && failed.healthy, failoverTimeMs: Date.now() - start };
+  }
+}
+```
+
+```mermaid
+graph TB
+    classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef edge fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef stream fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef infra fill:#fce4ec,stroke:#c62828,stroke-width:2px
+    classDef data fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef chaos fill:#ffebee,stroke:#b71c1c,stroke-width:2px
+
+    subgraph "Device Layer"
+        TV[Smart TV]:::client
+        MOB[Mobile]:::client
+        WEB[Browser]:::client
+    end
+
+    subgraph "CDN Edge"
+        OCA1[OCA ISP<br/>Tier 1]:::edge
+        OCA2[OCA Colo<br/>Tier 2]:::edge
+        OCA3[OCA ISP<br/>Tier 1]:::edge
+    end
+
+    subgraph "Streaming Pipeline"
+        ENC[Encoder<br/>Per-Title Ladder]:::stream
+        CH[Chunker<br/>2s CMAF Segments]:::stream
+        PK[Packager<br/>DASH / HLS Manifests]:::stream
+        QA[Quality Gate<br/>VMAF Score]:::stream
+    end
+
+    subgraph "Recommendation Pipeline"
+        CG[Candidate Gen<br/>ALS + Content]:::data
+        NR[Neural Ranker<br/>Deep MLP]:::data
+        RR[Re-Ranker<br/>Diversity + Freshness]:::data
+    end
+
+    subgraph "Chaos Infrastructure"
+        CM[Chaos Monkey<br/>Instance Terminator]:::chaos
+        CK[Chaos Kong<br/>Region Failover]:::chaos
+        LM[Latency Monkey<br/>Delay Injection]:::chaos
+        HYSTRIX[Hystrix<br/>Circuit Breakers]:::chaos
+    end
+
+    subgraph "Storage & Data"
+        CASS[(Cassandra<br/>User Data)]:::data
+        EVC[(EVCache<br/>Redis/Memcached)]:::data
+        S3[(S3<br/>Source Content)]:::data
+    end
+
+    TV --> OCA1
+    MOB --> OCA2
+    WEB --> OCA3
+    OCA1 --> ENC
+    OCA3 --> ENC
+    ENC --> CH
+    CH --> PK
+    PK --> QA
+    QA --> OCA1
+    QA --> OCA2
+    QA --> OCA3
+    CG --> NR
+    NR --> RR
+    RR --> EVC
+    CM --> ENC
+    LM --> CG
+    CK --> CASS
+    HYSTRIX --> ENC
+    HYSTRIX --> CG
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Custom CDN at ISP peering points saves hundreds of millions in bandwidth costs | Deploy Open Connect-style appliances at ISP peer points; pre-populate popular content; use tiered cache architecture |
+| Per-title encoding optimization reduces bandwidth 30-50% without quality loss | Run probe encodes with VMAF scoring; build convex hull per title; use only encoding ladder points on the Pareto frontier |
+| Three-stage recommendation pipeline drives 80% of watch time | Candidate generation (narrow 10K→500), neural ranking (score), re-ranking (diversity + freshness) |
+| Chaos engineering builds confidence in production resilience | Start with Chaos Monkey (instance termination), escalate to Chaos Kong (region failover); always define a steady state hypothesis |
+| Hystrix circuit breakers with thread pool isolation prevent cascading failures | Wrap every inter-service call; use timeout per tier (10/50/100ms); fail fast with fallback responses |
+| Multi-region active-active with Cassandra cross-region replication enables rapid failover | Run all regions active; use local quorum for reads; async cross-region replication; chaos-test region failures quarterly |
+| A/B testing every change validates impact before full rollout | Use deterministic user assignment; run experiments for 2+ weeks; use CUPED for variance reduction |
+
+## Case Study: 4K HDR Live Sports Event Streaming
+
+Netflix enters the live sports streaming market with a championship boxing match. The event originates from Las Vegas in 4K HDR at 60fps. The ingest pipeline must encode and distribute with less than 30 seconds of glass-to-glass latency to 50M+ concurrent viewers worldwide. Unlike on-demand content, there is no opportunity to pre-encode or pre-populate the CDN.
+
+The live ingest architecture uses a regional edge encoder in Las Vegas that receives the 8K source feed. The encoder runs the per-title analysis on-the-fly, detecting scene complexity from the first 5 seconds of each camera angle and constructing an optimized encoding ladder. Instead of 200 profiles, the live encoder uses 8 profiles (240p through 4K HDR) because the latency budget does not allow for exhaustive encoding. Each 2-second chunk is encoded in parallel across GPU-equipped workers. The first chunk (lowest resolution) is available at T+8 seconds; the full ladder completes by T+20 seconds. Chunks propagate through a "live cascade" from the venue OCA to regional OCAs to ISP OCAs using UDP multicast for the backbone hops and TCP for the last mile.
+
+The failover plan spans three redundant ingest paths: the primary fiber link (latency 5ms), a secondary 5G bonding link (latency 20ms), and a satellite backup (latency 600ms — degraded quality only). When the primary link drops at T+15 minutes, the system switches to the secondary path within 3 seconds. Viewers see a momentary quality downgrade from 4K to 1080p as the encoder restarts on the secondary path. Chaos Kong validates the failover quarterly by simulating the loss of the US-West region, confirming that EU and APAC viewers continue streaming from their regional OCAs without interruption.
+
+## Case Study: Personalized Home Page for a New User
+
+A user signs up for Netflix for the first time. They have no watch history, no ratings, and no profile preferences. The recommendation system faces the cold-start problem: collaborative filtering cannot generate candidates because the user-item interaction matrix has no entries for this user.
+
+The cold-start pipeline activates immediately. During onboarding, the user selects 3+ genres from a visually engaging tile picker. This selection is used as seed preferences for content-based filtering: the system computes the feature vectors for all titles in the selected genres (weighted by critical rating and popularity) and generates an initial candidate pool of 500 titles. The neural ranker scores these candidates using demographic features (the user's country, age range inferred from signup email domain, device type) and the selected genre preferences. The re-ranker ensures diversity across the genre selections and includes 20% "exploration" titles from outside the selected genres to broaden discovery.
+
+After the user watches 10 titles, the system transitions to hybrid recommendations: 70% collaborative filtering (using implicit signals from viewing behavior) and 30% content-based (using the initial genre preferences, now supplemented by actual viewing patterns). The A/B testing framework measures whether the hybrid approach increases 7-day retention compared to pure content-based recommendations. The experiment runs for 2 weeks across 5% of new users. If the hybrid model shows a statistically significant improvement in watch time, it is rolled out to 100% of new users in the next deployment cycle.
+
 ## Summary
 
 - Open Connect, Netflix's custom CDN deployed at ISP peering points, serves 95%+ of traffic and eliminates commercial CDN costs
@@ -919,41 +1159,32 @@ class ChaosMonkey {
 
 ### Review Questions
 
-1. Describe the 3-stage Netflix recommendation pipeline. What does each stage produce, and what algorithms are used?
+<details><summary>Solution</summary>1. **Stage 1: Candidate Generation** narrows 10,000+ titles to ~500 using collaborative filtering (ALS matrix factorization), content-based filtering (feature vectors), trending/popular, and contextual signals. **Stage 2: Ranking** uses a deep MLP neural network with 3-5 hidden layers (1000+ neurons) to score candidates on user, title, context, and interaction features. **Stage 3: Re-Ranking** applies diversity, freshness, row-level variety, and A/B test constraints to produce the final ~40 titles shown on the home page.
 
-2. What is per-title encoding optimization, and how does it reduce bandwidth while maintaining quality? Explain the role of VMAF.
+2. **Per-title encoding** analyzes source content complexity (spatial detail SI, temporal motion TI), runs probe encodes at multiple bitrates, measures quality with VMAF (Video Multi-Method Assessment Fusion), builds a convex hull of bitrate vs quality, and selects encoding ladder points on the Pareto frontier. Simple content (talking heads) needs only 12 profiles; complex content (action movies) needs up to 40.
 
-3. Compare Chaos Monkey and Chaos Kong. How do their blast radii differ, and what confidence does each provide?
+3. **Chaos Monkey** terminates individual EC2 instances in production to validate auto-scaling and retry mechanisms. **Chaos Kong** simulates an entire AWS region failure to validate active-active failover. Chaos Monkey's blast radius is a single instance; Chaos Kong's is an entire region. Chaos Monkey runs continuously; Chaos Kong runs quarterly with cross-org coordination.
 
-4. Explain how Hystrix circuit breakers with thread pool isolation prevent cascading failures. What happens when a circuit is in the HALF-OPEN state?
+4. **Hystrix** wraps every inter-service call with a circuit breaker. When failures exceed a threshold, the circuit opens and requests fail fast instead of waiting for timeout. **Thread pool isolation** ensures each downstream dependency has its own thread pool — a failure in one service cannot exhaust the caller's resources. In **HALF-OPEN** state, one test request is allowed; success closes the circuit, failure re-opens it.
 
-5. How does Open Connect differ from a commercial CDN? Describe the caching and pre-population strategy for OCAs.
+5. **Open Connect** appliances are purpose-built servers (100TB+ NVMe, 100Gbps NICs) deployed inside ISP data centers. Unlike commercial CDNs, OCAs are pre-populated with popular content via fill commands, use custom FreeBSD caching software with popularity-weighted eviction, and serve 95%+ of traffic from ISP peer points. Content is tiered: Tier 1 (ISP POP) → Tier 2 (colo) → S3 origin.
+</details>
 
 ### Application Problems
 
-1. **Cost-Optimized Encoding**: Your video platform stores 50,000 hours of content and adds 5,000 hours/year. Encoding at the highest quality (4K HDR, 50 Mbps source) costs $5/hour of source content. The standard ladder (10 profiles) costs $2/hr, and per-title optimization adds $0.50/hr for analysis. Given that 80% of watch time is on mobile (720p max) and 20% on TV (4K capable), design a tiered encoding strategy that minimizes cost while delivering acceptable quality to each device type. Calculate annual savings vs encoding everything at maximum quality.
+<details><summary>Solution</summary>1. **Cost-Optimized Encoding**: Encode all content to at least 720p (standard ladder, $2/hr). For 4K TV content (20% of watch time), also encode at 4K using per-title optimization ($2.50/hr). Current library (50K hrs): 80% × $2 + 20% × $2.50 = $1.60 + $0.50 = $2.10/hr avg = $105K/year. New content (5K hrs/year) = $10.5K/year. Total: $115.5K/year vs $250K/year for all-4K → saving $134.5K/year (54%).
 
-2. **Global CDN With Regional Popularity**: You are building a CDN for a video platform serving 200 countries. Content popularity follows a power-law distribution globally, but regional preferences are strong (local films dominate in their home countries). Design a cache pre-population strategy that: (a) guarantees 90%+ cache hits for local content in its home region, (b) ensures global blockbusters are available everywhere, and (c) optimizes total storage across 500 OCAs with 100TB each. Propose a scoring function for cache priority that accounts for both global and regional popularity signals.
+2. **Global CDN**: Use a scoring function: `cache_priority = global_popularity^0.4 × regional_popularity^0.6 × freshness_boost`. Pre-populate all content with score > 0.8 in every OCA. For local content, boost regional_popularity to 1.0 in home region. Use 100TB per OCA: top 10% of global catalog (17K titles × 10GB = 170TB) exceeds single OCA capacity, so per-region subsets are needed based on regional popularity.
 
-3. **Recommendation at Netflix Scale for a New User**: A new user signs up with no watch history. The collaborative filtering model cannot generate candidates because there are no interactions. Design a cold-start strategy that: (a) collects implicit signals during onboarding (e.g., genre selection, favorite actors), (b) uses demographic and geographic data for initial recommendations, (c) escalates to personalized recommendations after the first 10 views, and (d) handles the "first impression" problem where initial bad recommendations cause churn. Describe the feature engineering and model architecture for this hybrid cold-start solution.
+3. **Cold-Start Strategy**: During onboarding, users select 3+ genres. Use content-based filtering with genre feature vectors for initial candidates. Apply demographic features (country, inferred age, device type) as ranking weights. Reserve 20% of slots for exploration titles. After 10 views, transition to hybrid: 70% collaborative filtering (ALS on implicit signals from viewing behavior) + 30% content-based. Use multivariate A/B testing to validate cold-start algorithm variants.
+</details>
 
 ### Challenge Problem
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
+<details><summary>Solution>
 **Live Streaming at Netflix Scale**
 
-Netflix has entered live events (Chris Rock special, NFL Christmas games, awards shows). Live streaming introduces fundamentally different constraints from on-demand:
-- No retransmission of missed data (must be real-time)
-- Encoding must run with &lt;30 seconds of latency (vs hours for on-demand)
-- No pre-population of CDN (content is generated in real-time)
-- Peak concurrency increases 10x for live events (200M+ concurrent viewers)
-- Failure during a live event is visible to all viewers simultaneously
+Use 2-second chunks (balancing latency vs encoding efficiency). Parallelize encoding across GPU workers: each chunk is independently encoded at 8 profiles. First chunk (lowest resolution) available at T+6s; full ladder at T+20s. Use a "live cascade" from venue → regional OCA (UDP multicast) → ISP OCA (TCP). Time to first byte for Australia viewer: venue→US West (50ms) + transpacific fiber (150ms) + Australia OCA (10ms) = ~210ms.
 
-Design a live streaming architecture for Netflix that:
-1. **Ingest and encode**: 8K source from the venue ? ingest at regional edge ? encode into the full encoding ladder (235p to 4K HDR) with &lt;30 seconds total glass-to-glass latency. How do you parallelize encoding without introducing latency? At what chunk duration do you operate (2s, 4s, 10s)?
-2. **CDN delivery**: Open Connect is pre-populated for on-demand content. How does it handle live content that cannot be pre-populated? Design a "live cascade" where content propagates from the venue to regional OCAs to ISP OCAs. What is the time to first byte for a viewer in Australia watching a live event originating in the US?
-3. **Failover**: The venue's internet connection drops 15 minutes into a live event. Design a failover strategy. Do you switch to a secondary ingest path? Do you degrade quality? Do you show a "technical difficulties" screen? At what point do you cancel the stream?
-4. **Time-shifted viewing**: Viewers join 30 minutes late and want to watch from the beginning. How do you simultaneously serve live and time-shifted streams from the same pipeline? How do you manage the transition from "live" to "available on-demand" after the event ends?
-5. **C3 (Content Continuity Control)**: Commercial broadcasters require frame-accurate ad insertion during live events. Design a signaling protocol that marks ad breaks in the live stream and enables server-side ad insertion without disrupting the viewing experience.
-
-This challenge must work for an audience of 200M+ concurrent viewers — a scale no current live streaming system has achieved.
+**Ingest failover**: Three redundant paths — primary fiber (5ms), secondary 5G bonding (20ms), satellite backup (600ms degraded). Automatic switchover within 3 seconds on primary loss. **Time-shifted viewing**: Maintain a rolling buffer of the last 2 hours in HLS format. Live viewers get the 2s latest segment; late joiners start from an earlier segment. Transition live→on-demand at event end: finalize manifests, trigger regular CDN pre-population. **C3 ad insertion**: Use HLS interstitials (EXT-X-DATERANGE) to mark ad breaks. Server-side ad insertion replaces segments during manifest generation, ensuring frame-accurate transitions.
+</details>

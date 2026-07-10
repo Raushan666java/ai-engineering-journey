@@ -510,29 +510,13 @@ class OrderSaga:
 
 ## Chapter Quiz
 
-**Q1:** What is the key takeaway from this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most critical for distributed systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q3:** How does this topic apply to FAANG-level system design?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What is the primary advantage of microservices over a monolith? | A) Simpler deployment, B) Independent scaling of services, C) Lower operational complexity, D) Single database | B) Independent scaling of services |
+| 2 | In the Saga pattern, what is the difference between choreography and orchestration? | A) Choreography uses an orchestrator; orchestration uses events, B) Choreography uses events; orchestration uses a central coordinator, C) They are the same, D) Choreography is faster | B) Choreography uses events for loose coupling; orchestration uses a central coordinator |
+| 3 | What problem does the Dataloader pattern solve in GraphQL? | A) Authentication, B) The N+1 query problem, C) Schema validation, D) Rate limiting | B) The N+1 query problem |
+| 4 | Which gRPC streaming pattern is most suitable for a chat application? | A) Unary RPC, B) Server streaming, C) Client streaming, D) Bidirectional streaming | D) Bidirectional streaming |
+| 5 | What is the purpose of an idempotency key in API design? | A) To authenticate requests, B) To ensure retrying produces the same result, C) To rate-limit clients, D) To compress request payloads | B) To ensure retrying a request produces the same result as the original |
 
 ---
 
@@ -831,7 +815,268 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
+
+### TypeScript: CircuitBreaker, APIRateLimiter, and ServiceDiscovery
+
+```typescript
+class CircuitBreaker {
+  private state: "closed" | "open" | "half-open" = "closed";
+  private failureCount = 0;
+  private lastFailureTime = 0;
+  private totalCalls = 0;
+  private totalFailures = 0;
+
+  constructor(
+    private failureThreshold: number,
+    private resetTimeoutMs: number,
+    private halfOpenMaxRequests: number = 1
+  ) {}
+
+  getState(): string { return this.state; }
+
+  async call<T>(fn: () => Promise<T>, fallback?: () => T): Promise<T> {
+    this.totalCalls++;
+    if (this.state === "open") {
+      if (Date.now() - this.lastFailureTime >= this.resetTimeoutMs) {
+        this.state = "half-open";
+        this.failureCount = 0;
+      } else {
+        this.totalFailures++;
+        if (fallback) return fallback();
+        throw new Error("CircuitBreaker: circuit is open");
+      }
+    }
+
+    try {
+      const result = await fn();
+      if (this.state === "half-open") {
+        this.state = "closed";
+        this.failureCount = 0;
+      }
+      return result;
+    } catch (error) {
+      this.failureCount++;
+      this.totalFailures++;
+      this.lastFailureTime = Date.now();
+      if (this.failureCount >= this.failureThreshold) {
+        this.state = "open";
+      }
+      if (fallback) return fallback();
+      throw error;
+    }
+  }
+
+  getMetrics(): { state: string; totalCalls: number; totalFailures: number; failureRate: number } {
+    return {
+      state: this.state,
+      totalCalls: this.totalCalls,
+      totalFailures: this.totalFailures,
+      failureRate: this.totalCalls > 0 ? this.totalFailures / this.totalCalls : 0,
+    };
+  }
+
+  reset(): void {
+    this.state = "closed";
+    this.failureCount = 0;
+    this.lastFailureTime = 0;
+  }
+}
+
+class APIRateLimiter {
+  private tokenBuckets = new Map<string, { tokens: number; lastRefill: number }>();
+  private slidingWindows = new Map<string, number[]>();
+  private clientQuotas = new Map<string, { maxTokens: number; refillRate: number; refillInterval: number }>();
+
+  setClientQuota(clientId: string, maxTokens: number, refillRate: number, refillIntervalMs: number = 1000): void {
+    this.clientQuotas.set(clientId, { maxTokens, refillRate, refillIntervalMs });
+  }
+
+  tokenBucket(clientId: string): boolean {
+    const quota = this.clientQuotas.get(clientId);
+    if (!quota) return true;
+    const now = Date.now();
+    let bucket = this.tokenBuckets.get(clientId);
+    if (!bucket) {
+      bucket = { tokens: quota.maxTokens, lastRefill: now };
+      this.tokenBuckets.set(clientId, bucket);
+    }
+    const elapsed = now - bucket.lastRefill;
+    const tokensToAdd = Math.floor(elapsed / quota.refillInterval) * quota.refillRate;
+    bucket.tokens = Math.min(quota.maxTokens, bucket.tokens + tokensToAdd);
+    bucket.lastRefill = now;
+    if (bucket.tokens <= 0) return false;
+    bucket.tokens--;
+    return true;
+  }
+
+  slidingWindowLog(clientId: string, windowMs: number = 60000, maxRequests: number = 100): boolean {
+    const now = Date.now();
+    if (!this.slidingWindows.has(clientId)) this.slidingWindows.set(clientId, []);
+    const window = this.slidingWindows.get(clientId)!;
+    while (window.length > 0 && window[0] <= now - windowMs) window.shift();
+    if (window.length >= maxRequests) return false;
+    window.push(now);
+    return true;
+  }
+
+  allowRequest(clientId: string): boolean {
+    return this.tokenBucket(clientId) && this.slidingWindowLog(clientId);
+  }
+
+  getClientUsage(clientId: string): number {
+    return this.slidingWindows.get(clientId)?.length ?? 0;
+  }
+}
+
+class ServiceDiscovery {
+  private registry = new Map<string, Map<string, { host: string; port: number; healthy: boolean; weight: number; lastHeartbeat: number }>>();
+  private roundRobinCounters = new Map<string, number>();
+
+  register(serviceName: string, instanceId: string, host: string, port: number, weight: number = 1): void {
+    if (!this.registry.has(serviceName)) this.registry.set(serviceName, new Map());
+    this.registry.get(serviceName)!.set(instanceId, { host, port, healthy: true, weight, lastHeartbeat: Date.now() });
+  }
+
+  deregister(serviceName: string, instanceId: string): void {
+    this.registry.get(serviceName)?.delete(instanceId);
+  }
+
+  healthCheck(serviceName: string, instanceId: string): boolean {
+    const instance = this.registry.get(serviceName)?.get(instanceId);
+    if (!instance) return false;
+    instance.healthy = Date.now() - instance.lastHeartbeat < 30000;
+    return instance.healthy;
+  }
+
+  reportHeartbeat(serviceName: string, instanceId: string): void {
+    const instance = this.registry.get(serviceName)?.get(instanceId);
+    if (instance) {
+      instance.lastHeartbeat = Date.now();
+      instance.healthy = true;
+    }
+  }
+
+  discoverRoundRobin(serviceName: string): { host: string; port: number } | null {
+    const instances = this.registry.get(serviceName);
+    if (!instances || instances.size === 0) return null;
+    const healthy = [...instances.entries()].filter(([, v]) => v.healthy);
+    if (healthy.length === 0) return null;
+    if (!this.roundRobinCounters.has(serviceName)) this.roundRobinCounters.set(serviceName, 0);
+    let counter = this.roundRobinCounters.get(serviceName)!;
+    const instance = healthy[counter % healthy.length];
+    this.roundRobinCounters.set(serviceName, counter + 1);
+    return { host: instance[1].host, port: instance[1].port };
+  }
+
+  discoverWeighted(serviceName: string): { host: string; port: number } | null {
+    const instances = this.registry.get(serviceName);
+    if (!instances || instances.size === 0) return null;
+    const healthy = [...instances.entries()].filter(([, v]) => v.healthy);
+    if (healthy.length === 0) return null;
+    const totalWeight = healthy.reduce((s, [, v]) => s + v.weight, 0);
+    let random = Math.random() * totalWeight;
+    for (const [, instance] of healthy) {
+      random -= instance.weight;
+      if (random <= 0) return { host: instance.host, port: instance.port };
+    }
+    return { host: healthy[0][1].host, port: healthy[0][1].port };
+  }
+
+  getHealthyCount(serviceName: string): number {
+    return [...(this.registry.get(serviceName)?.values() ?? [])].filter(i => i.healthy).length;
+  }
+}
+```
+
+### Mermaid: Microservices Communication Patterns
+
+```mermaid
+graph TD
+    classDef gateway fill#bbdefb,stroke#1565c0,stroke-width:2px
+    classDef service fill#c8e6c9,stroke#2e7d32,stroke-width:2px
+    classDef async fill#fff9c4,stroke#f57f17,stroke-width:2px
+    classDef db fill#f3e5f5,stroke#7b1fa2,stroke-width:2px
+    classDef external fill#fce4ec,stroke#c62828,stroke-width:2px
+
+    subgraph "API Gateway Layer"
+        GW["API Gateway"]:::gateway
+        RL["Rate Limiter<br/>Token Bucket / Sliding Window"]:::gateway
+        CB["Circuit Breaker<br/>State Machine"]:::gateway
+        AUTH["Auth / JWT Validation"]:::gateway
+        AGG["Response Aggregation"]:::gateway
+    end
+
+    subgraph "Service Discovery"
+        REG["Service Registry<br/>(Consul / Eureka / K8s)"]:::async
+        RR["Round-Robin Load Balancer"]:::async
+        HC["Health Checker<br/>Heartbeat Monitor"]:::async
+        SD["Service Discovery<br/>Client / Server Side"]:::async
+    end
+
+    subgraph "Microservices"
+        S1["Order Service"]:::service
+        S2["Payment Service"]:::service
+        S3["Inventory Service"]:::service
+        S4["Shipping Service"]:::service
+        S5["Notification Service"]:::service
+    end
+
+    subgraph "Communication Patterns"
+        SYNC["Synchronous: REST / gRPC"]:::service
+        ASYNC["Asynchronous: Kafka / RabbitMQ"]:::async
+        SAGA["Saga Pattern<br/>Choreography / Orchestration"]:::async
+        EVT["Event-Driven / CDC"]:::async
+    end
+
+    subgraph "Data Stores"
+        DB1["Postgres (Order)"]:::db
+        DB2["MySQL (Payment)"]:::db
+        DB3["Redis (Cache)"]:::db
+        DB4["MongoDB (Inventory)"]:::db
+    end
+
+    Client --> GW
+    GW --> S1
+    GW --> S2
+    GW --> S3
+    S1 --> SYNC
+    S2 --> ASYNC
+    S3 --> EVT
+    SAGA -.->|coordinates| S1
+    SAGA -.->|coordinates| S2
+    SAGA -.->|coordinates| S3
+    S1 --> DB1
+    S2 --> DB2
+    S3 --> DB3
+    S4 --> DB4
+    REG --> SD
+    SD -.->|discovers| S1
+    SD -.->|discovers| S2
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| Microservices decompose applications into independently deployable services aligned to business capabilities | Start with a modular monolith; extract services only when independent scaling or team ownership is justified |
+| Bounded contexts from DDD provide clean service boundaries | Use context mapping (anti-corruption layer, open-host service) to govern inter-service relationships |
+| API gateways centralize cross-cutting concerns | Route requests through a single gateway for auth, rate limiting, aggregation, and protocol translation |
+| REST APIs use resource-oriented naming with plural nouns | Design endpoints around resources (/users, /orders), use cursor-based pagination, and include HATEOAS links |
+| The Saga pattern with compensating transactions replaces 2PC in microservices | Use choreography for simple workflows with few services; use orchestration for complex multi-step sagas |
+| Idempotency keys enable safe retries of API calls | Store idempotency keys in Redis with TTL; return cached response for duplicate requests with the same key |
+| Service meshes offload networking concerns to sidecar proxies | Deploy Istio or Linkerd for mTLS, traffic splitting, and observability without application changes |
+
+## Case Study
+
+**E-Commerce Platform Microservice Migration**
+
+A mid-sized e-commerce company with a monolithic Rails application processing 10,000 orders/day faced growing pains: deployments took 4 hours, a single bug in inventory could bring down the entire checkout flow, and the team of 30 engineers constantly faced merge conflicts. The company decided to migrate to microservices incrementally over 18 months.
+
+The first extraction was the Payment Service — the highest-risk component with PCI compliance requirements. The team wrapped the payment module behind a REST API with an API Gateway (Kong) handling authentication and rate limiting. A CircuitBreaker (Hystrix) was configured with a 5-failure threshold and 30-second reset timeout. During the first week, the third-party payment gateway experienced a 5-minute outage — the circuit opened, and the checkout flow gracefully fell back to a "payment pending" state instead of throwing HTTP 500 errors. The migration was invisible to customers. Over the following months, the team extracted Inventory, Shipping, and Notification services, each behind the same API Gateway pattern.
+
+A critical incident occurred when a misconfigured rate limiter allowed 10,000 requests/second to the Inventory Service during a flash sale. The service crashed within 30 seconds. The CircuitBreaker opened after 5 failures, and the API Gateway responded with a cached "available" status for all inventory queries — preventing a complete checkout outage. Post-incident, the team implemented a sliding window rate limiter (100 req/sec per client) with a token bucket burst allowance (200 tokens). The architecture now handles 50,000 orders/day with 99.95% uptime and zero-deploy deploys per service.
+
+---
 
 - Microservices decompose applications into independently deployable services aligned to business capabilities; the modular monolith is a pragmatic starting point
 - Bounded contexts from DDD provide the conceptual boundary for services, with explicit context maps governing inter-service relationships
@@ -849,39 +1094,50 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Review Questions
 
-1. A team of 8 engineers is building a ride-sharing application with three subdomains (Rider, Driver, Payments). Would you recommend monolith or microservices? Justify.
+<details>
+<summary>Solution for Review Question 1</summary>
+For a team of 8 engineers with 3 subdomains, a **modular monolith** is recommended. The team is small — each subdomain would get ~2-3 engineers, too few to manage the operational overhead of microservices (deployment pipelines, service discovery, monitoring per service). Start with a monolith but enforce strict bounded context boundaries (separate packages/modules for Rider, Driver, Payments). Extract services when a subdomain proves it needs independent scaling or dedicated team ownership.
+</details>
 
-2. In gRPC, explain why Protobuf fields are numbered rather than named in the wire format. How does numbering enable backward-compatible schema evolution?
+<details>
+<summary>Solution for Review Question 2</summary>
+Protobuf fields are numbered (not named) on the wire to save space — a field number is encoded as a varint (1-2 bytes) instead of a string (10+ bytes). Numbering enables backward-compatible evolution because: (a) new fields can be added with new numbers without affecting existing fields, (b) old clients ignore unknown field numbers, (c) field numbers never need to be reused. This allows adding, removing, or deprecating fields without breaking wire compatibility.
+</details>
 
-3. An API changed `GET /orders` response from `order_id` (integer) to `orderId` (string). Is this breaking? Explain using contract testing principles.
+<details>
+<summary>Solution for Review Question 3</summary>
+**Yes, this is breaking.** From contract testing principles: changing `order_id` (integer) to `orderId` (string) is both a name change and a type change. Consumer contracts expect `order_id` as an integer; the modified response omits the expected field and provides a new field with a different name and type. Pact would detect this as a contract violation. Proper evolution: add `orderId` as a new field while keeping `order_id` as deprecated, then remove `order_id` in a future major version.
+</details>
 
-4. In a service mesh with Istio, explain the flow from Service A to Service B with mTLS enabled.
+<details>
+<summary>Solution for Review Question 4</summary>
+In Istio with mTLS: Service A's outbound traffic is intercepted by its Envoy sidecar proxy. Envoy A looks up Service B's endpoints via Istiod (Pilot). Envoy A establishes a mutual TLS connection with Envoy B — each side presents a certificate issued by Citadel (Istio's CA). Envoy B forwards the request to Service B over localhost (no TLS). Response flows back through the same mTLS-encrypted path. Service A's application code is unaware of the mTLS — it just makes HTTP calls to `http://service-b`.
+</details>
 
 ### Application Problems
 
-1. **Design an API for document collaboration.** Design REST endpoints for: workspaces, documents, collaborators, comments, document version history. Use proper resource naming, nested resources, pagination, and filtering. Include request/response for 5 endpoints.
+<details>
+<summary>Solution for Application Problem 1: Document Collaboration API</summary>
+**Endpoints:** `GET /workspaces` (list workspaces, cursor pagination, filter by owner), `POST /workspaces` (create workspace), `GET /workspaces/{id}` (get workspace details), `GET /workspaces/{id}/documents` (list documents, filter by status, sort by modified_at), `POST /workspaces/{id}/documents` (create document), `GET /workspaces/{id}/documents/{docId}` (get document with version), `PUT /workspaces/{id}/documents/{docId}` (update document), `DELETE /workspaces/{id}/documents/{docId}` (soft delete), `GET /documents/{docId}/collaborators` (list collaborators), `POST /documents/{docId}/collaborators` (add collaborator), `GET /documents/{docId}/comments?cursor=...` (list comments), `POST /documents/{docId}/comments` (add comment), `GET /documents/{docId}/versions` (list version history). Pagination: cursor-based with `limit=20`. Filtering: `?status=active&owner=me`.
+</details>
 
-2. **Saga design for hotel booking:** Steps: Reservation (block room), Payment (charge deposit), Loyalty (award points), Notification (send confirmation). Design both choreography and orchestration versions. Show event flow for success and for payment failure with compensations.
+<details>
+<summary>Solution for Application Problem 2: Hotel Booking Saga</summary>
+**Choreography:** Reservation Service creates booking -> publishes `RoomReserved` -> Payment Service listens, charges deposit -> publishes `PaymentProcessed` -> Loyalty Service listens, awards points -> publishes `PointsAwarded` -> Notification Service listens, sends confirmation. On payment failure: Payment Service publishes `PaymentFailed` -> Reservation Service listens, cancels booking (compensation). **Orchestration:** OrderSagaOrchestrator orchestrates: call ReservationService.reserve(), on success call PaymentService.charge(), on success call LoyaltyService.award(), on success call NotificationService.send(). Compensation on payment failure: call ReservationService.cancel().
+</details>
 
-3. **API Gateway rate limiting:** Sliding window, 100 req/min. Client sends 100 requests at t=0, 10 at t=30s, 50 at t=65s. Walk through each decision with window size 60s.
+<details>
+<summary>Solution for Application Problem 3: Sliding Window Rate Limiting</summary>
+Window size = 60s, max = 100 requests. **t=0:** 100 requests added to window window=[0...0]. Allowed (100 <= 100). **t=30s:** 10 requests added window=[0...0, 30...30]. Total = 110 > 100. Only 10 requests are within the last 60s from t=30s perspective? Actually 100 from t=0 and 10 from t=30 = 110. Since 110 > 100, all 10 requests at t=30s are **rejected**. **t=65s:** Now window shifted. Timestamps before t=5s (65-60) are removed. The 100 requests at t=0 are all expired (t=0 < t=5). Window now contains 10 requests at t=30s only. 50 requests at t=65s bring total to 60. Since 60 <= 100, all 50 requests are **allowed**.
+</details>
 
 ### Challenge Problem
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Design a Microservice Architecture for a Stock Trading Platform**
 
-1 million trades/day, 5M users, 100K concurrent traders. Order types: market, limit, stop-loss. Real-time order book (sub-100ms). 99.99% uptime for trading engine.
-
-**Deliverables:**
-
-1. **Service decomposition:** Identify at least 10 bounded contexts. For each: service name, responsibility, data store (with justification), key APIs (REST or gRPC with rationale).
-
-2. **Order saga:** Design the market order saga (validation -> risk check -> order book match -> trade capture -> portfolio update -> notification). Show orchestration, compensations, and failure modes.
-
-3. **Idempotency design:** An order may be retried by the client. Design the idempotency mechanism: key generation, storage (data store, TTL), deduplication logic, what happens when the same order hits three different services.
-
-4. **Versioning strategy:** Order Service adds a new required field (`time_in_force`). Existing clients don't send it. Design the migration: API versioning approach, backward-compatibility, rollout timeline, deprecation schedule.
-
-5. **Contract testing pipeline:** Design CI/CD pipeline preventing breaking API changes from deploying. Tools, test order, failure handling, process for introducing breaking changes across services.
+<details>
+<summary>Solution: Microservice Architecture for a Stock Trading Platform</summary>
+**1. Service Decomposition (10+ bounded contexts):** Authentication Service (REST, PostgreSQL), User Profile Service (REST, PostgreSQL), Order Gateway (REST, validates + routes), Order Book Service (gRPC, in-memory + Cassandra for persistence), Market Data Service (gRPC + WebSocket, Redis + Kafka), Risk Management Service (gRPC, PostgreSQL), Trade Capture Service (gRPC, PostgreSQL), Portfolio Service (REST, PostgreSQL), Notification Service (Kafka consumer + WebSocket push), Settlement Service (batch, PostgreSQL), Analytics Service (Kafka + ClickHouse). **2. Order Saga:** Orchestrator: validate order -> risk check -> book match -> capture trade -> update portfolio -> notify client. Compensation on risk failure: reject order + notify. On match failure: release risk hold. Idempotency: order UUID as idempotency key with 24h Redis TTL. **3. Versioning:** API versioning via accept header (vnd.trading.v1+json). New field `time_in_force` added as optional for 6 months, then made required in v3 with clear deprecation notice. **4. Contract testing:** Pact contracts in CI — provider verifies all consumer contracts before deploy; breaking changes block the pipeline.
+</details>
 
 ---

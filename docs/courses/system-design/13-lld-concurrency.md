@@ -744,31 +744,37 @@ def select(chan_map: dict[Chan, callable], timeout=None) -> bool:
 
 ## Chapter Quiz
 
-**Q1:** What is the key takeaway from this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most critical for distributed systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q3:** How does this topic apply to FAANG-level system design?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What does Amdahl's Law describe? | Speedup from adding memory | Maximum theoretical speedup from parallelization | Network latency reduction | Disk I/O optimization | **B** |
+| 2 | Which of the four Coffman conditions is most practical to eliminate? | Mutual Exclusion | Hold and Wait | No Preemption | Circular Wait | **D** |
+| 3 | What is the ABA problem? | A deadlock detection algorithm | A CAS race where a value changes then reverts | A thread starvation pattern | A memory leak scenario | **B** |
+| 4 | Why does NGINX use a single-threaded event loop? | To simplify locking | For maximum CPU utilization | Because I/O-bound workloads benefit from async I/O without context switching | Because it only handles one connection | **C** |
+| 5 | What is the key difference between Actor model and CSP? | Actors share state; CSP does not | Actors communicate via named channels; CSP via direct messages | Actors use message passing with named recipients; CSP uses channels as intermediaries | CSP uses locks; Actors do not | **C** |
 
 ---
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Use mutexes for short critical sections; prefer read-write locks for read-heavy workloads | Profile lock contention; switch to read-write locks when reader : writer ratio exceeds 10:1 |
+| Break circular wait with a global lock ordering to prevent deadlock | Assign numeric IDs to all locks; enforce acquisition order in code reviews |
+| Use lock-free data structures only when contention is high and benchmarks prove benefit | Start with mutexes; profile; only migrate to CAS-based structures if contention is >30% |
+| Async/await with event loops is ideal for I/O-bound services | Use for web servers, proxies, and API gateways; avoid for CPU-bound computation |
+| Thread pools should match workload type: fixed for CPU, cached for bursty I/O | Configure `max_workers = CPU cores + 1` for CPU-bound; allow unbounded for I/O-bound |
+| Actor model eliminates shared state but adds message-passing overhead | Use when state isolation is critical (game servers, financial transactions) |
+| Use work-stealing pools for unbalanced, recursive workloads | Fork-join patterns, parallel sort, and tree traversal benefit from dynamic load balancing |
+
+## Case Study
+
+**Scenario: Real-time Chat Backend at Scale**
+
+A team is building a real-time chat service targeting 10 million daily active users with 1 million concurrent connections. The initial prototype uses a thread-per-connection model: each WebSocket connection spawns a dedicated OS thread. Under 10,000 concurrent connections, the system consumes 2 GB of RAM just for thread stacks (default 2 MB per thread) and spends 40% of CPU time on context switching. At 100,000 connections, the system is unresponsive due to memory exhaustion.
+
+The team redesigns using an event-loop architecture (Node.js with `async/await`). A single thread handles 10,000 connections using epoll for I/O multiplexing. Message broadcasting uses a Redis pub-sub channel: each server instance subscribes to all room channels and emits messages to connected clients without per-connection threads. Memory drops to 500 MB for the same 100,000 connections, and context switching overhead disappears.
+
+For stateful operations (user presence tracking, typing indicators), the team adopts an Actor-like model per chat room. Each room is an independent state machine processed sequentially, eliminating locking entirely. Room state is stored in Redis as a hash, and the event loop processes one message per room at a time. This hybrid architecture — event loop for I/O, actor-per-room for state — handles 1 million concurrent connections on 10 commodity servers with P99 message delivery latency under 50 ms. The key insight: matching concurrency model to workload type (I/O vs stateful computation) is more important than raw throughput.
 
 
 ### Implementation: Concurrency and Parallelism
@@ -805,6 +811,248 @@ class ActorModel { private mailbox: any[] = []; private processing = false;
   private async process(): Promise<void> { this.processing = true; while (this.mailbox.length > 0) { const msg = this.mailbox.shift(); await this.handle(msg); } this.processing = false; }
   private async handle(msg: any): Promise<void> { console.log(`${this.name} received:`, msg); }
 }
+```
+
+### TypeScript: Thread Pool with Worker Threads and Shutdown
+
+```typescript
+class WorkerThread {
+  private thread: Promise<void>;
+  private running = true;
+  constructor(private id: number, private taskQueue: (() => Promise<void>)[], private onIdle: () => void) {
+    this.thread = this.run();
+  }
+  private async run(): Promise<void> {
+    while (this.running) {
+      const task = this.taskQueue.shift();
+      if (task) await task();
+      else await new Promise(r => setTimeout(r, 10));
+    }
+  }
+  shutdown(): void { this.running = false; }
+  async join(): Promise<void> { await this.thread; }
+}
+
+class ThreadPoolExecutor {
+  private workers: WorkerThread[] = [];
+  private taskQueue: (() => Promise<void>)[] = [];
+  private drained = false;
+  private drainResolve: (() => void) | null = null;
+  private activeCount = 0;
+
+  constructor(private numWorkers: number) {
+    for (let i = 0; i < numWorkers; i++) {
+      this.workers.push(new WorkerThread(i, this.taskQueue, () => this.checkDrained()));
+    }
+  }
+
+  async submit<T>(fn: () => Promise<T>): Promise<T> {
+    return new Promise((resolve, reject) => {
+      this.taskQueue.push(async () => {
+        this.activeCount++;
+        try { resolve(await fn()); }
+        catch (e) { reject(e); }
+        finally { this.activeCount--; this.checkDrained(); }
+      });
+    });
+  }
+
+  private checkDrained(): void {
+    if (this.drained && this.taskQueue.length === 0 && this.activeCount === 0) {
+      this.drainResolve?.();
+    }
+  }
+
+  async shutdown(): Promise<void> {
+    this.drained = true;
+    if (this.taskQueue.length === 0 && this.activeCount === 0) return;
+    await new Promise<void>(r => this.drainResolve = r);
+    for (const w of this.workers) w.shutdown();
+    await Promise.all(this.workers.map(w => w.join()));
+  }
+}
+```
+
+### TypeScript: Readers-Writers Lock with Fairness
+
+```typescript
+class ReadersWritersLock {
+  private readers = 0;
+  private writing = false;
+  private readerWaiters: (() => void)[] = [];
+  private writerWaiters: (() => void)[] = [];
+  private writerActive = false;
+
+  async acquireRead(): Promise<void> {
+    if (!this.writing && this.writerWaiters.length === 0 && !this.writerActive) {
+      this.readers++;
+      return;
+    }
+    await new Promise<void>(r => this.readerWaiters.push(r));
+    this.readers++;
+  }
+
+  releaseRead(): void {
+    this.readers--;
+    if (this.readers === 0) this.tryActivateWriter();
+  }
+
+  async acquireWrite(): Promise<void> {
+    if (this.readers === 0 && !this.writing) {
+      this.writing = true;
+      this.writerActive = true;
+      return;
+    }
+    await new Promise<void>(r => this.writerWaiters.push(r));
+    this.writing = true;
+    this.writerActive = true;
+  }
+
+  releaseWrite(): void {
+    this.writing = false;
+    this.writerActive = false;
+    this.tryActivateReaders();
+    if (this.readerWaiters.length === 0) this.tryActivateWriter();
+  }
+
+  private tryActivateReaders(): void {
+    while (this.readerWaiters.length > 0 && !this.writing) {
+      this.readerWaiters.shift()!();
+    }
+  }
+
+  private tryActivateWriter(): void {
+    if (this.writerWaiters.length > 0 && this.readers === 0 && !this.writing) {
+      this.writerWaiters.shift()!();
+    }
+  }
+}
+```
+
+### TypeScript: Dining Philosophers with Waiter Arbitrator
+
+```typescript
+class Chopstick {
+  private held = false;
+  private waiters: (() => void)[] = [];
+
+  async acquire(): Promise<void> {
+    if (!this.held) { this.held = true; return; }
+    await new Promise<void>(r => this.waiters.push(r));
+    this.held = true;
+  }
+
+  release(): void {
+    this.held = false;
+    if (this.waiters.length > 0) this.waiters.shift()!();
+  }
+}
+
+class Waiter {
+  private eating = new Set<number>();
+  constructor(private numPhilosophers: number) {}
+
+  async requestToEat(id: number): Promise<void> {
+    while (true) {
+      const left = id;
+      const right = (id + 1) % this.numPhilosophers;
+      if (!this.eating.has(left) && !this.eating.has(right)) {
+        this.eating.add(id);
+        return;
+      }
+      await new Promise(r => setTimeout(r, 10));
+    }
+  }
+
+  finishEating(id: number): void { this.eating.delete(id); }
+}
+
+class DiningPhilosopher {
+  constructor(
+    private id: number,
+    private left: Chopstick,
+    private right: Chopstick,
+    private waiter: Waiter,
+    private name: string
+  ) {}
+
+  async dine(cycles: number): Promise<void> {
+    for (let i = 0; i < cycles; i++) {
+      await this.think();
+      await this.waiter.requestToEat(this.id);
+      await this.left.acquire();
+      await this.right.acquire();
+      await this.eat();
+      this.right.release();
+      this.left.release();
+      this.waiter.finishEating(this.id);
+    }
+  }
+
+  private async think(): Promise<void> {
+    await new Promise(r => setTimeout(r, Math.random() * 100));
+  }
+
+  private async eat(): Promise<void> {
+    await new Promise(r => setTimeout(r, Math.random() * 50));
+  }
+}
+
+async function simulateDiningPhilosophers(): Promise<void> {
+  const N = 5;
+  const chopsticks = Array.from({ length: N }, () => new Chopstick());
+  const waiter = new Waiter(N);
+  const philosophers = Array.from({ length: N }, (_, i) =>
+    new DiningPhilosopher(i, chopsticks[i], chopsticks[(i + 1) % N], waiter, `Philosopher-${i}`)
+  );
+  await Promise.all(philosophers.map(p => p.dine(3)));
+  console.log('All philosophers finished dining — no deadlock occurred');
+}
+```
+
+### Concurrency Models Comparison
+
+```mermaid
+flowchart TB
+    subgraph THREAD_BASED["Thread-Based Concurrency"]
+        T1["Thread 1<br/>Stack + Registers"]
+        T2["Thread 2<br/>Stack + Registers"]
+        T3["Thread N<br/>Stack + Registers"]
+        SHARED["Shared Memory<br/>Heap / Objects"]
+        LOCK["Lock / Mutex / Semaphore<br/>Synchronization Primitives"]
+        T1 & T2 & T3 --> SHARED
+        T1 & T2 & T3 -.-> LOCK
+    end
+
+    subgraph EVENT_LOOP["Event Loop / Async"]
+        EL["Event Loop<br/>Single Thread"]
+        TQ["Task Queue<br/>Microtasks > Macrotasks"]
+        IO["I/O Poller<br/>epoll / IOCP / kqueue"]
+        TIMER["Timer Heap<br/>setTimeout / setInterval"]
+        CORO["Coroutines<br/>async / await"]
+        EL --> TQ & IO & TIMER
+        TQ --> CORO
+    end
+
+    subgraph ACTOR_MODEL["Actor Model"]
+        A1["Actor A<br/>State + Mailbox"]
+        A2["Actor B<br/>State + Mailbox"]
+        A3["Actor C<br/>State + Mailbox"]
+        SUP["Supervisor<br/>Restart Strategy"]
+        A1 -.->|message| A2
+        A2 -.->|message| A3
+        A3 -.->|message| A1
+        A1 & A2 & A3 --> SUP
+    end
+
+    classDef thread fill:#4A90D9,color:#fff
+    classDef event fill:#7B68EE,color:#fff
+    classDef actor fill:#2E8B57,color:#fff
+    classDef sync fill:#D32F2F,color:#fff
+    class T1,T2,T3 thread
+    class EL,IO,TIMER event
+    class A1,A2,A3,SUP actor
+    class LOCK sync
 ```
 
 // lld concurrency
@@ -913,31 +1161,18 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 ## Exercises
 ### Review Questions
-1. A system has a serial fraction of 5%. What is the maximum theoretical speedup with 32 cores? With 1024 cores? Explain why adding more cores yields diminishing returns.
-2. What are the four Coffman conditions? Describe a scenario where eliminating hold-and-wait is impractical and explain which condition you would target instead.
-3. How does the ABA problem manifest in a lock-free stack? Why are hazard pointers necessary even when CAS is correct?
-4. Compare the Actor model and CSP. Both avoid shared state; how does their approach to communication and composition differ?
-5. Why does NGINX use an event-driven, single-threaded architecture instead of a multi-threaded one? Under what conditions would a thread-per-connection model outperform it?
+<details><summary>Solution</summary>1. Amdahl's Law: S = 1 / (s + (1-s)/N). With s = 0.05 (5% serial): at N = 32, S = 1 / (0.05 + 0.95/32) ≈ 13.5×. At N = 1024, S = 1 / (0.05 + 0.95/1024) ≈ 18.6×. The limit as N → ∞ is 1/0.05 = 20×. Diminishing returns occur because the serial fraction dominates: doubling cores from 512 to 1024 adds only 0.3× speedup.
+2. The four conditions: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait. Eliminating hold-and-wait (acquire all locks atomically) is impractical when locks are discovered dynamically (e.g., a transaction that locks rows as it scans). The most practical target is circular wait via a global lock ordering.
+3. In a lock-free stack: thread A reads top = node X, thread B pops X (now top = Y), thread B pushes X back (top = X again, but X's next pointer may differ). Thread A's CAS succeeds but the stack state is corrupted. Hazard pointers prevent this by ensuring no thread's referenced node is freed.
+4. Actor model: direct message passing to named actors. CSP: communication via anonymous channels. Actors encapsulate state per entity; CSP decouples senders from receivers via channel intermediaries. Go's select and Erlang's receive demonstrate the ergonomic differences.
+5. NGINX uses an event loop because web serving is I/O-bound. A single thread handles thousands of connections using epoll. Thread-per-connection outperforms only when each connection requires significant CPU (e.g., video transcoding per stream) where parallel computation justifies context switching.</details>
 
 ### Application Problems
-1. Implement a concurrent hash map using lock striping with 16 buckets. Each bucket has its own read-write lock. Measure the throughput difference between a single global lock and the striped version with 8 concurrent threads doing 10,000 operations each.
-2. Simulate the Dining Philosophers problem with 5 philosophers using semaphores. Then modify your solution to use a resource hierarchy (picking up the lower-numbered fork first). Verify that the second approach never deadlocks.
-3. Write a web scraper using asyncio that fetches 100 URLs concurrently. Measure the total time. Then implement the same scraper with a ThreadPoolExecutor (10 threads). Compare elapsed times and explain the difference.
+<details><summary>Solution</summary>1. Lock striping implementation: create 16 buckets, each with a ReadWriteLock. For a put/get, hash the key to a bucket and acquire that bucket's lock. With 8 threads on 10,000 ops each, the striped version typically shows 4-8× throughput improvement over a single global lock because contention is reduced by the number of buckets.
+2. Resource hierarchy solution: number forks 0-4. Each philosopher picks up the lower-numbered fork first. Philosopher 4 (forks 4 and 0) picks up fork 0 first. This breaks the circular wait. The semaphore-based solution limits concurrency to 4 philosophers, guaranteeing at least one can eat.
+3. Async scraper typically completes 2-5× faster than thread-pool scraper because there is no thread creation/context-switch overhead and the event loop handles I/O waits more efficiently. The gap widens with more URLs because thread pools hit OS scheduling limits.</details>
 
 ### Challenge Problem
-Design and implement a **distributed rate limiter** with the following requirements:
-- Uses the **Token Bucket** algorithm internally.
-- Configurable: capacity, refill rate, per-user limits.
-- **Thread-safe**: multiple threads can call `allow_request(user_id)` concurrently.
-- **Deadlock-free**: no circular wait dependencies in the synchronization design.
-- **Metrics**: exposes total requests, allowed requests, and dropped requests.
-- **Graceful degradation**: if a user's counter exceeds allowed requests, the call must still complete within 100ms without blocking other users.
+<details><summary>Solution</summary>Design a distributed rate limiter with token bucket: use a central Redis store for token state with Lua scripts for atomicity. Each `allow_request` call executes a Lua script that checks and decrements tokens atomically. For deadlock freedom, never acquire multiple locks — the Lua script operates on a single key. Metrics counters are atomic Redis INCR operations. Graceful degradation: if Redis is unreachable, fall back to a local in-memory token bucket that allows requests with degraded accuracy (may overshoot but never blocks).
 
-Then implement a **toy Redis-style key-value store** that:
-- Is **single-threaded** with an **event loop** (like the real Redis).
-- Handles GET, SET, DEL, EXPIRE commands.
-- Supports expiration with a timer wheel (not a linear scan).
-- Processes client requests from a thread-safe command queue.
-- Measures throughput and compares against a multi-threaded implementation.
-
-Explain the trade-offs between the single-threaded event loop and the multi-threaded approaches using Amdahl's Law calculations based on your measurements.
+For the toy Redis-style KV store: implement a single-threaded event loop that polls a command queue. Use a min-heap for TTL expiry (timer wheel approximation). Compare throughput: single-threaded achieves 50K-100K ops/sec on modern hardware with no locking overhead. Multi-threaded with sharded locks may achieve 200K-400K but adds complexity. Under Amdahl's Law, a single-threaded event loop has s = 1 (serial fraction = 100%), so speedup is exactly 1× regardless of cores — but the simplicity and predictability often wins for caching workloads where 100K ops/sec is sufficient.</details>

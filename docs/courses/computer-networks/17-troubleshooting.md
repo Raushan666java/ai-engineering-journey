@@ -850,6 +850,81 @@ ping [options] <destination>
 
 **Edge cases:** ICMP blocked = false positive. Rate limiting = false loss. Large packets fragment without DF, drop with DF.
 
+#### TypeScript Implementation: PingTracer
+
+```typescript
+interface PingResult {
+  destination: string;
+  packetsSent: number;
+  packetsReceived: number;
+  packetLoss: number;
+  rttMin: number;
+  rttMax: number;
+  rttAvg: number;
+  rttStdDev: number;
+  jitter: number;
+}
+
+interface PingProbe {
+  sequenceNumber: number;
+  sentAt: number;
+  receivedAt: number | null;
+  ttl: number;
+}
+
+class PingTracer {
+  private probes: PingProbe[] = [];
+  private timeout: number;
+
+  constructor(private destination: string, private count: number = 4, timeoutMs: number = 1000) {
+    this.timeout = timeoutMs;
+  }
+
+  sendProbe(seq: number): PingProbe {
+    const probe: PingProbe = {
+      sequenceNumber: seq,
+      sentAt: Date.now(),
+      receivedAt: null,
+      ttl: 64,
+    };
+    // Simulate ICMP echo request
+    const simulatedRtt = 10 + Math.random() * 40; // 10-50ms
+    if (Math.random() > 0.05) { // 95% delivery rate
+      probe.receivedAt = probe.sentAt + simulatedRtt;
+    }
+    return probe;
+  }
+
+  execute(): PingResult {
+    for (let i = 0; i < this.count; i++) {
+      this.probes.push(this.sendProbe(i));
+    }
+
+    const received = this.probes.filter(p => p.receivedAt !== null);
+    const rtts = received.map(p => p.receivedAt! - p.sentAt);
+    const avg = rtts.reduce((a, b) => a + b, 0) / rtts.length;
+    const variance = rtts.reduce((a, b) => a + (b - avg) ** 2, 0) / rtts.length;
+
+    return {
+      destination: this.destination,
+      packetsSent: this.count,
+      packetsReceived: received.length,
+      packetLoss: ((this.count - received.length) / this.count) * 100,
+      rttMin: Math.min(...rtts),
+      rttMax: Math.max(...rtts),
+      rttAvg: avg,
+      rttStdDev: Math.sqrt(variance),
+      jitter: rtts.length > 1 ? rtts.slice(1).reduce((a, b, i) => a + Math.abs(b - rtts[i]), 0) / (rtts.length - 1) : 0,
+    };
+  }
+}
+
+// Usage
+const ping = new PingTracer("8.8.8.8", 5);
+const result = ping.execute();
+// console.log(`Loss: ${result.packetLoss}%, Avg RTT: ${result.rttAvg.toFixed(2)}ms, Jitter: ${result.jitter.toFixed(2)}ms`);
+```
+
 ### 17.7.2 traceroute / mtr
 
 **Purpose:** Discover path, per-hop latency, routing loops, packet loss location.
@@ -875,6 +950,59 @@ mtr [options] <destination>
 **Complexity:** O(h * p). h = hops, p = probes per hop (3).
 
 **Edge cases:** Firewalls block ICMP Time Exceeded. ECMP shows alternating paths. Asymmetric routing hides return path loss. MPLS tunnels may not decrement TTL.
+
+#### TypeScript Implementation: TracerouteSim
+
+```typescript
+interface HopResult {
+  hopNumber: number;
+  ipAddress: string;
+  rtt1: number;
+  rtt2: number;
+  rtt3: number;
+  isTimeout: boolean;
+}
+
+class TracerouteSim {
+  simulate(destination: string, maxHops: number = 30): HopResult[] {
+    const results: HopResult[] = [];
+    const baseLatency = 5; // ms per hop
+
+    for (let ttl = 1; ttl <= maxHops; ttl++) {
+      if (Math.random() < 0.02) {
+        // Simulate a timeout (firewall blocking ICMP Time Exceeded)
+        results.push({ hopNumber: ttl, ipAddress: '*', rtt1: 0, rtt2: 0, rtt3: 0, isTimeout: true });
+        continue;
+      }
+
+      // Simulate a router IP
+      const ip = `10.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 254) + 1}`;
+      const jitter = () => baseLatency * ttl + (Math.random() - 0.5) * 10;
+
+      results.push({
+        hopNumber: ttl,
+        ipAddress: ip,
+        rtt1: Math.max(0.1, jitter()),
+        rtt2: Math.max(0.1, jitter()),
+        rtt3: Math.max(0.1, jitter()),
+        isTimeout: false,
+      });
+
+      // Simulate reaching destination
+      if (ttl === Math.floor(Math.random() * 10) + 15) {
+        results[results.length - 1].ipAddress = destination;
+        break;
+      }
+    }
+    return results;
+  }
+}
+
+// Usage
+const traceroute = new TracerouteSim();
+const hops = traceroute.simulate("93.184.216.34"); // example.com
+// hops.forEach(h => console.log(`${h.hopNumber}. ${h.isTimeout ? '* * *' : `${h.ipAddress} ${h.rtt1.toFixed(2)}ms ${h.rtt2.toFixed(2)}ms ${h.rtt3.toFixed(2)}ms`}`));
+```
 
 ### 17.7.3 netstat / ss
 
@@ -1038,6 +1166,86 @@ iperf3 -c server --bidir       # Bidirectional test
 **Interpret TCP results:** Throughput near link speed = good. Throughput = (MSS * 8) / RTT * sqrt(3/4 * loss_rate) → Mathis equation. Compare expected vs actual throughput. Low throughput can mean congestion, bufferbloat, or application bottleneck.
 
 **UDP results:** Reports jitter (inter-packet delay variation) and packet loss percentage. Jitter &lt; 1ms is excellent for VoIP. Loss &gt; 1% degrades voice quality.
+
+#### TypeScript Implementation: PacketAnalyzer
+
+```typescript
+interface PacketHeader {
+  ethSrc: string;
+  ethDst: string;
+  ethType: string;
+  ipSrc: string;
+  ipDst: string;
+  ipProtocol: string;
+  tcpSrcPort?: number;
+  tcpDstPort?: number;
+  tcpFlags?: string[];
+  payloadSize: number;
+}
+
+class PacketAnalyzer {
+  private packets: PacketHeader[] = [];
+
+  // Simulate packet capture from a hex dump
+  parseHexDump(hexData: string): PacketHeader {
+    // Simplified parsing — real implementation would use pcap
+    const header: PacketHeader = {
+      ethSrc: Array.from({ length: 6 }, () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')).join(':'),
+      ethDst: Array.from({ length: 6 }, () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')).join(':'),
+      ethType: '0x0800', // IPv4
+      ipSrc: `${Math.floor(Math.random() * 223) + 1}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 254) + 1}`,
+      ipDst: `${Math.floor(Math.random() * 223) + 1}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 254) + 1}`,
+      ipProtocol: Math.random() > 0.5 ? 'TCP' : 'UDP',
+      payloadSize: Math.floor(Math.random() * 1400) + 40,
+    };
+
+    if (header.ipProtocol === 'TCP') {
+      header.tcpSrcPort = Math.floor(Math.random() * 65535);
+      header.tcpDstPort = Math.floor(Math.random() * 65535);
+      const flags = ['SYN', 'ACK', 'FIN', 'RST', 'PSH', 'URG'];
+      header.tcpFlags = flags.filter(() => Math.random() > 0.7);
+    }
+
+    this.packets.push(header);
+    return header;
+  }
+
+  filterByProtocol(protocol: string): PacketHeader[] {
+    return this.packets.filter(p => p.ipProtocol === protocol);
+  }
+
+  filterByPort(port: number): PacketHeader[] {
+    return this.packets.filter(p => p.tcpSrcPort === port || p.tcpDstPort === port);
+  }
+
+  getStatistics() {
+    return {
+      totalPackets: this.packets.length,
+      tcpCount: this.packets.filter(p => p.ipProtocol === 'TCP').length,
+      udpCount: this.packets.filter(p => p.ipProtocol === 'UDP').length,
+      uniqueDstIps: new Set(this.packets.map(p => p.ipDst)).size,
+      avgPayloadSize: this.packets.reduce((a, b) => a + b.payloadSize, 0) / this.packets.length,
+    };
+  }
+
+  detectRetransmissions(): number {
+    // Detect TCP retransmissions by finding duplicate IP+port pairs
+    const seen = new Set<string>();
+    let retransmissions = 0;
+    for (const p of this.packets) {
+      const key = `${p.ipSrc}:${p.tcpSrcPort}->${p.ipDst}:${p.tcpDstPort}`;
+      if (seen.has(key)) retransmissions++;
+      seen.add(key);
+    }
+    return retransmissions;
+  }
+}
+
+// Usage
+const analyzer = new PacketAnalyzer();
+for (let i = 0; i < 100; i++) analyzer.parseHexDump('');
+// console.log(`TCP: ${analyzer.getStatistics().tcpCount}, UDP: ${analyzer.getStatistics().udpCount}, Retransmissions: ${analyzer.detectRetransmissions()}`);
+```
 
 ## 17.8 Common Issues per Layer → Summary Table
 
@@ -1269,3 +1477,154 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 | HTTP 5xx errors | Server issue | curl -v, app logs | curl |
 | SSL errors | Cert issue | openssl s_client | openssl |
 | Port unreachable | Firewall blocking | telnet, nc | netcat |
+
+### Troubleshooting Methodology Flow
+
+```mermaid
+flowchart TD
+    classDef problem fill:#fbb,stroke:#a33,stroke-width:2
+    classDef action fill:#bfb,stroke:#282,stroke-width:2
+    classDef verify fill:#bbf,stroke:#33a,stroke-width:2
+    classDef resolve fill:#beb,stroke:#292,stroke-width:2
+
+    A[Problem Reported] --> B{Define Scope}
+    B --> C[Who is affected?]
+    B --> D[What exactly fails?]
+    B --> E[When did it start?]
+    
+    C & D & E --> F[Check Physical Layer]
+    
+    F --> G{Link lights on?}
+    G -- Yes --> H[Check Layer 2]
+    G -- No --> I[Replace cable/termination]
+    I --> J[Verify link restored]
+    J --> H
+    
+    H --> K{ARP resolved?}
+    K -- Yes --> L[Check Layer 3]
+    K -- No --> M[Fix VLAN/STP issues]
+    M --> N[Re-check ARP]
+    N --> L
+    
+    L --> O{Ping successful?}
+    O -- Yes --> P[Check Layer 4]
+    O -- No --> Q[Check routing table]
+    Q --> R{Fix routes / gateway}
+    R --> P
+    
+    P --> S{TCP handshake?}
+    S -- Yes --> T[Check Application Layer]
+    S -- No --> U[Check firewall / ports]
+    U --> V[Open port / fix ACL]
+    V --> T
+    
+    T --> W{Application responds?}
+    W -- Yes --> X[Performance check]
+    W -- No --> Y[Check service / logs]
+    Y --> Z[Restart service / fix config]
+    Z --> X
+    
+    X --> AA{Meets SLA?}
+    AA -- Yes --> AB[Document RCA]
+    AA -- No --> AC[Tune performance]
+    AC --> AB
+    
+    class A,B,F,H,L,O,P,T,X problem
+    class C,D,E,G,K,S,W action
+    class I,J,M,N,Q,R,U,V,Y,Z,AC resolve
+    class AB verify
+```
+
+## Practical Takeaways
+
+| # | Takeaway | Application |
+|---|----------|-------------|
+| 1 | **Start at Layer 1** → 80% of problems are physical | Check link lights, cables, and interface counters before anything else |
+| 2 | **Use the OSI model as your checklist** | Work up layer by layer: Physical → Datalink → Network → Transport → Application |
+| 3 | **ICMP blocking ≠ network failure** | Use TCP-based tests (telnet, nc, curl) when ping fails but apps work |
+| 4 | **MTR reveals intermittent loss** | Run MTR for 5-10 minutes to catch transient packet loss that ping misses |
+| 5 | **tcpdump before restarting** | Restarting destroys evidence — capture traffic first, then restart |
+| 6 | **Document every step** | Good RCA documents include symptoms, diagnostics, root cause, fix, and prevention |
+| 7 | **One change at a time** | Multiple simultaneous changes make it impossible to identify which fix worked |
+
+## Summary
+
+Network troubleshooting is a systematic process that follows the OSI layer model from bottom to top. Physical layer issues (cable faults, bad SFPs) account for the majority of problems. Data link issues include duplex mismatches, MAC flooding, and STP loops. Network layer problems involve routing loops, MTU mismatches, and ICMP filtering. Transport layer issues include port blocking, TIME_WAIT exhaustion, and listen backlog overflows.
+
+Key tools include ping (ICMP connectivity), traceroute (path discovery), tcpdump/Wireshark (packet capture and analysis), ss (socket state), iperf3 (throughput measurement), and nmap (port scanning). Each tool operates at specific OSI layers and provides targeted information for diagnosis.
+
+The most important skill in troubleshooting is the ability to isolate — using the OSI layer model to narrow down the problem space, checking one layer at a time, and making one change at a time. Documentation of the entire process (symptoms → diagnosis → root cause → fix → prevention) distinguishes professional network engineers.
+
+## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which OSI layer should you check first when troubleshooting? | Application | Transport | Network | Physical | **D** |
+| 2 | What does a timeout (no response) during a port test typically indicate? | Port is open | Application is listening | Firewall is dropping packets silently | Server is overloaded but responding | **C** |
+| 3 | Which tool shows per-hop latency and packet loss continuously over time? | ping | traceroute | MTR | iperf3 | **C** |
+| 4 | What causes TIME_WAIT exhaustion on a busy server? | Too many concurrent connections | Short-lived connections accumulating 2MSL wait | SYN flood attack | MTU mismatch | **B** |
+| 5 | How does path MTU discovery fail in practice? | Routers fragment packets incorrectly | Firewalls block ICMP Fragmentation Needed messages | TCP window scaling breaks PMTUD | The DF bit is never set | **B** |
+
+## Exercises
+
+### Review Questions
+
+1. Explain why the OSI model is used as a troubleshooting framework. Why start at Layer 1?
+
+<details>
+<summary>Solution</summary>
+The OSI model provides a systematic layer-by-layer checklist. Starting at Layer 1 (Physical) ensures that lower-layer problems are ruled out before investigating higher layers. Since 80% of network problems are physical (cable faults, power issues, bad SFPs), starting at Layer 1 is the most efficient approach.
+</details>
+
+2. What is the difference between a timeout, connection refused, and port unreachable?
+
+<details>
+<summary>Solution</summary>
+Timeout: No response at all (firewall silently drops). Connection refused (TCP RST): Server received SYN but nothing is listening. Port unreachable (ICMP type 3 code 3): Router/firewall explicitly blocks the port.
+</details>
+
+3. How can you distinguish between propagation delay and queuing delay?
+
+<details>
+<summary>Solution</summary>
+Propagation delay is determined by distance (~5ms per 1000 km in fiber). If measured RTT significantly exceeds the distance-based minimum, queuing delay is present. Use traceroute to find which hop adds disproportionate latency.
+</details>
+
+4. What is asymmetric routing and why does it complicate troubleshooting?
+
+<details>
+<summary>Solution</summary>
+Asymmetric routing means packets take different paths in each direction. Traceroute only shows the forward path, so packet loss on the return path is invisible. MTR run from both endpoints is needed to see both directions.
+</details>
+
+5. Why should you capture traffic before restarting a service?
+
+<details>
+<summary>Solution</summary>
+Restarting destroys all evidence: TCP connection states, socket buffers, and kernel statistics are reset. The root cause (connection leak, buffer overflow, stuck state) becomes invisible after restart.
+</details>
+
+### Application Problems
+
+6. A web server at 192.168.1.100:443 is unreachable from a client at 10.0.0.50. Design a systematic troubleshooting plan covering each OSI layer.
+
+<details>
+<summary>Solution</summary>
+Layer 1: Check link lights on both ends. Layer 2: Check ARP table, VLAN membership. Layer 3: Ping gateway, ping server IP. Layer 4: telnet/nc to port 443. Layer 5-7: curl -v, check certificates. Use tcpdump on server to see if SYN packets arrive. Check firewall rules.
+</details>
+
+7. An MTR report shows 5% packet loss at hop 4 but 0% loss at hops 5-10. What does this indicate?
+
+<details>
+<summary>Solution</summary>
+This indicates that the router at hop 4 is rate-limiting its ICMP Time Exceeded responses, not actual packet loss. If the loss were real, all subsequent hops would also show loss. This is a common known behavior of Cisco routers.
+</details>
+
+### Challenge Problems
+
+8. Design a network monitoring and alerting system for a 5000-employee enterprise network. Include: (a) what metrics to collect at each OSI layer, (b) alert thresholds with justification, (c) data retention policy, (d) escalation procedure. Explain how you would distinguish between a true outage and a false positive.
+
+<details>
+<summary>Solution</summary>
+(a) L1: interface errors, link state; L2: MAC table utilization, STP changes; L3: routing table changes, ICMP reachability; L4: TCP connection rates, SYN backlog; L5-7: HTTP response codes, DNS query times. (b) Thresholds: L1 errors > 0.1% in 5 min window, L4 SYN backlog > 1024, L7 5xx > 1% in 1 min. (c) Metrics 1s resolution for 7 days, 1m for 30 days, 5m for 1 year. (d) Tier 1: automated ping/trace, Tier 2: application-level check, Tier 3: on-call engineer. False positive reduction: require 2 consecutive samples above threshold, correlate across layers.
+</details>

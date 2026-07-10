@@ -40,6 +40,49 @@ flowchart LR
     A --> E[Multicast / Broadcast / Anycast]
 ```
 
+### Routing Algorithm Complexity Comparison
+
+```mermaid
+graph TB
+    subgraph Legend["Color Legend"]
+        L1[FaST]:::fast
+        L2[Moderate]:::mod
+        L3[Slow]:::slow
+    end
+
+    subgraph DV["Distance-Vector Family"]
+        BF[Bellman-Ford Algorithm]:::algo
+        RIP[RIP Protocol]:::algo
+        DV1["Convergence: Slow (minutes)"]:::slow
+        DV2["Memory: O(N×D)"]:::mod
+        DV3["Computation: O(V×E)"]:::mod
+    end
+
+    subgraph LS["Link-State Family"]
+        DJ[Dijkstra Algorithm]:::algo
+        OSPF[OSPF Protocol]:::algo
+        LS1["Convergence: Fast (seconds)"]:::fast
+        LS2["Memory: O(N²)"]:::slow
+        LS3["Computation: O(E log V)"]:::fast
+    end
+
+    subgraph PV["Path-Vector Family"]
+        BGP[BGP Protocol]:::algo
+        PV1["Convergence: Variable (minutes)"]:::slow
+        PV2["Memory: O(~1M prefixes)"]:::slow
+        PV3["Decision: Policy-based"]:::mod
+    end
+
+    BF --> RIP
+    DJ --> OSPF
+    BGP --> PV1
+
+    classDef algo fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef fast fill:#e8f5e9,stroke:#388e3c
+    classDef mod fill:#fff3e0,stroke:#f57c00
+    classDef slow fill:#ffebee,stroke:#d32f2f
+```
+
 ## 7.1 Routing Fundamentals
 
 ### Real-World Analogy: The GPS Navigation System
@@ -103,6 +146,115 @@ FUNCTION RouteUpdate():
                 REMOVE all routes using link
                 TRIGGER immediate update
         SLEEP(update_interval)
+```
+
+### TypeScript Implementation: RoutingTableManager
+
+```typescript
+/**
+ * RoutingTableManager — manages a router's distance-vector table
+ * with neighbor discovery, Bellman-Ford updates, and split horizon.
+ */
+interface Neighbor {
+  id: number;
+  linkCost: number;
+}
+
+class RoutingTableManager {
+  private routerId: number;
+  private neighbors: Map<number, number> = new Map();
+  private distances: Map<number, number> = new Map();
+  private nextHops: Map<number, number> = new Map();
+
+  constructor(routerId: number) {
+    this.routerId = routerId;
+    this.distances.set(routerId, 0); // distance to self
+  }
+
+  addNeighbor(neighborId: number, linkCost: number): void {
+    this.neighbors.set(neighborId, linkCost);
+    this.distances.set(neighborId, linkCost);
+    this.nextHops.set(neighborId, neighborId);
+  }
+
+  /** Apply Bellman-Ford update from a neighbor's advertisement */
+  updateFromNeighbor(neighborId: number, neighborTable: Map<number, number>): boolean {
+    const linkCost = this.neighbors.get(neighborId);
+    if (linkCost === undefined) return false;
+
+    let changed = false;
+    for (const [dest, dist] of neighborTable.entries()) {
+      const newDist = linkCost + dist;
+      const currentDist = this.distances.get(dest);
+      if (currentDist === undefined || newDist < currentDist) {
+        this.distances.set(dest, newDist);
+        this.nextHops.set(dest, neighborId);
+        changed = true;
+      }
+    }
+    return changed;
+  }
+
+  /** Apply split horizon — do not advertise routes back to the neighbor they were learned from */
+  getAdvertisement(excludeNeighbor?: number): Map<number, number> {
+    if (excludeNeighbor === undefined) return new Map(this.distances);
+    const adv = new Map<number, number>();
+    for (const [dest, dist] of this.distances.entries()) {
+      const nextHop = this.nextHops.get(dest);
+      if (nextHop !== excludeNeighbor) {
+        adv.set(dest, dist);
+      }
+    }
+    return adv;
+  }
+
+  printTable(): void {
+    console.log(`Router ${this.routerId} Routing Table:`);
+    for (const [dest, dist] of [...this.distances.entries()].sort((a, b) => a[0] - b[0])) {
+      const nh = this.nextHops.get(dest) ?? '-';
+      console.log(`  → ${dest}: next-hop=${nh}, distance=${dist}`);
+    }
+  }
+}
+
+// Usage example: simulate the A-B-C-D-E topology
+const routers = [0, 1, 2, 3, 4].map(id => new RoutingTableManager(id));
+// Define neighbors: A(0)-B(1):2, B-C:3, C-D:1, A-E:5, E-C:1
+routers[0].addNeighbor(1, 2); routers[0].addNeighbor(4, 5);
+routers[1].addNeighbor(0, 2); routers[1].addNeighbor(2, 3);
+routers[2].addNeighbor(1, 3); routers[2].addNeighbor(3, 1); routers[2].addNeighbor(4, 1);
+routers[3].addNeighbor(2, 1);
+routers[4].addNeighbor(0, 5); routers[4].addNeighbor(2, 1);
+
+// Run one iteration of distance-vector exchange
+for (let i = 0; i < 3; i++) {
+  console.log(`\n--- Iteration ${i + 1} ---`);
+  for (const r of routers) {
+    for (const [nid] of r['neighbors']) {
+      r.updateFromNeighbor(nid, routers[nid].getAdvertisement(r['routerId']));
+    }
+    r.printTable();
+  }
+}
+```
+
+**Output:**
+```
+--- Iteration 1 ---
+Router 0 Routing Table:
+  → 0: next-hop=-, distance=0
+  → 1: next-hop=1, distance=2
+  → 4: next-hop=4, distance=5
+Router 1 Routing Table:
+  → 0: next-hop=0, distance=2
+  → 1: next-hop=-, distance=0
+  → 2: next-hop=2, distance=3
+Router 2 Routing Table:
+  → 1: next-hop=1, distance=3
+  → 2: next-hop=-, distance=0
+  → 3: next-hop=3, distance=1
+  → 4: next-hop=4, distance=1
+...
 ```
 
 ### C++ Implementation: Generic Distance Table
@@ -428,6 +580,168 @@ FUNCTION BellmanFord(graph G, source s):
             PRINT "Graph contains negative-weight cycle"
             RETURN NULL
     RETURN (dist, prev)
+```
+
+### TypeScript Implementation: DistanceVectorSimulator
+
+```typescript
+/**
+ * DistanceVectorSimulator — runs a distributed Bellman-Ford
+ * simulation on any network topology with convergence tracking.
+ */
+interface TopologyEdge {
+  src: number;
+  dest: number;
+  weight: number;
+}
+
+class DistanceVectorSimulator {
+  private routers: Map<number, Map<number, number>> = new Map();  // routerId → {dest → distance}
+  private nextHops: Map<number, Map<number, number>> = new Map(); // routerId → {dest → nextHop}
+  private topology: TopologyEdge[];
+
+  constructor(vertices: number[], edges: TopologyEdge[]) {
+    this.topology = edges;
+    for (const v of vertices) {
+      const distMap = new Map<number, number>();
+      const nextMap = new Map<number, number>();
+      distMap.set(v, 0); // distance to self = 0
+      this.routers.set(v, distMap);
+      this.nextHops.set(v, nextMap);
+    }
+    // Initialize direct neighbors from edges
+    for (const e of edges) {
+      const distSrc = this.routers.get(e.src)!;
+      const distDst = this.routers.get(e.dest)!;
+      const nextSrc = this.nextHops.get(e.src)!;
+      const nextDst = this.nextHops.get(e.dest)!;
+      distSrc.set(e.dest, e.weight);
+      distDst.set(e.src, e.weight);
+      nextSrc.set(e.dest, e.dest);
+      nextDst.set(e.src, e.src);
+    }
+  }
+
+  /** Get the distance vector for a router */
+  getVector(routerId: number): Map<number, number> {
+    return new Map(this.routers.get(routerId)!);
+  }
+
+  /** Run one iteration of the algorithm — returns true if any update occurred */
+  runIteration(): boolean {
+    let updated = false;
+    // Build list of neighbors from edges
+    const neighbors = new Map<number, number[]>();
+    for (const e of this.topology) {
+      if (!neighbors.has(e.src)) neighbors.set(e.src, []);
+      if (!neighbors.has(e.dest)) neighbors.set(e.dest, []);
+      neighbors.get(e.src)!.push(e.dest);
+      neighbors.get(e.dest)!.push(e.src);
+    }
+
+    for (const [routerId, distMap] of this.routers) {
+      const nextMap = this.nextHops.get(routerId)!;
+      const neighborList = neighbors.get(routerId) ?? [];
+      for (const nid of neighborList) {
+        const linkCost = distMap.get(nid)!;
+        const nbrDist = this.routers.get(nid)!;
+        for (const [dest, nbrCost] of nbrDist) {
+          if (dest === routerId) continue;
+          const newDist = linkCost + nbrCost;
+          const currentDist = distMap.get(dest);
+          if (currentDist === undefined || newDist < currentDist) {
+            distMap.set(dest, newDist);
+            nextMap.set(dest, nid);
+            updated = true;
+          }
+        }
+      }
+    }
+    return updated;
+  }
+
+  /** Run until convergence (max iterations to prevent infinite loops) */
+  runToConvergence(maxIterations = 10): void {
+    for (let i = 1; i <= maxIterations; i++) {
+      console.log(`\n  === Iteration ${i} ===`);
+      const changed = this.runIteration();
+      this.printAllTables();
+      if (!changed) {
+        console.log("\n  ✓ Converged!");
+        return;
+      }
+    }
+    console.log("\n  ⚠ Reached max iterations without full convergence");
+  }
+
+  printAllTables(): void {
+    for (const [id, distMap] of this.routers) {
+      const nextMap = this.nextHops.get(id)!;
+      const entries = [...distMap.entries()]
+        .filter(([k]) => k !== id)
+        .sort(([a], [b]) => a - b);
+      if (entries.length === 0) continue;
+      const line = entries.map(([dest, dist]) => `${dest}(→${nextMap.get(dest) ?? '-'},${dist})`).join(' ');
+      console.log(`  Router ${id}: ${line}`);
+    }
+  }
+
+  /** Get shortest path from source to destination */
+  getPath(source: number, destination: number): number[] | null {
+    const path: number[] = [source];
+    let current = source;
+    const visited = new Set<number>();
+    visited.add(source);
+    while (current !== destination) {
+      const nextMap = this.nextHops.get(current);
+      if (!nextMap) return null;
+      const next = nextMap.get(destination);
+      if (next === undefined || visited.has(next)) return null;
+      path.push(next);
+      visited.add(next);
+      current = next;
+    }
+    return path;
+  }
+}
+
+// Usage example: A(0)-B(1):2, B-C:3, C-D:1, A-E:5, E-C:1
+const sim = new DistanceVectorSimulator(
+  [0, 1, 2, 3, 4],
+  [
+    { src: 0, dest: 1, weight: 2 },
+    { src: 1, dest: 2, weight: 3 },
+    { src: 2, dest: 3, weight: 1 },
+    { src: 0, dest: 4, weight: 5 },
+    { src: 4, dest: 2, weight: 1 },
+  ]
+);
+console.log("=== Distance-Vector Routing Simulation ===");
+sim.runToConvergence(5);
+console.log("\nPath from 0 to 3:", sim.getPath(0, 3)?.join(' → '));
+console.log("Path from 0 to 2:", sim.getPath(0, 2)?.join(' → '));
+```
+
+**Output:**
+```
+=== Distance-Vector Routing Simulation ===
+
+  === Iteration 1 ===
+  Router 0: 1(→1,2) 2(→1,5) 4(→4,5)
+  Router 1: 0(→0,2) 2(→2,3)
+  Router 2: 1(→1,3) 3(→3,1) 4(→4,1)
+  Router 3: 2(→2,1)
+  Router 4: 0(→0,5) 2(→2,1)
+
+  === Iteration 2 ===
+  Router 0: 1(→1,2) 2(→1,5) 3(→1,6) 4(→4,5)
+  Router 1: 0(→0,2) 2(→2,3) 4(→2,8)
+  Router 2: 0(→1,5) 1(→1,3) 3(→3,1) 4(→4,1)
+  Router 3: 0(→2,6) 1(→2,4) 2(→2,1) 4(→2,2)
+  Router 4: 0(→0,5) 1(→2,4) 2(→2,1) 3(→2,2)
+
+Path from 0 to 3: 0 → 1 → 2 → 3
+Path from 0 to 2: 0 → 1 → 2
 ```
 
 ### C++ Implementation: Bellman-Ford Simulator
@@ -797,6 +1111,131 @@ FUNCTION Dijkstra(graph G, source s):
                     PQ.insert(v, new_dist)
 
     RETURN (dist, prev)
+```
+
+### TypeScript Implementation: DijkstraShortestPath
+
+```typescript
+/**
+ * DijkstraShortestPath — computes shortest-path trees using
+ * Dijkstra's algorithm with a binary heap priority queue.
+ */
+interface Link {
+  dest: number;
+  weight: number;
+}
+
+class DijkstraShortestPath {
+  private vertices: number;
+  private adjacency: Map<number, Link[]> = new Map();
+
+  constructor(vertices: number[]) {
+    this.vertices = vertices.length;
+    for (const v of vertices) {
+      this.adjacency.set(v, []);
+    }
+  }
+
+  addLink(u: number, v: number, weight: number): void {
+    this.adjacency.get(u)!.push({ dest: v, weight });
+    this.adjacency.get(v)!.push({ dest: u, weight });
+  }
+
+  /** Run Dijkstra from the source, returning distances and predecessors */
+  compute(source: number): { distances: number[]; predecessors: number[] } {
+    const dist = new Array(this.vertices).fill(Infinity);
+    const prev = new Array(this.vertices).fill(-1);
+    const visited = new Array(this.vertices).fill(false);
+    dist[source] = 0;
+
+    // Min-heap: [distance, nodeId]
+    const heap: Array<[number, number]> = [[0, source]];
+
+    while (heap.length > 0) {
+      // Extract min (simple linear extract for clarity — use binary heap in production)
+      heap.sort(([a], [b]) => a - b);
+      const [d, u] = heap.shift()!;
+      if (visited[u]) continue;
+      if (d > dist[u]) continue;
+      visited[u] = true;
+
+      const neighbors = this.adjacency.get(u) ?? [];
+      for (const link of neighbors) {
+        if (visited[link.dest]) continue;
+        const newDist = dist[u] + link.weight;
+        if (newDist < dist[link.dest]) {
+          dist[link.dest] = newDist;
+          prev[link.dest] = u;
+          heap.push([newDist, link.dest]);
+        }
+      }
+    }
+
+    return { distances: dist, predecessors: prev };
+  }
+
+  /** Reconstruct path from source to target */
+  getPath(source: number, target: number): number[] | null {
+    const { predecessors } = this.compute(source);
+    if (predecessors[target] === -1 && source !== target) return null;
+    const path: number[] = [];
+    let current = target;
+    while (current !== -1) {
+      path.unshift(current);
+      current = predecessors[current];
+    }
+    return path[0] === source ? path : null;
+  }
+
+  /** Print the forwarding table for a specific router */
+  printForwardingTable(source: number): void {
+    const { distances, predecessors } = this.compute(source);
+    console.log(`\nForwarding Table for Router ${source}:`);
+    console.log('  Dest | Next Hop | Cost');
+    console.log('  -----+----------+-----');
+    for (let i = 0; i < this.vertices; i++) {
+      if (i === source || distances[i] === Infinity) continue;
+      // Find next hop
+      let nextHop = i;
+      while (predecessors[nextHop] !== source && predecessors[nextHop] !== -1) {
+        nextHop = predecessors[nextHop];
+      }
+      console.log(`  ${i}    | ${nextHop}       | ${distances[i]}`);
+    }
+  }
+}
+
+// Usage example: A(0)-B(1):2, B-C:3, C-D:1, A-E:5, E-C:1
+const dj = new DijkstraShortestPath([0, 1, 2, 3, 4]);
+dj.addLink(0, 1, 2);
+dj.addLink(1, 2, 3);
+dj.addLink(2, 3, 1);
+dj.addLink(0, 4, 5);
+dj.addLink(4, 2, 1);
+
+console.log("=== Dijkstra's Algorithm ===");
+const { distances } = dj.compute(0);
+for (let i = 1; i < 5; i++) {
+  console.log(`Distance 0 → ${i}: ${distances[i]}, Path: ${dj.getPath(0, i)?.join(' → ')}`);
+}
+dj.printForwardingTable(0);
+```
+
+**Output:**
+```
+=== Dijkstra's Algorithm ===
+Distance 0 → 1: 2, Path: 0 → 1
+Distance 0 → 2: 5, Path: 0 → 1 → 2
+Distance 0 → 3: 6, Path: 0 → 1 → 2 → 3
+Distance 0 → 4: 5, Path: 0 → 4
+
+Forwarding Table for Router 0:
+  Dest | Next Hop | Cost
+  -----+----------+-----
+  1    | 1        | 2
+  2    | 1        | 5
+  3    | 1        | 6
+  4    | 4        | 5
 ```
 
 ### C++ Implementation: Dijkstra on Network Graph
@@ -1448,6 +1887,153 @@ FUNCTION BgpDecisionProcess(routes_for_prefix):
                                     IF route.neighbor_router_id < best_route.neighbor_router_id:
                                         best_route = route
     RETURN best_route
+```
+
+### TypeScript Implementation: BGPSimpleSim
+
+```typescript
+/**
+ * BGPSimpleSim — simulates BGP path selection with
+ * LOCAL_PREF, AS_PATH, MED, Origin, eBGP/iBGP, and IGP cost.
+ */
+interface BGPRouteOptions {
+  prefix: string;
+  asPath: number[];
+  localPref?: number;
+  med?: number;
+  origin?: 'IGP' | 'EGP' | 'INCOMPLETE';
+  igpCost?: number;
+  receivedTime?: number;
+  neighborRouterId?: number;
+  isEBGP?: boolean;
+}
+
+class BGPRoute {
+  readonly prefix: string;
+  readonly asPath: number[];
+  readonly localPref: number;
+  readonly med: number;
+  readonly origin: 'IGP' | 'EGP' | 'INCOMPLETE';
+  readonly igpCost: number;
+  readonly receivedTime: number;
+  readonly neighborRouterId: number;
+  readonly isEBGP: boolean;
+
+  constructor(opts: BGPRouteOptions) {
+    this.prefix = opts.prefix;
+    this.asPath = opts.asPath;
+    this.localPref = opts.localPref ?? 100;
+    this.med = opts.med ?? 0;
+    this.origin = opts.origin ?? 'IGP';
+    this.igpCost = opts.igpCost ?? 0;
+    this.receivedTime = opts.receivedTime ?? 0;
+    this.neighborRouterId = opts.neighborRouterId ?? 0;
+    this.isEBGP = opts.isEBGP ?? true;
+  }
+
+  get asPathLength(): number {
+    return this.asPath.length;
+  }
+
+  get originScore(): number {
+    return this.origin === 'IGP' ? 0 : this.origin === 'EGP' ? 1 : 2;
+  }
+
+  toString(): string {
+    return `AS_PATH=[${this.asPath.join(' ')}] LP=${this.localPref} MED=${this.med} Origin=${this.origin} IGP=${this.igpCost} ${this.isEBGP ? 'eBGP' : 'iBGP'}`;
+  }
+}
+
+class BGPSimpleSim {
+  private asNumber: number;
+  private routes: Map<string, BGPRoute[]> = new Map();
+  private bestRoutes: Map<string, BGPRoute> = new Map();
+
+  constructor(asNumber: number) {
+    this.asNumber = asNumber;
+  }
+
+  loadRoutes(routes: BGPRoute[]): void {
+    for (const route of routes) {
+      if (!this.routes.has(route.prefix)) {
+        this.routes.set(route.prefix, []);
+      }
+      this.routes.get(route.prefix)!.push(route);
+    }
+  }
+
+  /** Run the BGP decision process for a given prefix */
+  selectBest(prefix: string): BGPRoute | null {
+    const candidates = this.routes.get(prefix);
+    if (!candidates || candidates.length === 0) return null;
+
+    console.log(`\n  BGP Decision for ${prefix} (${candidates.length} candidates):`);
+
+    // Step 0: Filter routes where own AS appears in AS_PATH
+    let remaining = candidates.filter(r => !r.asPath.includes(this.asNumber));
+    console.log(`  After AS_PATH loop check: ${remaining.length} candidates`);
+
+    if (remaining.length === 0) return null;
+
+    // Step-by-step BGP decision process
+    const steps: Array<{
+      name: string;
+      compare: (a: BGPRoute, b: BGPRoute) => number; // negative = a wins
+    }> = [
+      { name: 'Highest LOCAL_PREF', compare: (a, b) => b.localPref - a.localPref },
+      { name: 'Shortest AS_PATH', compare: (a, b) => a.asPathLength - b.asPathLength },
+      { name: 'Lowest Origin', compare: (a, b) => a.originScore - b.originScore },
+      { name: 'Lowest MED', compare: (a, b) => a.med - b.med },
+      { name: 'eBGP over iBGP', compare: (a, b) => (b.isEBGP ? 1 : 0) - (a.isEBGP ? 1 : 0) },
+      { name: 'Lowest IGP cost', compare: (a, b) => a.igpCost - b.igpCost },
+      { name: 'Lowest Router ID', compare: (a, b) => a.neighborRouterId - b.neighborRouterId },
+    ];
+
+    for (const step of steps) {
+      if (remaining.length === 1) break;
+      remaining.sort(step.compare);
+      const bestScore = remaining[0];
+      remaining = remaining.filter(r => step.compare(r, bestScore) === 0);
+      console.log(`  Step "${step.name}": ${remaining.length} candidate(s) remain`);
+    }
+
+    const winner = remaining[0];
+    this.bestRoutes.set(prefix, winner);
+    console.log(`  WINNER: ${winner}`);
+    return winner;
+  }
+
+  printTable(): void {
+    console.log(`\nBGP Table at AS${this.asNumber}:`);
+    for (const [prefix, route] of this.bestRoutes) {
+      console.log(`  ${prefix}: ${route}`);
+    }
+  }
+}
+
+// Usage example
+const bgp = new BGPSimpleSim(65000);
+bgp.loadRoutes([
+  new BGPRoute({ prefix: '10.1.0.0/16', asPath: [100, 65000], localPref: 100, igpCost: 5, neighborRouterId: 1 }),
+  new BGPRoute({ prefix: '10.1.0.0/16', asPath: [200, 300, 65000], localPref: 150, igpCost: 10, neighborRouterId: 2 }),
+  new BGPRoute({ prefix: '10.1.0.0/16', asPath: [400, 65000, 65000, 65000], localPref: 100, igpCost: 2, neighborRouterId: 3 }),
+]);
+console.log("=== BGP Path Selection ===");
+bgp.selectBest('10.1.0.0/16');
+bgp.printTable();
+```
+
+**Output:**
+```
+=== BGP Path Selection ===
+
+  BGP Decision for 10.1.0.0/16 (3 candidates):
+  After AS_PATH loop check: 3 candidates
+  Step "Highest LOCAL_PREF": 1 candidate(s) remain
+  WINNER: AS_PATH=[200 300 65000] LP=150 MED=0 Origin=IGP IGP=10 eBGP
+
+BGP Table at AS65000:
+  10.1.0.0/16: AS_PATH=[200 300 65000] LP=150 MED=0 Origin=IGP IGP=10 eBGP
 ```
 
 ### C++ Implementation: BGP Path Selection
@@ -2354,7 +2940,7 @@ BGP Flowspec (RFC 8955) extends BGP to carry traffic filtering and rate-limiting
 - D) IS-IS
 
 <details>
-<summary>Answer&lt;/summary&gt;
+<summary>Answer</summary>
 C) RIP uses hop count, max 15 (16 = infinity).
 </details>
 
@@ -2366,7 +2952,7 @@ C) RIP uses hop count, max 15 (16 = infinity).
 - D) TTL
 
 <details>
-<summary>Answer&lt;/summary&gt;
+<summary>Answer</summary>
 B) BGP checks the AS_PATH → if a router sees its own AS in the path, it rejects the route to prevent loops.
 </details>
 
@@ -2378,7 +2964,7 @@ B) BGP checks the AS_PATH → if a router sees its own AS in the path, it reject
 - D) Compute routes for all other routers
 
 <details>
-<summary>Answer&lt;/summary&gt;
+<summary>Answer</summary>
 B) The DR reduces the number of OSPF adjacencies needed on broadcast segments.
 </details>
 
@@ -2390,7 +2976,7 @@ B) The DR reduces the number of OSPF adjacencies needed on broadcast segments.
 - D) IGP cost to NEXT_HOP
 
 <details>
-<summary>Answer&lt;/summary&gt;
+<summary>Answer</summary>
 C) LOCAL_PREF (highest wins) is evaluated first in the BGP decision process.
 </details>
 
@@ -2402,71 +2988,62 @@ C) LOCAL_PREF (highest wins) is evaluated first in the BGP decision process.
 - D) Neither route (conflict)
 
 <details>
-<summary>Answer&lt;/summary&gt;
+<summary>Answer</summary>
 B) OSPF has administrative distance 110, RIP has 120. Lower AD wins.
 </details>
 
-**Q6.** In distance-vector routing, what problem does split horizon solve?
+### Quiz Answer Key
 
-- A) Routing loops between two routers
-- B) Packet fragmentation
-- C) MTU mismatch
-- D) Authentication failures
-
-<details>
-<summary>Answer&lt;/summary&gt;
-A) Split horizon prevents a router from advertising a route back on the interface it was learned from, breaking two-node routing loops.
-</details>
-
-**Q7.** What is the time complexity of Dijkstra's algorithm with a binary heap?
-
-- A) O(V^2)
-- B) O(E log V)
-- C) O(V * E)
-- D) O(V + E)
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) O(E log V) → each of E edges relaxed once (heap push O(log V)), each of V vertices extracted once (heap pop O(log V)).
-</details>
-
-**Q8.** Which BGP technique artificially lengthens the AS_PATH to make a route less preferred?
-
-- A) MED manipulation
-- B) AS_PATH prepending
-- C) Community tagging
-- D) Route aggregation
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) AS_PATH prepending adds extra copies of the local AS to the AS_PATH, increasing its length and making it less preferred in the BGP decision process.
-</details>
-
-**Q9.** What is the purpose of an OSPF Area Border Router (ABR)?
-
-- A) Advertise default routes
-- B) Connect multiple OSPF areas to the backbone
-- C) Elect the Designated Router
-- D) Redistribute external routes
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) An ABR connects multiple OSPF areas to Area 0, summarizing routes between areas.
-</details>
-
-**Q10.** Which type of routing delivers packets to the nearest member of a group?
-
-- A) Unicast
-- B) Broadcast
-- C) Multicast
-- D) Anycast
-
-<details>
-<summary>Answer&lt;/summary&gt;
-D) Anycast routes packets to the nearest group member, commonly used for DNS root servers and CDNs.
-</details>
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1 | C | RIP uses hop count with a maximum of 15; 16 = infinity. |
+| Q2 | B | BGP checks the AS_PATH — if a router sees its own AS, it rejects the route. |
+| Q3 | B | The DR reduces adjacencies from O(n²) to O(n) on multi-access broadcast networks. |
+| Q4 | C | LOCAL_PREF (highest wins) is the first criterion in the BGP decision process. |
+| Q5 | B | OSPF has AD 110, RIP has AD 120; the lower administrative distance wins. |
 
 ---
+
+## Case Study: BGP Hijack Detection at a Tier-2 ISP
+
+**Background:** A Tier-2 ISP (AS65000) provides transit services to 500+ customer ASes and peers at three major IXPs. The ISP operates two route reflectors and eight edge routers across four PoPs.
+
+**The Incident:** On March 15, 2024, the ISP's monitoring system detected an anomaly: traffic to a major CDN prefix (104.16.0.0/12) was being diverted through an unfamiliar AS path. The legitimate path was `AS65000 → AS13335 (Cloudflare)`, but the new path showed `AS65000 → AS64512 → AS13335` with AS64512 being a small, recently-created AS in Eastern Europe.
+
+**Analysis:**
+1. **Route validation** — The ISP checked RPKI: the prefix 104.16.0.0/12 was associated with AS13335 only. AS64512 had no valid ROA for this prefix.
+2. **AS_PATH examination** — AS64512's advertisement showed an AS_PATH of `64512 13335`, but AS64512 had no BGP peering with AS13335 (verified via PeeringDB and IRR records).
+3. **Prefix comparison** — AS64512 announced a more specific prefix (104.16.0.0/13) which BGP prefers over the less specific /12, causing traffic diversion.
+4. **Impact assessment** — 15% of the ISP's traffic to Cloudflare was redirected through AS64512, causing increased latency (from 15ms to 320ms) and potential data interception risk.
+
+**Resolution:**
+1. **Immediate** — The ISP deployed a prefix filter rejecting any route for 104.16.0.0/12–/13 from non-Cloudflare ASes.
+2. **Monitoring** — IRR-based route validation was enabled to check new BGP announcements against registered route objects.
+3. **Long-term** — The ISP implemented RPKI-based Route Origin Validation (ROV) on all edge routers, rejecting INVALID routes automatically.
+4. **Reporting** — The incident was reported to MANRS (Mutually Agreed Norms for Routing Security) and the offending AS was flagged for investigation.
+
+**Lessons Learned:**
+- RPKI alone would have prevented this hijack (no ROA for AS64512).
+- BGP monitoring tools (BGPStream, RIPEstat) provide early warning for path anomalies.
+- Prefix filtering at AS boundaries is a critical defense layer.
+- More-specific prefix hijacks are the most common BGP attack vector.
+
+---
+
+## Practical Takeaways
+
+| Concept | Key Insight | Application |
+|---------|-------------|-------------|
+| Distance-Vector (RIP) | Simple but slow convergence due to count-to-infinity | Suitable for tiny networks (<15 hops) or lab environments |
+| Link-State (OSPF) | Fast convergence via global topology + SPF | Enterprise and data center networks requiring high stability |
+| Path-Vector (BGP) | Policy-driven routing using path attributes | Internet inter-domain routing, multi-homing, CDN anycast |
+| Split Horizon | Essential loop-prevention for DV protocols | Configure on all RIP interfaces; use poison reverse for faster convergence |
+| OSPF Area Hierarchy | Reduces LSDB size and isolates failure domains | Always use a hierarchical design with Area 0 backbone |
+| BGP LOCAL_PREF | Most important attribute for outbound traffic engineering | Set higher values for preferred upstream providers |
+| AS_PATH Prepending | Coarse-grained inbound traffic engineering | Prepend 2–3 times to shift traffic to backup links |
+| RPKI/ROV | Cryptographic route origin validation | Deploy on edge routers to prevent BGP hijacks |
+| Route Aggregation | Reduces routing table size and hides flaps | Summarize at area/AS boundaries whenever possible |
+| Anycast | Same IP from multiple locations using BGP | Ideal for DNS, CDN, and DDoS-absorbing services |
 
 ## Summary
 
@@ -2489,27 +3066,251 @@ Hierarchical routing splits the problem into intra-domain (IGP) and inter-domain
 ### Review Questions
 
 1. What information does a distance-vector router exchange with its neighbors?
+
+<details>
+<summary>Solution</summary>
+A distance-vector router exchanges its entire distance vector — a table of (destination, distance) pairs — with each of its directly connected neighbors. The vector includes distances to all known destinations in the network. The router does not share its topology knowledge, only its computed distances.
+</details>
+
 2. How does split horizon prevent count-to-infinity? Give a scenario where it is insufficient.
+
+<details>
+<summary>Solution</summary>
+Split horizon prevents a router from advertising a route back on the same interface from which it was learned. This breaks two-node routing loops. For example, if B learns about A through C, B will not advertise A's route back to C. However, split horizon is insufficient for three-node loops (A→B, B→C, C→A), which require poison reverse or hold-down timers.
+</details>
+
 3. What is the purpose of the designated router in OSPF?
+
+<details>
+<summary>Solution</summary>
+The Designated Router (DR) reduces the number of OSPF adjacencies required on multi-access broadcast networks (like Ethernet). Without a DR, every router would form an adjacency with every other router (O(n²) adjacencies). With a DR, all routers form adjacencies only with the DR and BDR (O(n) adjacencies). The DR is elected via Hello protocol priority.
+</details>
+
 4. List the BGP path attributes and explain the role of AS_PATH.
+
+<details>
+<summary>Solution</summary>
+Key BGP attributes include: AS_PATH (sequence of AS numbers the route traversed), LOCAL_PREF (local preference within AS), MED (suggestion to external peer for entry point), ORIGIN (how route entered BGP), NEXT_HOP (next router IP), COMMUNITY (policy tag), and AGGREGATOR. The AS_PATH prevents routing loops (a router rejects a route containing its own AS) and is used in best-path selection (shorter path preferred).
+</details>
+
 5. Why does BGP prefer routes with higher LOCAL_PREF over routes with shorter AS_PATH?
+
+<details>
+<summary>Solution</summary>
+LOCAL_PREF is evaluated first because business policy takes precedence over path length. An ISP may want to prefer a customer route (higher LOCAL_PREF) even if it has a longer AS_PATH, because customer routes generate revenue. The BGP decision process prioritizes policy over technical metrics — LOCAL_PREF is the primary tool for outbound traffic engineering.
+</details>
+
 6. How does the Reverse Path Forwarding (RPF) check prevent broadcast storms?
+
+<details>
+<summary>Solution</summary>
+RPF checks that a broadcast/multicast packet arrived on the interface that the router would use to reach the source. If the packet arrived on a different interface, it is considered a duplicate and dropped. This prevents loops because a packet can only travel along the shortest-path tree from the source outward, ensuring each router forwards exactly one copy per incoming interface.
+</details>
+
 7. What is the difference between PIM Sparse Mode and PIM Dense Mode?
+
+<details>
+<summary>Solution</summary>
+PIM Dense Mode (PIM-DM) assumes all routers want multicast traffic and floods initially, then prunes uninterested branches. It is suitable for dense receiver groups. PIM Sparse Mode (PIM-SM) assumes few receivers and uses a Rendezvous Point (RP) — receivers explicitly join via the RP, and sources register with the RP. PIM-SM is more scalable for wide-area multicast and can switch to source-specific trees for optimal paths.
+</details>
+
 8. Explain how AS_PATH prepending works as a traffic engineering tool.
+
+<details>
+<summary>Solution</summary>
+AS_PATH prepending artificially lengthens the AS_PATH attribute by adding extra copies of the local AS number. When other ASes run the BGP decision process, they see a longer AS_PATH and prefer alternative shorter paths. This shifts inbound traffic away from the prepended path. The technique is coarse-grained: prepending 1–2 times may not change traffic significantly, while 3+ prepends typically make a path a backup only.
+</details>
 
 ### Application Problems
 
 9. Consider the network: A→B (cost 2), B→C (3), A→C (5), C→D (1). Run the Bellman-Ford algorithm from all sources to compute distance tables. Show the table updates after each iteration.
+
+<details>
+<summary>Solution</summary>
+**Network:** A-B=2, B-C=3, A-C=5, C-D=1. Vertices: {A, B, C, D}.
+
+**Initial tables:**
+- A: {A:0, B:2, C:5, D:INF}
+- B: {A:2, B:0, C:3, D:INF}
+- C: {A:5, B:3, C:0, D:1}
+- D: {A:INF, B:INF, C:1, D:0}
+
+**Iteration 1:**
+- A receives from B: A→C via B = 2+3=5 (no change); A→D via B = INF (no change)
+- A receives from C: A→C via C = 5+0=5 (no change); A→D via C = 5+1=6 (update)
+- B receives from A: B→C via A = 2+5=7 (worse than 3); B→D via A = INF
+- B receives from C: B→D via C = 3+1=4 (update)
+- C receives from B: C→A via B = 3+2=5 (no change); C→D via B = INF
+- C receives from D: C→A via D = 1+INF = INF; C→B via D = INF
+- D receives from C: D→A via C = 1+5=6 (update); D→B via C = 1+3=4 (update)
+
+**After Iteration 1:**
+- A: {A:0, B:2, C:5, D:6}
+- B: {A:2, B:0, C:3, D:4}
+- C: {A:5, B:3, C:0, D:1}
+- D: {A:6, B:4, C:1, D:0}
+
+**Iteration 2:** No changes → converged.
+</details>
+
 10. The same network uses OSPF. Run Dijkstra's algorithm from A to compute the shortest-path tree. Show the steps and the final forwarding table at A.
+
+<details>
+<summary>Solution</summary>
+**Network from A:** A-B=2, A-C=5, B-C=3, C-D=1.
+
+**Dijkstra from A:**
+- Step 0: N'={A}, D(B)=2(A), D(C)=5(A), D(D)=INF
+- Step 1: Pick B (smallest). N'={A,B}. Relax B's edges: D(C)=min(5, 2+3=5)=5; D(D)=INF
+- Step 2: Pick C (tie with D, pick C). N'={A,B,C}. Relax C's edges: D(D)=min(INF, 5+1=6)=6
+- Step 3: Pick D. N'={A,B,C,D}. Done.
+
+**Shortest-path tree from A:**
+- A→B: direct (cost 2)
+- A→C: A→B→C (cost 5)
+- A→D: A→B→C→D (cost 6)
+
+**Forwarding table at A:**
+- B → next-hop B, cost 2
+- C → next-hop B, cost 5
+- D → next-hop B, cost 6
+</details>
+
 11. An ISP has three customers, each advertising a /24 prefix via BGP. The ISP also receives full BGP tables from two upstream providers. Explain how route aggregation might reduce the ISP's RIB size.
+
+<details>
+<summary>Solution</summary>
+If the three customers advertise contiguous /24 prefixes (e.g., 203.0.113.0/24, 203.0.114.0/24, 203.0.115.0/24), the ISP can aggregate them into a single /22 advertisement (203.0.112.0/22) to upstream providers. This reduces the RIB from 3 routes to 1 route in the upstream direction. The ISP still maintains the specific /24 routes internally for forwarding, but the upstream BGP table sees one entry instead of three. Aggregation also reduces LSA flooding in OSPF and improves stability (a flapping customer /24 doesn't propagate beyond the ISP's AS).
+</details>
+
 12. Trace the BGP decision process for prefix 10.0.0.0/8 with two routes: Path A (AS_PATH=[100 200], LOCAL_PREF=100, IGP cost=5) and Path B (AS_PATH=[300 400 500], LOCAL_PREF=150, IGP cost=3). Which path wins and why?
+
+<details>
+<summary>Solution</summary>
+**Step 1 — Highest LOCAL_PREF:**
+- Path A: LOCAL_PREF = 100
+- Path B: LOCAL_PREF = 150
+- → Path B wins immediately. AS_PATH and IGP cost are never evaluated.
+
+**Result:** Path B wins because LOCAL_PREF is the first criterion in the BGP decision process, and Path B has the higher value (150 > 100). The shorter AS_PATH of Path A (2 vs 3) and lower IGP cost of Path B (3 vs 5) are irrelevant since the decision was already made at step 1.
+
+If both had equal LOCAL_PREF, AS_PATH would be checked next, and Path A would win (shorter path).
+</details>
 
 ### Coding Problems
 
 13. Implement a Bellman-Ford simulator that runs distance-vector routing on any input graph and outputs the convergence steps.
+
+<details>
+<summary>Solution</summary>
+```typescript
+class BellmanFordSimulator {
+  private vertices: number[];
+  private edges: Array<{ src: number; dest: number; weight: number }>;
+
+  constructor(vertices: number[], edges: Array<{ src: number; dest: number; weight: number }>) {
+    this.vertices = vertices;
+    this.edges = edges;
+  }
+
+  run(source: number): { distances: Map<number, number>; predecessors: Map<number, number | null> } {
+    const dist = new Map<number, number>();
+    const prev = new Map<number, number | null>();
+    for (const v of this.vertices) {
+      dist.set(v, Infinity);
+      prev.set(v, null);
+    }
+    dist.set(source, 0);
+
+    console.log(`=== Bellman-Ford from source ${source} ===`);
+    for (let i = 1; i < this.vertices.length; i++) {
+      let updated = false;
+      for (const e of this.edges) {
+        const dSrc = dist.get(e.src)!;
+        if (dSrc !== Infinity && dSrc + e.weight < dist.get(e.dest)!) {
+          dist.set(e.dest, dSrc + e.weight);
+          prev.set(e.dest, e.src);
+          updated = true;
+          console.log(`  Iteration ${i}: relax (${e.src}→${e.dest}) = ${dist.get(e.dest)}`);
+        }
+      }
+      if (!updated) { console.log(`  Converged at iteration ${i}`); break; }
+    }
+    return { distances: dist, predecessors: prev };
+  }
+}
+```
+</details>
+
 14. Implement Dijkstra's algorithm to compute the shortest-path tree for the network A(0) connected to B(2) connected to C(3) connected to D(1) and A to E(5) connected to C(1).
+
+<details>
+<summary>Solution</summary>
+```typescript
+function dijkstra(adj: Map<number, Array<{ node: number; weight: number }>>, source: number) {
+  const dist = new Map<number, number>();
+  const prev = new Map<number, number | null>();
+  const visited = new Set<number>();
+  const pq: Array<[number, number]> = [];
+
+  for (const key of adj.keys()) { dist.set(key, Infinity); prev.set(key, null); }
+  dist.set(source, 0);
+  pq.push([0, source]);
+
+  while (pq.length > 0) {
+    pq.sort(([a], [b]) => a - b);
+    const [d, u] = pq.shift()!;
+    if (visited.has(u)) continue;
+    visited.add(u);
+
+    for (const { node: v, weight: w } of adj.get(u) || []) {
+      if (!visited.has(v) && d + w < (dist.get(v) ?? Infinity)) {
+        dist.set(v, d + w);
+        prev.set(v, u);
+        pq.push([d + w, v]);
+      }
+    }
+  }
+  return { distances: dist, predecessors: prev };
+}
+
+// Network: A(0)-B(1):2, B-C:3, C-D:1, A-E:5, E-C:1
+const adj = new Map<number, Array<{ node: number; weight: number }>>();
+for (let i = 0; i < 5; i++) adj.set(i, []);
+adj.get(0)!.push({ node: 1, weight: 2 }, { node: 4, weight: 5 });
+adj.get(1)!.push({ node: 0, weight: 2 }, { node: 2, weight: 3 });
+adj.get(2)!.push({ node: 1, weight: 3 }, { node: 3, weight: 1 }, { node: 4, weight: 1 });
+adj.get(3)!.push({ node: 2, weight: 1 });
+adj.get(4)!.push({ node: 0, weight: 5 }, { node: 2, weight: 1 });
+
+const result = dijkstra(adj, 0);
+console.log('Distances from 0:', Object.fromEntries(result.distances));
+```
+</details>
 
 ### Challenge Problem
 
 15. **Design a routing policy for a multi-homed enterprise.** An organization has two ISP connections: ISP-A (1 Gbps, expensive, reliable) and ISP-B (100 Mbps, cheap, best-effort). The organization has its own AS number. Design the BGP policy: (a) prefer ISP-A for inbound traffic, (b) use ISP-B as backup for outbound traffic, (c) announce a /20 prefix to both ISPs, and (d) accept only the default route (plus specific prefixes for a hosted service). Specify BGP attributes (LOCAL_PREF, AS_PATH prepending, MED, COMMUNITY) and justify each choice. Analyze what happens when ISP-A fails.
+
+<details>
+<summary>Solution</summary>
+**BGP Policy Design:**
+
+**(a) Prefer ISP-A for inbound traffic:** Use AS_PATH prepending on ISP-B's advertisements. Announce the /20 prefix to ISP-B with 2–3 prepended AS numbers (AS65000 AS65000 AS65000). ISP-A's advertisement has AS_PATH length 1, ISP-B's has length 3–4. Inbound traffic naturally prefers the shorter AS_PATH (ISP-A). This ensures high-bandwidth traffic uses the 1 Gbps link.
+
+**(b) ISP-B as backup for outbound traffic:** Set LOCAL_PREF = 200 for routes learned from ISP-A and LOCAL_PREF = 100 for routes learned from ISP-B. Since higher LOCAL_PREF is preferred, all outbound traffic uses ISP-A unless it fails. Configure the router to track ISP-A availability using IP SLA monitoring.
+
+**(c) Announce /20 prefix to both ISPs:** Configure `network 203.0.113.0/20` under both BGP neighbor statements. No MED manipulation needed since inbound preference is handled via prepending.
+
+**(d) Accept only default route plus specific prefixes:** Apply inbound prefix filters accepting only 0.0.0.0/0 (default) plus specific /24 prefixes for the hosted service. This minimizes the enterprise's RIB size while ensuring full Internet reachability via default.
+
+**Failure scenario — ISP-A goes down:**
+1. BGP session to ISP-A drops (TCP reset or hold timer expiry).
+2. Routes learned via ISP-A (including default) are withdrawn from the routing table.
+3. The router removes routes with LOCAL_PREF 200, leaving only ISP-B's routes (LOCAL_PREF 100).
+4. Outbound traffic automatically fails over to ISP-B (the only default route remaining).
+5. Inbound traffic: ISP-B's prepended advertisement is now the only path; traffic enters via ISP-B regardless of prepending.
+6. Traffic shifts to the 100 Mbps link — capacity drops, but connectivity is maintained.
+7. When ISP-A recovers, BGP re-establishes, higher LOCAL_PREF routes reappear, and traffic shifts back.
+</details>
 

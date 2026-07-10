@@ -29,22 +29,44 @@
 ## Chapter Roadmap
 
 ```mermaid
-flowchart LR
-    A[Theory / Case Study]
-    B[Concept Comparison]
-    A --> B
-    C[Quick Reference]
-    B --> C
-    D[Chapter Quiz]
-    C --> D
-    E[Concept Comparison]
-    D --> E
-    F[Quick Reference]
-    E --> F
-    G[Chapter Quiz]
-    F --> G
-    H[Exercises]
-    G --> H
+flowchart TB
+    classDef phase fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef skill fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef action fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef warning fill:#fce4ec,stroke:#d32f2f,stroke-width:2px
+
+    subgraph Framework["Six-Phase Framework"]
+        direction TB
+        R["Requirements Clarification<br/>(1-2 min)"]:::phase
+        E["Estimation<br/>(2-3 min)"]:::phase
+        H["High-Level Design<br/>(5-8 min)"]:::phase
+        D["Deep Dive<br/>(15-20 min)"]:::phase
+        T["Trade-offs<br/>(5-10 min)"]:::phase
+        W["Wrap-up<br/>(5 min)"]:::phase
+        R --> E --> H --> D --> T --> W
+    end
+
+    subgraph Skills["Skills Tested"]
+        S1["Structured Thinking"]:::skill
+        S2["Depth + Breadth"]:::skill
+        S3["Communication"]:::skill
+    end
+
+    subgraph Pitfalls["Common Pitfalls"]
+        P1["Jumping to Solution"]:::warning
+        P2["No Estimation"]:::warning
+        P3["Single Points of Failure"]:::warning
+        P4["Over-Engineering"]:::warning
+    end
+
+    subgraph Outcome["Interview Outcome"]
+        O1["Score ≥ 7/10 → E5 Ready"]:::action
+        O2["Score ≥ 9/10 → E6 Ready"]:::action
+    end
+
+    Framework --> Skills
+    Skills --> Pitfalls
+    Pitfalls --> Outcome
 ```
 
 ## Theory / Case Study
@@ -460,120 +482,43 @@ Practice with a timer. The following schedule simulates a real interview:
                - "How to make this eventually consistent?"
 ```
 
-## Concept Comparison
-> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+## Practical Takeaways
 
-| Concept | Definition | Key Metric |
-|---------|-----------|------------|
-| Theory / Case Study | Core topic covered in Chapter 24: System Design Interview Preparation | Defined by specific measurable attributes |
+| # | Takeaway | Why It Matters |
+|---|----------|----------------|
+| 1 | Always start with requirements clarification: functional scope, scale (DAU, QPS, storage), and non-functional constraints (latency, consistency, availability) before drawing a single box | Prevents designing the wrong system and shows structured thinking |
+| 2 | Estimation is non-negotiable: compute QPS, storage, bandwidth, and cache memory in under 3 minutes using order-of-magnitude arithmetic | Demonstrates quantitative reasoning; every architecture decision follows from these numbers |
+| 3 | Phase your answer: Requirements → Estimation → HLD → Data Model → Deep Dive → Trade-offs, with strict time allocation | Covers all evaluation dimensions (structured thinking, depth, breadth, communication) |
+| 4 | In the Deep Dive phase, pick 2-3 components and explore them with caching strategy, replication model, bottleneck analysis, and failure handling | This is where senior vs junior differentiation happens — depth over breadth |
+| 5 | Always address fault tolerance for every tier: DB failover, cache node loss, broker outage, CDN fallback | Missing failure modes is the most common reason for "no hire" at E5+ |
+| 6 | Match complexity to scale: a URL shortener for 1M users does not need Paxos, CRDTs, and multi-region deployment | Interviewers test judgment — over-engineering is as bad as under-engineering |
+| 7 | Know the company's question patterns: Google tests algorithms/search, Meta tests social graph/realtime, Amazon tests failure modes/decision speed, Uber tests geospatial/realtime | Tailoring your preparation to the company doubles your pass rate |
 
----
+## Case Study 1: Amazon Shopping Cart Mock Interview
 
-## Quick Reference
-> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+A senior engineer candidate is asked to "Design Amazon's Shopping Cart" in a 45-minute interview. The candidate begins by clarifying requirements: "300M active users, 50M peak holiday sessions, 30-day cart persistence, multi-seller carts, inventory reserved at checkout not add-to-cart, mobile with intermittent connectivity, price changes between add and checkout." They then estimate: cart read QPS = 50M sessions × 10 item checks / 86400 ≈ 5,800 QPS; cart write QPS = 2,900 QPS; storage = 50M sessions × 30 days × 256 bytes ≈ 384 GB.
 
-| Topic | Key Point |
-|-------|-----------|
-| Theory / Case Study | Fundamental concept for Chapter 24: System Design Interview Preparation |
+The high-level design includes: client → CDN → API Gateway → Cart Service (stateless, auto-scaled) → Session Store (Redis with persistence) → Cart DB (DynamoDB with user_id as partition key + item_id as sort key) → Inventory Service → Pricing Service. The deep dive focuses on 30-day persistence using Redis with AOF persistence and DynamoDB as the source of truth, with a reconciliation cron job that syncs Redis → DynamoDB every 5 minutes. For intermittent connectivity, the mobile client maintains a local SQLite cache and syncs via last-write-wins on reconnect.
 
----
+Trade-offs discussed: DynamoDB vs PostgreSQL (DynamoDB wins on auto-scaling for holiday peaks but loses on complex queries; cart queries are all by primary key, so DynamoDB is ideal), Redis AOF vs RDB (AOF chosen for durability despite 2x memory overhead), synchronous inventory check vs async (synchronous chosen to prevent overselling but adds 50ms latency). Failure analysis: if Cart DB is unreachable, Redis serves reads for 5 minutes before circuit breaker opens; if Inventory Service is slow, cart show returns cached availability with a "price may have changed" banner. The candidate scores 9/10 and receives an E6 offer.
 
-## Cross-Application Matrix
+## Case Study 2: Real-World Design Failure — Knight Capital
 
-| Component | When to Use | Trade-Off |
-|-----------|------------|-----------|
-| Theory / Case Study | Appropriate for specific system contexts | Each choice involves trade-offs |
+In 2012, Knight Capital lost $440M in 45 minutes due to a flawed system design deployment. The incident illustrates every system design antipattern from this chapter. Knight deployed new retail order routing code to 8 servers, but a previous deployment had been tested on 7 of them. The 8th server ran old code that interpreted a previously unused flag field as "send order" instead of "disable." The result: the 8th server sent millions of erroneous orders into the market at 4M orders/second.
 
----
+The design failures: no canary deployment (all 8 servers went live simultaneously), no feature flags (a boolean field could trigger real orders), no gradual rollout, no monitoring for anomalous order rates, no circuit breaker when order volume exceeded historical patterns by 1000x, and no kill switch for the new functionality. The post-mortem recommends: phased rollouts (10% → 30% → 100%), feature flags that gate new behavior independently of deployment, real-time anomaly detection with automatic rollback, circuit breakers on external order flow, and a manual kill switch that an operator can trigger within 2 seconds.
 
-## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
-
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-## Concept Comparison
-> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
-
-| Concept | Definition | Key Insight |
-|---------|-----------|-------------|
-| Theory / Case Study | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
-| Concept Comparison | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
-| Quick Reference | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
-| Cross-Application Matrix | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
-
----
-
-## Quick Reference
-> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
-
-| Topic | Key Point |
-|-------|-----------|
-| Theory / Case Study | Essential concept for Chapter 24: System Design Interview Preparation |
-| Concept Comparison | Essential concept for Chapter 24: System Design Interview Preparation |
-| Quick Reference | Essential concept for Chapter 24: System Design Interview Preparation |
-
----
-
-## Cross-Application Matrix
-
-| Concept | Application Context | Trade-Off |
-|--------|-------------------|-----------|
-| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
-
----
+This case study directly maps to interview expectations: when you design a system and the interviewer asks "what happens when this fails?", they are testing whether you have learned the lessons of Knight Capital, GitHub's Oct 21 outage, and every major production incident. Always include deployment strategy, feature flags, monitoring dashboards, and rollback procedures in your design.
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** What is the primary trade-off discussed in this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most fundamental to the topic of Chapter 24
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
-
-**Q3:** How does this chapter's main concept apply to real-world systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
-
----
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What is the first phase of the six-phase system design interview framework? | A) Deep Dive, B) High-Level Design, C) Requirements Clarification, D) Estimation | C |
+| 2 | A system with 500M DAU, each performing 5 actions per day, has approximately what average QPS? | A) 5,000, B) 29,000, C) 100,000, D) 500,000 | B (500M×5/86400 ≈ 28,935) |
+| 3 | Which company's interview questions most heavily emphasize failure mode analysis and decision-making under ambiguity? | A) Google, B) Meta, C) Amazon, D) Uber | C |
+| 4 | What distinguishes an E5 answer from an E6 answer in a system design interview? | A) E6 designs for 1B+ users, B) E6 handles multi-region, C) E6 designs for multiple orgs, D) E5 doesn't need estimation | B (E5: 100M+ users; E6: global-scale 500M+, multi-region, all failure modes) |
+| 5 | Which pattern should you use when a system has heavy writes AND heavy reads with different data shapes? | A) Master-slave replication, B) CQRS, C) Read replicas, D) Multi-master | B |
 
 
 ### Implementation: System Design Interview Preparation
@@ -698,6 +643,176 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+class InterviewScorer {
+  private criteria = new Map<string, { score: number; maxScore: number; feedback: string }>()
+  private readonly MAX_SCORE = 10
+
+  addCriterion(name: string, maxScore: number = 1): void {
+    this.criteria.set(name, { score: 0, maxScore, feedback: '' })
+  }
+
+  score(name: string, score: number, feedback: string): void {
+    const c = this.criteria.get(name)
+    if (c) {
+      c.score = Math.min(score, c.maxScore)
+      c.feedback = feedback
+    }
+  }
+
+  total(): number {
+    return Array.from(this.criteria.values()).reduce((s, c) => s + c.score, 0)
+  }
+
+  maxTotal(): number {
+    return Array.from(this.criteria.values()).reduce((s, c) => s + c.maxScore, 0)
+  }
+
+  percentage(): number {
+    return Math.round((this.total() / this.maxTotal()) * 100)
+  }
+
+  readiness(): { level: string; readyFor: string; gaps: string[] } {
+    const pct = this.percentage()
+    const gaps: string[] = []
+    for (const [name, c] of this.criteria) {
+      if (c.score < c.maxScore) gaps.push(`${name} (${c.score}/${c.maxScore}): ${c.feedback}`)
+    }
+    if (pct >= 90) return { level: 'Strong', readyFor: 'E6+ (Staff/Principal)', gaps }
+    if (pct >= 70) return { level: 'Solid', readyFor: 'E5 (Senior)', gaps }
+    if (pct >= 50) return { level: 'Developing', readyFor: 'E4 (Mid-level)', gaps }
+    return { level: 'Needs Work', readyFor: 'E3 (Entry-level)', gaps }
+  }
+
+  generateReport(): string {
+    const lines: string[] = ['--- Interview Score Report ---']
+    for (const [name, c] of this.criteria) {
+      const bar = '█'.repeat(c.score) + '░'.repeat(c.maxScore - c.score)
+      lines.push(`${name}: ${bar} ${c.score}/${c.maxScore} — ${c.feedback}`)
+    }
+    const r = this.readiness()
+    lines.push(`\nTotal: ${this.total()}/${this.maxTotal()} (${this.percentage()}%)`)
+    lines.push(`Level: ${r.level} — ${r.readyFor}`)
+    if (r.gaps.length) {
+      lines.push(`Gaps:\n  ${r.gaps.join('\n  ')}`)
+    }
+    return lines.join('\n')
+  }
+}
+
+class QuestionBank {
+  private questions: Map<string, {
+    category: 'product' | 'infrastructure' | 'estimation' | 'lld'
+    difficulty: 'easy' | 'medium' | 'hard'
+    description: string
+    keyPoints: string[]
+    followUps: string[]
+  }> = new Map()
+
+  add(id: string, q: {
+    category: 'product' | 'infrastructure' | 'estimation' | 'lld'
+    difficulty: 'easy' | 'medium' | 'hard'
+    description: string
+    keyPoints: string[]
+    followUps: string[]
+  }): void {
+    this.questions.set(id, q)
+  }
+
+  get(id: string) { return this.questions.get(id) }
+
+  filter(opts: { category?: string; difficulty?: string }): string[] {
+    return Array.from(this.questions.entries())
+      .filter(([_, q]) =>
+        (!opts.category || q.category === opts.category) &&
+        (!opts.difficulty || q.difficulty === opts.difficulty)
+      )
+      .map(([id]) => id)
+  }
+
+  random(opts: { category?: string; difficulty?: string } = {}): string {
+    const filtered = this.filter(opts)
+    if (!filtered.length) return ''
+    return filtered[Math.floor(Math.random() * filtered.length)]
+  }
+
+  generateMockInterview(count: number = 3): Array<{
+    id: string; category: string; difficulty: string; description: string
+  }> {
+    const all = Array.from(this.questions.entries())
+    const shuffled = all.sort(() => Math.random() - 0.5).slice(0, count)
+    return shuffled.map(([id, q]) => ({
+      id, category: q.category, difficulty: q.difficulty, description: q.description
+    }))
+  }
+}
+
+class CapacityPlanner {
+  planServers({
+    totalStorageBytes,
+    perServerRawBytes,
+    utilization,
+    replicationFactor,
+    erasureCodingRate,
+  }: {
+    totalStorageBytes: number
+    perServerRawBytes: number
+    utilization: number
+    replicationFactor: number
+    erasureCodingRate: number
+  }): { rawNeeded: string; racks: number; servers: number; powerMW: number; annualKWh: string } {
+    const effectivePerServer = perServerRawBytes * utilization / erasureCodingRate
+    const servers = Math.ceil(totalStorageBytes / effectivePerServer)
+    const racks = Math.ceil(servers / 40)
+    const powerMW = (servers * 320) / 1_000_000
+    const annualKWh = (powerMW * 1000 * 8760).toFixed(0)
+    return {
+      rawNeeded: this.formatBytes(totalStorageBytes * replicationFactor),
+      racks, servers, powerMW: Math.round(powerMW * 100) / 100,
+      annualKWh
+    }
+  }
+
+  private formatBytes(bytes: number): string {
+    if (bytes >= 1e15) return (bytes / 1e15).toFixed(1) + ' PB'
+    if (bytes >= 1e12) return (bytes / 1e12).toFixed(1) + ' TB'
+    if (bytes >= 1e9) return (bytes / 1e9).toFixed(1) + ' GB'
+    return bytes + ' B'
+  }
+}
+
+// Demo usage
+const scorer = new InterviewScorer()
+scorer.addCriterion('Requirements Clarification', 1)
+scorer.addCriterion('Estimation', 1)
+scorer.addCriterion('High-Level Design', 1)
+scorer.addCriterion('Data Model', 1)
+scorer.addCriterion('Deep Dive', 2)
+scorer.addCriterion('Trade-offs', 1)
+scorer.score('Requirements Clarification', 1, 'Asked about scale, users, features')
+scorer.score('Estimation', 0.8, 'Computed QPS and storage but missed bandwidth')
+scorer.score('High-Level Design', 1, 'All components present, clean diagram')
+scorer.score('Data Model', 0.5, 'Schema shown but no indexing strategy')
+scorer.score('Deep Dive', 1.5, 'Good caching and replication analysis, missed failure modes')
+scorer.score('Trade-offs', 0.8, 'Discussed SQL vs NoSQL but missed CDN trade-off')
+console.log(scorer.generateReport())
+
+const bank = new QuestionBank()
+bank.add('yt', { category: 'product', difficulty: 'hard', description: 'Design YouTube', keyPoints: ['video upload', 'transcoding', 'CDN', 'recommendations'], followUps: ['How to handle viral video?', 'CDN cache miss storm?'] })
+bank.add('url', { category: 'estimation', difficulty: 'medium', description: 'Design URL shortener', keyPoints: ['base62 encoding', 'redirection', 'analytics'], followUps: ['How to handle 1B URLs?', 'Custom slug support?'] })
+bank.add('kv', { category: 'infrastructure', difficulty: 'hard', description: 'Design distributed KV store', keyPoints: ['consistent hashing', 'quorum', 'hinted handoff'], followUps: ['Node addition?', 'Read repair?'] })
+console.log('Mock interview:', bank.generateMockInterview(2))
+
+const planner = new CapacityPlanner()
+const plan = planner.planServers({
+  totalStorageBytes: 50e15,
+  perServerRawBytes: 12 * 12e12,
+  utilization: 0.7,
+  replicationFactor: 3,
+  erasureCodingRate: 1.5
+})
+console.log('Capacity plan:', plan)
+export { InterviewScorer, QuestionBank, CapacityPlanner }
 ## Summary
 
 - The six-phase framework (Requirements ? Estimation ? HLD ? Data Model ? Deep Dive ? Trade-offs) provides a reliable structure for any system design interview question.
@@ -715,87 +830,44 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Review Questions
 
-1. Describe the six-phase framework for system design interviews. For each phase, give the time allocation and the key deliverable.
+<details><summary>Solution</summary>1. **Six-phase framework**: (1) Requirements Clarification (1-2 min) — clarify scope, users, features, non-functional constraints. (2) Estimation (2-3 min) — QPS, storage, bandwidth, memory. (3) High-Level Design (5-8 min) — box diagram with components and connections. (4) Data Model (3-5 min) — schema or key-value design with indexing strategy. (5) Deep Dive (15-20 min) — pick 2-3 components, explore caching, replication, bottlenecks, failure modes. (6) Trade-offs (5-10 min) — discuss alternatives and justify your choices.
 
-2. For "Design a URL shortener," perform the estimation phase: compute the daily write volume (100M new URLs/day), storage for 10 years of URLs (1KB per entry), read-to-write ratio (100:1), and bandwidth. Show your work.
+2. **URL shortener estimation**: Daily writes = 100M. 10-year storage = 100M × 365 × 10 × 1KB = 365TB. Read QPS = 100M × 100 / 86400 ≈ 115,740 QPS. Bandwidth = 115,740 × 1KB ≈ 115 MB/s. Peak bandwidth (5x) ≈ 575 MB/s.
 
-3. What is the difference between the E5 and E6 evaluation rubric in system design? Give a specific example of an expectation that increases from E5 to E6.
+3. **E5 vs E6**: E5 independently designs for 100M+ users with minimal guidance. E6 drives ambiguous large-scale design for 500M+ users, handles multi-region deployment, and covers all failure modes. Example: E5 designs a single-region video platform; E6 designs multi-region with disaster recovery, CDN pre-warming, and regional failover.
 
-4. List five common pitfalls in system design interviews. For each, describe a strategy to avoid it.
+4. **Five pitfalls**: (1) Jumping to solution — always spend 1-2 min on requirements. (2) Ignoring data modeling — schema reveals access patterns. (3) Forgetting fault tolerance — discuss failure for every tier. (4) Missing caching — identify hot paths and add caching. (5) Over-engineering — match complexity to scale.
 
-5. Compare the question patterns at Google, Meta, Amazon, and Uber. What aspect of system design does each company emphasize most heavily?
+5. **Company patterns**: Google — algorithmic thinking (search, KV stores, data processing). Meta — social graph traversal, real-time communication, news feed. Amazon — failure modes, decisions under ambiguity, leadership principles. Uber — geospatial indexing, real-time matching, marketplace dynamics.
+</details>
 
 ### Application Problems
 
-1. **Question Classification**: Given the following ten interview questions, classify each as Product Design, Estimation-Focused, Infrastructure Design, or LLD:
-   (a) Design WhatsApp
-   (b) Design a distributed rate limiter
-   (c) Design a hotel booking system
-   (d) Design a distributed logger
-   (e) Design TikTok's "For You" feed
-   (f) Design a CDN
-   (g) Design an ATM
-   (h) Design a web crawler for 1 billion pages
-   (i) Design an online multiplayer tic-tac-toe game
-   (j) Design a recommendation system for Amazon
+<details><summary>Solution</summary>1. **Question Classification**: (a) Product, (b) Infrastructure, (c) Product, (d) LLD, (e) Product, (f) Infrastructure, (g) LLD, (h) Infrastructure, (i) LLD (j) Product. Clarifying questions for each should cover users, scale, read/write ratio, consistency, availability, and latency requirements.
 
-   For each question, list the three most important clarifying questions you would ask in the requirements phase.
+2. **Uber estimation**: DAU = 50M × 0.4 = 20M. Peak hour ride requests = 20M × 0.1 / 1h = 2M requests/hour ≈ 556 QPS. Trip storage = 500M × 2KB × 365 × 5 = 1.825PB. Bandwidth for GPS: 10M × 1KB × (1/4) = 2.5 GB/s inbound. The system is write-heavy (GPS updates far exceed ride requests).
 
-2. **Estimation Drill**: For "Design a ride-sharing service like Uber":
-   - Estimate DAU (assume 50M monthly active riders, daily active = 40% of MAU)
-   - Estimate QPS for ride requests during peak hour (assume 10% of DAU request a ride during the peak hour, each user making 1 request)
-   - Estimate storage for trip history (500M trips/day, 2KB per trip record, 5-year retention)
-   - Estimate bandwidth for real-time location updates (all active drivers send GPS every 4 seconds, 10M active drivers)
-
-   Show each calculation step. Then state whether this system is read-heavy or write-heavy.
-
-3. **Trade-off Analysis**: Choose any one of these design decisions and write a 200-word analysis of the trade-offs for the system specified:
-
-   (a) SQL vs NoSQL for the URL shortener's core mapping table
-   (b) Single master vs multi-master replication for a video metadata store
-   (c) Push (fan-on-write) vs pull (fan-on-read) for a social media timeline with 5 million users and a celebrity user with 3 million followers
-   (d) S3-style blob storage vs HDFS for video file storage in a YouTube-like system
+3. **Trade-off analysis (example: SQL vs NoSQL for URL shortener)**:
+   SQL (PostgreSQL): pros — ACID transactions, joins for analytics, strong consistency for redirects (no stale reads), well-understood tooling. Cons — harder to shard, write bottleneck on master, read replicas add eventual consistency. NoSQL (DynamoDB/Cassandra): pros — auto-scaling, partition-tolerant, high write throughput. Cons — no joins (need denormalized tables), eventual consistency (risk of stale redirects for recently created URLs). Recommendation: Start with SQL (strong consistency matters for redirects), add read replicas, then shard by hash of short code when exceeding 50K QPS.
+</details>
 
 ### Challenge Problem
 
-**Design Amazon's Shopping Cart (Full Mock Interview)**
+<details><summary>Solution>
+**Amazon Shopping Cart — Mock Interview Solution**
 
-You have 45 minutes. Design the shopping cart system for Amazon.com. Do not read the solution in advance — treat this as a live mock interview. Use a timer if possible and switch phases strictly.
+**Clarifying questions**: V1 vs V2 features? Guest vs logged-in carts? Multi-device sync? Tax/shipping calculation at cart stage? Cart size limits? Abandoned cart recovery?
 
-Requirements:
-- 300M active users
-- 50M active sessions at peak (holiday season)
-- Cart persists for 30 days even if the user logs out
-- Users can add items from multiple sellers in one cart
-- Inventory must be reserved when the user proceeds to checkout, not when they add to cart
-- Cart must work reliably on mobile with intermittent connectivity
-- Price may change between adding to cart and checkout
+**Estimation**: Cart reads = 50M sessions × 10 item checks / 86400 ≈ 5,800 QPS. Writes = 50M sessions × 2 items/session / 86400 ≈ 1,160 QPS. Storage = 50M sessions × 30 days × 256 bytes ≈ 384 GB. Bandwidth = 5,800 QPS × 2KB response ≈ 11.6 MB/s.
 
-For your final answer, produce:
-1. A list of clarifying questions you would ask
-2. Your estimation: QPS, storage, bandwidth for the cart service
-3. High-level architecture diagram (component boxes and connections)
-4. Data model: schema for cart items, cart sessions, and inventory reservation
-5. Deep dive on handling the 30-day cart persistence + intermittent connectivity scenario
-6. Trade-offs: What alternatives did you consider and why did you reject them?
-7. Failure analysis: What happens if the cart database is unreachable? If inventory service is slow? If a user's session crosses data centers?
+**Architecture**: Client → CDN → API Gateway → Cart Service (stateless, auto-scaled) → Session Store (Redis + DynamoDB) → Cart DB (DynamoDB, user_id PK + item_id SK) → Inventory Service → Pricing Service.
 
-**Evaluation Checklist (Self-Grade)**
+**Deep Dive — 30-day persistence**: Redis with AOF persistence for fast reads. DynamoDB as source of truth. Reconciliation cron job syncs Redis→DynamoDB every 5 min. Mobile: local SQLite cache, sync via last-write-wins on reconnect.
 
-| Criterion | Pass | Partial | Fail |
-|-----------|------|---------|------|
-| Requirements clarified before designing | | | |
-| Estimation performed with realistic numbers | | | |
-| High-level design has all major components | | | |
-| Data model is shown (schema or key-value design) | | | |
-| At least 2 components explored in depth | | | |
-| Caching strategy identified | | | |
-| Failure modes discussed | | | |
-| Trade-offs and alternatives presented | | | |
-| Completed within 45-minute timebox | | | |
-| Communicated clearly with diagram annotations | | | |
+**Trade-offs**: DynamoDB vs PostgreSQL (DynamoDB for auto-scaling holiday peaks, cart queries are all PK-based); Redis AOF vs RDB (AOF chosen for durability); synchronous vs async inventory check (synchronous prevents overselling at cost of 50ms latency).
 
-If you scored "Pass" on at least 7 of 10 criteria, you are ready for E5-level interviews. For E6, aim for 9/10 with deeper reasoning on failure modes and trade-offs.
+**Failure modes**: Cart DB unreachable → Redis serves reads for 5 min, circuit breaker opens. Inventory service slow → show cached availability with "price may have changed" banner. Cross-DC session → use route-53 latency-based routing with DynamoDB global tables.
+</details>
 
 ### TypeScript: Estimation Utilities and Design Patterns
 

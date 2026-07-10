@@ -912,6 +912,445 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+### TypeScript: B-Tree Index (Simplified Insert and Search)
+
+This class implements a simplified B-tree with insert (with split) and search operations, demonstrating the core algorithm used by InnoDB, PostgreSQL, and SQL Server.
+
+```typescript
+class BTreeNode {
+  keys: number[] = [];
+  children: BTreeNode[] = [];
+  isLeaf: boolean = true;
+
+  constructor(isLeaf: boolean = true) {
+    this.isLeaf = isLeaf;
+  }
+}
+
+class BTreeIndex {
+  private root: BTreeNode;
+  private order: number;
+
+  constructor(order: number = 4) {
+    this.order = order;
+    this.root = new BTreeNode();
+  }
+
+  search(key: number): boolean {
+    return this.searchNode(this.root, key);
+  }
+
+  private searchNode(node: BTreeNode, key: number): boolean {
+    let i = 0;
+    while (i < node.keys.length && key > node.keys[i]) i++;
+    if (i < node.keys.length && key === node.keys[i]) return true;
+    if (node.isLeaf) return false;
+    return this.searchNode(node.children[i], key);
+  }
+
+  insert(key: number): void {
+    if (this.root.keys.length === 2 * this.order - 1) {
+      const newRoot = new BTreeNode(false);
+      newRoot.children.push(this.root);
+      this.splitChild(newRoot, 0);
+      this.root = newRoot;
+    }
+    this.insertNonFull(this.root, key);
+  }
+
+  private insertNonFull(node: BTreeNode, key: number): void {
+    let i = node.keys.length - 1;
+    if (node.isLeaf) {
+      node.keys.push(0);
+      while (i >= 0 && key < node.keys[i]) {
+        node.keys[i + 1] = node.keys[i];
+        i--;
+      }
+      node.keys[i + 1] = key;
+    } else {
+      while (i >= 0 && key < node.keys[i]) i--;
+      i++;
+      if (node.children[i].keys.length === 2 * this.order - 1) {
+        this.splitChild(node, i);
+        if (key > node.keys[i]) i++;
+      }
+      this.insertNonFull(node.children[i], key);
+    }
+  }
+
+  private splitChild(parent: BTreeNode, childIndex: number): void {
+    const child = parent.children[childIndex];
+    const sibling = new BTreeNode(child.isLeaf);
+    const midKey = child.keys[this.order - 1];
+
+    sibling.keys = child.keys.splice(this.order);
+    child.keys.splice(this.order - 1);
+
+    if (!child.isLeaf) {
+      sibling.children = child.children.splice(this.order);
+    }
+
+    parent.keys.splice(childIndex, 0, midKey);
+    parent.children.splice(childIndex + 1, 0, sibling);
+  }
+
+  traverse(): number[] {
+    const result: number[] = [];
+    this.traverseNode(this.root, result);
+    return result;
+  }
+
+  private traverseNode(node: BTreeNode, result: number[]): void {
+    if (node.isLeaf) {
+      result.push(...node.keys);
+    } else {
+      for (let i = 0; i < node.keys.length; i++) {
+        this.traverseNode(node.children[i], result);
+        result.push(node.keys[i]);
+      }
+      this.traverseNode(node.children[node.keys.length], result);
+    }
+  }
+
+  stats(): { height: number; nodeCount: number; keyCount: number } {
+    let nodeCount = 0;
+    let keyCount = 0;
+    const queue = [this.root];
+    let height = 0;
+
+    while (queue.length > 0) {
+      const levelSize = queue.length;
+      for (let i = 0; i < levelSize; i++) {
+        const node = queue.shift()!;
+        nodeCount++;
+        keyCount += node.keys.length;
+        if (!node.isLeaf) queue.push(...node.children);
+      }
+      height++;
+    }
+    return { height, nodeCount, keyCount };
+  }
+}
+
+// -- Example ------------------------------------------------------
+const btree = new BTreeIndex(4);
+for (const k of [10, 20, 40, 50, 60, 70, 80, 30, 35, 55, 65]) btree.insert(k);
+console.log('Sorted keys:', btree.traverse().join(', '));
+console.log('Search 55:', btree.search(55)); // true
+console.log('Search 25:', btree.search(25)); // false
+console.log('Tree stats:', btree.stats());
+```
+
+### TypeScript: Connection Pool Manager
+
+This class manages a pool of database connections with health checks, acquire/release semantics, and automatic recovery of dead connections.
+
+```typescript
+interface PoolConnection {
+  id: string;
+  inUse: boolean;
+  healthy: boolean;
+  createdAt: number;
+  lastUsed: number;
+}
+
+class ConnectionPool {
+  private connections: PoolConnection[] = [];
+  private acquireWaiters: Array<{ resolve: (conn: PoolConnection) => void; reject: (err: Error) => void; timeout: NodeJS.Timeout }> = [];
+  private healthCheckTimer: ReturnType<typeof setInterval> | null = null;
+  private nextId = 0;
+
+  constructor(
+    private minSize: number,
+    private maxSize: number,
+    private healthCheckIntervalMs: number = 30000,
+    private acquireTimeoutMs: number = 5000,
+    private idleTimeoutMs: number = 600000
+  ) {
+    for (let i = 0; i < minSize; i++) this.createConnection();
+    this.startHealthChecks();
+  }
+
+  private createConnection(): PoolConnection {
+    const conn: PoolConnection = {
+      id: `conn-${this.nextId++}`,
+      inUse: false,
+      healthy: true,
+      createdAt: Date.now(),
+      lastUsed: Date.now(),
+    };
+    this.connections.push(conn);
+    return conn;
+  }
+
+  async acquire(): Promise<PoolConnection> {
+    const available = this.connections.find(c => !c.inUse && c.healthy);
+    if (available) {
+      available.inUse = true;
+      available.lastUsed = Date.now();
+      return available;
+    }
+
+    if (this.connections.length < this.maxSize) {
+      const conn = this.createConnection();
+      conn.inUse = true;
+      conn.lastUsed = Date.now();
+      return conn;
+    }
+
+    return new Promise((resolve, reject) => {
+      const timeout = setTimeout(() => {
+        const idx = this.acquireWaiters.findIndex(w => w.resolve === resolve);
+        if (idx >= 0) this.acquireWaiters.splice(idx, 1);
+        reject(new Error('Connection acquire timeout'));
+      }, this.acquireTimeoutMs);
+
+      this.acquireWaiters.push({ resolve, reject, timeout });
+    });
+  }
+
+  release(conn: PoolConnection): void {
+    conn.inUse = false;
+    conn.lastUsed = Date.now();
+
+    const waiter = this.acquireWaiters.shift();
+    if (waiter) {
+      clearTimeout(waiter.timeout);
+      conn.inUse = true;
+      waiter.resolve(conn);
+    }
+  }
+
+  markUnhealthy(connId: string): void {
+    const conn = this.connections.find(c => c.id === connId);
+    if (conn) {
+      conn.healthy = false;
+      conn.inUse = false;
+    }
+  }
+
+  private startHealthChecks(): void {
+    this.healthCheckTimer = setInterval(() => {
+      const now = Date.now();
+      for (const conn of this.connections) {
+        if (conn.inUse) continue;
+        if (!conn.healthy) {
+          conn.healthy = true; // assume recovered; real impl would ping DB
+        }
+        if (now - conn.lastUsed > this.idleTimeoutMs && this.connections.length > this.minSize) {
+          const idx = this.connections.indexOf(conn);
+          if (idx >= 0) this.connections.splice(idx, 1);
+        }
+      }
+      while (this.connections.length < this.minSize) this.createConnection();
+    }, this.healthCheckIntervalMs);
+  }
+
+  getStats(): { total: number; inUse: number; idle: number; unhealthy: number; waiters: number } {
+    return {
+      total: this.connections.length,
+      inUse: this.connections.filter(c => c.inUse).length,
+      idle: this.connections.filter(c => !c.inUse && c.healthy).length,
+      unhealthy: this.connections.filter(c => !c.healthy).length,
+      waiters: this.acquireWaiters.length,
+    };
+  }
+
+  destroy(): void {
+    if (this.healthCheckTimer) clearInterval(this.healthCheckTimer);
+    this.connections = [];
+    for (const w of this.acquireWaiters) {
+      clearTimeout(w.timeout);
+      w.reject(new Error('Pool destroyed'));
+    }
+    this.acquireWaiters = [];
+  }
+}
+
+// -- Example ------------------------------------------------------
+const pool = new ConnectionPool(2, 10);
+async function demoPool() {
+  const c1 = await pool.acquire();
+  console.log('Acquired:', c1.id, '| Stats:', pool.getStats());
+  pool.release(c1);
+  console.log('Released:', c1.id, '| Stats:', pool.getStats());
+}
+demoPool();
+```
+
+### TypeScript: Isolation Level Simulator
+
+This class simulates dirty reads, non-repeatable reads, and phantom reads across the four standard isolation levels.
+
+```typescript
+type IsolationLevel = 'read-uncommitted' | 'read-committed' | 'repeatable-read' | 'serializable';
+
+interface TxOperation {
+  type: 'read' | 'write';
+  key: string;
+  value?: number;
+}
+
+interface Transaction {
+  id: number;
+  operations: TxOperation[];
+  committed: boolean;
+}
+
+class IsolationSimulator {
+  private data = new Map<string, number>();
+  private activeTransactions: Map<number, Map<string, number>> = new Map();
+
+  constructor(private level: IsolationLevel) {}
+
+  setLevel(level: IsolationLevel): void { this.level = level; }
+
+  simulate(): { anomalies: string[]; data: Record<string, number> } {
+    const anomalies: string[] = [];
+
+    // Dirty read test: T1 writes, T2 reads before commit
+    if (this.level === 'read-uncommitted') {
+      anomalies.push('DIRTY READ POSSIBLE: T1 writes x=5, T2 reads x=5 before T1 commits');
+    } else {
+      anomalies.push('DIRTY READ PREVENTED: T2 sees only committed data');
+    }
+
+    // Non-repeatable read test: T1 reads x, T2 writes x, T1 reads x again
+    if (this.level === 'read-uncommitted' || this.level === 'read-committed') {
+      anomalies.push('NON-REPEATABLE READ POSSIBLE: T1 reads x=10, T2 changes x to 20, T1 re-reads x=20');
+    } else {
+      anomalies.push('NON-REPEATABLE READ PREVENTED: T1 sees same x throughout transaction');
+    }
+
+    // Phantom read test: T1 queries range, T2 inserts in range, T1 re-queries
+    if (this.level === 'read-uncommitted' || this.level === 'read-committed' || this.level === 'repeatable-read') {
+      anomalies.push('PHANTOM READ POSSIBLE: T1 queries keys 1-5, T2 inserts key 3, T1 sees phantom');
+    } else {
+      anomalies.push('PHANTOM READ PREVENTED: Serializable isolation locks predicate range');
+    }
+
+    return { anomalies, data: Object.fromEntries(this.data) };
+  }
+
+  runTransaction(id: number, ops: TxOperation[]): string[] {
+    const events: string[] = [];
+    const snapshot = new Map(this.data);
+    this.activeTransactions.set(id, snapshot);
+    events.push(`T${id}: BEGIN (isolation=${this.level})`);
+
+    for (const op of ops) {
+      if (op.type === 'read') {
+        const committedVal = this.data.get(op.key);
+        const snapshotVal = snapshot.get(op.key);
+
+        if (this.level === 'read-uncommitted') {
+          events.push(`T${id}: READ ${op.key} = ${committedVal ?? 'undefined'}`);
+        } else if (this.level === 'read-committed') {
+          events.push(`T${id}: READ ${op.key} = ${committedVal ?? 'undefined'} (latest committed)`);
+        } else {
+          events.push(`T${id}: READ ${op.key} = ${snapshotVal ?? 'undefined'} (snapshot)`);
+        }
+      } else if (op.type === 'write') {
+        this.data.set(op.key, op.value!);
+        snapshot.set(op.key, op.value!);
+        events.push(`T${id}: WRITE ${op.key} = ${op.value}`);
+      }
+    }
+
+    this.data = new Map(snapshot);
+    this.activeTransactions.delete(id);
+    events.push(`T${id}: COMMIT`);
+    return events;
+  }
+}
+
+// -- Example ------------------------------------------------------
+const sim = new IsolationSimulator('read-committed');
+const events = sim.runTransaction(1, [
+  { type: 'read', key: 'x' },
+  { type: 'write', key: 'x', value: 42 },
+  { type: 'read', key: 'x' },
+]);
+console.log('Transaction events:', events);
+console.log('Anomalies:', sim.simulate().anomalies);
+```
+
+### SQL vs NoSQL Decision Tree
+
+```mermaid
+flowchart TD
+    classDef question fill:#f5a623,color:#fff,stroke:#c47f12,stroke-width:2px
+    classDef sql fill:#4a90d9,color:#fff,stroke:#2c5f8a,stroke-width:2px
+    classDef nosql fill:#7ed321,color:#fff,stroke:#4a8c14,stroke-width:2px
+    classDef hybrid fill:#9013fe,color:#fff,stroke:#5c0e9e,stroke-width:2px
+    classDef warn fill:#d0021b,color:#fff,stroke:#8b0015,stroke-width:2px
+
+    START([Choose Database]) --> Q1{Need ACID Transactions?}
+    Q1 -->|Yes| Q2{Complex Joins?}
+    Q1 -->|No| Q3{Fixed Schema?}
+
+    Q2 -->|Yes| SQL_R[SQL RDBMS]:::sql
+    Q2 -->|No| Q4{Read-Heavy or<br/>Write-Heavy?}
+
+    Q3 -->|Yes| SQL_R
+    Q3 -->|No| Q5{Data Model}
+
+    Q4 -->|Read-Heavy| SQL_R
+    Q4 -->|Write-Heavy| LSM_NOSQL[LSM-based NoSQL<br/>Cassandra, RocksDB]:::nosql
+
+    Q5 -->|Key-Value| KV_OPT[Redis, DynamoDB]:::nosql
+    Q5 -->|Document| DOC_OPT[MongoDB, Couchbase]:::nosql
+    Q5 -->|Graph| GRAPH_OPT[Neo4j, Amazon Neptune]:::nosql
+    Q5 -->|Wide-Column| WC_OPT[Cassandra, HBase]:::nosql
+
+    SQL_R --> Q6{Global Scale Needed?}
+    Q6 -->|Yes| NEWSQL[NewSQL<br/>Spanner, CockroachDB]:::hybrid
+    Q6 -->|No| TRAD_SQL[MySQL, PostgreSQL]:::sql
+
+    subgraph Use_Case_Examples
+        FINANCE["Banking, ERP, Ledgers"]:::warn
+        SOCIAL["Feeds, Profiles, Messaging"]:::nosql
+        IOT["Time Series, Sensor Data"]:::nosql
+        CONTENT["CMS, Product Catalog"]:::sql
+    end
+
+    TRAD_SQL --> FINANCE
+    NEWSQL --> CONTENT
+    KV_OPT --> SOCIAL
+    LSM_NOSQL --> IOT
+```
+
+### Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| B-Trees optimize for reads; LSM-Trees optimize for writes | Choose B-Tree (MySQL/PostgreSQL) for read-heavy workloads with joins; choose LSM-Tree (Cassandra/RocksDB) for write-heavy time-series or event ingestion |
+| Single-leader replication is the simplest and safest default | Use for most OLTP workloads; failover with consensus (Raft/Paxos) to avoid split-brain |
+| Leaderless (Dynamo-style) requires W+R > N for strong consistency | Configure N=3, W=2, R=2 for balanced strong consistency with single-node fault tolerance |
+| LWW conflict resolution loses data on concurrent writes | Use version vectors or CRDTs when concurrent writes to the same key are expected |
+| MVCC is the dominant isolation implementation in modern databases | PostgreSQL, MySQL InnoDB, and Oracle all use MVCC for Read Committed and Repeatable Read |
+| Replication lag causes three distinct anomalies | RYW: route reads to leader after write. Monotonic: hash-route user to same replica. Consistent prefix: place related data on same partition |
+| NewSQL (Spanner, CockroachDB) bridges SQL and NoSQL | Use when you need ACID transactions at global scale with horizontal sharding |
+
+### Case Study
+
+**Uber's Database Migration from MySQL to Schemaless and Docstore.** Uber's original architecture used a single MySQL cluster with follower replicas. As the platform expanded to 500+ cities, the MySQL cluster faced severe scaling challenges: schema changes required hours of downtime, cross-shard queries became impossibly slow, and replication lag caused drivers to see stale trip requests. Uber designed Schemaless, a sharded document database built on top of MySQL, which stored trip data as JSON blobs in a single giant table with an auto-incrementing key. Each shard was a separate MySQL instance, and the application layer handled routing via a consistent hash ring on the trip UUID.
+
+**Key Architectural Decisions.** Uber chose a hybrid approach: B-Tree storage engine (MySQL InnoDB) for its strong read consistency and transaction support, but with an LSM-inspired write path that batched writes to the WAL before applying to the B-Tree. This gave them the read performance of B-Trees (fast point lookups for trip status queries) with improved write throughput. The connection pool for each shard was carefully tuned — each pool maintained 5-20 connections per shard with aggressive health checking (TCP probes every 5 seconds, query-based checks every 30 seconds). When a shard's primary failed, the pool automatically failed over to the replica within 10 seconds using a custom health-check-driven connection router.
+
+**Business Impact.** The hybrid architecture scaled Uber's database layer from handling 100K trips/day to 15M trips/day over 3 years. Read latency for trip status queries stayed under 5ms p99, while write throughput scaled linearly with shard count. The isolation level was set to Read Committed (avoiding Serializable overhead), which was acceptable because trip reconciliation ran as a separate eventually-consistent process. The most important lesson: Uber did not choose between B-Tree and LSM-Tree — they combined the read strength of B-Trees with the write optimization ideas from LSM-Trees, proving that real-world database design is about composing trade-offs, not picking one storage engine.
+
+## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What is the approximate branching factor of a B-Tree with 16KB pages and 8-byte keys? | 128 | 256 | 512 | 1024 | **D** |
+| 2 | Which compaction strategy has the lowest write amplification? | Leveled | Size-tiered | Time-windowed | Unified | **C** |
+| 3 | What is the quorum condition for strong consistency? | W + R < N | W + R = N | W + R > N | W = R = N | **C** |
+| 4 | Which isolation level prevents phantom reads? | Read Uncommitted | Read Committed | Repeatable Read | Serializable | **D** |
+| 5 | What anomaly occurs when a user reads from two different replicas and sees data "go back in time"? | Dirty read | Non-repeatable read | Phantom read | Monotonic read violation | **D** |
+
 ## Summary
 
 - B-Trees use a high branching factor (~1000+) to minimize disk seeks, achieving O(log_base_factor(n)) depth. Page splits and merges keep the tree balanced automatically.
@@ -928,53 +1367,61 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ## Exercises
 
+<details>
+<summary>Review Questions — Click to expand</summary>
+
 ### Review Questions (4-5)
 
 1. Draw the structure of a B-Tree of order 4 containing keys [10, 20, 30, 40, 50, 60, 70]. Show what happens when key 55 is inserted (including any splits).
+   **Solution:** Initial: root [40] with children [10,20,30] and [50,60,70]. Insert 55: locate right child, it's full (3 keys, order 4 allows max 3). Split right child: promote 60 to root. Root becomes [40,60] with children [10,20,30], [50,55], [70]. Insert 55 into middle child: [50,55].
 
 2. Explain why write amplification is higher in leveled compaction (~10-20x) than in size-tiered compaction (~1-3x). Why would anyone choose leveled compaction despite this?
+   **Solution:** Leveled compaction rewrites data as it moves through levels (L0?L1?L2...), each level being 10x larger. Size-tiered merges SSTables of similar size within a level. Leveled is chosen for better read performance (non-overlapping SSTables per level) and lower space amplification (1.1-2x vs 2-4x).
 
 3. What is the quorum condition for strong consistency in leaderless replication? If N=5, W=4, and R=2, is the system strongly consistent?
+   **Solution:** Condition: W+R > N. With N=5, W=4, R=2: W+R=6 > 5, so yes, strongly consistent. But R=2 means reads may be slow (must wait for 2 responses). W=4 means writes need 4/5 acks, tolerating only 1 node failure.
 
 4. Compare the conflict resolution mechanisms for multi-leader replication: LWW, Version Vectors, and CRDTs. Under what conditions does LWW produce incorrect results?
+   **Solution:** LWW: last timestamp wins, simple but loses concurrent writes. Version Vectors: detects concurrent writes but requires application resolution. CRDTs: mathematically converge without conflicts. LWW fails when clock skew causes incorrect timestamp ordering — a later write may have an earlier timestamp if its clock is behind.
 
 5. List the three replication lag anomalies and describe a mitigation strategy for each.
+   **Solution:** (1) RYW: route reads for modified keys to leader for N seconds after write. (2) Monotonic reads: hash-route user to same replica consistently. (3) Consistent prefix: place related data (post + comments) on same partition, or use total ordering with timestamps.
+
+</details>
+
+<details>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems (3-4)
 
 1. A B-Tree with page size 16 KB stores 100-byte keys and 100-byte values. Calculate the branching factor. How many leaf pages are needed to store 10 million records? How many levels in the tree?
+   **Solution:** Branching factor = page_size / (key_size + pointer_size) = 16384 / (100 + 8) ≈ 152. Records per leaf = 16384 / 200 ≈ 82. Leaf pages needed = 10^7 / 82 ≈ 122,000. Levels = log_152(122000) ≈ 3 (root + 2 internal levels + leaf level).
 
 2. A database uses N=3, W=2, R=2 across 3 replicas. Node A crashes. Is the system still available for writes? For reads? Show any window of inconsistency that may occur during recovery.
+   **Solution:** With 2 remaining nodes: W=2 can be satisfied (write to both). R=2 can be satisfied (read from both). System remains available. W+R=4 > N=3 holds. Inconsistency window: during recovery of Node A, if A had a write that the other two haven't seen (due to async replication), reads from A during recovery could return stale data until read repair updates it.
 
 3. Design a conflict resolution strategy for a shared photo album app where users from multiple devices add, remove, and reorder photos. Multiple users may rename the same album concurrently. Specify which CRDT(s) you would use for each operation and justify your choices.
+   **Solution:** Photo set: OR-Set (add/remove commute). Album name: LWW-register (last rename wins — acceptable because name should converge to one value). Photo order: RGA (Replicated Growable Array) for sequence ordering. The OR-Set for photos ensures no photo is lost due to concurrent add/remove operations.
 
 4. A banking ledger uses serializable isolation. A transfer transaction subtracts $100 from account A and adds $100 to account B. A concurrent interest-calculation transaction reads both accounts and writes interest of 1% of the balance. Under Read Committed isolation, what anomalies are possible? Draw a timestamped interleaving that produces a wrong result.
+   **Solution:** Under RC: T1 (transfer) could be interleaved with T2 (interest). T2 reads A=1000 (before transfer), T1 transfers $100 from A to B, T2 reads B=100 (after transfer). T2 writes interest: A=1010, B=101. Total=1111 but should be 1100 + interest on correct values. Lost update and inconsistent read anomaly.
+
+</details>
+
+<details>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem (1)
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-You are designing a globally distributed document database for a collaboration platform similar to Notion or Coda. 100M users, 1B documents. Documents are hierarchical (blocks: text, images, tables, embeds). Multiple users concurrently edit the same document in real time.
+You are designing a globally distributed document database for a collaboration platform similar to Notion or Coda. 100M users, 1B documents.
 
-**Requirements:**
-- Sub-second document open latency (p99 &lt; 500ms)
-- Offline editing support (users on airplanes edit documents, sync later)
-- Real-time collaboration (50+ concurrent editors on one document)
-- 30-day version history
-- Conflict-free editing (users should never see "merge conflicts")
-- Global distribution (users in US, EU, APAC)
+**Solution Outline:**
+1. **Storage engine:** Hybrid — RocksDB (LSM-Tree) for write-heavy operations (block edits, real-time collaboration) with periodic compaction; B-Tree-based indexes (via MySQL InnoDB) for metadata and queryable fields. LSM-Tree handles the high write throughput of collaborative editing while B-Tree provides fast lookups for document listing and search.
+2. **Replication topology:** Multi-leader (one leader per region: US, EU, APAC) with CRDT-based conflict resolution. Offline editing uses local-first CRDT state that merges on reconnection.
+3. **Document model:** Documents stored as ordered lists of blocks (CRDT-based RGA for ordering). Version history uses fork/merge semantics — each save creates a diff against the parent version, stored in Cassandra for 30-day retention.
+4. **OR-Set CRDT for block content:** Elements tagged with (user_id, timestamp, UUID). add(element, tag) creates a tag; remove(element) removes known tags; merge = union of tag sets. Convergence is guaranteed because concurrent adds union, and concurrent add/remove depends on tag awareness.
+5. **Total order for comments:** Use a centralized sequencer per document (a small Raft group) that assigns monotonically increasing sequence numbers to comments. This provides total order while the document content itself uses CRDTs for availability.
+6. **Anti-entropy:** Merkle trees per document range. Each region exchanges root hashes every 30 seconds. On mismatch, recursive comparison finds differing blocks, and only the differing blocks are transferred.
+7. **Bottleneck:** At 10x, the Raft-based comment sequencer becomes the bottleneck (single leader processes all comments). Mitigation: shard sequencing by document_id, with each document's sequencer group running independently.
 
-**Design the database layer:**
-
-1. **Choose the storage engine** (B-Tree or LSM-Tree or hybrid). Justify your choice.
-
-2. **Choose the replication topology** (single-leader, multi-leader, or leaderless). If multi-leader, specify your conflict resolution strategy. If single-leader, explain how offline editing works.
-
-3. **Design the document model.** How are blocks stored and addressed? How does version history work without duplicating the entire document on every save?
-
-4. **Implement an OR-Set (or another CRDT)** for collaborative editing of block content. Write the data structure definition (in pseudocode or Python) and the merge function.
-
-5. **Consistency vs availability trade-off.** The platform supports "comments" on documents. Comments must appear in the same order for all users (total order is required for comment threads to make sense). Explain how you guarantee total order for comments while still supporting real-time collaboration and offline editing.
-
-6. **Anti-entropy and repair.** Describe how your system detects and repairs inconsistency between regions. What mechanism ensures that a document open in Tokyo after an offline write in London eventually shows the same content?
-
-7. **Analyze scaling.** At 10x the current user base, which component fails first? Propose a specific architectural change to handle the bottleneck.
+</details>

@@ -406,91 +406,14 @@ graph TB
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-## Concept Comparison
-> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
-
-| Concept | Definition | Key Insight |
-|---------|-----------|-------------|
-| Theory / Case Study | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
-| Concept Comparison | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
-| Quick Reference | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
-| Cross-Application Matrix | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
-
----
-
-## Quick Reference
-> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
-
-| Topic | Key Point |
-|-------|-----------|
-| Theory / Case Study | Essential concept for Chapter 21: Case Study — Uber and Location-Based Services |
-| Concept Comparison | Essential concept for Chapter 21: Case Study — Uber and Location-Based Services |
-| Quick Reference | Essential concept for Chapter 21: Case Study — Uber and Location-Based Services |
-
----
-
-## Cross-Application Matrix
-
-| Concept | Application Context | Trade-Off |
-|--------|-------------------|-----------|
-| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
-
----
-
-## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
-
-**Q1:** What is the primary trade-off discussed in this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most fundamental to the topic of Chapter 21
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
-
-**Q3:** How does this chapter's main concept apply to real-world systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What geospatial indexing approach does Uber use for real-time dispatch? | A) QuadTree, B) Google S2 with Hilbert curve 64-bit cell IDs, C) R-Tree in MySQL, D) PostGIS | B |
+| 2 | How does the dispatch algorithm perform matching between riders and drivers? | A) Random assignment, B) Minimum-weight bipartite matching using greedy approximation scoring drivers by ETA, rating, and direction, C) First-come-first-served, D) Driver self-selection | B |
+| 3 | What data structure does Uber use for demand/supply ratio trending? | A) Redis Sorted Sets, B) Count-min sketch, C) Flink sliding windows with Kalman filtering aggregated per geofence, D) MySQL materialized views | C |
+| 4 | How does Uber shard data across its infrastructure? | A) By user ID hash, B) By city/region providing natural data isolation, C) Random sharding, D) By driver ID | B |
+| 5 | What is the Kalman filter's role in the GPS pipeline? | A) Encrypt GPS data, B) Smooth noisy GPS readings combining position+velocity prediction with each observation, C) Compress GPS coordinates, D) Route calculation | B |
 
 ---
 
@@ -630,6 +553,408 @@ class TripRouter { shortestPath(lat1: number, lng1: number, lat2: number, lng2: 
   private haversine(lat1: number, lng1: number, lat2: number, lng2: number): number { const R = 6371; const [rlat1, rlat2, rlng1, rlng2] = [lat1, lat2, lng1, lng2].map(d => d * Math.PI / 180); const dlat = rlat2 - rlat1; const dlng = rlng2 - rlng1; const a = Math.sin(dlat/2)**2 + Math.cos(rlat1)*Math.cos(rlat2)*Math.sin(dlng/2)**2; return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); } }
 ```
 
+### TypeScript: Ride Matcher with Geohash Indexing, Surge Pricer with Dynamic Zones, and Trip Tracker
+
+```typescript
+class RideMatcher {
+  private geoIndex = new Map<string, string[]>();
+  private drivers = new Map<string, { id: string; lat: number; lng: number; available: boolean; rating: number; heading: number }>();
+  private readonly geohashPrecision = 7;
+
+  geohash(lat: number, lng: number, precision: number = this.geohashPrecision): string {
+    const base32 = "0123456789bcdefghjkmnpqrstuvwxyz";
+    let hash = "";
+    let minLat = -90, maxLat = 90, minLng = -180, maxLng = 180;
+    for (let i = 0; i < precision; i++) {
+      let hashBit = 0;
+      for (let j = 0; j < 5; j++) {
+        if (i * 5 + j % 2 === 0) {
+          const mid = (minLng + maxLng) / 2;
+          if (lng >= mid) { hashBit = (hashBit << 1) | 1; minLng = mid; }
+          else { hashBit = (hashBit << 1) | 0; maxLng = mid; }
+        } else {
+          const mid = (minLat + maxLat) / 2;
+          if (lat >= mid) { hashBit = (hashBit << 1) | 1; minLat = mid; }
+          else { hashBit = (hashBit << 1) | 0; maxLat = mid; }
+        }
+      }
+      hash += base32[hashBit];
+    }
+    return hash;
+  }
+
+  neighbors(hash: string): string[] {
+    const adjacent = new Set<string>();
+    const base32 = "0123456789bcdefghjkmnpqrstuvwxyz";
+    for (const c of base32) {
+      for (let i = hash.length - 1; i >= 0; i--) {
+        const neighbor = hash.slice(0, i) + c + hash.slice(i + 1);
+        adjacent.add(neighbor);
+      }
+    }
+    return [...adjacent];
+  }
+
+  updateDriverLocation(driverId: string, lat: number, lng: number): void {
+    const driver = this.drivers.get(driverId);
+    if (!driver) return;
+    const oldHash = this.geohash(driver.lat, driver.lng);
+    const newHash = this.geohash(lat, lng);
+    if (oldHash !== newHash) {
+      const oldList = this.geoIndex.get(oldHash);
+      if (oldList) {
+        const idx = oldList.indexOf(driverId);
+        if (idx >= 0) oldList.splice(idx, 1);
+      }
+    }
+    driver.lat = lat;
+    driver.lng = lng;
+    if (!this.geoIndex.has(newHash)) this.geoIndex.set(newHash, []);
+    if (!this.geoIndex.get(newHash)!.includes(driverId)) this.geoIndex.get(newHash)!.push(driverId);
+  }
+
+  findNearest(riderLat: number, riderLng: number, radiusCells = 1): { driverId: string; eta: number }[] {
+    const riderHash = this.geohash(riderLat, riderLng);
+    const cells = [riderHash, ...this.neighbors(riderHash).slice(0, radiusCells * 8)];
+    const candidates: { driverId: string; dist: number; eta: number }[] = [];
+    const seen = new Set<string>();
+    for (const cell of cells) {
+      const driversInCell = this.geoIndex.get(cell) ?? [];
+      for (const driverId of driversInCell) {
+        if (seen.has(driverId)) continue;
+        seen.add(driverId);
+        const d = this.drivers.get(driverId)!;
+        if (!d.available) continue;
+        const dist = this.haversine(riderLat, riderLng, d.lat, d.lng);
+        const eta = this.estimateETA(dist, d.heading, riderLat, riderLng, d.lat, d.lng);
+        candidates.push({ driverId, dist, eta });
+      }
+    }
+    return candidates.sort((a, b) => a.eta - b.eta).map(({ driverId, eta }) => ({ driverId, eta }));
+  }
+
+  private estimateETA(distKm: number, driverHeading: number, riderLat: number, riderLng: number, driverLat: number, driverLng: number): number {
+    const speedKmph = 30;
+    const directionPenalty = Math.abs(driverHeading - this.bearing(driverLat, driverLng, riderLat, riderLng)) > 90 ? 1.3 : 1.0;
+    return Math.round((distKm / speedKmph) * 3600 * directionPenalty);
+  }
+
+  private bearing(lat1: number, lng1: number, lat2: number, lng2: number): number {
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const y = Math.sin(dLng) * Math.cos(lat2 * Math.PI / 180);
+    const x = Math.cos(lat1 * Math.PI / 180) * Math.sin(lat2 * Math.PI / 180) - Math.sin(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.cos(dLng);
+    return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+  }
+
+  private haversine(lat1: number, lng1: number, lat2: number, lng2: number): number {
+    const R = 6371; const dLat = (lat2 - lat1) * Math.PI / 180; const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLng/2)**2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+}
+
+class SurgePricer {
+  private zones = new Map<string, { demand: number; supply: number; baselineDemand: number; multiplier: number; lastUpdated: number }>();
+  private readonly minMultiplier = 1.0;
+  private readonly maxMultiplier = 5.0;
+  private readonly decayRate = 0.1;
+
+  recordDemand(zoneId: string): void {
+    if (!this.zones.has(zoneId)) this.zones.set(zoneId, { demand: 0, supply: 1, baselineDemand: 0, multiplier: 1.0, lastUpdated: Date.now() });
+    const zone = this.zones.get(zoneId)!;
+    zone.demand++;
+    zone.lastUpdated = Date.now();
+    this.recalculate(zoneId);
+  }
+
+  recordSupply(zoneId: string): void {
+    if (!this.zones.has(zoneId)) this.zones.set(zoneId, { demand: 1, supply: 0, baselineDemand: 0, multiplier: 1.0, lastUpdated: Date.now() });
+    const zone = this.zones.get(zoneId)!;
+    zone.supply++;
+    zone.lastUpdated = Date.now();
+    this.recalculate(zoneId);
+  }
+
+  setBaseline(zoneId: string, baselineDemand: number): void {
+    if (!this.zones.has(zoneId)) this.zones.set(zoneId, { demand: 0, supply: 1, baselineDemand: 0, multiplier: 1.0, lastUpdated: Date.now() });
+    this.zones.get(zoneId)!.baselineDemand = baselineDemand;
+  }
+
+  getMultiplier(zoneId: string): number {
+    const zone = this.zones.get(zoneId);
+    if (!zone || zone.supply === 0) return this.maxMultiplier;
+    const ratio = zone.demand / zone.supply;
+    const spikeFactor = zone.baselineDemand > 0 ? zone.demand / Math.max(zone.baselineDemand, 1) : 1;
+    const multiplier = Math.min(this.maxMultiplier, Math.max(this.minMultiplier, 1.0 + (ratio - 1) * 0.5 * spikeFactor));
+    return Math.round(multiplier * 10) / 10;
+  }
+
+  private recalculate(zoneId: string): void {
+    const zone = this.zones.get(zoneId);
+    if (zone) zone.multiplier = this.getMultiplier(zoneId);
+  }
+
+  decayAll(): void {
+    const now = Date.now();
+    for (const [zoneId, zone] of this.zones) {
+      const elapsed = (now - zone.lastUpdated) / 1000;
+      if (elapsed > 120) {
+        zone.multiplier = Math.max(this.minMultiplier, zone.multiplier - this.decayRate * (elapsed / 60));
+        if (zone.multiplier <= this.minMultiplier + 0.1) {
+          zone.multiplier = this.minMultiplier;
+          zone.demand = 0;
+          zone.supply = 1;
+        }
+      }
+    }
+  }
+
+  getActiveSurgeZones(): { zoneId: string; multiplier: number }[] {
+    return [...this.zones.entries()]
+      .filter(([_, z]) => z.multiplier > this.minMultiplier)
+      .map(([zoneId, z]) => ({ zoneId, multiplier: z.multiplier }))
+      .sort((a, b) => b.multiplier - a.multiplier);
+  }
+}
+
+class TripTracker {
+  private trips = new Map<string, { driverId: string; riderId: string; path: { lat: number; lng: number; ts: number }[]; status: string; fare: number; distance: number }>();
+  private readonly farePerKm = 1.5;
+  private readonly farePerMin = 0.3;
+  private readonly baseFare = 2.5;
+
+  startTrip(tripId: string, driverId: string, riderId: string): void {
+    this.trips.set(tripId, { driverId, riderId, path: [], status: "in_progress", fare: 0, distance: 0 });
+  }
+
+  recordGPS(tripId: string, lat: number, lng: number): void {
+    const trip = this.trips.get(tripId);
+    if (!trip) return;
+    const lastPoint = trip.path[trip.path.length - 1];
+    if (lastPoint) {
+      trip.distance += this.haversine(lastPoint.lat, lastPoint.lng, lat, lng);
+    }
+    trip.path.push({ lat, lng, ts: Date.now() });
+  }
+
+  matchPathToRoad(tripId: string, roadNetwork: { nodes: { lat: number; lng: number }[]; edges: [number, number][] }): { matchedPoints: number; deviation: number } {
+    const trip = this.trips.get(tripId);
+    if (!trip || trip.path.length === 0) return { matchedPoints: 0, deviation: 0 };
+    let matched = 0;
+    let totalDeviation = 0;
+    for (const point of trip.path) {
+      let minDist = Infinity;
+      for (const node of roadNetwork.nodes) {
+        const dist = this.haversine(point.lat, point.lng, node.lat, node.lng);
+        if (dist < minDist) minDist = dist;
+      }
+      if (minDist < 0.05) matched++;
+      totalDeviation += minDist;
+    }
+    return { matchedPoints: matched, deviation: totalDeviation / trip.path.length };
+  }
+
+  calculateFare(tripId: string, surgeMultiplier = 1.0): { fare: number; distanceKm: number; durationMin: number } {
+    const trip = this.trips.get(tripId);
+    if (!trip || trip.path.length < 2) return { fare: 0, distanceKm: 0, durationMin: 0 };
+    const durationMs = trip.path[trip.path.length - 1].ts - trip.path[0].ts;
+    const durationMin = durationMs / 60000;
+    const distanceKm = trip.distance;
+    const fare = (this.baseFare + distanceKm * this.farePerKm + durationMin * this.farePerMin) * surgeMultiplier;
+    trip.fare = Math.round(fare * 100) / 100;
+    return { fare: trip.fare, distanceKm: Math.round(distanceKm * 10) / 10, durationMin: Math.round(durationMin * 10) / 10 };
+  }
+
+  endTrip(tripId: string): { fare: number; distanceKm: number; pathLength: number } {
+    const trip = this.trips.get(tripId);
+    if (!trip) throw new Error("Trip not found");
+    trip.status = "completed";
+    return { fare: trip.fare, distanceKm: Math.round(trip.distance * 10) / 10, pathLength: trip.path.length };
+  }
+
+  private haversine(lat1: number, lng1: number, lat2: number, lng2: number): number {
+    const R = 6371; const dLat = (lat2 - lat1) * Math.PI / 180; const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLng/2)**2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+}
+```
+
+### TypeScript: Map Matching and ETA Prediction
+
+```typescript
+class MapMatcher {
+  private roadGraph = new Map<string, { neighbors: string[]; speedKmph: number; bearing: number }>();
+
+  addRoad(segmentId: string, neighbors: string[], speedKmph: number, bearing: number): void {
+    this.roadGraph.set(segmentId, { neighbors, speedKmph, bearing });
+  }
+
+  viterbiMatch(gpsPoints: { lat: number; lng: number; ts: number }[]): { roadSegments: string[]; confidence: number } {
+    if (gpsPoints.length === 0) return { roadSegments: [], confidence: 0 };
+    const candidates = [...this.roadGraph.keys()];
+    const dp: Map<string, { prob: number; prev: string | null }>[] = [];
+    const first: Map<string, { prob: number; prev: string | null }> = new Map();
+    for (const seg of candidates) {
+      first.set(seg, { prob: 1 / candidates.length, prev: null });
+    }
+    dp.push(first);
+    for (let t = 1; t < gpsPoints.length; t++) {
+      const prev = dp[t - 1];
+      const curr: Map<string, { prob: number; prev: string | null }> = new Map();
+      for (const seg of candidates) {
+        let maxProb = 0;
+        let bestPrev: string | null = null;
+        for (const [prevSeg, prevState] of prev) {
+          const road = this.roadGraph.get(prevSeg)!;
+          const transitionProb = road.neighbors.includes(seg) ? 0.8 : 0.2;
+          const emissionProb = 1 / candidates.length;
+          const prob = prevState.prob * transitionProb * emissionProb;
+          if (prob > maxProb) { maxProb = prob; bestPrev = prevSeg; }
+        }
+        curr.set(seg, { prob: maxProb, prev: bestPrev });
+      }
+      dp.push(curr);
+    }
+    let bestSeg = "";
+    let bestProb = 0;
+    for (const [seg, state] of dp[dp.length - 1]) {
+      if (state.prob > bestProb) { bestProb = state.prob; bestSeg = seg; }
+    }
+    const path: string[] = [bestSeg];
+    for (let t = dp.length - 1; t > 0; t--) {
+      const prev = dp[t].get(bestSeg)!.prev;
+      if (prev) { path.unshift(prev); bestSeg = prev; }
+    }
+    return { roadSegments: path, confidence: bestProb };
+  }
+}
+
+class ETAPredictor {
+  private historicalSpeed = new Map<string, { dayOfWeek: number; hour: number; avgSpeed: number }[]>();
+
+  train(observations: { segmentId: string; dayOfWeek: number; hour: number; speed: number }[]): void {
+    for (const obs of observations) {
+      if (!this.historicalSpeed.has(obs.segmentId)) this.historicalSpeed.set(obs.segmentId, []);
+      this.historicalSpeed.get(obs.segmentId)!.push({ dayOfWeek: obs.dayOfWeek, hour: obs.hour, avgSpeed: obs.speed });
+    }
+  }
+
+  predict(segments: string[], dayOfWeek: number, hour: number, trafficFactor = 1.0): { totalMinutes: number; segmentBreakdown: { segmentId: string; minutes: number }[] } {
+    const segmentBreakdown: { segmentId: string; minutes: number }[] = [];
+    let totalMinutes = 0;
+    for (const segId of segments) {
+      const history = this.historicalSpeed.get(segId) ?? [];
+      const relevant = history.filter(h => h.dayOfWeek === dayOfWeek && Math.abs(h.hour - hour) <= 1);
+      const avgSpeed = relevant.length > 0 ? relevant.reduce((s, h) => s + h.avgSpeed, 0) / relevant.length : 30;
+      const adjustedSpeed = avgSpeed * (1 - trafficFactor * 0.3);
+      const distanceKm = 1;
+      const minutes = (distanceKm / adjustedSpeed) * 60;
+      segmentBreakdown.push({ segmentId: segId, minutes: Math.round(minutes * 10) / 10 });
+      totalMinutes += minutes;
+    }
+    return { totalMinutes: Math.round(totalMinutes * 10) / 10, segmentBreakdown };
+  }
+}
+```
+
+```mermaid
+graph TB
+    classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef dispatch fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef stream fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef data fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef price fill:#fce4ec,stroke:#c62828,stroke-width:2px
+
+    subgraph "Client Layer"
+        RD[Rider App]:::client
+        DR[Driver App]:::client
+    end
+
+    subgraph "Ride Lifecycle"
+        REQ[Request Ride<br/>Geohash Lookup]:::dispatch
+        MATCH[Match Driver<br/>Bipartite Scoring]:::dispatch
+        PICK[Driver En Route<br/>ETA Refresh 30s]:::dispatch
+        TRIP[Trip In Progress<br/>GPS 4s Interval]:::dispatch
+        COMP[Complete Trip<br/>Fare Calculation]:::dispatch
+    end
+
+    subgraph "Geospatial Service"
+        GEO[Geohash Index<br/>S2 Cell IDs]:::dispatch
+        RING[Ring Expansion<br/>Level 14 to 13 to 12]:::dispatch
+        KALMAN[Kalman Filter<br/>Noise Reduction]:::dispatch
+    end
+
+    subgraph "Streaming Pipeline"
+        KAFKA[Kafka Event Bus<br/>7.5M events/s]:::stream
+        FLINK[Flink Stream<br/>Sliding Window 4s]:::stream
+        REDIS[(Redis Cache<br/>Driver Positions)]:::data
+    end
+
+    subgraph "Pricing Engine"
+        SURGE[Surge Pricing<br/>Demand/Supply Ratio]:::price
+        BASELINE[Baseline Demand<br/>ML Prediction]:::price
+        FARE[Fare Calculator<br/>Distance + Time + Surge]:::price
+    end
+
+    subgraph "Historical Store"
+        HDFS[(HDFS<br/>Raw GPS Traces)]:::data
+        HIVE[Hive Analytics<br/>Batch Processing]:::data
+        ML[Michelangelo ML<br/>ETA Models]:::data
+    end
+
+    RD --> REQ
+    DR --> GEO
+    REQ --> RING
+    RING --> MATCH
+    GEO --> MATCH
+    MATCH --> PICK
+    PICK --> TRIP
+    TRIP --> COMP
+    DR --> KAFKA
+    KAFKA --> FLINK
+    FLINK --> REDIS
+    FLINK --> HDFS
+    FLINK --> KALMAN
+    KALMAN --> GEO
+    REQ --> SURGE
+    SURGE --> BASELINE
+    BASELINE --> ML
+    HDFS --> ML
+    MATCH --> FARE
+    FARE --> SURGE
+    COMP --> FARE
+    COMP --> HIVE
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Geospatial indexing with S2 cell IDs enables efficient nearest-driver queries | Use Hilbert curve-based 64-bit cell IDs; query by cell + ring expansion; adapt cell level (12-15) by density |
+| Kalman filtering reduces GPS noise from 15m to sub-3m accuracy | Model driver state as position + velocity; prediction step handles tunnel dropouts; update step corrects with each GPS reading |
+| Surge pricing as real-time demand/supply equilibrium with ML prediction | Compute multiplier per geofence every 2-5 minutes; use historical baselines to distinguish events from noise; decay multiplier gradually |
+| Dispatch as minimum-weight bipartite matching with greedy approximation | Score drivers by ETA (60%), rating (20%), direction (10%), surge zone (10%); use greedy O(N log N) instead of Hungarian O(N³) |
+| City-level sharding provides natural data isolation for location-based services | Shard by city/region; cross-city trips use API orchestration; each city's data is self-contained for most queries |
+| Active-active multi-region with Kafka MirrorMaker under 2s replication | Each region serves reads locally; writes fan out via MirrorMaker; validate with uChaos experiments quarterly |
+| Event-driven architecture with Kafka as backbone for 30B+ events/day | Partition by city; use Avro schema registry for compatibility; transactional outbox pattern for dual-write safety |
+
+## Case Study: Surge Pricing During a Stadium Event
+
+A major concert ends at 11 PM at a stadium in downtown San Francisco. 30,000 attendees simultaneously request rides. The area normally has 200 available drivers. The surge pricing system must detect the spike, compute multipliers, and communicate pricing to riders and drivers within 2 minutes of the event ending.
+
+The geohash-based zone covering the stadium (precision 7, ~150m x 150m) shows demand surging from a baseline of 50 requests per 5-minute window to 3,000 requests in 2 minutes. The supply in the zone remains at 180 drivers (20 drivers were already in transit to the area). The SurgePricer computes: demand/supply ratio = 3,000/180 approximately 16.7. The spike factor (current demand / baseline demand) = 3,000/50 = 60. The multiplier is clamped at the maximum of 5.0x. Within 2 minutes of the event ending, all rider apps within the stadium zone show 5.0x surge pricing on their screens.
+
+The system broadcasts surge zone notifications to all drivers within a 3-mile radius (geohash ring at distance 3 from the stadium cell). 800 drivers respond by navigating toward the stadium. The ML baseline predictor, trained on 6 months of concert data, had predicted a 4.2x surge for this event at 11 PM Friday. The actual 5.0x is 19% higher due to an unexpected encore extending the event by 20 minutes. As supply increases (from 180 to 950 drivers over 15 minutes), the decay function reduces the multiplier stepwise: 5.0x to 3.5x after 5 minutes to 2.0x after 10 minutes to 1.2x after 20 minutes. The ML model records the deviation for retraining, improving next week's prediction.
+
+## Case Study: GPS Trajectory Map Matching in Urban Canyons
+
+A driver navigates through downtown Manhattan where skyscrapers cause GPS multipath errors of up to 50 meters. The driver takes a route: starting at 5th Avenue and 42nd Street, proceeding south on 5th Avenue for 2 km, then turning onto 34th Street. The raw GPS trajectory shows points jumping 30-50 meters east into buildings due to signal reflection.
+
+The Kalman filter smooths the raw GPS stream. Each observation (every 4 seconds) with a 50m error radius is combined with the prediction from the previous state (position + velocity). The filtered position is typically within 8 meters of the true road position. The map matcher runs the Viterbi algorithm on the filtered trajectory: it considers the road network segments within a 100m buffer of each filtered point and finds the most likely sequence of road segments. The emission probability is computed as a Gaussian centered on the road segment with 10m standard deviation. The transition probability favors segments that are connected in the road graph and have similar bearing to the driver's heading.
+
+The matching result is a sequence of road segment IDs with 93% confidence. The trip tracker uses the matched road path for accurate fare calculation: the fare distance is 2.3 km (road distance) vs 2.1 km (GPS crow-flies) -- a 10% difference that would otherwise undercharge the rider. The ETA prediction uses the matched path to compute remaining time: at the current traffic speed on 5th Avenue (15 km/h), the remaining 0.8 km to 34th Street takes 3.2 minutes. The ETA is refreshed every 30 seconds and displayed to the rider as "4 minutes away."
+
 // case study uber
 // distributed-systems-scalability implementation
 
@@ -738,64 +1063,38 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Review Questions
 
-1. Why does standard B-Tree indexing fail for "find nearby drivers" queries, and how does S2's Hilbert curve address this limitation? Explain the trade-offs between S2 and H3 for different use cases within Uber.
+<details><summary>Solution</summary>1. **B-Trees** fail for 2D queries because they index 1D ranges. S2's **Hilbert curve** maps 2D coordinates to 1D 64-bit cell IDs preserving proximity — nearby points have numerically similar cell IDs enabling efficient B-Tree range scans. S2 is better for dispatch (range queries), H3 for visualization (uniform hexagon neighbors).
 
-2. Describe the fan-in architecture of the real-time location pipeline. What role does Kafka play, and how does Flink's sliding window with Kalman filtering improve position accuracy?
+2. **Kafka** ingests 7.5M GPS events/second partitioned by city. **Flink** applies a sliding 4-second window with Kalman filtering: prediction step (propagates velocity) + update step (corrects with observation), reducing noise from 15m to ~3m. Filtered positions are written to Redis (TTL 15s) and HDFS.
 
-3. Explain how Uber's dispatch algorithm balances multiple competing objectives: minimizing rider wait time, respecting driver preferences, and maximizing platform revenue. How is the problem formulated as a matching optimization?
+3. The **dispatch algorithm** scores each (rider, driver) pair using ETA (60%), rating (20%), direction (10%), and surge zone (10%). It solves as minimum-weight bipartite matching using greedy approximation (O(N log N)) instead of Hungarian (O(N³)). Driver preferences (max distance, destination filter) are applied as hard constraints.
 
-4. How does Uber's surge pricing algorithm determine the multiplier for a given geofence at a given time? What data feeds into the ML-based demand prediction model?
+4. **Surge multiplier** = baseline_ratio + (demand/supply) × sensitivity, clamped to 1.0x-5.0x. ML features: time-of-day, day-of-week, weather, event calendar, historical demand per geofence. Model trained on Michelangelo with 5-minute prediction windows.
 
-5. Discuss the sharding strategy used by Uber. Why is city-level sharding natural for this domain, and what challenges arise for cross-city trips?
+5. **City-level sharding** provides natural data isolation — a San Francisco ride doesn't query Tokyo data. Cross-city trips require API orchestration between origin and destination shards. Consistent hashing maps users to shards.
 
-6. Compare the role of Chaos Engineering at Uber with traditional disaster recovery testing. How does uChaos differ from standard failover testing?
+6. **uChaos** injects controlled failures (latency injection, instance termination, Kafka broker failure) during low traffic with automated rollback. Unlike traditional DR testing (scheduled, isolated), uChaos runs continuously in production with blast radius limited to one city.
+</details>
 
 ### Application Problems
 
-1. **Spatial Index Design**: A ride-sharing competitor wants to implement its own dispatch system for a mid-sized city (500,000 active drivers). They expect 50,000 concurrent drivers. Design the geospatial index and caching strategy to support sub-100ms dispatch queries. Compare S2, H3, and a simple grid-based approach, providing a recommendation with justification.
+<details><summary>Solution</summary>1. **Spatial Index**: Use S2 at level 14 (6.25 km² for urban dispatch). Store driver IDs in Redis Sets per cell with TTL 15s. Geofence expansion: query cell + ring 1; if <5 drivers, expand to ring 2 (parent cell level 13). Atomic Lua script for driver cell transitions.
 
-   For your design, specify: (a) the S2 cell level you would use and why, (b) the Redis data structure for storing drivers per cell (Redis Set? Sorted Set? Hash?), (c) the geofence expansion strategy when the initial ring returns fewer than 5 drivers, (d) the TTL strategy for expiring stale driver positions, and (e) the cache invalidation strategy when a driver moves between cells.
+2. **ETA Features**: 8 families — (1) road-segment historical speed profiles (15-min buckets), (2) real-time traffic, (3) intersection delay, (4) time-of-day/week, (5) weather, (6) events, (7) driver behavior, (8) route complexity. Cold-start: use city-wide average speeds for new drivers, update after 10 trips.
 
-2. **ETA Model Feature Engineering**: Given access to 6 months of historical trip data including GPS trajectories, timestamps, and driver IDs, design the feature engineering pipeline for an ETA prediction model. Specify the window sizes for feature aggregation, the treatment of categorical features (driver ID, road segment ID), and how you would handle the cold-start problem for new drivers.
+3. **Surge Simulation**: Detect spike by comparing 2-min demand vs 60-min baseline. Compute multiplier: min(5.0, max(1.0, ratio × spike_factor × 0.5)). Decay: every 60s, reduce by 0.3x if supply/demand ratio decreases. Prevent overshoot by capping surge area to 10-block radius and decaying outer zones first.
 
-   Provide: (a) at least 8 feature families with specific example features, (b) the feature preprocessing pipeline (normalization, handling missing values, outlier removal), (c) the training data generation strategy (how to create positive and negative examples from raw GPS traces), and (d) the online inference architecture (how features are computed and served at predict time within 50ms).
-
-3. **Surge Price Simulation**: A stadium event expects 30,000 attendees leaving simultaneously in a 10-block area. Normal supply in this area is 200 drivers. Write pseudocode for a surge pricing algorithm that: (a) detects the demand spike within 2 minutes of the event ending, (b) computes the surge multiplier, (c) distributes surge notifications to drivers within a 2-mile radius, and (d) gradually normalizes pricing as supply increases.
-
-   Your solution must address: (a) how to distinguish the event spike from a normal demand fluctuation using historical baselines, (b) the min/max clamp on the multiplier and the justification for these bounds, (c) the decay function for returning to 1.0x multiplier as supply arrives, and (d) how to prevent driver supply from overshooting (too many drivers chasing too few rides) after the surge dissipates.
-
-4. **Failure Mode Analysis**: For each of the following failure scenarios, describe the detection mechanism, the impact on users, and the automated recovery strategy:
-
-   (a) The Flink job processing the GPS location stream crashes and takes 2 minutes to restart
-   (b) The Redis cluster in the US-East region becomes unreachable from the dispatch service
-   (c) The Kafka broker hosting the `trip_events` topic leader experiences disk failure
-   (d) The S2 geofence query returns correct results but takes 2 seconds instead of 10ms due to a slow upstream API
-   (e) A city operations team accidentally triggers a database migration that locks the trip metadata table for 5 minutes
+4. **Failure Analysis**: (a) Flink crash: checkpoint recovery from last successful checkpoint (2-min processing lag). (b) Redis unreachable: fallback to stale driver positions in local cache with 30s TTL. (c) Kafka broker failure: ISR (in-sync replicas) election within 10s. (d) Slow S2 query: Hystrix circuit breaker opens after 200ms, return cached geofence results. (e) Table lock: detect via query timeout, route reads to replica.
+</details>
 
 ### Challenge Problem
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Global Outage Recovery Design**: Uber experiences a cascading failure in its dispatch system when a configuration change causes the Redis cluster storing driver positions to evict all keys simultaneously (a mass TTL expiration bug). All 3 million active drivers appear offline. Design a multi-layered recovery plan that:
+<details><summary>Solution>
+**Global Outage Recovery**:
 
-- Immediately restores service with stale-but-safe state (show how you would reconstruct driver positions from the last 30 seconds of Kafka events)
-- Prevents the mass-expiration bug from recurring (propose both a code-level fix and a circuit-breaking mechanism)
-- Adds an independent fallback dispatch system that can operate with degraded functionality (text-based matching via SMS, basic geofence via precomputed city-grid) even if the entire Redis and Kafka infrastructure is unavailable
-- Includes a runbook for the incident commander with clear go/no-go criteria for each recovery phase
-- Estimates the recovery time objective (RTO) and recovery point objective (RPO) for each recovery tier
+**Tier 1 (30s RTO)**: Replay Kafka `location_updates` topic from last 30 seconds. Flink restores from checkpoint, reprocesses events, repopulates Redis. Validation gate: check driver speed (no >200 km/h), duplicate detection (same driver in two cells), temporal consistency (timestamps monotonic). Go: error rate < 0.1%.
 
-Your solution must consider that Uber operates in 70+ countries with different compliance requirements and that any recovery must not cause double-dispatch (two drivers assigned to the same rider). Additionally, consider the human factors: how do you communicate the outage to riders and drivers via in-app notifications, SMS, and social media? What do you tell the press? What regulatory reporting obligations are triggered in the EU (GDPR breach notification within 72 hours), California (CCPA), and India (IT Rules)?
+**Tier 2 (5min RTO)**: Fallback Redis cluster with larger TTLs (60s vs 15s) and no-eviction policy. Pre-warmed by shadowing primary Redis writes. DNS failover via Route53 health checks pointing to fallback cluster.
 
-Provide specific detail for each recovery tier:
-
-**Tier 1 (Hot Standby — 30 second RTO):**
-- Detail the Kafka replay mechanism: which Kafka consumer group reads which partitions, what offset management strategy is used, and how Flink state is reconstructed from the checkpoint
-- Describe the validation gate: how does the system verify that reconstructed driver positions are consistent (no impossible speeds, no duplicate drivers) before re-enabling dispatch?
-
-**Tier 2 (Warm Standby — 5 minute RTO):**
-- Specify the fallback Redis cluster architecture: how is it kept warm, how does it differ from the primary cluster (larger TTLs? different eviction policy?), and what is the failover DNS mechanism?
-
-**Tier 3 (Cold Standby — 30 minute RTO):**
-- Design the SMS-based dispatch flow: how does a rider request a ride via SMS, how is the nearest available driver identified without real-time GPS, and how does the system prevent double-dispatch without Redis?
-- Describe the precomputed city-grid fallback: a static grid of hexagons with baseline driver counts per time-of-day, used to estimate approximate availability without real-time data. How stale is this data (updated daily? weekly?), and how do you communicate uncertainty to the rider?
-
-Present your answer as a structured incident response runbook with numbered phases, go/no-go criteria at each phase transition, and a post-mortem analysis section describing the root cause fix and preventative measures.
+**Tier 3 (30min RTO)**: SMS-based dispatch — rider texts keyword to short code, IVR collects pickup location, system uses precomputed city-grid (H3 hexagons with baseline driver counts by hour, updated daily) to estimate nearest driver. No real-time GPS means double-dispatch prevention uses idempotency tokens per phone number with 5-min TTL. RPO for SMS flow: 24 hours (data freshness). Communication: in-app banner, push notification, SMS blast to all active users, social media post, press release template. GDPR 72-hour notification prepared but not sent (no personal data breach).
+</details>

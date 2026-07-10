@@ -784,31 +784,41 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 ## Chapter Quiz
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What is the primary purpose of KGS in a URL shortener? | Key Generation Service — pre-generates unique keys to avoid write-path DB contention | Key Gateway Service — routes traffic to key servers | Knowledge Graph Service — stores URL metadata | Kernel Gateway Service — OS-level routing | **A** |
+| 2 | Which rate limiting algorithm perfectly tracks the true rate without a boundary problem? | Token Bucket | Fixed Window | Sliding Window Log | Leaky Bucket | **C** |
+| 3 | How does Pastebin achieve deduplication? | Comparing URL paths | SHA-256 content hashing | User-provided unique keys | Sequential ID generation | **B** |
+| 4 | What is the recommended Base62 key length for a URL shortener with 100M URLs/month? | 4 characters | 5 characters | 7 characters | 10 characters | **C** |
+| 5 | In the sliding window counter algorithm, how is the approximate count calculated? | current_count + previous_count × (elapsed/window) | current_count + previous_count | max(current, previous) | min(current, previous) | **A** |
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+---
 
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Practical Takeaways
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+| Takeaway | Application |
+|----------|-------------|
+| Pre-generate unique keys (KGS pattern) to eliminate write-path database contention | URL shorteners, ID generation services, coupon code generators — batch 10K keys per server |
+| Use 301 (permanent) redirect for most URLs, 302 (temporary) for analytics-tracked campaigns | Default: 301 for all URLs. Override to 302 for campaign URLs that need per-click tracking |
+| Sliding window counter in Redis balances accuracy and memory — O(1) storage per user, ~5% error margin | API rate limiting: store two counters (current + previous window), use Lua for atomic check-and-increment |
+| Content addressing via SHA-256 enables free deduplication for write-once read-many workloads | Pastebin, image hosting, file sharing — identical content maps to same storage location |
+| Multi-tier caching (L1 local → L2 Redis → DB) achieves 99%+ hit rates for read-heavy workloads | L1: 10MB LRU per server (sub-ms). L2: Redis Cluster (1-5ms). L3: Cassandra/S3 (10-50ms) |
+| S3 lifecycle policies automate storage tier transitions — Standard → IA → Glacier → Deep Archive | 0-30d: Standard. 31-90d: IA. 91-365d: Glacier. >365d: Deep Archive or delete |
+| Async analytics pipeline (Kafka → ClickHouse) decouples tracking from redirect latency | URL click analytics: publish to Kafka synchronously, consume asynchronously for dashboard queries |
 
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Case Study
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+**Scenario: Scaling a URL Shortener for Enterprise Marketing**
 
-## Concept Comparison
+A marketing analytics platform launches a branded URL shortener for enterprise clients. Each client wants custom domains (`go.acme.com/link`), per-domain analytics dashboards, and click tracking with geographic breakdown. Initial traffic is 10 million URLs/month, growing to 100 million within 6 months.
+
+The team makes three critical architecture decisions. First, they implement KGS with a dedicated MySQL key_pool table. An hourly batch job generates 5 million keys (enough for 12 hours of growth). Each app server maintains a local pool of 10,000 keys, requesting a refill via a transactional stored procedure when the pool drops below 2,000. This eliminates any write-path database contention — key generation is purely an in-memory operation.
+
+Second, they implement a multi-tier read path. L1 is a local LRU cache (10MB, ~5,000 entries) per server — sub-millisecond for hot URLs. L2 is a Redis Cluster (10 shards, 200GB total) — P99 read latency 2ms. A Bloom filter (m/n=9.6, k=7, 6MB per server) sits in front of Cassandra, eliminating 99% of lookups for non-existent short URLs. The combined cache hierarchy achieves a 99.7% hit rate, meaning only 0.3% of reads reach Cassandra.
+
+Third, they deploy a click analytics pipeline using Kafka → ClickHouse. Each redirect publishes a small event to Kafka (short key, timestamp, referrer, user-agent, geo-IP). A ClickHouse consumer batch-inserts events every 5 seconds. Dashboard queries aggregate over 7-day windows with sub-second response times. The entire pipeline adds less than 2ms to the redirect path, and ClickHouse compresses the event stream to 0.5 bytes per event — storing 1 billion clicks/day in under 500MB.
+
+The system handles 3,500 writes/second and 35,000 reads/second at peak with P99 redirect latency under 8ms. Monthly infrastructure cost is $45,000 (vs $280,000 estimated for a naive single-database design).
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
 | Concept | Definition | Key Insight |
@@ -861,6 +871,413 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 <details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
 
 ---
+
+### TypeScript: URL Shortener with Base62, Collision Handling, and Redirection
+
+```typescript
+class URLShortener {
+  private store = new Map<string, string>();
+  private reverseStore = new Map<string, string>();
+  private counter = 1000000;
+  private customAliases = new Map<string, string>();
+  private clicks = new Map<string, number>();
+  private readonly BASE62 = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+  private encodeBase62(num: number): string {
+    if (num === 0) return this.BASE62[0];
+    let result = '';
+    while (num > 0) {
+      result = this.BASE62[num % 62] + result;
+      num = Math.floor(num / 62);
+    }
+    return result;
+  }
+
+  private hashUrl(url: string): string {
+    let h = 0;
+    for (let i = 0; i < url.length; i++) h = ((h << 5) - h + url.charCodeAt(i)) | 0;
+    return (h >>> 0).toString(36);
+  }
+
+  shorten(url: string, customAlias?: string): string {
+    if (this.reverseStore.has(url)) return this.reverseStore.get(url)!;
+
+    let shortId: string;
+    if (customAlias) {
+      if (this.store.has(customAlias) || this.customAliases.has(customAlias)) {
+        throw new Error('Custom alias already in use');
+      }
+      shortId = customAlias;
+      this.customAliases.set(customAlias, url);
+    } else {
+      shortId = this.encodeBase62(this.counter++);
+      while (this.store.has(shortId)) {
+        shortId = this.encodeBase62(this.counter++);
+      }
+    }
+
+    this.store.set(shortId, url);
+    this.reverseStore.set(url, shortId);
+    this.clicks.set(shortId, 0);
+    return shortId;
+  }
+
+  resolve(shortId: string, recordClick = true): { url?: string; statusCode: number } {
+    const url = this.store.get(shortId);
+    if (!url) return { statusCode: 404 };
+    if (recordClick) {
+      this.clicks.set(shortId, (this.clicks.get(shortId) ?? 0) + 1);
+    }
+    return { url, statusCode: 301 };
+  }
+
+  getClickCount(shortId: string): number { return this.clicks.get(shortId) ?? 0; }
+
+  delete(shortId: string): boolean {
+    const url = this.store.get(shortId);
+    if (!url) return false;
+    this.store.delete(shortId);
+    this.reverseStore.delete(url);
+    this.customAliases.delete(shortId);
+    this.clicks.delete(shortId);
+    return true;
+  }
+
+  getStats(): { totalUrls: number; totalClicks: number; topUrls: { id: string; url: string; clicks: number }[] } {
+    const totalClicks = [...this.clicks.values()].reduce((a, b) => a + b, 0);
+    const topUrls = [...this.store.entries()]
+      .map(([id, url]) => ({ id, url, clicks: this.clicks.get(id) ?? 0 }))
+      .sort((a, b) => b.clicks - a.clicks)
+      .slice(0, 10);
+    return { totalUrls: this.store.size, totalClicks, topUrls };
+  }
+
+  detectCollision(shortId: string, url: string): boolean {
+    const existing = this.store.get(shortId);
+    return existing !== undefined && existing !== url;
+  }
+}
+
+function demoURLShortener() {
+  const us = new URLShortener();
+  const id1 = us.shorten('https://example.com/very/long/url/1');
+  console.log(`Shortened to: ${id1}`);
+  const resolved = us.resolve(id1);
+  console.log(`Resolved: ${resolved.url} (${resolved.statusCode})`);
+  const id2 = us.shorten('https://example.com/very/long/url/1');
+  console.log(`Dedup check: ${id1 === id2 ? 'same ID (dedup)' : 'different ID'}`);
+  us.resolve(id1);
+  us.resolve(id1);
+  us.resolve(id2);
+  console.log('Stats:', JSON.stringify(us.getStats()));
+}
+```
+
+### TypeScript: Web Crawler with URL Frontier, Politeness, and Dedup
+
+```typescript
+interface CrawlResult {
+  url: string;
+  statusCode: number;
+  content: string;
+  contentType: string;
+  links: string[];
+  crawlTimeMs: number;
+}
+
+class RobotsTxtParser {
+  private disallowed = new Map<string, string[]>();
+  private crawlDelays = new Map<string, number>();
+
+  parse(domain: string, content: string): void {
+    const disallowed: string[] = [];
+    const lines = content.split('\n');
+    let currentUserAgent = '';
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('User-agent:')) {
+        currentUserAgent = trimmed.split(':')[1].trim();
+      } else if (trimmed.startsWith('Disallow:')) {
+        const path = trimmed.split(':')[1]?.trim();
+        if (path && (currentUserAgent === '*' || currentUserAgent === 'my-crawler')) {
+          disallowed.push(path);
+        }
+      } else if (trimmed.startsWith('Crawl-Delay:')) {
+        const delay = parseInt(trimmed.split(':')[1]?.trim() || '10', 10);
+        this.crawlDelays.set(domain, delay);
+      }
+    }
+    if (disallowed.length > 0) this.disallowed.set(domain, disallowed);
+  }
+
+  isAllowed(domain: string, path: string): boolean {
+    const disallowed = this.disallowed.get(domain);
+    if (!disallowed) return true;
+    return !disallowed.some(d => path.startsWith(d));
+  }
+
+  getCrawlDelay(domain: string): number {
+    return this.crawlDelays.get(domain) ?? 1;
+  }
+}
+
+class BloomFilterDedup {
+  private bits: boolean[];
+  private hashCount: number;
+
+  constructor(size: number, hashCount: number) {
+    this.bits = new Array(size).fill(false);
+    this.hashCount = hashCount;
+  }
+
+  add(url: string): void {
+    for (let i = 0; i < this.hashCount; i++) {
+      this.bits[this.hash(url, i) % this.bits.length] = true;
+    }
+  }
+
+  mightContain(url: string): boolean {
+    for (let i = 0; i < this.hashCount; i++) {
+      if (!this.bits[this.hash(url, i) % this.bits.length]) return false;
+    }
+    return true;
+  }
+
+  private hash(url: string, seed: number): number {
+    let h = seed * 31;
+    for (let i = 0; i < url.length; i++) h = ((h << 5) - h + url.charCodeAt(i)) | 0;
+    return h >>> 0;
+  }
+}
+
+class URLFrontier {
+  private queue: string[] = [];
+  private inFlight = new Set<string>();
+  private seen = new Set<string>();
+  private domainQueues = new Map<string, string[]>();
+  private lastCrawlTime = new Map<string, number>();
+
+  constructor(private politenessDelayMs: number, private maxQueueSize = 100000) {}
+
+  add(url: string, force = false): void {
+    if (this.seen.has(url) && !force) return;
+    if (this.queue.length >= this.maxQueueSize) return;
+    this.seen.add(url);
+    this.queue.push(url);
+    const domain = new URL(url).hostname;
+    if (!this.domainQueues.has(domain)) this.domainQueues.set(domain, []);
+    this.domainQueues.get(domain)!.push(url);
+  }
+
+  addBatch(urls: string[]): void {
+    for (const url of urls) this.add(url);
+  }
+
+  async next(): Promise<string | null> {
+    const now = Date.now();
+    for (let i = 0; i < this.queue.length; i++) {
+      const url = this.queue[i];
+      if (this.inFlight.has(url)) continue;
+      const domain = new URL(url).hostname;
+      const lastCrawl = this.lastCrawlTime.get(domain) ?? 0;
+      if (now - lastCrawl < this.politenessDelayMs) continue;
+      this.queue.splice(i, 1);
+      this.inFlight.add(url);
+      this.lastCrawlTime.set(domain, now);
+      return url;
+    }
+    return null;
+  }
+
+  complete(url: string): void {
+    this.inFlight.delete(url);
+  }
+
+  size(): number { return this.queue.length; }
+  inFlightCount(): number { return this.inFlight.size; }
+}
+
+class WebCrawler {
+  private frontier: URLFrontier;
+  private dedup: BloomFilterDedup;
+  private robotsParser = new RobotsTxtParser();
+  private visited = 0;
+  private errors = 0;
+  private startTime = 0;
+
+  constructor(
+    private seedUrls: string[],
+    private maxPages: number,
+    private maxConcurrency: number,
+    politenessDelayMs = 1000
+  ) {
+    this.frontier = new URLFrontier(politenessDelayMs);
+    this.dedup = new BloomFilterDedup(1000000, 7);
+    this.frontier.addBatch(seedUrls);
+  }
+
+  async crawl(): Promise<{ results: CrawlResult[]; stats: any }> {
+    this.startTime = Date.now();
+    const results: CrawlResult[] = [];
+    const active: Promise<void>[] = [];
+
+    for (let i = 0; i < this.maxConcurrency; i++) {
+      active.push(this.crawlWorker(results));
+    }
+
+    await Promise.all(active);
+    return {
+      results,
+      stats: {
+        visited: this.visited,
+        errors: this.errors,
+        durationMs: Date.now() - this.startTime,
+        frontierSize: this.frontier.size(),
+      },
+    };
+  }
+
+  private async crawlWorker(results: CrawlResult[]): Promise<void> {
+    while (this.visited < this.maxPages) {
+      const url = await this.frontier.next();
+      if (!url) break;
+
+      const domain = new URL(url).hostname;
+      if (!this.robotsParser.isAllowed(domain, new URL(url).pathname)) {
+        this.frontier.complete(url);
+        continue;
+      }
+
+      if (this.dedup.mightContain(url)) {
+        this.frontier.complete(url);
+        continue;
+      }
+
+      const start = Date.now();
+      try {
+        const response = await this.fetchUrl(url);
+        const crawlTime = Date.now() - start;
+        this.dedup.add(url);
+        this.visited++;
+
+        const links = this.extractLinks(url, response.content);
+        const result: CrawlResult = {
+          url, statusCode: response.statusCode,
+          content: response.content.substring(0, 1000),
+          contentType: response.contentType,
+          links, crawlTimeMs: crawlTime,
+        };
+        results.push(result);
+
+        const filteredLinks = links.filter(l => {
+          try {
+            return !this.dedup.mightContain(l) &&
+                   this.robotsParser.isAllowed(new URL(l).hostname, new URL(l).pathname);
+          } catch { return false; }
+        });
+        this.frontier.addBatch(filteredLinks);
+      } catch (err) {
+        this.errors++;
+      }
+      this.frontier.complete(url);
+    }
+  }
+
+  private async fetchUrl(url: string): Promise<{ statusCode: number; content: string; contentType: string }> {
+    await new Promise(r => setTimeout(r, 5 + Math.random() * 10));
+    return {
+      statusCode: 200,
+      content: `<html><body><a href="${url}/page1">Link 1</a><a href="${url}/page2">Link 2</a></body></html>`,
+      contentType: 'text/html',
+    };
+  }
+
+  private extractLinks(baseUrl: string, html: string): string[] {
+    const links: string[] = [];
+    const regex = /href="([^"]+)"/g;
+    let match;
+    while ((match = regex.exec(html)) !== null) {
+      try {
+        links.push(new URL(match[1], baseUrl).href);
+      } catch { continue; }
+    }
+    return links;
+  }
+}
+
+async function demoCrawler() {
+  const crawler = new WebCrawler(['https://example.com'], 10, 3, 500);
+  const result = await crawler.crawl();
+  console.log(`Crawled ${result.stats.visited} pages in ${result.stats.durationMs}ms with ${result.stats.errors} errors`);
+  for (const r of result.results.slice(0, 3)) {
+    console.log(`  ${r.url} (${r.statusCode}, ${r.crawlTimeMs}ms, ${r.links.length} links)`);
+  }
+}
+```
+
+### URL Shortener Read/Write Path Architecture
+
+```mermaid
+flowchart TB
+    subgraph USERS["Users"]
+        USER_CREATE["User creates short URL<br/>POST /shorten"]
+        USER_CLICK["User clicks short URL<br/>GET /abc123"]
+    end
+
+    subgraph WRITE_PATH["Write Path"]
+        LB_W["Load Balancer"]
+        APP_W["App Server<br/>Validate URL<br/>Check custom alias"]
+        KGS["Key Generation Service<br/>MySQL key_pool table<br/>Pre-generates 1M keys/day"]
+        COLLISION["Collision Check<br/>Bloom Filter + DB lookup"]
+        CASSANDRA_W["Cassandra<br/>Write shard<br/>RF=3, CL=QUORUM"]
+        REDIS_W["Redis Cache<br/>Write-through<br/>TTL=24h"]
+        ANALYTICS_QUEUE["Kafka<br/>Analytics event<br/>Async tracking"]
+    end
+
+    subgraph READ_PATH["Read Path"]
+        LB_R["Load Balancer<br/>Geo-aware"]
+        APP_R["App Server<br/>Parse short ID<br/>301 vs 302 decision"]
+        L1_CACHE["L1 Cache<br/>Local LRU<br/>10MB / 5000 entries"]
+        L2_CACHE["L2 Cache<br/>Redis Cluster<br/>200GB / 100M entries"]
+        BLOOM_FILTER["Bloom Filter<br/>m=48M bits, k=7<br/>Filter non-existent keys"]
+        CASSANDRA_R["Cassandra<br/>Read replica<br/>CL=ONE (eventual)"]
+        LOG_CLICK["Click Logger<br/>Kafka → ClickHouse"]
+    end
+
+    subgraph RESPONSE["Response"]
+        REDIRECT["301/302 Redirect<br/>Location: long URL"]
+        ANALYTICS["Analytics Pipeline<br/>ClickHouse Dashboard"]
+    end
+
+    USER_CREATE --> LB_W --> APP_W
+    APP_W --> KGS
+    APP_W --> COLLISION
+    APP_W --> CASSANDRA_W
+    CASSANDRA_W --> REDIS_W
+    REDIS_W --> ANALYTICS_QUEUE
+
+    USER_CLICK --> LB_R --> APP_R
+    APP_R --> L1_CACHE
+    L1_CACHE -->|"miss"| L2_CACHE
+    L2_CACHE -->|"miss"| BLOOM_FILTER
+    BLOOM_FILTER -->|"might exist"| CASSANDRA_R
+    CASSANDRA_R --> L2_CACHE
+    L2_CACHE --> L1_CACHE
+    L1_CACHE --> APP_R
+    APP_R --> REDIRECT
+    APP_R --> LOG_CLICK
+    LOG_CLICK --> ANALYTICS
+
+    classDef user fill:#E3F2FD,color:#1565C0
+    classDef write fill:#FFCDD2,color:#C62828
+    classDef read fill:#C8E6C9,color:#2E7D32
+    classDef cache fill:#FFF3E0,color:#E65100
+    classDef resp fill:#F3E5F5,color:#7B1FA2
+    class USER_CREATE,USER_CLICK user
+    class LB_W,APP_W,KGS,COLLISION,CASSANDRA_W,REDIS_W,ANALYTICS_QUEUE write
+    class LB_R,APP_R,L1_CACHE,L2_CACHE,BLOOM_FILTER,CASSANDRA_R,LOG_CLICK read
+    class REDIRECT,ANALYTICS resp
+```
 
 ### TypeScript: URL Shortener, Rate Limiter, and Pastebin
 
@@ -946,30 +1363,30 @@ class PastebinStore {
 ## Exercises
 
 ### Review Questions
-
-1. What is the boundary problem in fixed-window rate limiting, and how does sliding window counter address it?
-
-2. Explain why KGS pre-generates keys in batches rather than on-demand. What problem does this solve?
-
-3. Compare 301 and 302 redirects for URL shortening. When would you use each?
-
-4. How does content addressing via SHA-256 enable deduplication in Pastebin? What happens if two users paste identical content but one sets it to private?
-
-5. What is the birthday paradox concern with truncated MD5 hashes for URL shortener keys, and what alternatives avoid it entirely?
-
-6. Compare token bucket and sliding window counter for rate limiting. Under what traffic pattern does each algorithm perform better?
+<details><summary>Solution</summary>1. Boundary problem: in fixed-window (e.g., 100 req/min at :00), a user can send 100 requests at :59 and 100 at 1:01 — 200 requests in 2 seconds. Sliding window counter fixes this by tracking the current and previous window counters and computing a weighted average: `current + previous * (elapsed/window_size)`. This approximates the true sliding window rate within ~5% error.
+2. KGS pre-generates keys to eliminate write-path database contention. On-demand generation requires a database uniqueness check per request (SELECT + INSERT). Batch pre-generation (10K keys per batch, atomically marked as used) uses a single transaction for 10K keys, reducing DB writes by 10,000×. The app server then hands out keys from memory with zero database overhead.
+3. 301 (Moved Permanently): browser-cached, never contacts server again for that URL. Use for permanent short URLs where analytics tracking is not needed. 302 (Found): not cached, passes through server on every click. Use for custom short URLs, campaign URLs, or any URL requiring per-click analytics. Trade-off: 301 reduces server load by 80%+ but loses analytics granularity.
+4. SHA-256 of content produces a 64-character hex digest used as S3 object key. If two users paste identical content with the same visibility (public), the system returns the same URL — free deduplication. If one user sets their paste to private, the hash is salted with user_id: `SHA-256(content + user_id)` → different hash → separate storage. The public paste remains deduplicated; the private paste creates a new entry.
+5. Birthday paradox: with truncated MD5 (7 bytes = 56 bits), the probability of a collision reaches 50% at ~2^28 ≈ 268 million keys. For a system with billions of keys, collisions are guaranteed. Alternatives: (a) Base62 from distributed counter — zero collision risk. (b) Full SHA-256 (128 bits vs 56) — collision probability is negligible at trillions of keys. (c) Counter-based encoding (Snowflake-style).
+6. Token bucket: allows bursts up to bucket size (tokens accumulate during idle). Best for traffic with natural bursts (API calls from user interactions). Sliding window counter: enforces exact rate over window. Best when the rate limit is strict (SLA enforcement, paid API tiers). Token bucket overshoots after idle periods; sliding window is always accurate.</details>
 
 ### Application Problems
-
-1. **URL Shortener Custom Domain**: Your URL shortener now supports custom domains (e.g., `go.acme.com/link`). Each domain must have an independent key space. Design the key generation strategy for 10,000 custom domains, each generating 10K URLs/month. How do you handle domain-specific analytics, SSL certificate management, and DNS configuration for each domain?
-
-2. **Multi-Layer Rate Limiter**: Design a hierarchical rate limiter that enforces: 10 req/s per endpoint, 100 req/s per user, 1000 req/s per IP, and 100,000 req/s global. Show the Redis key schema and Lua script for checking all four levels atomically. What happens when one layer rate-limits but the others do not?
-
-3. **Pastebin Search**: Users want to search their pastes by content or language. Design a search indexing pipeline that handles 1M new pastes/day with &lt;1 second indexing latency. Consider Elasticsearch, sharding strategy, and re-indexing of existing pastes when language detection changes.
-
-4. **Pastebin Rate Limit and Abuse Prevention**: Design a comprehensive abuse prevention system for Pastebin that includes: per-IP creation limits (10 pastes/hour for unauthenticated users), content-based deduplication limits (prevent the same content from being uploaded by different users to evade filters), automated content scanning with ClamAV and custom regex patterns for credential leaks, and a DMCA takedown workflow with automated re-notification of affected users. How do you scale content scanning to 1M uploads/day without blocking legitimate uploads?
+<details><summary>Solution</summary>1. **Custom domains**: Each domain gets a key_pool table shard with a prefix (e.g., `acme_keys`). Domain-specific KGS generates keys with a domain prefix: `acme:aB3xK`. Domain-specific Redis cache shard (keyed by domain prefix). Analytics: partition ClickHouse table by domain_id, each domain queries its own partition. SSL: use ACME/LetsEncrypt with automatic certificate provisioning via DNS-01 challenge when domain is registered. DNS: CNAME each custom domain to the shared URL shortener domain (e.g., `go.acme.com CNAME shortener.com`).
+2. **Multi-layer rate limiter**: Redis key schema: `rl:{endpoint}:{user}:{ip}:window`. Lua script: check endpoint (10 req/s), then user (100 req/s), then IP (1000 req/s), then global (100000 req/s) — any layer exceeding limit returns 429 with layer identifier. If endpoint layer rate-limits, the request is rejected even if the user and IP layers have capacity — this is correct: the most restrictive limit always applies. Return headers indicate which layer triggered the limit.
+3. **Pastebin search**: Elasticsearch cluster with 3 nodes. Index mapping: `{ content: text, title: text, language: keyword, created_at: date, content_hash: keyword }`. Daily index (1M docs/day ≈ 10GB), 30-day retention = 30 indexes. Re-index: when language detection model updates, run a batch job that queries pastes created after the model version date, re-detects language, updates ES documents. Use reindex API with slicing for parallelization. Search latency: <100ms P99 for full-text queries.
+4. **Abuse prevention**: Tiers: unauthenticated (10/hr per IP), email-verified (50/hr), pro (500/hr). Content scanning: run ClamAV and regex scanner asynchronously via SQS queue. If scan takes >5 seconds, return the paste immediately and mark as "scanning" — if scan detects abuse, replace with 410 Gone. To scale scanning: lambda workers auto-scale to 1000 concurrent instances. Dedup: check SHA-256 against recent 24-hour window — if same hash appears >100 times in an hour from different IPs, rate-limit further uploads of that content.</details>
 
 ### Challenge Problem
+<details><summary>Solution</summary>**Distributed Pastebin with Collaborative Editing**: 
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Distributed Pastebin with Collaborative Editing**: Extend the basic Pastebin to support real-time collaborative editing (Google Docs style). Users share a paste URL and can simultaneously edit. Each edit creates a new version with Operational Transform (OT) or CRDTs for conflict resolution. Design the version storage (content-delta chain vs full-copy-per-version), OT transformation server, real-time sync via WebSocket, and the merge strategy when users paste content with existing hashes. How do deduplication, content addressing, and real-time collaboration interact? What happens to the SHA-256 content address when two users both edit the same document differently?
+Version storage: Use a content-delta chain (edit operations stored as operational transforms) rather than full copies per version. Each version stores: base snapshot (every 100 edits) + forward deltas. This reduces storage from O(N × content_size) to O(N × avg_delta_size). For source code pastebins, deltas average 50 bytes vs 10KB full copies.
+
+OT server: Stateless WebSocket server that receives edit operations from all collaborators, transforms concurrent operations against each other, and broadcasts the transformed result. Use a centralized OT sequencer (Redis Stream) to assign total order to edits. Each edit has: paste_id, user_id, operation (insert/delete with position), client_version, server_version.
+
+Real-time sync: WebSocket connections to the nearest edge PoP. Each PoP has a local Redis pub-sub channel per paste. The OT server subscribes to all active paste channels. When an edit arrives, the server transforms it, appends to the event log, and publishes the transformed operation back to the channel for all clients.
+
+Merge strategy: When two users edit the same document differently, OT ensures both edits are applied in a consistent order. If conflicts are semantically unresolvable (both users edit the same word differently), the server picks the first operation received (by server version) and notifies the second user of the conflict.
+
+Interactions with deduplication: Real-time editing breaks content-addressed deduplication because the SHA-256 hash changes with every edit. Solution: use a "base content hash" for the initial paste (enables dedup for the initial upload), and a separate "live editing session ID" for ongoing edits. When the session ends (all users disconnect), compute the final SHA-256 and store as a new paste version. The original base hash still deduplicates with any identical future uploads.
+
+Two users editing differently: The SHA-256 content address is the final resolved hash after applying all OT-transformed edits in sequence. Each user sees the same final state (OT guarantees convergence), so the SHA-256 is identical after all edits are applied. Intermediate states differ but are not stored as content-addressed objects — they exist only as transient delta streams in the OT server's memory.</details>

@@ -387,33 +387,38 @@ This worker runs in 330+ locations globally. JWT verification completes in ~200�
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | How many logical root servers exist in the DNS hierarchy? | 7 | 13 | 21 | 26 | **B** |
+| 2 | Which DNS record type cannot coexist with other record types at the same name? | A | MX | CNAME | NS | **C** |
+| 3 | What is the primary benefit of origin shielding in a CDN? | Reduced latency for users | Prevents thundering herd on origin | Lower bandwidth costs | Improved image compression | **B** |
+| 4 | Which DDoS mitigation technique distributes attack traffic across many data centers? | Rate limiting | WAF rules | Anycast routing | Bot detection | **C** |
+| 5 | What distinguishes Cloudflare Workers from Lambda@Edge? | Higher memory limit | V8 isolates instead of containers | Runs on Python only | Requires dedicated servers | **B** |
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+---
 
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Practical Takeaways
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+| Takeaway | Application |
+|----------|-------------|
+| Use short TTLs (30-300s) for failover-critical records; long TTLs (86400s+) for static records | DNS-based leader election: 5s TTL. Static assets: 86400s TTL with content-hashed URLs for instant invalidation |
+| Cache-Control: s-maxage overrides max-age for CDNs; use no-cache for sensitive data | Set s-maxage=0 for authenticated API responses; s-maxage=86400 for public static assets |
+| Origin shielding prevents thundering herd — always enable for popular content | Configure a single shield region per origin; all edge misses route through the shield |
+| Edge computing (Workers/Lambda@Edge) handles auth, rewrite, A/B testing at sub-ms overhead | Move JWT validation from origin to edge: validate token, inject user headers, forward to origin |
+| Anycast routing provides automatic DDoS absorption — traffic spreads across all PoPs | Advertise same IP from all PoPs via BGP; each PoP absorbs its share of attack traffic |
+| Image optimization at edge reduces bandwidth by 50-87% | Use on-the-fly AVIF/WebP conversion with quality negotiation via Accept header |
+| WAF + rate limiting at edge blocks attacks before they reach origin | Deploy OWASP Core Ruleset with anomaly scoring; rate-limit per IP at 100 req/min |
 
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Case Study
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+**Scenario: Global Video Streaming Platform**
 
-## Concept Comparison
+A video streaming service with 200 million monthly active users deploys content across 50 edge PoPs worldwide. The initial architecture uses a simple DNS round-robin: all users receive one of 50 IPs randomly. This causes severe problems: a user in Tokyo is routed to a US East Coast PoP (250ms latency), a popular video release triggers a thundering herd on the origin (50,000 requests/second for a single 4K trailer), and a DNS-based DDoS attack on the apex domain takes down the entire service for 45 minutes.
+
+The team redesigns the architecture in three phases. First, they migrate to anycast DNS (Cloudflare) so every user automatically reaches the nearest PoP. Second, they implement an origin shield: a single shield PoP in us-east-1 intercepts all cache misses. Third, they deploy edge workers (Cloudflare Workers) for request-level routing: each worker checks a latency map in EdgeKV, selects the optimal origin region, and sets a `x-region` header for geo-specific content. Cache hit ratio improves from 45% to 92%, P95 latency drops from 850ms to 45ms, and the 3 Tbps DDoS attack that would have saturated a single origin is now absorbed across 330+ PoPs with no user impact.
+
+The edge workers also handle A/B testing: 5% of users see a new UI variant, validated via JWT tokens at the edge before any origin request. Image thumbnails are resized on-the-fly from a single 4K source, saving 80% bandwidth compared to pre-generating 12 variants. The total infrastructure cost decreases by 40% because fewer origin servers are needed, even as traffic grows 3× year-over-year.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
@@ -847,6 +852,323 @@ quadrantChart
 ---
 
 
+### TypeScript: DNS Resolver with Iterative Walk and Latency Routing
+
+```typescript
+class DNSCacheEntry {
+  constructor(public ip: string, public expiresAt: number) {}
+  isExpired(): boolean { return Date.now() > this.expiresAt; }
+}
+
+class DNSServer {
+  constructor(
+    public name: string,
+    public ip: string,
+    public latencyMs: number,
+    public zone: Map<string, { type: string; value: string; ttl: number }[]>
+  ) {}
+}
+
+class DNSResolver {
+  private cache = new Map<string, DNSCacheEntry>();
+  private rootServers: DNSServer[];
+  private tldServers: Map<string, DNSServer> = new Map();
+  private authServers: Map<string, DNSServer> = new Map();
+  private latencyMap = new Map<string, number>();
+
+  constructor() {
+    this.rootServers = [
+      new DNSServer('a.root-servers.net', '198.41.0.4', 15, new Map()),
+      new DNSServer('b.root-servers.net', '199.9.14.201', 22, new Map()),
+    ];
+    this.buildInitialZones();
+  }
+
+  private buildInitialZones(): void {
+    const comTLD = new DNSServer('a.gtld-servers.net', '192.5.6.30', 25, new Map());
+    comTLD.zone.set('example.com', [{ type: 'NS', value: 'ns1.example.com', ttl: 86400 }]);
+    this.tldServers.set('com', comTLD);
+
+    const authNS = new DNSServer('ns1.example.com', '93.184.216.34', 10, new Map());
+    authNS.zone.set('example.com', [
+      { type: 'A', value: '93.184.216.34', ttl: 3600 },
+      { type: 'AAAA', value: '2606:2800:220:1:248:1893:25c8:1946', ttl: 3600 },
+    ]);
+    this.authServers.set('example.com', authNS);
+  }
+
+  registerTLD(tld: string, server: DNSServer): void { this.tldServers.set(tld, server); }
+  registerAuth(domain: string, server: DNSServer): void { this.authServers.set(domain, server); }
+  recordLatency(serverName: string, ms: number): void { this.latencyMap.set(serverName, ms); }
+
+  private pickLowestLatency(servers: DNSServer[]): DNSServer {
+    let best = servers[0];
+    let bestLat = this.latencyMap.get(best.name) ?? best.latencyMs;
+    for (const s of servers) {
+      const lat = this.latencyMap.get(s.name) ?? s.latencyMs;
+      if (lat < bestLat) { best = s; bestLat = lat; }
+    }
+    return best;
+  }
+
+  async resolve(domain: string, type = 'A', recursive = true): Promise<{ ip: string; hops: string[]; timeMs: number }> {
+    const cacheKey = `${domain}:${type}`;
+    const cached = this.cache.get(cacheKey);
+    if (cached && !cached.isExpired()) return { ip: cached.ip, hops: ['cache'], timeMs: 0 };
+    const hops: string[] = [];
+    const start = Date.now();
+    let result: string | null = null;
+
+    if (recursive) {
+      for (const root of this.rootServers) {
+        hops.push(`Query root ${root.name} (${root.ip})`);
+      }
+      const domainParts = domain.split('.');
+      const tldName = domainParts[domainParts.length - 1];
+      const tld = this.tldServers.get(tldName);
+      if (!tld) throw new Error(`No TLD server for .${tldName}`);
+      hops.push(`Query TLD ${tld.name} for ${domain}`);
+
+      const auth = this.authServers.get(domain);
+      if (!auth) throw new Error(`No authoritative server for ${domain}`);
+      hops.push(`Query auth ${auth.name} for ${domain} ${type} record`);
+
+      const records = auth.zone.get(domain);
+      const match = records?.find(r => r.type === type);
+      if (!match) throw new Error(`No ${type} record for ${domain}`);
+      result = match.value;
+      hops.push(`Found ${type} record: ${result} (TTL=${match.ttl}s)`);
+
+      this.cache.set(cacheKey, new DNSCacheEntry(result, Date.now() + match.ttl * 1000));
+    } else {
+      const bestRoot = this.pickLowestLatency(this.rootServers);
+      hops.push(`Query root ${bestRoot.name} (latency ${bestRoot.latencyMs}ms)`);
+      const tld = this.tldServers.get(domain.split('.').pop()!);
+      const bestTLD = this.pickLowestLatency([tld!]);
+      hops.push(`Query TLD ${bestTLD.name}`);
+      const auth = this.authServers.get(domain)!;
+      hops.push(`Query auth ${auth.name}`);
+      const match = auth.zone.get(domain)?.find(r => r.type === type);
+      if (!match) throw new Error(`Not found`);
+      result = match.value;
+    }
+
+    return { ip: result!, hops, timeMs: Date.now() - start };
+  }
+
+  purgeCache(pattern?: string): void {
+    if (!pattern) { this.cache.clear(); return; }
+    for (const [key] of this.cache) {
+      if (key.includes(pattern)) this.cache.delete(key);
+    }
+  }
+}
+
+async function demoDNS() {
+  const resolver = new DNSResolver();
+  const result = await resolver.resolve('example.com', 'A');
+  console.log(`Resolved to ${result.ip} in ${result.timeMs}ms`);
+  console.log(`Hops: ${result.hops.join(' → ')}`);
+  const cached = await resolver.resolve('example.com', 'A');
+  console.log(`Cached result: ${cached.ip} (${cached.hops[0]}, ${cached.timeMs}ms)`);
+}
+```
+
+### TypeScript: CDN Edge Node with Cache Hierarchy and Purge
+
+```typescript
+class CacheEntry {
+  hits = 0;
+  constructor(
+    public content: string,
+    public contentType: string,
+    public ttl: number,
+    public cachedAt: number,
+    public sizeBytes: number,
+    public tags: string[]
+  ) {}
+  isExpired(): boolean { return Date.now() - this.cachedAt > this.ttl * 1000; }
+}
+
+class CDNEdgeNode {
+  private l1Cache = new Map<string, CacheEntry>();
+  private l2Cache = new Map<string, CacheEntry>();
+  private pendingFetches = new Map<string, Promise<CacheEntry>>();
+  public hits = { l1: 0, l2: 0 };
+  public misses = 0;
+
+  constructor(
+    private originUrl: string,
+    private l1MaxSize: number,
+    private l2MaxSize: number,
+    private originFetchLatencyMs: number
+  ) {}
+
+  async get(path: string): Promise<{ content: string; contentType: string; from: string }> {
+    const l1Entry = this.l1Cache.get(path);
+    if (l1Entry && !l1Entry.isExpired()) {
+      l1Entry.hits++;
+      this.hits.l1++;
+      return { content: l1Entry.content, contentType: l1Entry.contentType, from: 'L1' };
+    }
+    const l2Entry = this.l2Cache.get(path);
+    if (l2Entry && !l2Entry.isExpired()) {
+      l2Entry.hits++;
+      this.hits.l2++;
+      this.promoteToL1(path, l2Entry);
+      return { content: l2Entry.content, contentType: l2Entry.contentType, from: 'L2' };
+    }
+    return this.fetchFromOrigin(path);
+  }
+
+  private async fetchFromOrigin(path: string): Promise<{ content: string; contentType: string; from: string }> {
+    if (this.pendingFetches.has(path)) {
+      const entry = await this.pendingFetches.get(path)!;
+      return { content: entry.content, contentType: entry.contentType, from: 'origin-coalesced' };
+    }
+    const fetchPromise = this.originPull(path);
+    this.pendingFetches.set(path, fetchPromise);
+    try {
+      const entry = await fetchPromise;
+      this.l1Cache.set(path, entry);
+      this.l2Cache.set(path, entry);
+      this.misses++;
+      this.evictIfNeeded();
+      return { content: entry.content, contentType: entry.contentType, from: 'origin' };
+    } finally {
+      this.pendingFetches.delete(path);
+    }
+  }
+
+  private async originPull(path: string): Promise<CacheEntry> {
+    await new Promise(r => setTimeout(r, this.originFetchLatencyMs));
+    const mockContent = `content-for-${path}-${Date.now()}`;
+    return new CacheEntry(mockContent, 'text/plain', 3600, Date.now(), mockContent.length, ['default']);
+  }
+
+  private promoteToL1(path: string, entry: CacheEntry): void {
+    if (!this.l1Cache.has(path)) {
+      this.l1Cache.set(path, entry);
+      this.evictIfNeeded();
+    }
+  }
+
+  private evictIfNeeded(): void {
+    for (const [key, entry] of this.l1Cache) {
+      if (entry.isExpired()) this.l1Cache.delete(key);
+    }
+    while (this.getL1Size() > this.l1MaxSize) this.evictLRU(this.l1Cache);
+    while (this.getL2Size() > this.l2MaxSize) this.evictLRU(this.l2Cache);
+  }
+
+  private getL1Size(): number {
+    let s = 0;
+    for (const e of this.l1Cache.values()) s += e.sizeBytes;
+    return s;
+  }
+
+  private getL2Size(): number {
+    let s = 0;
+    for (const e of this.l2Cache.values()) s += e.sizeBytes;
+    return s;
+  }
+
+  private evictLRU(cache: Map<string, CacheEntry>): void {
+    let oldest = Infinity;
+    let oldestKey = '';
+    for (const [key, entry] of cache) {
+      const lastAccess = Date.now() - entry.cachedAt;
+      if (lastAccess < oldest) { oldest = lastAccess; oldestKey = key; }
+    }
+    if (oldestKey) cache.delete(oldestKey);
+  }
+
+  purgeByTag(tag: string): number {
+    let count = 0;
+    for (const [key, entry] of this.l1Cache) {
+      if (entry.tags.includes(tag)) { this.l1Cache.delete(key); count++; }
+    }
+    for (const [key, entry] of this.l2Cache) {
+      if (entry.tags.includes(tag)) { this.l2Cache.delete(key); count++; }
+    }
+    return count;
+  }
+
+  purgeAll(): void { this.l1Cache.clear(); this.l2Cache.clear(); }
+
+  getStats(): { l1Size: number; l2Size: number; hitRate: number } {
+    const total = this.hits.l1 + this.hits.l2 + this.misses;
+    return {
+      l1Size: this.l1Cache.size,
+      l2Size: this.l2Cache.size,
+      hitRate: total > 0 ? (this.hits.l1 + this.hits.l2) / total : 0,
+    };
+  }
+}
+
+async function demoCDN() {
+  const cdn = new CDNEdgeNode('https://origin.example.com', 1024 * 1024, 10 * 1024 * 1024, 50);
+  let r = await cdn.get('/images/photo.jpg');
+  console.log(`First request: ${r.from}`);
+  r = await cdn.get('/images/photo.jpg');
+  console.log(`Second request: ${r.from} (L1 hit)`);
+  r = await cdn.get('/images/photo.jpg');
+  console.log(`Third request: ${r.from} (L1 hit)`);
+  cdn.purgeByTag('default');
+  r = await cdn.get('/images/photo.jpg');
+  console.log(`After purge: ${r.from} (origin miss)`);
+  console.log('CDN Stats:', cdn.getStats());
+}
+```
+
+### DNS Resolution Flow with Subgraphs
+
+```mermaid
+flowchart TB
+    subgraph CLIENT["Client Side"]
+        BROWSER["Browser / App<br/>Stub Resolver"]
+        OS_CACHE["OS Cache<br/>systemd-resolved / nscd"]
+        APP_CACHE["Application Cache<br/>DNS.resolve()"]
+    end
+
+    subgraph RECURSIVE["Recursive Resolver"]
+        RESOLVER["Recursive Resolver<br/>8.8.8.8 / 1.1.1.1"]
+        RES_CACHE["Resolver Cache<br/>Full TTL"]
+        NEG_CACHE["Negative Cache<br/>NXDOMAIN / NODATA"]
+    end
+
+    subgraph HIERARCHY["DNS Hierarchy"]
+        ROOT["Root Servers<br/>a.root-servers.net (198.41.0.4)<br/>13 logical zones, anycast"]
+        TLD["TLD Servers<br/>.com (Verisign)<br/>.org (PIR)"]
+        AUTH["Authoritative Servers<br/>Route53 / CloudDNS<br/>Zone: example.com"]
+    end
+
+    subgraph RESPONSE["Response Types"]
+        A_REC["A Record<br/>93.184.216.34"]
+        AAAA_REC["AAAA Record<br/>2606:2800:220:1:..."]
+        CNAME_REC["CNAME Record<br/>www → example.com"]
+        MX_REC["MX Record<br/>mail.example.com"]
+    end
+
+    BROWSER --> OS_CACHE --> RESOLVER
+    RESOLVER --> RES_CACHE
+    RES_CACHE --> NEG_CACHE
+    RESOLVER --> ROOT
+    ROOT -->|"Referral: .com NS"| TLD
+    TLD -->|"Referral: example.com NS"| AUTH
+    AUTH -->|"Answer: A 93.184.216.34"| RESOLVER
+    RESOLVER --> A_REC & CNAME_REC & MX_REC
+
+    classDef client fill:#E3F2FD,color:#1565C0
+    classDef rec fill:#F3E5F5,color:#7B1FA2
+    classDef hier fill:#E8F5E9,color:#2E7D32
+    classDef resp fill:#FFF3E0,color:#E65100
+    class BROWSER,OS_CACHE,APP_CACHE client
+    class RESOLVER,RES_CACHE,NEG_CACHE rec
+    class ROOT,TLD,AUTH hier
+    class A_REC,AAAA_REC,CNAME_REC,MX_REC resp
+```
+
 ### Implementation: DNS, CDN, and Edge Computing
 
 ```typescript
@@ -989,28 +1311,27 @@ export { Cache, Logger, computeHash, CacheEntry }
 ## Exercises
 
 ### Review Questions
-
-1. Trace the DNS resolution path for `mail.example.org` from an empty resolver cache, listing all query types and responses at each delegation step.
-2. Explain why the `CNAME` record cannot coexist with other record types at the zone apex (example.com without www). What are the workarounds?
-3. Compare DNS round-robin with anycast routing for load balancing globally. Under what conditions does round-robin produce uneven load distribution?
-4. A CDN edge PoP receives a cache MISS for a popular image and forwards the request to the origin. Describe the sequence of cache population, including the role of Cache-Control headers, ETag validation, and the shield POP mechanism.
-5. Why does Cloudflare Workers use V8 isolates rather than containers? What are the security and performance implications of this choice?
+<details><summary>Solution</summary>1. (1) Stub resolver queries recursive resolver for mail.example.org. (2) Resolver queries root server → referral to .org TLD. (3) Resolver queries .org TLD server → referral to example.org authoritative NS. (4) Resolver queries example.org authoritative → returns A record for mail.example.org (or CNAME + A). Each step: query type NS → referral, final query type A → answer. Total: 4 queries, ~80ms.
+2. CNAME is an alias that replaces the query name entirely. If other records exist at the same name, query resolution becomes ambiguous. Workarounds: ALIAS/ANAME record (DNS provider resolves at authoritative server), use a subdomain (www.example.com), or serve the apex from a web server that redirects to www.
+3. Round-robin returns IPs in order regardless of server health or geographic proximity. Anycast routes via BGP to the topologically nearest location. Round-robin produces uneven distribution when client resolvers are not uniformly distributed (e.g., 80% of traffic from Google's 8.8.8.8), or when servers have different capacities.
+4. (1) Edge receives request, checks cache → MISS. (2) Forward to shield PoP → MISS. (3) Shield fetches from origin. Origin returns 200 with Cache-Control: public, max-age=86400, ETag: "abc123". (4) Shield caches response. (5) Shield returns to edge. (6) Edge caches and serves user. Subsequent requests: edge HIT. After TTL expires: edge sends If-None-Match to shield → 304 Not Modified → serve cached content.
+5. V8 isolates are lighter than containers: startup in microseconds vs milliseconds, share the same OS process, memory isolation via V8 heap sandbox. Security: each isolate has no access to other isolates' memory. Performance: near-zero cold start, 50-100µs per request overhead. Limitation: no arbitrary system calls, limited to 128MB memory, 50ms CPU per request.</details>
 
 ### Application Problems
-
-1. **DNS performance analysis**: Given a web page with 120 resources (HTML, CSS, JS, images) from 8 different domains, calculate the total DNS resolution time assuming: recursive resolver RTT = 20ms, each domain requires 1-3 delegation queries (each 20ms), all domains cached at resolver after first hit. Complete page load at 4G (50ms RTT). What is the DNS contribution as a percentage of total load time?
-2. **Anycast capacity planning**: A service receives 500 Gbps of legitimate traffic and wants to absorb up to 3 Tbps of DDoS attacks. Each data center has 100 Gbps of uplink capacity. Cloudflare has 330 PoPs, Akamai has 4,150. Calculate the minimum number of PoPs needed for each CDN to absorb a 3 Tbps attack while still handling 500 Gbps of clean traffic.
-3. **Cache invalidation strategy**: Design a cache invalidation scheme for a static site builder that generates HTML, CSS, and JS files with content-hashed filenames. The site also has API responses cached at edge with 60-second TTL. Specify the Cache-Control headers for each resource type and the purge strategy after a new deployment.
-4. **Edge pricing analysis**: A site serves 10 million requests/day with a 30% cache hit ratio. Average object size is 200KB. Origin egress costs $0.09/GB, CDN egress costs $0.02/GB with cache misses fetching from origin. Lambda@Edge costs $0.0000001/request. Calculate: (a) daily origin egress cost without CDN, (b) daily CDN + origin cost with current cache hit ratio, (c) cost at 90% hit ratio. How much would edge computing (100k requests/day at edge) add to the bill?
+<details><summary>Solution</summary>1. First domain: 1 root + 1 TLD + 1 authoritative = 3 queries × 20ms = 60ms. Remaining 7 domains: resolver has root/TLD cached → 1 query each = 7 × 20ms = 140ms. Total DNS: 200ms. Page load: 120 resources × 50ms RTT (6 parallel connections) ≈ 1s + 200ms DNS = 1.2s. DNS contribution: 200/1200 ≈ 16.7%.
+2. Each PoP handles (attack + clean) / N PoPs. With 330 Cloudflare PoPs: (3500 Gbps) / 330 ≈ 10.6 Gbps per PoP, within 100 Gbps uplink. With 4,150 Akamai PoPs: 3500/4150 ≈ 0.84 Gbps per PoP. Minimum PoPs: ceil(3500/100) = 35 PoPs for Cloudflare; ceil(3500/100) = 35 for Akamai. Both exceed minimum.
+3. Assets with content hash in filename: Cache-Control: public, immutable, max-age=31536000 (1 year). HTML files (no hash): Cache-Control: public, max-age=0, must-revalidate. API responses: Cache-Control: public, max-age=60. Purge strategy: after deploy, purge all HTML and API cache keys (selective purge by cache tag), but not hashed assets (they have new filenames). Use surrogate-key headers to tag all HTML as "html" and all API as "api" for batch purge.
+4. (a) Without CDN: 10M × 200KB = 2000 GB/day × $0.09 = $180/day. (b) With 30% hit ratio: CDN serves 3M hits (600 GB × $0.02 = $12) + origin serves 7M misses (1400 GB × $0.09 = $126) = $138/day. (c) At 90% hit ratio: CDN 9M hits (1800 GB × $0.02 = $36) + origin 1M misses (200 GB × $0.09 = $18) = $54/day. Edge computing: 100K × $0.0000001 = $0.01/day, negligible.</details>
 
 ### Challenge Problem
+<details><summary>Solution</summary>Design a global edge architecture for a multiplayer game:
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Design a global edge architecture for a real-time multiplayer game API**: 50 million daily active users across North America, Europe, and Southeast Asia. The game requires:
-- Authentication via JWT validated at the edge
-- Leaderboard reads (HLL-based approximate ranking, 10ms latency target)
-- Matchmaking state queries (strong consistency, 50ms latency target)
-- Static asset delivery (game clients, patches, images)
-- DDoS protection (the game is a known competitive target)
+**DNS**: Use anycastDNS (Cloudflare) — all PoPs advertise the same IP. Players automatically reach the nearest PoP without geo-IP lookups. TTL = 30s for fast failover.
 
-Design the complete stack: DNS routing strategy (anycast vs geo), CDN configuration (pull/push, shield layer, image optimization for game assets), edge computing deployment (Workers vs Lambda@Edge per use case), data storage at edge (EdgeKV for leaderboard sketches, Durable Objects for matchmaking state), and DDoS mitigation strategy with scrubbing thresholds. Calculate bandwidth requirements and approximate monthly cost.
+**CDN**: Pull zone for static assets (game clients hosted on S3 with CloudFront). Push zone for game patches (pre-deployed to all PoPs). Origin shield in us-west-2 and eu-west-1 for redundancy. Image optimization: on-the-fly WebP conversion for game screenshots.
+
+**Edge Compute**: Cloudflare Workers for JWT validation at every PoP (sub-ms overhead). Workers validate token against EdgeKV (stores JWKS keys, synced every 60s). Leaderboard reads use HLL sketches stored in EdgeKV — 12KB per leaderboard, merged globally every minute. Matchmaking state uses Durable Objects (strong consistency per game region, global via DO multi-region replication).
+
+**DDoS Mitigation**: Layer 3/4: anycast absorption (each PoP handles its share). Layer 7: WAF (OWASP ruleset, rate limiting at 100 req/s per IP). Scrubbing: traffic over 100 Gbps per PoP triggers automatic BGP diversion to scrubbing centers. Game-specific: validate game protocol packets before forwarding to matchmaking services.
+
+**Bandwidth**: 50M DAU × 100 requests/day × 2KB avg API response = 10 TB/day. Static patches: 500MB per patch × 10M updates/month = 5 TB/month. CDN egress: ~$0.02/GB × 10 TB = $200/day. Total monthly: ~$6,000 + $2,000 edge compute = ~$8,000/month.</details>

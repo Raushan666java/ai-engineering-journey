@@ -461,29 +461,13 @@ Switching databases requires zero changes to `UserService`. Testing is trivial: 
 
 ## Chapter Quiz
 
-**Q1:** What is the key takeaway from this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most critical for distributed systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q3:** How does this topic apply to FAANG-level system design?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What does SRP (Single Responsibility Principle) mean in terms of actors? | A) A class should have one instance, B) A class should serve one actor/stakeholder, C) A class should have one method, D) A class should have one field | B) A class should serve one actor who would request changes |
+| 2 | How does the Strategy pattern embody the Open/Closed Principle? | A) By using inheritance, B) By allowing new algorithms as new classes without modifying existing code, C) By using switch statements, D) By making classes final | B) By allowing new algorithms as new classes implementing a common interface without modifying existing code |
+| 3 | What is the classic LSP violation? | A) A class with too many methods, B) Square inheriting from Rectangle breaking behavioral contract, C) A class depending on concrete implementations, D) An interface with unused methods | B) Square inheriting from Rectangle where setWidth/setHeight behavior violates the independent dimensions invariant |
+| 4 | What symptom indicates an ISP violation? | A) Deep inheritance hierarchy, B) Methods throwing NotImplementedError, C) High LCOM4 value, D) Constructor with many parameters | B) Methods throwing NotImplementedError or UnsupportedOperationException |
+| 5 | How does Dependency Injection implement DIP? | A) By using global variables, B) By passing dependencies through constructor/setters so both layers depend on abstractions, C) By instantiating dependencies in the class, D) By using static methods | B) By passing dependencies through constructor or setter injection, both high-level and low-level modules depend on interfaces |
 
 ---
 
@@ -842,7 +826,287 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
+
+### TypeScript: SOLIDValidator, ParkingLot, and ElevatorSystem
+
+```typescript
+class SOLIDValidator {
+  violations: string[] = [];
+
+  checkSRP(className: string, actorCount: number, actors: string[]): void {
+    if (actorCount > 1) {
+      this.violations.push(`SRP: ${className} serves ${actorCount} actors (${actors.join(", ")}). Split per actor.`);
+    }
+  }
+
+  checkOCP(className: string, switchStatements: string[]): void {
+    if (switchStatements.length > 0) {
+      this.violations.push(`OCP: ${className} uses ${switchStatements.length} type-switches. Replace with polymorphism.`);
+    }
+  }
+
+  checkLSP(baseClass: string, derivedClass: string, baseMethods: string[], overrideMethods: string[]): void {
+    const missing = baseMethods.filter(m => !overrideMethods.includes(m));
+    if (missing.length > 0) {
+      this.violations.push(`LSP: ${derivedClass} does not override ${missing.join(", ")} from ${baseClass}. May violate base contract.`);
+    }
+  }
+
+  checkISP(interfaceName: string, methodCount: number, threshold: number = 5): void {
+    if (methodCount > threshold) {
+      this.violations.push(`ISP: ${interfaceName} has ${methodCount} methods (>${threshold}). Split into smaller interfaces.`);
+    }
+  }
+
+  checkDIP(className: string, concreteDeps: string[]): void {
+    for (const dep of concreteDeps) {
+      this.violations.push(`DIP: ${className} depends on concrete ${dep}. Depend on abstractions instead.`);
+    }
+  }
+
+  getViolations(): string[] { return [...this.violations]; }
+  clear(): void { this.violations = []; }
+}
+
+class ParkingLot {
+  private levels: ParkingLevel[] = [];
+  private tickets = new Map<string, ParkingTicket>();
+  private pricingStrategy: PricingStrategy;
+
+  constructor(pricingStrategy: PricingStrategy) {
+    this.pricingStrategy = pricingStrategy;
+  }
+
+  addLevel(level: ParkingLevel): void { this.levels.push(level); }
+
+  parkVehicle(vehicle: Vehicle): ParkingTicket | null {
+    for (const level of this.levels) {
+      const spot = level.findAvailableSpot(vehicle.size);
+      if (spot) {
+        spot.occupy();
+        const ticket = new ParkingTicket(spot, vehicle);
+        this.tickets.set(ticket.id, ticket);
+        return ticket;
+      }
+    }
+    return null;
+  }
+
+  exitVehicle(ticketId: string, paymentMethod: PaymentMethod): Receipt | null {
+    const ticket = this.tickets.get(ticketId);
+    if (!ticket) return null;
+    ticket.spot.vacate();
+    const hours = (Date.now() - ticket.entryTime) / 3600000;
+    const amount = this.pricingStrategy.calculate(hours, ticket.spot.size);
+    const payment = paymentMethod.pay(amount);
+    this.tickets.delete(ticketId);
+    return new Receipt(ticket, amount, payment);
+  }
+}
+
+class ParkingLevel {
+  spots: ParkingSpot[] = [];
+  constructor(public floor: number) {}
+  addSpot(spot: ParkingSpot): void { this.spots.push(spot); }
+  findAvailableSpot(vehicleSize: SpotSize): ParkingSpot | null {
+    return this.spots.find(s => s.isAvailable && s.size >= vehicleSize) ?? null;
+  }
+}
+
+enum SpotSize { SMALL = 1, MEDIUM = 2, LARGE = 3 }
+
+class ParkingSpot {
+  isAvailable = true;
+  constructor(public id: string, public size: SpotSize) {}
+  occupy(): void { this.isAvailable = false; }
+  vacate(): void { this.isAvailable = true; }
+}
+
+class Vehicle {
+  constructor(public licensePlate: string, public size: SpotSize) {}
+}
+
+class ParkingTicket {
+  readonly id: string;
+  readonly entryTime: number;
+  constructor(public spot: ParkingSpot, public vehicle: Vehicle) {
+    this.id = `TICKET-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    this.entryTime = Date.now();
+  }
+}
+
+interface PricingStrategy {
+  calculate(hours: number, spotSize: SpotSize): number;
+}
+
+class HourlyPricing implements PricingStrategy {
+  constructor(private rates: Record<SpotSize, number>) {}
+  calculate(hours: number, spotSize: SpotSize): number {
+    return Math.ceil(Math.max(1, hours)) * (this.rates[spotSize] ?? 5);
+  }
+}
+
+interface PaymentMethod {
+  pay(amount: number): PaymentReceipt;
+}
+
+class CreditCardPayment implements PaymentMethod {
+  pay(amount: number): PaymentReceipt {
+    return new PaymentReceipt("credit_card", amount, `CC-${Date.now()}`);
+  }
+}
+
+class PaymentReceipt {
+  constructor(public method: string, public amount: number, public transactionId: string) {}
+}
+
+class Receipt {
+  constructor(public ticket: ParkingTicket, public amount: number, public payment: PaymentReceipt) {}
+}
+
+class ElevatorSystem {
+  private elevators: Elevator[] = [];
+  private floorRequests: Map<number, Direction> = new Map();
+
+  constructor(elevatorCount: number, private floorCount: number) {
+    for (let i = 0; i < elevatorCount; i++) this.elevators.push(new Elevator(i));
+  }
+
+  requestElevator(floor: number, direction: Direction): Elevator | null {
+    let best: Elevator | null = null;
+    let bestScore = Infinity;
+    for (const e of this.elevators) {
+      const score = this.scoreElevator(e, floor, direction);
+      if (score < bestScore) { bestScore = score; best = e; }
+    }
+    best?.addStop(floor);
+    return best;
+  }
+
+  private scoreElevator(e: Elevator, floor: number, direction: Direction): number {
+    if (e.direction === Direction.IDLE) return Math.abs(e.currentFloor - floor);
+    if (e.direction === direction) {
+      if (direction === Direction.UP && floor >= e.currentFloor) return floor - e.currentFloor;
+      if (direction === Direction.DOWN && floor <= e.currentFloor) return e.currentFloor - floor;
+    }
+    return Math.abs(e.currentFloor - floor) + this.floorCount;
+  }
+
+  step(): void {
+    for (const e of this.elevators) e.move();
+  }
+}
+
+enum Direction { UP = 1, DOWN = -1, IDLE = 0 }
+
+class Elevator {
+  currentFloor = 1;
+  direction: Direction = Direction.IDLE;
+  private stops: number[] = [];
+  doorOpen = false;
+
+  constructor(public id: number) {}
+
+  addStop(floor: number): void {
+    if (!this.stops.includes(floor)) {
+      this.stops.push(floor);
+      this.stops.sort((a, b) => this.direction === Direction.UP ? a - b : b - a);
+    }
+  }
+
+  move(): void {
+    if (this.stops.length === 0) { this.direction = Direction.IDLE; return; }
+    const next = this.stops[0];
+    if (next > this.currentFloor) this.direction = Direction.UP;
+    else if (next < this.currentFloor) this.direction = Direction.DOWN;
+    else this.direction = Direction.IDLE;
+    if (this.currentFloor === next) {
+      this.stops.shift();
+      this.doorOpen = true;
+      setTimeout(() => { this.doorOpen = false; }, 3000);
+    } else {
+      this.currentFloor += this.direction === Direction.UP ? 1 : -1;
+    }
+  }
+}
+```
+
+### Mermaid: SOLID Principles UML Class Diagram
+
+```mermaid
+graph TD
+    classDef principle fill#e3f2fd,stroke#1565c0,stroke-width:2px
+    classDef violation fill#ffebee,stroke#c62828,stroke-width:2px
+    classDef example fill#e8f5e9,stroke#2e7d32,stroke-width:2px
+    classDef result fill#fff3e0,stroke#e65100,stroke-width:1px
+
+    subgraph "SOLID Principles"
+        SRP["SRP: Single Responsibility<br/>One actor per class"]:::principle
+        OCP["OCP: Open/Closed<br/>Open for extension, closed for modification"]:::principle
+        LSP["LSP: Liskov Substitution<br/>Subtypes satisfy base contract"]:::principle
+        ISP["ISP: Interface Segregation<br/>Small, focused interfaces"]:::principle
+        DIP["DIP: Dependency Inversion<br/>Depend on abstractions"]:::principle
+    end
+
+    subgraph "Violations"
+        V1["God Object<br/>Many responsibilities"]:::violation
+        V2["Type Switch<br/>if/else on types"]:::violation
+        V3["Square-Rectangle<br/>Behavioral break"]:::violation
+        V4["Fat Interface<br/>NotImplementedError"]:::violation
+        V5["Concrete Coupling<br/>new() in constructor"]:::violation
+    end
+
+    subgraph "Solutions"
+        S1["Extract classes per actor"]:::example
+        S2["Strategy Pattern"]:::example
+        S3["Common Abstract Base"]:::example
+        S4["Role Interfaces"]:::example
+        S5["Dependency Injection"]:::example
+    end
+
+    subgraph "Metrics"
+        M1["LCOM4 = 1<br/>High cohesion"]:::result
+        M2["Instability = 0<br/>Stable"]:::result
+        M3["Abstractness<br/>0.2 - 0.8"]:::result
+    end
+
+    SRP -->|"violated by"| V1
+    OCP -->|"violated by"| V2
+    LSP -->|"violated by"| V3
+    ISP -->|"violated by"| V4
+    DIP -->|"violated by"| V5
+    V1 -->|"fixed by"| S1
+    V2 -->|"fixed by"| S2
+    V3 -->|"fixed by"| S3
+    V4 -->|"fixed by"| S4
+    V5 -->|"fixed by"| S5
+    S1 -.-> M1
+    S5 -.-> M2
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| SRP: A class should have one reason to change, tied to a single actor | Split classes when multiple stakeholders would request changes for different reasons |
+| OCP: Extend behavior via new classes, not modification of existing ones | Use Strategy pattern to add new algorithms; use Decorator pattern to add responsibilities dynamically |
+| LSP: Subtypes must satisfy the base type's behavioral contract | Do not model Square as a subtype of Rectangle — both should inherit from a common Shape abstraction |
+| ISP: No client should depend on methods it does not use | Split large interfaces into role-specific ones (Workable, Eatable, Sleepable instead of Worker) |
+| DIP: High-level and low-level modules both depend on abstractions | Use constructor injection to pass dependencies; define interfaces in the high-level module |
+| Composition over inheritance avoids the fragile base class problem | Prefer delegation to inheritance; compose behavior via strategy objects rather than overriding methods |
+| High cohesion and loose coupling are measurable via LCOM and fan-in/fan-out | Monitor LCOM4 (target = 1) and instability metric (lower is more stable) in CI pipelines |
+
+## Case Study
+
+**Refactoring a Legacy Payment Processing System**
+
+A fintech startup's core payment system had grown into a 15,000-line `PaymentProcessor` class handling transaction routing, fraud detection, fee calculation, receipt generation, and reconciliation. The class had LCOM4 = 12 (12 disconnected method groups), served 7 different stakeholders, and depended on 8 concrete service implementations (ConcreteFraudDetector, ConcreteFeeCalculator, etc.). Every change — even a simple fee rate update — required a full regression test of the entire payment flow.
+
+The engineering team applied SOLID principles incrementally over 3 months. First, they identified actors: compliance (fraud/reconciliation), product (fee calculation/routing), accounting (receipt/reporting), and operations (retry/monitoring). Using SRP, they extracted `FraudDetector`, `FeeCalculator`, `TransactionRouter`, and `ReceiptGenerator` — each with a single responsibility. For OCP, they defined a `FeeStrategy` interface; a new promotional fee required only a new `PromotionalFee` implementation. LSP was validated by ensuring all `FeeStrategy` implementations produced fees within the expected range (±0.01 precision). ISP was applied by splitting a `PaymentService` interface into `PaymentAuthorizer`, `PaymentCapturer`, and `PaymentRefunder`. DIP was implemented via constructor injection — the `TransactionRouter` received an `AuthorizationService` interface, not a concrete `StripeAuthorization` class.
+
+The result: LCOM4 dropped from 12 to 1-2 per class. Deployment frequency increased from monthly to weekly. A new payment method (BNPL) was added in 2 days instead of 3 weeks. The team also added CI gate checks: any class with LCOM4 > 3 or concrete dependency count > 2 fails the build. The 15,000-line class became 12 classes averaging 800 lines each, with clear ownership per team.
+
+---
 - SRP demands one reason to change per class, keyed to a single actor or stakeholder.
 - OCP is achieved through abstraction: add behavior via new classes, not by modifying existing ones.
 - LSP ensures behavioral substitutability: subtypes must satisfy the base type's contract, not just its signature.
@@ -854,28 +1118,163 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 ## Exercises
 ### Review Questions
-1. Describe the relationship between SRP and the concept of "actors." How does identifying the wrong actor lead to a violation?
-2. A class has LCOM4 = 3. What does this tell you about its design, and what refactoring strategy would you recommend?
-3. How does the Strategy pattern embody OCP? Provide a concrete scenario where adding a new algorithm does not require changing existing code.
-4. In the Square-Rectangle problem, the behavioral contract includes the invariant that width and height are independent. Explain how this invariant is violated and why fixing the inheritance hierarchy resolves it.
-5. Why does DIP recommend that interfaces be defined by the high-level module rather than the low-level module? What practical difference does "ownership" of the interface make?
+<details>
+<summary>Solution for Review Question 1</summary>
+SRP states "a class should have one, and only one, reason to change." The "reason to change" is tied to an **actor** — a stakeholder or group that might request a change. If a class serves multiple actors, a change requested by one actor may break functionality required by another. Identifying the wrong actor leads to misplaced responsibilities: e.g., putting persistence logic in a domain class (the DB team becomes an actor for that class) or putting formatting logic in a business class (the UI team becomes an actor). Always ask: "Who would request a change to this method?" If the answer includes multiple stakeholders, SRP is violated.
+</details>
+
+<details>
+<summary>Solution for Review Question 2</summary>
+LCOM4 = 3 means the class has 3 connected components in the method-field access graph. Methods can be grouped into 3 clusters, each accessing a distinct set of fields — the class does 3 unrelated things. Refactoring strategy: (1) Identify the 3 groups of methods and their associated fields. (2) Extract each group into a separate class. (3) The original class becomes a facade that delegates to the 3 new classes. (4) LCOM4 target for each new class should be 1.
+</details>
+
+<details>
+<summary>Solution for Review Question 3</summary>
+The Strategy pattern defines a family of algorithms (strategies) behind a common interface. The client depends on the interface, not the concrete strategy. To add a new algorithm: create a new class implementing the interface — no existing code is modified. Example: A `ShippingCostCalculator` has a `CostStrategy` interface with `calculate(order)`. Initially there are `StandardShipping` and `ExpressShipping` strategies. To add `InternationalShipping`, create a new class — the calculator class remains unchanged (closed for modification), yet new strategies can be added freely (open for extension).
+</details>
+
+<details>
+<summary>Solution for Review Question 4</summary>
+Rectangle's behavioral contract includes the invariant that width and height are **independent** — setting width does not change height, and vice versa. Square inherits from Rectangle but overrides `setWidth` and `setHeight` to keep both equal, violating this invariant. Any code that depends on width/height independence (like a resize function that sets width=5, height=10 and expects area=50) breaks when given a Square. Fixing the hierarchy: both Rectangle and Square inherit from a common `Shape` abstract class with a polymorphic `area()` method. Square is not a subtype of Rectangle — both are subtypes of Shape.
+</details>
+
+<details>
+<summary>Solution for Review Question 5</summary>
+When the interface is defined in the **high-level** module, the high-level module controls the contract — the dependency direction points inward. The low-level module must conform to the high-level module's needs. When the interface is defined in the low-level module, the high-level module depends on an abstraction defined by the low-level module, which is still a form of dependency inversion but weaker ownership. Practical difference: interface ownership determines which team changes the interface. High-level-owned interfaces protect business logic from infrastructure changes — the database team must adapt to the repository interface defined by the domain team, not vice versa.
+</details>
 
 ### Application Problems
-1. Refactor the following class to respect SRP. Identify each actor and extract their responsibilities into separate classes:
-   ```python
-   class Employee:
-       def calculate_pay(self): ...
-       def save_to_db(self): ...
-       def generate_report(self): ...
-       def send_welcome_email(self): ...
-   ```
-2. A `Button` class directly instantiates a `Lamp` and calls `lamp.turn_on()`. Apply DIP so that `Button` controls any switchable device. Write the interface, the refactored `Button`, and two device implementations.
-3. A `Bird` base class has `fly()` and `swim()`. `Penguin` extends `Bird` but cannot fly; `Eagle` extends `Bird` but cannot swim. Identify the LSP and ISP violations, then redesign the class hierarchy.
+<details>
+<summary>Solution for Application Problem 1: Refactor Employee to SRP</summary>
+**Actors:** Payroll (calculate_pay), IT/DBA (save_to_db), Management (generate_report), HR (send_welcome_email). **Extracted classes:**
+```python
+class Employee:
+    def __init__(self, name, salary, email): ...
+
+class PayrollCalculator:
+    @staticmethod
+    def calculate_pay(employee): ...
+
+class EmployeeRepository:
+    @staticmethod
+    def save_to_db(employee): ...
+
+class ReportGenerator:
+    @staticmethod
+    def generate_report(employee): ...
+
+class EmailService:
+    @staticmethod
+    def send_welcome_email(employee): ...
+```
+Each class has one actor and one reason to change.
+</details>
+
+<details>
+<summary>Solution for Application Problem 2: Button DIP</summary>
+```python
+from abc import ABC, abstractmethod
+
+class Switchable(ABC):
+    @abstractmethod
+    def turn_on(self): ...
+    @abstractmethod
+    def turn_off(self): ...
+
+class Button:
+    def __init__(self, device: Switchable):
+        self._device = device
+
+    def press(self):
+        self._device.turn_on()
+
+class Lamp(Switchable):
+    def turn_on(self): print("Lamp on")
+    def turn_off(self): print("Lamp off")
+
+class Fan(Switchable):
+    def turn_on(self): print("Fan on")
+    def turn_off(self): print("Fan off")
+```
+Button depends on Switchable abstraction, not on Lamp concretely.
+</details>
+
+<details>
+<summary>Solution for Application Problem 3: Bird Hierarchy Refactor</summary>
+**LSP violation:** Penguin cannot fly → substituting Penguin where Bird is expected breaks fly() behavior. Eagle cannot swim → similar issue. **ISP violation:** Bird interface has both fly() and swim() — Penguin depends on fly() it doesn't use. **Redesign:**
+```python
+from abc import ABC, abstractmethod
+class Bird(ABC): pass
+class Flyable(ABC):
+    @abstractmethod
+    def fly(self): ...
+class Swimmable(ABC):
+    @abstractmethod
+    def swim(self): ...
+class Eagle(Bird, Flyable):
+    def fly(self): print("Eagle flying")
+class Penguin(Bird, Swimmable):
+    def swim(self): print("Penguin swimming")
+class Duck(Bird, Flyable, Swimmable):
+    def fly(self): print("Duck flying")
+    def swim(self): print("Duck swimming")
+```
+</details>
 
 ### Challenge Problem
-Design a logging framework that adheres to all five SOLID principles. It must support multiple output targets (console, file, network), multiple log levels (DEBUG, INFO, WARN, ERROR), configurable formatting (plain, JSON, timestamped), and must be extensible without modifying existing code. Provide class diagrams and Python implementations for:
-- The core logger class (DIP, SRP)
-- Output appenders (OCP)
-- Format strategies (OCP)
-- Log level filtering (ISP)
-- Ensure a `NetworkAppender` does not depend on `format_json()` if it uses plain text (LSP, ISP)
+<details>
+<summary>Solution: SOLID Logging Framework</summary>
+```python
+from abc import ABC, abstractmethod
+import json, threading
+
+# SRP: Logger has one responsibility — logging messages
+# DIP: Logger depends on Appender and Formatter abstractions
+class Logger:
+    def __init__(self, name: str, level: int, formatter: 'Formatter', appenders: list['Appender']):
+        self._name = name; self._level = level; self._formatter = formatter; self._appenders = appenders
+
+    def log(self, level: int, msg: str):
+        if level >= self._level:
+            formatted = self._formatter.format(self._name, level, msg)
+            for a in self._appenders: a.append(formatted)
+
+# OCP: New appenders implement Appender interface
+class Appender(ABC):
+    @abstractmethod
+    def append(self, msg: str): ...
+
+class ConsoleAppender(Appender):
+    def append(self, msg): print(msg)
+
+class FileAppender(Appender):
+    def __init__(self, path): self.path = path
+    def append(self, msg):
+        with open(self.path, 'a') as f: f.write(msg + '\n')
+
+# OCP: New formatters implement Formatter interface
+class Formatter(ABC):
+    @abstractmethod
+    def format(self, name: str, level: int, msg: str) -> str: ...
+
+class PlainFormatter(Formatter):
+    def format(self, name, level, msg): return f"[{name}] {msg}"
+
+class JsonFormatter(Formatter):
+    def format(self, name, level, msg): return json.dumps({"logger": name, "level": level, "msg": msg})
+
+# ISP: Separate Switchable interface, NetworkAppender doesn't depend on JSON
+class Switchable(ABC):
+    @abstractmethod
+    def turn_on(self): ...
+    @abstractmethod
+    def turn_off(self): ...
+
+class NetworkAppender(Appender):
+    def append(self, msg): print(f"NET: {msg}")
+
+# Usage
+logger = Logger("app", 1, PlainFormatter(), [ConsoleAppender(), FileAppender("log.txt")])
+logger.log(1, "Hello SOLID!")
+```
+</details>

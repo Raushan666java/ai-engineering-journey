@@ -1242,6 +1242,20 @@ Industry benchmarks:
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| OWASP Top 10 Prioritization | Focus on A01 (Broken Access Control), A03 (Injection), and A07 (Auth Failures) — these have the highest exploitability and prevalence |
+| Injection Prevention | Always use parameterized queries for SQL, validate input types for NoSQL, avoid shell execution with user input, escape LDAP filters |
+| XSS Defense | Apply context-aware output encoding (HTML entity, JavaScript, CSS, URL), implement CSP with nonces, use HttpOnly cookies for session tokens |
+| CSRF Protection | Use anti-CSRF tokens for all state-changing requests, set SameSite=Lax or Strict on cookies, validate Origin/Referer headers |
+| SSRF Mitigation | Block metadata endpoints (169.254.169.254), validate resolved IPs (not just domains), use URL allowlists, enforce IMDSv2 |
+| Secure Headers & Configuration | Set CSP, HSTS, X-Frame-Options, X-Content-Type-Options; disable directory listing, verbose errors, and unused HTTP methods |
+| Bug Bounty Methodology | Follow recon → exploit → report workflow; use automated scanners for low-hanging fruit and manual testing for logic flaws |
+
+---
+
 ## Summary
 
 Web application security addresses vulnerabilities that arise from the fundamental nature of HTTP, browser-based execution, and the complexity of modern web stacks. This chapter covered the OWASP Top 10 (2021), with deep dives into the most exploited categories: broken access control (IDOR), injection (SQLi, XSS, CSRF, SSRF, XXE), and cryptographic failures (JWT flaws, weak TLS). The importance of defense-in-depth was illustrated through layered protections — WAF, CSP, HSTS, CORS configuration, input validation, parameterized queries, and client-side sanitization. Real-world breaches (Equifax, GitHub Stars, SolarWinds, Atlassian) demonstrated that even well-funded organizations fall victim to preventable vulnerabilities when secure development practices are not followed. Key takeaways include: always use parameterized queries for database access, implement CSP with strict directives, treat all user input as untrusted, use SameSite cookies to mitigate CSRF, and conduct regular dependency scans for known vulnerabilities. The TypeScript implementations provided working examples of CSP generators, SQLi scanners, session analyzers, and SSRF detectors that can be integrated into security testing pipelines.
@@ -1251,49 +1265,102 @@ Web application security addresses vulnerabilities that arise from the fundament
 ### Review Questions
 
 1. Explain the difference between IDOR (A01) and CSRF in terms of what they exploit.
+
+<details>
+<summary>Solution</summary>
+IDOR exploits missing authorization checks — the attacker directly accesses resources they should not have access to (e.g., changing a user ID in a URL). CSRF exploits the browser's automatic inclusion of credentials — the attacker tricks the user's browser into making an unwanted request to an authenticated site.
+</details>
+
 2. Why does CSP with `script-src 'self'` alone not prevent all XSS attacks?
+
+<details>
+<summary>Solution</summary>
+`script-src 'self'` only blocks externally hosted scripts. It does not prevent: 1) Stored XSS where attacker injects inline `<script>` tags (inline scripts are allowed by `'self'`). 2) DOM-based XSS from existing JavaScript. 3) Scripts from JSONP endpoints on the same origin. Must also specify `'unsafe-inline'` is not present, and use nonce/hash for inline scripts.
+</details>
+
 3. How does a JWT "alg: none" attack work and how do you prevent it?
+
+<details>
+<summary>Solution</summary>
+The attacker modifies the JWT header to `"alg":"none"` and removes the signature. Servers that accept "none" algorithms will trust the token without verifying a signature. Prevention: reject "none" algorithm in JWT library configuration, always validate signature, and use a whitelist of allowed algorithms (e.g., only HS256 or RS256).
+</details>
+
 4. What is the difference between blind SQLi and out-of-band SQLi?
+
+<details>
+<summary>Solution</summary>
+Blind SQLi: no visible error/output — attacker infers truth via boolean responses (content differs) or time delays (SLEEP()). Out-of-band SQLi: attacker uses a separate channel (DNS lookup, HTTP request) to exfiltrate data. OOB is used when the response is not directly visible and the database can initiate network connections.
+</details>
+
 5. Why is stored XSS considered more dangerous than reflected XSS?
+
+<details>
+<summary>Solution</summary>
+Stored XSS persists in the database and executes every time the page is viewed — affecting all users without requiring a crafted link. Reflected XSS only affects the user who clicks a malicious link. Stored XSS can target admins (if viewing in admin panel), leading to account takeover, while reflected typically targets end users.
+</details>
 ### Application Problems
 
 1. Write a Java Spring Boot endpoint that securely accepts and returns a user profile with proper access control (no IDOR).
+
+<details>
+<summary>Solution</summary>
+```java
+@GetMapping("/profile/{id}")
+public UserProfile getProfile(@PathVariable String id, Authentication auth) {
+  String currentUserId = auth.getName();
+  if (!id.equals(currentUserId)) throw new AccessDeniedException("IDOR blocked");
+  return userRepo.findById(id).orElseThrow();
+}
+```
+Always derive the user identity from the authentication context, not from request parameters.
+</details>
+
 2. Design a CSP header for a site that loads scripts from a CDN, styles from another CDN, and needs to run one inline script. Use the nonce approach.
+
+<details>
+<summary>Solution</summary>
+```
+Content-Security-Policy: default-src 'self';
+  script-src 'nonce-abc123' https://cdn.scripts.com 'strict-dynamic';
+  style-src 'self' https://cdn.styles.com;
+  base-uri 'none'; object-src 'none'
+```
+The inline script tag gets `<script nonce="abc123">` and `strict-dynamic` propagates trust to scripts it loads.
+</details>
+
 3. Write a Python Flask middleware that validates all incoming XML to prevent XXE attacks.
+
+<details>
+<summary>Solution</summary>
+```python
+from lxml import etree
+def xxe_safe_parse(xml_string):
+  parser = etree.XMLParser(no_network=True, dtd_validation=False,
+    resolve_entities=False, load_dtd=False)
+  return etree.fromstring(xml_string, parser)
+```
+Disables all external entity resolution, DTD loading, and network access.
+</details>
+
 ### Challenge Problem
 
 Design a complete security architecture for an e-commerce application considering: OWASP Top 10, WAF rules, CSP, SSRF prevention, session management, file upload restrictions, and third-party script integrity. Include a threat model using STRIDE.
+
+<details>
+<summary>Solution</summary>
+Threat model (STRIDE): Spoofing → MFA + FIDO2. Tampering → signed API payloads + SRI for CDN scripts. Repudiation → detailed audit logging. Info disclosure → TLS 1.3 + AES-256 at rest + CSP. DoS → rate limiting + WAF + CDN. Elevation → RBAC + server-side auth checks.
+
+Architecture: WAF (ModSecurity with OWASP CRS) in front. CSP with nonces. SSRF prevention via URL allowlist + block private IPs. Session: HttpOnly Secure SameSite=Strict cookies, 15-min idle timeout. File upload: magic byte validation + UUID rename + scan with ClamAV. SRI: integrity hashes on all third-party resources.
+</details>
 ## Chapter Quiz
 
-1. Which OWASP Top 10 (2021) category has the highest exploitability score?
-   - A) A01 → Broken Access Control
-   - B) A03 → Injection
-   - C) A06 → Vulnerable Components
-   - D) A09 → Logging & Monitoring
-2. A JWT token with header `{"alg":"none"}` is vulnerable to:
-   - A) SQLi
-   - B) Signature bypass
-   - C) XSS
-   - D) CSRF
-3. The Equifax 2017 breach was caused by:
-   - A) SQLi
-   - B) Apache Struts OGNL injection
-   - C) Phishing
-   - D) SSRF
-4. SameSite=Lax cookie attribute protects against:
-   - A) SQLi
-   - B) XSS
-   - C) CSRF
-   - D) SSRF
-5. The main difference between WAF and RASP is:
-   - A) WAF is signature-based, RASP is behavioral
-   - B) WAF runs inside the app, RASP at the edge
-   - C) WAF can block zero-days, RASP cannot
-   - D) RASP is always free
-<details>
-<summary>Answers&lt;/summary&gt;
-1. B (Injection → exploitability: 3, Easy), 2. B, 3. B, 4. C, 5. A
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which OWASP Top 10 (2021) category has the highest exploitability score? | A01 → Broken Access Control | A03 → Injection | A06 → Vulnerable Components | A09 → Logging & Monitoring | B |
+| 2 | A JWT token with header `{"alg":"none"}` is vulnerable to: | SQLi | Signature bypass | XSS | CSRF | B |
+| 3 | The Equifax 2017 breach was caused by: | SQLi | Apache Struts OGNL injection | Phishing | SSRF | B |
+| 4 | SameSite=Lax cookie attribute protects against: | SQLi | XSS | CSRF | SSRF | C |
+| 5 | The main difference between WAF and RASP is: | WAF is signature-based, RASP is behavioral | WAF runs inside the app, RASP at the edge | WAF can block zero-days, RASP cannot | RASP is always free | A |
 ## 6. Server-Side Request Forgery (SSRF)
 
 **Real-World Analogy:** Calling a hotel front desk and asking them to check on something in another room.

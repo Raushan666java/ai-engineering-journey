@@ -2089,6 +2089,20 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    ← AAAA = 0x41414141 leaked from stac
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| OS Hardening | Apply CIS benchmarks, disable unnecessary services, enable SELinux/AppArmor, configure auditd, and enforce password policies |
+| Buffer Overflow Prevention | Use stack canaries, ASLR, DEP/NX, and CFG; compile with `-fstack-protector` and `-pie`; use memory-safe languages where possible |
+| Shellcode & Exploitation | Understand shellcode generation (msfvenom) and ROP chain construction for penetration testing and defense validation |
+| Malware Classification & Defense | Deploy EDR, application whitelisting (AppLocker), AMSI for PowerShell, and memory forensics for rootkit detection |
+| SSDLC Integration | Conduct threat modeling (STRIDE) during design, SAST during implementation, DAST/fuzzing during testing, and monitoring in production |
+| Static & Dynamic Analysis | Run Flawfinder/RATS for C/C++ SAST, OWASP ZAP for web DAST, and AFL/libFuzzer for coverage-guided fuzzing |
+| Case Study Lessons | Patch promptly (WannaCry), segment networks (NotPetya), verify supply chain integrity (SolarWinds), and audit air-gap procedures (Stuxnet) |
+
+---
+
 ## Summary
 
 - **OS Hardening** reduces attack surface via service removal, kernel parameters, MAC (SELinux/AppArmor), least privilege, and logging.
@@ -2109,20 +2123,71 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    ← AAAA = 0x41414141 leaked from stac
 ### Review Questions
 
 1. What four key ASLR bypass techniques exist, and which requires an additional vulnerability?
+
+<details>
+<summary>Solution</summary>
+1) Ret2plt/ret2got (uses PLT/GOT entries, no leak needed for ASLR). 2) Info leak (format string, heap leak — requires additional vulnerability). 3) Brute-force (32-bit: ~2^8 attempts; 64-bit infeasible). 4) Relative memory addressing (offset between stack/heap and code). Info leak is the technique that requires an additional vulnerability.
+</details>
+
 2. Draw the stack frame for `void f(char *s) { char buf[16]; gets(buf); }` and label the overflow target.
+
+<details>
+<summary>Solution</summary>
+Stack layout (high to low): [saved return address] [saved EBP] [buf[12-15]] [buf[8-11]] [buf[4-7]] [buf[0-3]] (ESP). The overflow target is the saved return address at buf+16 bytes (32-bit) or buf+24 bytes (64-bit with alignment).
+</details>
+
 3. Explain why DEP prevents classic shellcode injection but fails against ROP.
+
+<details>
+<summary>Solution</summary>
+DEP (Data Execution Prevention) marks stack and heap as non-executable (NX bit), so injected shellcode cannot run. ROP bypasses DEP by reusing existing executable code (gadgets from loaded libraries/binary) chained together via return addresses — no new code is executed, only existing code.
+</details>
+
 4. What is the difference between SUNBURST and SUPERNOVA in the SolarWinds attack?
+
+<details>
+<summary>Solution</summary>
+SUNBURST was a trojanized Orion DLL (SolarWinds code) — a sophisticated supply-chain backdoor that communicated via disguised HTTP. SUPERNOVA was a separate, unrelated intrusion — a Chinese state-sponsored actor who exploited the same SolarWinds environment using a webshell, but with different TTPs and C2 infrastructure.
+</details>
+
 5. Name three ways NotPetya propagated laterally.
+
+<details>
+<summary>Solution</summary>
+1) EternalBlue (SMBv1 exploit, CVE-2017-0144). 2) EternalRomance (SMBv1 variant). 3) WMIC (Windows Management Instrumentation) for remote command execution. Also used PsExec and stolen credentials harvested via MimiKatz.
+</details>
 
 ### Application Problems
 
 1. For a binary compiled with `-fstack-protector -pie -z now` (Full RELRO, canary, PIE), describe an exploitation strategy. What vulnerability primitives would you need?
+
+<details>
+<summary>Solution</summary>
+This configuration has all major mitigations. Strategy: 1) Info leak of canary (format string or out-of-bounds read). 2) Info leak of code address (PIE bypass → calculate binary base). 3) Info leak of libc address (for system()). 4) ROP chain with gadgets from libc. Primitives needed: arbitrary read (leak canary, PIE base, libc base), then arbitrary write (overwrite return address with ROP chain).
+</details>
+
 2. You find a kernel-mode rootkit on a Linux server. Why can't you simply delete it? Describe the recovery process (three steps).
+
+<details>
+<summary>Solution</summary>
+Deleting the rootkit file does not remove it from kernel memory — the rootkit can also hide its files, processes, and network connections from userland tools. Recovery steps: 1) Quarantine the system (disconnect from network). 2) Preserve forensic evidence (RAM dump via LiME, disk image). 3) Rebuild from known-good backup or reinstall — do not try to clean a rooted kernel.
+</details>
+
 3. Design a threat model (STRIDE) for a smart home IoT thermostat. List at least one threat per category.
+
+<details>
+<summary>Solution</summary>
+Spoofing: Attacker impersonates the cloud API to send fake temperature commands. Tampering: Attacker modifies firmware update in transit. Repudiation: No audit log of who changed temperature settings. Information Disclosure: Wi-Fi credentials or home occupancy patterns leaked via API. DoS: Repeated connection attempts drain battery. Elevation of Privilege: Guest user accesses admin thermostat settings.
+</details>
 
 ### Challenge Problem
 
 1. Write a complete exploit for a 64-bit binary with no PIE but full ASLR + NX. The binary has a format string vulnerability in `printf(buf)` followed by a stack buffer overflow `gets(buf2)`. Your solution must: (a) leak libc address via format string, (b) calculate `system()` offset, (c) build ROP chain with gadgets from the leaked libc, (d) redirect to `system("/bin/sh")`.
+
+<details>
+<summary>Solution</summary>
+Stage 1: Use format string `%p.%p.%p...` to leak stack values, identify a libc address (e.g., `__libc_start_main` return address). Stage 2: Calculate libc base = leaked_addr - known_offset. Find system() and "/bin/sh" offsets. Stage 3: overflow buffer with: padding + pop_rdi gadget + &"/bin/sh" + system(). Use a `ret` gadget before system() for 16-byte stack alignment (movaps issue). See the extended pwntools example in this chapter.
+</details>
 
 ---
 
@@ -2599,70 +2664,18 @@ flowchart LR
 
 ## Chapter Quiz
 
-1. ASLR defeats buffer overflow exploitation by:
-   - A) Encrypting all memory regions
-   - B) Randomizing memory address layouts
-   - C) Preventing writes to the buffer
-   - D) Compiling with stack canaries
-
-2. DEP/NX prevents execution of code on:
-   - A) The stack only
-   - B) Marked non-executable memory pages
-   - C) The text segment
-   - D) Kernel memory only
-
-3. A ROP chain is used to:
-   - A) Increase buffer size
-   - B) Chain existing code gadgets to execute arbitrary behavior
-   - C) Encrypt shellcode
-   - D) Disable ASLR
-
-4. The Morris Worm primarily spread via:
-   - A) Email attachments
-   - B) USB drives
-   - C) fingerd buffer overflow and sendmail DEBUG
-   - D) JavaScript malware
-
-5. NotPetya's initial infection vector was:
-   - A) A phishing email
-   - B) Compromised ME Doc accounting software update
-   - C) USB drive
-   - D) SQL injection
-
-6. The SolarWinds SUNBURST backdoor communicated via:
-   - A) Raw TCP sockets
-   - B) HTTP disguised as Orion Improvement Program telemetry
-   - C) DNS tunneling
-   - D) ICMP covert channel
-
-7. Stuxnet used how many zero-day exploits?
-   - A) 1
-   - B) 2
-   - C) 4
-   - D) 7
-
-8. Which SSDLC phase uses threat modeling (STRIDE)?
-   - A) Requirements
-   - B) Design
-   - C) Implementation
-   - D) Testing
-
-9. A stack canary protects against:
-   - A) Stack buffer overflow detection
-   - B) SQL injection
-   - C) Format string attacks
-   - D) Heap overflow
-
-10. Which tool performs static analysis on C/C++ code?
-    - A) AFL
-    - B) Flawfinder
-    - C) Process Monitor
-    - D) Metasploit
-
-<details>
-<summary>Answers&lt;/summary&gt;
-1. B, 2. B, 3. B, 4. C, 5. B, 6. B, 7. C, 8. B, 9. A, 10. B
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | ASLR defeats buffer overflow exploitation by: | Encrypting all memory regions | Randomizing memory address layouts | Preventing writes to the buffer | Compiling with stack canaries | B |
+| 2 | DEP/NX prevents execution of code on: | The stack only | Marked non-executable memory pages | The text segment | Kernel memory only | B |
+| 3 | A ROP chain is used to: | Increase buffer size | Chain existing code gadgets to execute arbitrary behavior | Encrypt shellcode | Disable ASLR | B |
+| 4 | The Morris Worm primarily spread via: | Email attachments | USB drives | fingerd buffer overflow and sendmail DEBUG | JavaScript malware | C |
+| 5 | NotPetya's initial infection vector was: | A phishing email | Compromised ME Doc accounting software update | USB drive | SQL injection | B |
+| 6 | The SolarWinds SUNBURST backdoor communicated via: | Raw TCP sockets | HTTP disguised as Orion Improvement Program telemetry | DNS tunneling | ICMP covert channel | B |
+| 7 | Stuxnet used how many zero-day exploits? | 1 | 2 | 4 | 7 | C |
+| 8 | Which SSDLC phase uses threat modeling (STRIDE)? | Requirements | Design | Implementation | Testing | B |
+| 9 | A stack canary protects against: | Stack buffer overflow detection | SQL injection | Format string attacks | Heap overflow | A |
+| 10 | Which tool performs static analysis on C/C++ code? | AFL | Flawfinder | Process Monitor | Metasploit | B |
 
 ---
 

@@ -2446,57 +2446,201 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ### Review Questions
 
 1. Why does ECB mode leak plaintext patterns? Demonstrate with a concrete example.
+
+<details>
+<summary>Solution</summary>
+ECB encrypts each 16-byte block independently with the same key, so identical plaintext blocks produce identical ciphertext blocks. Example: an image encrypted with ECB retains visible outlines because the same pixel values encrypt to the same output.
+</details>
+
 2. How does the AES S-box provide non-linearity, and why is this essential?
-3. Walk through the RSA key generation with p=17, q=13. Compute n, Ï†(n), choose e, compute d.
+
+<details>
+<summary>Solution</summary>
+The S-box is constructed via multiplicative inverse in GF(2^8) followed by an affine transformation. Non-linearity prevents linear cryptanalysis by ensuring the output is not a linear function of the input — without it, AES could be broken with linear algebra.
+</details>
+
+3. Walk through the RSA key generation with p=17, q=13. Compute n, φ(n), choose e, compute d.
+
+<details>
+<summary>Solution</summary>
+n = 17×13 = 221. φ(n) = 16×12 = 192. Choose e = 5 (coprime to 192). Compute d = e⁻¹ mod 192 = 77 (since 5×77 = 385 ≡ 1 mod 192). Public key: (n=221, e=5). Private key: d=77.
+</details>
+
 4. Explain why Diffie-Hellman is vulnerable to MITM without authentication.
+
+<details>
+<summary>Solution</summary>
+DH does not authenticate the parties. An attacker can intercept both public values, establish separate DH keys with each party, and relay messages — each party believes they are talking directly to the other. Authentication (digital signatures or pre-shared keys) is required to prevent this.
+</details>
+
 5. What are the three properties of a cryptographic hash function? Which one does the birthday attack exploit?
+
+<details>
+<summary>Solution</summary>
+Preimage resistance, second-preimage resistance, and collision resistance. The birthday attack exploits collision resistance — finding any two inputs with the same hash is easier than finding a specific preimage due to the birthday paradox (~2^(n/2) vs 2^n).
+</details>
+
 6. Compare the security implications of nonce reuse in GCM vs CTR mode.
+
+<details>
+<summary>Solution</summary>
+In CTR, nonce reuse leaks the XOR of the two plaintexts (keystream is identical). In GCM, nonce reuse also leaks the XOR AND reveals the authentication key, allowing forgeries. GCM nonce reuse is catastrophic — confidentiality AND authentication are broken.
+</details>
+
 7. Why does TLS 1.3 require forward secrecy while TLS 1.2 made it optional?
+
+<details>
+<summary>Solution</summary>
+Forward secrecy ensures that compromising the server's long-term key does not decrypt past sessions. TLS 1.3 mandates (EC)DHE key exchange so session keys are ephemeral. TLS 1.2 allowed static RSA key exchange (no forward secrecy) which meant past traffic could be decrypted if the private key leaked.
+</details>
+
 8. How does OCSP stapling improve on basic OCSP?
+
+<details>
+<summary>Solution</summary>
+In basic OCSP, the client must contact the CA's OCSP responder directly (privacy leak, extra latency, responder may be unreachable). With stapling, the server fetches a time-stamped OCSP response from the CA during the TLS handshake and appends it to the Certificate message — eliminating the extra client-to-CA round trip.
+</details>
+
 9. What is the "harvest now, decrypt later" threat?
+
+<details>
+<summary>Solution</summary>
+Attackers collect encrypted traffic today and store it, intending to decrypt it in the future when quantum computers become powerful enough to break RSA/ECC. This motivates immediate migration to post-quantum cryptography for long-lived secrets.
+</details>
+
 10. Draw the TLS 1.3 full handshake message flow.
+
+<details>
+<summary>Solution</summary>
+1. ClientHello (key_share, supported_groups, cipher suites) → Server. 2. ServerHello (selected params + key_share) → Client. 3. Server sends EncryptedExtensions, Certificate, CertificateVerify, Finished. 4. Client sends Finished. 5. Application Data (1-RTT complete). See the Mermaid diagram earlier in this chapter for the full sequence.
+</details>
 
 ### Application Problems
 
 1. **AES Modes:** A 64-byte message is encrypted with AES-128-CBC using a fixed IV of all zeros. The first block (16 bytes) repeats 4 times. What do you observe in the ciphertext? Repeat for AES-128-CTR.
 
+<details>
+<summary>Solution</summary>
+In CBC, each repeated plaintext block produces a different ciphertext block (chaining ensures diffusion). In CTR, the same plaintext blocks encrypt to identical ciphertext blocks because the keystream is the same for the same counter value.
+</details>
+
 2. **RSA Computation:** Using RSA with p=11, q=13, e=7, encrypt the message m=5. Then decrypt the ciphertext. Show all modular arithmetic steps.
 
-3. **Hash Collision:** Write a script that searches for a SHA-256 partial collision (first 4 hex characters match, â‰ˆ2Â¹â¶ attempts needed). Verify the collision.
+<details>
+<summary>Solution</summary>
+n = 11×13 = 143. φ(n) = 10×12 = 120. d = 7⁻¹ mod 120 = 103. Encrypt: c = 5⁷ mod 143 = 78125 mod 143 = 47. Decrypt: m = 47¹⁰³ mod 143 = 5 (using modular exponentiation).
+</details>
+
+3. **Hash Collision:** Write a script that searches for a SHA-256 partial collision (first 4 hex characters match, ≈2¹⁶ attempts needed). Verify the collision.
+
+<details>
+<summary>Solution</summary>
+Generate random inputs, compute SHA-256, store the first 4 hex chars in a hashmap. When a collision is found (same prefix from different inputs), print both inputs and verify by re-computing the hashes. Expect ~65536 attempts for a 16-bit collision.
+</details>
 
 4. **TLS Handshake:** Use Wireshark to capture a TLS 1.3 handshake to any HTTPS website. Identify: ClientHello cipher suites, supported groups, key share, server certificate, CertificateVerify signature algorithm.
 
+<details>
+<summary>Solution</summary>
+Apply a TLS filter in Wireshark. ClientHello shows TLS_AES_256_GCM_SHA384 etc. in cipher suites, x25519 in supported_groups, key_share contains the ephemeral public key. ServerHello is followed by Certificate (X.509 chain) and CertificateVerify (rsa_pss_rsae_sha256 or ecdsa_secp256r1_sha256).
+</details>
+
 5. **Certificate Chain:** Use `openssl s_client -showcerts` to fetch and display the full certificate chain for your university or workplace website. Identify each CA in the chain.
 
+<details>
+<summary>Solution</summary>
+`openssl s_client -connect example.com:443 -showcerts` prints each certificate in the chain in PEM format. The first is the server cert, followed by intermediate(s), and optionally the root (though roots are often omitted). Use `openssl x509 -in cert.pem -text -noout` to examine each.
+</details>
+
 6. **HMAC:** Compute `HMAC-SHA256("key", "The quick brown fox")` using a programming language. Verify with an online tool.
+
+<details>
+<summary>Solution</summary>
+HMAC-SHA256("key", "The quick brown fox") = f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8. Verify at https://www.freeformatter.com/hmac-generator.html.
+</details>
 
 ### Case Study Analysis
 
 7. **Heartbleed Analysis:** Explain why the heartbeat extension trust boundary was violated. How would a Rust implementation of OpenSSL prevent this class of bug?
 
+<details>
+<summary>Solution</summary>
+The heartbeat request included a length field not validated against the actual payload — the server trusted the length and read that many bytes from memory. Rust's memory safety guarantees would prevent this out-of-bounds read at compile time.
+</details>
+
 8. **Logjam Defense:** Your organization has legacy systems that require DHE cipher suites. Design a migration plan to eliminate Logjam risk. Include server configuration changes, testing strategy, and monitoring.
+
+<details>
+<summary>Solution</summary>
+Phase 1: Inventory all systems using DHE. Phase 2: Configure servers to use DH groups = 2048 bits (diffie-hellman-group14-sha1 or higher). Phase 3: Test compatibility in staging. Phase 4: Monitor for downgrade attacks via TLS handshake logging. Long-term: migrate to ECDHE.
+</details>
 
 ### Coding Challenges
 
 9. **AES-128 Implementation (Basic):** Implement AES-128 encryption in Python or Java without using crypto libraries. Implement the S-box, ShiftRows, MixColumns, AddRoundKey, and key expansion. Test by verifying against a known test vector.
 
+<details>
+<summary>Solution</summary>
+Use NIST FIPS 197 test vector: plaintext = 0x3243f6a8885a308d313198a2e0370734, key = 0x2b7e151628aed2a6abf7158809cf4f3c, ciphertext = 0x3925841d02dc09fbdc118597196a0b32. Implement each step per spec and verify after the final round.
+</details>
+
 10. **RSA Toy Implementation:** Implement RSA key generation, encryption, and decryption with arbitrary-precision integers. Use p=61, q=53 as test case. Verify that encrypt-then-decrypt returns the original message.
+
+<details>
+<summary>Solution</summary>
+n = 3233, φ(n) = 3120. Choose e = 17, d = 2753. Encrypt: c = m^17 mod 3233. Decrypt: m = c^2753 mod 3233. Verify m === decrypt(encrypt(m)).
+</details>
 
 11. **Collision Finder:** Write a program that searches for a SHA-256 collision on the first 24 bits (3 hex characters, â‰ˆ2Â¹Â² attempts). Use a hashmap to detect collisions. Report which pairs collide and how many attempts were needed.
 
+<details>
+<summary>Solution</summary>
+Use a Map keyed by first 3 hex chars of SHA-256. Generate random inputs, compute hash, check for existing entry. When a collision is found, print both inputs and attempt count. Expected ~4096 attempts for 24-bit collision.
+</details>
+
 12. **TLS Certificate Parser:** Write a script using OpenSSL bindings that connects to a website, downloads its certificate chain, and prints: subject, issuer, validity period, public key algorithm, key size, and signature algorithm for each certificate in the chain.
+
+<details>
+<summary>Solution</summary>
+Use Node.js `crypto` or Python `ssl` module. Connect via TLS socket, retrieve certificate chain, iterate. Extract subject, issuer, validity, public key algorithm, and signature algorithm from each certificate using certificate parsing APIs.
+</details>
 
 13. **HMAC Implementation:** Implement HMAC-SHA256 according to RFC 2104. Test with `key = "key"`, `message = "The quick brown fox jumps over the lazy dog"`. Verify your output against known test vectors.
 
+<details>
+<summary>Solution</summary>
+RFC 2104: HMAC(K,m) = H((K' ⊕ opad) || H((K' ⊕ ipad) || m)). K' = K padded to 64 bytes, ipad = 0x36, opad = 0x5c. Expected: f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8.
+</details>
+
 14. **Constant-Time Comparison:** Write a constant-time byte array comparison function. Demonstrate its timing behavior versus a naive comparison by measuring both on matching and non-matching inputs.
+
+<details>
+<summary>Solution</summary>
+Constant-time: XOR all bytes together, check if result is 0. Always processes all bytes. Naive comparison exits early on first mismatch. Use `performance.now()` to measure timing differences — constant-time shows equal duration regardless of match position.
+</details>
 
 ### Research Questions
 
 15. **Post-Quantum Migration Plan:** Research the current state of NIST PQC standardization. Design a migration plan for a web application currently using RSA-2048 certificates and ECDHE key exchange. Consider: hybrid certificates, TLS library support, performance impact, and timeline.
 
+<details>
+<summary>Solution</summary>
+NIST has standardized CRYSTALS-Kyber (KEM) and CRYSTALS-Dilithium (signatures). Migration plan: 1) Inventory all certificates and TLS libraries. 2) Deploy hybrid certificates (X.509 with traditional + PQC keys). 3) Enable Kyber+ECDHE hybrid key exchange in TLS 1.3. 4) Monitor performance impact (~2-5x larger certificates, ~2x handshake CPU). Target: full hybrid deployment within 2 years.
+</details>
+
 16. **CRLite and CRLSets:** Research how Firefox (CRLite) and Chrome (CRLSets) handle certificate revocation differently from traditional CRL/OCSP. What are the trade-offs in bandwidth, freshness, and privacy?
 
+<details>
+<summary>Solution</summary>
+CRLite uses a Bloom filter cascade distributed in Firefox updates — compact (~1MB), privacy-preserving, updated daily. CRLSets are push-lists of revoked serials (~250KB) in Chrome — low bandwidth, fast check, but not real-time. Both avoid the privacy leak of OCSP (CA learns which sites you visit) and the bandwidth of full CRLs.
+</details>
+
 17. **Formal Verification of Crypto:** Research projects that use formal methods to verify cryptographic implementations (e.g., EverCrypt, HACL*, AWS s2n-quic). How does formal verification differ from traditional testing? What classes of bugs does it catch?
+
+<details>
+<summary>Solution</summary>
+Formal verification uses mathematical proofs to show the implementation matches a specification (e.g., using F* or Coq). Unlike testing, it covers all possible inputs and states — proving absence of entire bug classes (buffer overflows, timing side-channels, incorrect state transitions). EverCrypt provides verified implementations of AES-GCM, Curve25519, SHA-3 with proofs of memory safety, functional correctness, and constant-time execution.
+</details>
 
 ## TypeScript Implementations
 
@@ -2864,6 +3008,20 @@ flowchart LR
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Symmetric Encryption (AES-256-GCM, ChaCha20-Poly1305) | Use for bulk data encryption at rest and in transit — prefer GCM mode for authenticated encryption |
+| Asymmetric Encryption (RSA-3072+, ECC P-256, X25519) | Use for key exchange and digital signatures — ECC provides equivalent security with smaller keys |
+| Hash Functions (SHA-256, SHA-3, BLAKE2b) | Verify file integrity, store password hashes (with salt), and create digital signatures |
+| Digital Signatures & PKI | Sign software releases with Ed25519 or RSA-PSS; validate certificate chains with OCSP stapling |
+| TLS 1.3 | Use as the standard for all web traffic — provides 1-RTT handshake, forward secrecy, and removes legacy algorithms |
+| Key Management | Store keys in HSM or KMS; rotate regularly; use envelope encryption for large data; never hardcode secrets |
+| Post-Quantum Cryptography | Begin hybrid migration (X25519Kyber768) for long-lived secrets — harvest-now-decrypt-later is a real threat |
+
+---
+
 ## Summary
 
 - **Symmetric encryption** (AES, ChaCha20) uses a single shared key for both encryption and decryption. It is fast and suitable for bulk data encryption. AES-256-GCM provides both confidentiality and authentication in a single mode.
@@ -2883,105 +3041,18 @@ flowchart LR
 
 Test your understanding of cryptography concepts with these 10 multiple-choice questions.
 
-### Question 1
-What is the primary advantage of asymmetric encryption over symmetric encryption?
-
-A. It is faster for bulk data encryption
-B. It solves the key distribution problem
-C. It requires less computational power
-D. It produces shorter ciphertexts
-
-<details><summary>Answer</summary>**B. It solves the key distribution problem** — Asymmetric encryption uses a public/private key pair, eliminating the need to securely share a single secret key. Symmetric encryption requires both parties to have the same key, which is difficult to distribute securely.</details>
-
-### Question 2
-Which AES mode provides both confidentiality and authentication (authenticated encryption)?
-
-A. ECB
-B. CBC
-C. GCM
-D. CTR
-
-<details><summary>Answer</summary>**C. GCM (Galois/Counter Mode)** — GCM combines CTR mode encryption with GMAC authentication, providing both confidentiality and integrity in a single operation. ECB and CBC require separate MACs for authentication.</details>
-
-### Question 3
-Which property of a cryptographic hash function is exploited by a birthday attack?
-
-A. Preimage resistance
-B. Second-preimage resistance
-C. Collision resistance
-D. Determinism
-
-<details><summary>Answer</summary>**C. Collision resistance** — A birthday attack exploits the birthday paradox to find two different inputs that produce the same hash output (a collision). Collision resistance makes this computationally infeasible. The attack requires only 2^(n/2) operations for an n-bit hash.</details>
-
-### Question 4
-In TLS 1.3, what mechanism provides forward secrecy?
-
-A. RSA key exchange
-B. Static Diffie-Hellman
-C. Ephemeral Diffie-Hellman (ECDHE)
-D. Pre-shared keys only
-
-<details><summary>Answer</summary>**C. Ephemeral Diffie-Hellman (ECDHE)** — ECDHE generates fresh key pairs for each session, ensuring that compromise of long-term keys cannot decrypt past sessions. TLS 1.3 mandates forward secrecy by removing static RSA key exchange.</details>
-
-### Question 5
-What is the purpose of a Certificate Authority (CA) in PKI?
-
-A. To encrypt all web traffic
-B. To issue and sign digital certificates that bind identities to public keys
-C. To generate symmetric keys for TLS sessions
-D. To monitor network traffic for intrusions
-
-<details><summary>Answer</summary>**B. To issue and sign digital certificates that bind identities to public keys** — A CA acts as a trusted third party that validates an entity's identity and issues an X.509 certificate linking that entity to its public key. Browsers trust certificates signed by trusted CAs.</details>
-
-### Question 6
-Which of the following is NOT a property required of a secure cryptographic hash function?
-
-A. Preimage resistance
-B. Second-preimage resistance
-C. Reversibility (given output, compute input)
-D. Collision resistance
-
-<details><summary>Answer</summary>**C. Reversibility** — Hash functions are one-way by design; preimage resistance means it must be computationally infeasible to reverse a hash output back to its input. Reversibility would completely break hash function security.</details>
-
-### Question 7
-What is the main vulnerability that the Heartbleed attack (CVE-2014-0160) exploited?
-
-A. Weak cipher suites
-B. Buffer over-read in the TLS heartbeat extension
-C. A mathematical weakness in RSA
-D. Padding oracle vulnerability
-
-<details><summary>Answer</summary>**B. Buffer over-read in the TLS heartbeat extension** — Heartbleed was a missing bounds check in OpenSSL's heartbeat implementation that allowed attackers to read up to 64KB of server memory, potentially leaking private keys, session data, and user credentials.</details>
-
-### Question 8
-What is the difference between OCSP and OCSP stapling?
-
-A. OCSP is faster than OCSP stapling
-B. OCSP stapling has the server fetch and include the revocation status in the TLS handshake, reducing client load
-C. OCSP requires a hardware security module
-D. OCSP stapling is only used for EV certificates
-
-<details><summary>Answer</summary>**B. OCSP stapling has the server fetch and include the revocation status in the TLS handshake, reducing client load** — In OCSP stapling (RFC 6066), the server periodically fetches a signed OCSP response and "staples" it to the Certificate handshake message, eliminating the need for the client to contact the CA directly.</details>
-
-### Question 9
-Which padding scheme is the current recommended approach for RSA encryption to prevent padding oracle attacks?
-
-A. PKCS#1 v1.5
-B. OAEP (Optimal Asymmetric Encryption Padding)
-C. Zero padding
-D. SSLv3 padding
-
-<details><summary>Answer</summary>**B. OAEP (Optimal Asymmetric Encryption Padding)** — OAEP (PKCS#1 v2.x) introduces randomization and a Feistel-like structure that makes padding oracle attacks infeasible. PKCS#1 v1.5 padding is vulnerable to the Bleichenbacher attack and should not be used.</details>
-
-### Question 10
-What is the "harvest now, decrypt later" threat in the context of post-quantum cryptography?
-
-A. Attackers steal data after it is decrypted
-B. Attackers collect encrypted data today, intending to decrypt it when quantum computers become available
-C. Attackers harvest cryptographic keys from garbage bins
-D. Attackers downgrade TLS to weaker cipher suites
-
-<details><summary>Answer</summary>**B. Attackers collect encrypted data today, intending to decrypt it when quantum computers become available** — This threat motivates the adoption of post-quantum cryptography today for long-lived secrets. Data encrypted with RSA or ECC today could be stored and later decrypted by a sufficiently powerful quantum computer using Shor's algorithm.</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What is the primary advantage of asymmetric encryption over symmetric encryption? | It is faster for bulk data encryption | It solves the key distribution problem | It requires less computational power | It produces shorter ciphertexts | B |
+| 2 | Which AES mode provides both confidentiality and authentication (authenticated encryption)? | ECB | CBC | GCM | CTR | C |
+| 3 | Which property of a cryptographic hash function is exploited by a birthday attack? | Preimage resistance | Second-preimage resistance | Collision resistance | Determinism | C |
+| 4 | In TLS 1.3, what mechanism provides forward secrecy? | RSA key exchange | Static Diffie-Hellman | Ephemeral Diffie-Hellman (ECDHE) | Pre-shared keys only | C |
+| 5 | What is the purpose of a Certificate Authority (CA) in PKI? | To encrypt all web traffic | To issue and sign digital certificates that bind identities to public keys | To generate symmetric keys for TLS sessions | To monitor network traffic for intrusions | B |
+| 6 | Which of the following is NOT a property required of a secure cryptographic hash function? | Preimage resistance | Second-preimage resistance | Reversibility (given output, compute input) | Collision resistance | C |
+| 7 | What is the main vulnerability that the Heartbleed attack (CVE-2014-0160) exploited? | Weak cipher suites | Buffer over-read in the TLS heartbeat extension | A mathematical weakness in RSA | Padding oracle vulnerability | B |
+| 8 | What is the difference between OCSP and OCSP stapling? | OCSP is faster than OCSP stapling | OCSP stapling has the server fetch and include the revocation status in the TLS handshake, reducing client load | OCSP requires a hardware security module | OCSP stapling is only used for EV certificates | B |
+| 9 | Which padding scheme is the current recommended approach for RSA encryption to prevent padding oracle attacks? | PKCS#1 v1.5 | OAEP (Optimal Asymmetric Encryption Padding) | Zero padding | SSLv3 padding | B |
+| 10 | What is the "harvest now, decrypt later" threat in the context of post-quantum cryptography? | Attackers steal data after it is decrypted | Attackers collect encrypted data today, intending to decrypt it when quantum computers become available | Attackers harvest cryptographic keys from garbage bins | Attackers downgrade TLS to weaker cipher suites | B |
 
 ---
 

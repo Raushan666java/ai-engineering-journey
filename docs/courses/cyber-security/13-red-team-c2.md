@@ -1616,6 +1616,17 @@ T+2:30 â€” Ransomware deployed via GPO push
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Use Malleable C2 profiles to evade network detection | Customize HTTP headers, URIs, jitter, and sleep mask to mimic legitimate traffic (e.g., OneDrive, Slack) and bypass NTA/ZTNA |
+| Deploy a split C2 infrastructure | Separate team server, redirectors (Nginx/Apache mod_rewrite), and CDN front-end to hide the true C2 origin |
+| Automate phishing with personalized payloads | Use GoPhish templates with tracking pixels and per-target credentials; measure open/click/submit rates to refine TTPs |
+| Chain Kerberos attacks for domain dominance | Start with SPN enumeration → Kerberoast → Silver Ticket → DCSync → Golden Ticket for full domain compromise |
+| Combine AMSI bypass + direct syscalls for EDR evasion | Patch `amsi.dll!AmsiScanBuffer`, patch ETW via `ntdll!EtwEventWrite`, then use Hell's Gate to resolve unhooked syscalls |
+| Map every technique to MITRE ATT&CK | Each engagement action should log the ATT&CK technique ID (e.g., T1059.001, T1003.001) for detection gap analysis |
+
 ## Summary
 
 This chapter covered advanced red team operations and C2 frameworks across the full adversary emulation lifecycle. Key takeaways:
@@ -1643,71 +1654,25 @@ This chapter covered advanced red team operations and C2 frameworks across the f
 
 ## Chapter Quiz (10 Questions)
 
-**Q1:** Which of the following best describes a Malleable C2 profile?
-A) A YARA rule for detecting Cobalt Strike beacons
-B) A configuration file defining HTTP headers, URIs, and timing for beacon traffic
-C) A PowerShell script for deploying Cobalt Strike
-D) A network capture filter for C2 traffic analysis
-
-**Q2:** What is the primary difference between Hell's Gate and Halo's Gate?
-A) Hell's Gate is for AMSI bypass, Halo's Gate is for ETW bypass
-B) Hell's Gate extracts syscall numbers from clean ntdll; Halo's Gate scans backward past EDR hooks
-C) Hell's Gate works on x86 only, Halo's Gate on x64
-D) There is no difference â€” they are the same technique
-
-**Q3:** In Cobalt Strike, what does the `stage.sleep_mask` directive do?
-A) Prevents the beacon from sleeping
-B) Encrypts the beacon in memory during sleep cycles
-C) Masks the beacon's network traffic as HTTP
-D) Hides the beacon process from task manager
-
-**Q4:** Which Windows Event ID indicates a new service installation (commonly used for persistence)?
-A) 4624
-B) 4688
-C) 7045
-D) 4769
-
-**Q5:** What is the primary detection indicator for Kerberoasting?
-A) High volume of Event ID 4624 (logon)
-B) High volume of Event ID 4769 (TGS requests) using RC4 encryption
-C) High volume of Event ID 4688 (process creation)
-D) High volume of Event ID 5140 (SMB access)
-
-**Q6:** In the context of phishing, what is the purpose of a tracking pixel?
-A) To encrypt the email payload
-B) To detect when a recipient opens the email by loading a hidden 1x1 image
-C) To replace the sender's email address with a spoofed address
-D) To bypass SPF/DKIM/DMARC checks
-
-**Q7:** Which privilege is required to perform a DCSync attack?
-A) Any domain user
-B) Local Administrator on a workstation
-C) Domain Admin or Replication rights
-D) Enterprise Admin
-
-**Q8:** What is the primary use case for Sliver's armory?
-A) Storing encryption keys for implants
-B) Hosting community-contributed tools (BOFs, assemblies, aliases)
-C) Managing operator credentials
-D) Logging C2 traffic for analysis
-
-**Q9:** Which lateral movement technique relies on creating a remote service via SMB?
-A) WinRM
-B) WMI
-C) PsExec
-D) DCOM
-
-**Q10:** What makes the SolarWinds attack particularly notable for red teams?
-A) It was the fastest ransomware attack in history
-B) It demonstrated supply chain compromise with signed payloads and extended stealth operations
-C) It used zero-day exploits exclusively
-D) It was performed by hacktivists rather than nation-state actors
-
-**Answers:** 1-B, 2-B, 3-B, 4-C, 5-B, 6-B, 7-C, 8-B, 9-C, 10-B
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which of the following best describes a Malleable C2 profile? | A YARA rule for detecting Cobalt Strike beacons | A configuration file defining HTTP headers, URIs, and timing for beacon traffic | A PowerShell script for deploying Cobalt Strike | A network capture filter for C2 traffic analysis | **B** |
+| 2 | What is the primary difference between Hell's Gate and Halo's Gate? | Hell's Gate is for AMSI bypass, Halo's Gate is for ETW bypass | Hell's Gate extracts syscall numbers from clean ntdll; Halo's Gate scans backward past EDR hooks | Hell's Gate works on x86 only, Halo's Gate on x64 | There is no difference — they are the same technique | **B** |
+| 3 | In Cobalt Strike, what does the `stage.sleep_mask` directive do? | Prevents the beacon from sleeping | Encrypts the beacon in memory during sleep cycles | Masks the beacon's network traffic as HTTP | Hides the beacon process from task manager | **B** |
+| 4 | Which Windows Event ID indicates a new service installation (commonly used for persistence)? | 4624 | 4688 | 7045 | 4769 | **C** |
+| 5 | What is the primary detection indicator for Kerberoasting? | High volume of Event ID 4624 (logon) | High volume of Event ID 4769 (TGS requests) using RC4 encryption | High volume of Event ID 4688 (process creation) | High volume of Event ID 5140 (SMB access) | **B** |
+| 6 | In the context of phishing, what is the purpose of a tracking pixel? | To encrypt the email payload | To detect when a recipient opens the email by loading a hidden 1x1 image | To replace the sender's email address with a spoofed address | To bypass SPF/DKIM/DMARC checks | **B** |
+| 7 | Which privilege is required to perform a DCSync attack? | Any domain user | Local Administrator on a workstation | Domain Admin or Replication rights | Enterprise Admin | **C** |
+| 8 | What is the primary use case for Sliver's armory? | Storing encryption keys for implants | Hosting community-contributed tools (BOFs, assemblies, aliases) | Managing operator credentials | Logging C2 traffic for analysis | **B** |
+| 9 | Which lateral movement technique relies on creating a remote service via SMB? | WinRM | WMI | PsExec | DCOM | **C** |
+| 10 | What makes the SolarWinds attack particularly notable for red teams? | It was the fastest ransomware attack in history | It demonstrated supply chain compromise with signed payloads and extended stealth operations | It used zero-day exploits exclusively | It was performed by hacktivists rather than nation-state actors | **B** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Exercise 1: C2 Beacon Profile Design
 
@@ -1788,6 +1753,8 @@ Create an emulation plan for APT41 targeting a fictional video game company:
 4. Create cleanup procedures after each atomic test
 5. Measure success criteria: was the action detected by blue team?
 6. Document lessons learned for improving detection coverage
+
+</details>
 
 ---
 

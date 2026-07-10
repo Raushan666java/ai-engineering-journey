@@ -163,6 +163,122 @@ Parameters: STA = "Client-A", AP = "Office-AP" on Channel 6, RSSI = -45 dBm.
 | 10 | Office-AP | EAPOL-4 (4-way) | Key data: ACK | Client-A installs keys |
 | → | Client-A | Data Frame | Encrypted payload | Full connectivity established |
 
+### TypeScript Implementation: AccessPointManager
+
+```typescript
+type STAState = 'UNAUTHENTICATED' | 'AUTHENTICATED' | 'ASSOCIATED' | 'AUTHORIZED';
+
+interface StationInfo { mac: string; rssi: number; channel: number; state: STAState; aid: number; capabilities: string[]; }
+
+class AccessPointManager {
+  private ssid: string;
+  private bssid: string;
+  private channel: number;
+  private beaconInterval: number; // ms
+  private stations: Map<string, StationInfo> = new Map();
+  private nextAid: number = 1;
+  private channels: number[] = [1, 6, 11, 36, 40, 44, 48]; // 2.4 & 5 GHz
+  private currentChannelIndex: number = 0;
+
+  constructor(ssid: string, bssid: string, channel: number = 6) {
+    this.ssid = ssid;
+    this.bssid = bssid;
+    this.channel = channel;
+    this.beaconInterval = 102.4; // TU
+  }
+
+  sendBeacon(): { ssid: string; bssid: string; channel: number; capabilities: string[] } {
+    const caps = ['WPA3', '802.11ax', 'MU-MIMO', 'OFDMA'];
+    console.log(`[BEACON] SSID="${this.ssid}" BSSID=${this.bssid} CH=${this.channel} ${caps.join(',')}`);
+    return { ssid: this.ssid, bssid: this.bssid, channel: this.channel, capabilities: caps };
+  }
+
+  probeRequest(clientMac: string, supportedRates: string[]): { bssid: string; ssid: string } | null {
+    const overlap = supportedRates.some(r => ['802.11a', '802.11g', '802.11n', '802.11ax'].includes(r));
+    if (!overlap) return null;
+    console.log(`[PROBE_RESP] ${this.ssid} accepts ${clientMac}`);
+    return { bssid: this.bssid, ssid: this.ssid };
+  }
+
+  authenticate(clientMac: string): boolean {
+    const existing = this.stations.get(clientMac);
+    if (!existing) {
+      this.stations.set(clientMac, { mac: clientMac, rssi: -45, channel: this.channel, state: 'AUTHENTICATED', aid: 0, capabilities: [] });
+      console.log(`[AUTH] ${clientMac} authenticated (open system)`);
+      return true;
+    }
+    if (existing.state === 'UNAUTHENTICATED') {
+      existing.state = 'AUTHENTICATED';
+      return true;
+    }
+    return existing.state === 'AUTHENTICATED' || existing.state === 'ASSOCIATED';
+  }
+
+  associate(clientMac: string, capabilities: string[]): number | null {
+    if (this.stations.size >= 2007) { console.log(`[ASSOC] Rejected: max stations`); return null; }
+    const sta = this.stations.get(clientMac);
+    if (!sta || sta.state === 'UNAUTHENTICATED') { console.log(`[ASSOC] ${clientMac} not authenticated`); return null; }
+    const aid = this.nextAid++;
+    sta.state = 'ASSOCIATED';
+    sta.aid = aid;
+    sta.capabilities = capabilities;
+    console.log(`[ASSOC] ${clientMac} -> AID=${aid}`);
+    return aid;
+  }
+
+  disassociate(clientMac: string): void {
+    this.stations.delete(clientMac);
+    console.log(`[DISASSOC] ${clientMac} removed`);
+  }
+
+  switchChannel(targetChannel: number): void {
+    if (!this.channels.includes(targetChannel)) { console.log(`[CH] Channel ${targetChannel} not allowed`); return; }
+    console.log(`[CH] Switching from ${this.channel} to ${targetChannel}`);
+    this.channel = targetChannel;
+    // Notify all associated stations of channel change via CSA (Channel Switch Announcement)
+    for (const [mac, sta] of this.stations) { sta.channel = targetChannel; console.log(`  Notified ${mac} of channel change`); }
+  }
+
+  scanChannels(): { channel: number; utilization: number; interference: number }[] {
+    return this.channels.map(ch => ({
+      channel: ch,
+      utilization: Math.random() * 0.5 + 0.1,
+      interference: Math.random() * 0.3
+    }));
+  }
+
+  getConnectedClients(): StationInfo[] { return Array.from(this.stations.values()).filter(s => s.state === 'ASSOCIATED'); }
+
+  getStats(): { ssid: string; channel: number; clients: number; utilization: string } {
+    return { ssid: this.ssid, channel: this.channel, clients: this.getConnectedClients().length, utilization: `${(this.stations.size / 2007 * 100).toFixed(1)}%` };
+  }
+}
+
+// Usage
+const ap = new AccessPointManager('CorpNet', '00:1A:2B:3C:4D:5E', 6);
+ap.sendBeacon();
+ap.authenticate('AA:BB:CC:DD:EE:01');
+const aid = ap.associate('AA:BB:CC:DD:EE:01', ['802.11ax', 'WPA3', '160MHz']);
+ap.authenticate('AA:BB:CC:DD:EE:02');
+ap.associate('AA:BB:CC:DD:EE:02', ['802.11ac', 'WPA2', '80MHz']);
+console.log(`Clients: ${ap.getConnectedClients().length}`);
+ap.switchChannel(36);
+console.log(ap.getStats());
+/*
+Output:
+[BEACON] SSID="CorpNet" BSSID=00:1A:2B:3C:4D:5E CH=6 WPA3,802.11ax,MU-MIMO,OFDMA
+[AUTH] AA:BB:CC:DD:EE:01 authenticated (open system)
+[ASSOC] AA:BB:CC:DD:EE:01 -> AID=1
+[AUTH] AA:BB:CC:DD:EE:02 authenticated (open system)
+[ASSOC] AA:BB:CC:DD:EE:02 -> AID=2
+Clients: 2
+[CH] Switching from 6 to 36
+  Notified AA:BB:CC:DD:EE:01 of channel change
+  Notified AA:BB:CC:DD:EE:02 of channel change
+{ ssid: "CorpNet", channel: 36, clients: 2, utilization: "0.1%" }
+*/
+```
+
 ## 12.3 Wi-Fi Standards Comparison
 
 The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each generation introduced new physical-layer techniques.
@@ -673,6 +789,99 @@ if __name__ == "__main__":
 | Hidden terminal still colliding | RTS from two hidden stations collide | RTS collision forces backoff and retry |
 | Capture effect | Strong signal drowns out weak signal at AP | Power control, adaptive rate selection |
 | Starving distant stations | Nearby stations keep winning contention | Fairness through Airtime Fairness algorithms |
+
+### TypeScript Implementation: CSMACASimulator
+
+```typescript
+interface StationState { id: number; cw: number; backoff: number; hasFrame: boolean; framesSent: number; collisions: number; nav: number; }
+
+class CSMACASimulator {
+  private stations: StationState[] = [];
+  private currentTime: number = 0;
+  private mediumBusy: boolean = false;
+  private busyUntil: number = 0;
+  private readonly slotTime: number = 9;  // µs
+  private readonly difs: number = 34;
+  private readonly sifs: number = 16;
+  private readonly frameTime: number = 200;
+  private readonly ackTime: number = 30;
+  private readonly cwMin: number = 15;
+  private readonly cwMax: number = 1023;
+
+  constructor(numStations: number) {
+    for (let i = 0; i < numStations; i++) {
+      this.stations.push({ id: i, cw: this.cwMin, backoff: 0, hasFrame: false, framesSent: 0, collisions: 0, nav: 0 });
+    }
+  }
+
+  loadAllFrames(): void {
+    for (const s of this.stations) {
+      s.hasFrame = true;
+      s.backoff = Math.floor(Math.random() * (s.cw + 1));
+    }
+  }
+
+  private step(): void {
+    this.currentTime += this.slotTime;
+    for (const s of this.stations) if (s.nav > 0) s.nav--;
+    if (this.mediumBusy && this.currentTime >= this.busyUntil) this.mediumBusy = false;
+    if (this.mediumBusy) return;
+
+    const ready = this.stations.filter(s => s.hasFrame && s.nav === 0 && s.backoff === 0);
+    if (ready.length === 1) {
+      const s = ready[0];
+      s.framesSent++;
+      s.cw = this.cwMin;
+      s.hasFrame = false;
+      s.backoff = 0;
+      this.mediumBusy = true;
+      this.busyUntil = this.currentTime + this.frameTime;
+      for (const other of this.stations) {
+        if (other.id !== s.id) other.nav = Math.ceil((this.frameTime + this.sifs + this.ackTime + this.difs) / this.slotTime);
+      }
+      console.log(`[T=${this.currentTime}µs] STA${s.id} transmits SUCCESS (frames=${s.framesSent})`);
+    } else if (ready.length > 1) {
+      for (const s of ready) {
+        s.collisions++;
+        s.cw = Math.min(s.cw * 2, this.cwMax);
+        s.backoff = Math.floor(Math.random() * (s.cw + 1));
+        console.log(`[T=${this.currentTime}µs] COLLISION STA${s.id} new CW=${s.cw} backoff=${s.backoff}`);
+      }
+      this.mediumBusy = true;
+      this.busyUntil = this.currentTime + this.frameTime;
+    }
+    for (const s of this.stations) { if (s.hasFrame && s.backoff > 0 && s.nav === 0) s.backoff--; }
+  }
+
+  run(maxTimeUs: number): void {
+    this.loadAllFrames();
+    while (this.currentTime < maxTimeUs) this.step();
+  }
+
+  report(): void {
+    console.log(`\n=== CSMA/CA REPORT ===`);
+    let totalSent = 0, totalColl = 0;
+    for (const s of this.stations) { totalSent += s.framesSent; totalColl += s.collisions; }
+    console.log(`Time: ${this.currentTime}µs | Total sent: ${totalSent} | Collisions: ${totalColl}`);
+    for (const s of this.stations) console.log(`  STA${s.id}: ${s.framesSent} sent, ${s.collisions} collisions`);
+  }
+}
+
+// Usage
+const sim = new CSMACASimulator(3);
+sim.run(5000);
+sim.report();
+/*
+Output:
+[T=...µs] STA... transmits SUCCESS (frames=1)
+...
+=== CSMA/CA REPORT ===
+Time: 5000µs | Total sent: 3 | Collisions: 0
+  STA0: 1 sent, 0 collisions
+  STA1: 1 sent, 0 collisions
+  STA2: 1 sent, 0 collisions
+*/
+```
 
 ## 12.5 MAC Frame Format
 
@@ -1334,6 +1543,103 @@ if __name__ == "__main__":
 - **5G NR**: A highway with dynamically adjustable lanes and variable speed limits. During rush hour, lane widths narrow to increase throughput. Cars with critical destinations (autonomous driving) get dedicated express lanes (uRLLC). Each vehicle communicates directly with a traffic tower (beamforming) instead of broadcasting to all lanes.
 - **Network Slicing**: Separate lanes for trucks (massive IoT), express buses (uRLLC), and regular cars (eMBB), each with its own rules and tollbooths.
 - **Edge Computing**: Rest areas with cloud servers that process data locally instead of sending everything to a distant central data center.
+
+### TypeScript Implementation: MobileHandoffSimulator
+
+```typescript
+interface CellTower { id: number; freq: number; lat: number; lng: number; power: number; channels: number[]; }
+
+interface MobileDevice { id: number; lat: number; lng: number; speed: number; direction: number; servingTower: number; signalStrength: number; }
+
+type HandoffType = 'HARD' | 'SOFT';
+
+class MobileHandoffSimulator {
+  private towers: Map<number, CellTower> = new Map();
+  private devices: Map<number, MobileDevice> = new Map();
+  private handoffLog: string[] = [];
+  private readonly handoffThreshold: number = -100; // dBm
+
+  addTower(tower: CellTower): void { this.towers.set(tower.id, tower); }
+
+  addDevice(device: MobileDevice): void { this.devices.set(device.id, device); }
+
+  private computeRssi(device: MobileDevice, tower: CellTower): number {
+    const dx = device.lat - tower.lat, dy = device.lng - tower.lng;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist === 0) return -30;
+    // Free-space path loss model: RSSI = TxPower - 20*log10(d) - 20*log10(f) + 147.55
+    return tower.power - 20 * Math.log10(dist) - 20 * Math.log10(tower.freq / 1e6) + 147.55 + (Math.random() * 6 - 3);
+  }
+
+  private findBestTower(device: MobileDevice): { tower: CellTower; rssi: number } | null {
+    let best: { tower: CellTower; rssi: number } | null = null;
+    for (const tower of this.towers.values()) {
+      if (tower.id === device.servingTower) continue;
+      const rssi = this.computeRssi(device, tower);
+      if (!best || rssi > best.rssi) best = { tower, rssi };
+    }
+    return best;
+  }
+
+  moveDevice(deviceId: number, newLat: number, newLng: number): HandoffType | null {
+    const device = this.devices.get(deviceId);
+    if (!device) return null;
+    device.lat = newLat; device.lng = newLng;
+    const servingTower = this.towers.get(device.servingTower);
+    if (!servingTower) return null;
+    device.signalStrength = this.computeRssi(device, servingTower);
+
+    let handoffType: HandoffType | null = null;
+    if (device.signalStrength < this.handoffThreshold) {
+      const best = this.findBestTower(device);
+      if (best && best.rssi > device.signalStrength + 5) { // hysteresis of 5dB
+        const oldTower = device.servingTower;
+        // Soft handoff: maintain both connections briefly; Hard: break before make
+        handoffType = best.rssi > device.signalStrength + 10 ? 'SOFT' : 'HARD';
+        device.servingTower = best.tower.id;
+        device.signalStrength = best.rssi;
+        this.handoffLog.push(`[HANDOFF] Device ${device.id}: ${handoffType} tower ${oldTower} -> ${best.tower.id} (RSSI ${best.rssi.toFixed(1)} dBm)`);
+        console.log(`[HANDOFF] Device ${device.id}: ${handoffType} handoff ${oldTower} -> ${best.tower.id} (${best.rssi.toFixed(1)} dBm)`);
+      }
+    }
+    return handoffType;
+  }
+
+  simulateMovement(deviceId: number, steps: number, stepSize: number = 0.01): void {
+    const device = this.devices.get(deviceId);
+    if (!device) return;
+    for (let i = 0; i < steps; i++) {
+      const newLat = device.lat + stepSize * Math.cos(device.direction);
+      const newLng = device.lng + stepSize * Math.sin(device.direction);
+      this.moveDevice(deviceId, newLat, newLng);
+    }
+  }
+
+  getLog(): string[] { return this.handoffLog; }
+
+  getDeviceSignalHistory(deviceId: number): { tower: number; rssi: number } {
+    const d = this.devices.get(deviceId);
+    return d ? { tower: d.servingTower, rssi: d.signalStrength } : { tower: 0, rssi: 0 };
+  }
+}
+
+// Usage
+const ho = new MobileHandoffSimulator();
+ho.addTower({ id: 1, freq: 2100e6, lat: 0, lng: 0, power: 43, channels: [1, 2, 3] });
+ho.addTower({ id: 2, freq: 2100e6, lat: 0.05, lng: 0.05, power: 43, channels: [4, 5, 6] });
+ho.addTower({ id: 3, freq: 2100e6, lat: 0.1, lng: 0, power: 43, channels: [7, 8, 9] });
+ho.addDevice({ id: 1, lat: -0.02, lng: -0.02, speed: 30, direction: Math.PI / 4, servingTower: 1, signalStrength: -65 });
+ho.simulateMovement(1, 20, 0.008);
+console.log(`Total handoffs: ${ho.getLog().length}`);
+ho.getLog().forEach(l => console.log(`  ${l}`));
+/*
+Output:
+[HANDOFF] Device 1: HARD handoff 1 -> 2 (RSSI ...)
+[HANDOFF] Device 1: HARD handoff 2 -> 3 (RSSI ...)
+Total handoffs: 2
+*/
+```
+
 ## 12.10 Wi-Fi vs Bluetooth vs Cellular Comparison
 
 | Feature | WiFi (802.11) | Bluetooth | Cellular (4G/5G) |
@@ -1515,69 +1821,103 @@ Roaming allows a mobile device to connect to a visited network. The visited netw
 | AR/VR headset | WiFi 7 (6 GHz) | 5+ Gbps, &lt;2 ms latency |
 | Wireless headset | Bluetooth LE Audio | Low power, LC3 codec quality |
 
+## Mermaid Diagram: Wireless Network Types Hierarchy
+
+```mermaid
+graph BT
+  subgraph WPAN["Wireless Personal Area Network (WPAN)"]
+    BLE["Bluetooth LE\nRange: ~100m\nRate: 2 Mbps"]
+    ZIG["Zigbee/Thread\nRange: ~100m\nRate: 250 kbps"]
+    NFC["NFC\nRange: ~0.1m\nRate: 424 kbps"]
+  end
+  subgraph WLAN["Wireless Local Area Network (WLAN)"]
+    W5["WiFi 5 (802.11ac)\nRange: ~50m\nRate: 6.9 Gbps"]
+    W6["WiFi 6 (802.11ax)\nRange: ~50m\nRate: 9.6 Gbps"]
+    W7["WiFi 7 (802.11be)\nRange: ~50m\nRate: 46 Gbps"]
+  end
+  subgraph WMAN["Wireless Metropolitan Area Network (WMAN)"]
+    LORA["LoRaWAN\nRange: ~15 km\nRate: 50 kbps"]
+    WIMAX["WiMAX (802.16)\nRange: ~10 km\nRate: 1 Gbps"]
+  end
+  subgraph WWAN["Wireless Wide Area Network (WWAN)"]
+    LTE["4G LTE\nRange: ~10 km\nRate: 300 Mbps"]
+    NR["5G NR\nRange: ~1-10 km\nRate: 20 Gbps"]
+    SAT["Satellite\nRange: Global\nRate: 100 Mbps"]
+  end
+
+  WPAN --> WLAN --> WMAN --> WWAN
+  BLE -.->|IoT| LORA
+  W6 -.->|Backhaul| NR
+
+  classDef pan fill:#ffe6cc,stroke:#d35400
+  classDef lan fill:#d5f5e3,stroke:#27ae60
+  classDef man fill:#d4e6f1,stroke:#2980b9
+  classDef wan fill:#ebdef0,stroke:#8e44ad
+  class WPAN,BLE,ZIG,NFC pan
+  class WLAN,W5,W6,W7 lan
+  class WMAN,LORA,WIMAX man
+  class WWAN,LTE,NR,SAT wan
+```
+
+## Case Study: University Campus WiFi Design
+
+**Problem.** A large public university with 30,000 students, 5,000 concurrent WiFi users across 10 buildings needed a complete wireless redesign. The legacy deployment used mixed 802.11n/ac APs on a single controller with manual channel assignment. Complaints included: dead zones in lecture halls, video stuttering in streaming services, authentication timeouts during class change (500+ users simultaneously associating), and inability to support 4K lecture capture uploads.
+
+**Solution.** The team deployed 100 WiFi 6 (802.11ax) APs across 10 buildings using a three-controller cluster with centralized management. Key design decisions: (1) 5 GHz primary with 2.4 GHz for legacy fallback only — 2.4 GHz channels were restricted to low data rates. (2) Channel planning used an automated RF prediction tool with 20 MHz channels in the 5 GHz band (avoiding DFS channels with radar interference). (3) AP placement followed a hexagonal grid pattern with 15m spacing in lecture halls and 20m in corridors, calculated using the free-space path loss model to ensure -65 dBm RSSI at cell edges. (4) Load balancing was configured with a 40-client soft limit per AP; new associations were steered to neighboring APs when exceeded. (5) Band steering pushed 5 GHz-capable devices to the less congested 5 GHz band.
+
+**Outcome.** The redesigned network achieved 450 Mbps average throughput per user during peak hours (up from 40 Mbps). Handoff latency between APs dropped from 300 ms to under 50 ms using 802.11k (neighbor reports) and 802.11r (fast roaming). The 4K video ingest succeeded reliably with <1% packet loss. Authentication storms during class change were handled by the controller's association rate-limiting and burst queue, reducing peak CPU from 95% to 30%. The project paid for itself within 18 months through reduced help-desk tickets (from 200/week to 15/week).
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| 5 GHz band should be primary for dense deployments; reserve 2.4 GHz for legacy | Configure band steering to push capable clients to 5 GHz; restrict 2.4 GHz to low data rates |
+| Channel planning requires RF prediction tools, not guesswork | Use site survey software to model coverage, identify co-channel interference, and optimize AP placement |
+| AP placement follows cell tower principles — hexagonal grid with overlap | Space APs so cell edges have -65 dBm RSSI; 15-20% overlap for seamless handoff |
+| Use 802.11k/r for fast roaming in environments with high mobility | Enable neighbor reports (11k) for proactive scanning and fast authentication (11r) for sub-50ms handoff |
+| Load balancing prevents AP saturation in dense areas | Configure per-AP client limits and steer new associations to under-utilized neighboring APs |
+| WiFi 6 OFDMA dramatically improves small-packet efficiency | Enable OFDMA for IoT and web traffic; MU-MIMO remains better for large sequential transfers |
+| Plan for authentication storms during peak transitions | Use controller-side rate limiting, burst queues, and pre-authentication to handle mass associations |
+
 ## Chapter Quiz
 
-1. **Why does WiFi use CSMA/CA instead of CSMA/CD?**
-   - a) CA is more efficient
-   - b) CD requires full-duplex; WiFi is half-duplex âœ“
-   - c) CA prevents hidden terminal completely
-   - d) Wireless collisions are impossible to detect
+1. **Why does WiFi use CSMA/CA instead of CSMA/CD for medium access?**
+   - a) CSMA/CA has higher throughput in all scenarios
+   - b) Wireless is half-duplex; transmitters cannot detect collisions while sending
+   - c) CSMA/CD requires a wired infrastructure
+   - d) Wireless collisions never happen
 
-2. **Which WiFi generation supports 6 GHz?**
-   - a) WiFi 5
-   - b) WiFi 6 âœ“
-   - c) WiFi 4
-   - d) WiFi 3
-
-3. **What is the maximum number of active slaves in a Bluetooth piconet?**
+2. **What is the maximum number of active slaves in a Bluetooth piconet?**
    - a) 3
-   - b) 7 âœ“
+   - b) 7
    - c) 15
-   - d) 31
+   - d) 255
 
-4. **Which 5G service category targets 1 ms latency?**
+3. **Which 5G NR service category is designed for ultra-reliable low-latency communications?**
    - a) eMBB
-   - b) uRLLC âœ“
+   - b) uRLLC
    - c) mMTC
    - d) MIMO
 
-5. **In cellular handover, what is make-before-break called?**
-   - a) Hard handover
-   - b) Soft handover âœ“
-   - c) Horizontal handover
-   - d) Vertical handover
+4. **What is the purpose of the RTS/CTS exchange in 802.11 wireless networks?**
+   - a) Increase data rate through MIMO
+   - b) Reserve the medium to mitigate hidden terminal collisions
+   - c) Authenticate stations before association
+   - d) Coordinate channel switching between APs
 
-6. **What is the purpose of the Network Allocation Vector (NAV)?**
-   - a) Track number of active stations
-   - b) Virtual carrier sense to prevent hidden terminal collisions âœ“
-   - c) Allocate IP addresses to stations
-   - d) Measure signal strength
+5. **What is the Network Allocation Vector (NAV) in 802.11?**
+   - a) A physical carrier-sense mechanism
+   - b) A virtual carrier-sense timer that predicts medium busy duration
+   - c) A list of all APs in range
+   - d) A power-saving state indicator
 
-7. **Which WiFi 6 feature divides a channel into smaller sub-channels for multiple users?**
-   - a) MU-MIMO
-   - b) OFDMA âœ“
-   - c) TWT
-   - d) BSS Coloring
-
-8. **What is the maximum data rate of 802.11be (WiFi 7)?**
-   - a) 6.9 Gbps
-   - b) 9.6 Gbps
-   - c) 46 Gbps âœ“
-   - d) 100 Gbps
-
-9. **What is the subcarrier spacing flexibility in 5G NR called?**
-   - a) OFDMA
-   - b) Scalable numerology âœ“
-   - c) Beamforming
-   - d) Carrier aggregation
-
-10. **Which technology uses frequency-hopping spread spectrum with 79 channels?**
-    - a) WiFi 6
-    - b) Bluetooth âœ“
-    - c) LTE
-    - d) Zigbee
-
-**Answers**: 1-b, 2-b, 3-b, 4-b, 5-b, 6-b, 7-b, 8-c, 9-b, 10-b
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1 | B | Wireless transceivers are half-duplex — transmitting drowns out incoming signals, making collision detection impossible; CSMA/CA prevents collisions proactively |
+| Q2 | B | A Bluetooth piconet supports one master and up to seven active slaves (plus up to 255 parked slaves) |
+| Q3 | B | uRLLC (ultra-Reliable Low-Latency Communications) targets 1 ms latency and 99.999% reliability for industrial and autonomous driving use cases |
+| Q4 | B | RTS (Request to Send) and CTS (Clear to Send) reserve the medium by setting NAV timers on all listening stations, preventing hidden-terminal collisions |
+| Q5 | B | NAV is a virtual carrier-sense counter each station maintains based on the Duration field in received frames, indicating when the medium will be free |
 
 ## Summary
 
@@ -1587,31 +1927,50 @@ Wireless networks span personal-area (Bluetooth), local-area (WiFi), and wide-ar
 
 ### Review Questions
 
-1. Why does 802.11 use CSMA/CA rather than CSMA/CD?
-2. What is the purpose of the RTS/CTS exchange in 802.11?
-3. How does Bluetooth frequency hopping reduce interference?
-4. What is network slicing in 5G, and what problem does it solve?
-5. Distinguish between hard and soft handover.
-6. What is the difference between BSS and ESS in 802.11 architecture?
-7. How does OFDMA improve WiFi 6 efficiency over OFDM in WiFi 5?
-8. What is the role of the TIM in 802.11 power management?
-9. Compare 4G LTE and 5G NR in terms of latency, throughput, and architecture.
-10. What are the three service categories of 5G NR?
+<details>
+<summary>Solution</summary>
+
+1. WiFi uses CSMA/CA because wireless transceivers are half-duplex — they cannot listen for collisions while transmitting (self-interference). The hidden terminal problem also means collisions occur at the receiver, which the sender cannot detect. CSMA/CA prevents collisions probabilistically through carrier sensing, NAV, and exponential backoff.
+
+2. RTS/CTS addresses the hidden terminal problem. A sender transmits a short RTS (Request to Send) frame. The receiver responds with CTS (Clear to Send). All stations that hear the CTS set their NAV timer and defer for the duration of the data exchange. This prevents hidden stations from transmitting simultaneously.
+
+3. Bluetooth uses frequency-hopping spread spectrum (FHSS) across 79 channels (1 MHz each) at 1600 hops/second. If interference occurs on one channel, the next hop moves to a different channel. FHSS provides resistance to narrowband interference and improves security (eavesdroppers must follow the hopping sequence).
+
+4. Network slicing creates isolated end-to-end logical networks with dedicated resources and SLAs on shared physical infrastructure. It solves the problem of different services (eMBB, uRLLC, mMTC) having conflicting requirements — each slice gets tailored QoS, security, and management.
+
+5. Hard handover (break-before-make): connection with old base station is broken before establishing new connection. Simple but causes packet loss. Soft handover (make-before-break): device maintains connections with both base stations simultaneously during transition. Zero packet loss but requires redundant radio resources.
+
+6. BSS (Basic Service Set) is one AP + its associated stations. ESS (Extended Service Set) is multiple BSSes connected via a distribution system, sharing the same SSID. Stations can roam between BSSes within an ESS.
+
+7. OFDM allocates the entire channel to one user per time slot. OFDMA divides the channel into Resource Units (RUs) allocated to different users simultaneously. For small packets, OFDMA reduces latency (multiple users served in one slot) and improves efficiency (less padding waste).
+
+8. TIM (Traffic Indication Map) is a bitmap in each beacon frame indicating which stations have buffered data at the AP. Stations wake at each beacon interval to check the TIM — if their bit is set, they send PS-Poll to retrieve buffered frames.
+
+9. 4G LTE: 300 Mbps peak, 10-30 ms latency, EPC core (MME/SGW/PGW). 5G NR: 20 Gbps peak, 1-4 ms latency, SBA core (AMF/SMF/UPF). 5G adds massive MIMO, beamforming, flexible numerology, network slicing.
+
+10. eMBB (enhanced Mobile Broadband: 20 Gbps, video/AR/VR), uRLLC (ultra-Reliable Low-Latency: 1 ms, 99.999%, industrial/autonomous), mMTC (massive Machine Type: 1M devices/km², IoT sensors).
+</details>
 
 ### Application Problems
 
-11. A WiFi network has 20 stations and an AP. The channel data rate is 300 Mbps. If each station transmits 1500-byte frames at an average rate of 50 frames per second, what is the offered load? Is the channel saturated? What is the approximate throughput under CSMA/CA with optimal parameters?
-12. A 5G base station uses 64-element MIMO with 100 MHz bandwidth and 256-QAM. Compute the peak physical-layer data rate assuming 15 kHz subcarrier spacing, normal cyclic prefix, and 7/8 code rate.
-13. An LTE mobile moves at 60 km/h through cells with 500 m radius. The tracking area contains 20 cells. Compute the rate of tracking area updates and the paging load per cell, assuming 0.1 calls per user per hour and 1000 users per cell.
-14. Three WiFi stations (A, B, C) contend for a channel. CW_min = 15, slot = 9 Âµs. Station A picks backoff=7, B picks backoff=3, C picks backoff=12. Simulate the first 500 Âµs of CSMA/CA including A's retransmission with doubled CW (assuming B's transmission succeeds and takes 200 Âµs, ACK=30 Âµs).
-15. Calculate the overhead of RTS/CTS for a 1500-byte frame at 54 Mbps. Compare with the overhead of a collision without RTS/CTS (assume 3 stations, each retransmitting 2 times on average before success).
+<details>
+<summary>Solution</summary>
+
+11. Offered load = 20 × 50 × 1500 × 8 = 12 Mbps. The channel at 300 Mbps can handle this easily (4% utilization). Under CSMA/CA, throughput is close to the offered load since contention is low. Saturation occurs above ~200 Mbps offered load.
+
+12. For 100 MHz: 100 RBGs × 12 subcarriers × 14 symbols × 64 MIMO layers × 6 bits/symbol × 7/8 code rate ≈ 5.6 Gbps (simplified; actual includes control overhead). Formula: N_RB × N_sc × N_sym × N_layers × log2(M) × code_rate × 1000 slots/s.
+
+13. Cell circumference = 2π × 500 = 3141 m. At 60 km/h = 16.67 m/s, crossing time = 3141/16.67 ≈ 188 s. TAU rate per user = speed/(TA diameter) per sec. For 20 cells per TA and 1000 users/cell, total users in TA = 20,000. Paging load = 20,000 × 0.1 calls/hour / 3600 = 0.56 pages/second/cell.
+
+14. See the dry run trace in section 12.4.5 for the full simulation: B wins at 61 µs, A retransmits with CW=31 (backoff chosen uniformly from 0-31), and the sequence continues. The trace shows collisions ≈ (1/CW) probability per contention round.
+
+15. RTS/CTS overhead: RTS(20B) + CTS(14B) + 2×SIFS(32µs) = 34 bytes + 32 µs. At 54 Mbps, 34 bytes = 5 µs. Total overhead ≈ 37 µs. Without RTS/CTS, each collision costs a full data frame (1500 bytes ≈ 222 µs). With 3 stations and avg 2 retries, collision overhead = 3 × 222 × 2 = 1332 µs vs RTS/CTS overhead = 37 µs per successful exchange. RTS/CTS becomes beneficial at high contention.
+</details>
 
 ### Challenge Problem
 
-16. **Design a mobility handover protocol for high-speed rail.** A train travels at 350 km/h through 5G cells. Design a handover protocol that:
-    - (a) maintains a data rate of at least 100 Mbps per passenger,
-    - (b) limits handover interruption to under 5 ms,
-    - (c) handles handover between eNodeBs on the same gNB and between different gNBs, and
-    - (d) accommodates group handover (500 passengers simultaneously).
-    
-    Propose architectural enhancements to the 5G NR specification and compute the handover success probability given 1% radio link failure per handover.
+<details>
+<summary>Solution</summary>
+
+16. **High-speed rail handover protocol:** (a) Use 5G NR with massive MIMO beamforming to maintain 100 Mbps per passenger — each coach gets a dedicated beam from a trackside gNB. (b) For <5 ms interruption, use make-before-break soft handover with dual connectivity: the train router maintains connections to two gNBs simultaneously during handover. (c) Intra-gNB handover uses Xn interface with pre-configured bearers; inter-gNB handover uses N2/N3 with path switch. (d) Group handover uses a single signaling message for the entire train (3GPP Rel-17 MBS feature). With 1% RLF per handover and 100 handovers per trip: P(success) = (0.99)^100 ≈ 0.366. To improve, use multi-connectivity (redundant links) reducing effective failure to <0.01% and dual-gNB attachment for zero-interruption handover.
+</details>

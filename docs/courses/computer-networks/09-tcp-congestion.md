@@ -50,6 +50,49 @@ flowchart LR
     A --> K[Real-World Applications]
 ```
 
+### TCP Congestion Control Architecture
+
+```mermaid
+flowchart TD
+    subgraph Detection["Detection Layer"]
+        A[Packet Loss] --> B[Triple Duplicate ACK]
+        A --> C[RTO Expiry]
+        D[ECN Mark] --> B
+    end
+
+    subgraph Response["Response Layer"]
+        B --> E[Fast Retransmit]
+        E --> F[Fast Recovery / Slow Start]
+        C --> G[Timeout Retransmit]
+        G --> H[Slow Start (cwnd=1)]
+    end
+
+    subgraph Control["Control Layer"]
+        F --> I[Congestion Avoidance AIMD]
+        H --> I
+        I --> J{Congested?}
+        J -- Yes --> A
+        J -- No --> K[Continue AIMD]
+    end
+
+    subgraph Variants["TCP Variants"]
+        I --> L[Tahoe: go to slow start]
+        I --> M[Reno: fast recovery]
+        M --> N[NewReno: partial ACK]
+        N --> O[Cubic: time-based growth]
+        O --> P[BBR: model-based]
+    end
+
+    classDef detect fill:#FF5722,color:#fff
+    classDef resp fill:#2196F3,color:#fff
+    classDef ctrl fill:#4CAF50,color:#fff
+    classDef var fill:#9C27B0,color:#fff
+    class A,D detect
+    class E,F,G,H resp
+    class I,J,K ctrl
+    class L,M,N,O,P var
+```
+
 ## 9.1 Flow Control vs. Congestion Control
 
 **Flow control** prevents a fast sender from overwhelming a slow receiver. The receiver advertises its available buffer space (rwnd, advertised window), and the sender limits unacknowledged data to rwnd.
@@ -557,6 +600,51 @@ if __name__ == "__main__":
 
 **Why exponential growth matters**: Slow start grows cwnd as 2^(RTT), reaching available bandwidth in O(log BDP) round trips. Without exponential growth, a BDP of 1000 packets would take 1000 RTTs to fill the pipe using linear growth. With slow start, it takes ≈10 RTTs.
 
+### TypeScript Implementation: CongestionWindowSimulator
+
+```typescript
+interface CwndEvent {
+  rtt: number;
+  cwnd: number;
+  ssthresh: number;
+  phase: 'slow_start' | 'congestion_avoidance' | 'recovery';
+}
+
+class CongestionWindowSimulator {
+  private cwnd: number = 10;
+  private ssthresh: number = 64;
+  private mss: number = 1460;
+  private history: CwndEvent[] = [];
+  private phase: 'slow_start' | 'congestion_avoidance' | 'recovery' = 'slow_start';
+
+  simulateRTT(loss: boolean = false): void {
+    if (loss) {
+      this.ssthresh = Math.max(this.cwnd / 2, 2);
+      this.cwnd = this.ssthresh + 3;
+      this.phase = 'recovery';
+    } else if (this.phase === 'slow_start') {
+      this.cwnd *= 2;
+      if (this.cwnd >= this.ssthresh) this.phase = 'congestion_avoidance';
+    } else if (this.phase === 'congestion_avoidance') {
+      this.cwnd += this.mss * this.mss / this.cwnd;
+    } else {
+      this.phase = 'congestion_avoidance';
+    }
+    this.history.push({ rtt: this.history.length + 1, cwnd: Math.round(this.cwnd), ssthresh: this.ssthresh, phase: this.phase });
+  }
+
+  simulateRTTs(count: number, lossRTTs: number[] = []): void {
+    for (let i = 0; i < count; i++) this.simulateRTT(lossRTTs.includes(i + 1));
+  }
+
+  getHistory(): CwndEvent[] { return this.history; }
+}
+// Usage:
+// const sim = new CongestionWindowSimulator();
+// sim.simulateRTTs(15, [8]);
+// console.log(sim.getHistory());
+```
+
 ## 9.5 Congestion Avoidance (AIMD)
 
 ### Real-World Analogy: Elevator Loading
@@ -644,6 +732,66 @@ OnLoss():
 | ACK-clocking feedback | O(1) per ACK | Self-regulating via ACK arrival rate |
 
 **Why O(1) is critical**: A kernel TCP implementation handles per-packet events at line rate. At 10 Gbps with 1500-byte packets, that's ~830,000 packets/second. Any nonlinear operation would create a bottleneck.
+
+### TypeScript Implementation: AIMDSimulator
+
+```typescript
+interface AIMDState {
+  rtt: number;
+  cwnd: number;
+  ssthresh: number;
+  throughput: number;
+}
+
+class AIMDSimulator {
+  private cwnd: number = 10;
+  private ssthresh: number = 64;
+  private mss: number = 1460;
+  private rtt: number = 100;
+  private history: AIMDState[] = [];
+  private totalBytes: number = 0;
+
+  private getThroughput(): number {
+    return (this.cwnd * this.mss) / (this.rtt / 1000);
+  }
+
+  stepRTT(): void {
+    this.totalBytes += this.cwnd * this.mss;
+    this.history.push({ rtt: this.history.length + 1, cwnd: Math.round(this.cwnd), ssthresh: this.ssthresh, throughput: Math.round(this.getThroughput()) });
+  }
+
+  additiveIncrease(): void {
+    this.cwnd += this.mss * this.mss / this.cwnd;
+  }
+
+  multiplicativeDecrease(): void {
+    this.ssthresh = Math.max(this.cwnd / 2, 2);
+    this.cwnd = this.ssthresh;
+  }
+
+  simulateAIMD(cycles: number, windowPeak: number): AIMDState[][] {
+    const cyclesData: AIMDState[][] = [];
+    for (let c = 0; c < cycles; c++) {
+      const cycleData: AIMDState[] = [];
+      while (this.cwnd < windowPeak) {
+        this.stepRTT();
+        cycleData.push({ ...this.history[this.history.length - 1] });
+        this.additiveIncrease();
+      }
+      this.multiplicativeDecrease();
+      cyclesData.push(cycleData);
+    }
+    return cyclesData;
+  }
+
+  getHistory(): AIMDState[] { return this.history; }
+  getTotalBytes(): number { return this.totalBytes; }
+}
+// Usage:
+// const aimd = new AIMDSimulator();
+// const cycles = aimd.simulateAIMD(3, 48);
+// console.log(`Total bytes sent: ${aimd.getTotalBytes()}`);
+```
 
 ## 9.6 Fast Retransmit and Fast Recovery
 
@@ -745,6 +893,69 @@ OnPartialAck(ack):
 | Multiple losses in one window | Reno recovery fails on >1 loss | NewReno retransmits one lost packet per partial ACK |
 | Late ACK causes window stall | Receiver ACK delayed, sender window stalls | Delayed ACK timer (max 500 ms) ensures ACK eventually sent |
 | ACK loss | Lost ACK reduces effective cwnd growth | Cumulative ACKs cover lost ACKs — only the latest ACK matters |
+
+### TypeScript Implementation: RetransmissionTimer
+
+```typescript
+interface RetransmissionState {
+  event: string;
+  rto: number;
+  srtt: number;
+  rttvar: number;
+  backoff: number;
+}
+
+class RetransmissionTimer {
+  private srtt: number = 0;
+  private rttvar: number = 0;
+  private rto: number = 3000;
+  private backoff: number = 1;
+  private readonly ALPHA = 1 / 8;
+  private readonly BETA = 1 / 4;
+  private readonly MIN_RTO = 200;
+  private readonly MAX_RTO = 120000;
+  private history: RetransmissionState[] = [];
+
+  private record(event: string): void {
+    this.history.push({ event, rto: Math.round(this.rto), srtt: Math.round(this.srtt), rttvar: Math.round(this.rttvar), backoff: this.backoff });
+  }
+
+  measureRTT(sampleRTT: number): void {
+    if (this.srtt === 0) {
+      this.srtt = sampleRTT;
+      this.rttvar = sampleRTT / 2;
+    } else {
+      const diff = sampleRTT - this.srtt;
+      this.srtt += this.ALPHA * diff;
+      this.rttvar += this.BETA * (Math.abs(diff) - this.rttvar);
+    }
+    this.rto = Math.max(this.MIN_RTO, Math.min(this.MAX_RTO, this.srtt + 4 * this.rttvar));
+    this.backoff = 1;
+    this.record('measureRTT');
+  }
+
+  onRTOExpiry(): void {
+    this.backoff *= 2;
+    this.rto = Math.min(this.MAX_RTO, this.rto * this.backoff);
+    this.record('RTO_expiry');
+  }
+
+  onACKAfterRTO(): void {
+    this.backoff = 1;
+    this.rto = Math.max(this.MIN_RTO, this.srtt + 4 * this.rttvar);
+    this.record('ACK_after_RTO');
+  }
+
+  getRTO(): number { return this.rto; }
+  getSRTT(): number { return this.srtt; }
+  getHistory(): RetransmissionState[] { return this.history; }
+}
+// Usage:
+// const rt = new RetransmissionTimer();
+// rt.measureRTT(120);  // srtt=120, rttvar=60, rto=120+240=360
+// rt.measureRTT(150);  // srtt=123.75, rttvar=57.19, rto=123.75+228.75=352
+// console.log(`RTO: ${rt.getRTO()}ms`); // ~353ms
+```
 
 ## 9.7 TCP Tahoe
 
@@ -1712,6 +1923,26 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 | Loss events per second | p × throughput | 1% loss at 100 Mbps = 1 loss/second |
 | Recovery time after loss | W/2 RTTs | 50-packet window → 25 RTTs to recover |
 
+## Case Study: CDN Congestion Control Tuning for Global Video Delivery
+
+**Problem:** A major video streaming CDN serving 50 million daily users experienced rebuffering events on long-tail content with low popularity (few viewers, so no cache locality). Users in regions with high packet loss (e.g., 1-3% loss in emerging markets) reported 15-30% rebuffer ratios. The default Linux TCP Cubic algorithm, while excellent for RTT fairness, performed poorly under random packet loss because it interpreted every loss as congestion, causing unnecessary cwnd reductions on non-congested paths.
+
+**Solution:** The CDN engineering team deployed a multi-strategy approach across their edge servers. First, they switched from Cubic to BBR for all video delivery (BBR is model-based and does not reduce cwnd on random loss). Across 15,000 edge servers, they configured `net.ipv4.tcp_congestion_control=bbr` and tuned `net.core.default_qdisc=fq` for fair queuing. Second, they implemented Forward Error Correction (FEC) at the application layer, adding 10% parity data to each video chunk, allowing the client to recover from up to 10% packet loss without requesting retransmissions. Third, they deployed a custom loss discrimination module that classified losses as congestion vs. corruption using inter-arrival time variance: sudden RTT increases indicated bufferbloat/congestion, while isolated losses with stable RTT indicated corruption.
+
+**Outcome:** Rebuffering ratios dropped from 22% to 4% in high-loss regions. BBR's model-based control achieved 2.3× throughput compared to Cubic on lossy paths (1.5% loss, 100ms RTT). The FEC layer added 12% bandwidth overhead but eliminated retransmission delays entirely for 90% of loss events. Total CDN egress costs increased by 8% (FEC overhead), but customer retention improved by 14 percentage points in affected markets, more than offsetting the bandwidth cost. The loss discrimination module proved critical: BBR+Cubic hybrid deployment used Cubic in low-loss data centers (better RTT fairness) and BBR at lossy edge egress points.
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| **BBR outperforms Cubic under packet loss** | Use BBR for last-mile delivery, wireless links, and emerging-market deployments |
+| **Loss-based algorithms misinterpret corruption** | Isolated losses with stable RTT = corruption; RTT spikes + loss = congestion |
+| **FEC reduces retransmission latency** | Add 10-15% parity data for real-time streaming over lossy links |
+| **Fair queuing (fq) disciplines CUBIC fairness** | Always pair `fq` qdisc with BBR to prevent BBR flows from starving Reno/Cubic |
+| **Slow start overshoot causes burst losses** | Use HyStart (hybrid slow start) to exit slow start before buffer overflow |
+| **RTT fairness matters for global services** | Cubic's time-based growth helps multi-RTT fairness across continents |
+| **Loss discrimination avoids unnecessary cwnd reduction** | Classify using RTT variance + loss pattern before triggering multiplicative decrease |
+
 ## 9.19 Summary
 
 TCP congestion control uses AIMD: additive increase probes for bandwidth; multiplicative decrease responds to loss. Slow start achieves exponential growth to the available bandwidth. Congestion avoidance provides linear, stable growth. Fast retransmit and fast recovery enable efficient recovery from isolated losses without timeout.
@@ -1722,96 +1953,129 @@ The effective window combines congestion and flow constraints: min(cwnd, rwnd). 
 
 ## 9.20 Chapter Quiz
 
-1. **What is the effective TCP window if cwnd = 32 KB and rwnd = 20 KB?**
-   - a) 32 KB
-   - b) 20 KB ✓
-   - c) 52 KB
-   - d) 12 KB
+| # | Question | Options | Answer | Explanation |
+|---|----------|---------|--------|-------------|
+| 1 | What is the effective TCP window if cwnd = 32 KB and rwnd = 20 KB? | a) 32 KB, b) 20 KB, c) 52 KB, d) 12 KB | **B** | Effective window = min(cwnd, rwnd) = min(32 KB, 20 KB) = 20 KB. The receiver's buffer is the bottleneck. |
+| 2 | During slow start, how does cwnd increase per RTT? | a) +1 MSS, b) +1 MSS per ACK, c) Doubles, d) Constant | **C** | Slow start doubles cwnd every RTT because each ACK received increases cwnd by 1 MSS and the number of ACKs per RTT equals the current cwnd. |
+| 3 | What triggers fast retransmit in TCP Reno? | a) RTO expiry, b) 3 duplicate ACKs, c) ECN mark, d) ICMP unreachable | **B** | Three duplicate ACKs indicate that the receiver received out-of-order segments, implying a segment was lost. The sender retransmits the missing segment without waiting for RTO. |
+| 4 | TCP Cubic's growth function is: | a) Linear, b) Logarithmic, c) Cubic, d) Exponential | **C** | CUBIC uses a cubic (third-degree polynomial) function of wall-clock time since the last loss event, making it RTT-independent. |
+| 5 | BBR uses which signal to detect congestion? | a) Packet loss, b) RTT and bandwidth model, c) ECN marks only, d) ICMP source quench | **B** | BBR estimates the bottleneck bandwidth (BtlBw) and round-trip propagation time (RTprop) from ACK timing, pacing at the estimated bandwidth rather than waiting for loss. |
 
-2. **During slow start, how does cwnd increase per RTT?**
-   - a) +1 MSS
-   - b) +1 MSS per ACK
-   - c) Doubles ✓
-   - d) Constant
-
-3. **What triggers fast retransmit in TCP Reno?**
-   - a) RTO expiry
-   - b) 3 duplicate ACKs ✓
-   - c) ECN mark
-   - d) ICMP unreachable
-
-4. **TCP Cubic's growth function is:**
-   - a) Linear
-   - b) Logarithmic
-   - c) Cubic ✓
-   - d) Exponential
-
-5. **Which variant handles multiple packet losses in one window best?**
-   - a) Tahoe
-   - b) Reno
-   - c) NewReno ✓
-   - d) OldTahoe
-
-6. **BBR uses which signal to detect congestion?**
-   - a) Packet loss
-   - b) RTT and bandwidth model ✓
-   - c) ECN marks only
-   - d) ICMP source quench
-
-7. **In the AIMD sawtooth, what is the peak cwnd W in terms of loss rate p?**
-   - a) W = sqrt(1/p)
-   - b) W = sqrt(8/(3p)) ✓
-   - c) W = 1/p
-   - d) W = p/2
-
-8. **What problem does bufferbloat cause for loss-based TCP?**
-   - a) Too much packet loss
-   - b) Late loss signals with high latency ✓
-   - c) No packet loss at all
-   - d) TCP window scaling breaks
-
-9. **Why does Cubic achieve RTT fairness?**
-   - a) It increases cwnd proportional to RTT
-   - b) Its growth function uses wall-clock time ✓
-   - c) It backs off more on long RTTs
-   - d) It uses ECN instead of loss
-
-10. **What does SACK allow TCP to do?**
-    - a) Send faster than cwnd allows
-    - b) Report exactly which segments are missing ✓
-    - c) Increase rwnd dynamically
-    - d) Disable congestion control
-
-**Answers:** 1-b, 2-c, 3-b, 4-c, 5-c, 6-b, 7-b, 8-b, 9-b, 10-b
+---
 
 ## 9.21 Exercises
 
 ### Review Questions
 
 1. What is the difference between cwnd and rwnd?
+
+<details>
+<summary>Solution</summary>
+cwnd (congestion window) is the sender's estimate of network capacity, managed by the congestion control algorithm. rwnd (receiver window) is the receiver's available buffer space advertised in every segment. The effective sending window is min(cwnd, rwnd).
+</details>
+
 2. Why does slow start grow cwnd exponentially?
+
+<details>
+<summary>Solution</summary>
+Slow start doubles cwnd every RTT because each ACK received increases cwnd by 1 MSS, and the number of ACKs per RTT equals the current cwnd. If cwnd = N, the sender receives N ACKs in one RTT, each incrementing cwnd by 1, resulting in cwnd = 2N after one RTT. This rapid growth quickly probes for available bandwidth.
+</details>
+
 3. How does fast retransmit avoid waiting for the retransmission timeout?
+
+<details>
+<summary>Solution</summary>
+Fast retransmit uses duplicate ACKs as a loss signal instead of waiting for RTO expiry. When the sender receives 3 duplicate ACKs for the same sequence number, it retransmits the missing segment immediately. Since duplicate ACKs arrive within one RTT of the loss (not the minimum 200ms RTO), fast retransmit detects loss 10-100× faster than timeout-based recovery.
+</details>
+
 4. What problem does TCP Cubic solve that Reno does not?
+
+<details>
+<summary>Solution</summary>
+Cubic solves the RTT fairness problem. In Reno, the additive increase rate depends on ACK arrival rate, so a flow with shorter RTT increases cwnd faster and gets more bandwidth. Cubic's growth function is based on wall-clock time since the last loss event, not on ACK arrival rate, so flows with different RTTs grow at the same rate and achieve fair bandwidth sharing.
+</details>
+
 5. A receiver advertises rwnd = 0. What happens to the sender?
+
+<details>
+<summary>Solution</summary>
+The sender stops transmitting new data and enters persist mode. It starts a persist timer that periodically sends 1-byte window probes. The receiver responds with its current rwnd. If rwnd > 0, the sender resumes. This prevents deadlock where the sender waits for a window update and the receiver waits for data.
+</details>
+
 6. Explain how NewReno differs from Reno on partial ACK.
+
+<details>
+<summary>Solution</summary>
+When multiple packets are lost in one window, Reno exits fast recovery after the first retransmission is ACKed (partial ACK acknowledges some but not all lost data). NewReno stays in fast recovery on partial ACKs, retransmitting one lost segment per partial ACK until all lost segments are recovered. NewReno recovers all losses in one window without timeout, while Reno may timeout on the second loss.
+</details>
+
 7. What is the difference between SACK and cumulative ACKs?
+
+<details>
+<summary>Solution</summary>
+Cumulative ACKs acknowledge the highest in-order byte received. SACK (Selective Acknowledgments) additionally reports up to 4 non-contiguous blocks of successfully received out-of-order data. SACK allows the sender to retransmit only the truly lost segments rather than everything after the cumulative ACK point, improving recovery efficiency.
+</details>
+
 8. How does BBR estimate the bottleneck bandwidth?
+
+<details>
+<summary>Solution</summary>
+BBR estimates the bottleneck bandwidth (BtlBw) by tracking the maximum delivery rate observed over a sliding window. It periodically probes by pacing at 1.25× the current BtlBw estimate. If the delivery rate doesn't increase, the bottleneck link is saturated. RTprop (round-trip propagation time) is estimated as the minimum RTT observed over a time window. BBR paces at rate = BtlBw and keeps inflight = BtlBw × RTprop.
+</details>
 
 ### Application Problems
 
 9. A TCP connection starts with cwnd = 10 MSS, ssthresh = 64. No loss occurs for the first 10 RTTs. Compute cwnd after each RTT. When would slow start transition to congestion avoidance?
 
-10. A Reno connection experiences triple duplicate ACK at cwnd = 48. Show cwnd evolution through slow start (if applicable), fast recovery, and congestion avoidance for the next 5 RTTs.
+<details>
+<summary>Solution</summary>
+RTT 1: cwnd = 10 (slow start, starts at 10). RTT 2: cwnd = 20. RTT 3: cwnd = 40. RTT 4: cwnd = 80 (exceeds ssthresh=64, so transition to congestion avoidance). RTT 5: cwnd = 80 + MSS²/80 ≈ 80 + 26.6 = 106.6. RTT 6: cwnd ≈ 107 + 19.9 = 126.9. RTT 7: cwnd ≈ 127 + 16.8 = 143.8. RTT 8: cwnd ≈ 144 + 14.8 = 158.8. RTT 9: cwnd ≈ 159 + 13.4 = 172.4. RTT 10: cwnd ≈ 172 + 12.4 = 184.4. Transition happens at RTT 4 (cwnd exceeds ssthresh).
+</details>
 
-11. Two TCP Reno connections share a 100 Mbps bottleneck link with 50 ms RTT. Both have infinite data to send. Compute the steady-state throughput of each connection. How does the result change if one connection has 100 ms RTT?
+10. A Reno connection experiences triple duplicate ACK at cwnd = 48. Show cwnd evolution through fast recovery and congestion avoidance for the next 5 RTTs.
 
-12. A NewReno connection with cwnd = 64 loses packets 10, 20, and 30 in the same window. Trace the recovery process. How many RTTs does full recovery take? Compare with Reno.
+<details>
+<summary>Solution</summary>
+On triple duplicate ACK: ssthresh = 48/2 = 24, cwnd = 24 + 3 = 27 (fast recovery). RTT 1: cwnd = 27 (retransmit lost packet, wait for ACK). Partial ACK: exit fast recovery, cwnd = ssthresh = 24. RTT 2: additive increase, cwnd ≈ 24 + MSS²/24 ≈ 24 + 88.9 = 112.9 for MSS=1460 (wait, that's wrong — in MSS terms: RTT 2: cwnd = 25, RTT 3: 26, RTT 4: 27, RTT 5: 28 MSS). In MSS units: after recovery, cwnd = 24 MSS. Each CA RTT: cwnd += 1 MSS. So RTT 2-5: 25, 26, 27, 28 MSS.
+</details>
 
-13. Implement a TCP Cubic cwnd simulator in Python that plots the cubic function after a loss event at Wmax = 200. Show W(t) for t = 0 to 20 seconds.
+11. Two TCP Reno connections share a 100 Mbps bottleneck link with 50 ms RTT.
+
+<details>
+<summary>Solution</summary>
+For Reno, throughput ≈ (MSS/RTT) × sqrt(3/(2p)). At equilibrium with 2 flows, each gets ~50 Mbps. With infinite data, the AIMD sawtooth gives each flow roughly equal bandwidth share (Reno converges to fairness). If one connection has 100 ms RTT, its throughput is halved (inversely proportional to RTT). The shorter-RTT flow gets ~67 Mbps, the longer-RTT flow gets ~33 Mbps — Reno's RTT unfairness in action.
+</details>
+
+12. A NewReno connection with cwnd = 64 loses packets 10, 20, and 30 in the same window.
+
+<details>
+<summary>Solution</summary>
+On triple duplicate ACK: ssthresh = 32, cwnd = 32 + 3 = 35. Retransmit packet 10. On partial ACK acknowledging up to 10: retransmit packet 20. On next partial ACK acknowledging up to 20: retransmit packet 30. Full ACK at 31: exit fast recovery, cwnd = ssthresh = 32. Total: 3 RTTs for full recovery. Reno would exit fast recovery after the first partial ACK, likely timing out on the second loss, requiring 3+ RTTs for slow start.
+</details>
+
+13. Implement a TCP Cubic cwnd simulator in Python.
+
+<details>
+<summary>Solution</summary>
+```python
+import math
+def cubic_cwnd(t, wmax, c=0.4):
+    return wmax + c * (t - math.pow(wmax / c, 1/3))**3
+wmax = 200
+for t in range(0, 21):
+    cwnd = cubic_cwnd(t, wmax)
+    print(f"t={t}s: cwnd={cwnd:.1f}")
+```
+</details>
 
 ### Challenge Problem
 
-14. **Analyze the interaction of multiple congestion control algorithms on a shared link.** Four TCP flows share a 1 Gbps bottleneck with 20 ms RTT: one Cubic, two Reno, and one BBR. The queue at the bottleneck switch is 500 packets. Model the throughput of each flow over 60 seconds. Assume all flows start simultaneously and have infinite data. Predict which flow achieves the highest throughput and explain why. Then propose a fair queuing mechanism at the bottleneck router that would enforce equal throughput among the four flows.
+14. **Analyze the interaction of multiple congestion control algorithms on a shared link.**
+
+<details>
+<summary>Solution</summary>
+Without FQ: BBR achieves highest throughput because it doesn't reduce cwnd on packet loss. Cubic has moderate throughput (RTT-fair, loss-dependent). Reno has the lowest throughput (loss-based, aggressive cwnd reduction). On a 1 Gbps link with 500-packet queue and 20 ms RTT, Reno fills the queue before detecting loss (bufferbloat). BBR maintains BtlBw ≈ 900 Mbps (target rate). With FQ: all flows get ~250 Mbps each. A fair queuing mechanism like `fq_codel` at the bottleneck assigns each flow a separate queue with weighted round-robin scheduling, ensuring equal throughput regardless of congestion algorithm.
+</details>
 
 **Hints:**
 - BBR with FQ: all flows get equal bandwidth from fair queuing.

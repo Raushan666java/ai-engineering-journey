@@ -4062,6 +4062,20 @@ interface AnalysisResult {
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| CIA Triad (Confidentiality, Integrity, Availability) | Apply to every security control decision — ask which pillar each control serves |
+| AAA Framework (Authentication, Authorization, Accounting) | Use RADIUS for Wi-Fi/VPN auth, TACACS+ for network device admin, Kerberos for AD environments |
+| Security Principles (Least Privilege, Defense in Depth, etc.) | Design systems with default-deny, layered controls, and minimum permissions for every entity |
+| Threat Modeling (STRIDE, PASTA, LINDDUN, Attack Trees) | Conduct threat models during design phase — map threats per DFD element and score with DREAD |
+| Risk Management (Qualitative/Quantitative, NIST RMF) | Calculate ALE and ROSI to justify security investments; use NIST RMF for compliance-driven environments |
+| Security Controls & Policies | Implement administrative, technical, and physical controls aligned with organizational policies |
+| AI in Cybersecurity | Use ML for malware detection, SOC triage automation, and anomaly detection; defend against adversarial ML |
+
+---
+
 ## Summary
 
 - **CIA Triad:** Confidentiality (encryption, access control), Integrity (hashing, digital signatures), Availability (redundancy, DDoS protection) — every security control maps to one or more of these three pillars. Trade-offs between them require careful balancing.

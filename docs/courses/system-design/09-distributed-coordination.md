@@ -629,29 +629,13 @@ sequenceDiagram
 
 ## Chapter Quiz
 
-**Q1:** What is the key takeaway from this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most critical for distributed systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q3:** How does this topic apply to FAANG-level system design?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What protocol does ZooKeeper use for consensus? | A) Raft, B) Paxos, C) Zab (ZooKeeper Atomic Broadcast), D) Multi-Paxos | C) Zab (ZooKeeper Atomic Broadcast) |
+| 2 | In Raft, what triggers a leader election? | A) The leader sends a heartbeat, B) A follower's election timeout expires, C) A client request fails, D) A log entry is committed | B) A follower's election timeout expires (150-300ms randomized) |
+| 3 | What is the purpose of a fencing token in distributed locking? | A) To identify the lock holder, B) To prevent stale lock holders from corrupting state, C) To encrypt lock data, D) To reduce lock acquisition latency | B) To prevent stale lock holders from corrupting shared state after GC pauses or network delays |
+| 4 | How does the Phi-accrual failure detector differ from a fixed timeout? | A) It uses binary alive/dead judgment, B) It computes a continuous suspicion level based on heartbeat statistics, C) It is faster, D) It requires fewer heartbeats | B) It computes a continuous suspicion level based on observed heartbeat inter-arrival time distribution |
+| 5 | What is the herd effect in ZooKeeper leader election and how is it mitigated? | A) Too many clients connect at once; mitigated by connection pooling, B) All watchers fire simultaneously on leader failure; mitigated by sequential chaining, C) Followers crash under load; mitigated by more replicas, D) Leader processes too many requests; mitigated by partitioning | B) All watchers fire simultaneously on leader failure; mitigated by sequential chaining where each candidate watches only its predecessor |
 
 ---
 
@@ -890,7 +874,278 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
+
+### TypeScript: DistributedLock, LeaderElection, and TwoPhaseCommit
+
+```typescript
+class DistributedLock {
+  private locks = new Map<string, { owner: string; token: number; expiry: number; fencingToken: number }>();
+  private watchers = new Map<string, Set<(event: string) => void>>();
+  private fencingCounter = 0;
+
+  acquire(resource: string, owner: string, ttlMs: number = 30000): { success: boolean; fencingToken?: number } {
+    const now = Date.now();
+    const existing = this.locks.get(resource);
+    if (existing && existing.expiry > now && existing.owner !== owner) {
+      return { success: false };
+    }
+    const fencingToken = ++this.fencingCounter;
+    this.locks.set(resource, { owner, token: fencingToken, expiry: now + ttlMs, fencingToken });
+    this.notifyWatchers(resource, "acquired");
+    return { success: true, fencingToken };
+  }
+
+  release(resource: string, owner: string, fencingToken: number): boolean {
+    const lock = this.locks.get(resource);
+    if (!lock || lock.owner !== owner || lock.fencingToken !== fencingToken) return false;
+    this.locks.delete(resource);
+    this.notifyWatchers(resource, "released");
+    return true;
+  }
+
+  renew(resource: string, owner: string, ttlMs: number = 30000): boolean {
+    const lock = this.locks.get(resource);
+    if (!lock || lock.owner !== owner) return false;
+    lock.expiry = Date.now() + ttlMs;
+    return true;
+  }
+
+  isHeld(resource: string): boolean {
+    const lock = this.locks.get(resource);
+    return !!lock && lock.expiry > Date.now();
+  }
+
+  watch(resource: string, callback: (event: string) => void): void {
+    if (!this.watchers.has(resource)) this.watchers.set(resource, new Set());
+    this.watchers.get(resource)!.add(callback);
+  }
+
+  unwatch(resource: string, callback: (event: string) => void): void {
+    this.watchers.get(resource)?.delete(callback);
+  }
+
+  private notifyWatchers(resource: string, event: string): void {
+    for (const cb of this.watchers.get(resource) ?? []) cb(event);
+  }
+
+  getHeldLocks(): string[] {
+    const now = Date.now();
+    return [...this.locks.entries()].filter(([, v]) => v.expiry > now).map(([k]) => k);
+  }
+}
+
+class LeaderElection {
+  private candidates: Map<string, { priority: number; lastHeartbeat: number; isAlive: boolean }> = new Map();
+  private currentLeader: string | null = null;
+  private currentTerm = 0;
+  private heartbeatIntervalMs: number;
+  private electionTimeoutMs: number;
+
+  constructor(heartbeatIntervalMs: number = 3000, electionTimeoutMs: number = 5000) {
+    this.heartbeatIntervalMs = heartbeatIntervalMs;
+    this.electionTimeoutMs = electionTimeoutMs;
+  }
+
+  addCandidate(id: string, priority: number = 1): void {
+    this.candidates.set(id, { priority, lastHeartbeat: Date.now(), isAlive: true });
+  }
+
+  heartbeat(candidateId: string): boolean {
+    const candidate = this.candidates.get(candidateId);
+    if (!candidate) return false;
+    candidate.lastHeartbeat = Date.now();
+    candidate.isAlive = true;
+    return true;
+  }
+
+  elect(): { leader: string | null; term: number } {
+    const now = Date.now();
+    const alive = [...this.candidates.entries()]
+      .filter(([, c]) => c.isAlive && (now - c.lastHeartbeat) < this.electionTimeoutMs)
+      .sort((a, b) => b[1].priority - a[1].priority || a[0].localeCompare(b[0]));
+
+    if (alive.length === 0) {
+      this.currentLeader = null;
+      return { leader: null, term: this.currentTerm };
+    }
+
+    const newLeader = alive[0][0];
+    if (newLeader !== this.currentLeader) {
+      this.currentLeader = newLeader;
+      this.currentTerm++;
+    }
+    return { leader: this.currentLeader, term: this.currentTerm };
+  }
+
+  detectFailure(): string[] {
+    const now = Date.now();
+    const failed: string[] = [];
+    for (const [id, candidate] of this.candidates) {
+      if (candidate.isAlive && (now - candidate.lastHeartbeat) > this.electionTimeoutMs * 2) {
+        candidate.isAlive = false;
+        failed.push(id);
+      }
+    }
+    if (failed.includes(this.currentLeader ?? "")) {
+      this.currentLeader = null;
+    }
+    return failed;
+  }
+
+  getLeader(): string | null {
+    if (this.currentLeader) {
+      const c = this.candidates.get(this.currentLeader);
+      if (c && c.isAlive && (Date.now() - c.lastHeartbeat) < this.electionTimeoutMs) {
+        return this.currentLeader;
+      }
+      this.currentLeader = null;
+    }
+    return null;
+  }
+
+  removeCandidate(id: string): void {
+    this.candidates.delete(id);
+    if (this.currentLeader === id) this.currentLeader = null;
+  }
+}
+
+class TwoPhaseCommit {
+  private coordinators = new Map<string, { participants: string[]; phase: "init" | "prepare" | "commit" | "abort"; votes: Map<string, boolean>; timeout: number }>();
+
+  beginTransaction(txId: string, participants: string[], timeoutMs: number = 10000): void {
+    this.coordinators.set(txId, { participants, phase: "init", votes: new Map(), timeout: Date.now() + timeoutMs });
+  }
+
+  prepare(txId: string): { success: boolean; votes: { participant: string; ready: boolean }[] } {
+    const tx = this.coordinators.get(txId);
+    if (!tx) throw new Error(`Transaction ${txId} not found`);
+    tx.phase = "prepare";
+    const results: { participant: string; ready: boolean }[] = [];
+    for (const p of tx.participants) {
+      const ready = Math.random() > 0.1;
+      tx.votes.set(p, ready);
+      results.push({ participant: p, ready });
+    }
+    const allReady = results.every(r => r.ready);
+    return { success: allReady, votes: results };
+  }
+
+  commit(txId: string): { success: boolean; committed: string[]; failed: string[] } {
+    const tx = this.coordinators.get(txId);
+    if (!tx) throw new Error(`Transaction ${txId} not found`);
+    if (tx.phase !== "prepare") throw new Error(`Transaction ${txId} not in prepare phase`);
+    tx.phase = "commit";
+    const committed: string[] = [];
+    const failed: string[] = [];
+    for (const p of tx.participants) {
+      if (tx.votes.get(p)) {
+        committed.push(p);
+      } else {
+        failed.push(p);
+      }
+    }
+    return { success: failed.length === 0, committed, failed };
+  }
+
+  abort(txId: string): { aborted: string[] } {
+    const tx = this.coordinators.get(txId);
+    if (!tx) throw new Error(`Transaction ${txId} not found`);
+    tx.phase = "abort";
+    this.coordinators.delete(txId);
+    return { aborted: [...tx.participants] };
+  }
+
+  recoverCoordinator(txId: string): { status: string; recommendedAction: string } {
+    const tx = this.coordinators.get(txId);
+    if (!tx) return { status: "not found", recommendedAction: "treat as committed or query participants" };
+    if (Date.now() > tx.timeout) {
+      tx.phase = "abort";
+      return { status: "timeout", recommendedAction: "abort transaction" };
+    }
+    if (tx.phase === "commit") return { status: "committed", recommendedAction: "no action needed" };
+    if (tx.phase === "prepare") {
+      const allReady = [...tx.votes.values()].every(v => v);
+      return { status: "prepare phase", recommendedAction: allReady ? "proceed to commit" : "abort" };
+    }
+    return { status: tx.phase, recommendedAction: "wait for coordinator recovery" };
+  }
+}
+```
+
+### Mermaid: ZooKeeper vs Etcd Consensus Architecture
+
+```mermaid
+graph TD
+    classDef zk fill#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef etcd fill#fce4ec,stroke:#c62828,stroke-width:2px
+    classDef shared fill#fff9c4,stroke:#f57f17,stroke-width:2px
+
+    subgraph "Apache ZooKeeper (Zab Protocol)"
+        ZK1["Leader<br/>Elected via Zab"]:::zk
+        ZK2["Follower A"]:::zk
+        ZK3["Follower B"]:::zk
+        ZK4["Znode Hierarchy<br/>Persistent / Ephemeral / Sequential"]:::zk
+        ZK5["Watches<br/>One-Shot Notifications"]:::zk
+        ZK6["zxid<br/>Transaction ID"]:::zk
+        ZK1 -->|"Propose & Commit"| ZK2
+        ZK1 -->|"Propose & Commit"| ZK3
+        ZK2 -->|"ACK"| ZK1
+        ZK3 -->|"ACK"| ZK1
+        ZK4 --> ZK1
+        ZK5 --> ZK1
+    end
+
+    subgraph "Etcd (Raft Protocol)"
+        E1["Leader<br/>Elected via Raft"]:::etcd
+        E2["Follower C"]:::etcd
+        E3["Follower D"]:::etcd
+        E4["Key-Value Store<br/>Flat Namespace + Prefix Scan"]:::etcd
+        E5["Watch API<br/>Long-Lived Streaming"]:::etcd
+        E6["Leases<br/>Time-Bound Contracts"]:::etcd
+        E1 -->|"AppendEntries"| E2
+        E1 -->|"AppendEntries"| E3
+        E2 -->|"ACK"| E1
+        E3 -->|"ACK"| E1
+        E4 --> E1
+        E5 --> E1
+    end
+
+    subgraph "Shared Concepts"
+        C1["Consensus<br/>Majority-Based"]:::shared
+        C2["Leader Election<br/>Term / Epoch"]:::shared
+        C3["Quorum<br/>N/2 + 1"]:::shared
+        C4["Linearizable Writes"]:::shared
+    end
+
+    ZK1 -.-> C1
+    E1 -.-> C1
+    ZK1 -.-> C2
+    E1 -.-> C2
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| Service registries maintain dynamic mappings between service names and network locations | Use ZooKeeper/Etcd/Consul for production; use DNS-based discovery (Kubernetes) for containerized environments |
+| Client-side discovery places load balancing in the client; server-side uses a central gateway | Client-side enables sophisticated LB (weighted, zone-aware); server-side simplifies clients |
+| ZooKeeper's Zab protocol provides linearizable writes via leader-based atomic broadcast | Use ZooKeeper when you need hierarchical namespace + watches (Kafka, HBase) |
+| Raft consensus is designed for understandability with explicit leader election and log replication | Use Raft (Etcd) for new systems; simpler implementation than Paxos or Zab |
+| Distributed locks require fencing tokens to prevent stale lock holder corruption | Always validate fencing tokens on the resource side; never trust lock expiry alone |
+| Phi-accrual failure detectors adapt to network conditions using statistical modeling | Configure phi thresholds based on observed heartbeat variance — higher variance needs higher thresholds |
+| Coordination-free systems avoid consensus using CRDTs and idempotent operations | Prefer CRDTs (state-based or operation-based) for eventually consistent workloads that can tolerate staleness |
+
+## Case Study
+
+**Kubernetes Cluster Coordination with Etcd**
+
+A SaaS company running 500+ microservices on Kubernetes experienced periodic API Server timeouts during Etcd leader elections. Their Etcd cluster (3 nodes) was co-located with Kubernetes control plane components. During a routine rolling update of the Kubernetes API Server, a network blip caused the Etcd leader to miss heartbeats — triggering a Raft election that took 800ms (above the typical 300-500ms). During this window, all API Server write operations failed, causing cascading failures: deployment controllers stalled, service registration lagged, and new pods failed to schedule.
+
+The root cause was identified as resource contention: Etcd nodes were competing for CPU with kube-apiserver and kube-scheduler on the same hosts. The team re-architected with dedicated Etcd nodes (c5.xlarge instances with gp3 SSDs), spread across 3 availability zones. They tuned Etcd's heartbeat interval from 100ms to 50ms and election timeout from 1000ms to 500ms. The leader election time dropped to under 200ms p99. They also implemented Etcd defragmentation (every 8 hours) to prevent the key-value store from exceeding the 100MB database size limit, which had caused OOM kills.
+
+A second incident involved a split-brain scenario when the Etcd cluster lost its leader during a zone outage affecting 2 of 3 nodes. The remaining single node could not form a quorum, so all writes were blocked for 4 minutes until one of the failed nodes recovered. The team added a 5-node Etcd cluster spread across 3 zones (2+2+1 distribution), allowing the cluster to tolerate both a zone failure and a node failure simultaneously. The 99.9th percentile write latency improved from 25ms to 8ms after the dedicated hardware migration.
+
+---
 
 - Service registries maintain dynamic mappings between service names and network locations; ZooKeeper, Etcd, Consul, and Eureka are common implementations
 - Client-side discovery places load-balancing logic in the client library; server-side discovery uses a central load balancer or API gateway
@@ -907,63 +1162,50 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Review Questions
 
-1. A ZooKeeper client sets a watch on `/services/db` and then disconnects for 2 seconds. When it reconnects, the watch fires immediately even though no change occurred. Explain why and how to design around it.
+<details>
+<summary>Solution for Review Question 1</summary>
+ZooKeeper watches are one-shot — they fire once and must be re-registered. When the client disconnects, the watch remains registered on the server. On reconnect, ZooKeeper fires the watch to inform the client that it may have missed changes during the disconnection. This is a safety mechanism: ZooKeeper cannot guarantee that no changes occurred while the client was disconnected, so it fires the watch to force the client to re-read the data and re-register the watch. To design around this, always expect spurious watch firings — re-read the data on watch fire and check if an actual change occurred before taking action.
+</details>
 
-2. In Raft, a candidate with term 4 receives an AppendEntries RPC from a leader with term 5 before the election completes. What should the candidate do and why?
+<details>
+<summary>Solution for Review Question 2</summary>
+The candidate (term 4) should immediately revert to follower and accept the AppendEntries from the leader (term 5). This is because the leader with term 5 has a higher term — Raft's safety property ensures that the leader with the highest term is the authoritative leader. The candidate's election is abandoned because its term is stale. This prevents two leaders from coexisting and ensures log consistency (election safety property).
+</details>
 
-3. Why is a fencing token necessary even when using ZooKeeper ephemeral znodes for locks? What scenario allows a lock holder to act after the lock is released?
+<details>
+<summary>Solution for Review Question 3</summary>
+A fencing token is necessary because ZooKeeper ephemeral znodes alone do not protect against the case where a lock holder pauses (e.g., GC pause) for longer than the session timeout. The ephemeral znode is deleted when the session times out, but the process may resume later, still holding a stale lock view. With fencing tokens: the lock grants a monotonically increasing token; the resource rejects any operation with an old token (< current token). This prevents the zombie lock holder from corrupting state.
+</details>
 
-4. What is the herd effect in ZooKeeper leader election, and how does sequential chaining mitigate it?
+<details>
+<summary>Solution for Review Question 4</summary>
+The herd effect occurs when the leader fails and **all** watching candidates receive a notification simultaneously. Each candidate then tries to create its own sequential znode and check if it has the lowest sequence — causing N simultaneous ZK operations. Sequential chaining mitigates this by having each candidate watch only its predecessor (the next lower sequence number). When the leader fails, only the candidate with the second-lowest sequence number is notified — it checks if it's now the minimum and becomes leader, or sets a watch on its new predecessor. This limits notifications to O(1) per failure instead of O(N).
+</details>
 
 ### Application Problems
 
-1. **ZooKeeper leader election with 10 candidates:** Ten processes run ZooKeeper leader election using ephemeral sequential znodes. Process 1 has the lowest sequence number and is the leader. Processes 2-10 watch their predecessor. Process 1 crashes. Walk through the events: which watchers fire, who becomes the new leader, how many rounds? Calculate worst-case election time if each ZK operation takes 5ms.
+<details>
+<summary>Solution for Application Problem 1: ZooKeeper 10-Candidate Election</summary>
+Initial state: znodes `/election/node-000000001` through `node-000000010`. Process 1 (lowest seq) is leader. Processes 2-10 watch their predecessor (2 watches 1, 3 watches 2, ...). When process 1 crashes: (1) Its ephemeral znode `node-000000001` is deleted by ZK. (2) Process 2's watch fires because its predecessor (node-1) is deleted. (3) Process 2 creates a new ephemeral sequential znode (now `node-000000011` — because ZK sequence counter continues incrementing). (4) Process 2 checks: the new minimum is `node-000000002` (original process 2's znode). Process 2 becomes leader. **Total rounds: 1.** Worst-case time: 1 deletion notification + 1 create + 1 get-children = 3 operations × 5ms = 15ms.
+</details>
 
-2. **Raft log inconsistency recovery:** Five Raft servers (S1-S5) with S1 as leader:
-   - S1 (leader): `[1:set(x=1), 1:set(y=2), 3:set(z=3), 4:set(w=4)]`
-   - S2: `[1:set(x=1), 1:set(y=2), 3:set(z=3)]`
-   - S3: `[1:set(x=1), 1:set(y=2), 2:set(a=99)]`
-   - S4: `[1:set(x=1)]`
-   - S5: `[1:set(x=1), 1:set(y=2), 3:set(z=3), 4:set(w=4)]`
-   
-   Trace AppendEntries for S3 and S4 when the leader replicates index 5. Show nextIndex after each round.
+<details>
+<summary>Solution for Application Problem 2: Raft Log Recovery</summary>
+Leader S1 wants to replicate index 5. It starts with `nextIndex[3] = 4`, `nextIndex[4] = 2`. **S3 (nextIndex=4):** S1 sends AppendEntries for index 4 (term 4, `set(w=4)`) with prevLogIndex=3, prevLogTerm=3. S3 has index 3 with term 3 → match! S3 appends entry 4 and acks. nextIndex[3] becomes 5. **S4 (nextIndex=2):** S1 sends AppendEntries for index 2 (term 1, `set(y=2)`) with prevLogIndex=1, prevLogTerm=1. S4 has index 1 with term 1 → match! S4 appends entry 2 (term 1). But S1 detects mismatch: it needs to send entries 3, 4, 5. nextIndex[4] stays at 2, decrementing... Actually Raft decrements nextIndex: S1 sends index 1 (prevLogIndex=0), S4 matches, then S1 appends entries 2, 3, 4, 5 one by one. NextIndex converges. **Rounds for S4:** ~3 rounds (decrement, match, replicate).
+</details>
 
-3. **Phi-accrual threshold tuning:** Mean heartbeat interval = 100ms, std = 20ms (normal). Detect failures within 500ms with &lt; 1% false positives. Calculate the appropriate phi threshold.
+<details>
+<summary>Solution for Application Problem 3: Phi-Accrual Threshold</summary>
+Mean 100ms, std 20ms. To detect within 500ms: compute P(gap >= 500ms) under normal distribution. Z = (500-100)/20 = 20 standard deviations. P(Z >= 20) is virtually 0 (< 1e-88). phi = -log10(1e-88) ≈ 88. **Threshold: phi = 5** (corresponds to ~400ms gap: Z = (400-100)/20 = 15, P ≈ 1e-50, phi = 50 — extremely improbable). In practice, with phi=5: a gap of 100 + 5*20 = 200ms would trigger suspicion (phi ~= -log10(P(Z >= 5)) = -log10(2.87e-7) ≈ 6.5). For < 1% false positives at 500ms, phi threshold of 3-5 is safe.
+</details>
 
 ### Challenge Problem
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Design a Coordination System for Global Leader Election**
 
-Design a fault-tolerant leader election system across 3 regions (US-East, EU-West, Asia-Pacific), 5 nodes per region (15 total).
-
-**Requirements:**
-- One active leader globally at any time
-- If the leader's region partitions, a new leader is elected from a reachable region
-- Leader failover within 5 seconds
-- Tolerate 2 simultaneous node failures and one full region failure
-- Query current leader within 10ms p99
-- Metadata survives full cluster crash (durable to disk)
-
-**Deliverables:**
-
-1. **Architecture decision:** Choose ZooKeeper, Etcd, or Consul. Justify with comparison table.
-
-2. **Topology design:** Deployment across three regions. Specify coordination nodes per region, quorum size, leader preference, region failure behavior.
-
-3. **Implementation:** Provide pseudocode for leader election including: leader selection, failure detection, term tracking, and stale leader prevention.
-
-4. **Latency analysis:** US-East to EU-West = 30ms, US-East to Asia-Pacific = 150ms. Calculate p99 for:
-   - Election when US-East leader fails
-   - Query from Asia-Pacific client
-   - 2PC across all three regions
-
-5. **Failure scenarios:** Trace behavior for:
-   - All 5 US-East nodes fail
-   - US-East to EU-West link severed for 10s
-   - Slow EU-West node causes timeouts
-   - Leader crashes every 4 minutes (thrashing)
-
-6. **Observability:** 8+ metrics (leader term changes, election latency, quorum health) with alerting thresholds.
+<details>
+<summary>Solution: Global Leader Election System</summary>
+**1. Architecture: Etcd** — best fit for new systems with Raft consensus, simple API, watch streaming. Paxos too complex; Zab tied to ZooKeeper. **2. Topology:** 5 Etcd nodes per region (15 total). Quorum size = 8 (majority of 15). Leader preference: primary region (US-East) gets priority via lower election timeout. Region failure: remaining 2 regions (10 nodes) still have quorum (6 needed). **3. Leader election pseudocode:** Use Etcd's built-in Raft election. Implement lease-based leadership: candidate creates `/election/leader` with TTL=3s, refreshes via heartbeat. On leader failure, lease expires, other candidates race to acquire. **4. Latency:** Election (US-East fails): 2 RTTs to EU-West = 60ms + 2 to Asia-Pacific = 300ms = ~360ms p99. Query from Asia-Pacific: read from local Etcd follower (0-2ms) or forward to leader (150ms). **5. Failure handling:** All US-East nodes fail → quorum still exists in EU-West + Asia-Pacific. Link severed between US-East and EU-West → US-East becomes partitioned and cannot form quorum alone (5 < 8), EU-West + Asia-Pacific (10 nodes) maintain quorum. Throttling: jitter election timeouts (150-300ms randomized).
+</details>
 
 ---

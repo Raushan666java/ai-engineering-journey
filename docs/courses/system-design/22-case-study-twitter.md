@@ -416,91 +416,14 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-## Concept Comparison
-> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
-
-| Concept | Definition | Key Insight |
-|---------|-----------|-------------|
-| Theory / Case Study | Core topic in Chapter 22: Case Study — Twitter and News Feed | Fundamental to system design |
-| Concept Comparison | Core topic in Chapter 22: Case Study — Twitter and News Feed | Fundamental to system design |
-| Quick Reference | Core topic in Chapter 22: Case Study — Twitter and News Feed | Fundamental to system design |
-| Cross-Application Matrix | Core topic in Chapter 22: Case Study — Twitter and News Feed | Fundamental to system design |
-
----
-
-## Quick Reference
-> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
-
-| Topic | Key Point |
-|-------|-----------|
-| Theory / Case Study | Essential concept for Chapter 22: Case Study — Twitter and News Feed |
-| Concept Comparison | Essential concept for Chapter 22: Case Study — Twitter and News Feed |
-| Quick Reference | Essential concept for Chapter 22: Case Study — Twitter and News Feed |
-
----
-
-## Cross-Application Matrix
-
-| Concept | Application Context | Trade-Off |
-|--------|-------------------|-----------|
-| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
-
----
-
-## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
-
-**Q1:** What is the primary trade-off discussed in this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most fundamental to the topic of Chapter 22
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
-
-**Q3:** How does this chapter's main concept apply to real-world systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What fan-out strategy does Twitter use for users with follower counts below the threshold? | A) Fan-on-read (pull), B) Fan-on-write (push), C) Hybrid with timeline merge, D) No fan-out | B |
+| 2 | What data structure does Twitter use for trending topic frequency counting? | A) HashMap with exact counts, B) Count-min sketch for approximate frequency with sub-linear memory, C) Redis Sorted Set, D) MySQL aggregate table | B |
+| 3 | How does Twitter's timeline service handle celebrity tweets with 60M+ followers? | A) Push to all followers on write, B) Store once in Earlybird and pull on read for each follower, C) Cache locally on each follower's device, D) Batch process hourly | B |
+| 4 | What was the primary architectural lesson from Twitter's "Fail Whale" era? | A) Use more servers, B) Monolithic databases don't scale for social applications; migrate to sharded microservices, C) Use Ruby on Rails, D) Avoid caching | B |
+| 5 | What is the purpose of thread pool isolation in Finagle/Hystrix? | A) Save memory, B) Prevent a failing dependency from consuming all application resources, C) Improve CPU utilization, D) Reduce network calls | B |
 
 ---
 
@@ -722,6 +645,401 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+### TypeScript: News Feed Builder with Hybrid Fan-Out, Tweet Index, and Timeline Cache
+
+```typescript
+class NewsFeedBuilder {
+  private tweets = new Map<string, { id: string; userId: string; content: string; ts: number; engagement: number; hashtags: string[] }>();
+  private followers = new Map<string, Set<string>>();
+  private precomputedTimelines = new Map<string, string[]>();
+  private celebrityThreshold = 1500;
+
+  follow(followerId: string, followeeId: string): void {
+    if (!this.followers.has(followeeId)) this.followers.set(followeeId, new Set());
+    this.followers.get(followeeId)!.add(followerId);
+  }
+
+  postTweet(userId: string, content: string): string {
+    const id = `tweet-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    const hashtags = (content.match(/#\w+/g) ?? []).map(t => t.toLowerCase());
+    const tweet = { id, userId, content, ts: Date.now(), engagement: 0, hashtags };
+    this.tweets.set(id, tweet);
+    const followerCount = this.followers.get(userId)?.size ?? 0;
+    if (followerCount <= this.celebrityThreshold) {
+      this.fanoutOnWrite(id, userId);
+    }
+    return id;
+  }
+
+  private fanoutOnWrite(tweetId: string, userId: string): void {
+    const followers = this.followers.get(userId);
+    if (!followers) return;
+    for (const followerId of followers) {
+      if (!this.precomputedTimelines.has(followerId)) this.precomputedTimelines.set(followerId, []);
+      const tl = this.precomputedTimelines.get(followerId)!;
+      tl.unshift(tweetId);
+      if (tl.length > 800) tl.pop();
+    }
+  }
+
+  getTimeline(userId: string, celebrities: string[], limit = 50): { id: string; content: string; userId: string; ts: number; score: number }[] {
+    const precomputed = this.precomputedTimelines.get(userId) ?? [];
+    const precomputedTweets = precomputed.map(id => this.tweets.get(id)).filter(Boolean) as { id: string; userId: string; content: string; ts: number; engagement: number; hashtags: string[] }[];
+    const celebrityTweets: { id: string; userId: string; content: string; ts: number; engagement: number; hashtags: string[] }[] = [];
+    for (const celebId of celebrities) {
+      for (const [id, tweet] of this.tweets) {
+        if (tweet.userId === celebId) celebrityTweets.push(tweet);
+      }
+    }
+    const merged = [...precomputedTweets, ...celebrityTweets];
+    const ranked = merged.map(t => ({
+      ...t,
+      score: t.ts * 0.001 + t.engagement * 10 + (t.hashtags.length > 0 ? 5 : 0),
+    })).sort((a, b) => b.score - a.score).slice(0, limit);
+    return ranked;
+  }
+
+  likeTweet(tweetId: string): void {
+    const tweet = this.tweets.get(tweetId);
+    if (tweet) tweet.engagement++;
+  }
+
+  getFanoutStats(): { pushTweets: number; pullCelebrities: number } {
+    let pushTweets = 0, pullCelebrities = 0;
+    for (const [, tweet] of this.tweets) {
+      const fc = this.followers.get(tweet.userId)?.size ?? 0;
+      if (fc <= this.celebrityThreshold) pushTweets++;
+      else pullCelebrities++;
+    }
+    return { pushTweets, pullCelebrities };
+  }
+}
+
+class TweetIndex {
+  private invertedIndex = new Map<string, Set<string>>();
+  private hashtagIndex = new Map<string, Set<string>>();
+  private engagementIndex = new Map<string, number>();
+  private trendingCache = new Map<string, { count: number; updatedAt: number }>();
+  private readonly trendingWindow = 15 * 60 * 1000;
+
+  indexTweet(tweetId: string, text: string, hashtags: string[]): void {
+    const tokens = text.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    for (const token of tokens) {
+      if (!this.invertedIndex.has(token)) this.invertedIndex.set(token, new Set());
+      this.invertedIndex.get(token)!.add(tweetId);
+    }
+    for (const tag of hashtags) {
+      const normalized = tag.toLowerCase();
+      if (!this.hashtagIndex.has(normalized)) this.hashtagIndex.set(normalized, new Set());
+      this.hashtagIndex.get(normalized)!.add(tweetId);
+      this.trendingCache.set(normalized, { count: (this.trendingCache.get(normalized)?.count ?? 0) + 1, updatedAt: Date.now() });
+    }
+    this.engagementIndex.set(tweetId, 0);
+  }
+
+  search(query: string): string[] {
+    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    if (terms.length === 0) return [];
+    let results: Set<string> | null = null;
+    for (const term of terms) {
+      const matches = this.invertedIndex.get(term);
+      if (!matches) return [];
+      results = results ? new Set([...results].filter(id => matches.has(id))) : new Set(matches);
+    }
+    return [...(results ?? [])];
+  }
+
+  searchByHashtag(tag: string): string[] {
+    return [...(this.hashtagIndex.get(tag.toLowerCase()) ?? [])];
+  }
+
+  getTrending(limit = 10): { hashtag: string; count: number }[] {
+    const now = Date.now();
+    const valid: { hashtag: string; count: number }[] = [];
+    for (const [tag, entry] of this.trendingCache) {
+      if (now - entry.updatedAt <= this.trendingWindow) {
+        valid.push({ hashtag: tag, count: entry.count });
+      }
+    }
+    return valid.sort((a, b) => b.count - a.count).slice(0, limit);
+  }
+
+  updateEngagement(tweetId: string, delta: number): void {
+    this.engagementIndex.set(tweetId, (this.engagementIndex.get(tweetId) ?? 0) + delta);
+  }
+
+  getTopEngaged(limit = 10): { tweetId: string; engagement: number }[] {
+    return [...this.engagementIndex.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit)
+      .map(([tweetId, engagement]) => ({ tweetId, engagement }));
+  }
+}
+
+class TimelineCache {
+  private timelines = new Map<string, { tweetIds: string[]; cursor: string | null; updatedAt: number; generation: number }>();
+  private readonly maxTimelineSize = 800;
+  private readonly pageSize = 20;
+
+  putTimeline(userId: string, tweetIds: string[]): void {
+    const prev = this.timelines.get(userId);
+    this.timelines.set(userId, {
+      tweetIds: tweetIds.slice(0, this.maxTimelineSize),
+      cursor: null,
+      updatedAt: Date.now(),
+      generation: (prev?.generation ?? 0) + 1,
+    });
+  }
+
+  getPage(userId: string, cursor?: string): { tweetIds: string[]; nextCursor: string | null; generation: number } {
+    const entry = this.timelines.get(userId);
+    if (!entry) return { tweetIds: [], nextCursor: null, generation: 0 };
+    let startIdx = 0;
+    if (cursor) {
+      startIdx = entry.tweetIds.indexOf(cursor);
+      if (startIdx >= 0) startIdx++;
+    }
+    const page = entry.tweetIds.slice(startIdx, startIdx + this.pageSize);
+    const nextCursor = startIdx + this.pageSize < entry.tweetIds.length ? entry.tweetIds[startIdx + this.pageSize - 1] : null;
+    return { tweetIds: page, nextCursor, generation: entry.generation };
+  }
+
+  prependTweet(userId: string, tweetId: string): void {
+    const entry = this.timelines.get(userId);
+    if (entry) {
+      entry.tweetIds.unshift(tweetId);
+      if (entry.tweetIds.length > this.maxTimelineSize) entry.tweetIds.pop();
+      entry.updatedAt = Date.now();
+    }
+  }
+
+  invalidate(userId: string): void {
+    this.timelines.delete(userId);
+  }
+
+  getCacheStats(): { cachedUsers: number; totalTweets: number; avgAge: number } {
+    const now = Date.now();
+    let totalTweets = 0;
+    let totalAge = 0;
+    for (const [, entry] of this.timelines) {
+      totalTweets += entry.tweetIds.length;
+      totalAge += now - entry.updatedAt;
+    }
+    return {
+      cachedUsers: this.timelines.size,
+      totalTweets,
+      avgAge: this.timelines.size > 0 ? totalAge / this.timelines.size : 0,
+    };
+  }
+}
+```
+
+### TypeScript: Trending Detection with Count-Min Sketch and Media Pipeline
+
+```typescript
+class CountMinSketch {
+  private table: number[][];
+  private readonly width: number;
+  private readonly depth: number;
+  private readonly hashSeeds: number[];
+
+  constructor(width = 1000, depth = 10) {
+    this.width = width;
+    this.depth = depth;
+    this.table = Array.from({ length: depth }, () => new Array(width).fill(0));
+    this.hashSeeds = Array.from({ length: depth }, (_, i) => i * 7919 + 104729);
+  }
+
+  add(item: string, count = 1): void {
+    for (let d = 0; d < this.depth; d++) {
+      const idx = this.hash(item + this.hashSeeds[d].toString()) % this.width;
+      this.table[d][idx] += count;
+    }
+  }
+
+  estimate(item: string): number {
+    let min = Infinity;
+    for (let d = 0; d < this.depth; d++) {
+      const idx = this.hash(item + this.hashSeeds[d].toString()) % this.width;
+      min = Math.min(min, this.table[d][idx]);
+    }
+    return min;
+  }
+
+  getTopK(k = 10): { item: string; count: number }[] {
+    const candidates = new Map<string, number>();
+    for (let d = 0; d < this.depth; d++) {
+      for (let i = 0; i < this.width; i++) {
+        if (this.table[d][i] > 0) candidates.set(`bucket-${d}-${i}`, this.table[d][i]);
+      }
+    }
+    return [...candidates.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, k)
+      .map(([key, count]) => ({ item: key, count }));
+  }
+
+  private hash(s: string): number {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; }
+    return h >>> 0;
+  }
+}
+
+class TrendingDetector {
+  private sketch = new CountMinSketch(2000, 10);
+  private bloomFilter = new Set<string>();
+  private window: { entity: string; ts: number }[] = [];
+  private readonly windowMs = 15 * 60 * 1000;
+  private readonly minFrequency = 100;
+
+  record(entity: string): void {
+    this.sketch.add(entity);
+    this.window.push({ entity, ts: Date.now() });
+    this.bloomFilter.add(entity);
+    this.evict();
+  }
+
+  private evict(): void {
+    const cutoff = Date.now() - this.windowMs;
+    while (this.window.length > 0 && this.window[0].ts < cutoff) this.window.shift();
+  }
+
+  getTrending(limit = 10): { entity: string; score: number }[] {
+    const seen = new Set<string>();
+    const scored: { entity: string; score: number }[] = [];
+    for (const { entity } of this.window) {
+      if (seen.has(entity)) continue;
+      seen.add(entity);
+      const count = this.sketch.estimate(entity);
+      if (count >= this.minFrequency) {
+        const acceleration = count / Math.max(this.window.length, 1);
+        scored.push({ entity, score: count * (1 + acceleration) });
+      }
+    }
+    return scored.sort((a, b) => b.score - a.score).slice(0, limit);
+  }
+}
+
+class MediaPipeline {
+  private uploads = new Map<string, { status: string; sizes: Map<string, string>; startedAt: number }>();
+
+  async upload(userId: string, fileBuffer: Buffer, fileName: string): Promise<string> {
+    const uploadId = `upload-${Date.now()}-${userId}`;
+    this.uploads.set(uploadId, { status: "uploading", sizes: new Map(), startedAt: Date.now() });
+    const smallThumb = await this.generateThumbnail(fileBuffer, 240, 240);
+    const mediumThumb = await this.generateThumbnail(fileBuffer, 480, 480);
+    const largeThumb = await this.generateThumbnail(fileBuffer, 1024, 1024);
+    const upload = this.uploads.get(uploadId)!;
+    upload.sizes.set("small", smallThumb);
+    upload.sizes.set("medium", mediumThumb);
+    upload.sizes.set("large", largeThumb);
+    upload.status = "ready";
+    return uploadId;
+  }
+
+  private async generateThumbnail(buffer: Buffer, width: number, height: number): Promise<string> {
+    const quality = Math.min(1, (width * height) / (1024 * 1024));
+    const data = buffer.slice(0, Math.min(buffer.length, Math.round(buffer.length * quality)));
+    return Buffer.from(data).toString("base64").slice(0, 100);
+  }
+
+  getUploadStatus(uploadId: string): { status: string; sizes: string[]; elapsed: number } {
+    const upload = this.uploads.get(uploadId);
+    if (!upload) return { status: "not_found", sizes: [], elapsed: 0 };
+    return { status: upload.status, sizes: [...upload.sizes.keys()], elapsed: Date.now() - upload.startedAt };
+  }
+}
+```
+
+```mermaid
+graph TB
+    classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef write fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef read fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef index fill:#fce4ec,stroke:#c62828,stroke-width:2px
+    classDef cache fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef trend fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+
+    subgraph "Write Path"
+        TWEET[Tweet Composed<br/>280 chars]:::write
+        INGEST[Tweet Ingestion<br/>Kafka Producer]:::write
+        FANOUT[Fanout Worker<br/>Check Follower Count]:::write
+        PUSH[Push: Precompute<br/>Timeline Lists]:::write
+        INDEX[Index: Earlybird<br/>In-Memory Lucene]:::index
+    end
+
+    subgraph "Read Path"
+        REQ[Timeline Request<br/>REST API]:::read
+        FLOCKS[Flocks Social Graph<br/>Get Following List]:::read
+        MERGE[Merge Service<br/>Precomputed + Celebrity]:::read
+        RANK[ML Ranker<br/>Score & Reorder]:::read
+        HYDRATE[Hydrate Tweets<br/>Fetch Metadata]:::read
+    end
+
+    subgraph "Cache Layer"
+        TLC[(Timeline Lists<br/>Redis 800 cap)]:::cache
+        TWC[(Tweet Cache<br/>Manhattan Hot)]:::cache
+        MC[(Memcache<br/>Social Graph)]:::cache
+    end
+
+    subgraph "Trending & Search"
+        CMS[Count-Min Sketch<br/>15-min Window]:::trend
+        BLOOM[Bloom Filter<br/>Dedup Entities]:::trend
+        HEAP[Min-Heap<br/>Top K Entities]:::trend
+        SEARCH[Search Service<br/>Owl Query Engine]:::index
+    end
+
+    TWEET --> INGEST
+    INGEST --> FANOUT
+    FANOUT --> PUSH
+    FANOUT --> INDEX
+    PUSH --> TLC
+    INDEX --> SEARCH
+
+    REQ --> FLOCKS
+    FLOCKS --> MC
+    REQ --> MERGE
+    MERGE --> TLC
+    MERGE --> INDEX
+    MERGE --> RANK
+    RANK --> HYDRATE
+    HYDRATE --> TWC
+
+    INGEST --> CMS
+    CMS --> BLOOM
+    BLOOM --> HEAP
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Hybrid fan-out combines O(1) read for normal users with O(1) write for celebrities | Use follower-count threshold (~1500); push for normal users, pull for celebrities; merge at read time with ~50-100ms penalty |
+| Count-min sketches provide approximate trending with sub-linear memory | Use 2D array (1000x10) for count estimation with bounded error; combine with min-heap for top-K extraction every 60s |
+| In-memory inverted index with partial updates enables real-time search | Earlybird indexes tweets in <2s from Kafka; support incremental engagement score updates without reindexing |
+| Multi-tier timeline caching reduces P99 read latency | L1: browser cache 5min TTL; L2: Redis timeline lists capped at 800 entries; L3: Manhattan tweet hydration |
+| Content moderation pipeline with pre/post publication stages | Pre-filter (5ms): exact-match spam URLs in Bloom filter, PhotoDNA, duplicate detection. Post-filter: BERT toxicity, bot detection, coordinated behavior |
+| ML ranking increases engagement 15-20% vs reverse-chronological | Features: recency, engagement velocity, author relationship, content type, session context; TensorFlow model with exponential time decay |
+| Fan-out threshold tuning requires cost-benefit analysis | Measure write amplification vs read amplification; experiment with threshold A/B test on 1% of users for 1 week |
+
+## Case Study: Breaking News Event and Timeline Storm
+
+A major earthquake is detected off the coast of Japan. Within 30 seconds, 50,000 tweets per second mention the event — a 10x spike from the normal 6,000 tweets/sec. The trending service detects the hashtag #JapanEarthquake within 60 seconds using the Count-min sketch: the raw count jumps from 0 to 1.2M mentions in the 15-minute window, with an acceleration factor of 200x (rate of change). The topic is promoted to #1 trending globally.
+
+The timeline service experiences a 5x read surge as users refresh their feeds for updates. The hybrid fan-out handles the write storm: the 50,000 tweets/sec come from a mix of normal users (pushed to ~200 follower timelines each) and verified news accounts (pulled on read). The push model generates 50,000 × 200 = 10M writes/sec to Redis timeline lists — near the capacity of the Redis cluster. The Redis cluster's P99 latency increases from 5ms to 45ms. The Hystrix circuit breaker on the timeline list write path is configured to open at 50ms latency: when P99 exceeds 50ms for 30 seconds, writes to Redis are suspended for 10 seconds, during which the system falls back to fan-on-read for all users (pulling from Earlybird). This degrades read latency from 50ms to 200ms but prevents Redis saturation and total system failure.
+
+The ML ranker is disabled during the peak (automatically detected by the request rate monitor crossing 200% of baseline). Timelines revert to reverse-chronological ordering. Media thumbnails are served at reduced resolution (240px instead of 480px) to reduce CDN bandwidth. The platform remains usable throughout the event. After 15 minutes, as tweet rate subsides to 15,000/sec, the ML ranker is re-enabled, timeline writes resume, and media quality is restored. A post-event dashboard shows the P99 latency peaked at 450ms (vs 150ms baseline) with zero downtime.
+
+## Case Study: Celebrity Tweet Fan-Out Optimization
+
+A celebrity with 60 million followers tweets a photo from the Oscars red carpet. Under pure fan-on-write, this single tweet would generate 60 million Redis list insertions. Under Twitter's hybrid approach, the celebrity exceeds the follower-count threshold (1500), so the tweet is stored once in Earlybird's reverse-chronological index. Each follower's timeline read merges their precomputed list (from normal followees) with the celebrity's recent tweets.
+
+For a user following 200 normal accounts and 5 celebrities, a timeline read queries: one Redis LRANGE (200 tweet IDs from precomputed list) + 5 Earlybird queries (recent tweets per celebrity). The merge operation sorts ~250 items by timestamp and returns the top 50. P99 latency for the merge is 95ms — acceptable for the timeline loading experience. The write amplification saved: instead of 60M writes for the single celebrity tweet, the system performed 1 write (to Earlybird). Over a year, this saves an estimated 60M × 365 × 10 tweets/year ≈ 219B Redis writes — the difference between a functioning system and one that requires a new Redis cluster every week.
+
+The trade-off is that followers of celebrities see their tweets with a slight delay (the fan-on-read path adds ~95ms vs the push path's ~10ms). Twitter mitigates this by pre-warming the celebrity tweet cache: the top 100 celebrities' recent tweets are kept in a dedicated Memcache pool with continuous refresh every 30 seconds. When a user requests their timeline, the celebrity tweets are served from this cache rather than querying Earlybird, reducing the celebrity read penalty from 95ms to 5ms.
+
 ## Summary
 
 - The timeline fan-out problem requires choosing between push (O(1) read, O(followers) write) and pull (O(1) write, O(followees) read); Twitter uses a hybrid approach with a follower-count threshold.
@@ -739,73 +1057,52 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Review Questions
 
-1. Compare fan-on-write and fan-on-read for timeline generation. Under what conditions does each strategy perform poorly, and how does Twitter's hybrid approach balance the trade-offs?
+<details><summary>Solution</summary>1. **Fan-on-write** performs poorly for celebrities (O(followers) write cost) but gives O(1) read. **Fan-on-read** performs poorly for users following many accounts (O(followees) read cost) but gives O(1) write. **Hybrid**: push for users with followers < threshold (~1500), pull for celebrities; merge at read time.
 
-2. How does Earlybird achieve real-time search latency? Describe the role of in-memory inverted indexes, partial updates for engagement signals, and partitioned indexing.
+2. **Earlybird** uses an in-memory Lucene inverted index with incremental partial updates for engagement signals (no full reindex). Partitioned by tweet ID hash across multiple instances. Ingests from Kafka within 2s of publication. Query latency: sub-100ms for search, sub-50ms for reverse-chronological timeline queries.
 
-3. Explain how Count-min sketches work for trending topic detection. Why was this probabilistic data structure chosen over exact counting, and what accuracy guarantees does it provide?
+3. **Count-min sketch** is a 2D array (e.g., 1000×10) of counters, each row hashed with a different function. Estimate(item) = min over rows of table[row][hash(item)]. Error bound: estimate ≤ true_count + ε × total_items. Chosen over exact counting because it uses sub-linear memory (10K integers vs millions of entries).
 
-4. Describe Twitter's migration from Rails to Scala/Finagle. What specific problems did Rails have at scale, and how did Finagle's connection pooling, circuit breaking, and retry budgets solve them?
+4. **Rails problems**: memory bloat, MySQL replication lag, slow queries, deployment risk. **Finagle** solved these with: connection pooling (reuse TCP connections), circuit breaking (fail fast), retry budgets (max 5% retries), request timeouts, and distributed tracing via Zipkin.
 
-5. How has Twitter's timeline ranking evolved from pure reverse-chronological to ML-based? What features does the ranking model use, and what was the reported impact on engagement?
+5. **Timeline ranking** evolved from pure reverse-chronological to ML-based using TensorFlow. Features: recency (exponential decay), engagement velocity (likes/s), author relationship strength, content features (media, links), session context, user preferences. Impact: 15-20% increase in likes, retweets, and replies.
 
-6. Describe the content moderation pipeline, distinguishing between pre-publication filtering and post-publication detection. What role does the human review queue play, and how is it prioritized?
+6. **Pre-publication** (5ms per tweet): exact-match spam URLs in Bloom filter, PhotoDNA for CSAM, duplicate detection. **Post-publication**: BERT toxicity classifier, misinformation claim matching, bot/spam detector. **Human review**: prioritized by impressions (viral content first), with context (reply threads, author history).
+</details>
 
 ### Application Problems
 
-1. **Fan-Out Threshold Tuning**: Given a Twitter-like system with 500M tweets/day and 300M users, design an experiment to determine the optimal fan-out threshold T. The cost function is `total_read_latency * read_volume + total_write_latency * write_volume`. How would you measure the components empirically? What data would you collect over what time window?
+<details><summary>Solution</summary>1. **Threshold Tuning**: Cost(T) = read_latency(T) × read_volume + write_latency(T) × write_volume. Measure: write latency from fanout worker (P99 time to write N timeline lists), read latency from timeline service (P99 merge time). Experiment: vary T from 500 to 100K across 1% of users for 1 week. Select T minimizing cost(T). Validate with A/B test: control (current T) vs treatment (new T) measuring P95 timeline load time.
 
-   Your answer should include: (a) a formal expression for the cost function in terms of T, F_avg, F_celeb, and the distribution of follower counts, (b) the measurement methodology (what metrics to collect, from which services, over what duration), (c) the decision rule for selecting T from the empirical data, and (d) how you would validate the chosen threshold with an A/B experiment on 1% of users.
+2. **Anomaly Detection**: CM sketch: width=2000, depth=10, using murmur3 hash seeds. Velocity metric: (current_window_count / baseline_window_count) > 20x AND absolute count > 100K in 60s. Short window: 60s (detect spike), long window: 15min (baseline). Action: remove from trending list, shadowban (don't notify the bot accounts), label as "potentially spam" for human review.
 
-2. **Trending Topics Anomaly Detection**: A botnet with 10,000 accounts is programmed to simultaneously tweet the same hashtag 50 times each (500,000 total tweets). Design a detection algorithm that catches this attack within 60 seconds without false-positive on a legitimate viral event. Specify the data structures, threshold values, and filtering logic.
+3. **Timeline Cache**: L1 (in-process): LRU cache of 100K most recent timeline entries (100MB), TTL 30s. L2 (Redis): timeline lists with 800-entry cap, TTL 5min. Celebrity edge case: separate Memcache pool for celebrity tweets with 30s refresh. Invalidation: when new tweet pushed to timeline, update L2 list (LPUSH + LTRIM) and invalidate L1 key for that user.
 
-   In your design, address: (a) the specific Count-min sketch parameters (width, depth, hash functions) and how they bound the error, (b) the velocity metric that distinguishes bot-driven spikes from organic virality, (c) the temporal window sizes for short-term vs. long-term frequency comparison, and (d) the action taken when a trending candidate is flagged as spam (remove from trending list? shadowban? label?).
-
-3. **Timeline Cache Design**: Design a multi-tier cache for the timeline service. The service handles 10,000 requests/second. Each timeline request reads a Redis list (average 50 tweet IDs) and hydrates the tweets from Manhattan (50 key lookups). Propose a caching strategy that reduces P99 latency by 60%. Specify cache sizes, TTLs, eviction policies, and invalidation triggers.
-
-   Consider: (a) a local L1 cache in the timeline service process (what data, what size, what eviction), (b) a distributed L2 cache (Redis/Memcache — what key structure, what TTL), (c) cache invalidation when a new tweet appears in the timeline, and (d) how your cache handles the celebrity edge case (a user who follows 10,000 accounts).
-
-4. **API Rate Limiting Design**: Twitter's API serves 10M+ developer requests per second across hundreds of endpoints. Design a distributed rate limiting system that:
-
-   (a) Enforces per-endpoint limits for each API key (e.g., 300 requests per 15-minute window for the statuses/user_timeline endpoint)
-   (b) Supports burst allowance (a token bucket variant that allows short bursts up to 2x the sustained limit)
-   (c) Returns standard rate limit headers (X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset) with globally consistent counts
-   (d) Works across multiple data centers — a request to US-EAST and EU-WEST must count toward the same limit
-   
-   Compare the Redis sorted set approach (ZADD + ZREMRANGEBYSCORE + ZCARD) with the sliding window counter approach (increment Redis counter for the current second, maintain a rolling sum), and justify which one you would choose for each endpoint category.
+4. **Rate Limiting**: Use Redis sorted sets for standard endpoints (accurate, supports reset timestamps). Use sliding window counter for high-traffic endpoints (lower memory, slightly less accurate). Cross-DC: use a single Redis cluster (global) for limit counters, or CRDT-based counters with eventual convergence. Burst: token bucket with max burst = 2x sustained limit, refill at sustained rate per second.
+</details>
 
 ### Challenge Problem
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Global Event Handling**: A major global event (e.g., a World Cup final goal) causes a traffic spike: tweets per second go from 6,000 to 150,000 in 10 seconds. The timeline service is overwhelmed. Design a system that:
+<details><summary>Solution>
+**Global Event Handling**
 
-- Automatically detects the traffic onset within 5 seconds and classifies it as a global event (not a DDoS)
-- Spawns additional capacity (describe the auto-scaling mechanism, including cold-start mitigation for new instances)
-- Degrades gracefully: list at least 4 specific degradation modes ranked by severity (e.g., disable ML ranking ? disable media loading ? serve stale timelines ? show "Trending" landing page instead of user timeline)
-- Prevents cascading failure to downstream services (Earlybird, Flocks, Manhattan) through circuit breakers and request prioritization
-- Provides a post-event analysis: what data would you log to understand the event's impact on P50/P95/P99 latency, error rate, and user retention?
+**Detection**: Monitor tweet rate per cluster (5s rolling window). If rate > 3x baseline AND sustained for 10s, classify as global event. Compare against DDoS heuristics: legitimate event shows diverse IPs, real user agents, geographic distribution. DDoS shows concentrated IP ranges, same user agent, no geographic diversity.
 
-Your design must assume that the event lasts 15 minutes and Twitter cannot simply "ride it out" — the platform must remain usable throughout.
+**Autoscaling**: Need 25 new timeline instances (250K/10K = 25). Cold-start: 90s (container pull 20s + JVM warmup 30s + cache preheat 40s). Mitigation: maintain 20% warm pool (5 idle instances), use spot instances with 2-min termination notice, pre-warm caches by shadowing 1% of production traffic.
 
-Provide specific detail for each capacity dimension:
+**Degradation modes** (severity order):
+1. Disable ML ranking → reverse-chronological (saves 50ms per request)
+2. Disable media loading → text-only timeline (saves CDN bandwidth + hydration time)
+3. Serve stale timelines → cached version from 30s ago (saves Redis reads)
+4. Show "Trending" landing page → redirect all traffic to trending (eliminates personalized timeline load)
 
-**Autoscaling Architecture**:
-- How many new timeline service instances are needed? (compute from baseline capacity of 10K req/s per instance, new load of 250K req/s)
-- What is the cold-start time for a new instance? (container pull, JVM warmup, cache preheat)
-- How do you mitigate the cold-start gap? (pre-provision 20% headroom? use spot instances? have a warm pool?)
-- What metric triggers the scale-up? (CPU? request queue depth? P95 latency?)
+**Circuit breakers**: Earlybird: 30% errors in 30s → fallback to cached results TTL 60s. Flocks: >100ms latency → fallback to locally cached follow graph TTL 120s. Manhattan: slow hydration → show tweet IDs only with "Tweet unavailable" fallback. **Client mitigation**: increase polling from 30s to 120s, batch timeline requests, suppress animations, show retry-after header (30s). Android/iOS: reduce image quality to 240p, suppress autoplay videos.
 
-**Circuit Breaker Configuration**:
-- For Earlybird: if searches failing, what error threshold trips the breaker? (50% errors in 10 second window? 30% errors in 30 seconds?)
-- For Flocks: if follow-graph lookups are slow (>100ms), what is the fallback? (cache the user's follow graph locally with what TTL?)
-- For Manhattan: if tweet hydration is slow, what is the degradation? (show tweet IDs only without metadata? collapse to "Tweet unavailable"?)
-
-**Client-Side Mitigation**:
-- How does the mobile client adapt to server overload? (increase polling interval from 30s to 120s? batch timeline requests? suppress animations?)
-- What feedback does the server send to the client to signal overload? (HTTP 503 with Retry-After header? custom response header "X-Twitter-Overload-Level: 1-5"?)
-- How does the client handle these signals differently on Android vs iOS vs web?
-
-**Post-Event Analysis**:
-- Design a dashboard with 6 specific charts that the on-call engineer would review after the event
-- For each chart, specify: the metric name, the aggregation function, the time window, and the comparison baseline
-- Example: "Chart 1: Timeline P99 latency (1-minute rolling percentile, 60-minute window, compared to same-day-prior-week baseline)"
+**Post-event dashboard** (6 charts):
+1. Timeline P99 latency (1-min rolling, 60-min window vs prior week)
+2. Tweet ingestion rate (5s average, 30-min window)
+3. Redis timeline write latency (P50/P95/P99, 5-min window)
+4. Earlybird query error rate (% errors, 1-min window)
+5. Timeline cache hit ratio (rolling 1-min, 30-min window)
+6. Active user session duration (5-min window, compare to prior 7-day average)
+</details>

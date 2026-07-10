@@ -583,29 +583,13 @@ for c in cons: c.join()
 
 ## Chapter Quiz
 
-**Q1:** What is the key takeaway from this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most critical for distributed systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q3:** How does this topic apply to FAANG-level system design?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | Which pattern category does Singleton belong to? | A) Structural, B) Behavioral, C) Creational, D) Concurrency | C) Creational |
+| 2 | How does the Decorator pattern add behavior differently than subclassing? | A) At compile time via inheritance, B) Dynamically at runtime by wrapping objects, C) By modifying the original class, D) By using global state | B) Dynamically at runtime by wrapping objects with additional responsibilities |
+| 3 | In the Command pattern, what enables undo functionality? | A) The execute method, B) The history stack storing executed commands with undo logic, C) The Strategy interface, D) The Observer notification | B) The history stack storing executed commands, each implementing execute() and undo() |
+| 4 | What distinguishes the State pattern from the Strategy pattern? | A) State changes behavior based on internal state; Strategy allows interchangeable algorithms, B) They are identical, C) State is for concurrency, D) Strategy is for object creation | A) State pattern changes behavior based on internal state transitions; Strategy pattern allows client to select interchangeable algorithms |
+| 5 | What is the poison pill pattern in Producer-Consumer? | A) A malicious message, B) A special sentinel message that signals consumers to shut down, C) A message that causes errors, D) A high-priority message | B) A special sentinel message placed on the queue that causes consumers to exit their processing loop gracefully |
 
 ---
 
@@ -804,7 +788,213 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
+
+### TypeScript: SingletonRegistry, EventBus, and StrategyRouter
+
+```typescript
+class SingletonRegistry {
+  private static instances = new Map<string, any>();
+  private static locks = new Map<string, boolean>();
+  private static creating = new Map<string, boolean>();
+
+  static getInstance<T>(key: string, factory: () => T): T {
+    if (this.instances.has(key)) return this.instances.get(key) as T;
+
+    if (!this.creating.get(key)) {
+      this.creating.set(key, true);
+      const instance = factory();
+      this.instances.set(key, instance);
+      this.creating.set(key, false);
+      return instance;
+    }
+
+    while (this.creating.get(key)) {
+      // spin-wait for concurrent creation
+    }
+    return this.instances.get(key) as T;
+  }
+
+  static register<T>(key: string, instance: T): void {
+    if (!this.instances.has(key)) {
+      this.instances.set(key, instance);
+    }
+  }
+
+  static clear(): void {
+    this.instances.clear();
+    this.creating.clear();
+  }
+
+  static getKeys(): string[] {
+    return [...this.instances.keys()];
+  }
+}
+
+class EventBus {
+  private handlers = new Map<string, Set<{ handler: (event: any) => void; async: boolean }>>();
+  private history = new Map<string, any[]>();
+
+  on<T>(event: string, handler: (event: T) => void): void {
+    if (!this.handlers.has(event)) this.handlers.set(event, new Set());
+    this.handlers.get(event)!.add({ handler, async: false });
+  }
+
+  asyncOn<T>(event: string, handler: (event: T) => void): void {
+    if (!this.handlers.has(event)) this.handlers.set(event, new Set());
+    this.handlers.get(event)!.add({ handler, async: true });
+  }
+
+  emit<T>(event: string, data: T): void {
+    const handlers = this.handlers.get(event);
+    if (!handlers) return;
+    if (!this.history.has(event)) this.history.set(event, []);
+    this.history.get(event)!.push(data);
+
+    for (const entry of handlers) {
+      if (entry.async) {
+        setTimeout(() => entry.handler(data), 0);
+      } else {
+        entry.handler(data);
+      }
+    }
+  }
+
+  off(event: string, handler: (event: any) => void): void {
+    const handlers = this.handlers.get(event);
+    if (!handlers) return;
+    for (const entry of handlers) {
+      if (entry.handler === handler) {
+        handlers.delete(entry);
+        return;
+      }
+    }
+  }
+
+  getHistory(event: string): any[] {
+    return [...(this.history.get(event) ?? [])];
+  }
+
+  clearHistory(event?: string): void {
+    if (event) this.history.delete(event);
+    else this.history.clear();
+  }
+}
+
+class StrategyRouter {
+  private strategies = new Map<string, (payload: any) => any>();
+  private defaultStrategy: ((payload: any) => any) | null = null;
+
+  register(method: string, handler: (payload: any) => any): void {
+    this.strategies.set(method.toLowerCase(), handler);
+  }
+
+  setDefault(handler: (payload: any) => any): void {
+    this.defaultStrategy = handler;
+  }
+
+  route(method: string, payload: any): any {
+    const handler = this.strategies.get(method.toLowerCase());
+    if (!handler) {
+      if (this.defaultStrategy) return this.defaultStrategy(payload);
+      throw new Error(`No strategy registered for method: ${method}`);
+    }
+    return handler(payload);
+  }
+
+  hasStrategy(method: string): boolean {
+    return this.strategies.has(method.toLowerCase());
+  }
+
+  getRegisteredMethods(): string[] {
+    return [...this.strategies.keys()];
+  }
+}
+
+// Usage example for StrategyRouter
+const paymentRouter = new StrategyRouter();
+paymentRouter.register("credit_card", (p: any) => ({ status: "paid", method: "credit_card", id: p.orderId }));
+paymentRouter.register("paypal", (p: any) => ({ status: "paid", method: "paypal", id: p.orderId }));
+paymentRouter.register("crypto", (p: any) => ({ status: "paid", method: "crypto", id: p.orderId }));
+paymentRouter.setDefault((p: any) => ({ status: "rejected", method: "unknown", id: p.orderId }));
+```
+
+### Mermaid: Design Pattern Taxonomy
+
+```mermaid
+graph TD
+    classDef creational fill#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef structural fill#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef behavioral fill#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef concurrency fill#fce4ec,stroke:#c62828,stroke-width:2px
+
+    subgraph "Design Pattern Taxonomy"
+        DP["Gang of Four<br/>Design Patterns"]:::creational
+    end
+
+    subgraph "Creational Patterns"
+        C1["Singleton<br/>One instance, global access"]:::creational
+        C2["Factory Method<br/>Deferred creation to subclass"]:::creational
+        C3["Abstract Factory<br/>Product families"]:::creational
+        C4["Builder<br/>Stepwise construction"]:::creational
+        C5["Prototype<br/>Clone existing"]:::creational
+    end
+
+    subgraph "Structural Patterns"
+        S1["Adapter<br/>Interface translation"]:::structural
+        S2["Decorator<br/>Dynamic responsibility"]:::structural
+        S3["Facade<br/>Simplified interface"]:::structural
+        S4["Proxy<br/>Controlled access"]:::structural
+        S5["Composite<br/>Tree structure"]:::structural
+        S6["Bridge<br/>Abstraction vs implementation"]:::structural
+    end
+
+    subgraph "Behavioral Patterns"
+        B1["Observer<br/>One-to-many notification"]:::behavioral
+        B2["Strategy<br/>Interchangeable algorithms"]:::behavioral
+        B3["Command<br/>Undoable operations"]:::behavioral
+        B4["State<br/>State-driven behavior"]:::behavioral
+        B5["Template Method<br/>Algorithm skeleton"]:::behavioral
+        B6["Chain of Resp.<br/>Dynamic dispatch"]:::behavioral
+        B7["Mediator<br/>Central coordination"]:::behavioral
+        B8["Iterator<br/>Sequential access"]:::behavioral
+    end
+
+    subgraph "Concurrency Patterns"
+        CC1["Producer-Consumer<br/>Buffered work"]:::concurrency
+        CC2["Thread Pool<br/>Worker reuse"]:::concurrency
+        CC3["Reader-Writer Lock<br/>Concurrent reads"]:::concurrency
+        CC4["Active Object<br/>Decoupled execution"]:::concurrency
+    end
+
+    DP --> C1 & C2 & C3 & C4 & C5
+    DP --> S1 & S2 & S3 & S4 & S5 & S6
+    DP --> B1 & B2 & B3 & B4 & B5 & B6 & B7 & B8
+    DP --> CC1 & CC2 & CC3 & CC4
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| Creational patterns abstract object creation to make systems independent of how objects are built | Use Singleton sparingly (prefer DI containers); use Factory Method when a class cannot anticipate the concrete type it needs |
+| Structural patterns compose objects to form larger structures without tight coupling | Use Decorator for adding cross-cutting concerns (logging, caching, compression); use Adapter to integrate incompatible interfaces |
+| Behavioral patterns manage algorithms and responsibility distribution | Use Observer for broadcast notifications; use Strategy for interchangeable algorithms; use Command for undoable operations |
+| The Singleton pattern introduces global state and testability problems | Replace Singleton with dependency injection containers that manage object lifecycles with injection scopes |
+| The Decorator pattern is more flexible than subclassing for adding behavior | Stack decorators at runtime for different combinations (compression + encryption + logging) without class explosion |
+| The State pattern eliminates complex if/else chains tied to object state | Each state is a separate class with its own behavior; transitions are explicit in state methods |
+| Anti-patterns (God Object, Spaghetti, Lava Flow) indicate design decay over time | Apply SRP aggressively; set CI gates on complexity metrics; aggressively delete dead code |
+
+## Case Study
+
+**E-Commerce Checkout Framework Using Design Patterns**
+
+A team building a white-label e-commerce platform needed a checkout framework that could be customized for each merchant (100+ merchants with different payment methods, shipping rules, tax calculations, and discount strategies). The initial implementation used a monolithic `CheckoutService` with 40+ configuration flags and massive if/else chains — adding a new merchant required 2-3 weeks and frequently broke existing merchants.
+
+The team redesigned the framework using design patterns. **Strategy Pattern**: Tax calculation was extracted into a `TaxStrategy` interface with implementations (`USTax`, `EUVATax`, `CanadaGST`, `ZeroTax`). A new country required only a new strategy class. **Decorator Pattern**: Order total calculation used decorators — `BaseOrderTotal` wrapped by `DiscountDecorator`, `ShippingDecorator`, `TaxDecorator`, `GiftWrapDecorator`. Merchants composed their decorator chain at configuration time. **Observer Pattern**: The `OrderEventBus` published events (`OrderPlaced`, `PaymentReceived`, `OrderShipped`). Downstream services (Inventory, Analytics, Email, Fraud Detection) subscribed independently — adding a new subscriber required zero changes to the order flow. **Command Pattern**: Each checkout step (`ValidateCart`, `ReserveInventory`, `ProcessPayment`, `SendConfirmation`) was a Command with `execute()` and `undo()`. A failure in any step triggered a compensating rollback of previous steps (Saga pattern). **Factory Method**: The `PaymentGatewayFactory` created gateway-specific handlers — each payment method (Stripe, PayPal, Braintree, Klarna) had its own factory subclass.
+
+The result: new merchant onboarding dropped from 2-3 weeks to 2-3 days. The checkout flow handled 10,000 orders/hour with 99.99% success rate. The codebase grew by only 15% while supporting 5x more merchants. The team attributed the success to pattern-based design — each pattern solved a specific dimension of variability, and patterns composed cleanly without tight coupling between dimensions.
+
+---
 - Creational patterns abstract object creation: Singleton (single instance), Factory Method (deferred creation), Abstract Factory (product families), Builder (stepwise construction), Prototype (cloning).
 - Structural patterns compose objects: Adapter (interface translation), Decorator (dynamic responsibility), Facade (simplified interface), Proxy (controlled access), Composite (uniform tree handling).
 - Behavioral patterns manage algorithms and responsibility: Observer (one-to-many notification), Strategy (interchangeable algorithms), Command (undoable operations), State (state-driven behavior), Template Method (algorithm skeleton), Chain of Responsibility (dynamic dispatch).
@@ -814,31 +1004,197 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 ## Exercises
 ### Review Questions
-1. Why is the Singleton pattern considered an anti-pattern in large systems? What alternatives exist for managing shared state?
-2. Explain the difference between a class adapter and an object adapter. When would you choose one over the other?
-3. In the Command pattern, how does the history stack support undo and redo? What must a command store to reverse its effect?
-4. Compare the Observer and Mediator patterns. In what scenarios would you choose Mediator over Observer?
-5. What is the "poison pill" pattern in Producer-Consumer, and why is it preferable to forcefully stopping consumer threads?
+<details>
+<summary>Solution for Review Question 1</summary>
+Singleton is considered an anti-pattern because it introduces global state, makes unit tests interdependent (tests share the singleton state), hides dependencies (classes call `Singleton.getInstance()` instead of receiving dependencies via constructor), and violates SRP (manages its own lifecycle + business logic). Alternatives: Dependency Injection containers (manage object scope per request/session), module-level instances (Python modules are natural singletons), or passing shared state explicitly through constructor parameters.
+</details>
+
+<details>
+<summary>Solution for Review Question 2</summary>
+**Class adapter** uses multiple inheritance: the adapter inherits both the target interface and the adaptee class. It adapts a specific class and cannot adapt its subclasses. **Object adapter** uses composition: the adapter holds a reference to the adaptee object and delegates calls. It can adapt the adaptee class and all its subclasses. Choose class adapter when you need to override adaptee behavior. Choose object adapter when you need flexibility (most common) — it's the recommended approach in the GoF book.
+</details>
+
+<details>
+<summary>Solution for Review Question 3</summary>
+The history stack stores executed Command objects. Each command implements both `execute()` and `undo()`. For undo: pop the last command from the history stack and call its `undo()` method. For redo: push the undone command onto a redo stack and call `execute()`. A command must store enough state to reverse its effect — typically the "before" state (deleted text, old values, previous positions) captured during `execute()` and used during `undo()`. For example, a `DeleteTextCommand` stores the deleted text and its position.
+</details>
+
+<details>
+<summary>Solution for Review Question 4</summary>
+**Observer** allows one-to-many broadcast where any number of subscribers can receive events from a subject. Communication is indirect but subscribers know about the subject (or at least the event type). **Mediator** centralizes many-to-many communication — objects communicate through the mediator instead of directly with each other. Choose Mediator when: (a) you have complex inter-object dependencies that create a "spaghetti" of direct connections, (b) you need to control or coordinate interactions centrally, (c) the set of interacting objects changes frequently. Example: Air traffic control (mediator) vs. social media followers (observer).
+</details>
+
+<details>
+<summary>Solution for Review Question 5</summary>
+The poison pill is a special sentinel message placed on the queue after all real work items. When a consumer receives the poison pill, it knows to shut down gracefully — finish processing current item, release resources, and exit the loop. It is preferable to forcefully stopping threads because: (a) graceful shutdown — the consumer can complete in-flight work, (b) no resource leaks — files, connections, locks are properly released, (c) predictable — all items before the poison pill are guaranteed processed, (d) no thread interruption exceptions or corrupted state. Each consumer gets its own poison pill.
+</details>
 
 ### Application Problems
-1. Implement a thread-safe Singleton using the module-level pattern (Python modules are singletons). Compare it to the double-checked locking approach in terms of laziness and thread safety.
-2. Refactor this class to use the Strategy pattern for discount calculation:
-   ```python
-   class Order:
-       def calculate_total(self):
-           if self.customer == "regular": return self.total
-           elif self.customer == "vip": return self.total * 0.85
-           elif self.customer == "employee": return self.total * 0.70
-   ```
-3. A web framework's middleware pipeline uses Chain of Responsibility. Implement a middleware chain that authenticates, logs, and rate-limits requests before passing them to the handler. Each middleware either blocks the request or passes it to the next in the chain.
+<details>
+<summary>Solution for Application Problem 1: Thread-Safe Singleton</summary>
+```python
+# Module-level singleton (Python modules are singletons)
+# logger.py
+import logging
+_logger = logging.getLogger("app")
+def get_logger(): return _logger
+
+# Double-checked locking
+class ThreadSafeSingleton:
+    _instance = None
+    _lock = threading.Lock()
+    def __new__(cls):
+        if cls._instance is None:
+            with cls._lock:
+                if cls._instance is None:
+                    cls._instance = super().__new__(cls)
+        return cls._instance
+```
+Module-level is simpler and always thread-safe (import lock), but is eagerly loaded (import time). DCL is lazy (created on first use) but requires careful implementation.
+</details>
+
+<details>
+<summary>Solution for Application Problem 2: Discount Strategy</summary>
+```python
+from abc import ABC, abstractmethod
+class DiscountStrategy(ABC):
+    @abstractmethod
+    def apply(self, total: float) -> float: ...
+
+class RegularDiscount(DiscountStrategy):
+    def apply(self, total): return total
+
+class VIPDiscount(DiscountStrategy):
+    def apply(self, total): return total * 0.85
+
+class EmployeeDiscount(DiscountStrategy):
+    def apply(self, total): return total * 0.70
+
+class Order:
+    def __init__(self, total: float, strategy: DiscountStrategy):
+        self.total = total
+        self._strategy = strategy
+    def calculate_total(self): return self._strategy.apply(self.total)
+```
+Adding a new discount type (e.g., SeasonalDiscount) requires only a new class — no modification to Order (OCP).
+</details>
+
+<details>
+<summary>Solution for Application Problem 3: Middleware Chain</summary>
+```python
+from abc import ABC, abstractmethod
+class Middleware(ABC):
+    def __init__(self):
+        self._next = None
+    def set_next(self, middleware): self._next = middleware; return self._next
+    def handle(self, request):
+        if self._next: return self._next.handle(request)
+        return True
+
+class AuthMiddleware(Middleware):
+    def handle(self, request):
+        if not request.get("token"): return False
+        print(f"Auth passed for {request['token']}")
+        return super().handle(request)
+
+class LoggingMiddleware(Middleware):
+    def handle(self, request):
+        print(f"Request: {request}")
+        return super().handle(request)
+
+class RateLimitMiddleware(Middleware):
+    def __init__(self, max_requests=10):
+        super().__init__(); self._count = 0; self._max = max_requests
+    def handle(self, request):
+        self._count += 1
+        if self._count > self._max: return False
+        return super().handle(request)
+
+# Build chain
+auth = AuthMiddleware()
+logging = LoggingMiddleware()
+rate = RateLimitMiddleware(100)
+auth.set_next(logging).set_next(rate)
+result = auth.handle({"token": "abc123", "path": "/api/data"})
+```
+</details>
 
 ### Challenge Problem
-Design and implement a complete logging framework using the following patterns:
-- **Singleton** for the core logger instance
-- **Strategy** for log formatting (plain text, JSON, XML)
-- **Chain of Responsibility** for log level filtering (DEBUG passes all; ERROR blocks DEBUG/INFO)
-- **Observer** for broadcast-style appenders (console writer, file writer, network writer all receive events)
-- **Command** for deferred writes (log entries are queued and flushed batch-wise)
-- **Builder** for constructing a logger with custom configuration
+<details>
+<summary>Solution: Pattern-Based Logging Framework</summary>
+```python
+import threading, json, queue, time
+from abc import ABC, abstractmethod
 
-Implement all components with thread safety. Demonstrate an end-to-end scenario: configure a JSON-formatted logger with file and network appenders that only processes messages above WARN level, write 10 log entries, and verify the output.
+# Singleton
+class LoggerCore:
+    _instance = None; _lock = threading.Lock()
+    def __new__(cls):
+        if cls._instance is None:
+            with cls._lock:
+                if cls._instance is None:
+                    cls._instance = super().__new__(cls)
+                    cls._instance._initialized = False
+        return cls._instance
+
+    def configure(self, formatter, appenders, level, buffer_size=10):
+        if not self._initialized:
+            self._formatter = formatter; self._appenders = appenders
+            self._level = level; self._queue = queue.Queue(maxsize=buffer_size)
+            self._flush_thread = threading.Thread(target=self._flush_loop, daemon=True)
+            self._flush_thread.start(); self._initialized = True
+
+    def log(self, level, msg):
+        if level >= self._level:
+            entry = self._formatter.format(level, msg)
+            self._queue.put(entry)  # Command pattern: deferred write
+
+    def _flush_loop(self):
+        while True:
+            try:
+                entry = self._queue.get(timeout=1)
+                for a in self._appenders:
+                    a.append(entry)  # Observer pattern: broadcast
+            except queue.Empty:
+                pass
+
+# Strategy
+class Formatter(ABC):
+    @abstractmethod
+    def format(self, level, msg): ...
+
+class JsonFormatter(Formatter):
+    def format(self, level, msg): return json.dumps({"level": level, "msg": msg, "time": time.time()})
+
+# Observer: appenders
+class Appender(ABC):
+    @abstractmethod
+    def append(self, entry): ...
+
+class FileAppender(Appender):
+    def __init__(self, path): self.path = path
+    def append(self, entry):
+        with open(self.path, 'a') as f: f.write(entry + '\n')
+
+# Chain of Responsibility for level filtering
+class LevelFilter:
+    def __init__(self, min_level): self._min = min_level
+    def filter(self, level): return level >= self._min
+
+# Builder
+class LoggerBuilder:
+    def __init__(self): self._formatter = None; self._appenders = []; self._level = 0
+    def with_json(self): self._formatter = JsonFormatter(); return self
+    def with_file(self, path): self._appenders.append(FileAppender(path)); return self
+    def with_level(self, level): self._level = level; return self
+    def build(self):
+        core = LoggerCore()
+        core.configure(self._formatter, self._appenders, self._level)
+        return core
+
+# Usage
+logger = LoggerBuilder().with_json().with_file("log.json").with_level(2).build()
+for i in range(10): logger.log(2, f"Message {i}")
+time.sleep(2)  # Let flush complete
+```
+</details>

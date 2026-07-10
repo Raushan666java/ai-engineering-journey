@@ -722,85 +722,14 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-## Concept Comparison
-> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
-
-| Concept | Definition | Key Insight |
-|---------|-----------|-------------|
-| Theory | Core topic in Chapter 19: Case Study — WhatsApp and Real-Time Messaging | Fundamental to system design |
-| Case Study: WhatsApp Message Delivery Pipeline | Core topic in Chapter 19: Case Study — WhatsApp and Real-Time Messaging | Fundamental to system design |
-
----
-
-## Quick Reference
-> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
-
-| Topic | Key Point |
-|-------|-----------|
-| Theory | Essential concept for Chapter 19: Case Study — WhatsApp and Real-Time Messaging |
-
----
-
-## Cross-Application Matrix
-
-| Concept | Application Context | Trade-Off |
-|--------|-------------------|-----------|
-| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
-
----
-
-## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
-
-**Q1:** What is the primary trade-off discussed in this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most fundamental to the topic of Chapter 19
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
-
-**Q3:** How does this chapter's main concept apply to real-world systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What is the primary architectural advantage of using FreeBSD kqueue over Linux epoll for WhatsApp's connection servers? | A) Better XML parsing, B) One-shot notifications with lower CPU overhead, C) Built-in TLS support, D) Superior load balancing | B |
+| 2 | Which fan-out strategy does WhatsApp use for groups with 32-256 members? | A) Pure fan-on-write, B) Pure fan-on-read, C) Hybrid (timeline write + active member push), D) Broadcast to all devices | C |
+| 3 | How does the Double Ratchet algorithm provide forward secrecy? | A) By using static keys that never change, B) By deriving new message keys from a KDF chain where past keys cannot be recovered, C) By encrypting messages twice, D) By storing keys on the server | B |
+| 4 | What is the primary limitation of WhatsApp's current disappearing messages implementation? | A) Messages cannot be recovered, B) Deletion relies on client cooperation and a malicious client could save messages, C) Only works for text, D) Requires both users to be online | B |
+| 5 | How does WhatsApp handle media sharing without exposing content to the server? | A) The server encrypts media before storage, B) Media is uploaded directly to CDN and messages carry only hashes and encryption keys, C) Media is sent peer-to-peer only, D) Media is never stored on servers | B |
 
 ---
 
@@ -885,7 +814,290 @@ class PresenceTracker {
     console.log(`[Presence] Notify ${watcherId}: ${userId} is ${status}`);
   }
 }
+
+### TypeScript: Chat Server, Message Store, and Advanced Presence
+
+```typescript
+class ChatServer {
+  private connections = new Map<string, WebSocket>();
+  private messageQueues = new Map<string, string[]>();
+  private onlineStatus = new Set<string>();
+
+  connect(userId: string, ws: WebSocket): void {
+    this.connections.set(userId, ws);
+    this.onlineStatus.add(userId);
+    this.broadcastStatus(userId, "online");
+    this.flushQueue(userId);
+  }
+
+  disconnect(userId: string): void {
+    this.connections.delete(userId);
+    this.onlineStatus.delete(userId);
+    this.broadcastStatus(userId, "offline");
+  }
+
+  relayMessage(from: string, to: string, content: string): boolean {
+    const target = this.connections.get(to);
+    if (target) {
+      target.send(JSON.stringify({ from, content, ts: Date.now() }));
+      return true;
+    }
+    if (!this.messageQueues.has(to)) this.messageQueues.set(to, []);
+    this.messageQueues.get(to)!.push(JSON.stringify({ from, content, ts: Date.now(), queued: true }));
+    return false;
+  }
+
+  private flushQueue(userId: string): void {
+    const queue = this.messageQueues.get(userId) ?? [];
+    const ws = this.connections.get(userId);
+    if (ws) {
+      for (const msg of queue) ws.send(msg);
+      this.messageQueues.delete(userId);
+    }
+  }
+
+  private broadcastStatus(userId: string, status: string): void {
+    for (const [uid, ws] of this.connections) {
+      if (uid !== userId) ws.send(JSON.stringify({ type: "presence", userId, status }));
+    }
+  }
+
+  isOnline(userId: string): boolean { return this.onlineStatus.has(userId); }
+}
+
+interface WebSocket { send(data: string): void; }
+
+class MessageStore {
+  private conversations = new Map<string, { id: string; from: string; to: string; text: string; ts: number; seq: number }[]>();
+  private crdtCounters = new Map<string, Map<string, number>>();
+  private lastSeen = new Map<string, Map<string, number>>();
+
+  appendMessage(conversationId: string, msg: { id: string; from: string; to: string; text: string; ts: number }): number {
+    if (!this.conversations.has(conversationId)) {
+      this.conversations.set(conversationId, []);
+      this.crdtCounters.set(conversationId, new Map());
+    }
+    const conv = this.conversations.get(conversationId)!;
+    const counters = this.crdtCounters.get(conversationId)!;
+    const seq = (counters.get(msg.from) ?? 0) + 1;
+    counters.set(msg.from, seq);
+    conv.push({ ...msg, seq });
+    return seq;
+  }
+
+  mergeRemote(conversationId: string, remoteMessages: { id: string; from: string; to: string; text: string; ts: number; seq: number }[]): number {
+    if (!this.conversations.has(conversationId)) this.conversations.set(conversationId, []);
+    const conv = this.conversations.get(conversationId)!;
+    const existingIds = new Set(conv.map(m => m.id));
+    let merged = 0;
+    for (const msg of remoteMessages) {
+      if (!existingIds.has(msg.id)) {
+        conv.push(msg);
+        existingIds.add(msg.id);
+        merged++;
+      }
+    }
+    conv.sort((a, b) => a.ts - b.ts);
+    return merged;
+  }
+
+  getMessages(conversationId: string, sinceTs?: number, limit = 50): { id: string; from: string; to: string; text: string; ts: number; seq: number }[] {
+    const conv = this.conversations.get(conversationId) ?? [];
+    const filtered = sinceTs ? conv.filter(m => m.ts > sinceTs) : conv;
+    return filtered.slice(-limit);
+  }
+
+  updateLastSeen(conversationId: string, userId: string, ts: number): void {
+    if (!this.lastSeen.has(conversationId)) this.lastSeen.set(conversationId, new Map());
+    this.lastSeen.get(conversationId)!.set(userId, ts);
+  }
+
+  getLastSeen(conversationId: string, userId: string): number {
+    return this.lastSeen.get(conversationId)?.get(userId) ?? 0;
+  }
+
+  getSyncPayload(userId: string, deviceLastSeen: Map<string, number>): Map<string, { id: string; from: string; to: string; text: string; ts: number; seq: number }[]> {
+    const payload = new Map<string, { id: string; from: string; to: string; text: string; ts: number; seq: number }[]>();
+    for (const [convId, conv] of this.conversations) {
+      if (conv.some(m => m.from === userId || m.to === userId)) {
+        const since = deviceLastSeen.get(convId) ?? 0;
+        const recent = conv.filter(m => m.ts > since);
+        if (recent.length > 0) payload.set(convId, recent);
+      }
+    }
+    return payload;
+  }
+}
+
+class AdvancedPresenceTracker {
+  private status = new Map<string, { state: "online" | "offline" | "typing"; lastHeartbeat: number; deviceList: string[] }>();
+  private subscriptions = new Map<string, Set<string>>();
+  private readonly heartbeatTimeout = 30000;
+  private readonly typingTimeout = 5000;
+
+  setStatus(userId: string, state: "online" | "offline" | "typing", deviceId?: string): void {
+    const prev = this.status.get(userId) ?? { state: "offline" as const, lastHeartbeat: 0, deviceList: [] };
+    if (state === "online" && deviceId && !prev.deviceList.includes(deviceId)) prev.deviceList.push(deviceId);
+    prev.state = state;
+    prev.lastHeartbeat = Date.now();
+    this.status.set(userId, prev);
+    this.publish(userId, state);
+  }
+
+  subscribe(watcherId: string, targetId: string): void {
+    if (!this.subscriptions.has(targetId)) this.subscriptions.set(targetId, new Set());
+    this.subscriptions.get(targetId)!.add(watcherId);
+  }
+
+  unsubscribe(watcherId: string, targetId: string): void {
+    this.subscriptions.get(targetId)?.delete(watcherId);
+  }
+
+  handleHeartbeat(userId: string): boolean {
+    const entry = this.status.get(userId);
+    if (!entry) return false;
+    entry.lastHeartbeat = Date.now();
+    if (entry.state === "offline") {
+      entry.state = "online";
+      this.publish(userId, "online");
+    }
+    return true;
+  }
+
+  checkTimeouts(): string[] {
+    const now = Date.now();
+    const timedOut: string[] = [];
+    for (const [userId, entry] of this.status) {
+      if (entry.state === "online" && now - entry.lastHeartbeat > this.heartbeatTimeout) {
+        if (entry.state === "typing") entry.state = "online";
+        else {
+          entry.state = "offline";
+          timedOut.push(userId);
+          this.publish(userId, "offline");
+        }
+      }
+      if (entry.state === "typing" && now - entry.lastHeartbeat > this.typingTimeout) {
+        entry.state = "online";
+        this.publish(userId, "online");
+      }
+    }
+    return timedOut;
+  }
+
+  getStatus(userId: string): { state: string; lastHeartbeat: number; devices: string[] } {
+    const entry = this.status.get(userId);
+    return entry ? { state: entry.state, lastHeartbeat: entry.lastHeartbeat, devices: [...entry.deviceList] }
+      : { state: "offline", lastHeartbeat: 0, devices: [] };
+  }
+
+  private publish(userId: string, state: string): void {
+    const watchers = this.subscriptions.get(userId);
+    if (watchers) {
+      for (const w of watchers) {
+        console.log(`[Presence] ${w}: ${userId} is ${state}`);
+      }
+    }
+  }
+}
 ```
+
+```mermaid
+graph TB
+    classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef server fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef storage fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef msg fill:#fce4ec,stroke:#c62828,stroke-width:2px
+    classDef sync fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+
+    subgraph "Client Devices"
+        A[Alice Device 1<br/>Mumbai]:::client
+        A2[Alice Device 2<br/>Tablet]:::client
+        B[Bob Device<br/>Sao Paulo]:::client
+    end
+
+    subgraph "Connection Layer"
+        LB[Load Balancer<br/>DNS / Consistent Hash]:::server
+        CS1[Connection Server<br/>FreeBSD kqueue]:::server
+        CS2[Connection Server<br/>FreeBSD kqueue]:::server
+    end
+
+    subgraph "Service Layer"
+        R[Message Router]:::server
+        SM[Session Manager]:::server
+        GP[Group Service]:::server
+        PP[Presence Pub/Sub]:::server
+        MS[Media Service]:::server
+    end
+
+    subgraph "Crypto Layer"
+        X3DH[X3DH Key Agreement]:::msg
+        DR[Double Ratchet<br/>Per-Message Keys]:::msg
+        SK[Sender Key<br/>Group Messaging]:::msg
+    end
+
+    subgraph "Storage"
+        MSTORE[(Message Store<br/>MyRocks)]:::storage
+        META[(Metadata<br/>Cassandra)]:::storage
+        CDN[(Object Store<br/>CDN)]:::storage
+        REDIS[(Redis<br/>Presence Cache)]:::storage
+    end
+
+    subgraph "Sync Layer"
+        Dsync[Device Sync<br/>Per-Device Ratchets]:::sync
+        OQ[Offline Queue<br/>30-Day Retention]:::sync
+        HIS[History Sync<br/>3-Month Backfill]:::sync
+    end
+
+    A --> LB
+    A2 --> LB
+    B --> LB
+    LB --> CS1
+    LB --> CS2
+    CS1 --> R
+    CS2 --> R
+    R --> SM
+    R --> GP
+    R --> PP
+    R --> MS
+    SM --> X3DH
+    X3DH --> DR
+    DR --> SK
+    R --> MSTORE
+    R --> META
+    MS --> CDN
+    PP --> REDIS
+    R --> Dsync
+    R --> OQ
+    Dsync --> HIS
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Persistent TCP connections with kqueue achieve 1M+ connections/server | Use kqueue/epoll with one-shot events for high-density connection servers; fall back to WebSocket through firewalls |
+| Hybrid fan-out reduces write amplification for group chats | Fan-on-write for groups <32, hybrid for 32-256, fan-on-read for >256 members |
+| End-to-end encryption requires the server to be zero-knowledge | Use X3DH for initial key agreement, Double Ratchet for forward secrecy, Sender Keys for group efficiency |
+| Message IDs need global uniqueness and temporal ordering | Use Snowflake-style 64-bit IDs: 41-bit timestamp + 10-bit server ID + 12-bit sequence |
+| Offline queuing with 30-day retention balances storage vs availability | Per-user inbox with LRU eviction; sync protocol sends only messages after last-known ID |
+| Multi-device requires per-device key pairs and independent ratchet states | Each device generates its own identity key; server maintains device list and fans out messages |
+| Presence pub/sub with throttling prevents notification storms | Redis pub-sub with 2-second typing throttle; batch presence updates for large contact lists |
+
+## Case Study: Group Chat Fan-Out During a Global Event
+
+A WhatsApp group with 1,024 members (family/friends) is coordinating during a New Year's Eve celebration. Messages are flowing at 50 per minute during the countdown. The group uses the hybrid fan-out strategy: each message is written once to the group timeline, and active members (those connected to the server) receive a notification via their persistent TCP connection with the group ID and message ID. Inactive members (about 40% during the event's peak hour) discover messages when they reconnect and sync from the group timeline.
+
+The server handles this load by maintaining the group timeline as a shared ordered log in MyRocks, indexed by `(group_id, message_id)`. Active members' connections are tracked in memory: when a new message arrives for the group, the message router looks up all connected members from the session manager and pushes notifications. Each notification is a lightweight message (~50 bytes) containing only the group ID and message ID. The client then fetches the actual content (which may include media attachments up to 16MB) from the CDN using an encrypted blob URL and the decryption key derived from the Double Ratchet.
+
+The critical challenge is the write spike at midnight: expected message rate spikes to 500 messages in 60 seconds. The fan-on-read approach means the write cost is O(1) per message regardless of group size, so the MyRocks LSM-tree handles the burst easily. However, the notification fan-out to 600+ active members creates a notification burst of 500 × 600 = 300,000 push operations in 60 seconds. To prevent connection server overload, notifications are batched: the server queues notifications for 100ms windows and sends a single batch message with up to 50 message IDs. This reduces the per-connection push rate from ~500 pushes in 60 seconds to ~10 batch pushes, well within the capacity of a kqueue event loop handling 1M connections.
+
+## Case Study: Multi-Device Reconciliation After Offline Period
+
+Alice returns from a 2-week hiking trip with no cellular service. During her offline period, Bob sent 200 messages and Alice's tablet (left at home, connected to WiFi) received and displayed all of them. Alice's phone has been offline for the entire 2 weeks. When Alice's phone reconnects to WhatsApp, it must reconcile 14 days of missed messages across all conversations while maintaining per-device encryption states.
+
+The sync protocol begins with Alice's phone sending its last known message ID per conversation to the server. The server responds with all messages after those IDs, batched by conversation and ordered by server timestamp. For each conversation with Bob, the server sends the 200 messages Bob sent. Alice's phone independently decrypts each message using its own ratchet state (which has diverged from the tablet's ratchet state, because the tablet has already received messages and advanced its ratchet). The server also sends a device list for Alice's account showing that the tablet is active with its own device ID and identity key.
+
+The key architectural insight is that each device maintains independent ratchet states with each conversation partner. Alice's phone's ratchet with Bob is paused at the state where Alice sent her last message before going offline. The server delivers Bob's 200 messages, and the Double Ratchet advances forward from the stored state. Alice's tablet, which received messages during the offline period, has a different ratchet state because it received the messages from the server with its own ratchet advancement. This per-device independence means device reconciliation is handled entirely server-side: the server fans out messages to all devices, and each device independently processes and decrypts them without needing to coordinate with other devices.
 
 ## Summary
 
@@ -906,42 +1118,30 @@ class PresenceTracker {
 
 ### Review Questions
 
-1. Compare fan-on-write and fan-on-read for group chat messaging. At what group size does each become the better choice, and why?
+<details><summary>Solution</summary>1. **Fan-on-write** is better for small groups (≤32 members) because write amplification is proportional to group size but read is O(1). **Fan-on-read** is better for large groups (>1024) because write is O(1) but each member must read from the group timeline. The **hybrid approach** (32-256) writes once to timeline and pushes notifications to active members.
 
-2. Explain how X3DH key agreement establishes a shared secret between two parties who have never communicated before. What role does the server play in this process?
+2. **X3DH** uses a Diffie-Hellman exchange combining Alice's identity key with Bob's signed pre-key and one-time pre-key, producing a shared secret the server cannot derive. The server acts as a directory service storing pre-key bundles but never learns private keys.
 
-3. How does the Double Ratchet algorithm provide both forward secrecy and break-in recovery? Describe the role of the Diffie-Hellman ratchet vs the symmetric ratchet.
+3. The **Diffie-Hellman ratchet** provides forward secrecy by generating new ephemeral keys for each message — compromising the current key does not reveal past message keys. The **symmetric ratchet** provides break-in recovery by continuously deriving new chain keys from the root key — after compromise, a new DH exchange re-establishes security.
 
-4. Describe the connection fallback chain: TCP ? WebSocket ? Long-Polling. Under what conditions would each fallback trigger?
+4. **TCP** (port 5222, custom protocol) is the primary connection. **WebSocket** (port 443) falls back when networks block non-standard ports or have aggressive NAT timeouts. **Long-polling** is the last resort for severely degraded networks where WebSocket connections are interrupted.
 
-5. How does multi-device support work without the primary phone acting as a relay? What key material does each device hold?
+5. **Multi-device** uses per-device Ed25519 identity key pairs. Each device independently establishes ratchet states with conversation partners. The server maintains a device list and fans out messages to all devices. No device acts as a relay for another.
+</details>
 
 ### Application Problems
 
-1. **Group Chat Fan-Out At Scale**: Your messaging app has a group with 10,000 members (a community group). Design the fan-out strategy. Consider: active vs inactive ratios, burst messages during events (100 msg/min), online push vs lazy loading. Calculate the write amplification for fan-on-write and the read amplification for fan-on-read. Assuming 60% of members are active, what is the optimal strategy?
+<details><summary>Solution</summary>1. **Group Chat Fan-Out**: For 10,000 members, fan-on-write would require 10,000 inbox writes per message — prohibitive. Fan-on-read (O(1) write) is the only viable strategy. With 60% active, the read amplification of 6,000 reads per message is manageable using a group timeline with indexed range queries. Active members receive push notifications; inactive members sync on reconnect.
 
-2. **Media CDN With Previews**: You need to support sending 4K videos up to 1GB. Users expect instant preview play. Design a transcoding pipeline that:
-   - Accepts the upload
-   - Generates 5 quality tiers (240p, 360p, 720p, 1080p, source)
-   - Generates a GIF preview (first 5 seconds)
-   - Generates a thumbnail
-   - Makes the first tier available in &lt;2 seconds
-   All while the video continues uploading. Describe the chunked upload, parallel transcoding, and progressive availability strategy.
+2. **Media CDN**: Upload source to blob storage, trigger a transcoding pipeline that generates 5 quality tiers in parallel using FFmpeg workers. Generate thumbnail and GIF preview from the first keyframe. Make the lowest tier available immediately (<2 seconds) while higher tiers complete asynchronously. Use HLS with multiple quality variants.
 
-3. **Serverless WhatsApp**: Design a messaging system using only serverless components (AWS Lambda, API Gateway WebSocket, DynamoDB, S3, SQS). What constraints make this approach workable? Where does it break down compared to WhatsApp's persistent connection architecture? Estimate the cost per billion messages.
+3. **Serverless WhatsApp**: Workable for low-volume messaging (<1M messages/day) with API Gateway WebSocket for connections, DynamoDB for message storage, and SQS for offline queuing. Breaks down at scale due to Lambda's 15-minute execution limit, lack of persistent connections for presence, and DynamoDB's limited fan-out capabilities.
+</details>
 
 ### Challenge Problem
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
+<details><summary>Solution</summary>
 **Disappearing Messages with Cryptographic Enforcement**
 
-WhatsApp supports disappearing messages (messages that auto-delete after 24 hours to 90 days). Currently, deletion relies on client cooperation — the server marks them as deleted but a malicious client could save messages before deletion. Design a system where the server can cryptographically enforce disappearance:
-
-1. The server issues an ephemeral decryption key that expires after the time limit
-2. Messages are encrypted with a time-based key derived from the current epoch window
-3. Design the key hierarchy: long-term identity keys ? session keys ? time-window keys ? message keys
-4. Handle the case where the recipient opens the message 1 minute before the window expires
-5. Ensure backward compatibility with existing client software
-6. Consider the case where the server is compromised: can an attacker recover expired messages from stored ciphertexts?
-
-This challenge touches on identity-based encryption, timed-release cryptography, key rotation at scale, and the fundamental tension between "server zero-knowledge" and "server-enforced policies."
+Design a time-based key hierarchy: Long-term identity keys → session keys (established via X3DH) → time-window keys (derived from epoch windows, e.g., 1-hour windows) → message keys. The server issues ephemeral decryption keys that expire after the configured time limit (24h–90d). The server encrypts each message with the current time-window key. When a recipient opens a message 1 minute before the window expires, they must fetch the next window's key before it is available — preventing early access. Backward compatibility requires clients that support time-window encryption to signal this capability during session establishment. If the server is compromised, an attacker cannot recover expired messages because the time-window keys for past windows are deleted by the server. However, an attacker who compromises the server at time T can read all messages whose time windows are still valid — a fundamental tension between server-enforced policies and zero-knowledge architecture.
+</details>

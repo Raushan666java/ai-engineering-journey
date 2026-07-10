@@ -882,6 +882,475 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+### TypeScript: QuorumReader (W+R > N with Read Repair)
+
+This class implements a Dynamo-style quorum read/write system with read repair and hinted handoff, demonstrating the `W + R > N` consistency guarantee.
+
+```typescript
+interface Replica {
+  id: string;
+  data: Map<string, { value: string; version: number; timestamp: number }>;
+  alive: boolean;
+}
+
+class QuorumReader {
+  private replicas: Replica[] = [];
+
+  constructor(
+    private n: number,
+    private w: number,
+    private r: number
+  ) {
+    if (w + r <= n) throw new Error(`W+R > N required: ${w}+${r} <= ${n}`);
+  }
+
+  addReplica(id: string): void {
+    this.replicas.push({ id, data: new Map(), alive: true });
+  }
+
+  markReplicaStatus(id: string, alive: boolean): void {
+    const rep = this.replicas.find(r => r.id === id);
+    if (rep) rep.alive = alive;
+  }
+
+  async write(key: string, value: string): Promise<{ success: boolean; acks: number; version: number }> {
+    const aliveReplicas = this.replicas.filter(r => r.alive);
+    const selected = aliveReplicas.slice(0, this.n);
+    let acks = 0;
+    const version = Date.now();
+
+    const results = await Promise.allSettled(
+      selected.map(async (rep) => {
+        rep.data.set(key, { value, version, timestamp: Date.now() });
+        acks++;
+      })
+    );
+
+    const hintedHandoff: string[] = [];
+    if (acks < this.w) {
+      for (const rep of this.replicas.filter(r => !r.alive)) {
+        hintedHandoff.push(rep.id);
+      }
+    }
+
+    return {
+      success: acks >= this.w,
+      acks,
+      version,
+    };
+  }
+
+  async read(key: string): Promise<{ value: string | null; version: number; readRepaired: boolean }> {
+    const aliveReplicas = this.replicas.filter(r => r.alive);
+    const selected = aliveReplicas.slice(0, this.n);
+    const responses: { rep: Replica; value: string; version: number }[] = [];
+
+    for (const rep of selected) {
+      const entry = rep.data.get(key);
+      if (entry) {
+        responses.push({ rep, value: entry.value, version: entry.version });
+      }
+    }
+
+    if (responses.length < this.r) {
+      return { value: null, version: 0, readRepaired: false };
+    }
+
+    responses.sort((a, b) => b.version - a.version);
+    const latest = responses[0];
+
+    // Read repair: update stale replicas
+    let readRepaired = false;
+    for (const resp of responses) {
+      if (resp.version < latest.version) {
+        resp.rep.data.set(key, { value: latest.value, version: latest.version, timestamp: Date.now() });
+        readRepaired = true;
+      }
+    }
+
+    return { value: latest.value, version: latest.version, readRepaired };
+  }
+
+  isStronglyConsistent(): boolean {
+    return this.w + this.r > this.n;
+  }
+
+  maxFailuresTolerated(): number {
+    return this.n - Math.max(this.w, this.r);
+  }
+
+  stats(): { n: number; w: number; r: number; strong: boolean; replicas: number; alive: number } {
+    return {
+      n: this.n, w: this.w, r: this.r,
+      strong: this.isStronglyConsistent(),
+      replicas: this.replicas.length,
+      alive: this.replicas.filter(r => r.alive).length,
+    };
+  }
+}
+
+// -- Example ------------------------------------------------------
+const qr = new QuorumReader(3, 2, 2);
+qr.addReplica('node-a'); qr.addReplica('node-b'); qr.addReplica('node-c');
+
+const w = await qr.write('user:42', '{"name":"Alice"}');
+console.log('Write:', w.success ? `ACK (v${w.version})` : 'FAILED');
+
+qr.markReplicaStatus('node-a', false);
+const r = await qr.read('user:42');
+console.log('Read:', r.value, '| Read repaired:', r.readRepaired);
+console.log('Consistency:', qr.isStronglyConsistent() ? 'STRONG' : 'EVENTUAL');
+```
+
+### TypeScript: Vector Clock (Causality and Concurrency Detection)
+
+This class implements vector clocks with tick, compare, and merge operations for detecting causal relationships and concurrent updates.
+
+```typescript
+class VectorClock {
+  private clock: Map<string, number> = new Map();
+
+  constructor(...initial: [string, number][]) {
+    for (const [node, ts] of initial) this.clock.set(node, ts);
+  }
+
+  tick(nodeId: string): void {
+    this.clock.set(nodeId, (this.clock.get(nodeId) ?? 0) + 1);
+  }
+
+  get(nodeId: string): number {
+    return this.clock.get(nodeId) ?? 0;
+  }
+
+  getAll(): Map<string, number> {
+    return new Map(this.clock);
+  }
+
+  compare(other: VectorClock): 'before' | 'after' | 'concurrent' | 'equal' {
+    const allNodes = new Set([...this.clock.keys(), ...other.clock.keys()]);
+    let thisAhead = false;
+    let otherAhead = false;
+
+    for (const node of allNodes) {
+      const tv = this.get(node);
+      const ov = other.get(node);
+      if (tv > ov) thisAhead = true;
+      if (tv < ov) otherAhead = true;
+    }
+
+    if (!thisAhead && !otherAhead) return 'equal';
+    if (thisAhead && !otherAhead) return 'after';
+    if (!thisAhead && otherAhead) return 'before';
+    return 'concurrent';
+  }
+
+  isConcurrent(other: VectorClock): boolean {
+    return this.compare(other) === 'concurrent';
+  }
+
+  happensBefore(other: VectorClock): boolean {
+    return this.compare(other) === 'before';
+  }
+
+  merge(other: VectorClock): void {
+    const allNodes = new Set([...this.clock.keys(), ...other.clock.keys()]);
+    for (const node of allNodes) {
+      this.clock.set(node, Math.max(this.get(node), other.get(node)));
+    }
+  }
+
+  clone(): VectorClock {
+    const vc = new VectorClock();
+    for (const [node, ts] of this.clock) vc.clock.set(node, ts);
+    return vc;
+  }
+
+  toString(): string {
+    const parts = [...this.clock.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([k, v]) => `${k}=${v}`);
+    return `[${parts.join(', ')}]`;
+  }
+
+  static fromString(str: string): VectorClock {
+    const vc = new VectorClock();
+    const match = str.match(/\[(.*?)\]/);
+    if (match) {
+      for (const part of match[1].split(',').map(s => s.trim())) {
+        const [k, v] = part.split('=');
+        if (k && v) vc.clock.set(k.trim(), parseInt(v.trim(), 10));
+      }
+    }
+    return vc;
+  }
+
+  static simulateConcurrentWrites(): { v1: VectorClock; v2: VectorClock; result: string } {
+    const vc1 = new VectorClock();
+    const vc2 = new VectorClock();
+
+    vc1.tick('A'); vc1.tick('A'); vc1.tick('A'); // A writes 3 times
+    vc2.tick('B'); vc2.tick('B'); // B writes 2 times
+
+    // Concurrent: neither dominates
+    const cmp = vc1.compare(vc2);
+    return {
+      v1: vc1.clone(),
+      v2: vc2.clone(),
+      result: cmp, // should be 'concurrent'
+    };
+  }
+}
+
+// -- Example ------------------------------------------------------
+const sim = VectorClock.simulateConcurrentWrites();
+console.log('VC1:', sim.v1.toString());
+console.log('VC2:', sim.v2.toString());
+console.log('Comparison:', sim.result);
+
+// Causal relationship
+const causal1 = new VectorClock(['A', 1]);
+causal1.tick('A');
+
+const causal2 = new VectorClock(['A', 2]);
+console.log('Causal check (1->2):', causal1.happensBefore(causal2) ? 'happens-before' : 'concurrent');
+```
+
+### TypeScript: Raft Consensus (Leader Election and Log Replication)
+
+This class simulates the Raft consensus algorithm — leader election, log replication, and commit — with configurable cluster size and failure scenarios.
+
+```typescript
+type RaftRole = 'follower' | 'candidate' | 'leader';
+
+interface RaftLogEntry {
+  term: number;
+  command: string;
+  index: number;
+}
+
+class RaftNode {
+  role: RaftRole = 'follower';
+  currentTerm = 0;
+  votedFor: string | null = null;
+  log: RaftLogEntry[] = [];
+  commitIndex = 0;
+  lastApplied = 0;
+  electionTimeout: number;
+  private peers: RaftNode[] = [];
+  private heartbeatInterval: number;
+  private lastHeartbeat: number = Date.now();
+
+  constructor(
+    public id: string,
+    electionTimeoutMs: number = 150,
+    heartbeatMs: number = 50
+  ) {
+    this.electionTimeout = electionTimeoutMs + Math.random() * 150;
+    this.heartbeatInterval = heartbeatMs;
+  }
+
+  setPeers(peers: RaftNode[]): void {
+    this.peers = peers;
+  }
+
+  startElection(): { success: boolean; term: number; votesReceived: number } {
+    this.role = 'candidate';
+    this.currentTerm++;
+    this.votedFor = this.id;
+    let votes = 1; // vote for self
+
+    for (const peer of this.peers) {
+      if (peer.id === this.id) continue;
+      if (peer.requestVote(this.currentTerm, this.id)) {
+        votes++;
+      }
+    }
+
+    const majority = Math.floor((this.peers.length + 1) / 2) + 1;
+    if (votes >= majority) {
+      this.role = 'leader';
+      this.lastHeartbeat = Date.now();
+    } else {
+      this.role = 'follower';
+    }
+
+    return { success: this.role === 'leader', term: this.currentTerm, votesReceived: votes };
+  }
+
+  private requestVote(term: number, candidateId: string): boolean {
+    if (term < this.currentTerm) return false;
+    if (term > this.currentTerm) {
+      this.currentTerm = term;
+      this.role = 'follower';
+      this.votedFor = null;
+    }
+    if (this.votedFor === null || this.votedFor === candidateId) {
+      this.votedFor = candidateId;
+      return true;
+    }
+    return false;
+  }
+
+  appendEntries(prevLogIndex: number, prevLogTerm: number, entries: RaftLogEntry[], leaderCommit: number): boolean {
+    if (entries.length === 0) {
+      // Heartbeat
+      this.lastHeartbeat = Date.now();
+      if (leaderCommit > this.commitIndex) {
+        this.commitIndex = Math.min(leaderCommit, this.log.length - 1);
+      }
+      return true;
+    }
+
+    if (prevLogIndex >= this.log.length) return false;
+    if (prevLogIndex >= 0 && this.log[prevLogIndex].term !== prevLogTerm) return false;
+
+    let newIndex = prevLogIndex + 1;
+    for (let i = 0; i < entries.length; i++) {
+      if (newIndex + i < this.log.length) {
+        this.log[newIndex + i] = entries[i];
+      } else {
+        this.log.push(entries[i]);
+      }
+    }
+
+    if (leaderCommit > this.commitIndex) {
+      this.commitIndex = Math.min(leaderCommit, this.log.length - 1);
+    }
+    return true;
+  }
+
+  sendHeartbeats(): void {
+    if (this.role !== 'leader') return;
+    for (const peer of this.peers) {
+      if (peer.id === this.id) continue;
+      peer.appendEntries(
+        this.log.length - 1,
+        this.log.length > 0 ? this.log[this.log.length - 1].term : 0,
+        [],
+        this.commitIndex
+      );
+    }
+  }
+
+  detectTimeout(timeoutMs: number = 300): boolean {
+    if (this.role === 'leader') return false;
+    return Date.now() - this.lastHeartbeat > timeoutMs;
+  }
+
+  simulateCluster(command: string): { leader: string | null; committed: boolean; entries: number } {
+    // Leader proposes entry
+    if (this.role !== 'leader') {
+      return { leader: null, committed: false, entries: this.log.length };
+    }
+
+    const entry: RaftLogEntry = { term: this.currentTerm, command, index: this.log.length };
+    this.log.push(entry);
+
+    let replicasAcked = 1; // self-ack
+    for (const peer of this.peers) {
+      if (peer.id === this.id) continue;
+      if (peer.appendEntries(this.log.length - 2, entry.term - 1, [entry], this.commitIndex)) {
+        replicasAcked++;
+      }
+    }
+
+    const majority = Math.floor((this.peers.length + 1) / 2) + 1;
+    if (replicasAcked >= majority) {
+      this.commitIndex = this.log.length - 1;
+      return { leader: this.id, committed: true, entries: this.log.length };
+    }
+    return { leader: this.id, committed: false, entries: this.log.length };
+  }
+}
+
+// -- Example ------------------------------------------------------
+const nodes = [0, 1, 2, 3, 4].map(i => new RaftNode(`node-${i}`, 150 + i * 30, 50));
+for (const n of nodes) n.setPeers(nodes);
+
+const leader = nodes[0];
+leader.startElection();
+console.log('Leader elected:', leader.id, 'Term:', leader.currentTerm);
+
+const result = leader.simulateCluster('SET x=42');
+console.log('Propose command:', result.committed ? 'COMMITTED' : 'REJECTED', '| Entries:', result.entries);
+```
+
+### Consistency Models Spectrum
+
+```mermaid
+flowchart LR
+    classDef strong fill:#4a90d9,color:#fff,stroke:#2c5f8a,stroke-width:2px
+    classDef moderate fill:#7ed321,color:#fff,stroke:#4a8c14,stroke-width:2px
+    classDef weak fill:#f5a623,color:#fff,stroke:#c47f12,stroke-width:2px
+    classDef example fill:#eee,color:#333,stroke:#999,stroke-width:2px
+
+    subgraph Consistency_Spectrum
+        direction LR
+        TITLE[Consistency Models Spectrum]:::example
+
+        STRONG[Strong<br/>Linearizability]:::strong
+        SEQ[Sequential]:::strong
+        CAUSAL[Causal]:::moderate
+        RYW[Read-Your-Writes]:::moderate
+        MONO[Monotonic Reads]:::moderate
+        EVENT[Eventual]:::weak
+
+        STRONG --> SEQ --> CAUSAL --> RYW --> MONO --> EVENT
+    end
+
+    subgraph Properties
+        STRONG_P["+ Atomic global order<br/>+ Linearizable<br/>- Highest latency<br/>- Unavailable during partition"]:::example
+        CAUSAL_P["+ Causality preserved<br/>+ No clock skew issues<br/>+ Available during partition<br/>- Partial ordering only"]:::example
+        EVENT_P["+ Maximum availability<br/>+ Lowest latency<br/>- No ordering guarantees<br/>- Conflict resolution required"]:::example
+    end
+
+    STRONG -.-> STRONG_P
+    STRONG -.- SPANNER["spanner<br/>ZooKeeper<br/>etcd"]:::strong
+    CAUSAL -.-> CAUSAL_P
+    CAUSAL -.- DYNAMO["DynamoDB<br/>Cassandra<br/>Riak"]:::moderate
+    EVENT -.-> EVENT_P
+    EVENT -.- DNS["DNS<br/>CDN<br/>Memcached"]:::weak
+
+    subgraph CAP_Tradeoffs
+        CAP_TITLE[CAP / PACELC Trade-offs]:::example
+        CP["CP Systems<br/>Consistency > Availability<br/>Partition = Reject writes"]:::strong
+        AP["AP Systems<br/>Availability > Consistency<br/>Partition = Accept all writes"]:::weak
+        EL["Normal: Low Latency<br/>Eventual consistency"]:::moderate
+        EC["Normal: Strong Consistency<br/>Higher Latency"]:::strong
+    end
+```
+
+### Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| CAP applies only during partitions | In normal operation (no partition), you can have both consistency and availability — optimize for the common case |
+| PACELC captures the real trade-off | During normal operation, choose between low latency (eventual consistency) and strong consistency (coordination overhead) |
+| W+R > N guarantees strong consistency | Configure N=3, W=2, R=2 for balanced strong consistency with single-node fault tolerance |
+| Vector clocks detect but don't resolve conflicts | Use vector clocks to detect concurrent writes; defer conflict resolution to application logic or CRDTs |
+| CRDTs eliminate conflicts by design | Use G-Counter for counters, PN-Counter for +/- counters, OR-Set for sets with add/remove — no conflict resolution needed |
+| Raft provides understandable consensus | Leader election + log replication + committed entries. Used by etcd, Consul, and MongoDB (replica set) |
+| Merkle trees enable O(log N) anti-entropy | Exchange root hashes; recursively drill down to find exact differing keys — scales to billions of keys |
+
+### Case Study
+
+**Google Spanner — External Consistency at Global Scale.** Google Spanner is the first globally distributed database to provide external consistency (the strongest consistency model, equivalent to linearizability across data centers). The defining challenge was coordinating writes across 100+ data centers while maintaining serializable isolation — a problem that traditional consensus algorithms (Paxos, Raft) could not solve because they rely on physical clocks, which drift across data centers by 10-100ms. Spanner's innovation was TrueTime, a hardware-assisted time synchronization service built on GPS receivers and atomic clocks in each data center. TrueTime exposes a time interval `[earliest, latest]` with bounded uncertainty of 1-7ms, allowing Spanner to assign commit timestamps that are guaranteed to be globally unique and consistent with real-time order.
+
+**Architecture Details.** Spanner uses a two-layer replication architecture. The top layer is a Paxos group per shard (each shard = ~2-4 GB of data). The bottom layer is TrueTime-driven commit wait: after a Paxos leader assigns a commit timestamp `t = TT.now().latest`, it waits until `TT.now().earliest > t` before marking the write as committed. This "commit wait" (typically 7ms) guarantees that any subsequent read, anywhere in the world, will observe the write because all clocks in the system have passed the commit timestamp. Reads use a similar mechanism — a read timestamp is chosen and the system waits until `TT.now().earliest > read_timestamp` to ensure all writes up to that point are visible.
+
+**Business Impact.** Spanner powers Google's most critical applications: Google Ads (formerly AdWords), Google Play, and Google Search indexing. The switch from a sharded MySQL deployment to Spanner reduced operational complexity by 80% (no more manual shard management) and enabled cross-datacenter reads with strong consistency. The TrueTime commit wait adds 7ms of latency per write — an acceptable cost for applications that need global ACID transactions. The key lesson: Spanner did not sacrifice consistency for scale — it used physical infrastructure (GPS + atomic clocks) to make a previously impossible trade-off (linearizability at global scale) feasible. For systems that do not need external consistency, Spanner's approach is over-engineered; for financial, auction, and advertising systems where every cent must be accounted for correctly, it is the only correct choice.
+
+## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What does the CAP theorem state? | A system can have all three of C, A, P | During a partition, choose C or A | Consistency is always optional | Availability is always guaranteed | **B** |
+| 2 | What does PACELC add beyond CAP? | Performance metrics | Latency vs consistency trade-off during normal operation | Partition detection | Cost analysis | **B** |
+| 3 | What is the quorum condition for strong consistency? | W + R < N | W + R = N | W + R > N | W = R = N | **C** |
+| 4 | Which clock type can detect concurrent updates? | Lamport clock | Vector clock | Physical clock | Logical clock | **B** |
+| 5 | What mechanism does Spanner use for external consistency? | GPS synchronization | Paxos consensus | TrueTime API | Atomic broadcasts | **C** |
+
 ## Summary
 
 - The CAP theorem proves that during a network partition, a distributed system must choose between consistency and availability; it does not apply when the network is healthy
@@ -899,57 +1368,62 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 ## Exercises
 
+<details>
+<summary>Review Questions — Click to expand</summary>
+
 ### Review Questions
 
 1. Prove that a quorum system with `N=5`, `W=3`, `R=3` guarantees that a read always observes the latest completed write. What happens if `W=2` and `R=3` with `N=5`?
+   **Solution:** W+R = 6 > N = 5, so any read quorum (3 nodes) must overlap with any write quorum (3 nodes) by at least 1 node (pigeonhole principle). The overlapping node returns the latest value. With W=2, R=3: W+R=5 = N, so overlapping node is NOT guaranteed — read quorum may not include the node with the latest write.
 
 2. You have a vector clock `[3, 0, 5]` from process 0 and `[2, 4, 0]` from process 1. Are these causally related or concurrent? Show the comparison.
+   **Solution:** For each node: node 0: 3 > 2, node 1: 0 < 4, node 2: 5 > 0. Neither dominates (vc1 has some > and some < vc2). Therefore they are CONCURRENT — representing two independent write branches that need conflict resolution.
 
 3. In the Chandy-Lamport snapshot algorithm, what guarantees that two markers sent by the same process on two different channels are received in an order that preserves the consistent cut?
+   **Solution:** The FIFO property of channels guarantees that markers sent on a channel are received in order. Once a process records its state and sends markers, all subsequent messages on that channel are part of the post-snapshot state. The consistent cut is preserved because no message is recorded as received before it was sent.
 
-4. Why does DynamoDB's strongly consistent read consume twice the read capacity compared to an eventually consistent read? Explain the internal mechanism.
+4. Why does DynamoDB's strongly consistent read consume twice the read capacity compared to an eventually consistent read?
+   **Solution:** A strongly consistent read must read from the primary partition (which holds the authoritative latest version) and verify no newer write is pending. This requires a read to the leader and potentially a quorum check, consuming 2x the I/O of an eventually consistent read that can read from any replica.
 
-5. Spanner's TrueTime waits for a commit-wait interval of 7ms. What would happen if this interval were reduced to 0? What consistency violation could occur?
+5. Spanner's TrueTime waits for a commit-wait interval of 7ms. What would happen if this interval were reduced to 0?
+   **Solution:** Without commit wait, a write could be visible in one datacenter before its commit timestamp has passed in another datacenter. A subsequent read in the second datacenter with a lower read timestamp could miss the write, violating external consistency (linearizability across datacenters).
+
+</details>
+
+<details>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems
 
-1. **Design a quorum configuration:** A globally distributed database has `N=7` replicas across 3 datacenters (3 in US, 2 in EU, 2 in Asia). 60% of reads come from US, 30% from EU, 10% from Asia. Design a quorum configuration that provides strong consistency while minimizing the median read latency. Justify your choice of W and R and explain the expected failure scenarios.
+1. **Design a quorum configuration:** N=7 (3 US, 2 EU, 2 Asia). 60% reads from US.
+   **Solution:** Choose W=4, R=4 for strong consistency (W+R=8 > 7). Place US replicas strategically: read from 2 US + 1 EU + 1 Asia for R=4. This minimizes median latency because most reads (60%) complete with 2 local US responses. Failure tolerance: up to 3 nodes can fail before consistency is lost.
 
-2. **Vector clock merges:** Three processes P0, P1, P2 maintain a key-value store with vector clock versioning. P0 writes x=1 at vector [1,0,0]. P1 reads x=1 and writes x=2 at [1,1,0]. Concurrently, P2 writes x=3 at [0,0,1]. Show the vector clock tree after these operations. When a client reads from P1 and gets [1,1,0] and reads from P2 and gets [0,0,1], what does Dynamo-style "read repair" do with these conflicting versions?
+2. **Vector clock merges:** P0 writes [1,0,0], P1 reads and writes [1,1,0], P2 concurrently writes [0,0,1].
+   **Solution:** The version tree: root [0,0,0] -> [1,0,0] -> two branches: [1,1,0] (P1) and [0,0,1] (P2). Neither dominates -> CONFLICT. Dynamo-style read repair returns both conflicting values to the application for resolution. The application must merge x=2 and x=3 (e.g., by using LWW or application-specific merge logic).
 
-3. **Gossip convergence analysis:** A cluster of 1000 nodes uses infection-style gossip with fanout=3. How many rounds are required for a single membership update to reach all nodes with >99% probability? Provide your calculation and the formula. Compare with fanout=1.
+3. **Gossip convergence analysis:** 1000 nodes, fanout=3.
+   **Solution:** Each round each node contacts 3 random nodes. After r rounds, the fraction of nodes that have received the update ≈ 1 - (1/1000 * sum of squares)^r. With fanout=3, rounds to 99% ≈ log_3(1000) ≈ 6.3 rounds. With fanout=1: log_1(1000) → doesn't converge logarithmically; need N * (1 - 1/e) per round ≈ O(N) rounds. Practically, fanout=3 achieves 99% in ~7 rounds while fanout=1 takes ~20+ rounds.
+
+</details>
+
+<details>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Design a Multi-Datacenter CRDT-Based Shopping Cart**
 
-Design a shopping cart system that operates across 3 datacenters (US-East, EU-West, Asia-Pacific) using CRDTs for conflict-free convergence without cross-datacenter coordination.
+**Solution Outline:**
+1. **CRDT structure:** Use an Observed-Remove Map (OR-Map) with product_id as key and a (counter, tag_set) pair as value. add_item(product_id, qty): if product exists, merge quantities via PN-Counter (increment); if new, add with tag. remove_item(product_id): mark all known tags as removed (add wins). clear_cart(): remove all known tags for all products. update_quantity: treat as add_item with delta (new - old). The merge function: for each (product, tags) pair, take union of tags; if any tags remain, product exists; quantity = max(local_qty, remote_qty).
 
-**Requirements:**
-- The cart supports: `add_item(product_id, quantity)`, `remove_item(product_id)`, `update_quantity(product_id, new_quantity)`, `clear_cart()`
-- Users can add items from any datacenter
-- Items should never be lost (two concurrent adds of the same product must combine quantities)
-- A concurrent add and remove should result in the item being added (add wins)
-- A concurrent clear and add should result in a cart containing only the added item (add wins)
-- Each datacenter serves reads with p99 latency &lt; 50ms
-- Cross-datacenter replication uses gossip with converge in &lt; 60 seconds
+2. **State evolution:** Before: DC1={}, DC2={}, DC3={}. After concurrent ops: DC1 adds A(qty=2), then A(qty=1) → {A: qty=3, tags={t1,t2}}. DC2 adds B(qty=1) → {B: qty=1, tags={t3}}. DC3 removes A → {A: qty=0, tags={}}. After gossip replication: all DCs converge to {A: qty=3, tags={t1,t2}, B: qty=1, tags={t3}} because add wins over remove (t1 and t2 are not in the remove set, so A remains).
 
-**Deliverables:**
+3. **Replication protocol:** Gossip every 5 seconds with fanout=3. Each node maintains a version vector of last-updated timestamps per key. Anti-entropy: Merkle tree per key range to detect differences; full CRDT state transfer on mismatch. Target convergence: <60s (12 rounds at 5s).
 
-1. Specify the CRDT data structure(s) for the shopping cart. Provide full pseudocode for merge operations.
+4. **Memory overhead:** Each product entry stores tags (UUID = 16 bytes each). With 10K products and 3 ops/product/day = 30K tags. State size ≈ 10K × (product_id 8B + qty 8B + avg 3 tags × 16B) ≈ 10K × 64B = 640KB. With tombstones: removed products keep their tags until compaction. Optimization: periodic compaction merges tags and discards tombstones older than 24 hours.
 
-2. Show the state evolution for the following concurrent scenario:
-   - DC1: add_item("A", 2)
-   - DC2: add_item("B", 1)
-   - DC1: add_item("A", 1)
-   - DC3: remove_item("A")
-   - All three concurrently; show the cart state at each DC before and after replication
+5. **Partition scenario:** EU-West isolated for 30s: users in EU can still add/remove items (CRDTs work offline). Other DCs continue. After partition heals: gossip sync merges CRDT states. All operations commute — no data loss. The add-wins semantics ensure that concurrent adds survive even if a concurrent remove occurred in another DC.
 
-3. Design the replication protocol: how does each datacenter disseminate its CRDT state to the others? Specify the gossip round interval, target fanout, and anti-entropy mechanism.
-
-4. Analyze the worst-case memory overhead of the tombstone-based CRDT. If 10,000 unique products are added and removed over 24 hours, how large does the state grow? Propose an optimization to bound memory growth.
-
-5. Explain how your design handles the case where a network partition splits EU-West from the other two datacenters for 30 seconds. What happens to consistency when the partition heals?
+</details>
 
 ---

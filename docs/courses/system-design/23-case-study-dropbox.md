@@ -407,91 +407,14 @@ graph TB
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
-
-## Concept Comparison
-> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
-
-| Concept | Definition | Key Insight |
-|---------|-----------|-------------|
-| Theory / Case Study | Core topic in Chapter 23: Case Study — Dropbox and File Storage | Fundamental to system design |
-| Concept Comparison | Core topic in Chapter 23: Case Study — Dropbox and File Storage | Fundamental to system design |
-| Quick Reference | Core topic in Chapter 23: Case Study — Dropbox and File Storage | Fundamental to system design |
-| Cross-Application Matrix | Core topic in Chapter 23: Case Study — Dropbox and File Storage | Fundamental to system design |
-
----
-
-## Quick Reference
-> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
-
-| Topic | Key Point |
-|-------|-----------|
-| Theory / Case Study | Essential concept for Chapter 23: Case Study — Dropbox and File Storage |
-| Concept Comparison | Essential concept for Chapter 23: Case Study — Dropbox and File Storage |
-| Quick Reference | Essential concept for Chapter 23: Case Study — Dropbox and File Storage |
-
----
-
-## Cross-Application Matrix
-
-| Concept | Application Context | Trade-Off |
-|--------|-------------------|-----------|
-| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
-| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
-
----
-
-## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
-
-**Q1:** What is the primary trade-off discussed in this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most fundamental to the topic of Chapter 23
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
-
-**Q3:** How does this chapter's main concept apply to real-world systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | How does content-defined chunking with Rabin fingerprinting differ from fixed-size blocks? | A) Fixed-size are faster, B) CDC determines block boundaries by content hash, ensuring stable boundaries across edits, C) CDC uses larger blocks, D) No difference | B |
+| 2 | What is the primary advantage of Dropbox's block-level deduplication? | A) Faster uploads, B) Identical content across users or file versions is stored once, achieving 10:1 to 50:1 compression, C) Better encryption, D) Lower latency | B |
+| 3 | How does the sync engine resolve conflicts when a file is modified on two devices simultaneously? | A) Both versions are kept "conflicted copy," B) Server picks randomly, C) Last-writer-wins with timestamp-based detection creating conflict copies for simultaneous edits, D) Older version overwrites newer | C |
+| 4 | What erasure coding configuration does Magic Pocket use and why? | A) 3x replication for simplicity, B) Reed-Solomon (12,8): split into 8 fragments + 4 parity, any 8 of 12 reconstructs, 50% overhead vs 200% for 3x replication, C) RAID 5, D) No redundancy | B |
+| 5 | How does LAN sync discover peers on the same network? | A) DNS lookup, B) Clients report private IPs to server; server detects same subnet and coordinates direct P2P TCP connection via UPnP/STUN, C) Broadcast UDP, D) Bluetooth discovery | B |
 
 ---
 
@@ -727,6 +650,410 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+### TypeScript: File Sync Engine with Delta Sync, Block Storage with Deduplication, and File Watcher
+
+```typescript
+class FileSyncEngine {
+  private localState = new Map<string, { mtime: number; size: number; hash: string; blocks: string[] }>();
+  private remoteState = new Map<string, { mtime: number; size: number; hash: string; blocks: string[] }>();
+  private syncQueue: string[] = [];
+  private conflictCopies = new Map<string, string>();
+  private readonly retryBase = 1000;
+  private readonly retryMax = 300000;
+
+  detectLocalChange(path: string, mtime: number, size: number, hash: string, blocks: string[]): void {
+    this.localState.set(path, { mtime, size, hash, blocks });
+    if (!this.syncQueue.includes(path)) this.syncQueue.push(path);
+  }
+
+  fetchRemoteState(path: string, mtime: number, size: number, hash: string, blocks: string[]): void {
+    this.remoteState.set(path, { mtime, size, hash, blocks });
+  }
+
+  computeDelta(path: string): { action: "upload" | "download" | "conflict" | "noop"; changedBlocks: string[]; newBlocks: string[] } {
+    const local = this.localState.get(path);
+    const remote = this.remoteState.get(path);
+    if (!local && !remote) return { action: "noop", changedBlocks: [], newBlocks: [] };
+    if (!local) return { action: "download", changedBlocks: remote?.blocks ?? [], newBlocks: [] };
+    if (!remote) return { action: "upload", changedBlocks: local.blocks, newBlocks: local.blocks };
+    if (local.hash === remote.hash) return { action: "noop", changedBlocks: [], newBlocks: [] };
+    if (local.mtime > remote.mtime + 1000) {
+      const newBlocks = local.blocks.filter(b => !remote.blocks.includes(b));
+      return { action: "upload", changedBlocks: local.blocks, newBlocks };
+    }
+    if (remote.mtime > local.mtime + 1000) {
+      const changedBlocks = remote.blocks.filter(b => !local.blocks.includes(b));
+      return { action: "download", changedBlocks, newBlocks: [] };
+    }
+    const conflictId = `${path}.conflicted-${Date.now()}`;
+    this.conflictCopies.set(path, conflictId);
+    return { action: "conflict", changedBlocks: [], newBlocks: [] };
+  }
+
+  async syncAll(onUpload: (path: string, blocks: string[]) => Promise<boolean>, onDownload: (path: string) => Promise<{ blocks: string[] }>): Promise<{ synced: number; conflicts: number; errors: number }> {
+    let synced = 0, conflicts = 0, errors = 0;
+    for (const path of this.syncQueue) {
+      const delta = this.computeDelta(path);
+      try {
+        if (delta.action === "upload") {
+          const ok = await onUpload(path, delta.newBlocks);
+          if (ok) { synced++; this.remoteState.set(path, this.localState.get(path)!); }
+        } else if (delta.action === "download") {
+          const result = await onDownload(path);
+          synced++;
+        } else if (delta.action === "conflict") {
+          await onUpload(path, this.localState.get(path)!.blocks);
+          conflicts++;
+        }
+      } catch {
+        errors++;
+      }
+    }
+    this.syncQueue = [];
+    return { synced, conflicts, errors };
+  }
+
+  getConflicts(): { path: string; conflictCopy: string }[] {
+    return [...this.conflictCopies.entries()].map(([path, conflictCopy]) => ({ path, conflictCopy }));
+  }
+}
+
+class BlockStorage {
+  private blocks = new Map<string, Buffer>();
+  private refCounts = new Map<string, number>();
+  private compressionEnabled = true;
+  private readonly chunkSize = 4 * 1024 * 1024;
+
+  chunkData(data: Buffer): Buffer[] {
+    const chunks: Buffer[] = [];
+    for (let i = 0; i < data.length; i += this.chunkSize) {
+      chunks.push(data.slice(i, Math.min(i + this.chunkSize, data.length)));
+    }
+    return chunks;
+  }
+
+  async storeBlock(data: Buffer, encryptKey?: string): Promise<string> {
+    const compressed = this.compressionEnabled ? this.compress(data) : data;
+    const encrypted = encryptKey ? this.encrypt(compressed, encryptKey) : compressed;
+    const hash = this.sha256(encrypted);
+    if (!this.blocks.has(hash)) {
+      this.blocks.set(hash, encrypted);
+      this.refCounts.set(hash, 1);
+    } else {
+      this.refCounts.set(hash, this.refCounts.get(hash)! + 1);
+    }
+    return hash;
+  }
+
+  getBlock(hash: string, decryptKey?: string): Buffer | null {
+    const encrypted = this.blocks.get(hash);
+    if (!encrypted) return null;
+    const decrypted = decryptKey ? this.decrypt(encrypted, decryptKey) : encrypted;
+    return this.compressionEnabled ? this.decompress(decrypted) : decrypted;
+  }
+
+  deduplicateBlocks(blockHashes: string[]): { unique: number; duplicates: number; totalSize: number } {
+    const seen = new Set<string>();
+    let duplicates = 0;
+    for (const hash of blockHashes) {
+      if (seen.has(hash)) duplicates++;
+      else seen.add(hash);
+    }
+    let totalSize = 0;
+    for (const hash of seen) {
+      const block = this.blocks.get(hash);
+      if (block) totalSize += block.length;
+    }
+    return { unique: seen.size, duplicates, totalSize };
+  }
+
+  referenceCount(hash: string): number { return this.refCounts.get(hash) ?? 0; }
+
+  private compress(data: Buffer): Buffer {
+    const result: number[] = [];
+    let i = 0;
+    while (i < data.length) {
+      let runLength = 1;
+      while (i + runLength < data.length && data[i + runLength] === data[i] && runLength < 255) runLength++;
+      if (runLength > 3) { result.push(runLength, data[i]); i += runLength; }
+      else { result.push(data[i]); i++; }
+    }
+    return Buffer.from(result);
+  }
+
+  private decompress(data: Buffer): Buffer {
+    const result: number[] = [];
+    let i = 0;
+    while (i < data.length) {
+      if (data[i] > 3 && i + 1 < data.length) {
+        for (let j = 0; j < data[i]; j++) result.push(data[i + 1]);
+        i += 2;
+      } else { result.push(data[i]); i++; }
+    }
+    return Buffer.from(result);
+  }
+
+  private encrypt(data: Buffer, key: string): Buffer {
+    return Buffer.from(data.map((b, i) => b ^ key.charCodeAt(i % key.length)));
+  }
+
+  private decrypt(data: Buffer, key: string): Buffer {
+    return Buffer.from(data.map((b, i) => b ^ key.charCodeAt(i % key.length)));
+  }
+
+  private sha256(data: Buffer): string {
+    let hash = 0;
+    for (let i = 0; i < data.length; i++) hash = ((hash << 5) - hash + data[i]) | 0;
+    return Math.abs(hash).toString(16).padStart(8, "0");
+  }
+}
+
+class FileWatcher {
+  private watchedPaths = new Set<string>();
+  private changeQueue: { path: string; type: "create" | "modify" | "delete"; mtime: number }[] = [];
+  private debounceTimers = new Map<string, NodeJS.Timer>();
+  private readonly debounceMs = 200;
+  private readonly uploadQueue: string[] = [];
+  private uploadInProgress = false;
+  private retryCount = new Map<string, number>();
+  private readonly maxRetries = 5;
+
+  watch(path: string): void {
+    this.watchedPaths.add(path);
+  }
+
+  unwatch(path: string): void {
+    this.watchedPaths.delete(path);
+    this.debounceTimers.delete(path);
+  }
+
+  onChange(path: string, type: "create" | "modify" | "delete"): void {
+    const existing = this.debounceTimers.get(path);
+    if (existing) clearTimeout(existing);
+    this.debounceTimers.set(path, setTimeout(() => {
+      this.changeQueue.push({ path, type, mtime: Date.now() });
+      this.debounceTimers.delete(path);
+      this.enqueueUpload(path);
+    }, this.debounceMs));
+  }
+
+  private enqueueUpload(path: string): void {
+    if (!this.uploadQueue.includes(path)) this.uploadQueue.push(path);
+    this.processUploadQueue();
+  }
+
+  private async processUploadQueue(): Promise<void> {
+    if (this.uploadInProgress) return;
+    this.uploadInProgress = true;
+    while (this.uploadQueue.length > 0) {
+      const path = this.uploadQueue.shift()!;
+      try {
+        await this.uploadFile(path);
+        this.retryCount.delete(path);
+      } catch {
+        const retries = this.retryCount.get(path) ?? 0;
+        if (retries < this.maxRetries) {
+          this.retryCount.set(path, retries + 1);
+          const delay = Math.min(1000 * Math.pow(2, retries), 30000);
+          setTimeout(() => { if (!this.uploadQueue.includes(path)) this.uploadQueue.push(path); this.processUploadQueue(); }, delay);
+        }
+      }
+    }
+    this.uploadInProgress = false;
+  }
+
+  private async uploadFile(path: string): Promise<void> {
+    await new Promise(r => setTimeout(r, 50));
+  }
+
+  getPendingChanges(): { path: string; type: string; mtime: number }[] {
+    return [...this.changeQueue];
+  }
+
+  getQueueLength(): number { return this.uploadQueue.length; }
+}
+```
+
+### TypeScript: LAN Sync Discovery and Version History
+
+```typescript
+class LANSync {
+  private peers = new Map<string, { ip: string; port: number; lastSeen: number; files: Set<string> }>();
+  private localFiles = new Set<string>();
+  private readonly discoveryPort = 23456;
+
+  advertise(localIp: string, localPort: number): void {
+    this.peers.set("self", { ip: localIp, port: localPort, lastSeen: Date.now(), files: new Set(this.localFiles) });
+  }
+
+  discoverPeer(ip: string, port: number, files: string[]): void {
+    this.peers.set(`${ip}:${port}`, { ip, port, lastSeen: Date.now(), files: new Set(files) });
+  }
+
+  findPeersWithFile(filePath: string): { ip: string; port: number }[] {
+    const result: { ip: string; port: number }[] = [];
+    for (const [, peer] of this.peers) {
+      if (peer.files.has(filePath) && peer.ip !== "self") {
+        result.push({ ip: peer.ip, port: peer.port });
+      }
+    }
+    return result;
+  }
+
+  async transferBlock(peerIp: string, peerPort: number, blockHash: string): Promise<Buffer | null> {
+    const peer = this.peers.get(`${peerIp}:${peerPort}`);
+    if (!peer || Date.now() - peer.lastSeen > 60000) return null;
+    await new Promise(r => setTimeout(r, 10));
+    return Buffer.from(`block-data-${blockHash}`);
+  }
+
+  getPeerCount(): number { return this.peers.size - 1; }
+}
+
+class VersionHistory {
+  private versions = new Map<string, { version: number; ts: number; size: number; blocks: string[]; changeDescription: string }[]>();
+  private readonly maxVersions = 100;
+
+  recordVersion(path: string, size: number, blocks: string[], description: string): number {
+    if (!this.versions.has(path)) this.versions.set(path, []);
+    const history = this.versions.get(path)!;
+    const version = history.length + 1;
+    history.push({ version, ts: Date.now(), size, blocks, changeDescription: description });
+    if (history.length > this.maxVersions) history.shift();
+    return version;
+  }
+
+  getHistory(path: string, limit = 10): { version: number; ts: number; size: number; changeDescription: string }[] {
+    return (this.versions.get(path) ?? []).slice(-limit).map(({ version, ts, size, changeDescription }) => ({ version, ts, size, changeDescription }));
+  }
+
+  restoreVersion(path: string, version: number): string[] | null {
+    const history = this.versions.get(path);
+    if (!history) return null;
+    const entry = history.find(h => h.version === version);
+    return entry?.blocks ?? null;
+  }
+
+  diffVersions(path: string, v1: number, v2: number): { added: number; removed: number; unchanged: number } {
+    const history = this.versions.get(path);
+    if (!history) return { added: 0, removed: 0, unchanged: 0 };
+    const e1 = history.find(h => h.version === v1);
+    const e2 = history.find(h => h.version === v2);
+    if (!e1 || !e2) return { added: 0, removed: 0, unchanged: 0 };
+    const s1 = new Set(e1.blocks);
+    const s2 = new Set(e2.blocks);
+    const added = [...s2].filter(b => !s1.has(b)).length;
+    const removed = [...s1].filter(b => !s2.has(b)).length;
+    const unchanged = [...s1].filter(b => s2.has(b)).length;
+    return { added, removed, unchanged };
+  }
+}
+```
+
+```mermaid
+graph TB
+    classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef sync fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef store fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef network fill:#fce4ec,stroke:#c62828,stroke-width:2px
+    classDef ms fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+
+    subgraph "Client Device A"
+        FW[File Watcher<br/>inotify/RDCW/FSEvents]:::client
+        INDEX[Indexing Engine<br/>SQLite DB]:::client
+        CDC[Content-Defined<br/>Chunking Rabin FP]:::client
+        SYNC[Sync Engine<br/>State Machine]:::sync
+        CR[Conflict Resolver<br/>Last-Writer-Wins]:::sync
+    end
+
+    subgraph "Network"
+        TLS[TLS/HTTPS<br/>Persistent Connection]:::network
+        LAN[LAN Sync<br/>P2P Discovery]:::network
+        RANGE[HTTP Range<br/>Resumable Download]:::network
+    end
+
+    subgraph "Server API"
+        API[Sync API<br/>REST Endpoints]:::sync
+        MS[(Metadata Store<br/>Sharded MySQL)]:::ms
+        NOTIF[Notification Service<br/>WebSocket Push]:::sync
+    end
+
+    subgraph "Block Storage"
+        DEDUP[Deduplication<br/>SHA-256 Hash Ref]:::store
+        COMP[Compression<br/>RLE + Zstandard]:::store
+        ENC[Client-Side<br/>AES-256 Encryption]:::store
+        EC[Erasure Coding<br/>Reed-Solomon 12,8]:::store
+    end
+
+    subgraph "Magic Pocket"
+        HAMR[HAMR Failure<br/>Domain Placement]:::store
+        GEO[Geo Replication<br/>2 Regions]:::store
+        GC[Garbage Collector<br/>Ref Count Deletion]:::store
+    end
+
+    subgraph "Collaboration"
+        DP[Dropbox Paper<br/>CRDT-based Docs]:::ms
+        SH[Sharing Service<br/>Permission Mgmt]:::ms
+        VH[Version History<br/>30-180 Day Retention]:::ms
+    end
+
+    FW --> INDEX
+    INDEX --> CDC
+    CDC --> SYNC
+    SYNC --> CR
+    SYNC --> TLS
+    SYNC --> LAN
+    TLS --> API
+    API --> MS
+    API --> DEDUP
+    DEDUP --> COMP
+    COMP --> ENC
+    ENC --> EC
+    EC --> HAMR
+    HAMR --> GEO
+    GEO --> GC
+    API --> NOTIF
+    NOTIF --> DP
+    API --> SH
+    API --> VH
+    LAN --> DEDUP
+    RANGE --> API
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Content-defined chunking with Rabin fingerprinting enables efficient delta sync | Block boundaries determined by content hash modulo target value; average block size ~4MB; only changed blocks uploaded |
+| SHA-256 block-level deduplication achieves 10:1 to 50:1 storage savings | Store each unique block once with reference counting; file = ordered list of block hashes; cross-user and cross-version dedup |
+| Three-state sync engine (local, remote, desired) reconciles file differences | Detect local changes via indexing engine; fetch remote changes via API; compute diff and apply upload/download/conflict actions |
+| Conflict resolution uses last-writer-wins with conflict copy preservation | Server timestamps with NTP sync; concurrent edits create "conflicted copy" files; version history enables recovery |
+| Erasure coding (12,8) provides better durability than 3x replication at 50% overhead | Split data into 8 fragments + 4 parity; any 8 of 12 reconstructs; HAMR models failure domains explicitly |
+| LAN sync enables P2P block transfer between devices on same subnet | Server coordinates peer discovery; UPnP/STUN for NAT traversal; blocks transfer at LAN speed without internet round-trip |
+| Smart Sync with platform-specific APIs reduces local storage by 90%+ | macOS: NSFileProviderManager; Windows: CfApi; online-only files hydrate on demand when opened |
+
+## Case Study: Large File Sync with Delta Optimization
+
+A video editor is working on a 50GB 4K video project stored in Dropbox. The editor makes a 200MB change — adding a 30-second title sequence at the beginning of the video. Under a naive sync strategy, the entire 50GB file would be re-uploaded. With Dropbox's content-defined chunking, only the blocks whose content changed are uploaded.
+
+The file is split into ~12,500 blocks of 4MB average size using Rabin fingerprinting. When the title sequence is inserted at the beginning, the CDC algorithm detects that the block boundaries shift only for the first ~50 blocks (the region where content actually changed). The remaining 12,450 blocks have identical SHA-256 hashes and are skipped. The upload is 50 blocks × 4MB = 200MB instead of 50GB — a 250x bandwidth savings.
+
+The sync engine on the server side receives the 50 new blocks. The deduplication engine checks each block's SHA-256 against the global block store. Two of the blocks already exist (the title sequence template was used by another editor on the same team), so only 48 blocks require new storage allocation. The file's block list is updated atomically in the metadata store: the old block list (12,500 entries) is replaced with the new list (12,500 entries, of which 50 are different). The metadata store shard for this user records the write with a version number increment. Meanwhile, the version history service records the delta: change from version 3 to version 4, 200MB changed, with the description "Added title sequence."
+
+The editor's second device (a laptop) receives the sync notification via the WebSocket push channel within 2 seconds. The sync engine on the laptop computes the delta: the remote block list differs from local in 50 blocks. Only those 50 blocks are downloaded (200MB) instead of the entire 50GB file. The local file is reconstructed by replacing the old 50 blocks with the new ones. Total sync time: 8 seconds on a 200Mbps connection.
+
+## Case Study: Conflict Resolution in Team Collaboration
+
+Three team members edit a shared spreadsheet simultaneously:
+- Alice edits rows 1-50 on her desktop (online)
+- Bob edits rows 51-100 on his laptop (offline for 2 hours)
+- Charlie renames the file from "Q4-Budget.xlsx" to "Q4-Budget-Final.xlsx" on his phone
+
+Alice's changes sync to the server immediately. Bob comes online 2 hours later. His edits were made to rows 51-100, which do not overlap with Alice's rows 1-50 changes. The sync engine detects that Bob's file has a different block list than the server version. The delta comparison shows that blocks 2-5 (containing rows 51-100) differ, while blocks 1 and 6+ are identical. The server accepts Bob's blocks 2-5 as the new canonical version since Bob's mtime is later than Alice's for those blocks. The merge is automatic — no conflict.
+
+Charlie's rename creates a conflict: both Alice and Bob's clients see the file as "Q4-Budget.xlsx" (the original name), but the server received Charlie's rename to "Q4-Budget-Final.xlsx" while Bob's changes were being processed. The server detects the conflict because the parent directory entry was modified (rename) simultaneously with the file content. The conflict resolution creates a conflict copy: the renamed file "Q4-Budget-Final.xlsx" contains the latest content (Alice + Bob's merged changes), and the stale version is saved as "Q4-Budget.xlsx (Charlie's conflicted copy 2024-10-15)." The version history records all three changes as separate entries, allowing any collaborator to restore any previous version within the 30-day (free) or 180-day (paid) retention window.
+
 ## Summary
 
 - Dropbox's sync engine uses a three-state state machine (local, remote, desired) to reconcile file differences across devices, communicating with the server via HTTPS with persistent connections and exponential backoff.
@@ -744,84 +1071,40 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Review Questions
 
-1. Explain how content-defined chunking with Rabin fingerprinting differs from fixed-size block boundaries. Why is CDC essential for efficient delta sync of large files that undergo small insertions or deletions?
+<details><summary>Solution</summary>1. **Fixed-size block boundaries** shift when bytes are inserted or deleted (every subsequent block changes). **CDC** uses Rabin fingerprinting on a sliding window — block boundaries are determined by content hash modulo target value, so insertions/deletions only affect local boundaries. Essential for delta sync: editing a 1GB file near the beginning only changes 1-2 blocks instead of all blocks after the edit point.
 
-2. Describe the three-state state machine used by Dropbox's sync engine. For each pair of states (local vs remote, local vs desired, remote vs desired), give an example action the sync engine would take.
+2. **Local vs Remote**: if local changed but remote didn't → upload. **Local vs Desired**: if desired state is remote version → download. **Remote vs Desired**: if desired is local version → upload. The engine continuously reconciles toward convergence.
 
-3. How does Dropbox's metadata store handle read-after-write consistency within a single user's namespace? What consistency model applies to cross-region operations?
+3. **Read-after-write** within a user namespace is handled by routing reads to the MySQL master for N seconds after a write by the same user. **Cross-region**: eventual consistency with async replication; version vectors detect staleness.
 
-4. Compare Magic Pocket's erasure coding strategy (12,8) with 3x replication. What are the storage efficiency, durability, and read-latency trade-offs between the two approaches?
+4. **(12,8) erasure coding**: 50% overhead (12/8 = 1.5x), tolerates 4 failures. **3x replication**: 200% overhead (3x), tolerates 2 failures. Erasure coding wins on storage efficiency but has higher read latency (need 8 of 12 fragments) vs replication (read from any replica).
 
-5. How does LAN sync discover peers on the same local network? Describe the protocol step by step, including NAT traversal, peer discovery, and security validation.
+5. **LAN sync protocol**: (1) Clients report private IPs to server. (2) Server detects same subnet. (3) Server shares peer IPs. (4) Clients establish direct TCP via UPnP/STUN. (5) Blocks transfer P2P. Security: TLS between peers, server-signed tokens prevent eavesdropping.
 
-6. How does Smart Sync differ from selective sync at the architectural level? What platform-specific APIs does Dropbox use for Smart Sync on macOS, Windows, and Linux?
+6. **Selective sync**: choose which folders to sync to which device (stored as per-device filter list in metadata store). **Smart Sync**: all files visible in filesystem as placeholders; content downloads on demand. APIs: macOS NSFileProviderManager, Windows CfApi, Linux not supported.
+</details>
 
 ### Application Problems
 
-1. **Deduplication Analysis**: A company has 10,000 employees who each store a copy of the company's 2GB onboarding VM image. The image has a 500MB OS base layer that is identical across all copies, a 200MB tools layer that varies by department (5 departments), and the remaining content that varies per user. Compute the storage savings from block-level deduplication with 4MB blocks. Assume the content-defined chunking can perfectly identify shared blocks. What is the total storage required with and without dedup?
+<details><summary>Solution</summary>1. **Deduplication Analysis**: Without dedup: 10,000 × 2GB = 20TB. With dedup: 500MB (OS) + 200MB × 5 (departments) + 1.3GB × 10,000 (per-user) = 500MB + 1GB + 13TB ≈ 13.0015TB. Dedup ratio: 20TB / 13TB ≈ 1.54:1. Savings: 7TB × $0.023/GB = $161/month × 12 = $1,932/year.
 
-   Show: (a) the total storage without dedup, (b) the storage with dedup showing the per-layer breakdown, (c) the dedup ratio (compression factor), and (d) the dollar savings if storage costs $0.023/GB/month.
+2. **Conflict Resolution**: Use a page-level bitmap (100 bits for 100 pages) to track edited pages per editor. Non-overlapping bits → auto-merge. Overlapping bits → flag for manual review with diff view. Data structure: `Map<page_number, { editor_id, old_text, new_text, timestamp }>`. For paragraph move + edit: detect via content hash — same text in different position is a move, not a conflict. Rename conflict: use `(file_id, new_name, editor_id, timestamp)` with LWW.
 
-2. **Conflict Resolution Design**: A team of 5 editors is collaboratively editing a 100-page document. Two editors make edits simultaneously while offline:
-   - Editor A: changes pages 1-10 while on a plane (offline for 3 hours)
-   - Editor B: changes pages 90-100 while in a tunnel (offline for 15 minutes)
-   
-   Design a conflict resolution strategy that: (a) merges non-overlapping changes automatically, (b) flags overlapping page changes for manual review, (c) preserves a full edit history for each page, and (d) provides a "diff view" showing what changed. What data structure would you use to track which pages were edited?
+3. **Bandwidth Optimization**: Priority score = 0.4 × recency (days since modified) + 0.3 × file_size_score + 0.2 × access_frequency + 0.1 × is_placeholder. On user open: immediately promote to priority queue head. Bandwidth: fair-share across 4 concurrent downloads with dynamic throttling based on measured throughput (target: 80% of measured bandwidth). WiFi: 4 concurrent. Cellular: 1 concurrent, only files < 50MB. Metered: pause non-critical sync, notify user.
 
-   Extend your design to handle: (e) three editors editing simultaneously, (f) an editor who moves a paragraph while another editor edits the same paragraph, and (g) a rename conflict (two editors rename the file to different names while offline). Design the conflict UI that Dropbox would show the user.
-
-3. **Bandwidth Optimization**: A user has a 500GB video project folder with 40,000 files. The first sync will take hours. Design a sync prioritization strategy that: (a) makes the folder usable within 60 seconds (the user can open any file and see a placeholder), (b) downloads files on-demand when opened, (c) prioritizes files modified within the last 7 days, (d) uses bandwidth estimation to avoid saturating the user's connection. How would you represent the sync priority as a score per file?
-
-   Provide: (a) the priority scoring formula with at least 5 features and their weights, (b) the adaptation logic when the user opens a file that was not in the priority queue, (c) the bandwidth allocation algorithm (fair share across concurrent downloads vs sequential priority queue), and (d) how priority changes when the user's connectivity type changes (WiFi ? cellular ? metered hotspot).
-
-4. **Magic Pocket Capacity Planning**: Dropbox is adding 500PB of new storage per year across two geographic regions. Design the capacity plan:
-
-   (a) How many commodity storage servers are needed per year if each server has 12 × 12TB HDDs? (assume 70% usable capacity after formatting and system overhead)
-   (b) How many racks are needed per year if each rack holds 40 servers?
-   (c) What is the total power consumption for the new capacity if each server consumes 200W idle and 350W under load? (assume 80% utilization on average)
-   (d) How does the erasure coding scheme (12,8) affect the usable-to-raw ratio compared to 3x replication?
-   (e) What is the data center floor space requirement if each rack occupies 8 sq ft including service clearance?
+4. **Capacity Planning**: (a) Raw capacity per server: 12 × 12TB × 70% = 100.8TB. Servers/year: 500PB / 100.8TB ≈ 4,961. (b) Racks: 4,961 / 40 ≈ 125. (c) Power: 4,961 × (200 × 0.2 + 350 × 0.8) = 4,961 × 320W = 1.59MW. Annual: 1.59MW × 8760h = 13.9M kWh. (d) (12,8) = 1.5x usable-to-raw vs 3x replication = 3x. (e) Floor space: 125 × 8 = 1,000 sq ft.
+</details>
 
 ### Challenge Problem
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Exabyte-Scale Storage System Design**: Dropbox's user base grows to 1 billion users, each storing an average of 50GB. Total storage exceeds 50 exabytes. The current Magic Pocket single-region design cannot scale to this size without unacceptable latency for remote users.
+<details><summary>Solution>
+**Exabyte-Scale Storage**
 
-Design a global storage architecture that:
+**Data Placement**: Three-tier — Hot (daily access): home region, 2x replication. Warm (weekly): primary in home + secondary in paired region (US-East ↔ EU-West, SE-Asia ↔ NE-Asia, South America ↔ Australia). Cold (rare): erasure coding (12,8) spanning 3 regions. Promotion: 3 accesses in 24h → cold→warm. 10 accesses in 24h → warm→hot. Demotion: 7 days no access → hot→warm. 30 days no access → warm→cold.
 
-- Spans 8 geographic regions (US East, US West, EU West, EU East, Southeast Asia, Northeast Asia, South America, Australia)
-- Each region stores blocks for users in that region for reduced latency
-- Blocks are erasure-coded across at least 2 regions for disaster recovery (survive the loss of an entire region)
-- The metadata store must be globally consistent for single-user operations (if I upload a file in New York, I must see it when I open my phone in Tokyo)
-- Cross-region file sharing (user A in London shares a 10GB file with user B in Sydney) must complete in under 5 seconds
+**Metadata Consistency**: Geographic partitioning with authoritative region per user. Reads from local replica; if version vector shows stale, forward to authoritative region. Writes go through authoritative region with async replication. Failure: Paxos-based election among 8 regions when authoritative region unreachable (RTO < 30s). Use Raft for leader election within a region.
 
-Address the fundamental tension between consistency (global metadata) and latency (regional storage). Propose a data placement strategy, a consistency protocol (Paxos/Raft? Multi-master?), and a sharing protocol that avoids copying blocks across regions for every share operation. Estimate the total raw storage requirement including erasure coding overhead.
+**Cross-Region Sharing**: Sharing updates only metadata (no block copy). Redirect on access via signed URL (1h TTL). Cache: if >5 accesses/week, async replicate blocks to requestor's region. Consistency: share permissions propagate within 1s via metadata replication.
 
-Your solution should include:
-
-**Data Placement Strategy**:
-- A three-tier block placement: "hot" blocks (accessed daily) stored in the user's home region, "warm" blocks (accessed weekly) stored with a primary replica in the home region and a secondary in a paired region, "cold" blocks (accessed rarely) stored with erasure coding stripes spanning 3 regions
-- The pairing topology: which regions are paired for warm block replication (e.g., US-East ? EU-West for transatlantic latency)
-- The promotion/demotion policy: what access pattern triggers a block to move from cold to warm tier (e.g., 3 accesses in 24 hours)
-
-**Metadata Consistency Protocol**:
-- Geographic partitioning of the metadata namespace: user X's metadata always has its authoritative copy in region R
-- Read optimization: reads are served from the local replica; if the replica is stale (detected via version vector comparison), the read is forwarded to the authoritative region
-- Write protocol: all writes for user X go through the authoritative region, which replicates to all other regions asynchronously
-- Failure mode: if the authoritative region for user X is unreachable, a secondary region is elected via a Paxos-based leader election among the 8 regions
-
-**Cross-Region Sharing Protocol**:
-- Sharing without copying: when user A in London shares a file with user B in Sydney, the metadata is updated (file_id ? shared_with_user_B) without copying any blocks
-- On access: when user B opens the shared file, the Australian client is redirected to the London region for block download (HTTP 302 redirect with a signed URL valid for 1 hour)
-- Caching: if user B accesses the file frequently (>5 times in a week), the blocks are replicated to the Australian region asynchronously
-- Consistency: the share permission change is visible globally within 1 second (the metadata update propagates via the metadata consistency protocol)
-
-**Storage Requirement Calculation**:
-- Raw user data: 50EB
-- Erasure coding overhead for cold tier (3x 12,8 over 3 regions = 12/8 * 3/2 = 2.25x): ~50EB * 2.25 = 112.5EB
-- Replication for hot/warm tiers (2x per region, 2 regions = 4x): estimate 20% of data is hot/warm ? 10EB * 4 = 40EB
-- Total raw storage: ~152.5EB
-- Usable capacity per server (12 × 12TB at 70%): ~100TB per server
-- Servers needed: 152.5EB / 100TB = ~1.5 million servers
-- Racks: 1.5M / 40 = ~38,000 racks
-- Power: 1.5M servers × 300W × 24h × 365 = ~3.9 billion kWh/year (comparable to a medium-sized country)
+**Storage**: Raw: 50EB user data. Cold tier (80% = 40EB): 40EB × 2.25 = 90EB. Warm/hot (20% = 10EB): 10EB × 4 = 40EB. Total: 130EB raw. Servers: 130EB / 100TB = 1.3M. Racks: 32,500. Power: 1.3M × 300W = 390MW.
+</details>

@@ -422,6 +422,107 @@ if __name__ == "__main__":
 - **Jumbo frames**: Most cloud providers limit MTU to 1500 within VPC; some support 9001 but only within the same AZ.
 - **Ephemeral IPs**: Stopping an instance releases its public IP; elastic IPs are needed for stable addressing.
 
+### Cloud Network Architecture
+
+```mermaid
+flowchart TB
+    subgraph ONPREM[On-Premises Data Center]
+        direction TB
+        R1[Router / Firewall]
+        SW1[Switch]
+        S1[Physical Server]
+        S2[Physical Server]
+    end
+
+    subgraph CLOUD[Cloud Provider Region]
+        direction TB
+        subgraph VPC[Virtual Private Cloud - 10.0.0.0/16]
+            direction TB
+            IGW[Internet Gateway<br/>0.0.0.0/0]
+            NAT[NAT Gateway<br/>10.0.0.0/16]
+
+            subgraph AZ1[Availability Zone A]
+                direction TB
+                PubSub1[Public Subnet<br/>10.0.1.0/24]
+                ALB1[ALB - app-lb-1]
+                Web1[Web Server<br/>t3.medium]
+                PrivSub1[Private Subnet<br/>10.0.2.0/24]
+                App1[App Server<br/>t3.large]
+                DBSub1[DB Subnet<br/>10.0.3.0/24]
+                DB1[RDS Primary<br/>db.r5.xlarge]
+            end
+
+            subgraph AZ2[Availability Zone B]
+                direction TB
+                PubSub2[Public Subnet<br/>10.0.4.0/24]
+                ALB2[ALB - app-lb-2]
+                Web2[Web Server<br/>t3.medium]
+                PrivSub2[Private Subnet<br/>10.0.5.0/24]
+                App2[App Server<br/>t3.large]
+                DBSub2[DB Subnet<br/>10.0.6.0/24]
+                DB2[RDS Standby<br/>db.r5.xlarge]
+            end
+
+            subgraph CDN[CloudFront CDN]
+                Edge1[Edge Node<br/>us-east-1]
+                Edge2[Edge Node<br/>eu-west-1]
+                Edge3[Edge Node<br/>ap-southeast-1]
+            end
+
+            RT_Public[Route Table: Public]
+            RT_Private[Route Table: Private]
+            SGs[Security Groups<br/>Web/App/DB tiers]
+        end
+
+        DX[Direct Connect<br/>1 Gbps]
+        VPN[VPN Gateway<br/>IPSec Tunnel]
+        DNS[Route53<br/>DNS + Health Checks]
+    end
+
+    subgraph USERS[Global Users]
+        U1[User: NYC]
+        U2[User: London]
+        U3[User: Tokyo]
+    end
+
+    USERS -->|HTTPS| DNS
+    DNS -->|Weighted/Latency Routing| IGW
+    USERS -->|Static Content| CDN
+    CDN -->|Origin Pull| ALB1 & ALB2
+    IGW -->|Port 80/443| ALB1 & ALB2
+    ALB1 & ALB2 -->|Port 8080| App1 & App2
+    App1 & App2 -->|Port 3306| DB1 & DB2
+    Web1 & Web2 -->|Outbound| NAT
+    NAT --> IGW
+    ONPREM -->|BGP| VPN
+    ONPREM -->|BGP| DX
+    VPN & DX -->|Private IP| App1 & App2
+    App1 & App2 -->|Replication| DB1
+    DB1 -.->|Synchronous Replica| DB2
+
+    PubSub1 & PubSub2 --> RT_Public
+    PrivSub1 & PrivSub2 --> RT_Private
+    DBSub1 & DBSub2 --> RT_Private
+    RT_Public --> IGW
+    RT_Private --> NAT
+
+    classDef aws fill:#FF9900,stroke:#232F3E,color:#232F3E,stroke-width:2px
+    classDef onprem fill:#E0E0E0,stroke:#333,color:#333,stroke-width:2px
+    classDef cdn fill:#8C4FFF,stroke:#232F3E,color:#fff,stroke-width:2px
+    classDef user fill:#2E86C1,stroke:#1B4F72,color:#fff,stroke-width:2px
+    classDef subnet fill:#D5E8D4,stroke:#82B366,color:#000,stroke-width:1px
+    classDef tier fill:#DAE8FC,stroke:#6C8EBF,color:#000,stroke-width:1px
+    classDef db fill:#F8CECC,stroke:#B85450,color:#000,stroke-width:1px
+
+    class IGW,NAT,DNS,R VPN,CLOUD aws
+    class R1,SW1,S1,S2 onprem
+    class Edge1,Edge2,Edge3,CDN cdn
+    class U1,U2,U3 user
+    class PubSub1,PubSub2,PrivSub1,PrivSub2,DBSub1,DBSub2 subnet
+    class Web1,Web2,App1,App2 tier
+    class DB1,DB2 db
+```
+
 ---
 
 ## 16.2 Traditional vs Cloud Networking
@@ -774,6 +875,186 @@ if subnet:
 - **Subnet sizing**: /28 (11 usable IPs) is minimum; /16 (65531 usable) is maximum. Size for future growth → expanding a subnet's CIDR is not possible after creation.
 - **Transitive routing**: VPC Peering is not transitive. Hub-and-spoke requires Transit Gateway (costs money per attachment).
 - **Cross-region peering**: Adds $0.01-0.02/GB data transfer cost. Minimize cross-region traffic for chatty protocols.
+
+**TypeScript Implementation: VPCNetworkDesigner**
+
+```typescript
+interface SubnetConfig {
+  name: string;
+  cidr: string;
+  az: string;
+  tier: 'public' | 'private' | 'isolated';
+}
+
+interface RouteTableEntry {
+  destination: string;
+  target: string;
+  description: string;
+}
+
+interface SecurityGroupRule {
+  direction: 'inbound' | 'outbound';
+  protocol: string;
+  port: number;
+  source: string; // CIDR or security group ID
+}
+
+class VPCNetworkDesigner {
+  private vpcCidr: string;
+  private subnets: SubnetConfig[] = [];
+  private routeTables: Map<string, RouteTableEntry[]> = new Map();
+  private securityGroupRules: Map<string, SecurityGroupRule[]> = new Map();
+
+  constructor(vpcCidr: string) {
+    this.vpcCidr = vpcCidr;
+  }
+
+  // Calculate subnet CIDRs given a VPC CIDR, number of subnets, and tier names
+  static calculateSubnetCidrs(
+    vpcCidr: string,
+    tierNames: string[],
+    azCount: number,
+    subnetPrefix: number
+  ): SubnetConfig[] {
+    const [baseIp, existingPrefix] = vpcCidr.split('/');
+    const basePrefix = parseInt(existingPrefix);
+    const numSubnets = tierNames.length * azCount;
+    const subnetSize = Math.pow(2, 32 - subnetPrefix);
+    const vpcSize = Math.pow(2, 32 - basePrefix);
+
+    if (numSubnets * subnetSize > vpcSize) {
+      throw new Error('Subnet size exceeds VPC CIDR capacity');
+    }
+
+    const subnets: SubnetConfig[] = [];
+    const ipParts = baseIp.split('.').map(Number);
+    const baseIPnum = (ipParts[0] << 24) | (ipParts[1] << 16) | (ipParts[2] << 8) | ipParts[3];
+
+    const azs = Array.from({ length: azCount }, (_, i) => `us-east-1${String.fromCharCode(97 + i)}`);
+
+    let index = 0;
+    for (let azIdx = 0; azIdx < azCount; azIdx++) {
+      for (let tierIdx = 0; tierIdx < tierNames.length; tierIdx++) {
+        const subnetIPnum = baseIPnum + index * subnetSize;
+        const cidr = `${(subnetIPnum >>> 24) & 0xFF}.${(subnetIPnum >>> 16) & 0xFF}.${(subnetIPnum >>> 8) & 0xFF}.${subnetIPnum & 0xFF}/${subnetPrefix}`;
+        const tier = tierNames[tierIdx];
+        subnets.push({
+          name: `${tier}-${azs[azIdx]}`,
+          cidr,
+          az: azs[azIdx],
+          tier: tier === 'web' ? 'public' : 'private'
+        });
+        index++;
+      }
+    }
+    return subnets;
+  }
+
+  addSubnet(subnet: SubnetConfig): void {
+    this.subnets.push(subnet);
+  }
+
+  addRouteTableEntry(subnetName: string, entry: RouteTableEntry): void {
+    if (!this.routeTables.has(subnetName)) {
+      this.routeTables.set(subnetName, []);
+    }
+    this.routeTables.get(subnetName)!.push(entry);
+  }
+
+  addSecurityGroupRule(sgName: string, rule: SecurityGroupRule): void {
+    if (!this.securityGroupRules.has(sgName)) {
+      this.securityGroupRules.set(sgName, []);
+    }
+    this.securityGroupRules.get(sgName)!.push(rule);
+  }
+
+  // NAT Gateway vs Internet Gateway selection based on tier
+  configureGateways(): void {
+    for (const subnet of this.subnets) {
+      if (subnet.tier === 'public') {
+        this.addRouteTableEntry(subnet.name, {
+          destination: '0.0.0.0/0',
+          target: 'igw-12345',
+          description: 'Internet Gateway for public subnet'
+        });
+      } else if (subnet.tier === 'private') {
+        this.addRouteTableEntry(subnet.name, {
+          destination: '0.0.0.0/0',
+          target: 'natgw-67890',
+          description: 'NAT Gateway for private subnet outbound'
+        });
+      }
+      this.addRouteTableEntry(subnet.name, {
+        destination: this.vpcCidr,
+        target: 'local',
+        description: 'Local VPC routing'
+      });
+    }
+  }
+
+  printDesign(): void {
+    console.log(`VPC CIDR: ${this.vpcCidr}`);
+    console.log('\n--- Subnets ---');
+    console.log(`${'Name':<20} ${'CIDR':<20} ${'AZ':<15} ${'Tier'}`);
+    console.log('-'.repeat(60));
+    for (const s of this.subnets) {
+      console.log(`${s.name.padEnd(20)} ${s.cidr.padEnd(20)} ${s.az.padEnd(15)} ${s.tier}`);
+    }
+
+    console.log('\n--- Route Tables ---');
+    for (const [subnet, entries] of this.routeTables) {
+      console.log(`\nRoute Table: ${subnet}`);
+      for (const e of entries) {
+        console.log(`  ${e.destination.padEnd(20)} → ${e.target.padEnd(20)} (${e.description})`);
+      }
+    }
+
+    console.log('\n--- Security Groups ---');
+    for (const [sg, rules] of this.securityGroupRules) {
+      console.log(`\nSecurity Group: ${sg}`);
+      for (const r of rules) {
+        console.log(`  ${r.direction.padEnd(10)} ${r.protocol.padEnd(8)} ${String(r.port).padEnd(8)} → ${r.source}`);
+      }
+    }
+  }
+}
+
+// Usage example
+function demoVPCDesign() {
+  // Calculate subnet CIDRs for a /16 VPC with 3 tiers × 2 AZs, each /20
+  const subnets = VPCNetworkDesigner.calculateSubnetCidrs('10.0.0.0/16', ['web', 'app', 'db'], 2, 20);
+  console.log('Generated Subnet CIDRs:');
+  for (const s of subnets) {
+    console.log(`  ${s.name.padEnd(15)} ${s.cidr.padEnd(18)} AZ: ${s.az.padEnd(12)} Tier: ${s.tier}`);
+  }
+  // Output:
+  // Generated Subnet CIDRs:
+  //   web-us-east-1a  10.0.0.0/20   AZ: us-east-1a  Tier: public
+  //   app-us-east-1a  10.0.16.0/20  AZ: us-east-1a  Tier: private
+  //   db-us-east-1a   10.0.32.0/20  AZ: us-east-1a  Tier: private
+  //   web-us-east-1b  10.0.48.0/20  AZ: us-east-1b  Tier: public
+  //   app-us-east-1b  10.0.64.0/20  AZ: us-east-1b  Tier: private
+  //   db-us-east-1b   10.0.80.0/20  AZ: us-east-1b  Tier: private
+
+  const designer = new VPCNetworkDesigner('10.0.0.0/16');
+  for (const s of subnets) designer.addSubnet(s);
+  designer.configureGateways();
+
+  // Web tier: HTTP/HTTPS from anywhere
+  designer.addSecurityGroupRule('sg-web', { direction: 'inbound', protocol: 'TCP', port: 443, source: '0.0.0.0/0' });
+  designer.addSecurityGroupRule('sg-web', { direction: 'inbound', protocol: 'TCP', port: 80, source: '0.0.0.0/0' });
+
+  // App tier: traffic from web SG only
+  designer.addSecurityGroupRule('sg-app', { direction: 'inbound', protocol: 'TCP', port: 8080, source: 'sg-web' });
+
+  // DB tier: traffic from app SG only
+  designer.addSecurityGroupRule('sg-db', { direction: 'inbound', protocol: 'TCP', port: 3306, source: 'sg-app' });
+
+  designer.printDesign();
+}
+
+demoVPCDesign();
+```
 
 ---
 
@@ -1594,6 +1875,244 @@ lc.print_status()
 - **Sticky session imbalance**: If sticky sessions are enabled and a popular session hashes to one target, that target gets disproportionate load. Use least-outstanding-requests algorithm mitigating this.
 - **Slow clients**: One slow client can occupy a connection on NLB (Layer 4). ALB handles this better since it buffers requests.
 - **WebSocket timeout**: ALB idle timeout (default 60s) may close WebSocket connections. Increase to 3600s for long-lived WebSockets.
+
+**TypeScript Implementation: CloudLoadBalancer**
+
+```typescript
+interface TargetConfig {
+  id: string;
+  address: string;
+  port: number;
+  weight: number;
+}
+
+interface HealthCheckResult {
+  targetId: string;
+  healthy: boolean;
+  lastChecked: Date;
+  latencyMs: number;
+}
+
+type LBAlgorithm = 'round-robin' | 'least-connections' | 'ip-hash' | 'weighted';
+
+class CloudLoadBalancer {
+  private targets: Map<string, {
+    config: TargetConfig;
+    activeConnections: number;
+    totalRequests: number;
+    healthy: boolean;
+    draining: boolean;
+  }> = new Map();
+  private rrIndex: number = 0;
+  private algorithm: LBAlgorithm;
+
+  constructor(private name: string, algorithm: LBAlgorithm = 'round-robin') {
+    this.algorithm = algorithm;
+  }
+
+  registerTarget(config: TargetConfig): void {
+    this.targets.set(config.id, {
+      config,
+      activeConnections: 0,
+      totalRequests: 0,
+      healthy: true,
+      draining: false
+    });
+  }
+
+  deregisterTarget(id: string, drainTimeoutMs: number = 30000): Promise<void> {
+    const target = this.targets.get(id);
+    if (!target) return Promise.resolve();
+    target.draining = true;
+    target.healthy = false;
+
+    return new Promise((resolve) => {
+      const checkDrain = () => {
+        if (target.activeConnections === 0) {
+          this.targets.delete(id);
+          console.log(`[${this.name}] Target ${id} drained and removed`);
+          resolve();
+        } else {
+          console.log(`[${this.name}] Draining ${id}: ${target.activeConnections} active connections remain`);
+          setTimeout(checkDrain, 1000);
+        }
+      };
+      setTimeout(() => {
+        this.targets.delete(id);
+        console.log(`[${this.name}] Force-removed ${id} after drain timeout`);
+        resolve();
+      }, drainTimeoutMs);
+      checkDrain();
+    });
+  }
+
+  markHealth(id: string, healthy: boolean): void {
+    const target = this.targets.get(id);
+    if (target) {
+      target.healthy = healthy;
+      console.log(`[${this.name}] ${id} → ${healthy ? 'HEALTHY' : 'UNHEALTHY'}`);
+    }
+  }
+
+  private getHealthyTargets(): typeof this.targets extends Map<string, infer V> ? V[] : never {
+    const result: any[] = [];
+    for (const [, target] of this.targets) {
+      if (target.healthy && !target.draining) result.push(target);
+    }
+    return result as any;
+  }
+
+  private selectTarget(clientIp: string): typeof this.targets extends Map<string, infer V> ? V : never {
+    const healthy = this.getHealthyTargets();
+    if (healthy.length === 0) return null as any;
+
+    switch (this.algorithm) {
+      case 'round-robin': {
+        const idx = this.rrIndex % healthy.length;
+        this.rrIndex = (this.rrIndex + 1) % healthy.length;
+        return healthy[idx];
+      }
+      case 'least-connections': {
+        return healthy.reduce((min, t) => t.activeConnections < min.activeConnections ? t : min);
+      }
+      case 'ip-hash': {
+        const hash = clientIp.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+        return healthy[hash % healthy.length];
+      }
+      case 'weighted': {
+        const totalWeight = healthy.reduce((sum, t) => sum + t.config.weight, 0);
+        let random = Math.random() * totalWeight;
+        for (const t of healthy) {
+          random -= t.config.weight;
+          if (random <= 0) return t;
+        }
+        return healthy[healthy.length - 1];
+      }
+      default:
+        return healthy[0];
+    }
+  }
+
+  handleRequest(clientIp: string, path: string, requestId: number): void {
+    const target = this.selectTarget(clientIp);
+    if (!target) {
+      console.log(`[${requestId}] ${clientIp} ${path} → 503 No healthy targets`);
+      return;
+    }
+
+    target.activeConnections++;
+    target.totalRequests++;
+    const latency = Math.random() * 28 + 2; // 2-30ms
+
+    // Simulate request processing
+    setTimeout(() => {
+      target.activeConnections--;
+      console.log(`[${requestId}] ${clientIp.padEnd(15)} ${path.padEnd(20)} → ${target.config.id} ` +
+        `(${latency.toFixed(0)}ms, active=${target.activeConnections}, total=${target.totalRequests})`);
+    }, latency);
+  }
+
+  printStatus(): void {
+    console.log(`\n${this.name} (${this.algorithm}) Status:`);
+    console.log(`${'Target':<12} ${'Addr':<18} ${'Conn':<8} ${'Total':<8} ${'Healthy':<8} ${'Draining':<8}`);
+    console.log('-'.repeat(62));
+    for (const [, t] of this.targets) {
+      console.log(
+        `${t.config.id.padEnd(12)} ${`${t.config.address}:${t.config.port}`.padEnd(18)} ` +
+        `${String(t.activeConnections).padEnd(8)} ${String(t.totalRequests).padEnd(8)} ` +
+        `${String(t.healthy).padEnd(8)} ${String(t.draining).padEnd(8)}`
+      );
+    }
+  }
+}
+
+// Usage example
+async function demoLoadBalancer() {
+  // Weighted round-robin across 3 web servers
+  const lb = new CloudLoadBalancer('Web-LB', 'weighted');
+  lb.registerTarget({ id: 'web-1', address: '10.0.1.10', port: 80, weight: 5 });
+  lb.registerTarget({ id: 'web-2', address: '10.0.1.11', port: 80, weight: 3 });
+  lb.registerTarget({ id: 'web-3', address: '10.0.1.12', port: 80, weight: 2 });
+
+  for (let i = 1; i <= 6; i++) {
+    lb.handleRequest(`203.0.113.${i}`, '/index.html', i);
+  }
+
+  // Health check failure and recovery
+  setTimeout(() => {
+    lb.markHealth('web-3', false);
+    lb.handleRequest('203.0.113.7', '/api/data', 7);
+    lb.handleRequest('203.0.113.8', '/api/data', 8);
+
+    setTimeout(() => {
+      lb.markHealth('web-3', true);
+      lb.handleRequest('203.0.113.9', '/api/orders', 9);
+
+      // Show final status
+      setTimeout(() => lb.printStatus(), 50);
+    }, 50);
+  }, 50);
+
+  // Connection draining demo
+  // const drained = await lb.deregisterTarget('web-1', 5000);
+}
+
+demoLoadBalancer();
+
+// --- Connection Draining Manager ---
+class ConnectionDrainManager {
+  private drainingTargets: Map<string, {
+    activeConnections: number;
+    startTime: Date;
+    timeoutMs: number;
+  }> = new Map();
+
+  constructor(private maxDrainTimeMs: number = 300000) {}
+
+  startDrain(targetId: string, activeConnections: number): void {
+    this.drainingTargets.set(targetId, {
+      activeConnections,
+      startTime: new Date(),
+      timeoutMs: this.maxDrainTimeMs
+    });
+    console.log(`[Drain] ${targetId}: Starting drain with ${activeConnections} connections, timeout=${this.maxDrainTimeMs}ms`);
+  }
+
+  onConnectionClosed(targetId: string): void {
+    const entry = this.drainingTargets.get(targetId);
+    if (!entry) return;
+    entry.activeConnections--;
+    if (entry.activeConnections === 0) {
+      this.drainingTargets.delete(targetId);
+      console.log(`[Drain] ${targetId}: All connections drained, target can be removed`);
+    }
+  }
+
+  getStatus(): Array<{ id: string; remainingConn: number; elapsedMs: number; timedOut: boolean }> {
+    const now = Date.now();
+    return Array.from(this.drainingTargets.entries()).map(([id, entry]) => ({
+      id,
+      remainingConn: entry.activeConnections,
+      elapsedMs: now - entry.startTime.getTime(),
+      timedOut: (now - entry.startTime.getTime()) > entry.timeoutMs
+    }));
+  }
+
+  forceDrain(): string[] {
+    const forced = Array.from(this.drainingTargets.keys());
+    this.drainingTargets.clear();
+    return forced;
+  }
+}
+
+// Draining usage
+const drainer = new ConnectionDrainManager(60000);
+drainer.startDrain('web-old-1', 5);
+drainer.onConnectionClosed('web-old-1');
+drainer.onConnectionClosed('web-old-1');
+console.log(drainer.getStatus());
+// Output: [ { id: 'web-old-1', remainingConn: 3, elapsedMs: 0, timedOut: false } ]
+```
 
 ---
 
@@ -2597,6 +3116,258 @@ for round_num in range(1, simulation_rounds + 1):
 - **SSL/TLS at edge**: CDN terminates TLS at the edge, re-encrypts to origin. Ensure origin supports the re-encryption cipher or the connection is in a trusted network.
 - **Geo-restriction**: CDN can block content by country based on client IP GeoIP database. Accuracy is ~99% for country level but lower for city/region.
 - **Upload handling**: CDN typically optimizes for downloads. For uploads, route directly to origin or use edge computing with specific upload endpoints.
+
+**TypeScript Implementation: CDNManager**
+
+```typescript
+interface CacheEntry {
+  content: string;
+  insertedAt: number;
+  ttlMs: number;
+}
+
+interface EdgeNodeConfig {
+  name: string;
+  region: string;
+  capacityGbps: number;
+}
+
+interface OriginGroup {
+  urls: string[];
+  loadBalance: 'round-robin' | 'least-connections';
+}
+
+type CacheLevel = 'edge' | 'regional' | 'origin';
+
+class CDNManager {
+  private edgeNodes: Map<string, {
+    config: EdgeNodeConfig;
+    cache: Map<string, CacheEntry>;
+    hits: number;
+    misses: number;
+    bytesServed: number;
+  }> = new Map();
+
+  private regionalCache: Map<string, { content: string; insertedAt: number; ttlMs: number; region: string }> = new Map();
+  private originContent: Map<string, string> = new Map();
+  private originLoad: Map<string, number> = new Map();
+  private originHealth: Map<string, boolean> = new Map();
+
+  // Latency matrix: region → region → latency in ms
+  private static readonly LATENCY_MATRIX: Record<string, Record<string, number>> = {
+    'us-east-1':  { 'us-east-1': 0, 'us-west-2': 65,  'eu-west-1': 75,  'ap-southeast-1': 190, 'ap-northeast-1': 150 },
+    'us-west-2':  { 'us-east-1': 65, 'us-west-2': 0,  'eu-west-1': 140, 'ap-southeast-1': 120, 'ap-northeast-1': 100 },
+    'eu-west-1':  { 'us-east-1': 75, 'us-west-2': 140, 'eu-west-1': 0,  'ap-southeast-1': 160, 'ap-northeast-1': 240 },
+    'ap-southeast-1': { 'us-east-1': 190, 'us-west-2': 120, 'eu-west-1': 160, 'ap-southeast-1': 0, 'ap-northeast-1': 70 },
+    'ap-northeast-1': { 'us-east-1': 150, 'us-west-2': 100, 'eu-west-1': 240, 'ap-southeast-1': 70, 'ap-northeast-1': 0 }
+  };
+
+  constructor(private name: string) {}
+
+  addEdgeNode(config: EdgeNodeConfig): void {
+    this.edgeNodes.set(config.name, {
+      config,
+      cache: new Map(),
+      hits: 0,
+      misses: 0,
+      bytesServed: 0
+    });
+  }
+
+  addOriginContent(url: string, content: string): void {
+    this.originContent.set(url, content);
+    this.originHealth.set(url, true);
+  }
+
+  markOriginHealth(url: string, healthy: boolean): void {
+    this.originHealth.set(url, healthy);
+  }
+
+  private findNearestEdge(clientRegion: string): typeof this.edgeNodes extends Map<string, infer V> ? V : never {
+    let bestLatency = Infinity;
+    let bestEdge: any = null;
+
+    for (const [, edge] of this.edgeNodes) {
+      const regionLatencies = CDNManager.LATENCY_MATRIX[clientRegion];
+      if (!regionLatencies) continue;
+      const lat = regionLatencies[edge.config.region] ?? 500;
+      if (lat < bestLatency) {
+        bestLatency = lat;
+        bestEdge = edge;
+      }
+    }
+    return bestEdge;
+  }
+
+  private getTieredCacheTTL(contentType: string): number {
+    if (contentType.startsWith('/static/')) return 7 * 86400 * 1000;  // 7 days
+    if (contentType.startsWith('/img/')) return 86400 * 1000;          // 1 day
+    if (contentType.startsWith('/js/') || contentType.startsWith('/css/')) return 86400 * 1000;
+    if (contentType.startsWith('/api/')) return 60 * 1000;            // 1 min
+    return 300 * 1000;                                                  // 5 min default
+  }
+
+  request(url: string, clientRegion: string, reqId: number, forceMiss: boolean = false): string | null {
+    const edge = this.findNearestEdge(clientRegion);
+    if (!edge) {
+      console.log(`[${reqId}] ${clientRegion} → NO EDGE AVAILABLE`);
+      return null;
+    }
+
+    const contentType = url.substring(0, url.lastIndexOf('/') + 1);
+    const ttlMs = this.getTieredCacheTTL(contentType);
+    const now = Date.now();
+    let cacheLevel: CacheLevel;
+
+    console.log(`[${reqId}] ${clientRegion.padEnd(15)} → ${edge.config.name.padEnd(15)} GET ${url}`);
+
+    // Level 1: Edge cache
+    if (!forceMiss && edge.cache.has(url)) {
+      const entry = edge.cache.get(url)!;
+      if (now - entry.insertedAt < entry.ttlMs) {
+        edge.hits++;
+        edge.bytesServed += entry.content.length;
+        cacheLevel = 'edge';
+        console.log(`  → EDGE HIT (ttl_remaining=${(entry.ttlMs - (now - entry.insertedAt)) / 1000}s)`);
+        return entry.content;
+      }
+    }
+    edge.misses++;
+
+    // Level 2: Regional cache (shared among edges in same region group)
+    if (!forceMiss && this.regionalCache.has(url)) {
+      const regional = this.regionalCache.get(url)!;
+      if (now - regional.insertedAt < regional.ttlMs) {
+        // Populate edge cache from regional
+        edge.cache.set(url, { content: regional.content, insertedAt: now, ttlMs: regional.ttlMs });
+        edge.hits++;
+        edge.bytesServed += regional.content.length;
+        cacheLevel = 'regional';
+        console.log(`  → REGIONAL HIT (edge cached from regional)`);
+        return regional.content;
+      }
+    }
+
+    // Level 3: Origin fetch
+    if (!this.originContent.has(url)) {
+      console.log(`  → 404 NOT FOUND`);
+      return null;
+    }
+
+    if (!this.originHealth.get(url)) {
+      console.log(`  → 503 ORIGIN UNHEALTHY`);
+      return null;
+    }
+
+    const content = this.originContent.get(url)!;
+    const fetchLatency = Math.floor(Math.random() * 120 + 30); // 30-150ms
+    this.originLoad.set(url, (this.originLoad.get(url) ?? 0) + 1);
+
+    // Populate both cache tiers
+    this.regionalCache.set(url, { content, insertedAt: now, ttlMs });
+    edge.cache.set(url, { content, insertedAt: now, ttlMs });
+
+    cacheLevel = 'origin';
+    console.log(`  → ORIGIN FETCH (${fetchLatency}ms, origin_hits=${this.originLoad.get(url)}, ttl=${ttlMs / 1000}s)`);
+    return content;
+  }
+
+  invalidate(urlPattern: string): number {
+    let count = 0;
+    for (const [, edge] of this.edgeNodes) {
+      for (const key of edge.cache.keys()) {
+        if (key.includes(urlPattern)) {
+          edge.cache.delete(key);
+          count++;
+        }
+      }
+    }
+    // Also clear regional cache
+    for (const key of this.regionalCache.keys()) {
+      if (key.includes(urlPattern)) {
+        this.regionalCache.delete(key);
+        count++;
+      }
+    }
+    console.log(`[Invalidate] Cleared ${count} cache entries matching "${urlPattern}"`);
+    return count;
+  }
+
+  printStats(): void {
+    console.log(`\n=== ${this.name} CDN Stats ===`);
+    console.log(`${'Edge Node':<20} ${'Region':<20} ${'Hits':<8} ${'Misses':<8} ${'Hit Rate':<10} ${'Bytes Served'}`);
+    console.log('-'.repeat(75));
+
+    let totalHits = 0, totalMisses = 0, totalBytes = 0;
+
+    for (const [, edge] of this.edgeNodes) {
+      const total = edge.hits + edge.misses;
+      const rate = total > 0 ? (100 * edge.hits / total).toFixed(1) : '0.0';
+      totalHits += edge.hits;
+      totalMisses += edge.misses;
+      totalBytes += edge.bytesServed;
+      console.log(
+        `${edge.config.name.padEnd(20)} ${edge.config.region.padEnd(20)} ` +
+        `${String(edge.hits).padEnd(8)} ${String(edge.misses).padEnd(8)} ` +
+        `${rate.padEnd(10)} ${(edge.bytesServed / 1024).toFixed(1)} KB`
+      );
+    }
+
+    const allTotal = totalHits + totalMisses;
+    const globalRate = allTotal > 0 ? (100 * totalHits / allTotal).toFixed(1) : '0.0';
+    console.log('-'.repeat(75));
+    console.log(`GLOBAL: hit_rate=${globalRate}%, origin_offload=${globalRate}%, total_bytes=${(totalBytes / 1024).toFixed(1)} KB`);
+
+    console.log('\nOrigin Load:');
+    for (const [url, load] of this.originLoad) {
+      console.log(`  ${url.padEnd(30)} ${load} requests`);
+    }
+  }
+}
+
+// Usage example
+function demoCDNManager() {
+  const cdn = new CDNManager('GlobalCache');
+  cdn.addEdgeNode({ name: 'Edge-NYC',    region: 'us-east-1',      capacityGbps: 100 });
+  cdn.addEdgeNode({ name: 'Edge-London', region: 'eu-west-1',      capacityGbps: 50 });
+  cdn.addEdgeNode({ name: 'Edge-Tokyo',  region: 'ap-northeast-1', capacityGbps: 40 });
+
+  cdn.addOriginContent('/static/logo.png', 'PNG_BINARY');
+  cdn.addOriginContent('/js/bundle.js', "console.log('hello');");
+  cdn.addOriginContent('/css/styles.css', 'body { font: 16px sans-serif; }');
+  cdn.addOriginContent('/api/health', '{"status":"ok"}');
+
+  // Simulate requests from different regions
+  const urls = ['/static/logo.png', '/js/bundle.js', '/css/styles.css', '/api/health'];
+  const regions = ['us-east-1', 'eu-west-1', 'ap-northeast-1', 'ap-southeast-1'];
+  let reqId = 1;
+
+  for (let round = 0; round < 3; round++) {
+    for (const url of urls) {
+      for (const region of regions) {
+        const force = Math.random() < 0.1; // 10% forced miss (simulate cache bust)
+        cdn.request(url, region, reqId++, force);
+      }
+    }
+  }
+
+  cdn.printStats();
+  // Output (will vary due to randomness):
+  // GlobalCache CDN Stats:
+  // Edge Node            Region               Hits     Misses   Hit Rate   Bytes Served
+  // -------------------------------------------------------------------------
+  // Edge-NYC             us-east-1            10       2        83.3%      3.2 KB
+  // Edge-London          eu-west-1            9        3        75.0%      2.9 KB
+  // Edge-Tokyo           ap-northeast-1       11       1        91.7%      3.5 KB
+  // -------------------------------------------------------------------------
+  // GLOBAL: hit_rate=83.3%, origin_offload=83.3%, total_bytes=9.6 KB
+
+  // Invalidate versioned content
+  cdn.invalidate('/js/');
+}
+
+demoCDNManager();
+```
 
 ---
 
@@ -4540,7 +5311,47 @@ Ingress Gateway → VirtualService → DestinationRule → Pod (sidecar Envoy)
 
 ---
 
+## Case Study: Global E-Commerce Platform Migration to AWS
+
+### Problem
+
+A rapidly growing e-commerce platform serving 5 million monthly visitors across North America, Europe, and Asia-Pacific was running on a single-region data center in Virginia. Users in Tokyo experienced 350ms+ page load times. Peak traffic (Black Friday) caused the origin servers to saturate at 12 Gbps, triggering 503 errors for 15% of requests. The platform used a single hardware load balancer (F5), manual failover procedures, and static DNS A records.
+
+### Solution
+
+The engineering team migrated to a multi-region AWS architecture. Each region (us-east-1, eu-west-1, ap-southeast-1) received a full VPC stack: public subnets with ALBs for TLS termination and path-based routing, private subnets for application servers (ECS Fargate), and isolated database subnets with RDS Multi-AZ. CloudFront was deployed globally with tiered caching (edge → regional → origin), achieving a 92% cache hit rate. Route53 latency-based routing directed users to the nearest healthy region. A Transit Gateway connected all three VPCs to on-premises systems via Direct Connect (1 Gbps to us-east-1). AWS Global Accelerator provided static anycast IPs with endpoint failover under 30 seconds.
+
+### Outcome
+
+Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). The origin load reduced from 12 Gbps to under 1 Gbps (92% offload), eliminating the need for origin scaling during peak events. The 2023 Black Friday event handled 3× normal traffic with zero 503 errors and 99.99% availability. Infrastructure provisioning dropped from 3 weeks (data center) to 45 minutes (Terraform + CloudFormation). Annual infrastructure cost was reduced by 40% through reserved instances and CDN bandwidth savings.
+
+---
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|---|---|
+| Multi-region deployment reduces latency from 350ms to <100ms for global users | Route53 latency routing + ALB per region with cross-region failover |
+| CDN tiered caching offloads 90%+ of origin traffic | CloudFront edge → regional cache → origin pull pattern |
+| Security groups provide stateful filtering at the hypervisor level | Use SG rules instead of NACLs whenever possible (stateful = auto return traffic) |
+| Connection draining prevents dropped requests during deployments | Set ALB drain timeout to 300s and monitor active connections |
+| Transit Gateway simplifies multi-VPC connectivity | Replace VPC peering mesh with TGW when connecting 4+ VPCs |
+| Anycast IPs with health checks provide sub-30s failover | Global Accelerator or CloudFront with origin failover |
+| Direct Connect is essential for predictable hybrid connectivity | 1-10 Gbps private links with BGP for on-premises to cloud routing |
+
+---
+
 ## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|---|---|---|---|---|---|
+| 1 | What VXLAN component uniquely identifies a tenant network across the shared physical fabric? | VLAN ID | VNI | GRE Key | Subnet ID | B |
+| 2 | Which load balancer type operates at Layer 4 (Transport) and provides static IP per Availability Zone? | ALB | NLB | GLB | CLB | B |
+| 3 | What mechanism does a cloud VPC use to allow outbound internet access for instances in private subnets? | Internet Gateway | NAT Gateway | VPC Peering | Direct Connect | B |
+| 4 | Which CDN cache layer is checked first when a request arrives at an edge location? | Regional cache | Origin server | Edge node cache | DNS resolver | C |
+| 5 | What is the primary function of AWS Transit Gateway? | Replace security groups | Connect multiple VPCs and on-premises networks | Encrypt traffic between VPCs | Monitor VPC traffic | B |
+
+---
 
 1. **What makes security groups stateful?**
    - a) Rules apply to both directions
@@ -4598,13 +5409,11 @@ Ingress Gateway → VirtualService → DestinationRule → Pod (sidecar Envoy)
 
 10. **What happens when an anycast node fails?**
     - a) All clients lose connectivity
-    - b) BGP withdraws the route, clients reroute âœ“
+    - b) BGP withdraws the route, clients reroute 
     - c) TCP connections migrate transparently
     - d) DNS resolves a different IP
 
 **Answers:** 1-b, 2-b, 3-b, 4-b, 5-b, 6-b, 7-b, 8-b, 9-b, 10-b
-
----
 
 ## Summary
 

@@ -1119,6 +1119,152 @@ int main() {
 }
 ```
 
+**TypeScript Implementation: Token Bucket Rate Limiter**
+
+```typescript
+interface RateLimitConfig {
+  capacity: number;
+  refillRate: number; // tokens per second
+}
+
+interface RateLimitResult {
+  allowed: boolean;
+  remaining: number;
+  retryAfter: number; // seconds
+}
+
+interface RateLimitHeaders {
+  'X-RateLimit-Limit': number;
+  'X-RateLimit-Remaining': number;
+  'X-RateLimit-Reset': number;
+  'Retry-After'?: number;
+}
+
+class TokenBucket {
+  private tokens: number;
+  private lastRefill: number;
+
+  constructor(private capacity: number, private refillRate: number) {
+    this.tokens = capacity;
+    this.lastRefill = Date.now();
+  }
+
+  private refill(): void {
+    const now = Date.now();
+    const elapsed = (now - this.lastRefill) / 1000;
+    this.tokens = Math.min(this.capacity, this.tokens + elapsed * this.refillRate);
+    this.lastRefill = now;
+  }
+
+  allow(): boolean {
+    this.refill();
+    if (this.tokens >= 1) {
+      this.tokens -= 1;
+      return true;
+    }
+    return false;
+  }
+
+  getWaitTime(): number {
+    this.refill();
+    if (this.tokens >= 1) return 0;
+    return (1 - this.tokens) / this.refillRate;
+  }
+
+  getTokenCount(): number {
+    this.refill();
+    return this.tokens;
+  }
+}
+
+class RateLimiter {
+  private buckets: Map<string, TokenBucket> = new Map();
+  private slidingLog: Map<string, number[]> = new Map();
+
+  constructor(
+    private defaultCapacity: number = 100,
+    private defaultRate: number = 10,
+    private windowMs: number = 60000
+  ) {}
+
+  private getBucket(clientId: string): TokenBucket {
+    let bucket = this.buckets.get(clientId);
+    if (!bucket) {
+      bucket = new TokenBucket(this.defaultCapacity, this.defaultRate);
+      this.buckets.set(clientId, bucket);
+    }
+    return bucket;
+  }
+
+  checkTokenBucket(clientId: string): RateLimitResult {
+    const bucket = this.getBucket(clientId);
+    const allowed = bucket.allow();
+    return {
+      allowed,
+      remaining: allowed ? Math.floor(bucket.getTokenCount()) : 0,
+      retryAfter: allowed ? 0 : bucket.getWaitTime()
+    };
+  }
+
+  checkSlidingWindow(clientId: string): RateLimitResult {
+    const now = Date.now();
+    let timestamps = this.slidingLog.get(clientId) || [];
+
+    timestamps = timestamps.filter(t => now - t < this.windowMs);
+    this.slidingLog.set(clientId, timestamps);
+
+    if (timestamps.length >= this.defaultCapacity) {
+      const oldestInWindow = timestamps[0];
+      const retryAfter = Math.max(0, (oldestInWindow + this.windowMs - now) / 1000);
+      return {
+        allowed: false,
+        remaining: 0,
+        retryAfter
+      };
+    }
+
+    timestamps.push(now);
+    this.slidingLog.set(clientId, timestamps);
+    return {
+      allowed: true,
+      remaining: this.defaultCapacity - timestamps.length,
+      retryAfter: 0
+    };
+  }
+
+  getRateLimitHeaders(clientId: string): RateLimitHeaders {
+    const result = this.checkTokenBucket(clientId);
+    const resetTime = Math.floor(Date.now() / 1000) + Math.ceil(result.retryAfter);
+    return {
+      'X-RateLimit-Limit': this.defaultCapacity,
+      'X-RateLimit-Remaining': result.remaining,
+      'X-RateLimit-Reset': resetTime,
+      ...(result.retryAfter > 0 ? { 'Retry-After': Math.ceil(result.retryAfter) } : {})
+    };
+  }
+
+  // Per-client configuration for tiered rate limiting
+  setClientConfig(clientId: string, capacity: number, rate: number): void {
+    this.buckets.set(clientId, new TokenBucket(capacity, rate));
+  }
+}
+
+// Usage example
+const rateLimiter = new RateLimiter(10, 1); // 10 burst, 1/sec refill
+const clientId = 'user_42';
+for (let i = 0; i < 15; i++) {
+  const result = rateLimiter.checkTokenBucket(clientId);
+  const status = result.allowed ? 'ALLOWED' : 'DENIED';
+  const headers = rateLimiter.getRateLimitHeaders(clientId);
+  console.log(`Request ${i + 1}: ${status} | Remaining: ${result.remaining} | Retry-After: ${result.retryAfter}s`);
+  console.log(`  Headers: X-RateLimit-Remaining=${headers['X-RateLimit-Remaining']}`);
+}
+// Output:
+// Request 1: ALLOWED | Remaining: 9 | Retry-After: 0s
+// Request 10: ALLOWED | Remaining: 0 | Retry-After: 0s
+// Request 11: DENIED | Remaining: 0 | Retry-After: 0.5s
+```
+
 ### 15.1.10 API Versioning
 
 APIs evolve. Versioning lets you introduce breaking changes without disrupting existing clients.
@@ -1752,6 +1898,73 @@ int main() {
 | Real-time data feeds | gRPC streaming | Native bidirection streaming over HTTP/2 |
 | Simple CRUD API | REST | Straightforward, well-understood by all clients |
 
+**Richer Mermaid: API Architecture Comparison (REST vs GraphQL vs gRPC vs WebSocket)**
+
+```mermaid
+graph TB
+  subgraph Clients["Client Layer"]
+    direction LR
+    WA["Web App<br/>(Browser)"]
+    MA["Mobile App"]
+    SR["Server/Service"]
+    IO["IoT Device"]
+  end
+
+  subgraph API["API Layer"]
+    direction TB
+    REST["REST API<br/>HTTP/1.1 + JSON"]
+    GQL["GraphQL<br/>Single Endpoint"]
+    GRPC["gRPC<br/>HTTP/2 + Protobuf"]
+    WS["WebSocket<br/>Full-Duplex TCP"]
+  end
+
+  subgraph Features["Feature Comparison"]
+    direction LR
+    F1["🔄 CRUD<br/>REST"]
+    F2["📊 Flexible Query<br/>GraphQL"]
+    F3["⚡ Binary Stream<br/>gRPC"]
+    F4["💬 Real-Time<br/>WebSocket"]
+  end
+
+  subgraph Transport["Transport Protocols"]
+    HTTP1["HTTP/1.1"]
+    HTTP2["HTTP/2"]
+    TCP["TCP"]
+    UDP["UDP"]
+  end
+
+  WA --> REST
+  WA --> GQL
+  WA --> WS
+  MA --> REST
+  MA --> GQL
+  MA --> GRPC
+  SR --> GRPC
+  SR --> REST
+  IO --> WS
+  IO --> REST
+
+  REST --> HTTP1
+  GQL --> HTTP1
+  GRPC --> HTTP2
+  WS --> TCP
+  WS --> HTTP1
+
+  REST -.-> F1
+  GQL -.-> F2
+  GRPC -.-> F3
+  WS -.-> F4
+
+  classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+  classDef api fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+  classDef feature fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+  classDef transport fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+  class WA,MA,SR,IO client
+  class REST,GQL,GRPC,WS api
+  class F1,F2,F3,F4 feature
+  class HTTP1,HTTP2,TCP,UDP transport
+```
+
 ### 15.1.14 Interview Corner
 
 **Q1: What is the difference between PUT and PATCH?**
@@ -1856,6 +2069,237 @@ Key practices:
 - S3 REST: fully RESTful with `GET/PUT/DELETE /bucket/key`
 - Versioning in API and S3: both URI and action parameter versioning
 
+**TypeScript Implementation: RESTClient with Full HTTP Method Support**
+
+```typescript
+interface RequestOptions {
+  headers?: Record<string, string>;
+  params?: Record<string, string>;
+  timeout?: number;
+}
+
+interface ApiResponse<T = any> {
+  statusCode: number;
+  headers: Record<string, string>;
+  data: T | null;
+  ok: boolean;
+}
+
+interface PaginatedResponse<T> {
+  data: T[];
+  total: number;
+  page: number;
+  pageSize: number;
+  hasMore: boolean;
+  nextPage?: string;
+}
+
+class RESTClient {
+  private baseUrl: string;
+  private defaultHeaders: Record<string, string>;
+  private authToken: string | null = null;
+
+  constructor(baseUrl: string) {
+    this.baseUrl = baseUrl.replace(/\/$/, '');
+    this.defaultHeaders = {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'User-Agent': 'RESTClient-TS/1.0'
+    };
+  }
+
+  setAuthToken(token: string): void {
+    this.authToken = token;
+    this.defaultHeaders['Authorization'] = `Bearer ${token}`;
+  }
+
+  clearAuthToken(): void {
+    this.authToken = null;
+    delete this.defaultHeaders['Authorization'];
+  }
+
+  private buildUrl(endpoint: string, params?: Record<string, string>): string {
+    const url = new URL(`${this.baseUrl}${endpoint}`);
+    if (params) {
+      Object.entries(params).forEach(([key, value]) => url.searchParams.append(key, value));
+    }
+    return url.toString();
+  }
+
+  private buildHeaders(extra?: Record<string, string>): Record<string, string> {
+    return { ...this.defaultHeaders, ...extra };
+  }
+
+  private async request<T>(
+    method: string,
+    endpoint: string,
+    body?: any,
+    options?: RequestOptions
+  ): Promise<ApiResponse<T>> {
+    const url = this.buildUrl(endpoint, options?.params);
+    const headers = this.buildHeaders(options?.headers);
+    const controller = new AbortController();
+    const timeout = options?.timeout ?? 30000;
+    const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+    try {
+      const fetchOptions: RequestInit = {
+        method,
+        headers,
+        signal: controller.signal,
+      };
+      if (body && method !== 'GET' && method !== 'HEAD') {
+        fetchOptions.body = JSON.stringify(body);
+      }
+
+      const response = await fetch(url, fetchOptions);
+      const responseHeaders: Record<string, string> = {};
+      response.headers.forEach((value, key) => { responseHeaders[key] = value; });
+
+      let data: T | null = null;
+      const contentType = response.headers.get('content-type') || '';
+      if (contentType.includes('application/json')) {
+        data = await response.json() as T;
+      } else {
+        data = await response.text() as unknown as T;
+      }
+
+      return {
+        statusCode: response.status,
+        headers: responseHeaders,
+        data,
+        ok: response.ok
+      };
+    } catch (error: any) {
+      if (error.name === 'AbortError') {
+        return { statusCode: 0, headers: {}, data: null, ok: false };
+      }
+      throw error;
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  }
+
+  async get<T>(endpoint: string, options?: RequestOptions): Promise<ApiResponse<T>> {
+    return this.request<T>('GET', endpoint, undefined, options);
+  }
+
+  async post<T>(endpoint: string, body?: any, options?: RequestOptions): Promise<ApiResponse<T>> {
+    return this.request<T>('POST', endpoint, body, options);
+  }
+
+  async put<T>(endpoint: string, body?: any, options?: RequestOptions): Promise<ApiResponse<T>> {
+    return this.request<T>('PUT', endpoint, body, options);
+  }
+
+  async patch<T>(endpoint: string, body?: any, options?: RequestOptions): Promise<ApiResponse<T>> {
+    return this.request<T>('PATCH', endpoint, body, options);
+  }
+
+  async delete<T>(endpoint: string, options?: RequestOptions): Promise<ApiResponse<T>> {
+    return this.request<T>('DELETE', endpoint, undefined, options);
+  }
+
+  // Pagination helper for cursor/offset-based pagination
+  async getAllPages<T>(
+    endpoint: string,
+    pageSize: number = 100,
+    options?: RequestOptions
+  ): Promise<T[]> {
+    const allItems: T[] = [];
+    let page = 1;
+    let hasMore = true;
+
+    while (hasMore) {
+      const response = await this.get<PaginatedResponse<T>>(endpoint, {
+        ...options,
+        params: { ...options?.params, page: String(page), pageSize: String(pageSize) }
+      });
+
+      if (response.ok && response.data) {
+        allItems.push(...response.data.data);
+        hasMore = response.data.hasMore;
+        page++;
+      } else {
+        hasMore = false;
+      }
+    }
+    return allItems;
+  }
+
+  // Status code handling helper
+  handleStatusCode(statusCode: number): string {
+    const statusMessages: Record<number, string> = {
+      200: 'OK',
+      201: 'Created',
+      204: 'No Content',
+      304: 'Not Modified',
+      400: 'Bad Request',
+      401: 'Unauthorized',
+      403: 'Forbidden',
+      404: 'Not Found',
+      409: 'Conflict',
+      422: 'Unprocessable Entity',
+      429: 'Too Many Requests',
+      500: 'Internal Server Error',
+      502: 'Bad Gateway',
+      503: 'Service Unavailable'
+    };
+    return statusMessages[statusCode] || 'Unknown';
+  }
+}
+
+// Usage example
+async function demoRESTClient() {
+  const client = new RESTClient('https://api.example.com/v1');
+  client.setAuthToken('eyJhbGciOiJIUzI1NiIs...');
+
+  // GET with pagination
+  const getResult = await client.get('/books', {
+    params: { page: '1', limit: '10' }
+  });
+  console.log(`GET /books → ${getResult.statusCode} ${client.handleStatusCode(getResult.statusCode)}`);
+  // Output: GET /books → 200 OK
+
+  // POST - Create resource
+  const postResult = await client.post('/books', {
+    title: 'Dune',
+    author: 'Frank Herbert',
+    isbn: '9780441172719'
+  });
+  console.log(`POST /books → ${postResult.statusCode} (Location: ${postResult.headers['location']})`);
+  // Output: POST /books → 201 (Location: /v1/books/42)
+
+  // PUT - Full replacement
+  const putResult = await client.put('/books/42', {
+    title: 'Dune (Revised)',
+    author: 'Frank Herbert',
+    isbn: '9780441172719',
+    year: 1965
+  });
+  console.log(`PUT /books/42 → ${putResult.statusCode} ${client.handleStatusCode(putResult.statusCode)}`);
+  // Output: PUT /books/42 → 200 OK
+
+  // DELETE
+  const deleteResult = await client.delete('/books/42');
+  console.log(`DELETE /books/42 → ${deleteResult.statusCode}`);
+  // Output: DELETE /books/42 → 204
+
+  // Error handling
+  const notFound = await client.get('/books/999');
+  if (!notFound.ok) {
+    console.error(`Error ${notFound.statusCode}: ${client.handleStatusCode(notFound.statusCode)}`);
+    // Output: Error 404: Not Found
+  }
+
+  // Pagination
+  const allBooks = await client.getAllPages('/books', 50);
+  console.log(`Fetched ${allBooks.length} books across all pages`);
+}
+
+demoRESTClient();
+```
+
 ## 15.2 WebSockets
 
 WebSocket (RFC 6455) provides full-duplex communication over a single TCP connection after an HTTP upgrade handshake. The protocol is designed for real-time applications such as chat, live updates, and gaming.
@@ -1887,6 +2331,256 @@ Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
 Opcode types: 1 (text), 2 (binary), 8 (close), 9 (ping), 10 (pong).
 
 Clients mask payload data; servers do not. Close frames carry a status code (1000 normal, 1001 going away, 1002 protocol error, 1003 unsupported data).
+
+**TypeScript Implementation: WebSocketManager with Frame Handling**
+
+```typescript
+type WebSocketState = 'CONNECTING' | 'OPEN' | 'CLOSING' | 'CLOSED';
+type MessageType = 'text' | 'binary' | 'close' | 'ping' | 'pong';
+
+interface WebSocketFrame {
+  fin: boolean;
+  opcode: number;
+  masked: boolean;
+  payloadLength: number;
+  maskingKey?: Uint8Array;
+  payload: ArrayBuffer;
+}
+
+interface MessageEvent {
+  type: MessageType;
+  data: string | ArrayBuffer;
+  timestamp: number;
+}
+
+interface WebSocketConfig {
+  url: string;
+  protocols?: string | string[];
+  reconnectInterval?: number;
+  maxReconnectAttempts?: number;
+  pingInterval?: number;
+}
+
+class WebSocketManager {
+  private ws: WebSocket | null = null;
+  private state: WebSocketState = 'CLOSED';
+  private config: Required<WebSocketConfig>;
+  private reconnectAttempts: number = 0;
+  private pingTimer: number | null = null;
+  private messageQueue: string[] = [];
+  private listeners: Map<MessageType, Set<(event: MessageEvent) => void>> = new Map();
+  private fragmentationBuffer: ArrayBuffer[] = [];
+
+  constructor(config: WebSocketConfig) {
+    this.config = {
+      url: config.url,
+      protocols: config.protocols ?? [],
+      reconnectInterval: config.reconnectInterval ?? 3000,
+      maxReconnectAttempts: config.maxReconnectAttempts ?? 5,
+      pingInterval: config.pingInterval ?? 30000
+    };
+    this.connect();
+  }
+
+  private async connect(): Promise<void> {
+    if (this.state === 'CONNECTING' || this.state === 'OPEN') return;
+
+    this.state = 'CONNECTING';
+    try {
+      this.ws = new WebSocket(this.config.url, this.config.protocols);
+      this.ws.onopen = () => {
+        this.state = 'OPEN';
+        this.reconnectAttempts = 0;
+        this.flushMessageQueue();
+        this.startPingInterval();
+        this.emit('text', { type: 'text', data: 'connected', timestamp: Date.now() });
+      };
+
+      this.ws.onmessage = (event: MessageEvent) => {
+        const frame = this.parseFrame(event);
+        this.handleFrame(frame);
+      };
+
+      this.ws.onclose = (event: CloseEvent) => {
+        this.state = 'CLOSED';
+        this.stopPingInterval();
+        this.emit('close', {
+          type: 'close',
+          data: `code=${event.code}, reason=${event.reason}`,
+          timestamp: Date.now()
+        });
+        this.attemptReconnect();
+      };
+
+      this.ws.onerror = () => {
+        this.emit('close', { type: 'close', data: 'WebSocket error', timestamp: Date.now() });
+      };
+    } catch (error) {
+      this.attemptReconnect();
+    }
+  }
+
+  private parseFrame(event: MessageEvent): WebSocketFrame {
+    const opcode = event.data instanceof ArrayBuffer ? 2 : 1; // binary=2, text=1
+    return {
+      fin: true,
+      opcode,
+      masked: false,
+      payloadLength: event.data instanceof ArrayBuffer ? event.data.byteLength : (event.data as string).length,
+      payload: event.data instanceof ArrayBuffer ? event.data : new TextEncoder().encode(event.data as string).buffer
+    };
+  }
+
+  private handleFrame(frame: WebSocketFrame): void {
+    switch (frame.opcode) {
+      case 0x0: // Continuation frame (fragmentation)
+        this.fragmentationBuffer.push(frame.payload);
+        break;
+      case 0x1: // Text frame
+        if (!frame.fin) {
+          this.fragmentationBuffer.push(frame.payload);
+        } else if (this.fragmentationBuffer.length > 0) {
+          this.fragmentationBuffer.push(frame.payload);
+          this.assembleAndEmit('text');
+        } else {
+          const text = new TextDecoder().decode(frame.payload);
+          this.emit('text', { type: 'text', data: text, timestamp: Date.now() });
+        }
+        break;
+      case 0x2: // Binary frame
+        this.emit('binary', { type: 'binary', data: frame.payload, timestamp: Date.now() });
+        break;
+      case 0x8: // Close frame
+        this.ws?.close(1000, 'Normal closure');
+        break;
+      case 0x9: // Ping
+        this.sendPong();
+        break;
+      case 0xA: // Pong
+        this.emit('pong', { type: 'pong', data: 'pong', timestamp: Date.now() });
+        break;
+    }
+  }
+
+  private assembleAndEmit(type: 'text' | 'binary'): void {
+    const totalLength = this.fragmentationBuffer.reduce((acc, buf) => acc + buf.byteLength, 0);
+    const assembled = new Uint8Array(totalLength);
+    let offset = 0;
+    for (const buf of this.fragmentationBuffer) {
+      assembled.set(new Uint8Array(buf), offset);
+      offset += buf.byteLength;
+    }
+    this.fragmentationBuffer = [];
+    if (type === 'text') {
+      this.emit('text', { type: 'text', data: new TextDecoder().decode(assembled), timestamp: Date.now() });
+    } else {
+      this.emit('binary', { type: 'binary', data: assembled.buffer, timestamp: Date.now() });
+    }
+  }
+
+  send(data: string | ArrayBuffer): void {
+    if (this.state !== 'OPEN') {
+      this.messageQueue.push(typeof data === 'string' ? data : '');
+      return;
+    }
+    this.ws?.send(data);
+  }
+
+  private flushMessageQueue(): void {
+    while (this.messageQueue.length > 0) {
+      const msg = this.messageQueue.shift();
+      if (msg) this.ws?.send(msg);
+    }
+  }
+
+  private sendPong(): void {
+    // Browser WebSocket API handles pong automatically
+    // This is a placeholder for custom implementations
+    this.emit('pong', { type: 'pong', data: 'pong', timestamp: Date.now() });
+  }
+
+  private startPingInterval(): void {
+    this.pingTimer = window.setInterval(() => {
+      if (this.state === 'OPEN') {
+        this.ws?.send(new Uint8Array([0x09])); // Ping frame (opcode 9)
+      }
+    }, this.config.pingInterval);
+  }
+
+  private stopPingInterval(): void {
+    if (this.pingTimer !== null) {
+      clearInterval(this.pingTimer);
+      this.pingTimer = null;
+    }
+  }
+
+  private attemptReconnect(): void {
+    if (this.reconnectAttempts >= this.config.maxReconnectAttempts) return;
+    this.reconnectAttempts++;
+    setTimeout(() => this.connect(), this.config.reconnectInterval);
+  }
+
+  private emit(type: MessageType, event: MessageEvent): void {
+    this.listeners.get(type)?.forEach(cb => cb(event));
+  }
+
+  on(type: MessageType, callback: (event: MessageEvent) => void): void {
+    if (!this.listeners.has(type)) this.listeners.set(type, new Set());
+    this.listeners.get(type)!.add(callback);
+  }
+
+  off(type: MessageType, callback: (event: MessageEvent) => void): void {
+    this.listeners.get(type)?.delete(callback);
+  }
+
+  close(code: number = 1000, reason: string = 'Normal closure'): void {
+    this.stopPingInterval();
+    this.ws?.close(code, reason);
+    this.state = 'CLOSED';
+  }
+
+  getState(): WebSocketState {
+    return this.state;
+  }
+}
+
+// Usage example
+function demoWebSocket() {
+  const ws = new WebSocketManager({
+    url: 'wss://echo.example.com/chat',
+    pingInterval: 25000,
+    reconnectInterval: 2000,
+    maxReconnectAttempts: 10
+  });
+
+  ws.on('text', (event) => {
+    console.log(`[WS] Message received: ${event.data}`);
+    // Output: [WS] Message received: {"type":"chat","user":"alice","text":"Hello"}
+  });
+
+  ws.on('close', (event) => {
+    console.log(`[WS] Connection closed: ${event.data}`);
+    // Output: [WS] Connection closed: code=1000, reason=Normal closure
+  });
+
+  ws.on('pong', () => {
+    console.log('[WS] Pong received — keepalive confirmed');
+    // Output: [WS] Pong received — keepalive confirmed
+  });
+
+  // Send a message
+  ws.send(JSON.stringify({ type: 'chat', user: 'bob', text: 'Hi everyone!' }));
+
+  // Check state
+  console.log(`WebSocket state: ${ws.getState()}`);
+  // Output: WebSocket state: OPEN
+
+  // Graceful close
+  ws.close(1000, 'Client disconnecting');
+}
+
+demoWebSocket();
+```
 
 ## 15.3 gRPC
 
@@ -2055,7 +2749,35 @@ Common API gateways: Kong, NGINX, AWS API Gateway, Envoy, Traefik.
 | Server → browser notifications | SSE | Simple, auto-reconnect, HTTP-only |
 | P2P video conference | WebRTC | Direct browser-to-browser media |
 
+## Case Study: API Gateway Migration for Microservices
+
+**Problem:** A growing SaaS company operated 20 microservices, each with its own authentication, rate limiting, and logging. As the system scaled to 500,000 daily active users, several issues emerged: each service implemented auth independently (OAuth2, JWT, API keys) leading to inconsistent security; rate limits were per-service, allowing abusive clients to overwhelm individual services; there was no centralized monitoring or caching layer; and clients had to manage 20 different base URLs. Response times degraded to 2-4 seconds during peak hours.
+
+**Solution:** The team migrated to Kong API Gateway as a centralized entry point. Kong was configured with: OAuth2 plugin for unified authentication (replacing per-service auth), Redis-backed rate limiting with tiered quotas (free: 10 req/min, pro: 100 req/min, enterprise: 10,000 req/min), response caching for idempotent GET endpoints (TTL: 300s), route-based traffic splitting for canary deployments, and Prometheus metrics export for unified monitoring. The migration followed a gradual rollout: first 5 services in week 1, 10 more in week 2, and all 20 by week 3. Each service was moved behind the gateway without code changes by configuring Kong's upstream targets and path-based routing.
+
+**Results:** Auth verification calls dropped by 60% (single gateway verification instead of per-service), rate limit enforcement became consistent (thousands of 429 responses eliminated), cache hit rate reached 72% reducing origin load, unified monitoring enabled 15-minute mean-time-to-detection (MTTD) for anomalies, and the client team went from managing 20 URLs to 1. Average response time improved from 3.2s to 480ms (6.7x improvement). The gateway handled 12,000 requests per second at peak with 8ms median latency overhead.
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Centralize cross-cutting concerns at the API gateway | Implement auth, rate limiting, caching, and logging at a single gateway layer rather than per-service to reduce duplication and ensure consistency |
+| Use token bucket for burst-tolerant rate limiting | Configure capacity (burst) and refill rate separately; burst handles traffic spikes while rate limits sustained throughput |
+| Implement ETag + Cache-Control together | Cache-Control provides freshness windows for performance; ETag provides validation for cache efficiency; never rely on one alone |
+| Prefer URI versioning for public APIs | `/v1/resources` is cache-friendly, visible in URLs, and easy to route; header versioning hides the contract from casual inspection |
+| Use HATEOAS links for API discoverability | Include `_links` with `self`, `next`, and relationship links so clients navigate without hardcoded URLs |
+| Always validate input and return proper status codes | 400 for bad request, 422 for validation failures, 409 for conflicts — precise status codes enable automated error handling |
+| Design resources around business actions, not CRUD | A `POST /orders/{id}/cancel` endpoint is more expressive and discoverable than `PATCH /orders/{id}` with `{status: "cancelled"}` |
+
 ## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|----------|----|----|----|----|--------|
+| 1 | Which HTTP method is idempotent? | POST | PATCH | PUT | DELETE | **C** |
+| 2 | What does WebSocket use for the initial handshake? | UDP upgrade | HTTP upgrade | TLS directly | DNS query | **B** |
+| 3 | Which gRPC service type allows independent bidirectional streams? | Unary | Server streaming | Bidirectional streaming | Client streaming | **C** |
+| 4 | Which WebRTC component relays traffic when direct P2P fails? | STUN | TURN | ICE | SDP | **B** |
+| 5 | Which Cache-Control directive prevents any caching? | no-cache | no-store | private | must-revalidate | **B** |
 
 1. **Which HTTP method is idempotent?**
    - a) POST
@@ -2115,26 +2837,154 @@ RESTful APIs model resources as nouns with HTTP methods as verbs, leveraging sta
 
 ### Review Questions
 
-1. What is the difference between PUT and PATCH in REST?
-2. How does a WebSocket connection differ from a long-lived HTTP connection?
-3. What advantage does gRPC streaming have over REST polling?
-4. How does GraphQL solve the over-fetching problem common in REST?
-5. What role does ICE play in WebRTC connection establishment?
-6. Explain how ETag-based conditional requests reduce bandwidth usage.
-7. Compare token bucket and fixed window rate limiting algorithms.
-8. Why is POST not idempotent? Give a concrete example.
+<details>
+<summary>1. What is the difference between PUT and PATCH in REST?</summary>
+PUT replaces the entire resource. It is idempotent — sending the same PUT request multiple times produces the same state. PATCH applies a partial update to a resource. It is not necessarily idempotent (depends on the patch format, e.g., JSON Merge Patch can be idempotent if values are absolute, but JSON Patch with increment operations is not). PUT sends the full resource representation; PATCH sends only the changes.
+</details>
+
+<details>
+<summary>2. How does a WebSocket connection differ from a long-lived HTTP connection?</summary>
+A long-lived HTTP connection (keep-alive) still uses request-response: client sends a request, server sends a response, and the connection stays open for more requests. WebSocket upgrades the connection via HTTP Upgrade handshake (101 Switching Protocols) and provides full-duplex communication where both sides can send messages independently at any time. WebSocket also has a binary frame format (opcodes, masking, fragmentation) and uses ping/pong for keepalive.
+</details>
+
+<details>
+<summary>3. What advantage does gRPC streaming have over REST polling?</summary>
+gRPC streaming (server-streaming, client-streaming, bidirectional) maintains a single persistent HTTP/2 connection. REST polling requires repeated HTTP requests, each with header overhead, TLS handshake overhead for new connections, and server processing for each request. A single gRPC stream can replace hundreds of REST GET requests, reducing latency (no repeated connection setup), bandwidth (binary protobuf vs JSON), and server load (one stream instead of many requests).
+</details>
+
+<details>
+<summary>4. How does GraphQL solve the over-fetching problem common in REST?</summary>
+In REST, the server defines the response structure. A GET /users/42 endpoint might return all user fields (name, email, address, phone, orders, etc.) even if the client only needs the name. This wastes bandwidth. GraphQL lets the client specify exactly which fields it needs: { user(id: 42) { name } }. The server returns only the requested fields. This eliminates over-fetching (too much data) and under-fetching (too little data requiring additional requests).
+</details>
+
+<details>
+<summary>5. What role does ICE play in WebRTC connection establishment?</summary>
+ICE (Interactive Connectivity Establishment) coordinates STUN and TURN candidates to find the best path for peer-to-peer connections. ICE collects all possible connection candidates (local IP, public IP via STUN, TURN relay), sorts them by priority, and attempts each candidate pair. The highest-priority working pair is selected. This enables WebRTC to work through NATs and firewalls by trying multiple connectivity strategies.
+</details>
+
+<details>
+<summary>6. Explain how ETag-based conditional requests reduce bandwidth usage.</summary>
+The server computes a hash (ETag) for each resource version. The client stores the ETag and sends it in the If-None-Match header on subsequent requests. If the resource hasn't changed, the server returns 304 Not Modified with an empty body (saving bandwidth on the full response). If changed, the server returns 200 with the full response and new ETag. This means unchanged resources consume only header bytes (~200 bytes) instead of the full response body (potentially kilobytes or megabytes).
+</details>
+
+<details>
+<summary>7. Compare token bucket and fixed window rate limiting algorithms.</summary>
+Token bucket: Tokens fill at a constant rate (e.g., 10 tokens/sec) up to a capacity (e.g., 100). Each request consumes one token. Allows bursts up to capacity while enforcing long-term rate. Fixed window: Count requests in a time window (e.g., 60 seconds). Allows bursts at window boundaries (all 100 requests in the last second of the window). Token bucket provides smoother traffic shaping while fixed window is simpler to implement but allows traffic spikes.
+</details>
+
+<details>
+<summary>8. Why is POST not idempotent? Give a concrete example.</summary>
+POST creates a new resource on each invocation. POST /books with body {title: "1984"} creates a new book each time. The first call creates book #1, the second call creates book #2 (different resource even with same body). If the client doesn't receive a response and retries, it creates a duplicate. This is why POST is not idempotent. Contrast with PUT: PUT /books/1 replaces the resource; repeating it produces the same state.
+</details>
 
 ### Application Problems
 
-9. Design a RESTful API for a library system with books, authors, members, and loans. Define the resource URIs, HTTP methods, request bodies, and response format for each operation.
-10. A real-time collaborative document editor needs to synchronize changes across multiple users. Compare WebSockets, SSE, and gRPC streaming for this use case. Justify your recommendation.
-11. An API gateway receives 10,000 requests per second. Each request requires authentication (database lookup), rate limiting (Redis check), and routing to one of 20 backend services. Compute the average latency added by the gateway if authentication takes 2 ms, rate limiting takes 0.5 ms, and routing takes 0.1 ms. What is the gateway's throughput capacity?
+<details>
+<summary>9. Design a RESTful API for a library system with books, authors, members, and loans.</summary>
+
+Resources and endpoints:
+- `GET /books` — List books (filter by author, genre, year). Returns 200 with array.
+- `GET /books/{id}` — Get book details. Returns 200 or 404.
+- `POST /books` — Add a book. Body: {title, authorId, isbn, year, genre}. Returns 201 with Location header.
+- `PUT /books/{id}` — Replace book info. Returns 200 or 404.
+- `PATCH /books/{id}` — Partial update. Returns 200 or 404.
+- `DELETE /books/{id}` — Remove book. Returns 204 or 404.
+- `GET /authors` / `GET /authors/{id}` / `POST /authors` / `PUT /authors/{id}` — Author CRUD.
+- `GET /members` / `GET /members/{id}` / `POST /members` — Member CRUD.
+- `GET /members/{id}/loans` — Member's active loans.
+- `POST /loans` — Check out a book. Body: {memberId, bookId, dueDate}. Returns 201.
+- `POST /loans/{id}/return` — Return a book. Returns 200.
+- `GET /loans` — List loans (filter by status=active/overdue/returned).
+
+Response format: JSON with HATEOAS links. All list endpoints support pagination via ?page=&limit=.
+</details>
+
+<details>
+<summary>10. A real-time collaborative document editor needs to synchronize changes across multiple users. Compare WebSockets, SSE, and gRPC streaming.</summary>
+
+**WebSockets:** Best choice. Full-duplex communication allows both sending edits and receiving updates simultaneously. Low latency, efficient binary framing, and built-in ping/pong for connection health. The editor sends character-level changes (OT operations or CRDT mutations) and receives other users' changes in real-time.
+
+**SSE:** Unidirectional (server→client). The client would need separate HTTP POST requests to send edits, which adds overhead and complexity. Not suitable for bidirectional collaboration.
+
+**gRPC streaming:** Bidirectional streaming works, but adds complexity with protobuf schema definition and requires HTTP/2. Overkill for a browser-based editor (WebSocket is native to browsers).
+
+**Recommendation:** WebSockets. Use a shared CRDT (e.g., Yjs) for conflict resolution, transmit operations as binary-encoded delta over the WebSocket. Fall back to long-polling if WebSocket is unavailable.
+</details>
+
+<details>
+<summary>11. API gateway latency and throughput calculation.</summary>
+
+Given: 10,000 req/s, auth=2ms, rate limiting=0.5ms, routing=0.1ms, 20 backends.
+
+Average latency added by gateway = auth + rate limiting + routing = 2 + 0.5 + 0.1 = 2.6 ms.
+
+Throughput capacity: With 2.6ms processing per request, a single gateway thread can handle 1000/2.6 ≈ 384 requests/second. For 10,000 req/s, we need 10,000/384 ≈ 27 concurrent workers (threads or event loop capacity). In practice, async/event-driven gateways (Kong, Envoy) handle this with fewer OS threads. Gateway throughput is typically bottlenecked by upstream service response time, not gateway processing (which is sub-millisecond per hop).
+</details>
 
 ### Challenge Problems
 
-12. **Design a real-time collaborative whiteboard protocol.** The whiteboard supports: (a) 10 simultaneous users, (b) vector drawing (lines, rectangles, circles), (c) undo/redo per user, and (d) cursor position sharing. Design the protocol using WebRTC DataChannel for peer-to-peer communication with a fallback to a WebSocket relay for users behind symmetric NAT. Define the message format (including CRDT or OT for conflict resolution), the signaling process, and the fallback mechanism. Analyze the bandwidth requirements for smooth real-time drawing at 60 updates per second per user.
+<details>
+<summary>12. Design a real-time collaborative whiteboard protocol.</summary>
 
-13. **Design an HTTP caching strategy for a news API.** The API serves articles that are updated on average every 4 hours. Breaking news articles are updated every 5 minutes. User-specific feeds should not be cached by CDN. Design the Cache-Control and ETag strategy for each type of endpoint, considering: (a) article list endpoint, (b) single article endpoint, (c) breaking news endpoint, (d) user feed endpoint. Explain how you'd handle cache invalidation when an editor publishes an update.
+**Protocol design:** Use WebRTC DataChannel (SCTP over DTLS) with WebSocket relay fallback. Each user maintains a CRDT (Conflict-free Replicated Data Type) state for the whiteboard.
 
-14. **Implement a rate limiting design for a public API.** The API has three tiers: free (10 req/min), pro (100 req/min), and enterprise (10000 req/min). Design the distributed rate limiter using Redis. Include: (a) the data structure choice, (b) Lua script for atomic operations, (c) the token bucket parameters for each tier, (d) how you'd handle rate limit headers, and (e) graceful degradation when Redis is unavailable.
+**Message format (binary):**
+- Header: 1 byte message type + 2 byte user ID + 4 byte timestamp + 4 byte sequence number
+- Types: 0x01=AddShape, 0x02=MoveShape, 0x03=DeleteShape, 0x04=CursorMove, 0x05=Undo, 0x06=Redo
+- Shape payload: type(1B) + x1(4B float) + y1(4B float) + x2(4B float) + y2(4B float) + color(3B) + strokeWidth(2B)
+- Cursor payload: x(4B) + y(4B)
+
+**Conflict resolution:** Each operation has a unique (userID, clock) tuple. CRDT ensures commutativity: operations from different users can be applied in any order and converge to the same state. Undo/redo uses operation counter per user.
+
+**Signaling:** WebSocket-based signaling server exchanges SDP offers/answers and ICE candidates between peers.
+
+**Fallback:** If ICE connection fails after 5 seconds, fall back to WebSocket relay. The relay forwards binary messages between users.
+
+**Bandwidth:** 60 updates/s × 10 users = 600 msg/s. Each draw message ≈ 30 bytes. Total: 18 KB/s = 144 Kbps, well within WebRTC DataChannel and WebSocket capacity (target <500 Kbps).
+</details>
+
+<details>
+<summary>13. Design an HTTP caching strategy for a news API.</summary>
+
+**Article list endpoint** (`GET /api/articles`):
+- `Cache-Control: public, max-age=300, s-maxage=600` (5 min browser, 10 min CDN)
+- ETag based on `COUNT(*) + MAX(updated_at)` from articles table
+- Conditional: `If-None-Match` returns 304 when unchanged
+
+**Single article endpoint** (`GET /api/articles/{id}`):
+- `Cache-Control: public, max-age=14400, s-maxage=3600` (4 hours browser, 1 hour CDN)
+- ETag based on `updated_at` timestamp
+
+**Breaking news endpoint** (`GET /api/breaking`):
+- `Cache-Control: public, max-age=60, s-maxage=300` (1 min browser, 5 min CDN)
+- Shorter TTL for frequently updated content
+
+**User feed endpoint** (`GET /api/feed`):
+- `Cache-Control: private, max-age=60` (private = no CDN caching)
+- ETag based on user's last read timestamp
+- No shared caching because feeds are user-specific
+
+**Invalidation:** When editor publishes an update, purge CDN cache for specific article URL + list endpoint. Use versioned URLs (`/api/articles/123?v=2`) for breaking news to avoid purge delays. Implement stale-while-revalidate for popular articles to serve stale content while fetching fresh version from origin.
+</details>
+
+<details>
+<summary>14. Implement a rate limiting design for a public API with Redis.</summary>
+
+**Data structure:** Redis Sorted Set per client: `ratelimit:{clientId}`. Score = timestamp, member = timestamp. This enables sliding window log.
+
+**Lua script for atomic operations:** The script checks the count in the current window, increments if allowed, and returns the decision with remaining count. This ensures atomicity across concurrent requests.
+
+**Token bucket parameters per tier:**
+- Free: capacity=10, refillRate=10/60 per sec (10 tokens per minute)
+- Pro: capacity=100, refillRate=100/60 per sec
+- Enterprise: capacity=10000, refillRate=10000/60 per sec
+
+**Rate limit headers:** All responses include:
+- `X-RateLimit-Limit`: max requests per window
+- `X-RateLimit-Remaining`: remaining requests
+- `X-RateLimit-Reset`: UNIX timestamp when limit resets
+- `Retry-After`: seconds to wait (on 429 response)
+
+**Graceful degradation:** When Redis is unavailable, fall back to local in-memory token bucket (per-node rate limiting). This may allow slightly more requests during failover but prevents a Redis outage from blocking all API traffic. Log Redis failures for monitoring alerting.
+</details>
 

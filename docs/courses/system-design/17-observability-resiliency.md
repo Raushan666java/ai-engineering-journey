@@ -553,33 +553,40 @@ Querying Loki for `{correlation_id="abc-123"}` reconstructs the full request flo
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What are the three pillars of observability? | CPU, Memory, Disk | Logging, Metrics, Tracing | Alerts, Dashboards, Runbooks | Uptime, Latency, Throughput | **B** |
+| 2 | Which Prometheus metric type is monotonically increasing? | Gauge | Counter | Histogram | Summary | **B** |
+| 3 | In the circuit breaker pattern, what happens in the HALF-OPEN state? | All requests fail fast | A single probe request is allowed through | The circuit resets immediately | Error counters are reset | **B** |
+| 4 | What is the RED method used for? | Resource monitoring | Service-level monitoring | Database monitoring | Network monitoring | **B** |
+| 5 | Which sampling strategy retains all traces that include errors? | Head-based | Rate-limiting | Tail-based | Probabilistic | **C** |
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+---
 
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Practical Takeaways
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+| Takeaway | Application |
+|----------|-------------|
+| Implement the three pillars (logging, metrics, tracing) from day one — retrofitting observability is 10× harder | Deploy OpenTelemetry SDK with auto-instrumentation; export to Prometheus + Loki + Jaeger |
+| Use RED method (Rate, Errors, Duration) for every service; USE method (Utilization, Saturation, Errors) for every resource | Define SLOs: P99 latency < 200ms, error rate < 0.1%. Alert when error budget burns faster than threshold |
+| Structured JSON logging with correlation IDs enables cross-service log stitching | Inject X-Correlation-Id at the API gateway; propagate via HTTP headers to all downstream services |
+| Circuit breaker with HALF-OPEN probes prevents cascading failures | Set failure threshold = 5, recovery timeout = 30s, half-open max = 3. Use fallbacks for degraded response |
+| Bulkhead isolation protects critical resources: thread pool for high-latency, semaphore for low-latency dependencies | Payment service: dedicated 5-thread pool. Cache: semaphore(50) — lightweight, no context switch |
+| Retry with exponential backoff + full jitter prevents thundering herd on recovery | Base delay = 200ms, max = 20s, 3 retries. Only retry on 5xx and connection errors (not 4xx) |
+| Chaos engineering validates resilience: start with instance failure, escalate to region failure | Weekly Chaos Monkey experiment; automated rollback if P99 exceeds SLO for 3 consecutive minutes |
 
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Case Study
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+**Scenario: Payment Processing Platform Observability Overhaul**
 
-## Concept Comparison
+A payment processing platform handling $2 billion in monthly transaction volume suffers from frequent incident response delays. When P99 latency spikes from 50ms to 5 seconds, the on-call engineer spends 45 minutes manually SSHing into servers to examine logs, only to discover the Redis cluster hit its maxmemory limit and evicted cache entries, causing a cascade of origin database queries.
+
+The team implements a complete observability stack. First, they deploy OpenTelemetry auto-instrumentation across all 45 microservices. Each service exports RED metrics (request rate, error rate, latency histograms) to Prometheus, structured JSON logs to Loki with correlation IDs, and distributed traces to Jaeger. A Grafana dashboard shows the payment flow end-to-end: from API gateway to fraud detection to bank processor to ledger update.
+
+Second, they implement resiliency patterns. The circuit breaker on the bank processor opens after 3 consecutive 500 errors, returning a cached "payment queued" response while the processor recovers. The bulkhead isolates the 10 most critical dependencies — each with its own thread pool. Retry with jitter (base=100ms, max=10s, 3 retries) handles transient bank network failures. A health check endpoint (`/ready`) reports dependency status and the orchestrator removes pods whose critical dependencies are unhealthy.
+
+Third, they introduce chaos engineering. Weekly Chaos Monkey experiments randomly kill two pods per deployment. Monthly Chaos Gorilla experiments simulate an entire AWS AZ failure. The steady-state hypothesis: P99 latency < 200ms, error rate < 0.05%, and the system fully recovers within 5 minutes of an AZ failure. Automated rollback triggers when any SLO is violated for 3 consecutive minutes. After six months, mean time to detect (MTTD) drops from 30 minutes to 2 minutes, and mean time to resolve (MTTR) drops from 90 minutes to 8 minutes.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
@@ -724,6 +731,396 @@ class DistributedTracer {
 ```
 
 
+### TypeScript: Metrics Collector with Counters, Gauges, Histograms, and Export
+
+```typescript
+interface MetricValue {
+  value: number;
+  timestamp: number;
+  labels: Record<string, string>;
+}
+
+class MetricsCollector {
+  private counters = new Map<string, number>();
+  private gauges = new Map<string, number>();
+  private histograms = new Map<string, number[]>();
+  private metricHistory = new Map<string, MetricValue[]>();
+  private maxHistory = 10000;
+
+  increment(name: string, by = 1, labels: Record<string, string> = {}): void {
+    const key = this.labelKey(name, labels);
+    this.counters.set(key, (this.counters.get(key) ?? 0) + by);
+    this.recordHistory(name, this.counters.get(key)!, labels);
+  }
+
+  setGauge(name: string, value: number, labels: Record<string, string> = {}): void {
+    const key = this.labelKey(name, labels);
+    this.gauges.set(key, value);
+    this.recordHistory(name, value, labels);
+  }
+
+  observe(name: string, value: number, labels: Record<string, string> = {}): void {
+    const key = this.labelKey(name, labels);
+    if (!this.histograms.has(key)) this.histograms.set(key, []);
+    this.histograms.get(key)!.push(value);
+    this.recordHistory(name, value, labels);
+  }
+
+  getCounter(name: string, labels: Record<string, string> = {}): number {
+    return this.counters.get(this.labelKey(name, labels)) ?? 0;
+  }
+
+  getGauge(name: string, labels: Record<string, string> = {}): number {
+    return this.gauges.get(this.labelKey(name, labels)) ?? 0;
+  }
+
+  percentile(name: string, p: number, labels: Record<string, string> = {}): number {
+    const key = this.labelKey(name, labels);
+    const vals = this.histograms.get(key);
+    if (!vals || vals.length === 0) return 0;
+    const sorted = [...vals].sort((a, b) => a - b);
+    const idx = Math.ceil((p / 100) * sorted.length) - 1;
+    return sorted[Math.max(0, idx)];
+  }
+
+  p50(name: string, labels?: Record<string, string>): number { return this.percentile(name, 50, labels); }
+  p95(name: string, labels?: Record<string, string>): number { return this.percentile(name, 95, labels); }
+  p99(name: string, labels?: Record<string, string>): number { return this.percentile(name, 99, labels); }
+
+  exportPrometheus(): string {
+    let output = '';
+    for (const [key, val] of this.counters) {
+      output += `# HELP ${key} Counter metric\n# TYPE ${key} counter\n${key} ${val}\n`;
+    }
+    for (const [key, val] of this.gauges) {
+      output += `# HELP ${key} Gauge metric\n# TYPE ${key} gauge\n${key} ${val}\n`;
+    }
+    for (const [key, vals] of this.histograms) {
+      output += `# HELP ${key} Histogram metric\n# TYPE ${key} histogram\n`;
+      const sorted = [...vals].sort((a, b) => a - b);
+      const buckets = [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5];
+      let cum = 0;
+      for (const b of buckets) {
+        cum = sorted.filter(v => v <= b).length;
+        output += `${key}_bucket{le="${b}"} ${cum}\n`;
+      }
+      output += `${key}_bucket{le="+Inf"} ${vals.length}\n`;
+      output += `${key}_sum ${vals.reduce((a, b) => a + b, 0)}\n`;
+      output += `${key}_count ${vals.length}\n`;
+    }
+    return output;
+  }
+
+  private recordHistory(name: string, value: number, labels: Record<string, string>): void {
+    if (!this.metricHistory.has(name)) this.metricHistory.set(name, []);
+    const history = this.metricHistory.get(name)!;
+    history.push({ value, timestamp: Date.now(), labels });
+    if (history.length > this.maxHistory) history.shift();
+  }
+
+  queryHistory(name: string, durationMs = 300000): MetricValue[] {
+    const cutoff = Date.now() - durationMs;
+    return (this.metricHistory.get(name) ?? []).filter(m => m.timestamp >= cutoff);
+  }
+
+  private labelKey(name: string, labels: Record<string, string>): string {
+    const parts = Object.entries(labels).map(([k, v]) => `${k}=${v}`).sort().join(',');
+    return parts ? `${name}{${parts}}` : name;
+  }
+}
+```
+
+### TypeScript: Structured Logger with Levels, Correlation ID, and Sampling
+
+```typescript
+type LogLevel = 'debug' | 'info' | 'warn' | 'error' | 'critical';
+
+class StructuredLogger {
+  private correlationId: string | null = null;
+  private context: Record<string, any> = {};
+  private sampleRate = 1.0;
+  private entries: string[] = [];
+  private maxEntries = 10000;
+
+  constructor(private name: string, private minLevel: LogLevel = 'info') {}
+
+  setCorrelationId(id: string): void { this.correlationId = id; }
+  getCorrelationId(): string | null { return this.correlationId; }
+
+  setContext(key: string, value: any): void { this.context[key] = value; }
+  clearContext(): void { this.context = {}; }
+
+  setSampleRate(rate: number): void { this.sampleRate = Math.max(0, Math.min(1, rate)); }
+
+  private shouldSample(): boolean { return Math.random() < this.sampleRate; }
+
+  private log(level: LogLevel, message: string, meta?: Record<string, any>): void {
+    if (!this.shouldSample()) return;
+    const levelOrder: Record<LogLevel, number> = { debug: 0, info: 1, warn: 2, error: 3, critical: 4 };
+    if (levelOrder[level] < levelOrder[this.minLevel]) return;
+
+    const entry = JSON.stringify({
+      timestamp: new Date().toISOString(),
+      logger: this.name,
+      level,
+      message,
+      correlation_id: this.correlationId,
+      ...this.context,
+      ...meta,
+    });
+    this.entries.push(entry);
+    if (this.entries.length > this.maxEntries) this.entries.shift();
+
+    switch (level) {
+      case 'critical': console.error(entry); break;
+      case 'error': console.error(entry); break;
+      case 'warn': console.warn(entry); break;
+      default: console.log(entry);
+    }
+  }
+
+  debug(msg: string, meta?: Record<string, any>): void { this.log('debug', msg, meta); }
+  info(msg: string, meta?: Record<string, any>): void { this.log('info', msg, meta); }
+  warn(msg: string, meta?: Record<string, any>): void { this.log('warn', msg, meta); }
+  error(msg: string, meta?: Record<string, any>): void { this.log('error', msg, meta); }
+  critical(msg: string, meta?: Record<string, any>): void { this.log('critical', msg, meta); }
+
+  getEntries(): string[] { return [...this.entries]; }
+  clear(): void { this.entries = []; }
+
+  filterByCorrelationId(id: string): string[] {
+    return this.entries.filter(e => {
+      try { return JSON.parse(e).correlation_id === id; }
+      catch { return false; }
+    });
+  }
+
+  filterByLevel(level: LogLevel): string[] {
+    return this.entries.filter(e => {
+      try { return JSON.parse(e).level === level; }
+      catch { return false; }
+    });
+  }
+
+  child(name: string): StructuredLogger {
+    const child = new StructuredLogger(`${this.name}.${name}`, this.minLevel);
+    child.setCorrelationId(this.correlationId ?? '');
+    child.setSampleRate(this.sampleRate);
+    return child;
+  }
+}
+
+function demoLogger() {
+  const log = new StructuredLogger('order-service', 'info');
+  log.setCorrelationId('corr-abc-123');
+  log.setContext('service_version', '2.1.0');
+  log.info('order_placed', { orderId: 'ord-456', userId: 'usr-789', total: 129.99 });
+  log.error('payment_failed', { orderId: 'ord-456', error: 'insufficient_funds' });
+  console.log('Filtered by corr id:', log.filterByCorrelationId('corr-abc-123').length);
+}
+```
+
+### TypeScript: Health Checker with Liveness, Readiness, and Dependency Probes
+
+```typescript
+interface HealthCheckResult {
+  name: string;
+  status: 'healthy' | 'degraded' | 'unhealthy';
+  latencyMs: number;
+  error?: string;
+  lastSuccess: number;
+}
+
+interface DependencyProbe {
+  name: string;
+  check: () => Promise<boolean>;
+  timeoutMs: number;
+  critical: boolean;
+}
+
+class HealthChecker {
+  private livenessProbes: Map<string, () => Promise<boolean>> = new Map();
+  private readinessProbes: Map<string, () => Promise<boolean>> = new Map();
+  private dependencies: DependencyProbe[] = [];
+  private results = new Map<string, HealthCheckResult>();
+  private consecutiveFailures = new Map<string, number>();
+  private maxConsecutiveFailures = 3;
+
+  registerLiveness(name: string, probe: () => Promise<boolean>): void {
+    this.livenessProbes.set(name, probe);
+  }
+
+  registerReadiness(name: string, probe: () => Promise<boolean>): void {
+    this.readinessProbes.set(name, probe);
+  }
+
+  addDependency(name: string, check: () => Promise<boolean>, critical = true, timeoutMs = 5000): void {
+    this.dependencies.push({ name, check, timeoutMs, critical });
+  }
+
+  async checkLiveness(): Promise<{ healthy: boolean; checks: HealthCheckResult[] }> {
+    const checks: HealthCheckResult[] = [];
+    for (const [name, probe] of this.livenessProbes) {
+      checks.push(await this.runProbe(name, probe, true));
+    }
+    return { healthy: checks.every(c => c.status === 'healthy'), checks };
+  }
+
+  async checkReadiness(): Promise<{ healthy: boolean; checks: HealthCheckResult[] }> {
+    const checks: HealthCheckResult[] = [];
+    for (const [name, probe] of this.readinessProbes) {
+      checks.push(await this.runProbe(name, probe, false));
+    }
+    for (const dep of this.dependencies) {
+      const result = await this.runDependencyProbe(dep);
+      checks.push(result);
+    }
+    const criticalHealthy = checks.every(c => c.status !== 'unhealthy');
+    const degraded = checks.some(c => c.status === 'degraded');
+    return { healthy: criticalHealthy && !degraded, checks };
+  }
+
+  private async runProbe(name: string, probe: () => Promise<boolean>, isLiveness: boolean): Promise<HealthCheckResult> {
+    const start = Date.now();
+    try {
+      const ok = await probe();
+      const latency = Date.now() - start;
+      if (ok) {
+        this.consecutiveFailures.set(name, 0);
+        const result: HealthCheckResult = { name, status: 'healthy', latencyMs: latency, lastSuccess: Date.now() };
+        this.results.set(name, result);
+        return result;
+      }
+      return this.failProbe(name, latency, 'Probe returned false');
+    } catch (err) {
+      return this.failProbe(name, Date.now() - start, `Probe error: ${err}`);
+    }
+  }
+
+  private async runDependencyProbe(dep: DependencyProbe): Promise<HealthCheckResult> {
+    const start = Date.now();
+    try {
+      const timeoutPromise = new Promise<boolean>((_, reject) =>
+        setTimeout(() => reject(new Error('Timeout')), dep.timeoutMs)
+      );
+      const ok = await Promise.race([dep.check(), timeoutPromise]);
+      const latency = Date.now() - start;
+      if (ok) {
+        this.consecutiveFailures.set(dep.name, 0);
+        const result: HealthCheckResult = { name: `dep:${dep.name}`, status: 'healthy', latencyMs: latency, lastSuccess: Date.now() };
+        this.results.set(dep.name, result);
+        return result;
+      }
+      return this.failProbe(dep.name, latency, 'Dependency unhealthy');
+    } catch (err) {
+      const failures = (this.consecutiveFailures.get(dep.name) ?? 0) + 1;
+      this.consecutiveFailures.set(dep.name, failures);
+      const latency = Date.now() - start;
+      if (failures >= this.maxConsecutiveFailures && !dep.critical) {
+        return { name: `dep:${dep.name}`, status: 'degraded', latencyMs: latency, error: String(err), lastSuccess: this.results.get(dep.name)?.lastSuccess ?? 0 };
+      }
+      return this.failProbe(dep.name, latency, String(err));
+    }
+  }
+
+  private failProbe(name: string, latency: number, error: string): HealthCheckResult {
+    const failures = (this.consecutiveFailures.get(name) ?? 0) + 1;
+    this.consecutiveFailures.set(name, failures);
+    const status = failures >= this.maxConsecutiveFailures ? 'unhealthy' : 'degraded';
+    const result: HealthCheckResult = { name, status, latencyMs: latency, error, lastSuccess: this.results.get(name)?.lastSuccess ?? 0 };
+    this.results.set(name, result);
+    return result;
+  }
+
+  getResults(): Map<string, HealthCheckResult> { return new Map(this.results); }
+
+  resetCounters(): void { this.consecutiveFailures.clear(); }
+
+  toJSON(): object {
+    return {
+      healthy: [...this.results.values()].every(r => r.status === 'healthy'),
+      checks: Object.fromEntries(this.results),
+    };
+  }
+}
+
+async function demoHealth() {
+  const hc = new HealthChecker();
+  hc.registerLiveness('process', async () => true);
+  hc.registerReadiness('db-connection', async () => {
+    await new Promise(r => setTimeout(r, 5));
+    return true;
+  });
+  hc.addDependency('redis', async () => {
+    await new Promise(r => setTimeout(r, 2));
+    return Math.random() > 0.3;
+  }, true);
+  hc.addDependency('payment-gateway', async () => {
+    await new Promise(r => setTimeout(r, 50));
+    return Math.random() > 0.5;
+  }, false);
+  const liveness = await hc.checkLiveness();
+  console.log('Liveness:', liveness.healthy);
+  const readiness = await hc.checkReadiness();
+  console.log('Readiness:', readiness.healthy, readiness.checks.map(c => `${c.name}=${c.status}`));
+}
+```
+
+### Observability Three Pillars with Subgraphs
+
+```mermaid
+flowchart TB
+    subgraph LOGGING["Pillar 1: Logging"]
+        ST_LOGS["Structured Logs<br/>JSON format<br/>Level: INFO/ERROR"]
+        CORR_ID["Correlation ID<br/>X-Correlation-Id<br/>Cross-service trace"]
+        LOG_AGG["Log Aggregation<br/>Loki / ELK Stack<br/>Label-based indexing"]
+    end
+
+    subgraph METRICS["Pillar 2: Metrics"]
+        COUNTERS["Counters<br/>http_requests_total<br/>Monotonically increasing"]
+        GAUGES["Gauges<br/>cpu_usage_percent<br/>Up/down with load"]
+        HISTOGRAMS["Histograms<br/>request_duration_seconds<br/>Bucket-based quantiles"]
+        RED_METHOD["RED Method<br/>Rate / Errors / Duration"]
+        USE_METHOD["USE Method<br/>Utilization / Saturation / Errors"]
+    end
+
+    subgraph TRACING["Pillar 3: Tracing"]
+        SPANS["Spans<br/>Individual operations<br/>Parent-child hierarchy"]
+        TRACES["Traces<br/>End-to-end request path<br/>Waterfall visualization"]
+        CTX_PROP["Context Propagation<br/>W3C TraceContext<br/>traceparent header"]
+        SAMPLING["Sampling Strategies<br/>Head-based / Tail-based<br/>Rate-limited"]
+    end
+
+    subgraph ALERTING["Alerting & Dashboards"]
+        PROM_ALERT["Prometheus Alertmanager<br/>Grouping / Silencing<br/>PagerDuty / Slack"]
+        GRAFANA["Grafana Dashboards<br/>RED/USE panels<br/>Deployment annotations"]
+        SLO["SLO / Error Budget<br/>99.9% uptime target<br/>Burn rate alerts"]
+    end
+
+    subgraph RESILIENCY["Resiliency Patterns"]
+        CB["Circuit Breaker<br/>CLOSED / OPEN / HALF-OPEN<br/>Failure threshold"]
+        BH["Bulkhead<br/>Thread pool isolation<br/>Semaphore isolation"]
+        RETRY["Retry + Jitter<br/>Exponential backoff<br/>Full jitter randomization"]
+        LS["Load Shedding<br/>Queue depth limits<br/>Priority-based rejection"]
+    end
+
+    LOGGING & METRICS --> ALERTING
+    TRACING --> METRICS
+    RESILIENCY --> METRICS
+    RESILIENCY --> LOGGING
+
+    classDef pillar1 fill:#E3F2FD,color:#1565C0
+    classDef pillar2 fill:#F3E5F5,color:#7B1FA2
+    classDef pillar3 fill:#E8F5E9,color:#2E7D32
+    classDef alert fill:#FFF3E0,color:#E65100
+    classDef resil fill:#FFEBEE,color:#C62828
+    class ST_LOGS,CORR_ID,LOG_AGG pillar1
+    class COUNTERS,GAUGES,HISTOGRAMS,RED_METHOD,USE_METHOD pillar2
+    class SPANS,TRACES,CTX_PROP,SAMPLING pillar3
+    class PROM_ALERT,GRAFANA,SLO alert
+    class CB,BH,RETRY,LS resil
+```
+
 ### Implementation: Observability, Monitoring, and Resiliency
 
 ```typescript
@@ -859,23 +1256,39 @@ export { Cache, Logger, computeHash, CacheEntry }
 ## Exercises
 
 ### Review Questions
-
-1. Explain the difference between a Prometheus Histogram and Summary. When would you use each, and why can't summaries be aggregated across instances?
-2. How does the W3C TraceContext header propagate trace context across HTTP boundaries? Describe the fields in the `traceparent` header.
-3. Compare thread pool isolation and semaphore isolation in the bulkhead pattern. Under what latency conditions is each preferred?
-4. In the circuit breaker pattern, why does the HALF-OPEN state exist? What happens if a single probe request succeeds but the service immediately fails again?
-5. Distinguish the Four Golden Signals (Google SRE methodology) from the RED and USE methods. Which applies to services, which to resources, and when do they overlap?
+<details><summary>Solution</summary>1. Histogram: client-side bucket counters; quantiles computed server-side; supports aggregation across instances. Summary: client-side quantile estimation; cannot aggregate across instances because quantiles are not additive. Use Histogram when you need aggregated percentiles (e.g., fleet-wide P99). Use Summary when you need exact quantiles per instance (e.g., per-pod memory pressure).
+2. W3C TraceContext uses the `traceparent` header format: `version-trace_id-span_id-trace_flags`. Version (00 for current), trace_id (16-byte globally unique ID), span_id (8-byte parent span ID), flags (01 = sampled). `tracestate` carries vendor-specific data. Context propagates via: service receives header, creates child span with new span_id, passes same trace_id and new span_id to downstream calls.
+3. Thread pool: dedicated OS threads per dependency. Use for high-latency dependencies (P50 > 50ms) where context switching cost is amortized over long operations. Semaphore: no thread context switch, just a counter. Use for low-latency dependencies (<10ms) where thread overhead would dominate. Semaphore uses less memory but cannot isolate thread starvation.
+4. HALF-OPEN exists for recovery detection. A single probe request tests if the downstream service has recovered. If it succeeds, the circuit closes. If it fails, the circuit re-opens and the recovery timer resets. One success followed by immediate failure is handled because the circuit transitions to CLOSED only after `successThreshold` consecutive successes (typically 3).
+5. Four Golden Signals (Google SRE): Latency, Traffic, Errors, Saturation — applicable to both services and infrastructure. RED (Rate, Errors, Duration): designed specifically for services. USE (Utilization, Saturation, Errors): designed specifically for resources. Overlap: Saturation (Golden Signals) ≈ Utilization + Saturation (USE) when applied to services as queue depth.</details>
 
 ### Application Problems
-
-1. **Metrics pipeline design**: A system receives 1 million requests/minute across 500 microservices. Each service exposes 20 metrics (5 counters, 5 gauges, 5 histograms with 10 buckets each, 5 summaries with 4 quantiles each). Calculate: total metric series per service, total series across the fleet, Prometheus scrape bandwidth at 15s interval, and storage per day at 1 byte per sample. Design a retention and downsampling strategy for 30-day retention.
-2. **Circuit breaker tuning**: A payment service has P50 latency of 50ms, P99 of 200ms, and P999 of 2s (timeouts). The circuit breaker threshold is 5 failures in a 10-second sliding window, recovery timeout is 30 seconds. The payment service experiences a cascading failure: 3% error rate for 5 seconds, then 60% error rate for 2 minutes. Trace the circuit breaker state transitions and calculate: how many requests are fast-failed vs actually hit the failing service?
-3. **Chaos experiment design**: Design a chaos experiment for a multi-region deployment with active-active traffic. The experiment tests the system's ability to survive a complete region failure. Define: steady-state hypothesis (3 measurable metrics), experiment steps (gradual traffic shift + region isolation), blast radius controls, rollback criteria, and expected degraded behavior during failover.
-4. **Distributed trace analysis**: A trace shows a single user request taking 4.8 seconds. The trace has 12 spans across 4 services. Service A root span is 4.8s. Service B has spans at 1.2s and 1.5s. Service C has a 3.1s span. Service D has a 0.8s span and a 2.4s span (retry). Identify the bottleneck, the retry, and the serialization dependencies. Calculate the theoretical minimum latency if all services ran in parallel.
+<details><summary>Solution</summary>1. Per service: 5 counters + 5 gauges + 5 histograms × 11 time series (10 buckets + sum + count) = 5 + 5 + 55 = 65 + 5 summaries × 4 quantiles = 85 total series. Fleet: 500 × 85 = 42,500 series. Scrape bandwidth: each series ≈ 40 bytes (metric name + labels + value). 42,500 × 40 × 4 (15s interval) ≈ 6.8 MB/s = 54.4 Mbps. Storage: 1 byte/sample × 42,500 series × 4 samples/min × 60 × 24 = 245 GB/day. 30-day retention: 245 GB × 30 = 7.35 TB. Downsample to 1-minute resolution after 7 days; aggregate to 1-hour resolution after 14 days.
+2. First 5 seconds (3% error rate): 3 errors in 10 seconds — below threshold of 5. Circuit stays CLOSED. Then 60% error rate: 5 consecutive errors in ~8 requests → circuit opens at ~1.3 seconds into failure spike. Requests during OPEN (28.7 seconds): all fast-failed. After 30s recovery timeout → transitions to HALF-OPEN. Probe succeeds → circuit CLOSES. Total requests: ~1000 during 2-minute window. Fast-failed: ~860 (86%). Hit failing service: ~140 (14%).
+3. Steady-state hypothesis: (a) P99 latency < 200ms, (b) error rate < 0.1%, (c) successful failover < 5 minutes. Steps: (1) Gradually shift 25% traffic from region A to region B — verify B handles load. (2) Enable network latency injection (50ms) between regions. (3) Gradually reduce region A capacity (terminate 25%, then 50%, then 75% of pods). (4) Simulate complete region A failure (stop all traffic routing to A). Rollback: any SLO violation for 3 consecutive minutes. Expected degradation: P99 latency may spike to 500ms during DNS propagation, error rate may hit 0.5% briefly, system fully recovers in < 5 minutes.
+4. Bottleneck: Service C at 3.1s. Retry: Service D's 2.4s span (the first 0.8s attempt failed, retry took 2.4s). Serialization: A calls B (1.2s) and C (3.1s) sequentially = 4.3s. D is called after C? D's spans start after C completes. Total actual serial: A(negligible) + B(1.5, parallel wait) + C(3.1) + D(2.4) = 5.5s (but overlaps reduce observed to 4.8s). Theoretical parallel minimum: max(B=1.5, C=3.1, D=2.4) = 3.1s. The retry in D adds 2.4s — eliminating it saves 2.4s from serial path.</details>
 
 ### Challenge Problem
+<details><summary>Solution</summary>Design the complete observability and resiliency stack:
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Design the complete observability and resiliency stack for a global payment processing system**: 50 services, 10,000 TPS, 99.995% availability.
+**Prometheus Metrics**: RED per service (rate, errors, duration histograms with buckets [0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0, 2.5, 5.0, 10.0]). USE per resource (CPU utilization, memory saturation, disk I/O errors). Scrape interval: 15s. Retention: 14d at full resolution, 90d at 5m downsampled. Storage: ~10 TB (50 services × 100 series × 4 bytes × 5760 samples/day × 14 days).
 
-For each component below, specify configuration parameters, storage costs at scale, coverage gaps, and the runbook for diagnosing a 30-second P99 latency spike: Prometheus RED/USE metrics, OTel tail-based sampling (100% failed, 1% success), structured JSON logs via Loki, 3-tier Alertmanager, circuit breakers on 120 dependencies, bulkheads on critical paths, retry with jitter, load shedding at 5x peak, health probes, and weekly chaos experiments with auto-rollback across regions.
+**OTel Tail-Based Sampling**: Jaeger collector with tail sampling processor. 100% of failed traces (status=ERROR), 1% of successful traces. Head-based rate limit: 100 traces/second. Storage: ~200 GB/day (500K traces/day at 400 bytes/trace).
+
+**Structured Logs (Loki)**: JSON format with correlation_id, service, duration_ms, status_code. Label on service, level, environment. Retention: 30d. Storage: 50 services × 10 GB/day = 500 GB/day, compressed to ~150 GB/day.
+
+**3-Tier Alertmanager**: Tier 1 (critical): P1 to PagerDuty, 5-minute response SLA. Tier 2 (warning): P2 to Slack, 30-minute response. Tier 3 (info): P3 to email, next-business-day. Grouping: group by service, severity. Inhibition: higher-severity alerts suppress lower-severity for the same service.
+
+**Circuit Breakers**: 120 dependencies. Configuration: sliding window of 10 requests, failure threshold = 5, recovery timeout = 30s, half-open max = 3. Fallbacks: cached responses for reads, queued writes.
+
+**Bulkheads**: Critical path dependencies (database, cache, auth) get 10-thread pools. Non-critical (analytics, reporting) share a 5-thread pool. Semaphore isolation for sub-millisecond dependencies (local cache).
+
+**Retry with Jitter**: 3 retries, base delay = 100ms, max = 10s, full jitter. Only on 5xx and connection errors. No retry on 4xx or idempotency violations.
+
+**Load Shedding**: Queue depth limit = 1000 per service. At 80% saturation: shed batch jobs and analytics. At 95%: shed all non-critical traffic. Return 503 with Retry-After header.
+
+**Health Probes**: `/health` (liveness) — process alive, no dependency check. `/ready` (readiness) — checks all critical dependencies with timeout. Orchestrator removes unhealthy pods.
+
+**Chaos Experiments**: Weekly Chaos Monkey (kill 2 pods). Bi-weekly Chaos Gorilla (AZ failure). Monthly Chaos Kong (region failure). Auto-rollback if P99 > 500ms for 3 consecutive minutes. All experiments in staging first, production during low-traffic hours.
+
+**Runbook for 30s P99 Spike**: (1) Open Grafana dashboard → check RED metrics per service. (2) Identify which service latency spiked. (3) Open Jaeger → filter traces for that service, sort by duration. (4) Examine slowest spans → identify bottleneck dependency. (5) Check Loki for error logs with same correlation_id. (6) Check Alertmanager for related alerts. (7) Check saturation metrics (CPU, memory, connection pool). (8) Remediate: scale up, restart, or circuit breaker manual trip. (9) Post-mortem: add missing span instrumentation or adjust circuit breaker thresholds.</details>

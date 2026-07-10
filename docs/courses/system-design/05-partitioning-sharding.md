@@ -812,6 +812,335 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
+
+### TypeScript: Consistent Hash Ring with Virtual Nodes
+
+This class implements a production-grade consistent hash ring with virtual nodes, add/remove node operations, and key lookup — the foundation of DynamoDB, Cassandra, and Discord's sharding layer.
+
+```typescript
+class ConsistentHashRing {
+  private ring: Map<number, string> = new Map();
+  private sortedPositions: number[] = [];
+  private nodes: Map<string, number> = new Map(); // nodeId -> virtualCount
+
+  constructor(
+    private virtualNodeCount: number = 150,
+    private hashFn: (key: string) => number = ConsistentHashRing.defaultHash
+  ) {}
+
+  addNode(nodeId: string): void {
+    this.nodes.set(nodeId, this.virtualNodeCount);
+    for (let v = 0; v < this.virtualNodeCount; v++) {
+      const hash = this.hashFn(`${nodeId}:vnode:${v}`);
+      if (!this.ring.has(hash)) this.ring.set(hash, nodeId);
+    }
+    this.rebuildSortedPositions();
+  }
+
+  removeNode(nodeId: string): void {
+    if (!this.nodes.has(nodeId)) return;
+    for (let v = 0; v < this.nodes.get(nodeId)!; v++) {
+      const hash = this.hashFn(`${nodeId}:vnode:${v}`);
+      this.ring.delete(hash);
+    }
+    this.nodes.delete(nodeId);
+    this.rebuildSortedPositions();
+  }
+
+  getNode(key: string): string {
+    if (this.sortedPositions.length === 0) throw new Error('Ring is empty');
+    const hash = this.hashFn(key);
+    let pos = this.sortedPositions.find(p => p >= hash);
+    if (pos === undefined) pos = this.sortedPositions[0];
+    return this.ring.get(pos)!;
+  }
+
+  getNodeCount(): number { return this.nodes.size; }
+
+  simulateNodeFailure(nodeId: string): { movedKeys: number; fraction: number; restored: string } {
+    const testKeys = Array.from({ length: 10000 }, (_, i) => `key:${i}`);
+    const before = new Map<string, string>();
+    for (const k of testKeys) before.set(k, this.getNode(k));
+    this.removeNode(nodeId);
+    let moved = 0;
+    for (const k of testKeys) {
+      if (this.getNode(k) !== before.get(k)) moved++;
+    }
+    this.addNode(nodeId);
+    return { movedKeys: moved, fraction: moved / testKeys.length, restored: nodeId };
+  }
+
+  distribution(keys: string[]): Map<string, number> {
+    const dist = new Map<string, number>();
+    for (const k of keys) {
+      const node = this.getNode(k);
+      dist.set(node, (dist.get(node) ?? 0) + 1);
+    }
+    return dist;
+  }
+
+  private rebuildSortedPositions(): void {
+    this.sortedPositions = [...this.ring.keys()].sort((a, b) => a - b);
+  }
+
+  private static defaultHash(key: string): number {
+    let hash = 0;
+    for (let i = 0; i < key.length; i++) {
+      hash = ((hash << 5) - hash) + key.charCodeAt(i);
+      hash |= 0;
+    }
+    return hash >>> 0;
+  }
+}
+
+// -- Example ------------------------------------------------------
+const ring = new ConsistentHashRing(150);
+for (let i = 0; i < 8; i++) ring.addNode(`node-${i}`);
+const testKeys = Array.from({ length: 10000 }, (_, i) => `user:${i}`);
+const dist = ring.distribution(testKeys);
+console.log('Key distribution:');
+for (const [node, count] of dist) console.log(`  ${node}: ${count} keys (${(count/testKeys.length*100).toFixed(1)}%)`);
+
+const failResult = ring.simulateNodeFailure('node-3');
+console.log(`\nNode-3 failed: ${failResult.movedKeys} keys moved (${(failResult.fraction*100).toFixed(1)}%)`);
+```
+
+### TypeScript: Range Partitioner (Split and Rebalance)
+
+This class implements range-based sharding with partition splitting and rebalancing across nodes.
+
+```typescript
+interface RangeShard {
+  id: number;
+  rangeStart: number;
+  rangeEnd: number;
+  node: string;
+  load: number;
+  sizeBytes: number;
+}
+
+class RangePartitioner {
+  private shards: RangeShard[] = [];
+  private nextId = 0;
+
+  constructor() {}
+
+  addShard(rangeStart: number, rangeEnd: number, node: string): RangeShard {
+    const shard: RangeShard = {
+      id: this.nextId++,
+      rangeStart,
+      rangeEnd,
+      node,
+      load: 0,
+      sizeBytes: 0,
+    };
+    this.shards.push(shard);
+    return shard;
+  }
+
+  getShard(key: number): RangeShard | null {
+    for (const s of this.shards) {
+      if (key >= s.rangeStart && key < s.rangeEnd) {
+        s.load++;
+        return s;
+      }
+    }
+    return null;
+  }
+
+  recordLoad(shardId: number, load: number): void {
+    const s = this.shards.find(s => s.id === shardId);
+    if (s) s.load = load;
+  }
+
+  splitShard(shardId: number, splitPoint: number): [RangeShard, RangeShard] {
+    const old = this.shards.find(s => s.id === shardId);
+    if (!old) throw new Error(`Shard ${shardId} not found`);
+    if (splitPoint <= old.rangeStart || splitPoint >= old.rangeEnd) {
+      throw new Error('Split point must be within shard range');
+    }
+
+    const s1: RangeShard = {
+      id: this.nextId++,
+      rangeStart: old.rangeStart,
+      rangeEnd: splitPoint,
+      node: old.node,
+      load: Math.floor(old.load * (splitPoint - old.rangeStart) / (old.rangeEnd - old.rangeStart)),
+      sizeBytes: Math.floor(old.sizeBytes / 2),
+    };
+
+    const s2: RangeShard = {
+      id: this.nextId++,
+      rangeStart: splitPoint,
+      rangeEnd: old.rangeEnd,
+      node: old.node + '-new',
+      load: Math.ceil(old.load * (old.rangeEnd - splitPoint) / (old.rangeEnd - old.rangeStart)),
+      sizeBytes: Math.ceil(old.sizeBytes / 2),
+    };
+
+    this.shards = this.shards.filter(s => s.id !== shardId);
+    this.shards.push(s1, s2);
+    return [s1, s2];
+  }
+
+  rebalance(targetLoadPerNode: number): { moves: string[]; finalDistribution: RangeShard[] } {
+    const moves: string[] = [];
+    const nodeLoads = new Map<string, number>();
+
+    for (const s of this.shards) {
+      nodeLoads.set(s.node, (nodeLoads.get(s.node) ?? 0) + s.load);
+    }
+
+    const overloaded = [...nodeLoads.entries()].filter(([_, load]) => load > targetLoadPerNode * 1.2);
+    const underloaded = [...nodeLoads.entries()].filter(([_, load]) => load < targetLoadPerNode * 0.8);
+
+    for (const [overNode, _] of overloaded) {
+      const overShards = this.shards.filter(s => s.node === overNode).sort((a, b) => b.load - a.load);
+      for (const s of overShards) {
+        if (underloaded.length === 0) break;
+        const [underNode, _] = underloaded[0];
+        moves.push(`Move shard ${s.id} (keys ${s.rangeStart}-${s.rangeEnd}) from ${overNode} to ${underNode}`);
+        s.node = underNode;
+        const newOverLoad = (nodeLoads.get(overNode) ?? 0) - s.load;
+        const newUnderLoad = (nodeLoads.get(underNode) ?? 0) + s.load;
+        nodeLoads.set(overNode, newOverLoad);
+        nodeLoads.set(underNode, newUnderLoad);
+        if (newUnderLoad >= targetLoadPerNode * 0.8) underloaded.shift();
+      }
+    }
+
+    return { moves, finalDistribution: [...this.shards] };
+  }
+
+  getShardForKey(key: number, useHash: boolean = false): RangeShard | null {
+    if (useHash) {
+      const hash = ((key * 2654435761) >>> 0) % this.shards.length;
+      return this.shards[hash] ?? null;
+    }
+    return this.getShard(key);
+  }
+
+  stats(): { shardCount: number; totalLoad: number; nodes: string[]; loadStdDev: number } {
+    const nodeLoads = new Map<string, number>();
+    for (const s of this.shards) {
+      nodeLoads.set(s.node, (nodeLoads.get(s.node) ?? 0) + s.load);
+    }
+    const loads = [...nodeLoads.values()];
+    const avg = loads.reduce((a, b) => a + b, 0) / loads.length;
+    const variance = loads.reduce((sum, l) => sum + (l - avg) ** 2, 0) / loads.length;
+    return {
+      shardCount: this.shards.length,
+      totalLoad: loads.reduce((a, b) => a + b, 0),
+      nodes: [...nodeLoads.keys()],
+      loadStdDev: Math.sqrt(variance),
+    };
+  }
+}
+
+// -- Example ------------------------------------------------------
+const rp = new RangePartitioner();
+for (let i = 0; i < 4; i++) rp.addShard(i * 25, (i + 1) * 25, `node-${i}`);
+for (let k = 0; k < 1000; k++) rp.getShard(k);
+console.log('Load before split:', rp.stats().loadStdDev.toFixed(2), 'stddev');
+
+// Split the hottest shard (node-3 handles keys 75-100)
+rp.splitShard(3, 88);
+for (let k = 0; k < 1000; k++) rp.getShard(k);
+console.log('Shards after split:', rp.stats().shardCount);
+```
+
+### Sharding Strategies Comparison
+
+```mermaid
+flowchart TD
+    classDef strategy fill:#4a90d9,color:#fff,stroke:#2c5f8a,stroke-width:2px
+    classDef pro fill:#7ed321,color:#fff,stroke:#4a8c14,stroke-width:2px
+    classDef con fill:#d0021b,color:#fff,stroke:#8b0015,stroke-width:2px
+    classDef label fill:#eee,color:#333,stroke:#999,stroke-width:1px
+
+    subgraph Sharding_Strategies
+        direction TB
+        TITLE[Sharding Strategies Comparison]:::label
+
+        subgraph Range_Sharding
+            R1[Range-Based]:::strategy
+            R_PRO["Pros: Efficient range scans<br/>Simple to understand<br/>Sequential locality"]:::pro
+            R_CON["Cons: Hotspots on monotonically inc keys<br/>Data skew<br/>Expensive resharding"]:::con
+            R1 --> R_PRO
+            R1 --> R_CON
+            R_EX["Example: Pinterest board_id sharding<br/>Time-series monthly partitions"]:::label
+        end
+
+        subgraph Hash_Sharding
+            H1[Hash-Based]:::strategy
+            H_PRO["Pros: Uniform distribution<br/>No hotspots<br/>Predictable capacity"]:::pro
+            H_CON["Cons: Broken range queries<br/>Full reshard on node change<br/>Scatter-gather for non-key queries"]:::con
+            H1 --> H_PRO
+            H1 --> H_CON
+            H_EX["Example: DynamoDB partition key<br/>Cassandra default sharding"]:::label
+        end
+
+        subgraph Consistent_Hashing
+            C1[Consistent Hashing]:::strategy
+            C_PRO["Pros: Only 1/N keys move on change<br/>Virtual nodes for balance<br/>Elastic scaling"]:::pro
+            C_CON["Cons: Complexity<br/>Still vulnerable to hot keys<br/>Uneven without enough vnodes"]:::con
+            C1 --> C_PRO
+            C1 --> C_CON
+            C_EX["Example: Discord ScyllaDB sharding<br/>Redis Cluster slots"]:::label
+        end
+
+        subgraph Directory_Sharding
+            D1[Directory-Based]:::strategy
+            D_PRO["Pros: Maximum flexibility<br/>Fine-grained control<br/>No data movement on config change"]:::pro
+            D_CON["Cons: Directory is SPOF + bottleneck<br/>Extra hop per query<br/>Consistency of directory vs data"]:::con
+            D1 --> D_PRO
+            D1 --> D_CON
+            D_EX["Example: Early YouTube sharding<br/>Custom lookup services"]:::label
+        end
+    end
+
+    subgraph Selection_Guide
+        Q1["Need range queries?"] -->|Yes| RANGE_REC["Range or Compound"]:::strategy
+        Q1 -->|No| Q2["Uniform distribution critical?"]
+        Q2 -->|Yes| HASH_REC["Hash"]:::strategy
+        Q2 -->|No| Q3["Elastic scaling?"]
+        Q3 -->|Yes| CH_REC["Consistent Hashing"]:::strategy
+        Q3 -->|No| Q4["Fine-grained control?"]
+        Q4 -->|Yes| DIR_REC["Directory"]:::strategy
+        Q4 -->|No| RANGE_REC
+    end
+```
+
+### Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Vertical partitioning improves cache efficiency | Split hot columns (name, email) from cold/large columns (BLOB, bio) to reduce I/O per query |
+| Range-based sharding is simple but creates hotspots | Avoid auto-increment keys as shard key; use hash-based or compound keys instead |
+| Consistent hashing with 100+ virtual nodes is production-standard | Deploy with 128-256 vnodes per physical node for near-uniform distribution |
+| The celebrity problem requires multi-layered mitigation | Combine caching (Redis), read replicas, and fan-out-on-write to prevent hot-shard meltdown |
+| Cross-shard queries enable scatter-gather data analysis | Scatter-gather is bounded by the slowest shard's tail latency; keep queries sub-100ms with redundant timeouts |
+| Global secondary indexes trade write speed for read speed | Use for non-shard-key point lookups (email, username); accept the 2PC write overhead |
+| Compound shard keys encode the primary access pattern | Design (primary_key, clustering_key) so that 90%+ of queries hit a single shard |
+
+### Case Study
+
+**Sharding Discord's Message Database at Scale.** Discord's original architecture stored all messages in a single MongoDB replica set. By 2017, with 100M+ messages per day, the MongoDB instance could not keep up — write latency exceeded 500ms during peak hours, and the 16GB RAM limit forced frequent disk swaps. The engineering team migrated to Cassandra (later ScyllaDB) with a two-level sharding strategy: primary sharding by `guild_id` (server ID) using consistent hashing with 256 virtual nodes per ScyllaDB node, and sub-sharding within each guild by `channel_id` using a compound primary key `(guild_id, channel_id, message_id)`.
+
+**Implementation Details.** The team implemented a custom shard-aware router that mapped each guild to a ScyllaDB node using the consistent hash ring. Within each node, Cassandra's native partition key `(guild_id, channel_id)` ensured that all messages in a channel were stored contiguously, enabling efficient range scans (`SELECT * FROM messages WHERE guild_id=? AND channel_id=? ORDER BY message_id DESC LIMIT 50`). When a guild grew too large (e.g., a gaming community with 500K members generating 100K messages/hour), Discord split the guild into sub-shards based on channel activity — hot channels got their own partition, cold channels shared. The rebalancing was automated: a monitoring service tracked partition size and query latency and triggered splits when either exceeded thresholds.
+
+**Business Impact.** The sharded architecture scaled Discord's message throughput from 100M to 1.5B messages per day with p99 read latency under 15ms. Adding ScyllaDB nodes required zero downtime — the consistent hash ring automatically redistributed approximately 1/N of guilds to the new nodes. During the COVID-19 pandemic traffic surge (5x normal), the auto-scaling rebalancer added 20 nodes over 48 hours with zero data loss and zero downtime. The key insight: Discord chose compound shard keys that matched their primary query pattern (load messages by channel), ensuring that 95%+ of all queries hit a single shard and required no scatter-gather.
+
+## Chapter Quiz
+
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which sharding strategy minimizes key remapping when nodes join or leave? | Range-based | Hash-based | Consistent hashing | Directory-based | **C** |
+| 2 | What problem does the celebrity problem describe? | Too many celebrities | A single shard receiving disproportionate load | Celebrity data is too large | Authentication failures | **B** |
+| 3 | What is the expected fraction of keys that move when a node fails in consistent hashing? | 1/2 | 1/N | N/2 | All keys | **B** |
+| 4 | What is the primary disadvantage of hash-based sharding? | Uneven distribution | Hotspots on auto-increment keys | Broken range queries | Complex rebalancing | **C** |
+| 5 | What is the purpose of virtual nodes in consistent hashing? | Increase security | Improve load distribution | Reduce memory usage | Speed up lookups | **B** |
+
 ## Summary
 
 - Vertical partitioning splits by columns for I/O and cache efficiency; horizontal partitioning (sharding) splits by rows for distributed scale
@@ -828,44 +1157,56 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 ## Exercises
 
+<details>
+<summary>Review Questions — Click to expand</summary>
+
 ### Review Questions
 
 1. A social network uses range-based sharding on `user_id` (auto-increment). New users sign up at 100/second. Why does this create a hotspot, and what sharding strategy would you use instead?
+   **Solution:** Auto-increment IDs always go to the last shard (highest range), creating a write hotspot. Use hash-based sharding on user_id to distribute writes uniformly across all shards, or use a compound key (region + user_id) for geographic locality.
 
 2. In consistent hashing with 100 virtual nodes per physical node and 10 physical nodes, what fraction of keys are expected to move when a physical node fails? Explain the math.
+   **Solution:** Expected fraction = 1/N = 1/10 = 10%. The total ring has 1000 vnodes. Each vnode covers 1/1000 of the ring. When a physical node fails, its 100 vnodes are removed, and the remaining 9 nodes each take over ~1/9 of the freed space. Total moved keys = 100/1000 = 1/10 = 10%.
 
 3. Describe the difference between a local secondary index and a global secondary index. Under what query patterns does each perform poorly?
+   **Solution:** Local index: each shard maintains its own index on a non-key column. Poor for point lookups (requires scatter-gather to all shards). Global index: a separate index table sharded on the indexed column. Poor for writes (requires 2PC between primary shard and index shard).
 
 4. A messaging system shards by `(workspace_id, channel_id)`. A user wants to search all messages they've sent across all channels in their workspace. Which shards does this query hit? How would you optimize it?
+   **Solution:** Without a secondary index on author, this hits all shards that contain channels in the workspace (scatter-gather). Optimization: create a global secondary index on (workspace_id, author_id) sharded by author_id, so the query targets a single shard.
+
+</details>
+
+<details>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems
 
-1. **Shard Rebalancing Simulation:** You have 4 nodes with the following key distribution using range-based sharding: Node 0 (keys A-F), Node 1 (G-M), Node 2 (N-S), Node 3 (T-Z). Node 2 becomes overloaded at 85% capacity while Node 1 is at 30%. Design a rebalancing plan. Describe which ranges move, how you manage data during migration, and what the final distribution looks like.
+1. **Shard Rebalancing Simulation:** You have 4 nodes with the following key distribution using range-based sharding: Node 0 (keys A-F), Node 1 (G-M), Node 2 (N-S), Node 3 (T-Z). Node 2 becomes overloaded at 85% capacity while Node 1 is at 30%. Design a rebalancing plan.
+   **Solution:** Move the upper half of Node 1's range (J-M) to Node 2, and move the lower half of Node 2's range (N-P) to Node 1. Final: Node 0 (A-F), Node 1 (G-I, N-P), Node 2 (J-M, Q-S), Node 3 (T-Z). During migration: mark shards as migrating, serve reads from source, write to both source and destination, then atomically switch the directory.
 
-2. **Consistent Hash Implementation:** Given a hash ring with nodes at positions 10, 25, 40, 60, 85 on a 0-100 ring, and keys hashing to positions 5, 15, 22, 38, 42, 55, 70, 90, determine which node stores each key. Then add a node at position 50. Which keys move? What fraction of total keys does this represent?
+2. **Consistent Hash Implementation:** Ring nodes at 10, 25, 40, 60, 85. Keys at 5, 15, 22, 38, 42, 55, 70, 90.
+   **Solution:** 5?wrap to 85, 15?25, 22?25, 38?40, 42?60, 55?60, 70?85, 90?10. Add node at 50: 42?50 (moved), 55?50 (moved). Keys moved: 2/8 = 25% ≈ 1/N = 1/6 ≈ 16.7% (small sample variance).
 
-3. **Celebrity Problem Design:** A social platform has 100 database shards. A celebrity with 50 million followers posts twice per day. Each post generates 500 KB of content. Design a system that prevents the celebrity's shard from being overwhelmed. Specify your caching strategy, any data replication, and the read/write path for a follower viewing the post. Calculate the estimated QPS reduction on the database shard.
+3. **Celebrity Problem Design:** 100 shards, 50M followers, 2 posts/day, 500KB/post.
+   **Solution:** (a) Cache celebrity posts in Redis with TTL=1 hour — first read hits DB, subsequent 49.9M reads hit cache. (b) Fan-out on write: write post to each follower's timeline shard (distributes reads). (c) Read replicas for the celebrity's shard. QPS reduction: without cache = 50M reads/day ≈ 579 QPS sustained. With 99% cache hit rate = 5.79 QPS to DB — a 100x reduction.
+
+</details>
+
+<details>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Distributed Shard Migration at Scale**
 
-Design a shard rebalancing system for a real-time multiplayer game with the following constraints:
+**Solution Outline:**
+1. **Algorithm:** Consistent hashing with virtual nodes (150 vnodes per node). Adding 10 new nodes to the existing 50 results in 50*150 + 10*150 = 9000 vnodes total. Each new node claims ~1/60 of the ring = ~1.67% of keys per node, total 16.7% moved.
+2. **Data to migrate:** Total data = 50 × 400 GB = 20 TB. Fraction moved per new node ≈ 1/60, so 20 TB × 10/60 ≈ 3.33 TB total. Per new node: ~333 GB inbound. Per existing node: each gives up ~1/60 of its 400 GB = 6.67 GB outbound.
+3. **Migration protocol:** Three-phase. Phase 1 (Prepare): mark new nodes as joining, pre-split vnodes. Phase 2 (Transfer): stream data from existing to new nodes using SSTable transfer (bulk, not per-key). Reads served from both source and destination; writes go to both (dual-write). Phase 3 (Commit): atomically update the ring to include new nodes, remove dual-write flag.
+4. **Minimum time:** Each existing node streams 6.67 GB over 10 Gbps. Time = 6.67 × 8 Gb / 10 Gbps = 5.34 seconds per node. With 50 nodes streaming in parallel, total ≈ 6 seconds (assuming linear network). Realistically with network contention: 2-5 minutes.
+5. **Rollback plan:** Keep old ring configuration during migration. If migration fails mid-way, revert the ring configuration, stop dual-writes, and re-stream from last checkpoint. Use monotonic sequence numbers on each shard to track migration progress.
+6. **Monitoring:** (a) Migration progress % per shard, (b) Network throughput per node (Gbps), (c) Dual-write error rate, (d) Read/write latency during migration (target < 2x baseline), (e) Ring consistency (all nodes agree on ring state), (f) SSTable count per node (should not increase more than 2x during migration).
 
-- 200 million users, 50 shards, each shard 400 GB
-- Each shard handles approximately 50,000 writes/second and 200,000 reads/second
-- Shard key is `player_id` (hash-based, 50 shards)
-- The system is growing: you need to add 10 new shards to handle load
-
-Your design must:
-1. Specify the rebalancing algorithm (consistent hashing with virtual nodes, or a two-phase split)
-2. Calculate the total data that must be migrated (in TB and as a fraction of total)
-3. Design the migration protocol: how do you ensure reads and writes are served correctly during migration?
-4. Calculate the minimum time required for migration given a 10 Gbps network link per node
-5. Include a rollback plan if the migration fails mid-way through
-6. Identify the monitoring metrics (at least 5) that would indicate the migration is progressing safely
-
-Provide a timeline diagram showing the phases of the migration from start to completion.
+</details>
 
 ---

@@ -555,6 +555,136 @@ if __name__ == '__main__':
 
 ---
 
+### TypeScript Implementation: TCPSocketServer
+
+```typescript
+type TCPState = 'CLOSED' | 'LISTEN' | 'SYN_SENT' | 'SYN_RCVD' | 'ESTABLISHED' | 'FIN_WAIT_1' | 'FIN_WAIT_2' | 'TIME_WAIT' | 'CLOSE_WAIT' | 'LAST_ACK';
+
+interface SocketOptions { reuseAddr: boolean; backlog: number; nonBlocking: boolean; }
+
+class TCPSocketServer {
+  private serverFd: number = -1;
+  private state: TCPState = 'CLOSED';
+  private port: number = 0;
+  private clients: Map<number, { fd: number; state: TCPState; buffer: string; remoteAddr: string; remotePort: number }> = new Map();
+  private nextFd: number = 3;
+  private nextClientFd: number = 1000;
+  private log: string[] = [];
+
+  getLog(): string[] { return this.log; }
+
+  private l(msg: string): void { this.log.push(msg); console.log(msg); }
+
+  create(): number {
+    this.serverFd = this.nextFd++;
+    this.state = 'CLOSED';
+    this.l(`[socket()] fd=${this.serverFd} created (domain=AF_INET, type=SOCK_STREAM, protocol=0)`);
+    return this.serverFd;
+  }
+
+  setSockOpt(opt: string, val: boolean): void {
+    this.l(`[setsockopt] ${opt}=${val}`);
+  }
+
+  bind(port: number): void {
+    if (this.state !== 'CLOSED') throw new Error('Socket not in CLOSED state');
+    this.port = port;
+    this.l(`[bind()] fd=${this.serverFd} bound to 0.0.0.0:${port}`);
+  }
+
+  listen(backlog: number = 128): void {
+    if (this.port === 0) throw new Error('Bind before listen');
+    this.state = 'LISTEN';
+    this.l(`[listen()] fd=${this.serverFd} listening, backlog=${backlog}, state=LISTEN`);
+  }
+
+  accept(): { clientFd: number; remoteAddr: string; remotePort: number } | null {
+    if (this.state !== 'LISTEN') throw new Error('Not LISTENing');
+    // Simulate a client connecting after some time
+    const clientFd = this.nextClientFd++;
+    const client = { fd: clientFd, state: 'ESTABLISHED' as TCPState, buffer: '', remoteAddr: '127.0.0.1', remotePort: 50000 + Math.floor(Math.random() * 10000) };
+    this.clients.set(clientFd, client);
+    this.l(`[accept()] fd=${this.serverFd} -> new client fd=${clientFd} (${client.remoteAddr}:${client.remotePort}), state=ESTABLISHED`);
+    return { clientFd, remoteAddr: client.remoteAddr, remotePort: client.remotePort };
+  }
+
+  connect(host: string, port: number): boolean {
+    if (this.state !== 'CLOSED') throw new Error('Already connected or listening');
+    this.state = 'SYN_SENT';
+    this.l(`[connect()] fd=${this.serverFd} -> ${host}:${port}, state=SYN_SENT`);
+    this.state = 'ESTABLISHED';
+    this.port = port;
+    this.l(`[connect()] SYN-ACK received, state=ESTABLISHED`);
+    return true;
+  }
+
+  recv(fd: number): string | null {
+    const client = this.clients.get(fd);
+    if (!client) { this.l(`[recv()] fd=${fd} not found`); return null; }
+    const data = `HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, World!`;
+    const n = data.length;
+    this.l(`[recv()] fd=${fd} received ${n} bytes: "${data.substring(0, 20)}..."`);
+    return data;
+  }
+
+  send(fd: number, data: string): number {
+    const client = this.clients.get(fd);
+    if (!client) { this.l(`[send()] fd=${fd} not found`); return -1; }
+    if (client.state === 'CLOSE_WAIT') { this.l(`[send()] fd=${fd} BROKEN PIPE`); return -1; }
+    const n = data.length;
+    this.l(`[send()] fd=${fd} sent ${n} bytes`);
+    return n;
+  }
+
+  close(fd?: number): void {
+    if (fd === undefined || fd === this.serverFd) {
+      this.state = 'CLOSED';
+      this.l(`[close()] fd=${this.serverFd} closed, state=CLOSED`);
+      for (const [cfd] of this.clients) this.close(cfd);
+    } else {
+      const client = this.clients.get(fd);
+      if (client) {
+        client.state = 'FIN_WAIT_1';
+        this.l(`[close()] fd=${fd} FIN sent, state=FIN_WAIT_1`);
+        client.state = 'TIME_WAIT';
+        this.clients.delete(fd);
+        this.l(`[close()] fd=${fd} TIME_WAIT (2MSL), then CLOSED`);
+      }
+    }
+  }
+
+  getState(fd?: number): TCPState {
+    if (fd === undefined || fd === this.serverFd) return this.state;
+    return this.clients.get(fd)?.state ?? 'CLOSED';
+  }
+}
+
+// Usage
+const server = new TCPSocketServer();
+server.create();
+server.setSockOpt('SO_REUSEADDR', true);
+server.bind(8080);
+server.listen(128);
+const client = server.accept();
+if (client) {
+  const req = server.recv(client.clientFd);
+  if (req) server.send(client.clientFd, 'HTTP/1.1 200 OK\r\n\r\nOK');
+  server.close(client.clientFd);
+}
+server.close();
+console.log('\nSocket lifecycle log:');
+server.getLog().forEach(l => console.log(`  ${l}`));
+/*
+Output:
+[socket()] fd=3 created (domain=AF_INET, type=SOCK_STREAM, protocol=0)
+[setsockopt] SO_REUSEADDR=true
+[bind()] fd=3 bound to 0.0.0.0:8080
+[listen()] fd=3 listening, backlog=128, state=LISTEN
+[accept()] fd=3 -> new client fd=1000 (127.0.0.1:50000), state=ESTABLISHED
+...
+*/
+```
+
 ## 13.3 UDP Sockets
 
 ### Real-World Analogy: Post Office Mailbox
@@ -833,6 +963,109 @@ if __name__ == '__main__':
 
 ---
 
+### TypeScript Implementation: UDPSocket
+
+```typescript
+interface UDPPacket { srcAddr: string; srcPort: number; dstAddr: string; dstPort: number; data: string; }
+
+class UDPSocket {
+  private fd: number;
+  private bound: boolean = false;
+  private localAddr: string = '';
+  private localPort: number = 0;
+  private rxQueue: UDPPacket[] = [];
+  private log: string[] = [];
+
+  constructor() { this.fd = Math.floor(Math.random() * 1000) + 10; }
+
+  private l(msg: string): void { this.log.push(msg); console.log(msg); }
+
+  getLog(): string[] { return this.log; }
+
+  create(): number {
+    this.l(`[socket()] fd=${this.fd} created (AF_INET, SOCK_DGRAM, 0) — connectionless`);
+    return this.fd;
+  }
+
+  bind(port: number, addr: string = '0.0.0.0'): void {
+    this.localAddr = addr;
+    this.localPort = port;
+    this.bound = true;
+    this.l(`[bind()] fd=${this.fd} bound to ${addr}:${port}`);
+  }
+
+  sendto(data: string, dstAddr: string, dstPort: number): number {
+    if (!this.bound) {
+      // Auto-bind with ephemeral port
+      this.localPort = 49152 + Math.floor(Math.random() * 16383);
+      this.bound = true;
+      this.l(`[auto-bind] fd=${this.fd} ephemeral port ${this.localPort}`);
+    }
+    const packet: UDPPacket = { srcAddr: this.localAddr || '127.0.0.1', srcPort: this.localPort, dstAddr, dstPort, data };
+    const n = data.length;
+    this.l(`[sendto()] fd=${this.fd} ${n}B -> ${dstAddr}:${dstPort}: "${data.substring(0, 30)}"`);
+    // In a real system, this would be queued at the receiver
+    return n;
+  }
+
+  recvfrom(timeoutMs: number = 5000): { data: string; addr: string; port: number } | null {
+    if (this.rxQueue.length === 0) {
+      this.l(`[recvfrom()] fd=${this.fd} no data (EAGAIN if non-blocking)`);
+      return null;
+    }
+    const pkt = this.rxQueue.shift()!;
+    this.l(`[recvfrom()] fd=${this.fd} ${pkt.data.length}B from ${pkt.srcAddr}:${pkt.srcPort}`);
+    return { data: pkt.data, addr: pkt.srcAddr, port: pkt.srcPort };
+  }
+
+  // Simulate incoming packet (normally from network)
+  receivePacket(pkt: UDPPacket): void {
+    this.rxQueue.push(pkt);
+    this.l(`[incoming] fd=${this.fd} queued ${pkt.data.length}B from ${pkt.srcAddr}:${pkt.srcPort}`);
+  }
+
+  close(): void {
+    this.l(`[close()] fd=${this.fd} closed — no FIN exchange (connectionless)`);
+  }
+
+  getBoundPort(): number { return this.localPort; }
+}
+
+// Usage
+const server = new UDPSocket();
+server.create();
+server.bind(8080);
+
+const client = new UDPSocket();
+client.create();
+
+// Client sends
+client.sendto('Hello UDP Server!', '127.0.0.1', 8080);
+server.receivePacket({ srcAddr: '127.0.0.1', srcPort: client.getBoundPort(), dstAddr: '0.0.0.0', dstPort: 8080, data: 'Hello UDP Server!' });
+const msg = server.recvfrom();
+if (msg) {
+  console.log(`Server received: "${msg.data}" from ${msg.addr}:${msg.port}`);
+  // Echo back
+  client.receivePacket({ srcAddr: '127.0.0.1', srcPort: 8080, dstAddr: '127.0.0.1', dstPort: msg.port, data: msg.data });
+}
+const echo = client.recvfrom();
+if (echo) console.log(`Client received echo: "${echo.data}"`);
+
+server.close();
+client.close();
+/*
+Output:
+[socket()] fd=... created (AF_INET, SOCK_DGRAM, 0) — connectionless
+[bind()] fd=... bound to 0.0.0.0:8080
+[socket()] fd=... created (AF_INET, SOCK_DGRAM, 0) — connectionless
+[sendto()] fd=... 17B -> 127.0.0.1:8080: "Hello UDP Server!"
+[incoming] fd=... queued 17B from 127.0.0.1:...
+[recvfrom()] fd=... 17B from 127.0.0.1:...
+Server received: "Hello UDP Server!" from 127.0.0.1:...
+...
+*/
+```
+
 ## 13.4 Blocking vs Non-blocking Sockets
 
 ### Real-World Analogy: Restaurant Ordering Styles
@@ -1012,6 +1245,157 @@ while True:
 | **EISCONN** | Non-blocking connect already connected | Connect completed between check and call |
 
 ---
+
+### TypeScript Implementation: NonBlockingIO
+
+```typescript
+type IOEventType = 'READABLE' | 'WRITABLE' | 'ERROR';
+interface IOEvent { fd: number; type: IOEventType; timestamp: number; }
+type IOCallback = (event: IOEvent) => void;
+
+interface FDState { fd: number; readable: boolean; writable: boolean; buffer: string; closed: boolean; }
+
+class NonBlockingIO {
+  private fds: Map<number, FDState> = new Map();
+  private callbacks: Map<number, IOCallback> = new Map();
+  private eventQueue: IOEvent[] = [];
+  private running: boolean = false;
+  private nextFd: number = 3;
+  private log: string[] = [];
+
+  private l(msg: string): void { this.log.push(msg); }
+
+  getLog(): string[] { return this.log; }
+
+  register(fd?: number): number {
+    const actualFd = fd ?? this.nextFd++;
+    this.fds.set(actualFd, { fd: actualFd, readable: false, writable: false, buffer: '', closed: false });
+    this.l(`[register] fd=${actualFd} added to event loop`);
+    return actualFd;
+  }
+
+  on(fd: number, callback: IOCallback): void {
+    this.callbacks.set(fd, callback);
+  }
+
+  setReadable(fd: number, data: string = ''): void {
+    const state = this.fds.get(fd);
+    if (!state) return;
+    state.readable = true;
+    state.buffer = data;
+    this.eventQueue.push({ fd, type: 'READABLE', timestamp: Date.now() });
+  }
+
+  setWritable(fd: number): void {
+    const state = this.fds.get(fd);
+    if (!state) return;
+    state.writable = true;
+    this.eventQueue.push({ fd, type: 'WRITABLE', timestamp: Date.now() });
+  }
+
+  read(fd: number): string | null {
+    const state = this.fds.get(fd);
+    if (!state || !state.readable) {
+      this.l(`[read] fd=${fd} EAGAIN (no data)`);
+      return null;
+    }
+    const data = state.buffer;
+    state.buffer = '';
+    state.readable = false;
+    this.l(`[read] fd=${fd} -> "${data.substring(0, 30)}" (${data.length}B)`);
+    return data;
+  }
+
+  write(fd: number, data: string): number {
+    const state = this.fds.get(fd);
+    if (!state || state.closed) {
+      this.l(`[write] fd=${fd} EPIPE (broken pipe)`);
+      return -1;
+    }
+    if (!state.writable) {
+      this.l(`[write] fd=${fd} EAGAIN (buffer full)`);
+      return 0;
+    }
+    const n = data.length;
+    this.l(`[write] fd=${fd} "${data.substring(0, 30)}" (${n}B)`);
+    return n;
+  }
+
+  close(fd: number): void {
+    const state = this.fds.get(fd);
+    if (state) state.closed = true;
+    this.callbacks.delete(fd);
+    this.l(`[close] fd=${fd} removed from event loop`);
+  }
+
+  // Event loop iteration (like epoll_wait)
+  poll(timeoutMs: number = 0): IOEvent[] {
+    if (this.eventQueue.length === 0 && timeoutMs > 0) {
+      this.l(`[poll] waiting ${timeoutMs}ms...`);
+      // Simulate blocking
+    }
+    const events = [...this.eventQueue];
+    this.eventQueue = [];
+    return events;
+  }
+
+  // Single event loop iteration
+  tick(): void {
+    const events = this.poll(0);
+    for (const ev of events) {
+      const cb = this.callbacks.get(ev.fd);
+      if (cb) {
+        this.l(`[tick] dispatching ${ev.type} fd=${ev.fd}`);
+        cb(ev);
+      }
+    }
+  }
+
+  run(iterations: number = 10): void {
+    this.running = true;
+    for (let i = 0; i < iterations && this.running; i++) {
+      this.l(`--- event loop iteration ${i + 1} ---`);
+      this.tick();
+    }
+  }
+
+  stop(): void { this.running = false; }
+}
+
+// Usage
+const nbio = new NonBlockingIO();
+const serverFd = nbio.register();
+const clientFd = nbio.register();
+
+nbio.on(serverFd, (ev) => {
+  if (ev.type === 'READABLE') {
+    const data = nbio.read(serverFd);
+    if (data) console.log(`Server recv: "${data}"`);
+  }
+});
+
+nbio.on(clientFd, (ev) => {
+  if (ev.type === 'WRITABLE') {
+    const n = nbio.write(clientFd, 'Hello from event loop!');
+    if (n > 0) console.log(`Client sent ${n} bytes`);
+  }
+});
+
+// Simulate I/O events
+nbio.setReadable(serverFd, 'GET / HTTP/1.1');
+nbio.setWritable(clientFd);
+nbio.run(5);
+console.log('\nEvent loop log:');
+nbio.getLog().forEach(l => console.log(`  ${l}`));
+/*
+Output:
+[register] fd=3 added to event loop
+[register] fd=4 added to event loop
+...event loop iterations...
+Server recv: "GET / HTTP/1.1"
+Client sent 22 bytes
+*/
+```
 
 ## 13.5 I/O Multiplexing: select, poll, epoll, kqueue
 
@@ -2397,71 +2781,113 @@ CLOSED → socket() → connect() → SYN_SENT → ESTABLISHED → recv/send loo
 
 ---
 
+## Mermaid Diagram: Socket API Call Comparison (TCP vs UDP)
+
+```mermaid
+graph LR
+  subgraph TCP["TCP Socket Lifecycle"]
+    direction TB
+    TCP_SOCK["socket(AF_INET, SOCK_STREAM, 0)"]
+    TCP_BIND["bind(ip, port)"]
+    TCP_LISTEN["listen(backlog)"]
+    TCP_CONN["connect(server)"]
+    TCP_ACCEPT["accept() → new fd"]
+    TCP_SEND["send(data)"]
+    TCP_RECV["recv(buf)"]
+    TCP_CLOSE["close() → FIN"]
+
+    TCP_SERV["SERVER:"] --> TCP_SOCK --> TCP_BIND --> TCP_LISTEN
+    TCP_LISTEN --> TCP_ACCEPT --> TCP_RECV --> TCP_SEND --> TCP_CLOSE
+    TCP_CLIENT["CLIENT:"] --> TCP_SOCK --> TCP_CONN --> TCP_SEND
+    TCP_SEND2["send(data)"] --> TCP_RECV2["recv(buf)"] --> TCP_CLOSE2["close()"]
+    TCP_CONN -.->|SYN/SYN-ACK/ACK| TCP_ACCEPT
+  end
+
+  subgraph UDP["UDP Socket Lifecycle"]
+    direction TB
+    UDP_SOCK["socket(AF_INET, SOCK_DGRAM, 0)"]
+    UDP_BIND["bind(ip, port)"]
+    UDP_SENDTO["sendto(data, addr)"]
+    UDP_RECVFROM["recvfrom(buf)"]
+    UDP_CLOSE["close()"]
+
+    UDP_SERV["SERVER:"] --> UDP_SOCK --> UDP_BIND
+    UDP_BIND --> UDP_RECVFROM --> UDP_SENDTO --> UDP_CLOSE
+    UDP_CLIENT["CLIENT:"] --> UDP_SOCK2["socket()"]
+    UDP_SOCK2 --> UDP_SENDTO2["sendto(data)"] --> UDP_RECVFROM2["recvfrom(buf)"] --> UDP_CLOSE2["close()"]
+  end
+
+  TCP -.->|"Reliable, Ordered, Connection-oriented"| UDP
+  TCP_SEND -.->|"Byte stream (no boundaries)"| TCP_RECV
+  UDP_SENDTO -.->|"Datagrams (message boundaries preserved)"| UDP_RECVFROM
+
+  classDef tcp fill:#d5f5e3,stroke:#27ae60,stroke-width:2px
+  classDef udp fill:#d4e6f1,stroke:#2980b9,stroke-width:2px
+  classDef label fill:#fef9e7,stroke:#f1c40f,stroke-dasharray: 5 5
+  class TCP_SOCK,TCP_BIND,TCP_LISTEN,TCP_ACCEPT,TCP_CONN,TCP_SEND,TCP_RECV,TCP_CLOSE,TCP_SEND2,TCP_RECV2,TCP_CLOSE2 tcp
+  class UDP_SOCK,UDP_BIND,UDP_SENDTO,UDP_RECVFROM,UDP_CLOSE,UDP_SOCK2,UDP_SENDTO2,UDP_RECVFROM2,UDP_CLOSE2 udp
+  class TCP,TCP_SERV,TCP_CLIENT,UDP,UDP_SERV,UDP_CLIENT label
+```
+
+## Case Study: Building a Chat Server for 100K Concurrent Users
+
+**Problem.** A startup building a real-time group chat application needed to support 100,000 concurrent users on a single server cluster with sub-100ms message delivery latency. Initial prototypes using a thread-per-connection model (one thread per client) failed at 2,000 connections due to memory exhaustion (~8 MB per thread stack = 16 GB for 2,000) and context-switching overhead. The server needed to handle chat message broadcast to groups of up to 10,000 users with reliable delivery.
+
+**Solution.** The team redesigned the server using an event-driven architecture on Linux with epoll (edge-triggered). Key design decisions: (1) A single event loop per CPU core (4 worker processes) using `SO_REUSEPORT` to distribute incoming connections across workers. (2) Each connection consumed ~2 KB of application state (as opposed to 8 MB per thread), enabling 50,000 connections per worker. (3) The epoll event loop used edge-triggered mode with non-blocking sockets — all reads looped until `EAGAIN`, and writes were buffered per connection with `EPOLLOUT` registered only when data was pending. (4) Message broadcast used a lock-free ring buffer per worker: a single `send()` call per recipient was batched into 64 KB chunks to amortize system call overhead. (5) Connection management included a 60-second heartbeat with lazy cleanup — connections idle for >120 seconds were closed without scanning the full connection table.
+
+**Outcome.** The final server handled 50,000 concurrent connections per node (4 nodes for 200K capacity) at under 5% CPU utilization. Message delivery latency averaged 15 ms p99 across all group sizes. Memory per connection was 2.5 KB (state + send buffer), totaling ~125 MB per node at 50K connections — a 3,200x improvement over the thread-per-connection model. The system went on to power chat for 2 million daily active users.
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Event-driven architecture (epoll/kqueue) is essential for C10K+ concurrency | Use edge-triggered epoll with non-blocking I/O; never use thread-per-connection beyond 100 clients |
+| Memory per connection determines maximum concurrency | Design connection state to be ~2-4 KB; avoid per-connection thread stacks (8 MB each) |
+| Batch system calls to amortize overhead | Accumulate data into 64 KB buffers before send(); use writev() for scatter-gather |
+| Edge-triggered epoll requires careful loop logic | Always loop on recv() until EAGAIN; register EPOLLOUT only when write buffer is non-empty |
+| Connection cleanup must be O(1), not O(n) | Use a timeout wheel (hierarchical timer wheel) instead of scanning all connections |
+| CPU scaling through SO_REUSEPORT | Bind multiple worker processes to the same port; each handles a subset of connections via kernel load balancing |
+| Always plan for partial reads and writes | Buffer all I/O; never assume a single recv() or send() completes the full operation |
+
 ## Chapter Quiz
 
-1. **Which is NOT a valid socket type?**
-   - a) SOCK_STREAM
-   - b) SOCK_DGRAM
-   - c) SOCK_RAW
-   - d) SOCK_BUFFER  âœ“
+1. **Which system call is used by a TCP server to wait for incoming client connections?**
+   - a) connect()
+   - b) accept()
+   - c) recvfrom()
+   - d) listen()
 
-2. **What does epoll_wait return when there are no events and timeout is -1?**
-   - a) 0 immediately
-   - b) -1 with EAGAIN
-   - c) Blocks until at least one event  âœ“
-   - d) Returns -1 with ETIMEDOUT
+2. **What is the key advantage of epoll over select() for high-concurrency servers?**
+   - a) epoll is available on all operating systems
+   - b) epoll returns only the ready file descriptors, avoiding O(n) scanning
+   - c) epoll supports UDP sockets while select does not
+   - d) epoll automatically handles TLS encryption
 
-3. **Which socket option allows immediate port reuse after a crash?**
-   - a) SO_KEEPALIVE
-   - b) SO_REUSEADDR  âœ“
-   - c) TCP_NODELAY
-   - d) SO_LINGER
+3. **In edge-triggered epoll mode, what must a server do after receiving an EPOLLIN event?**
+   - a) Read exactly 1024 bytes and stop
+   - b) Loop on recv() until it returns EAGAIN
+   - c) Immediately close the connection
+   - d) Switch to level-triggered mode
 
-4. **What error indicates a non-blocking socket would block?**
-   - a) EINTR
-   - b) EAGAIN / EWOULDBLOCK  âœ“
-   - c) EPIPE
-   - d) ECONNRESET
+4. **What error does a non-blocking send() return when the kernel send buffer is full?**
+   - a) EPIPE
+   - b) ECONNRESET
+   - c) EAGAIN / EWOULDBLOCK
+   - d) EINTR
 
-5. **Which I/O multiplexing API is NOT O(n) scanning?**
-   - a) select()
-   - b) poll()
-   - c) epoll()  âœ“
-   - d) All are O(n)
+5. **Why does UDP not have a listen() or accept() system call?**
+   - a) UDP is connectionless — there is no connection to establish
+   - b) UDP is only used for multicast
+   - c) UDP requires raw socket access
+   - d) UDP uses connect() instead
 
-6. **What is the maximum payload for a single UDP datagram?**
-   - a) 1024 bytes
-   - b) 65535 bytes
-   - c) 65507 bytes  âœ“
-   - d) Unlimited
-
-7. **What does SO_KEEPALIVE do?**
-   - a) Prevents socket from being closed
-   - b) Sends periodic probe packets to check peer liveness  âœ“
-   - c) Keeps the socket alive after process exit
-   - d) Retains the socket in the kernel forever
-
-8. **In epoll edge-triggered mode, when must you stop reading?**
-   - a) When recv returns 0
-   - b) When recv returns -1 with EAGAIN  âœ“
-   - c) When the response is complete
-   - d) After reading exactly 1024 bytes
-
-9. **Why does select() scale poorly beyond 1024 connections?**
-   - a) The kernel runs out of memory
-   - b) FD_SETSIZE hard limit; O(n) bitmap scanning  âœ“
-   - c) Network stack can't handle more
-   - d) The CPU overheats
-
-10. **Which real system uses libuv for its event loop?**
-    - a) Nginx
-    - b) Apache
-    - c) Node.js  âœ“
-    - d) HAProxy
-
-**Answers:** 1-d, 2-c, 3-b, 4-b, 5-c, 6-c, 7-b, 8-b, 9-b, 10-c
-
----
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1 | B | TCP servers call accept() to dequeue the next completed connection from the listen backlog, returning a new file descriptor for the client |
+| Q2 | B | select() scans all n file descriptors (O(n)); epoll returns only the k ready descriptors (O(k)), essential at 10K+ scale |
+| Q3 | B | In edge-triggered mode, events are delivered only when the state changes; the application must read until EAGAIN or risk missing data |
+| Q4 | C | EAGAIN (or EWOULDBLOCK) indicates the operation would block; for non-blocking sockets, the kernel returns immediately instead of blocking |
+| Q5 | A | UDP is connectionless — datagrams are sent directly to the destination without establishing a connection, so no listen/accept is needed |
 
 ## Summary
 
@@ -2479,42 +2905,37 @@ Real-world systems like Nginx, Node.js (libuv), HAProxy, and Redis all use event
 
 ### Review Questions
 
-1. Draw the complete TCP socket lifecycle state diagram for both server and client.
-2. What is the difference between edge-triggered and level-triggered epoll? Give a real scenario where each is preferable.
-3. Why does UDP have lower latency than TCP? List three specific protocol differences.
-4. What is the C10K problem and how did epoll help solve it?
-5. Explain TIME_WAIT: why it exists, its duration, and how SO_REUSEADDR works around it.
+<details>
+<summary>Solution</summary>
+
+1. **TCP Server:** CLOSED → socket() → bind() → listen() → LISTEN → accept() → ESTABLISHED → recv/send loop → close() → TIME_WAIT → CLOSED. **TCP Client:** CLOSED → socket() → connect() → SYN_SENT → ESTABLISHED → recv/send loop → close() → FIN_WAIT_1 → FIN_WAIT_2 → TIME_WAIT → CLOSED. The server uses passive open (listen → accept); the client uses active open (connect). Both end in TIME_WAIT (2×MSL ≈ 60s) on the side that sends the first FIN.
+
+2. **Level-triggered (LT):** The event fires as long as data exists. If you don't read all data, epoll_wait returns again immediately. **Edge-triggered (ET):** The event fires once when the state changes from empty to non-empty. If you miss data, you don't get another event until new data arrives. Use LT for simplicity (e.g., Redis) — tolerant of partial reads. Use ET for maximum performance (e.g., Nginx) — requires looping to EAGAIN but reduces epoll_wait calls.
+
+3. UDP is faster because: (a) No connection handshake — sendto() sends immediately without SYN/SYN-ACK/ACK. (b) No congestion control — no window adjustments, no RTT tracking, no AIMD. (c) No retransmission timers — lost datagrams are not retransmitted by the kernel. (d) Smaller header overhead — 8 bytes vs TCP's 20+ bytes.
+
+4. C10K is the problem of handling 10,000 concurrent clients. Thread-per-connection fails because 10,000 threads × 8 MB stack = 80 GB. epoll solves it with O(1) event notification: a single thread polls for readiness and handles only active connections. Each connection requires ~1-4 KB state instead of 8 MB.
+
+5. TIME_WAIT prevents: (a) delayed segments from a closed connection being misinterpreted by a new connection on the same IP:port, and (b) the final ACK being lost (the server retransmits FIN, and TIME_WAIT allows re-ACKing). Duration = 2×MSL ≈ 60 seconds. SO_REUSEADDR allows a new process to bind to a port in TIME_WAIT, which is essential for fast server restart after crash.
+</details>
 
 ### Application Problems
 
-6. Implement a **select-based TCP chat room** in Python. A message sent by any client should be broadcast to all other connected clients. Handle client disconnection gracefully.
+<details>
+<summary>Solution</summary>
 
-7. Write a **C++ program** that measures and compares the throughput of TCP vs Unix domain sockets. Create a simple echo server for each, send 100MB of data in 1KB chunks, and report the total time.
+6. **select-based chat server (Python):** Use `select.select()` with `inputs` list (server + clients). On readable events: if server, accept and add to inputs; if client, recv and broadcast to all other clients. Track client addresses for display. Handle disconnection by removing from inputs. See section 13.5.1 for the full Python implementation.
 
-8. Implement an **epoll-based TCP echo server** in C++ with the following features:
-   - Edge-triggered mode
-   - Non-blocking sockets
-   - Per-connection read buffer (handle partial reads across epoll iterations)
-   - Graceful shutdown on SIGINT
-   - Logging of each connection's total bytes processed
+7. **TCP vs Unix throughput comparison:** Create two echo servers (one TCP on 127.0.0.1:PORT, one Unix on /tmp/bench.sock). Measure time to send 100 MB in 1 KB chunks. Results typically show Unix domain sockets 3-10× faster (no protocol stack, no checksums, no routing). TCP = ~45 µs/RTT; Unix = ~8 µs/RTT for localhost.
+
+8. **epoll echo server (C++):** See section 13.5.3 for the full implementation. Key design: non-blocking sockets, EPOLLET | EPOLLIN, accept loop until EAGAIN, recv loop until EAGAIN, per-connection buffer for partial reads, SIGINT handler calling close(), per-connection byte counter updated after each successful recv.
+</details>
 
 ### Challenge Problem
 
-9. **Build a minimal HTTP reverse proxy in C++ using epoll.** 
+<details>
+<summary>Solution</summary>
 
-Requirements:
-- Listen on port 8080, forward requests to a backend (e.g., localhost:9000).
-- Handle at least 10,000 concurrent connections.
-- Support both HTTP/1.0 and HTTP/1.1 (including keep-alive).
-- Use edge-triggered epoll for both client and backend sockets.
-- Maintain read/write buffers per connection pair.
-- Handle partial reads and writes correctly: if send() returns EAGAIN, buffer remaining data and register for EPOLLOUT.
-- Log request method, path, and response status code.
-- Graceful shutdown: drain pending writes before closing.
-
-**Hints:**
-- Use `struct buffered_connection { int client_fd; int backend_fd; std::string rbuf; std::string wbuf; bool headers_done; };`
-- Track which direction has pending data.
-- For EPOLLOUT: only add the event when there's data to write; remove it when buffer empties.
-- Consider using `sendfile()` or `splice()` for zero-copy file serving (bonus feature).
+9. **HTTP reverse proxy with epoll:** Architecture — main event loop calls epoll_wait, handles server_fd (accept, add client to epoll), client_fd (read request, connect to backend, add backend to epoll), backend_fd (read response, forward to client). Key structures: `unordered_map<int, Conn> conns` where `Conn { int client_fd, backend_fd; string rbuf, wbuf; bool headers_sent; }`. For EPOLLOUT: only register when wbuf non-empty; after write, if data remains, keep EPOLLOUT; if empty, remove EPOLLOUT. For EPOLLIN: read into rbuf; if HTTP request complete, parse method/path, create backend connection, forward request. For HTTP/1.1 keep-alive, after response is fully sent, keep connection open and reset state for next request. For graceful shutdown, maintain a list of active connections; on SIGINT, stop accepting new connections, drain pending writes, then close.
+</details>
 

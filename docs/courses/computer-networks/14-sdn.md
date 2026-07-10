@@ -1001,6 +1001,118 @@ ON_RECEIVE_MESSAGE(switch, message, controller_state):
         RETURN "Error handled"
 ```
 
+## TypeScript Implementation: OpenFlowSwitch — Flow Table & Pipeline
+
+```typescript
+interface FlowMatch {
+  inPort?: number;
+  ethSrc?: string;
+  ethDst?: string;
+  vlanId?: number;
+  ipSrc?: string;
+  ipDst?: string;
+  ipProto?: number;
+  tcpSrc?: number;
+  tcpDst?: number;
+}
+
+type FlowAction =
+  | { type: 'OUTPUT'; port: number }
+  | { type: 'DROP' }
+  | { type: 'SET_FIELD'; field: string; value: string | number }
+  | { type: 'GROUP'; groupId: number }
+  | { type: 'METER'; meterId: number }
+  | { type: 'PUSH_VLAN' }
+  | { type: 'POP_VLAN' };
+
+interface FlowEntry {
+  priority: number;
+  match: FlowMatch;
+  instructions: FlowAction[];
+  packetCount: number;
+  byteCount: number;
+  duration: number;
+  idleTimeout: number;
+  hardTimeout: number;
+  cookie: number;
+  installedAt: number;
+}
+
+class OpenFlowSwitch {
+  private flows: FlowEntry[] = [];
+  private nextCookie = 1;
+
+  addFlow(entry: Omit<FlowEntry, 'packetCount' | 'byteCount' | 'duration' | 'installedAt' | 'cookie'>): number {
+    const cookie = this.nextCookie++;
+    this.flows.push({
+      ...entry,
+      packetCount: 0,
+      byteCount: 0,
+      duration: 0,
+      installedAt: Date.now(),
+      cookie,
+    });
+    this.flows.sort((a, b) => b.priority - a.priority);
+    console.log(`Flow installed: cookie=${cookie} priority=${entry.priority} match=${JSON.stringify(entry.match)}`);
+    return cookie;
+  }
+
+  packetIn(packet: { data: string; inPort: number; length: number }): FlowAction[] {
+    const now = Date.now();
+    this.flows = this.flows.filter(f => {
+      if (f.hardTimeout > 0 && now - f.installedAt > f.hardTimeout * 1000) {
+        console.log(`Flow ${f.cookie} expired (hard timeout ${f.hardTimeout}s)`);
+        return false;
+      }
+      if (f.idleTimeout > 0) return true;
+      return true;
+    });
+
+    for (const flow of this.flows) {
+      if (this.matchPacket(packet, flow.match)) {
+        flow.packetCount++;
+        flow.byteCount += packet.length;
+        flow.duration = (now - flow.installedAt) / 1000;
+        console.log(`Flow ${flow.cookie} matched: actions=${JSON.stringify(flow.instructions)}`);
+        return flow.instructions;
+      }
+    }
+    console.log('Table-miss — sending PACKET_IN to controller');
+    return [{ type: 'OUTPUT', port: 1 }];
+  }
+
+  private matchPacket(packet: { data: string; inPort: number }, match: FlowMatch): boolean {
+    if (match.inPort !== undefined && packet.inPort !== match.inPort) return false;
+    return true;
+  }
+
+  getStats(): { totalFlows: number; packets: number; bytes: number } {
+    return {
+      totalFlows: this.flows.length,
+      packets: this.flows.reduce((s, f) => s + f.packetCount, 0),
+      bytes: this.flows.reduce((s, f) => s + f.byteCount, 0),
+    };
+  }
+
+  removeFlow(cookie: number): boolean {
+    const idx = this.flows.findIndex(f => f.cookie === cookie);
+    if (idx === -1) return false;
+    this.flows.splice(idx, 1);
+    console.log(`Flow ${cookie} removed`);
+    return true;
+  }
+}
+
+const sw = new OpenFlowSwitch();
+sw.addFlow({ priority: 100, match: {}, instructions: [{ type: 'OUTPUT', port: 2 }], idleTimeout: 60, hardTimeout: 0 });
+sw.addFlow({ priority: 200, match: { inPort: 3 }, instructions: [{ type: 'DROP' }], idleTimeout: 0, hardTimeout: 120 });
+sw.packetIn({ data: 'HTTP request', inPort: 1, length: 1500 });
+sw.packetIn({ data: 'Malicious payload', inPort: 3, length: 64 });
+console.log(sw.getStats());
+sw.removeFlow(1);
+console.log(sw.getStats());
+```
+
 ## 14.3 SDN Controllers
 
 An SDN controller is a software platform that provides:
@@ -1075,6 +1187,136 @@ An SDN controller is a software platform that provides:
 - **DEAD**: Controller process terminated.
 - **SHUTDOWN**: Graceful shutdown; barrier request to flush pending operations.
 
+## TypeScript Implementation: SDNController — Topology Discovery, Flow Programming & Event Handling
+
+```typescript
+interface Link {
+  srcSwitch: string;
+  srcPort: number;
+  dstSwitch: string;
+  dstPort: number;
+  latencyMs: number;
+}
+
+interface SwitchInfo {
+  id: string;
+  ports: number[];
+  connected: boolean;
+}
+
+interface FlowRule {
+  id: string;
+  priority: number;
+  match: Record<string, string | number>;
+  actions: string[];
+  installedOn: string[];
+}
+
+class SDNController {
+  private switches: Map<string, SwitchInfo> = new Map();
+  private links: Link[] = [];
+  private flows: Map<string, FlowRule> = new Map();
+  private lldpIntervalMs = 5000;
+  private eventLog: string[] = [];
+
+  connectSwitch(id: string, ports: number[]): void {
+    this.switches.set(id, { id, ports, connected: true });
+    console.log(`Switch ${id} connected with ${ports.length} ports`);
+    this.logEvent('SWITCH_CONNECT', `Switch ${id} joined`);
+    this.sendLLDP(id, ports);
+  }
+
+  private sendLLDP(switchId: string, ports: number[]): void {
+    ports.forEach(port => {
+      setTimeout(() => {
+        this.handleLLDP(switchId, port, `lldp:${switchId}:${port}`);
+      }, Math.random() * 100);
+    });
+  }
+
+  handleLLDP(srcSwitch: string, srcPort: number, chassisId: string): void {
+    const [_, discoveredSwitch, discoveredPort] = chassisId.split(':');
+    if (discoveredSwitch === srcSwitch) return;
+
+    if (!this.switches.has(discoveredSwitch)) return;
+
+    const existing = this.links.find(
+      l => l.srcSwitch === srcSwitch && l.srcPort === srcPort
+    );
+    const latency = Math.round(Math.random() * 5 + 1);
+
+    if (!existing) {
+      this.links.push({ srcSwitch, srcPort, dstSwitch: discoveredSwitch, dstPort: Number(discoveredPort), latencyMs: latency });
+      console.log(`Link discovered: ${srcSwitch}:${srcPort} <-> ${discoveredSwitch}:${discoveredPort} (${latency}ms)`);
+      this.logEvent('LINK_UP', `${srcSwitch}:${srcPort} -> ${discoveredSwitch}:${discoveredPort}`);
+    }
+  }
+
+  installFlow(id: string, match: Record<string, string | number>, actions: string[], priority = 100): void {
+    const devices = Array.from(this.switches.keys());
+    const flow: FlowRule = { id, priority, match, actions, installedOn: [] };
+
+    devices.forEach(swId => {
+      this.flows.set(`${id}@${swId}`, { ...flow, installedOn: [swId] });
+      console.log(`Flow ${id} installed on ${swId}: match=${JSON.stringify(match)} actions=[${actions}]`);
+    });
+
+    this.logEvent('FLOW_INSTALL', `Flow ${id} on ${devices.length} switches`);
+  }
+
+  handlePacketIn(switchId: string, packet: { srcMac: string; dstMac: string; inPort: number }): void {
+    this.logEvent('PACKET_IN', `Switch ${switchId} port ${packet.inPort} — ${packet.srcMac} -> ${packet.dstMac}`);
+
+    const path = this.computeShortestPath(this.switches.keys().next().value!, switchId);
+    if (path.length > 1) {
+      this.installFlow(`flow_${Date.now()}`, packet, [`OUTPUT:${path[1]}`]);
+    }
+  }
+
+  private computeShortestPath(from: string, to: string): string[] {
+    if (from === to) return [from];
+    const visited = new Set<string>();
+    const queue: { node: string; path: string[] }[] = [{ node: from, path: [from] }];
+    visited.add(from);
+
+    while (queue.length > 0) {
+      const { node, path } = queue.shift()!;
+      const neighbors = new Set<string>();
+      this.links.forEach(l => {
+        if (l.srcSwitch === node) neighbors.add(l.dstSwitch);
+        if (l.dstSwitch === node) neighbors.add(l.srcSwitch);
+      });
+      for (const n of neighbors) {
+        if (n === to) return [...path, n];
+        if (!visited.has(n)) {
+          visited.add(n);
+          queue.push({ node: n, path: [...path, n] });
+        }
+      }
+    }
+    return [from];
+  }
+
+  getTopology(): { switches: SwitchInfo[]; links: Link[] } {
+    return { switches: Array.from(this.switches.values()), links: this.links };
+  }
+
+  private logEvent(type: string, detail: string): void {
+    this.eventLog.push(`[${new Date().toISOString()}] ${type}: ${detail}`);
+  }
+
+  getEvents(): string[] { return this.eventLog; }
+}
+
+const ctrl = new SDNController();
+ctrl.connectSwitch('sw1', [1, 2, 3, 4]);
+ctrl.connectSwitch('sw2', [1, 2, 3]);
+ctrl.connectSwitch('sw3', [1, 2]);
+ctrl.handlePacketIn('sw1', { srcMac: '00:11:22:33:44:55', dstMac: 'aa:bb:cc:dd:ee:ff', inPort: 2 });
+console.log(ctrl.getTopology());
+console.log(ctrl.getEvents().slice(-3));
+```
+
 ## 14.4 Network Functions Virtualization
 
 NFV decouples network functions (firewall, load balancer, NAT, IDS, WAN optimizer) from dedicated hardware appliances. These functions run as software on commodity servers, virtual machines, or containers.
@@ -1125,6 +1367,118 @@ Geneve (Generic Network Virtualization Encapsulation, RFC 8926) provides a flexi
 ### 14.5.3 NVGRE
 
 NVGRE (Network Virtualization using Generic Routing Encapsulation) uses GRE tunnels instead of UDP encapsulation, requiring hardware support for large GRE offload.
+
+## TypeScript Implementation: NetworkVirtualization — Network Slice Manager, vSwitch & Traffic Isolation
+
+```typescript
+interface VNIConfig {
+  vni: number;
+  name: string;
+  vlanId?: number;
+  subnet: string;
+  allowedTenants: string[];
+  bandwidthMbps: number;
+}
+
+interface VSwitchPort {
+  id: string;
+  tenantId: string;
+  vni: number;
+  mac: string;
+  ip: string;
+}
+
+interface TrafficRule {
+  id: string;
+  vni: number;
+  priority: number;
+  srcIp: string | null;
+  dstIp: string | null;
+  action: 'ALLOW' | 'DENY' | 'RATE_LIMIT';
+  rateLimitMbps?: number;
+}
+
+class NetworkVirtualizationManager {
+  private vnis: Map<number, VNIConfig> = new Map();
+  private ports: Map<string, VSwitchPort> = new Map();
+  private rules: TrafficRule[] = [];
+  private vniCounter = 100;
+
+  createVNI(name: string, subnet: string, tenant: string, bw: number): VNIConfig {
+    const vni = this.vniCounter++;
+    const config: VNIConfig = { vni, name, subnet, allowedTenants: [tenant], bandwidthMbps: bw };
+    this.vnis.set(vni, config);
+    console.log(`VNI ${vni} created: ${name} subnet=${subnet} tenant=${tenant} bw=${bw}Mbps`);
+    return config;
+  }
+
+  attachPort(portId: string, tenantId: string, vni: number, mac: string, ip: string): VSwitchPort | null {
+    const vniConfig = this.vnis.get(vni);
+    if (!vniConfig) { console.log(`VNI ${vni} not found`); return null; }
+    if (!vniConfig.allowedTenants.includes(tenantId)) {
+      console.log(`Tenant ${tenantId} not authorized for VNI ${vni}`); return null;
+    }
+    const port: VSwitchPort = { id: portId, tenantId, vni, mac, ip };
+    this.ports.set(portId, port);
+    console.log(`Port ${portId} attached: VNI=${vni} tenant=${tenantId} ${mac}@${ip}`);
+    return port;
+  }
+
+  addRule(rule: Omit<TrafficRule, 'id'>): string {
+    const id = `rule_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
+    const r: TrafficRule = { ...rule, id };
+    this.rules.push(r);
+    this.rules.sort((a, b) => b.priority - a.priority);
+    console.log(`Rule ${id}: VNI=${rule.vni} ${rule.srcIp ?? '*'}->${rule.dstIp ?? '*'} action=${rule.action}`);
+    return id;
+  }
+
+  isolateTraffic(vni: number, candidatePortId: string, otherPortId: string): boolean {
+    const portA = this.ports.get(candidatePortId);
+    const portB = this.ports.get(otherPortId);
+    if (!portA || !portB) return false;
+    return portA.vni === vni && portB.vni === vni;
+  }
+
+  forwardFrame(srcPortId: string, dstMac: string): { allowed: boolean; dstPort?: VSwitchPort; reason: string } {
+    const src = this.ports.get(srcPortId);
+    if (!src) return { allowed: false, reason: 'Source port not found' };
+
+    for (const rule of this.rules) {
+      if (rule.vni !== src.vni) continue;
+      if (rule.srcIp !== null && rule.srcIp !== src.ip) continue;
+      if (rule.dstIp !== null) {
+        const dstPort = Array.from(this.ports.values()).find(p => p.mac === dstMac);
+        if (dstPort && rule.dstIp !== dstPort.ip) continue;
+      }
+      if (rule.action === 'DENY') return { allowed: false, reason: `Denied by rule ${rule.id}` };
+      if (rule.action === 'ALLOW') break;
+    }
+
+    const dst = Array.from(this.ports.values()).find(p => p.mac === dstMac);
+    if (!dst) return { allowed: false, reason: 'Destination MAC unknown' };
+    if (dst.vni !== src.vni) return { allowed: false, reason: 'Cross-VNI traffic blocked' };
+
+    return { allowed: true, dstPort: dst, reason: 'Forwarded' };
+  }
+
+  getStats(): { vnis: number; ports: number; rules: number } {
+    return { vnis: this.vnis.size, ports: this.ports.size, rules: this.rules.length };
+  }
+}
+
+const nvm = new NetworkVirtualizationManager();
+const tenantA = nvm.createVNI('tenant-a-net', '10.1.0.0/24', 'tenant-a', 1000);
+const tenantB = nvm.createVNI('tenant-b-net', '10.2.0.0/24', 'tenant-b', 500);
+nvm.attachPort('vm1-veth0', 'tenant-a', tenantA.vni, '00:0a:95:00:00:01', '10.1.0.10');
+nvm.attachPort('vm2-veth0', 'tenant-a', tenantA.vni, '00:0a:95:00:00:02', '10.1.0.20');
+nvm.attachPort('vm3-veth0', 'tenant-b', tenantB.vni, '00:0b:95:00:00:01', '10.2.0.10');
+nvm.addRule({ vni: tenantA.vni, priority: 100, srcIp: null, dstIp: null, action: 'ALLOW' });
+
+console.log('VM1->VM2:', nvm.forwardFrame('vm1-veth0', '00:0a:95:00:00:02'));
+console.log('VM1->VM3:', nvm.forwardFrame('vm1-veth0', '00:0b:95:00:00:01'));
+console.log(nvm.getStats());
+```
 
 ## 14.6 NFV vs SDN
 
@@ -1431,57 +1785,125 @@ In SDN, **strong consistency is critical** — two controllers installing confli
 | Application-aware WAN | SD-WAN | Multi-link, SLA-driven path selection |
 | Container networking | OVN + OVS | OpenFlow-based virtual networking for K8s |
 
+## Mermaid Diagram: SDN Architecture (Application, Control & Data Planes)
+
+```mermaid
+graph TB
+  subgraph APP["Application Plane"]
+    direction TB
+    TRAFFIC_ENG["Traffic Engineering App"]
+    MONITOR["Monitoring & Analytics"]
+    INTENT["Intent-based Networking"]
+    SECURITY["Security Policy App"]
+    LB["Load Balancer App"]
+  end
+
+  subgraph CTRL["Control Plane"]
+    direction TB
+    NB_API["Northbound API (REST/gRPC)"]
+    SDN_CTRL["SDN Controller<br/>(ONOS / OpenDaylight / Ryu)"]
+    TOPO["Topology Manager"]
+    FLOW_MGR["Flow Manager"]
+    STATS["Statistics Collector"]
+    LLDP["LLDP Discovery"]
+    SB_API["Southbound API (OpenFlow / NETCONF)"]
+    EB_WEST["East-West API<br/>(Raft Consensus)"]
+
+    NB_API --> SDN_CTRL
+    SDN_CTRL --> TOPO
+    SDN_CTRL --> FLOW_MGR
+    SDN_CTRL --> STATS
+    SDN_CTRL --> LLDP
+    SDN_CTRL --> SB_API
+    SDN_CTRL <--> EB_WEST
+  end
+
+  subgraph DATA["Data Plane"]
+    direction TB
+    SW1["OpenFlow Switch 1"]
+    SW2["OpenFlow Switch 2"]
+    SW3["OpenFlow Switch 3"]
+    SW4["OpenFlow Switch 4"]
+
+    H1["Host A"] -->|"Ingress"| SW1
+    H2["Host B"] -->|"Ingress"| SW2
+    SW1 <-->|"Flow Tables"| SW3
+    SW2 <-->|"Flow Tables"| SW3
+    SW3 -->|"Egress"| SW4
+    SW4 -->|"Forward"| H3["Host C"]
+    SW4 -->|"Forward"| H4["Host D"]
+  end
+
+  APP -->|"Northbound"| CTRL
+  CTRL -->|"Southbound"| DATA
+
+  classDef app fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+  classDef ctrl fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+  classDef data fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+  class TRAFFIC_ENG,MONITOR,INTENT,SECURITY,LB app
+  class NB_API,SDN_CTRL,TOPO,FLOW_MGR,STATS,LLDP,SB_API,EB_WEST ctrl
+  class SW1,SW2,SW3,SW4,H1,H2,H3,H4 data
+```
+
+## Case Study: Google's B4 SDN WAN
+
+**Problem.** Google operates a private WAN connecting 12+ data centers globally. By 2015, the WAN carried a mix of user-facing traffic (search, YouTube, Gmail, Maps) and internal traffic (MapReduce, Bigtable replication, Spanner writes, GFS chunk transfers). Traditional distributed routing (BGP/IS-IS) achieved only 30-40% WAN link utilization because traffic followed shortest paths regardless of available bandwidth. Google needed to push utilization above 90% while maintaining latency SLAs for user-facing traffic.
+
+**Solution.** Google deployed B4, an SDN-based WAN using OpenFlow (1.0 initially, upgraded to 1.3) with the following design: (1) **Hardware**: Custom OpenFlow switches built from merchant silicon (Broadcom Trident2 ASICs) — 128×10GbE per switch, ~$1/port vs $10K/port for traditional core routers. (2) **Centralized TE**: B4's centralized Traffic Engineering (TE) server collected link utilization from all switches every 5 seconds, computed a global traffic matrix, and solved a max-min fair allocation using linear programming (MCF). (3) **Tunnels**: Traffic was classified into tunnels (hundreds per site). The TE server assigned each tunnel a rate and path, then installed corresponding OpenFlow group table entries (SELECT buckets with weighted ECMP). (4) **Enforcement**: Edge switches marked packets with DSCP (AF4 for user traffic, AF3 for internal). Core switches applied WFQ scheduling per DSCP class to guarantee latency. (5) **Hedging**: User-facing traffic could preempt internal traffic; spare bandwidth was filled with internal transfers using a weighted fair bottleneck scheduler.
+
+**Outcome.** B4 achieved >90% WAN link utilization (up from ~35%), saving over $1B in bandwidth costs by deferring new fiber builds. Site-to-site latency for user traffic remained under 5 ms at p99. Failure recovery was sub-second — B4 detected link flaps via OpenFlow PortStats, recomputed the TE solution in 200ms, and installed new flow_mods in <10ms. B4 handled 100+ simultaneous link failures per year without SLA violations. This design became the blueprint for SD-WAN, inspiring follow-on systems at Microsoft (SWAN), Amazon, and Alibaba.
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Centralized TE with global visibility dramatically improves link utilization | Collect real-time flow statistics; solve multi-commodity flow with linear programming; push optimal paths via OpenFlow group tables |
+| Merchant silicon makes SDN economically viable | Use commodity ASICs (Broadcom, Mellanox); custom firmware enables flow table programmability at 1/10th the cost of chassis routers |
+| Traffic class prioritization protects user SLAs | Mark traffic at edge with DSCP; apply WFQ/DRR at core; allow user traffic to preempt bulk/batch data |
+| Sub-second failure recovery requires fast topology detection | Use OpenFlow PortStats polling (every 1s); maintain pre-computed backup paths; install failover group buckets for fast switch-over |
+| OpenFlow group tables enable weighted ECMP at line rate | Use SELECT type groups with weighted buckets; the switch distributes traffic across paths with hardware hashing (no controller involvement per packet) |
+| SDN workflows (measure → model → optimize → push) enable rapid iteration | Automate the closed loop: every 5s collect stats, recompute flows, push diffs only; roll back within one iteration on validation failure |
+| Intent-based policies abstract away low-level flow rules | Define SLAs (latency, bandwidth, priority) in a policy language; let the controller compile intents to flow entries and verify them against network state before deployment |
+
 ## Chapter Quiz
 
-1. **What primary function does the SDN control plane perform?**
-   - a) Packet forwarding
-   - b) Computing and installing flow rules
-   - c) MAC learning
-   - d) VLAN tagging
+1. **Which plane in SDN handles packet forwarding decisions at line rate?**
+   - a) Application plane
+   - b) Control plane
+   - c) Data plane
+   - d) Management plane
 
-2. **How many VXLAN segments are possible?**
-   - a) 4094
-   - b) 16 million
-   - c) 65,535
-   - d) Unlimited
-
-3. **Which message does an OpenFlow switch send when no flow matches?**
+2. **What type of OpenFlow message does a switch send when it receives a packet matching no flow entry?**
    - a) FLOW_MOD
    - b) PACKET_IN
    - c) PACKET_OUT
-   - d) FEATURES_REQUEST
+   - d) PORT_STATUS
 
-4. **What VNF orchestrator is part of ETSI MANO?**
-   - a) OpenStack
-   - b) NFVO
-   - c) VXLAN
-   - d) OpenFlow
+3. **How does VXLAN scale beyond the VLAN 4094-segment limit?**
+   - a) By using 16-bit segment IDs
+   - b) By using 24-bit VNIs supporting ~16 million segments
+   - c) By using MPLS labels
+   - d) By using multiple VLAN tags
 
-5. **Which protocol does VXLAN use for encapsulation?**
-   - a) GRE
-   - b) UDP
-   - c) TCP
-   - d) ICMP
+4. **In Google B4, what mechanism allowed user-facing traffic to preempt internal traffic?**
+   - a) Static route prioritization
+   - b) DSCP marking with WFQ scheduling
+   - c) BGP community tags
+   - d) MPLS EXP bits
 
-6. **Which OpenFlow table type supports load balancing across ports?**
-   - a) Flow Table
-   - b) Group Table (SELECT)
-   - c) Meter Table
-   - d) Pipeline Table
+5. **What problem does the controller placement problem (CPP) address?**
+   - a) Which vendor's controller to purchase
+   - b) Where to position controllers to minimize switch-controller latency
+   - c) How to stack multiple controllers in a single rack
+   - d) Which version of OpenFlow to use
 
-7. **What happens when an SDN switch disconnects from the controller in 'secure' mode?**
-   - a) All traffic stops
-   - b) Existing flows continue, new unmatched packets dropped
-   - c) Switch becomes a normal L2 switch
-   - d) Switch reboots
-
-8. **Which real-world system uses SDN to achieve 90%+ WAN link utilization?**
-   - a) Cisco ACI
-   - b) VMware NSX
-   - c) Google B4
-   - d) OpenStack Neutron
-
-**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b, 6-b, 7-b, 8-c
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1 | C | The data plane (forwarding plane) performs packet forwarding at line rate using hardware flow tables; the control plane makes forwarding decisions, while the application plane provides higher-level services |
+| Q2 | B | PACKET_IN is sent to the controller when a table-miss occurs (no matching flow entry); the controller responds with a PACKET_OUT or installs a new flow via FLOW_MOD |
+| Q3 | B | VXLAN uses a 24-bit VXLAN Network Identifier (VNI), supporting up to 2^24 = 16,777,216 segments compared to VLAN's 12-bit (4094) limit |
+| Q4 | B | B4 marked user traffic with DSCP AF4 and internal traffic with AF3; core switches applied per-class Weighted Fair Queuing (WFQ), allowing user traffic to preempt internal traffic during congestion |
+| Q5 | B | CPP is the NP-hard problem of optimally placing controllers in the network to minimize the latency between switches and their assigned controllers, balancing propagation delay, controller load, and fault tolerance |
 
 ## Summary
 
@@ -1491,22 +1913,69 @@ SDN separates the control plane from the data plane, enabling centralized, progr
 
 ### Review Questions
 
-1. What is the difference between the control plane and the data plane?
-2. What happens when an OpenFlow switch receives a packet that matches no flow entry?
-3. What advantage does VXLAN offer over traditional VLANs?
-4. How does NFV differ from SDN?
-5. What is service function chaining?
-6. Explain the CAP theorem trade-off in distributed SDN controllers.
-7. What is the controller placement problem and why is it NP-hard?
+<details>
+<summary>Solution</summary>
+
+1. **Control plane** makes forwarding decisions (computes routes, installs flow entries). **Data plane** forwards packets based on those decisions (matches flow tables, executes actions). SDN physically separates them — the controller runs on a server, and switches only forward.
+
+2. The switch sends a **PACKET_IN** message to the controller containing the packet buffer (or first bytes). The controller decides the action (e.g., install a flow entry and forward via PACKET_OUT). If the controller doesn't respond, the packet is dropped after a timeout.
+
+3. VXLAN uses 24-bit VNIs (16 million segments) vs VLAN's 12-bit (4094). VXLAN encapsulates L2 frames in UDP over IP, enabling L2 extension across L3 network boundaries — critical for VM mobility, cloud multi-tenancy, and data center interconnect.
+
+4. **SDN** separates control and data planes for centralized, programmable forwarding. **NFV** virtualizes network functions (firewall, LB, IDS) to run on commodity hardware. They are complementary: SDN provides the network fabric; NFV provides the services running on that fabric.
+
+5. SFC directs traffic through an ordered sequence of VNFs (e.g., FW -> IDS -> LB). Each VNF processes the packet and returns it to the network for the next hop. NSH (Network Service Header) or policy-based routing ensures the correct traversal path.
+
+6. In distributed controllers (e.g., ONOS with Raft), **consistency** requires every controller to have the same network view before acting, but **availability** means the system must continue operating during partitions. Raft sacrifices availability during leader election (CP) — some controllers are unavailable for writes during a partition.
+
+7. CPP determines the optimal locations for controllers in an SDN network to minimize switch-to-controller latency. It's NP-hard because it reduces to the facility location problem (k-median/k-center) on general graphs, with additional constraints for controller capacity and fault tolerance.
+</details>
 
 ### Application Problems
 
-8. An OpenFlow switch has flow entries for HTTP traffic (port 80) and SSH traffic (port 22). Write the match-action entries in pseudocode, then trace what happens when a packet arrives on an unknown port.
-9. Design a VXLAN topology connecting two data centers. Each data center has 10 KVM hosts and 1000 VMs. Specify the VTEP configuration, VLAN-to-VNI mappings, and routing requirements for inter-DC traffic.
-10. An enterprise deploys a chain of VNFs: firewall -> IDS -> load balancer -> web cache. The VNFs are deployed on three servers. Describe how service function chaining routes traffic through the correct sequence and how failures are handled.
-11. Given a campus network with 20 OpenFlow switches and 2 controllers, apply the greedy controller placement heuristic to determine where controllers should be located. Assume switches are arranged in a 4x5 grid with 1-hop latency between adjacent switches.
-12. Write a Python function that takes a flow table (list of entries) and a packet and returns the matching entry. Your function must handle priority ordering, wildcard masks, and timeout expiration.
+<details>
+<summary>Solution</summary>
+
+8. **Flow entries:** (1) match: tcp_dst=80, priority=100, action=OUTPUT(1). (2) match: tcp_dst=22, priority=100, action=OUTPUT(2). For unknown port (e.g., tcp_dst=443), no match → PACKET_IN to controller. The controller learns the MAC and installs a new flow: match: tcp_dst=443, priority=100, action=OUTPUT(3).
+
+9. **DC1**: VTEP IP 10.1.0.1, VNI 100↔VLAN100, VNI 101↔VLAN101. **DC2**: VTEP IP 10.2.0.1, VNI 200↔VLAN200. Inter-DC: VXLAN tunnel between VTEPs over IP WAN. Routing: each VTEP needs a route to the other VTEP's IP. For stretched subnets (VNI 100 in both DCs), BGP EVPN advertises MAC/VTEP mappings.
+
+10. Traffic enters via Switch A → PBR matches dst=server:80 → route to Firewall → returned to Switch A → match src=FW,dst=server → route to IDS → returned → match src=IDS,dst=server → route to LB → LB selects backend. Failures: VNF failure triggers VNF health check timeout → controller updates flow tables to bypass the failed VNF or redirect to a standby.
+
+11. 4×5 grid → 20 switches. Greedy placement: first controller at the center switch (row 2, col 2 — switch (2,2)). Remaining switches have max distance 2-3 hops. Second controller at (4,4) or (1,4) to minimize the farthest switch distance. Result: worst-case latency = 2 hops vs 5+ without optimal placement.
+
+12. See section 14.2.1 for the matching algorithm: sort by priority descending, iterate, check each match field with wildcard mask, verify idle/hard timeout hasn't expired. Return first match or null (table-miss → PACKET_IN).
+</details>
 
 ### Challenge Problem
 
-13. **Design an intent-based SDN application for QoS guarantees.** A university network has 10,000 users, 50 switches, and 5 routers. The SDN controller must enforce the following policies: (a) video conferencing traffic receives 10 Mbps per flow with under 50 ms latency, (b) research data transfers receive 1 Gbps with best-effort latency, (c) general web traffic is limited to 100 Mbps per user, (d) backup traffic runs only between midnight and 6 AM. Design the controller application: specify how traffic is identified, how flow entries are installed, how policies are verified before deployment, and how the system reacts to congestion. Provide pseudocode for the policy verification function.
+<details>
+<summary>Solution</summary>
+
+13. **Intent-based QoS controller design:**
+
+**Traffic identification:** DPI at edge switches classifies flows by port/protocol (video: UDP/3478-3481, RTP; research: SSH/SFTP on port 2222; web: TCP/80,443; backup: TCP/873 for rsync). Packets are marked with DSCP: EF (video), AF41 (research), AF11 (web), CS1 (backup).
+
+**Flow installation:** Apps submit intents via northbound API: `{app: "video", match: {dscp: EF}, constraints: {bandwidth: "10Mbps", latency: "50ms", priority: 100}}`. The controller compiles intents to meter entries (rate-limiting at 10 Mbps per flow for video), queue configurations (strict priority), and flow entries with DSCP-based matching.
+
+**Policy verification:** Before deployment, the controller runs a **what-if simulation**: model the current traffic matrix, add new flows, check link capacities and latency constraints. Violation → roll back with clear error message. Example verification function:
+
+```
+verify_policy(intents, topology):
+    capacity = topology.available_capacity()
+    for intent in intents sorted by priority:
+        path = shortiest_path(intent.src, intent.dst)
+        bottleneck = min(capacity[link] for link in path)
+        if intent.bandwidth > bottleneck:
+            return (False, "Insufficient BW on " + path)
+        for link in path:
+            capacity[link] -= intent.bandwidth
+        if intent.latency < estimated_latency(path):
+            return (False, "Latency violation on " + path)
+        if intent.time_constraint:
+            verify_time_window(intent)
+    return (True, "All intents valid")
+```
+
+**Congestion handling:** When link utilization >80%, the controller: (1) re-routes non-critical flows (CS1/AF11) to alternate paths, (2) throttles AF11 traffic via meter rate reduction, (3) if congestion persists, triggers an alert for operator intervention. All changes are logged for audit.
+</details>

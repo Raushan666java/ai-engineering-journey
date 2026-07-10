@@ -42,6 +42,63 @@ flowchart LR
     A --> F[LLC & MAC Addressing]
 ```
 
+### MAC Protocol Decision Flow
+
+```mermaid
+flowchart TD
+    Start["Choose MAC Protocol"] --> Q1{"Channel type?"}
+    Q1 -->|"Wired (shared)"| Q2
+    Q1 -->|"Wireless"| CSMA_CA["CSMA/CA with RTS/CTS"]
+    Q1 -->|"Dedicated channel"| CHAN["FDMA / TDMA / CDMA"]
+
+    Q2{"Collision detection possible?"}
+    Q2 -->|"Yes"| CSMA_CD["CSMA/CD + Binary Exp Backoff"]
+    Q2 -->|"No"| Q3
+
+    Q3{"Deterministic delay needed?"}
+    Q3 -->|"Yes"| TOKEN["Token Passing / Polling"]
+    Q3 -->|"No"| CSMA["p-persistent CSMA"]
+
+    CSMA_CD --> ETHERNET["Ethernet (802.3)"]
+    CSMA_CA --> WIFI["Wi-Fi (802.11)"]
+    TOKEN --> FDDI["FDDI / Token Ring"]
+    CHAN --> CELL["Cellular (4G/5G)"]
+
+    style Start fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style ETHERNET fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style WIFI fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style FDDI fill:#fce4ec,stroke:#c62828,stroke-width:2px
+    style CELL fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+```
+
+### ALOHA Throughput vs Offered Load
+
+```mermaid
+flowchart LR
+    subgraph Legend["Legend"]
+        PEAK1["Peak Pure: 0.184 (G=0.5)"]
+        PEAK2["Peak Slotted: 0.368 (G=1.0)"]
+    end
+
+    subgraph Curves["Throughput S vs Offered Load G"]
+        direction TB
+        G05["G=0.5<br/>Pure: 0.184<br/>Slotted: 0.303"]
+        G10["G=1.0<br/>Pure: 0.135<br/>Slotted: 0.368"]
+        G15["G=1.5<br/>Pure: 0.075<br/>Slotted: 0.335"]
+        G20["G=2.0<br/>Pure: 0.037<br/>Slotted: 0.271"]
+    end
+
+    Curves --> INSIGHT["Key insight: Slotted doubles throughput<br/>by halving vulnerable period"]
+
+    classDef peak fill:#ffebee,stroke:#c62828,stroke-width:2px
+    classDef curve fill:#e3f2fd,stroke:#1565c0,stroke-width:1px
+    classDef insight fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,stroke-dasharray:5
+
+    class PEAK1,PEAK2 peak
+    class G05,G10,G15,G20 curve
+    class INSIGHT insight
+```
+
 ---
 
 ## 4.1 The MAC Sublayer
@@ -446,6 +503,66 @@ if __name__ == "__main__":
 
 **Key insight:** Slotted ALOHA doubles throughput by halving the vulnerable period. The cost is global time synchronization -- non-trivial in distributed systems.
 
+### TypeScript Implementation: ALOHA Throughput Simulator
+
+```typescript
+class ALOHASimulator {
+  static pureThroughput(G: number): number {
+    return G * Math.exp(-2 * G);
+  }
+
+  static slottedThroughput(G: number): number {
+    return G * Math.exp(-G);
+  }
+
+  static simulate(G: number, slots: number, isSlotted: boolean): {
+    successes: number; collisions: number; idle: number; throughput: number
+  } {
+    let successes = 0, collisions = 0, idle = 0;
+    for (let t = 0; t < slots; t++) {
+      const transmissions = isSlotted
+        ? this.poissonRandom(G)
+        : this.poissonRandom(2 * G);
+      if (transmissions === 0) idle++;
+      else if (transmissions === 1) successes++;
+      else collisions++;
+    }
+    return {
+      successes,
+      collisions,
+      idle,
+      throughput: successes / slots,
+    };
+  }
+
+  private static poissonRandom(rate: number): number {
+    const L = Math.exp(-rate);
+    let k = 0, p = 1;
+    do {
+      k++;
+      p *= Math.random();
+    } while (p > L);
+    return k - 1;
+  }
+
+  static compare(): void {
+    console.log("G\tPure\tSlotted");
+    for (let G = 0.1; G <= 3.0; G += 0.2) {
+      const pure = ALOHASimulator.pureThroughput(G);
+      const slotted = ALOHASimulator.slottedThroughput(G);
+      console.log(`${G.toFixed(1)}\t${pure.toFixed(4)}\t${slotted.toFixed(4)}`);
+    }
+  }
+}
+
+// Demo
+ALOHASimulator.compare();
+console.log("\nSimulation (Slotted, G=1.0, 10000 slots):");
+const result = ALOHASimulator.simulate(1.0, 10000, true);
+console.log(`Successes: ${result.successes}, Collisions: ${result.collisions}, Idle: ${result.idle}`);
+console.log(`Measured throughput: ${result.throughput.toFixed(4)} (expected 0.368)`);
+```
+
 ---
 ### 4.2.2 CSMA (Carrier Sense Multiple Access)
 
@@ -755,6 +872,64 @@ if __name__ == "__main__":
 
 **Why exponential backoff?** As load increases, backoff windows grow exponentially, reducing retransmission rate and preventing throughput collapse. The algorithm is **adaptive** -- self-tunes without explicit coordination.
 
+### TypeScript Implementation: CSMA/CD Backoff Simulator
+
+```typescript
+class CSMACDBackoffSimulator {
+  private static readonly MAX_COLLISIONS = 16;
+  private static readonly SLOT_TIME_US = 51.2; // 512 bits at 10 Mbps
+
+  simulateFrame(): { attempts: number; totalWaitUs: number; success: boolean } {
+    let attempts = 1;
+    let totalWait = 0;
+
+    for (let i = 0; i < CSMACDBackoffSimulator.MAX_COLLISIONS; i++) {
+      // Attempt transmission
+      if (Math.random() < 0.5) { // simplified: 50% channel success
+        return { attempts, totalWaitUs: totalWait, success: true };
+      }
+      // Collision → exponential backoff
+      const window = Math.min(Math.pow(2, i), 1024);
+      const k = Math.floor(Math.random() * window);
+      totalWait += k * CSMACDBackoffSimulator.SLOT_TIME_US;
+      attempts++;
+    }
+    return { attempts, totalWaitUs: totalWait, success: false };
+  }
+
+  runTrial(numFrames: number): void {
+    let totalAttempts = 0;
+    let totalTime = 0;
+    let drops = 0;
+
+    for (let f = 0; f < numFrames; f++) {
+      const result = this.simulateFrame();
+      totalAttempts += result.attempts;
+      totalTime += result.totalWaitUs;
+      if (!result.success) drops++;
+    }
+
+    console.log(`CSMA/CD Backoff (${numFrames} frames):`);
+    console.log(`  Avg attempts: ${(totalAttempts / numFrames).toFixed(2)}`);
+    console.log(`  Avg wait: ${(totalTime / numFrames).toFixed(1)} us`);
+    console.log(`  Drop rate: ${(drops / numFrames * 100).toFixed(2)}%`);
+  }
+
+  traceBackoff(): void {
+    console.log("Backoff window growth:");
+    for (let i = 0; i < 16; i++) {
+      const w = Math.min(1 << i, 1024);
+      console.log(`  Collision ${(i + 1).toString().padStart(2, ' ')}: window [0, ${(w - 1).toString().padStart(4, ' ')}]`);
+    }
+  }
+}
+
+// Demo
+const sim = new CSMACDBackoffSimulator();
+sim.traceBackoff();
+sim.runTrial(10000);
+```
+
 #### 4.2.2.5 CSMA/CA (CSMA with Collision Avoidance)
 
 CSMA/CA is used in **wireless LANs (802.11)** where collision detection is impractical -- a WiFi radio cannot transmit and listen simultaneously on the same frequency (transmitted signal drowns received signals).
@@ -1018,9 +1193,94 @@ Event | Action                        | Ring State
 | Advantages | Collision-free; deterministic delay (excellent for real-time); fair access; bounded latency |
 | Disadvantages | Token maintenance overhead; single ring failure can disable network; lower utilization under light load; complex token recovery |
 
----
-## 4.4 Channelization
+### TypeScript Implementation: Token Passing Simulator
 
+```typescript
+interface TokenStation {
+  id: number;
+  hasData: boolean;
+  data: string[];
+}
+
+class TokenPassingSimulator {
+  private stations: TokenStation[];
+  private currentToken: number;
+  private ringUp: boolean = true;
+
+  constructor(stationList: string[]) {
+    this.stations = stationList.map((name, i) => ({
+      id: i,
+      hasData: Math.random() > 0.5,
+      data: [name],
+    }));
+    this.currentToken = 0;
+  }
+
+  simulate(rounds: number): void {
+    for (let r = 0; r < rounds; r++) {
+      if (!this.ringUp) {
+        console.log("Ring is down — cannot transmit");
+        return;
+      }
+
+      const station = this.stations[this.currentToken];
+      console.log(`--- Round ${r + 1}: Token at Station ${station.id} (${station.data[0]}) ---`);
+
+      if (station.hasData) {
+        const msg = `Data from ${station.data[0]}`;
+        console.log(`  Station ${station.id} captures token, sends: "${msg}"`);
+        station.hasData = false;
+
+        // Forward token around ring
+        for (let hop = 1; hop <= this.stations.length; hop++) {
+          const destIdx = (this.currentToken + hop) % this.stations.length;
+          const dest = this.stations[destIdx];
+          console.log(`  ${station.data[0]} -> ${dest.data[0]}: forwarding frame`);
+          if (dest.id === station.id) {
+            console.log(`  Frame returned to sender — ${station.data[0]} removes it`);
+            break;
+          }
+        }
+      } else {
+        console.log(`  Station ${station.id} has no data — passes token`);
+      }
+
+      // Pass token to next station
+      this.currentToken = (this.currentToken + 1) % this.stations.length;
+    }
+  }
+
+  addLoad(stationId: number): void {
+    this.stations[stationId].hasData = true;
+  }
+
+  breakRing(): void {
+    this.ringUp = false;
+  }
+
+  recoverRing(): void {
+    this.ringUp = true;
+    console.log("Ring recovered — monitoring station regenerated token");
+  }
+}
+
+// Demo: 4-station token ring
+const ring = new TokenPassingSimulator(["A", "B", "C", "D"]);
+ring.addLoad(0);
+ring.addLoad(2);
+ring.simulate(4);
+
+// Test failure and recovery
+console.log("\n--- Ring Failure Scenario ---");
+ring.breakRing();
+ring.simulate(1);
+ring.recoverRing();
+ring.simulate(1);
+```
+
+---
+
+## 4.4 Channelization
 Channelization is a **collision-free** approach where the shared channel is divided into independent sub-channels. Stations get dedicated capacity -- no contention, no collisions.
 
 ### 4.4.1 FDMA (Frequency Division Multiple Access)
@@ -1535,151 +1795,54 @@ Bluetooth uses a **polling-based** approach: the master polls each slave, and th
 
 ## Chapter Quiz
 
-**Q1.** What is the maximum throughput of pure ALOHA?
-
-- A) 36.8%
-- B) 50%
-- C) 18.4%
-- D) 100%
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) 18.4% (1/2e) -- the vulnerable period is twice the frame time.
-</details>
-
-**Q2.** Why does 1-persistent CSMA perform poorly when the channel transitions from busy to idle?
-
-- A) Stations cannot detect the idle state
-- B) Multiple waiting stations all transmit at once, causing collisions
-- C) The carrier sense mechanism fails
-- D) Backoff is disabled
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) All stations waiting for the channel transmit as soon as it becomes idle, causing guaranteed collisions.
-</details>
-
-**Q3.** In CSMA/CD, what is the purpose of the minimum frame size?
-
-- A) Ensure minimum data throughput
-- B) Guarantee collision detection across max network diameter
-- C) Reduce overhead from headers
-- D) Improve CRC strength
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) The frame must be long enough that the sender is still transmitting when the farthest collision signal returns.
-</details>
-
-**Q4.** The IEEE 802.3 MAC address FF:FF:FF:FF:FF:FF is what type?
-
-- A) Unicast
-- B) Multicast
-- C) Broadcast
-- D) Anycast
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) Broadcast -- all 48 bits set to 1, delivering to all stations on the LAN.
-</details>
-
-**Q5.** Which protocol achieves higher maximum throughput -- Pure ALOHA or Slotted ALOHA?
-
-- A) Pure ALOHA (18.4%)
-- B) Slotted ALOHA (36.8%)
-- C) Both are equal
-- D) Depends on G
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Slotted ALOHA achieves 36.8% vs Pure ALOHA's 18.4%. Halving the vulnerable period doubles throughput.
-</details>
-
-**Q6.** Why is CSMA/CA used instead of CSMA/CD in wireless networks?
-
-- A) Wireless is slower than wired
-- B) Radio cannot transmit and listen simultaneously on the same frequency
-- C) Wireless frames are too small
-- D) CSMA/CD is patented
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) A radio's transmitted signal drowns out received signals, making collision detection impossible during transmission.
-</details>
-
-**Q7.** In binary exponential backoff, what is the contention window after the 4th collision?
-
-- A) [0, 7]
-- B) [0, 15]
-- C) [0, 31]
-- D) [0, 63]
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) After the 4th collision (i=4), window = [0, 2^4 - 1] = [0, 15].
-</details>
-
-**Q8.** Does a switch isolate collision domains or broadcast domains?
-
-- A) Both
-- B) Collision domains only
-- C) Broadcast domains only
-- D) Neither
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Each switch port is a separate collision domain, but all ports share one broadcast domain (unless VLANs are used).
-</details>
-
-**Q9.** What is the purpose of the jam signal in CSMA/CD?
-
-- A) Synchronize receiver clocks
-- B) Indicate start of frame
-- C) Ensure all stations detect the collision
-- D) Request retransmission
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) The 48-bit jam signal ensures all stations on the segment recognize the collision, even if their own collision detection hardware didn't trigger.
-</details>
-
-**Q10.** In a token ring network with 5 stations, what happens if the token is lost?
-
-- A) The network stops permanently
-- B) A monitoring station detects the absence and regenerates the token
-- C) All stations transmit simultaneously
-- D) The ring switches to CSMA/CD mode
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Token ring protocols include a monitoring station that detects token loss via timer expiration and regenerates a new token.
-</details>
-
-**Q11.** In CDMA, what property must spreading codes satisfy?
-
-- A) They must all be identical
-- B) They must be orthogonal (dot product = 0)
-- C) They must have equal amplitude
-- D) They must be prime numbers
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Spreading codes must be orthogonal (their dot product = 0) so the receiver can extract the desired signal while treating others as noise.
-</details>
-
-**Q12.** Which device separates broadcast domains?
-
-- A) Hub
-- B) Switch
-- C) Router
-- D) Repeater
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) Routers do not forward broadcast frames, so each router interface is a separate broadcast domain.
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Max throughput of pure ALOHA? | 36.8% | 50% | 18.4% | 100% | **C** |
+| 2 | Why does 1-persistent CSMA perform poorly when channel transitions from busy to idle? | Can't detect idle | All waiting stations transmit at once | Carrier sense fails | Backoff disabled | **B** |
+| 3 | Purpose of minimum frame size in CSMA/CD? | Min data throughput | Guarantee collision detection | Reduce header overhead | Improve CRC | **B** |
+| 4 | Why is CSMA/CA used instead of CSMA/CD in wireless? | Wireless is slower | Radio can't TX and RX simultaneously | Frames too small | CSMA/CD patented | **B** |
+| 5 | Which device separates broadcast domains? | Hub | Switch | Router | Repeater | **C** |
 
 ---
+
+## Case Study: Migrating a Legacy Token Ring Office to Switched Ethernet
+
+**Background:** A law firm's office used a 16 Mbps Token Ring network (IEEE 802.5) with 40 workstations. As the firm grew, complaints increased: "network slow" during morning logins, printer timeouts, and inability to support VoIP phones. IT measured peak utilization at 72 % of the 16 Mbps ring.
+
+**Challenges with Token Ring:**
+- **Deterministic but limited:** At 50 % load, average access delay = 40 stations × (max frame tx time + token pass) ≈ 40 × 5 ms = 200 ms — too high for VoIP.
+- **Single point of failure:** A single station with a bad NIC could beacon and bring down the ring.
+- **Expensive hardware:** Token Ring switches cost 3× equivalent Ethernet switches.
+- **Upgrade path:** Max speed was 100 Mbps (HSTR) — limited future growth.
+
+**Solution — Switched Ethernet Migration:**
+1. Replace MAUs (Multistation Access Units) with a 48-port Gigabit Ethernet switch
+2. Replace Token Ring NICs with Gigabit Ethernet NICs (Cat 6a cabling existing)
+3. Configure VLANs: voice VLAN for 10 VoIP phones, data VLAN for workstations
+4. Enable 802.1p QoS to prioritize voice traffic
+
+**Outcome:**
+| Metric | Before (Token Ring) | After (Switched Ethernet) |
+|--------|-------------------|--------------------------|
+| Bandwidth per station | 16 Mbps shared | 1 Gbps dedicated |
+| Peak utilization | 72 % | 5 % |
+| VoIP quality | Poor (jitter > 50 ms) | Excellent (jitter < 1 ms) |
+| Cost per port | $150 (Token Ring switch) | $25 (GigE switch) |
+| Failure impact | Single station could disable network | Isolated per port |
+
+**Lesson:** While Token Ring provides deterministic access, the cost, complexity, and limited bandwidth made switched Ethernet the clear winner. Modern switched Ethernet with full-duplex operation has no contention — each port is its own collision domain.
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| **ALOHA throughput** is fundamentally limited by vulnerable period | Pure: 18.4 %, Slotted: 36.8 %. Never use ALOHA for high-throughput links |
+| **Carrier sensing** dramatically improves channel utilization | CSMA always beats ALOHA because it avoids transmitting into a busy channel |
+| **Minimum frame size** is a physical constraint tied to propagation delay | $F_{min} \ge 2 \times T_{prop} \times R$ — increasing speed or distance requires larger minimum frames |
+| **Exponential backoff** is essential for stability | Without it, throughput collapses under load (Aloha stability problem) |
+| **CSMA/CA virtual carrier sensing** (NAV + RTS/CTS) solves hidden terminal problem | Always enable RTS/CTS above a threshold in WiFi for large frames |
+| **Switch vs hub** — always use switches | Each switch port is an isolated collision domain; hubs share one collision domain |
+| **Token Passing** provides bounded delay but poor light-load performance | Best for industrial/real-time networks where determinism matters more than peak throughput |
 
 ## Summary
 
@@ -1705,18 +1868,22 @@ Ethernet, the dominant LAN technology, uses CSMA/CD with a 48-bit MAC address sp
 
 ### Review Questions
 
-1. Why is the vulnerable period for pure ALOHA twice the frame transmission time?
-2. What is the maximum throughput of slotted ALOHA, and at what offered load does it occur?
-3. In 1-persistent CSMA, why does the probability of collision increase when the channel becomes idle?
-4. How does binary exponential backoff adapt to varying network load?
-5. Why is collision detection impractical in wireless LANs?
-6. What is the purpose of the NAV (Network Allocation Vector) in CSMA/CA?
-7. How does RTS/CTS mitigate the hidden terminal problem?
-8. What is the difference between a collision domain and a broadcast domain?
-9. Why did Ethernet win over Token Ring in the marketplace?
-10. What are the advantages of FDMA over TDMA? What are the disadvantages?
-11. How does CDMA allow multiple stations to transmit simultaneously on the same frequency?
-12. What is the function of guard bands in FDMA?
+<details>
+<summary>Solution Hints</summary>
+
+1. A frame transmitted at time $t$ sees collisions from any frame starting in $[t - T_f, t + T_f]$ (where $T_f$ = frame time) → vulnerable period = $2T_f$.
+2. Max throughput = 36.8 % (1/e) at G = 1.0.
+3. All stations waiting for the busy channel to become idle immediately attempt transmission simultaneously → guaranteed collision.
+4. After each collision, the backoff window doubles. Light load → small windows → quick retransmission. Heavy load → large windows → reduced collision rate.
+5. WiFi radios operate half-duplex — transmitting drowns out received signals, making collision detection impossible.
+6. NAV is a timer set by RTS/CTS frames that tells other stations how long to defer access → virtual carrier sensing.
+7. RTS from sender reaches all stations in sender's range; CTS from receiver reaches all stations in receiver's range. Hidden terminals hear CTS and defer.
+8. Collision domain: segment where frames can collide. Broadcast domain: set of devices that receive each other's broadcast frames.
+9. Ethernet was simpler, cheaper, and scaled better (switched Ethernet eliminated collisions). Token Ring was more complex and had a single point of failure.
+10. FDMA: simple, no synchronization needed, but inflexible and wastes bandwidth on silent users. TDMA: efficient for bursty traffic, requires synchronization.
+11. CDMA assigns orthogonal spreading codes. Receiver correlates with desired code — other users' signals appear as noise.
+12. Guard bands prevent adjacent-channel interference due to imperfect filters and frequency drift.
+</details>
 
 ### Application Problems
 

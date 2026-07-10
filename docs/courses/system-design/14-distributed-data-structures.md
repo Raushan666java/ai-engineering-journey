@@ -446,33 +446,38 @@ class CuckooFilter:
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What is the optimal k for a Bloom filter with m=960 bits and n=100 elements? | 5 | 7 | 9 | 11 | **B** (k = (m/n)·ln2 ≈ 6.65, round to 7) |
+| 2 | How does a Merkle tree reduce reconciliation bandwidth in Dynamo? | By compressing data blocks | By comparing root hashes and walking divergent branches | By using Bloom filters per node | By gossiping full datasets | **B** |
+| 3 | Which data structure estimates cardinality using O(log log N) space? | Bloom Filter | Count-Min Sketch | HyperLogLog | Cuckoo Filter | **C** |
+| 4 | What is the primary advantage of virtual nodes in consistent hashing? | Faster lookups | Lower memory usage | Smoother load distribution | Simpler implementation | **C** |
+| 5 | Which filter supports deletion natively? | Standard Bloom Filter | Counting Bloom | XOR Filter | Scalable Bloom | **B** |
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+---
 
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Practical Takeaways
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+| Takeaway | Application |
+|----------|-------------|
+| Use consistent hashing with 150+ virtual nodes per physical node for balanced key distribution | DynamoDB, Cassandra, Riak — key-value stores needing elastic scaling |
+| Pair Merkle trees with gossip protocol for O(log N) anti-entropy reconciliation | Dynamo-style databases where nodes must detect and repair divergent replicas |
+| Tune Bloom filter m/n ratio to 9.6 for 1% false positive rate; use optimal k = (m/n)·ln2 | Cache filters (prevent cache miss storms), web crawler dedup, spell checkers |
+| HyperLogLog with p=12 provides ~2% error using only 12KB — perfect for distributed cardinality | Unique visitor counting across CDN edges, distributed analytics |
+| Count-Min Sketch excels at heavy hitter detection with bounded error; use d=4-5 rows | Network traffic monitoring, trending topics, top-k in streaming data |
+| Cuckoo filters beat Bloom filters for lookup speed when FP rate target is <3% | Deletable membership sets, on-disk index filters |
+| XOR filters are 20-30% smaller than Bloom but require static datasets | Read-only datasets, blockchain transaction filters, archive indexes |
 
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Case Study
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+**Scenario: Global User Analytics Pipeline**
 
-## Concept Comparison
+A social media platform with 500 million monthly active users needs to track daily unique visitors across 20 global data centers. Each data center sees 50 million unique users per day. The naive approach — storing every user ID in a distributed database — would consume 500M × 32 bytes ≈ 16 GB per day per data center, plus the I/O overhead of deduplication queries.
+
+The team deploys HyperLogLog (p=14, ~26 KB per data center) at each edge location. Every user interaction is hashed and added to the local HLL register. At the end of each hour, a central aggregator fetches all 20 HLL sketches (total: 20 × 26 KB = 520 KB per hour) and merges them via element-wise max. The merged sketch estimates global unique visitors with ~1.5% error — sufficient for business reporting. The 99th percentile error is under 3%, and the total memory across all data centers is under 1 MB, compared to 160+ GB for raw ID storage.
+
+For cache efficiency, the CDN layer uses a Bloom filter (m/n = 9.6, k = 7) per PoP to filter out requests for non-existent short URLs before they hit the origin. This eliminates 99% of unnecessary origin lookups. When the filter's false positive rate exceeds 2% (monitored weekly), the filter is rebuilt with a larger bit array. The combined architecture — HLL for analytics, Bloom for cache filtering, consistent hashing for data partitioning — handles 2 million requests per second across 50 microservices with P99 latency under 20 ms.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
@@ -629,20 +634,40 @@ class HyperLogLog {
 }
 ```
 
-### TypeScript: Bloom Filter
+### TypeScript: Bloom Filter with Optimal k and FP Calculation
 
 ```typescript
 class BloomFilter {
   private bits: boolean[];
+  private elements = 0;
+
   constructor(private size: number, private hashCount: number) { this.bits = new Array(size).fill(false); }
 
+  static create(capacity: number, falsePositiveRate: number): BloomFilter {
+    const size = Math.ceil(-capacity * Math.log(falsePositiveRate) / (Math.LN2 * Math.LN2));
+    const hashCount = Math.ceil((size / capacity) * Math.LN2);
+    return new BloomFilter(size, hashCount);
+  }
+
   add(item: string): void {
-    for (let i = 0; i < this.hashCount; i++) this.bits[this._hash(item, i) % this.size] = true;
+    for (let i = 0; i < this.hashCount; i++) {
+      this.bits[this._hash(item, i) % this.size] = true;
+    }
+    this.elements++;
   }
 
   has(item: string): boolean {
-    for (let i = 0; i < this.hashCount; i++) if (!this.bits[this._hash(item, i) % this.size]) return false;
-    return true; // false positive possible
+    for (let i = 0; i < this.hashCount; i++) {
+      if (!this.bits[this._hash(item, i) % this.size]) return false;
+    }
+    return true;
+  }
+
+  currentFpRate(): number {
+    const k = this.hashCount;
+    const m = this.size;
+    const n = this.elements;
+    return Math.pow(1 - Math.exp(-k * n / m), k);
   }
 
   private _hash(item: string, seed: number): number {
@@ -651,12 +676,204 @@ class BloomFilter {
     return h >>> 0;
   }
 }
-// const bf = new BloomFilter(1000, 7);
-// bf.add("hello"); bf.add("world");
-// console.log(bf.has("hello")); // true
-// console.log(bf.has("nope"));  // likely false
+
+const bf = BloomFilter.create(1000, 0.01);
+bf.add("hello"); bf.add("world");
+console.log(bf.has("hello"), bf.currentFpRate());
 ```
 
+### TypeScript: Merkle Tree for Anti-Entropy
+
+```typescript
+class MerkleNode {
+  hash: string;
+  constructor(public data: string | null, public left: MerkleNode | null, public right: MerkleNode | null) {
+    this.hash = data ? this.simpleHash(data) : this.combineHash(left, right);
+  }
+
+  private simpleHash(s: string): string {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) h = ((h << 5) - h + s.charCodeAt(i)) | 0;
+    return (h >>> 0).toString(16);
+  }
+
+  private combineHash(l: MerkleNode | null, r: MerkleNode | null): string {
+    const lh = l?.hash ?? '';
+    const rh = r?.hash ?? '';
+    return this.simpleHash(lh + rh);
+  }
+
+  isLeaf(): boolean { return this.data !== null; }
+}
+
+class MerkleTree {
+  root: MerkleNode;
+  leaves: MerkleNode[] = [];
+
+  constructor(private blocks: string[]) {
+    this.leaves = blocks.map(b => new MerkleNode(b, null, null));
+    this.root = this.build(this.leaves);
+  }
+
+  private build(nodes: MerkleNode[]): MerkleNode {
+    if (nodes.length === 1) return nodes[0];
+    const parents: MerkleNode[] = [];
+    for (let i = 0; i < nodes.length; i += 2) {
+      const left = nodes[i];
+      const right = i + 1 < nodes.length ? nodes[i + 1] : null;
+      parents.push(new MerkleNode(null, left, right));
+    }
+    return this.build(parents);
+  }
+
+  diff(other: MerkleTree, path: number[] = []): number[][] {
+    if (this.root.hash === other.root.hash) return [];
+    if (this.root.isLeaf()) return [path];
+    const mismatches: number[][] = [];
+    if (this.root.left && other.root.left) {
+      const leftTree = new MerkleTree([]);
+      leftTree.root = this.root.left;
+      const otherLeftTree = new MerkleTree([]);
+      otherLeftTree.root = other.root.left;
+      mismatches.push(...leftTree.diff(otherLeftTree, [...path, 0]));
+    }
+    if (this.root.right && other.root.right) {
+      const rightTree = new MerkleTree([]);
+      rightTree.root = this.root.right;
+      const otherRightTree = new MerkleTree([]);
+      otherRightTree.root = other.root.right;
+      mismatches.push(...rightTree.diff(otherRightTree, [...path, 1]));
+    }
+    return mismatches;
+  }
+
+  syncProtocol(other: MerkleTree): number[] {
+    const differentBlocks = this.diff(other);
+    return differentBlocks.map(p => {
+      let idx = 0;
+      for (const bit of p) idx = idx * 2 + bit;
+      return idx;
+    });
+  }
+
+  getBlock(index: number): string { return this.blocks[index]; }
+}
+
+const treeA = new MerkleTree(['a', 'b', 'c', 'd']);
+const treeB = new MerkleTree(['a', 'b', 'x', 'd']);
+console.log('Different blocks at indices:', treeA.syncProtocol(treeB));
+```
+
+### TypeScript: HyperLogLog with Merge and Bias Correction
+
+```typescript
+class HyperLogLog {
+  private registers: number[];
+  private readonly m: number;
+  private readonly alpha: number;
+
+  constructor(private p: number = 12) {
+    this.m = 1 << p;
+    this.registers = new Array(this.m).fill(0);
+    this.alpha = this.m <= 16 ? 0.673 :
+                 this.m <= 32 ? 0.697 :
+                 this.m <= 64 ? 0.709 :
+                 0.7213 / (1 + 1.079 / this.m);
+  }
+
+  private hash(value: string): number {
+    let h = 0;
+    for (let i = 0; i < value.length; i++) h = ((h << 5) - h + value.charCodeAt(i)) | 0;
+    return h >>> 0;
+  }
+
+  private leadingZeros(x: number): number {
+    return x === 0 ? 32 : Math.clz32(x);
+  }
+
+  add(value: string): void {
+    const h = this.hash(value);
+    const idx = h >>> (32 - this.p);
+    const w = (h << this.p) >>> this.p;
+    const zeros = 1 + this.leadingZeros(w);
+    this.registers[idx] = Math.max(this.registers[idx], zeros);
+  }
+
+  estimate(): number {
+    const sum = this.registers.reduce((a, r) => a + Math.pow(2, -r), 0);
+    let est = this.alpha * this.m * this.m / sum;
+    if (est <= 2.5 * this.m) {
+      const v = this.registers.filter(r => r === 0).length;
+      if (v > 0) est = this.m * Math.log(this.m / v);
+    } else if (est > Math.pow(2, 32) / 30) {
+      est = -Math.pow(2, 32) * Math.log(1 - est / Math.pow(2, 32));
+    }
+    return Math.round(est);
+  }
+
+  merge(other: HyperLogLog): void {
+    if (this.m !== other.m) throw new Error('Register count mismatch');
+    for (let i = 0; i < this.m; i++) {
+      this.registers[i] = Math.max(this.registers[i], other.registers[i]);
+    }
+  }
+
+  mergeAll(others: HyperLogLog[]): void {
+    for (const o of others) this.merge(o);
+  }
+}
+
+const hll1 = new HyperLogLog(12);
+const hll2 = new HyperLogLog(12);
+for (let i = 0; i < 50000; i++) hll1.add(`user-${i}`);
+for (let i = 25000; i < 75000; i++) hll2.add(`user-${i}`);
+hll1.merge(hll2);
+console.log('Estimated distinct: ~75000, Got:', hll1.estimate());
+```
+
+
+### Distributed Data Structures Feature Comparison
+
+```mermaid
+flowchart TB
+    subgraph PROBABILISTIC["Probabilistic Data Structures"]
+        BF["Bloom Filter<br/>Set Membership<br/>O(k) insert/lookup<br/>No deletion"]
+        CMS["Count-Min Sketch<br/>Frequency Estimation<br/>O(d) update/query<br/>Over-estimates"]
+        HLL["HyperLogLog<br/>Cardinality Estimation<br/>O(1) add/merge<br/>~2% error at 12KB"]
+        CF["Cuckoo Filter<br/>Deletable Membership<br/>O(1) insert/lookup<br/>95% load factor"]
+        BF -.->|member?| CMS
+        CMS -.->|count?| HLL
+    end
+
+    subgraph DETERMINISTIC["Deterministic Structures"]
+        CH["Consistent Hashing<br/>Key ? Node Mapping<br/>O(log N) lookup<br/>Virtual nodes"]
+        MT["Merkle Tree<br/>Anti-Entropy Diff<br/>O(log B) comparison<br/>Hash chain"]
+        SL["Skip List<br/>Ordered Map<br/>O(log N) ops<br/>Probabilistic balance"]
+    end
+
+    subgraph CRDT["Conflict-Free Replicated Data Types"]
+        LWW["LWW-Register<br/>Last-Writer-Wins<br/>Timestamp merge"]
+        PNC["PN-Counter<br/>Increment/Decrement<br/>Separate pos/neg"]
+        GSET["G-Set / 2P-Set<br/>Add-only / Add-Remove<br/>Observed-Remove"]
+    end
+
+    subgraph TRADE_OFFS["Selection Criteria"]
+        MEM["Memory Budget<br/>bf: 9.6 bits/elem<br/>hll: 12KB fixed"]
+        CONS["Consistency Needs<br/>Strong vs Eventual<br/>Merge semantics"]
+        OPS["Operation Types<br/>insert/delete/query<br/>Range scans"]
+    end
+
+    PROBABILISTIC & DETERMINISTIC & CRDT --> TRADE_OFFS
+
+    classDef prob fill:#E3F2FD,color:#1565C0
+    classDef det fill:#F3E5F5,color:#7B1FA2
+    classDef crdt fill:#E8F5E9,color:#2E7D32
+    classDef sel fill:#FFF3E0,color:#E65100
+    class BF,CMS,HLL,CF prob
+    class CH,MT,SL det
+    class LWW,PNC,GSET crdt
+    class MEM,CONS,OPS sel
+```
 
 ### Implementation: Distributed Data Structures
 
@@ -797,28 +1014,23 @@ export { Cache, Logger, computeHash, CacheEntry }
 ## Exercises
 
 ### Review Questions
-
-1. A consistent hash ring has 50 physical nodes each with 100 virtual tokens. How many keys redistribute when one physical node fails in a system with 10 million keys?
-2. Derive the optimal number of hash functions k for a Bloom filter given m bits and n elements. Show that this minimizes the false positive rate.
-3. Why does the HyperLogLog merge operation use element-wise max rather than sum or average of registers?
-4. Compare the memory requirements of a Counting Bloom and a Cuckoo filter for supporting deletions at a 1% false positive rate.
-5. In Dynamo's anti-entropy protocol, describe the steps taken when two nodes detect a Merkle tree root hash mismatch for the same key range.
+<details><summary>Solution</summary>1. Each physical node has 100 virtual tokens out of 50×100 = 5000 total tokens. When one node fails, its 100 tokens redistribute. Expected keys per token: 10M / 5000 = 2000. Keys redistributed: 100 × 2000 = 200,000 keys (2% of total).
+2. Minimize p = (1 - e^(-kn/m))^k. Take log: ln(p) = k·ln(1 - e^(-kn/m)). Set d(ln(p))/dk = 0, solve: k = (m/n)·ln(2) ≈ 0.693·(m/n).
+3. Element-wise max preserves the longest run of leading zeros observed. Sum or average would overestimate (since multiple elements can map to the same register and sum would count them multiple times). Max correctly captures the register's extremal observation.
+4. Counting Bloom: 4-bit counters × m bits ≈ 4m bits. Cuckoo: (log2(1/p) + 3) / load_factor bits per item. For m/n ≈ 9.6 (1% FP), Counting Bloom ≈ 38.4 bits/item. Cuckoo at f = log2(100) + 3 ≈ 9.6 bits, with 95% load ≈ 10.1 bits/item. Cuckoo is ~4× more memory-efficient.
+5. (1) Exchange root hashes. (2) If roots match, ranges are identical. (3) If mismatch, walk down the tree: compare children recursively. (4) At leaf level, identify individual key-value pairs that differ. (5) Request missing/repaired entries from the peer. O(log B) messages for B blocks.</details>
 
 ### Application Problems
-
-1. **Bloom filter sizing**: Design a Bloom filter for a web crawler that stores 500 million URLs with a 0.1% false positive rate. Calculate m, k, and the actual FP rate. If each 4-bit counter is required for deletions, what is the new total memory?
-2. **Count-Min Sketch frequency**: A CMS has d=4, w=10000. Item "X" has true frequency 500 out of 1,000,000 total increments. What is the worst-case overestimate bound? If all d rows report values [512, 487, 503, 498], what is the estimate and why is the min used?
-3. **Consistent hashing simulation**: Implement a simulation comparing standard consistent hashing (R=1) vs virtual nodes (R=150) on a 5-node cluster. Distribute 1M keys and compute the Gini coefficient for each configuration.
-4. **HyperLogLog bias correction**: For p=10 (m=1024), compute a_m and the estimated cardinality when half the registers are at value 0, a quarter at 1, and the rest at 2.
+<details><summary>Solution</summary>1. m = -500M·ln(0.001) / (ln2)^2 = 500M × 6.907 / 0.48 ≈ 7.19B bits ≈ 856 MB. k = (7.19B / 500M)·ln2 ≈ 9.96 → 10. Actual FP: (1 - e^(-10·500M/7.19B))^10 ≈ 0.0009. With 4-bit counters: 856 MB × 4 = 3.42 GB.
+2. Worst-case overestimate: each row has expected collision count = total/w = 1M/10000 = 100. With d=4, P(error > e·total) ≤ e^(-d). Estimate = min([512, 487, 503, 498]) = 487. Min is used because collisions can only inflate the count, not deflate it — the minimum gives the closest to the true value.
+3. Gini coefficient with R=1 is typically 0.15-0.30 (significant imbalance). With R=150, Gini drops to 0.003-0.008 (nearly perfect balance). The law of large numbers: each physical node's expected load variance is 1/√R of the total.
+4. a_m for m=1024: 0.7213 / (1 + 1.079/1024) ≈ 0.7205. 512 registers at 0, 256 at 1, 256 at 2. Sum = 512·1 + 256·0.5 + 256·0.25 = 512 + 128 + 64 = 704. Estimate = 0.7205 × 1024² / 704 ≈ 1073. Linear counting for small ranges: zero count = 512, estimate = 1024·ln(1024/512) ≈ 710. Final = 710 (linear counting dominates for small cardinalities).</details>
 
 ### Challenge Problem
+<details><summary>Solution</summary>Design a multi-layer membership test service:
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Design a distributed membership test service**: A global key-value store supports 1 billion keys across 200 nodes with chain replication. Build a multi-layer membership test architecture using:
+**Memory per node**: 1B keys / 200 nodes = 5M keys/node. Bloom filter: m = -5M·ln(0.01)/(ln2)^2 ≈ 48M bits = 6 MB. Cuckoo filter: at 0.1% FP, f = log2(1000) + 3 ≈ 13 bits, with 95% load ≈ 13.7 bits/item × 500K hot items ≈ 0.86 MB. CMS: d=4, w=2/eps (eps=0.01) = 200, 4×200 = 800 counters × 4 bytes = 3.2 KB. HLL: p=12, 4096 registers × 6 bits ≈ 3 KB. Total per node: ~7 MB. Cluster total: 200 × 7 MB = 1.4 GB.
 
-- A top-level Bloom filter per node (1% FP, covering all local keys)
-- A secondary Cuckoo filter (0.1% FP) for hot key ranges
-- A Count-Min Sketch per node for access frequency tracking
-- An HLL for distributed cardinality tracking per key prefix
+**Query path**: (1) Client sends key read request. (2) Node Bloom filter check: if negative, return immediately (key guaranteed absent). (3) If Bloom positive, check Cuckoo filter for hot key range. (4) Update CMS frequency counter (async). (5) Perform actual key lookup. (6) If key not found (Bloom false positive), increment CMS false-positive counter (triggers filter rebuild at threshold). P99 latency: 0.5ms (Bloom-only miss) to 8ms (Bloom hit + Cuckoo hit + key lookup).
 
-Calculate the total memory per node and across the cluster. Define the query path when a read request arrives: sketch the decision flow (node Bloom ? Cuckoo ? CMS frequency update ? key lookup) with worst-case and P99 latency analysis. Address filter rebuild on compaction, false positive handling (the key isn't actually present), and dynamic capacity expansion.
+**Rebuild strategy**: Rebuild Bloom filter after each compaction (batch rebuild from current key set, 1 second). Cuckoo filter rebuilt when FP rate tracking exceeds 0.2%. CMS reset weekly. HLL continuous via periodic merge.</details>

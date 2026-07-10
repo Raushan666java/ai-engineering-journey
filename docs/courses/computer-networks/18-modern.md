@@ -209,6 +209,62 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 
 ---
 
+### TypeScript Implementation: IPv6TransitionManager
+
+```typescript
+interface IPv6TransitionConfig {
+  mechanism: 'dual-stack' | '6to4' | 'teredo' | 'nat64';
+  ipv4Prefix: string;
+  ipv6Prefix: string;
+  relays?: string[];
+}
+
+class IPv6TransitionManager {
+  private config: IPv6TransitionConfig;
+
+  constructor(config: IPv6TransitionConfig) {
+    this.config = config;
+  }
+
+  translateAddress(ipv4: string, ipv6: string): { ipv4: string; ipv6: string; translated: string } {
+    switch (this.config.mechanism) {
+      case 'dual-stack':
+        return { ipv4, ipv6, translated: ipv6 };
+      case '6to4': {
+        // 6to4: embeds IPv4 into IPv6 prefix 2002::/16
+        const parts = ipv4.split('.').map(Number);
+        const hex = parts.map(p => p.toString(16).padStart(2, '0')).join('');
+        const v6 = `2002:${hex.slice(0, 4)}:${hex.slice(4, 8)}::${ipv6}`;
+        return { ipv4, ipv6, translated: v6 };
+      }
+      case 'nat64': {
+        // NAT64: synthesize IPv6 from IPv4 using well-known prefix 64:ff9b::/96
+        const parts = ipv4.split('.').map(Number);
+        const hex = parts.map(p => p.toString(16).padStart(2, '0')).join('');
+        const synthesized = `64:ff9b::${hex.slice(0, 4)}:${hex.slice(4, 8)}`;
+        return { ipv4, ipv6, translated: synthesized };
+      }
+      default:
+        return { ipv4, ipv6, translated: ipv6 };
+    }
+  }
+
+  getOverhead(): { bytesPerPacket: number; cpuImpact: string } {
+    switch (this.config.mechanism) {
+      case 'dual-stack': return { bytesPerPacket: 0, cpuImpact: 'None' };
+      case '6to4': return { bytesPerPacket: 20, cpuImpact: 'Low (encapsulation)' };
+      case 'teredo': return { bytesPerPacket: 28, cpuImpact: 'Medium (UDP+NAT)' };
+      case 'nat64': return { bytesPerPacket: 0, cpuImpact: 'High (stateful rewrite)' };
+    }
+  }
+}
+
+// Usage
+const manager = new IPv6TransitionManager({ mechanism: 'nat64', ipv4Prefix: '10.0.0.0/8', ipv6Prefix: '2001:db8::/32' });
+// console.log(manager.translateAddress('10.0.0.1', '2001:db8::1').translated);
+// console.log(`Overhead: ${manager.getOverhead().bytesPerPacket} bytes/packet`);
+```
+
 ## 18.2 IoT Networking
 
 The Internet of Things (IoT) connects billions of constrained devices → sensors, actuators, and controllers → with limited power, memory, and processing capability. Three key protocols dominate: MQTT (pub-sub over TCP), CoAP (REST over UDP), and 6LoWPAN (IPv6 over low-power radio).
@@ -573,7 +629,58 @@ LoRaWAN provides long-range, low-power wireless connectivity for IoT devices. It
 
 **Duty cycle:** EU 868 MHz: 1% per sub-band (36 seconds per hour per device).
 
----
+#### TypeScript Implementation: IoTDeviceSimulator
+
+```typescript
+interface SensorReading {
+  deviceId: string;
+  timestamp: number;
+  temperature: number;
+  humidity: number;
+  batteryLevel: number;
+  signalStrength: number;
+}
+
+class IoTDeviceSimulator {
+  private readings: SensorReading[] = [];
+
+  constructor(private deviceId: string, private intervalMs: number = 60000) {}
+
+  generateReading(): SensorReading {
+    return {
+      deviceId: this.deviceId,
+      timestamp: Date.now(),
+      temperature: 20 + Math.random() * 15,        // 20-35°C
+      humidity: 40 + Math.random() * 40,             // 40-80%
+      batteryLevel: Math.max(0, 100 - this.readings.length * 0.1), // 0.1% drain per reading
+      signalStrength: -120 + Math.random() * 50,     // -120 to -70 dBm
+    };
+  }
+
+  simulate(count: number): SensorReading[] {
+    for (let i = 0; i < count; i++) {
+      const reading = this.generateReading();
+      this.readings.push(reading);
+    }
+    return this.readings;
+  }
+
+  getStatistics(): { avgTemp: number; avgHumidity: number; avgBattery: number } {
+    const avg = (arr: number[]) => arr.reduce((a, b) => a + b, 0) / arr.length;
+    return {
+      avgTemp: avg(this.readings.map(r => r.temperature)),
+      avgHumidity: avg(this.readings.map(r => r.humidity)),
+      avgBattery: avg(this.readings.map(r => r.batteryLevel)),
+    };
+  }
+}
+
+// Usage
+const sensor = new IoTDeviceSimulator('sensor-001', 60000);
+sensor.simulate(10);
+// const stats = sensor.getStatistics();
+// console.log(`Avg Temp: ${stats.avgTemp.toFixed(1)}°C, Battery: ${stats.avgBattery.toFixed(1)}%`);
+```
 
 ## 18.3 Cellular Evolution → 4G LTE → 5G → 6G
 
@@ -1306,6 +1413,78 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ---
 
+#### TypeScript Implementation: EdgeNodeProcessor
+
+```typescript
+interface EdgeConfig {
+  nodeId: string;
+  filterThresholds: { minTemp: number; maxTemp: number; maxHumidity: number };
+  aggregationWindowMs: number;
+  cloudSyncIntervalMs: number;
+}
+
+interface ProcessedReading {
+  deviceId: string;
+  averageTemp: number;
+  averageHumidity: number;
+  readingCount: number;
+  windowStart: number;
+  anomalies: string[];
+}
+
+class EdgeNodeProcessor {
+  private buffer: Map<string, number[]> = new Map();
+  private cloudQueue: ProcessedReading[] = [];
+
+  constructor(private config: EdgeConfig) {}
+
+  processReading(deviceId: string, temperature: number, humidity: number): void {
+    // Filter: discard noisy readings
+    if (temperature < this.config.filterThresholds.minTemp ||
+        temperature > this.config.filterThresholds.maxTemp) return;
+
+    // Aggregate: classify into temperature buckets
+    const key = `${deviceId}`;
+    if (!this.buffer.has(key)) this.buffer.set(key, []);
+    this.buffer.get(key)!.push(temperature);
+
+    // Check for anomaly
+    const recent = this.buffer.get(key)!;
+    if (recent.length >= 5) {
+      const avg = recent.slice(-5).reduce((a, b) => a + b, 0) / 5;
+      const stdDev = Math.sqrt(recent.slice(-5).reduce((a, b) => a + (b - avg) ** 2, 0) / 5);
+      if (Math.abs(temperature - avg) > 2 * stdDev) {
+        const anomaly = `Anomaly: ${deviceId} temp ${temperature}°C (σ=${stdDev.toFixed(1)})`;
+        this.cloudQueue.push({ deviceId, averageTemp: avg, averageHumidity: humidity, readingCount: 1, windowStart: Date.now(), anomalies: [anomaly] });
+      }
+    }
+  }
+
+  aggregateAndSync(): ProcessedReading[] {
+    const batch = [...this.cloudQueue];
+    this.cloudQueue = [];
+    return batch;
+  }
+
+  getLocalInference(reading: SensorReading): string {
+    // Simple rule-based inference at the edge
+    if (reading.temperature > 35) return 'OVERHEAT_ALERT';
+    if (reading.humidity > 75) return 'HUMIDITY_WARNING';
+    if (reading.batteryLevel < 20) return 'BATTERY_LOW';
+    return 'NORMAL';
+  }
+}
+
+// Usage
+const edge = new EdgeNodeProcessor({
+  nodeId: 'edge-01', filterThresholds: { minTemp: -10, maxTemp: 60, maxHumidity: 100 },
+  aggregationWindowMs: 60000, cloudSyncIntervalMs: 300000,
+});
+// edge.processReading('sensor-001', 22.5, 55);
+// edge.processReading('sensor-001', 45.2, 60); // anomaly!
+// console.log(edge.aggregateAndSync());
+```
+
 ## 18.12 Network Observability → eBPF, OpenTelemetry
 
 **Real-World Analogy:** Traditional network monitoring is like a security camera that only records when someone walks past. eBPF is like having a microscopic camera on every door, window, and pipe in the building → you see every packet, every syscall, every function call, with zero blind spots and no noticeable slowdown. OpenTelemetry is like having standardized shipping labels on every box in every system → you can trace a packet from California to Tokyo through 30 microservices with the same tracking format.
@@ -1595,69 +1774,27 @@ Cisco SD-Access implements IBN for enterprise campus networks:
 
 ## 18.17 Chapter Quiz
 
-1. **Which IPv6 transition mechanism requires dual protocol stacks?**
-   - a) 6to4 tunneling
-   - b) Dual-stack âœ“
-   - c) NAT64/DNS64
-   - d) Teredo
-
-2. **What is the compressed header size of 6LoWPAN for a typical IPv6+UDP packet?**
-   - a) 48 bytes
-   - b) 40 bytes
-   - c) 6 bytes âœ“
-   - d) 20 bytes
-
-3. **How many bits of address space does IPv6 provide?**
-   - a) 32 bits
-   - b) 64 bits
-   - c) 128 bits âœ“
-   - d) 256 bits
-
-4. **Which network function in 5GC handles session management?**
-   - a) AMF
-   - b) SMF âœ“
-   - c) UPF
-   - d) PCF
-
-5. **What is the typical latency of LEO satellite internet (Starlink)?**
-   - a) 600 ms
-   - b) 200 ms
-   - c) 20-40 ms âœ“
-   - d) 1-2 ms
-
-6. **Which protocol is used for configuration transactions with candidate/commit model?**
-   - a) Ansible
-   - b) NETCONF âœ“
-   - c) RESTCONF
-   - d) SNMP
-
-7. **What is the zero trust principle?**
-   - a) Trust inside, verify outside
-   - b) Trust only at login
-   - c) Never trust, always verify âœ“
-   - d) Trust but verify
-
-8. **What is the maximum distance for fiber-based QKD without repeaters?**
-   - a) 10 km
-   - b) ~100 km âœ“
-   - c) 1,000 km
-   - d) 10,000 km
-
-9. **What is the overhead of eBPF XDP packet processing per packet?**
-   - a) 1 ms
-   - b) 10 Î¼s
-   - c) ~50 ns âœ“
-   - d) 1 s
-
-10. **Which Google tool uses ML for WAN traffic engineering and achieves 95% link utilization?**
-    - a) Google Search
-    - b) B4 SDN âœ“
-    - c) Spanner
-    - d) Borg
-
-**Answers:** 1-b, 2-c, 3-c, 4-b, 5-c, 6-b, 7-c, 8-b, 9-c, 10-b
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which IPv6 transition mechanism requires dual protocol stacks? | 6to4 tunneling | Dual-stack | NAT64/DNS64 | Teredo | **B** |
+| 2 | What is the compressed header size of 6LoWPAN for IPv6+UDP? | 48 bytes | 40 bytes | 6 bytes | 20 bytes | **C** |
+| 3 | How many bits of address space does IPv6 provide? | 32 bits | 64 bits | 128 bits | 256 bits | **C** |
+| 4 | Which 5GC network function handles session management? | AMF | SMF | UPF | PCF | **B** |
+| 5 | Typical latency of LEO satellite internet (Starlink)? | 600 ms | 200 ms | 20-40 ms | 1-2 ms | **C** |
 
 ---
+
+## Practical Takeaways
+
+| # | Takeaway | Application |
+|---|----------|-------------|
+| 1 | **IPv6 transition** requires careful mechanism selection based on infrastructure | Dual-stack for coexistence, NAT64 for IPv6-only migration, tunneling as interim |
+| 2 | **IoT protocol selection** depends on device constraints and network topology | MQTT for reliable TCP, CoAP for constrained UDP, 6LoWPAN for mesh, LoRaWAN for long range |
+| 3 | **5G network slicing** enables dedicated QoS for different traffic types | Slice 1: eMBB (video), Slice 2: URLLC (industrial), Slice 3: mMTC (sensors) |
+| 4 | **Edge computing reduces cloud bandwidth by 100x** through local processing | Filter, aggregate, and infer at the edge; send only metadata to cloud |
+| 5 | **Zero Trust is not a product but a policy framework** | Least privilege, continuous verification, microsegmentation across all access |
+| 6 | **eBPF enables kernel-level observability with &lt;1% overhead** | Use for DDoS mitigation, packet filtering, latency tracing at line rate |
+| 7 | **Quantum networking** is limited to metro QKD today; general quantum internet by 2040+ | Deploy QKD for high-security key distribution; trust classical crypto for general traffic |
 
 ## 18.18 Summary
 
@@ -1688,25 +1825,85 @@ Cisco SD-Access implements IBN for enterprise campus networks:
 ### Review Questions
 
 1. How does dual-stack handle DNS resolution differently from NAT64/DNS64?
+
+<details>
+<summary>Solution</summary>
+Dual-stack: DNS returns both A (IPv4) and AAAA (IPv6) records; client chooses. NAT64/DNS64: DNS64 synthesizes AAAA records from A records using the NAT64 prefix; client only sees IPv6.
+</details>
+
 2. Why does 6LoWPAN compression reduce a 48-byte header to ~6 bytes? Which fields are eliminated?
+
+<details>
+<summary>Solution</summary>
+6LoWPAN compresses by eliding known fields (version, traffic class from context), compressing addresses to IIDs (64-bit link-local), and eliding next-header when known (UDP). Eliminated: version, traffic class (mostly), flow label, hop limit (context), addresses (derived from link-layer).
+</details>
+
 3. Explain why TCP performs poorly over satellite links and how QUIC connection migration helps mobile users.
+
+<details>
+<summary>Solution</summary>
+TCP's handshake (1 RTT) + slow start (multiple RTTs to reach full window) wastes bandwidth on high-BDP satellite links (RTT ~600ms). QUIC's 0-RTT handshake and connection migration (Connection ID survives IP changes) eliminate reconnection delay during WiFi→cellular handoffs.
+</details>
+
 4. Compare the failure modes of NETCONF confirmed commit vs Ansible push configuration.
+
+<details>
+<summary>Solution</summary>
+NETCONF confirmed commit: if the commit confirmation times out, the device automatically rolls back to the previous config. Ansible push: if the connection drops during push, the device is left in a half-configured state with no automatic rollback.
+</details>
+
 5. How does eBPF XDP achieve line-rate packet processing without kernel network stack overhead?
+
+<details>
+<summary>Solution</summary>
+XDP programs execute in the kernel's network driver before the SKB allocation, before the full network stack processes the packet. The program runs in a sandboxed BPF VM with JIT compilation, processing packets at ~50ns each.
+</details>
+
 6. What is the security model difference between QKD and classical Diffie-Hellman key exchange?
+
+<details>
+<summary>Solution</summary>
+QKD is information-theoretically secure: any eavesdropping is detectable via quantum measurement disturbance. Diffie-Hellman is computationally secure: broken by sufficiently large quantum computers (Shor's algorithm). QKD detects interception; DH cannot.
+</details>
 
 ### Application Problems
 
 7. **IPv6 transition for an enterprise:** A company has 5,000 employees, 10,000 IoT sensors, and a data center with 200 servers. All devices are currently IPv4. Design an IPv6 transition plan covering: (a) which transition mechanism to use for each device category, (b) timeline for complete transition, (c) testing strategy to ensure backward compatibility, (d) security policy updates needed. Justify each decision.
 
+<details>
+<summary>Solution</summary>
+(a) Employees: dual-stack (OS supports both). IoT sensors: 6LoWPAN (native IPv6 over 802.15.4). Servers: dual-stack with NAT64 gateway for legacy clients. (b) Phase 1 (3 months): dual-stack on all network infrastructure. Phase 2 (6 months): employee devices dual-stack. Phase 3 (12 months): IoT migration. Phase 4 (18 months): server migration. (c) Test with IPv6-only VLAN, Happy Eyeballs validation. (d) Update firewall rules for ICMPv6 (Neighbor Discovery), add RA guard, update DNS with AAAA records.
+</details>
+
 8. **Edge vs cloud for video surveillance:** A smart city deploys 10,000 cameras (1080p, H.264, 10 Mbps each). Each camera captures 24/7. Design the processing architecture for: real-time license plate recognition (LPR, &lt;500 ms), and historical video search (indexed queries on last 30 days). Compute: (a) total bandwidth if all cameras stream to cloud, (b) bandwidth after edge pre-processing (extract metadata only, 1 Kbps per camera), (c) required edge compute (GPU-hours) for real-time LPR at 30 FPS per camera, (d) cloud storage for 30 days of metadata. Assume JPEG metadata payload = 50 KB per detection event.
 
+<details>
+<summary>Solution</summary>
+(a) Total bandwidth: 10,000 × 10 Mbps = 100 Gbps (impractical). (b) Edge pre-processing reduces to 10,000 × 1 Kbps = 10 Mbps. (c) Edge GPU-hours: each camera requires ~1 GPU-hour per day for LPR at 30 FPS. For 10,000 cameras: 10,000 GPU-hours/day. (d) Cloud storage: 10,000 cameras × 50 KB/detection × 86,400 detections/day (if one per frame) = — impractical. Realistic: 1 detection per 10 frames = 8,640 detections/day × 50 KB = 432 MB/day per camera × 30 days × 10,000 = 129.6 TB.
+</details>
+
 9. **LoRaWAN capacity planning:** A smart agriculture deployment has 50,000 soil sensors. Each sensor transmits a 12-byte payload every 10 minutes. Using EU 868 MHz band with 1% duty cycle and SF12 (air time = 1,482 ms per packet): (a) compute the maximum number of sensors per gateway before duty cycle is exceeded, (b) determine number of gateways needed, (c) explain how ADR could increase capacity by switching to SF7 (air time = 56 ms) for close-range sensors, (d) compute the new capacity with ADR assuming 60% of sensors are close-range (SF7) and 40% far-range (SF12).
+
+<details>
+<summary>Solution</summary>
+(a) Each sensor transmits 6 times/hour × 1.482s = 8.892s air time/h = 0.247% duty cycle per sensor. Max per gateway: 1% / 0.247% = ~4 sensors per channel. With 8 channels: 32 sensors/gateway. (b) Gateways needed: 50,000 / 32 = 1,563. (c) ADR switches close sensors to SF7 (56ms air time). Duty cycle per SF7 sensor: 6 × 0.056/3600 = 0.0093%. Capacity per gateway: 1%/0.0093% × 8 ≈ 860 sensors (SF7-only). (d) With 60% SF7 + 40% SF12: capacity per gateway = 1 / ((0.6/860) + (0.4/32)) = 1 / (0.000698 + 0.0125) = 1 / 0.013198 ≈ 76 sensors/gateway. Total gateways = 50,000/76 ≈ 658.
+</details>
 
 ### Challenge Problems
 
 10. **Design a zero-trust architecture for a distributed enterprise with 10,000 employees across 50 global offices and 5,000 remote workers.** All applications are in the cloud (SaaS + IaaS) with a legacy data center. Design: (a) access model (ZTNA, SASE, or hybrid), (b) identity provider integration (SSO, MFA, device posture), (c) microsegmentation strategy for SaaS apps (no network control), (d) offsite failover plan if ZTNA cloud is unreachable, (e) migrate legacy VPN users without downtime. Compute the latency impact of ZTNA per-session proxy vs direct VPN.
 
+<details>
+<summary>Solution</summary>
+(a) Hybrid SASE: ZTNA for app access (Cloudflare Access or Zscaler), SD-WAN for branch connectivity. (b) IdP: Okta/Azure AD with MFA (TOTP + WebAuthn), device posture check (CrowdStrike, Jamf) before access granted. (c) Microsegmentation for SaaS: identity-aware proxies at app layer (no network segments needed). Guardicore/Illumio for data center microsegmentation. (d) Failover: local proxy cache of JWT tokens (5-min TTL), offline access mode for approved apps. (e) Migration: deploy ZTNA agent alongside legacy VPN. Users migrate per group; VPN decommissioned after 100% adoption. Latency: ZTNA proxy adds ~5-15ms (proxy termination + policy check) vs direct VPN's ~2-5ms.
+</details>
+
 11. **Compare quantum vs classical key exchange for a global bank with 1,000 branches.** The bank needs to refresh session keys between branches and the central data center every hour. Each key is 256-bit AES. Classical method: Diffie-Hellman over TLS (quantum-vulnerable → Shor's algorithm breaks it in 8 hours on a 4,000-qubit machine). Quantum method: BB84 QKD over fiber. Assume HQ (London) to New York branch is 5,600 km; max QKD distance is 100 km (requires 56 trusted relays). Compute: (a) total QKD key rate after 56 relays (each relay halves rate due to measurement and re-transmission), (b) hours to generate a 256-bit key, (c) security advantage (QKD detects eavesdropping, DH does not), (d) cost comparison (trusted relay hardware vs post-quantum cryptography software). Recommend and justify.
+
+<details>
+<summary>Solution</summary>
+(a) QKD key rate halves per relay: starting rate 1 Mbps → after 56 relays: 1 Mbps / 2^56 ≈ 1.39 × 10^-11 bps = effectively unusable. (b) To generate 256 bits: 256 / 1.39 × 10^-11 ≈ 1.84 × 10^13 seconds ≈ 584,000 years. (c) QKD detects eavesdropping via quantum measurement disturbance; DH does not detect interception until data is decrypted. (d) Cost: 56 trusted relays at $50K each = $2.8M + fiber lease. PQC (CRYSTALS-Kyber) is software-only, free, and currently believed quantum-resistant. Recommendation: deploy PQC (Kyber-1024 + Dilithium-3) for all branches immediately; QKD only for ultra-high-security metro links (≤100km) between major data centers.
+</details>
 
 ---
 

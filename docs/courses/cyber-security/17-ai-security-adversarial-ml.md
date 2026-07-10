@@ -1401,6 +1401,20 @@ Overall attack accuracy: 68.8% (55/80)
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Use differential privacy to bound membership inference | Apply DP-SGD during training with ε ≤ 8 to limit training-data memorisation |
+| Implement adversarial training for robust models | Augment training sets with FGSM/PGD examples to improve resistance against evasion attacks |
+| Scan model registries for pickle-based malware | Use picklescan or SafeTensors to detect malicious `__reduce__` calls before loading models |
+| Deploy prompt injection filters on LLM endpoints | Use the PromptInjectionDetector class as a middleware gate before the LLM processes any user input |
+| Validate model provenance with cryptographic signing | Sign model artifacts at build time; verify signatures at inference-server load time |
+| Monitor for model drift as a security signal | Deploy continuous input/output monitoring to detect adversarial shifts in data distribution |
+| Use frequency analysis for deepfake detection | Apply DCT-based frequency analysis to video frames; combine with temporal blink-variance checks |
+
+---
+
 ## Summary
 
 AI security is a rapidly evolving discipline at the intersection of machine learning and cybersecurity. The key takeaways from this chapter are:
@@ -1425,73 +1439,25 @@ AI security is a rapidly evolving discipline at the intersection of machine lear
 
 ## Chapter Quiz
 
-Answer the following 10 multiple-choice questions to test your understanding.
-
-**Q1.** What distinguishes FGSM from PGD adversarial attacks?
-- A) FGSM is iterative, PGD is single-step
-- B) FGSM is single-step, PGD is iterative with projection
-- C) FGSM targets white-box models, PGD targets black-box models
-- D) FGSM adds random noise, PGD uses gradient sign
-
-**Q2.** In a backdoor attack on an ML model, what is a "trigger"?
-- A) A callback function that activates during training
-- B) A specific input pattern that causes the model to output the attacker's target class
-- C) A type of gradient-clipping defence
-- D) A hyperparameter that controls learning rate decay
-
-**Q3.** A membership inference attacker exploits which property of ML models?
-- A) Models are typically overparameterised
-- B) Models exhibit higher confidence on training samples than unseen samples
-- C) Models always output probabilities that sum to 1
-- D) Models are linear in the vicinity of the input
-
-**Q4.** Which detection method is most effective for identifying GAN-generated deepfake videos (as opposed to single images)?
-- A) EXIF metadata analysis
-- B) Temporal blink inconsistency analysis
-- C) File-size comparison
-- D) Watermark detection
-
-**Q5.** What does the OWASP ML Top 10 ML01 risk ("Input Injection") refer to?
-- A) SQL injection in the ML database
-- B) Crafted inputs that cause misclassification or unexpected behaviour
-- C) Injection of malicious JavaScript into the model-serving web UI
-- D) Buffer overflow in the inference engine
-
-**Q6.** What is the primary serialisation risk with pickle-format ML models?
-- A) Slow loading times
-- B) Large file sizes
-- C) Arbitrary code execution during deserialisation
-- D) Incompatibility between Python versions
-
-**Q7.** Which of the following is NOT a prompt injection defence technique?
-- A) Input sanitisation with allow-listed patterns
-- B) Using a separate, less-capable model to classify user inputs before processing
-- C) Increasing the LLM's context window to 128K tokens
-- D) Constraining output with strict system prompts and output validation
-
-**Q8.** In the context of secure ML ops, what does model attestation provide?
-- A) Proof that the model was trained on a specific hardware accelerator
-- B) Cryptographic verification that the model artefact has not been tampered with
-- C) A benchmark of the model's accuracy on a held-out test set
-- D) Authentication of users who can query the model
-
-**Q9.** Which technique bounds the success of membership inference attacks during model training?
-- A) Stochastic gradient descent
-- B) Batch normalisation
-- C) Differential privacy (DP-SGD)
-- D) Dropout regularisation
-
-**Q10.** An indirect prompt injection attack works by:
-- A) Embedding a malicious instruction in a web page that is later retrieved by an LLM via RAG
-- B) Sending a prompt encoded in base64 to bypass safety filters
-- C) Overflowing the context window with benign tokens
-- D) Using a low-resource language for the dangerous part of a prompt
-
-**Answers:** 1-B, 2-B, 3-B, 4-B, 5-B, 6-C, 7-C, 8-B, 9-C, 10-A
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What distinguishes FGSM from PGD adversarial attacks? | FGSM is iterative, PGD is single-step | FGSM is single-step, PGD is iterative with projection | FGSM targets white-box models, PGD targets black-box models | FGSM adds random noise, PGD uses gradient sign | **B** |
+| 2 | In a backdoor attack on an ML model, what is a "trigger"? | A callback function that activates during training | A specific input pattern that causes the model to output the attacker's target class | A type of gradient-clipping defence | A hyperparameter that controls learning rate decay | **B** |
+| 3 | A membership inference attacker exploits which property of ML models? | Models are typically overparameterised | Models exhibit higher confidence on training samples than unseen samples | Models always output probabilities that sum to 1 | Models are linear in the vicinity of the input | **B** |
+| 4 | Which detection method is most effective for identifying GAN-generated deepfake videos (as opposed to single images)? | EXIF metadata analysis | Temporal blink inconsistency analysis | File-size comparison | Watermark detection | **B** |
+| 5 | What does the OWASP ML Top 10 ML01 risk ("Input Injection") refer to? | SQL injection in the ML database | Crafted inputs that cause misclassification or unexpected behaviour | Injection of malicious JavaScript into the model-serving web UI | Buffer overflow in the inference engine | **B** |
+| 6 | What is the primary serialisation risk with pickle-format ML models? | Slow loading times | Large file sizes | Arbitrary code execution during deserialisation | Incompatibility between Python versions | **C** |
+| 7 | Which of the following is NOT a prompt injection defence technique? | Input sanitisation with allow-listed patterns | Using a separate, less-capable model to classify user inputs before processing | Increasing the LLM's context window to 128K tokens | Constraining output with strict system prompts and output validation | **C** |
+| 8 | In the context of secure ML ops, what does model attestation provide? | Proof that the model was trained on a specific hardware accelerator | Cryptographic verification that the model artefact has not been tampered with | A benchmark of the model's accuracy on a held-out test set | Authentication of users who can query the model | **B** |
+| 9 | Which technique bounds the success of membership inference attacks during model training? | Stochastic gradient descent | Batch normalisation | Differential privacy (DP-SGD) | Dropout regularisation | **C** |
+| 10 | An indirect prompt injection attack works by: | Embedding a malicious instruction in a web page that is later retrieved by an LLM via RAG | Sending a prompt encoded in base64 to bypass safety filters | Overflowing the context window with benign tokens | Using a low-resource language for the dangerous part of a prompt | **A** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Review (Fundamental)
 
@@ -1532,6 +1498,8 @@ Answer the following 10 multiple-choice questions to test your understanding.
    - An RAG-based LLM chatbot
 
    For each component, list at least three security controls. Present your answer as a table with "Component", "Risk", "Control", and "Verification Method" columns.
+
+</details>
 
 ---
 

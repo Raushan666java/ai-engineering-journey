@@ -43,6 +43,66 @@ flowchart LR
     E --> E2[Selective Repeat]
 ```
 
+### Data Link Layer Frame Exchange Flow
+
+```mermaid
+sequenceDiagram
+    participant S as Sender (Data Link)
+    participant R as Receiver (Data Link)
+
+    Note over S,R: Framing + Error Detection + Flow Control
+
+    S->>R: Frame 0 (data + CRC)
+    activate S
+    R-->>S: ACK 0
+    deactivate S
+
+    S->>R: Frame 1 (data + CRC)
+    activate S
+    R-->>S: ACK 1
+    deactivate S
+
+    S->>R: Frame 2 (data + CRC) [corrupted]
+    activate S
+    R-->>S: NAK 2
+    deactivate S
+
+    S->>R: Frame 2 (retransmit)
+    activate S
+    R-->>S: ACK 2
+    deactivate S
+
+    Note over S,R: Sliding window example (window=4)
+    S->>R: Frame 3
+    S->>R: Frame 4
+    S->>R: Frame 5
+    S->>R: Frame 6
+    R-->>S: ACK 3
+    R-->>S: ACK 4
+    R-->>S: ACK 5
+    R-->>S: ACK 6
+```
+
+### CRC Computation State Machine
+
+```mermaid
+stateDiagram-v2
+    [*] --> Idle
+    Idle --> Shifting : data bit ready
+    Shifting --> Checking : shift complete (n + k bits)
+    Checking --> Idle : zero remainder → accept
+    Checking --> Error : non-zero remainder → reject
+    Error --> Idle : retransmit frame
+    Error --> Shifting : repeat CRC check
+
+    state Shifting {
+        [*] --> ShiftIn
+        ShiftIn --> XOR : MSB == 1
+        ShiftIn --> ShiftIn : MSB == 0
+        XOR --> ShiftIn : modulo‑2 subtract
+    }
+```
+
 ---
 
 ## 3.1 Data Link Layer Services
@@ -1086,6 +1146,56 @@ print(f"Error detected: {crc != crc2}")
 
 **Pro Tip:** CRC-32 is the gold standard for link-layer error detection. The Internet checksum is deliberately weaker → it was designed to be computed in software on 1970s CPUs (a 16-bit add is one instruction). Never use a checksum where CRC is feasible. The $1/2^{32}$ undetected-error probability of CRC-32 means a 10 Gbps link running at full capacity would see an undetected error roughly once every 30 years → acceptable for virtually all applications.
 
+### TypeScript Implementation: CRC Error Detector
+
+```typescript
+class CRCErrorDetector {
+  private generator: number;
+  private degree: number;
+
+  constructor(generator: number, degree: number) {
+    this.generator = generator;
+    this.degree = degree;
+  }
+
+  computeCRC(data: number): number {
+    let remainder = data << this.degree;
+    const divisor = this.generator << this.degree;
+    const totalBits = this.degree + this.bitLength(data);
+
+    for (let i = totalBits - 1; i >= 0; i--) {
+      if ((remainder >> (i + this.degree)) & 1) {
+        remainder ^= divisor << (i - this.bitLength(data));
+      }
+    }
+    return remainder & ((1 << this.degree) - 1);
+  }
+
+  private bitLength(x: number): number {
+    return Math.floor(Math.log2(x)) + 1;
+  }
+
+  // CRC-3-ATM: generator = 0b1011 (x^3 + x + 1), degree = 3
+  static CRC3(): CRCErrorDetector {
+    return new CRCErrorDetector(0b1011, 3);
+  }
+
+  // CRC-32-IEEE: generator polynomial 0x04C11DB7
+  static CRC32(): CRCErrorDetector {
+    return new CRCErrorDetector(0x04C11DB7, 32);
+  }
+}
+
+// Demo: CRC-3 for data 1010101 (0x55)
+const crc3 = CRCErrorDetector.CRC3();
+const data = 0b1010101;
+const crc = crc3.computeCRC(data);
+console.log(`Data: ${data.toString(2)}, CRC-3: ${crc.toString(2)}`);
+// Transmit: data << 3 | crc
+const transmitted = (data << 3) | crc;
+console.log(`Transmitted codeword: ${transmitted.toString(2)}`);
+```
+
 ---
 
 ## 3.4 Hamming Code (Error Correction)
@@ -1388,6 +1498,91 @@ print(f"  Correct?       {decoded2 == data} (likely wrong → Hamming corrects o
 
 **Pro Tip:** Hamming codes are rarely used in networking (CRC + retransmission is simpler for link-layer errors). Their primary application is ECC memory (DDR4/5 uses SECDED → Single Error Correction, Double Error Detection → which is an extended Hamming code with an extra parity bit). In memory, retransmission is impossible, so on-the-fly correction is essential.
 
+### TypeScript Implementation: Hamming Code (7,4)
+
+```typescript
+class HammingCode74 {
+  private static isPowerOf2(pos: number): boolean {
+    return (pos & (pos - 1)) === 0;
+  }
+
+  static encode(data4: number): number {
+    let codeword = 0;
+    let dataIdx = 0;
+    for (let pos = 1; pos <= 7; pos++) {
+      if (this.isPowerOf2(pos)) continue;
+      const bit = (data4 >> (3 - dataIdx)) & 1;
+      codeword = this.setBit(codeword, 7 - pos, bit);
+      dataIdx++;
+    }
+
+    for (let i = 0; i < 3; i++) {
+      const parityPos = 1 << i;
+      let parity = 0;
+      for (let pos = 1; pos <= 7; pos++) {
+        if (pos & parityPos) {
+          parity ^= this.getBit(codeword, 7 - pos);
+        }
+      }
+      codeword = this.setBit(codeword, 7 - parityPos, parity);
+    }
+    return codeword;
+  }
+
+  static decodeAndCorrect(codeword: number): { data: number; errorPos: number } {
+    let syndrome = 0;
+    for (let i = 0; i < 3; i++) {
+      const parityPos = 1 << i;
+      let check = 0;
+      for (let pos = 1; pos <= 7; pos++) {
+        if (pos & parityPos) {
+          check ^= this.getBit(codeword, 7 - pos);
+        }
+      }
+      if (check !== 0) syndrome |= parityPos;
+    }
+
+    let corrected = codeword;
+    if (syndrome !== 0) {
+      corrected = this.flipBit(codeword, 7 - syndrome);
+    }
+
+    let data = 0;
+    let dataIdx = 0;
+    for (let pos = 1; pos <= 7; pos++) {
+      if (this.isPowerOf2(pos)) continue;
+      data = (data << 1) | this.getBit(corrected, 7 - pos);
+      dataIdx++;
+    }
+    return { data, errorPos: syndrome };
+  }
+
+  private static getBit(word: number, i: number): number {
+    return (word >> i) & 1;
+  }
+
+  private static setBit(word: number, i: number, val: number): number {
+    return val === 1 ? word | (1 << i) : word & ~(1 << i);
+  }
+
+  private static flipBit(word: number, i: number): number {
+    return word ^ (1 << i);
+  }
+}
+
+// Demo: encode data 1010
+const data = 0b1010;
+const encoded = HammingCode74.encode(data);
+console.log(`Data: 1010, Encoded: ${encoded.toString(2).padStart(7, '0')}`);
+
+// Introduce error at position 5
+const withError = encoded ^ (1 << (7 - 5));
+console.log(`With error at pos 5: ${withError.toString(2).padStart(7, '0')}`);
+
+const result = HammingCode74.decodeAndCorrect(withError);
+console.log(`Syndrome: ${result.errorPos}, Corrected data: ${result.data.toString(2).padStart(4, '0')}`);
+console.log(`Correction ${result.errorPos === 5 ? 'succeeded' : 'failed'}`);
+```
 
 ## 3.5 Flow Control
 
@@ -1525,6 +1720,105 @@ In full-duplex communication, ACK information can be carried in the header of a 
 **How it works:** When station A sends data to B, it includes the ACK for the last frame received from B. If no data frame is ready when an ACK needs to be sent, a standalone ACK frame is used.
 
 **Trade-off:** Piggybacking improves efficiency on bidirectional links but introduces a **piggyback delay** → the sender may delay sending the ACK to wait for a data frame, increasing round-trip time.
+
+### TypeScript Implementation: Sliding Window Flow Control
+
+```typescript
+interface Frame {
+  seq: number;
+  data: string;
+}
+
+class SlidingWindowSender {
+  private sws: number;
+  private lar: number = 0;
+  private lfs: number = -1;
+  private buffer: Frame[] = [];
+  private acked: Set<number> = new Set();
+  private timers: Map<number, number> = new Map();
+
+  constructor(windowSize: number) {
+    this.sws = windowSize;
+  }
+
+  send(frame: Frame): boolean {
+    if (this.lfs - this.lar + 1 >= this.sws) {
+      console.log(`Window full (LAR=${this.lar}, LFS=${this.lfs})`);
+      return false;
+    }
+    this.lfs = frame.seq;
+    this.buffer.push(frame);
+    this.startTimer(frame.seq);
+    console.log(`Sent frame ${frame.seq}`);
+    return true;
+  }
+
+  receiveAck(ackSeq: number): void {
+    this.acked.add(ackSeq);
+    while (this.acked.has(this.lar)) {
+      console.log(`ACK processed for frame ${this.lar}`);
+      this.acked.delete(this.lar);
+      this.stopTimer(this.lar);
+      this.lar++;
+    }
+  }
+
+  getWindowSlots(): number {
+    return this.sws - (this.lfs - this.lar + 1);
+  }
+
+  private startTimer(seq: number): void {
+    this.timers.set(seq, Date.now());
+  }
+
+  private stopTimer(seq: number): void {
+    this.timers.delete(seq);
+  }
+}
+
+class SlidingWindowReceiver {
+  private rws: number;
+  private lfr: number = -1;
+  private buffer: Map<number, Frame> = new Map();
+
+  constructor(windowSize: number) {
+    this.rws = windowSize;
+  }
+
+  receive(frame: Frame): string[] {
+    const delivered: string[] = [];
+    if (frame.seq > this.lfr && frame.seq <= this.lfr + this.rws) {
+      this.buffer.set(frame.seq, frame);
+      console.log(`Buffered frame ${frame.seq}`);
+      while (this.buffer.has(this.lfr + 1)) {
+        this.lfr++;
+        delivered.push(this.buffer.get(this.lfr)!.data);
+        this.buffer.delete(this.lfr);
+      }
+    } else {
+      console.log(`Discarded frame ${frame.seq} (outside window)`);
+    }
+    return delivered;
+  }
+
+  getExpectedAck(): number {
+    return this.lfr;
+  }
+}
+
+// Demo
+const sender = new SlidingWindowSender(4);
+const receiver = new SlidingWindowReceiver(4);
+
+for (let i = 0; i < 6; i++) {
+  sender.send({ seq: i, data: `packet-${i}` });
+  const ack = receiver.receive({ seq: i, data: `packet-${i}` });
+  if (ack.length > 0) {
+    sender.receiveAck(i);
+  }
+}
+console.log(`Final sender LAR: ${sender['lar']}, window slots: ${sender.getWindowSlots()}`);
+```
 
 ---
 
@@ -2570,93 +2864,31 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 
 ---
 
-### Chapter Quiz
+## Case Study: Satellite Link with Selective Repeat ARQ
 
-**Q1.** Which framing method is used by PPP?
+**Background:** A remote research station in Antarctica communicates via a geostationary satellite link (RTT ≈ 540 ms). The link operates at 50 Mbps with a bit error rate (BER) of $10^{-6}$. Frame size is 1500 bytes.
 
-- A) Character count
-- B) Byte stuffing
-- C) Bit stuffing
-- D) None of the above
+**Challenge:** Stop-and-Wait would achieve only 0.004 % utilization. Go-Back-N would retransmit an entire window (~4000 frames) on each error, wasting ~400 ms of capacity per error. At BER $10^{-6}$, each 1500-byte (12,000-bit) frame has a 1.2 % error probability → errors are frequent.
 
-<details>
-<summary>Answer&lt;/summary&gt;
-B) PPP uses byte stuffing with flag byte 0x7E and escape byte 0x7D.
-</details>
+**Solution — Selective Repeat:**
+1. Window size = $\lceil (540 \times 10^{-3} \times 50 \times 10^6) / (1500 \times 8) \rceil = \lceil 27,000,000 / 12,000 \rceil = 2250$ frames
+2. With 11-bit sequence numbers ($2^{10} = 1024 < 2250$, so $k = 11 \rightarrow 2^{10} = 2048 < 2250$, actually $k = 12 \rightarrow 2^{11} = 2048 < 2250$, so $k = 12$ with $2^{11} = 2048$ — still not enough, $k = 13 \rightarrow 2^{12} = 4096 \ge 2 \times 2250$ ✓)
+3. Receiver buffers out-of-order frames up to 2250 deep
+4. Only corrupted frames are retransmitted
 
-**Q2.** What is the maximum throughput of slotted ALOHA?
+**Result:** Utilization ≈ 92 % (compared to 0.004 % for Stop-and-Wait, 45 % for Go-Back-N at this error rate). The research station achieves sustained throughput of 46 Mbps instead of 2 Mbps.
 
-- A) 18.4%
-- B) 36.8%
-- C) 50%
-- D) 100%
+## Practical Takeaways
 
-<details>
-<summary>Answer&lt;/summary&gt;
-B) 36.8% ($1/e$) → double that of pure ALOHA (18.4%).
-</details>
-
-**Q3.** A CRC with generator polynomial $x^3 + x + 1$ receives the bit sequence 1101101. The remainder after division is 101. Was an error detected?
-
-- A) Yes
-- B) No
-- C) Cannot determine
-- D) CRC cannot detect errors
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) No → a zero remainder indicates no detected error; CRC with non-zero remainder = error detected.
-</details>
-
-**Q4.** In Go-Back-N with a 4-bit sequence number, what is the maximum send window size?
-
-- A) 8
-- B) 15
-- C) 16
-- D) 31
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) 15 → Go-Back-N requires $W \le 2^k - 1$ to avoid ambiguity (Selective Repeat requires $W \le 2^{k-1}$).
-</details>
-
-**Q5.** Which ARQ protocol would you choose for a high-delay satellite link with frequent errors?
-
-- A) Stop-and-Wait
-- B) Go-Back-N
-- C) Selective Repeat
-- D) None
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) Selective Repeat → retransmits only lost frames, critical when RTT is high and errors are frequent. Go-Back-N would waste entire windows on each error, and Stop-and-Wait would waste the bandwidth-delay product.
-</details>
-
-**Q6.** A (7,4) Hamming code receiver computes syndrome 101 (binary). What does this indicate?
-
-- A) No error
-- B) Error at position 3
-- C) Error at position 5
-- D) Uncorrectable double-bit error
-
-<details>
-<summary>Answer&lt;/summary&gt;
-C) Syndrome 101 = 5 in decimal → error at position 5. The sender's check bits are recomputed; the binary number formed by failed parity checks gives the exact bit position.
-</details>
-
-**Q7.** In PPP, what is the purpose of the magic number in LCP?
-
-- A) Encryption key negotiation
-- B) Loop detection
-- C) Address assignment
-- D) Authentication
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) Magic numbers detect loopback links → if a Configure-Request arrives with the same magic number as the sender's own, a loop is detected and the link is terminated.
-</details>
-
----
+| Takeaway | Application |
+|----------|------------|
+| **Match window size to bandwidth-delay product** | $W \ge (2 \times T_{prop} \times R) / L$ for 100 % utilization |
+| **CRC-32 is the default choice** for link-layer integrity | Never use a simple checksum where CRC is feasible |
+| **Stop-and-Wait** is only efficient on very short links | Utilization = $T_{tx} / (T_{tx} + 2T_{prop})$ — if $T_{prop} \gg T_{tx}$, utilization drops to near zero |
+| **Selective Repeat** for high-BER, high-delay links | Retransmits only lost frames — critical for wireless and satellite |
+| **Go-Back-N** for low-BER, high-delay links | Simpler receiver, but wasteful on errors |
+| **Bit stuffing overhead** is bounded (~20 % max) | Byte stuffing can add up to 100 % overhead with worst-case payload |
+| **Frame size matters** | Larger frames → better efficiency, but higher error probability per frame |
 
 ## Summary
 
@@ -2672,34 +2904,39 @@ CRC-32 (Ethernet), Stop-and-Wait ARQ (Wi-Fi), and byte stuffing (PPP) are deploy
 
 ### Review Questions
 
-1. Why does the byte-stuffing overhead depend on payload content while bit-stuffing overhead is bounded?
-2. A CRC generator polynomial $G(x)$ detects all single-bit errors if $G(x)$ has at least two terms. Why?
-3. What is the minimum Hamming distance required to detect up to $d$ errors? To correct up to $c$ errors?
-4. A sliding window protocol uses 3-bit sequence numbers. What is the maximum window size for Go-Back-N? For Selective Repeat?
-5. Under what conditions does stop-and-wait achieve acceptable efficiency?
-6. What is the difference between cumulative ACK (Go-Back-N) and individual ACK (Selective Repeat)?
-7. Why does Wi-Fi use Stop-and-Wait ARQ instead of Go-Back-N?
-8. What problem does the magic number in PPP solve?
+<details>
+<summary>Solution Hints</summary>
+
+1. Byte stuffing escapes every occurrence of the flag byte in payload → worst-case 100 % overhead (all flag bytes). Bit stuffing inserts a 0 after five consecutive 1s → worst-case ~20 % overhead (payload all 1s).
+2. A single-bit error of degree $i$ produces remainder $x^i \bmod G(x)$. If $G(x)$ has ≥ 2 terms, this remainder is non-zero → always detected.
+3. Detect $d$ errors: $d_{min} \ge d + 1$. Correct $c$ errors: $d_{min} \ge 2c + 1$.
+4. GBN: $W \le 2^3 - 1 = 7$. SR: $W \le 2^{3-1} = 4$.
+5. Acceptable when $T_{tx} \gg T_{prop}$ (short, low-delay links). Example: 1500 bytes at 1 Gbps → $T_{tx} = 12\ \mu s$, useful only for sub-meter distances.
+6. GBN: single cumulative ACK for all frames up to N. SR: individual ACK per frame.
+7. Wi-Fi uses SIFS (10 µs) before ACK — too short for window-based operation. Stop-and-Wait with fast ACK works well for short-range radio.
+8. Detects loopback — if a peer receives its own magic number, a loop exists.
+</details>
 
 ### Application Problems
 
-9. Compute the CRC-3 for the data polynomial $x^6 + x^4 + x^2 + 1$ (binary 1010101) using generator polynomial $x^3 + x + 1$ (binary 1011).
-10. A Go-Back-N protocol has a 4-bit sequence number, SWS = 7, and a link with 50 ms RTT and 10 Mbps rate. If frame size is 1000 bytes, what is the maximum throughput assuming no errors?
-11. Design a 2D parity scheme for 8 bytes of data arranged in a $4 \times 16$ matrix. Show the resulting codeword. Demonstrate that a double-bit error in the same row is detected.
-12. A 10 Gbps link with 100 Âµs one-way propagation delay uses 1500-byte frames. What is the optimal window size for Selective Repeat? How many sequence bits are needed?
-13. In the HDLC frame format, what is the maximum window size given 3-bit sequence numbers? What happens if a station sends frame 7 and the window is 7?
-14. PPP uses byte stuffing. If the payload contains 1000 bytes of random data, what is the expected additional overhead due to stuffing? (Assume payload bytes are uniformly distributed; flags are 0.4% of 256 values.)
+<details>
+<summary>Solution Hints</summary>
+
+9. Compute: pad data with 3 zeros → 1010101000. Divide by 1011 using XOR. Remainder = 110.
+10. Max throughput with SWS = 7, RTT = 50 ms. Window fills pipe? BDP = 50 ms × 10 Mbps = 500,000 bits. Frame = 8000 bits. Need SWS = 500,000/8000 = 62.5 for full utilization → SWS = 7 → throughput = 7 × 8000 / 0.05 = 1.12 Mbps.
+11. 4×16 matrix → 4 row parity + 16 column parity + 1 corner = 21 bits overhead for 64 data bits. Double-bit error in same row: each row parity flips twice (returns to even), column parity bits detect the two columns → error detected.
+12. BDP = 2 × 100 µs × 10 Gbps = 2,000,000 bits = 166.67 frames × 2 (for SR) → W ≈ 334. Sequence bits: $k$ such that $2^{k-1} \ge 334$ → $k = 10$.
+13. With 3-bit seq (mod 8), GBN max = 7. Sending frame 7 with window = 7 → window full. After ACK for 0, window slides, can send frame 8 (seq 0).
+14. Flag byte 0x7E = 1/256 = 0.39 %. Each escape = 2 bytes (0x7D + flag). Expected overhead = 1000 × 0.0039 × 2 ≈ 7.8 bytes (0.78 %).
+</details>
 
 ### Challenge Problem
 
-15. **Design a hybrid ARQ protocol.** Consider a link where errors occur in bursts: each burst corrupts 2-5 consecutive frames (uniformly distributed), and bursts occur with probability $p = 0.02$ per frame. Propose a hybrid ARQ scheme that uses Selective Repeat for individual frame losses and switches to Go-Back-N when a burst is detected. Your design should:
-   - Define the burst detection mechanism (how does the receiver know a burst is in progress?).
-   - Define the switching logic (when to switch modes, when to switch back).
-   - Analyze the efficiency improvement over pure Selective Repeat.
-   - Discuss any correctness issues (sequence number ambiguity during mode switches).
-   - Provide pseudocode for the receiver's burst detection and mode switching.
+<details>
+<summary>Solution Hints</summary>
 
-(Hint: consecutive NAKs or gaps in sequence numbers can signal burst-mode operation.)
+15. **Hybrid ARQ design:** Track consecutive NAKs (or gaps in sequence numbers). If ≥ 2 consecutive NAKs → switch to Go-Back-N for next transmission. Reset counter on successful ACK. Efficiency improvement: burst of 3 errors needs only 3 retransmissions instead of NAKing each individually. Use a 2-bit counter to detect burst mode. Ensure sequence number space is large enough to avoid ambiguity. Pseudocode: maintain `burstCount = 0`, on NAK: `burstCount++`, if `burstCount >= THRESHOLD` → switch to GBN; on ACK: `burstCount = 0`, switch to SR.
+</details>
 
 ---
 

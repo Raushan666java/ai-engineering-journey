@@ -1672,6 +1672,20 @@ const assertion = await navigator.credentials.get({
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Multi-Factor Authentication | Deploy FIDO2/WebAuthn passkeys for phishing resistance, TOTP as fallback, eliminate SMS-based MFA where possible |
+| Password Security | Hash with argon2id (t=3, m=65536, p=4) or bcrypt (cost=12); follow NIST SP 800-63B — no periodic expiration, check against breach databases |
+| Federation (SAML 2.0 + OIDC) | Use SAML for enterprise SSO (Salesforce, Workday), OIDC for consumer-facing apps, always validate signatures and audience restrictions |
+| OAuth 2.0 Grant Selection | Use Authorization Code + PKCE for web/mobile apps, Client Credentials for machine-to-machine, never use Implicit or ROPC grants |
+| Access Control Models | Start with RBAC for simplicity, evolve to ABAC for fine-grained control, consider ReBAC for social/collaboration platforms |
+| Privileged Access Management | Vault all admin credentials, implement JIT elevation with approval workflows, record all privileged sessions, rotate credentials after use |
+| Zero Trust Identity | Remove VPN dependency, implement device posture checks, use short-lived tokens, continuously re-evaluate access decisions |
+
+---
+
 ## Summary
 
 | Concept | One-Sentence Takeaway |
@@ -1702,95 +1716,182 @@ const assertion = await navigator.credentials.get({
 ### Review Questions
 
 1. Name the three primary authentication factors. Give an example of each.
+
+<details>
+<summary>Solution</summary>
+1) Something you know (password, PIN). 2) Something you have (phone, hardware token, smart card). 3) Something you are (fingerprint, face, iris). MFA requires at least two different factors.
+</details>
+
 2. Draw the OAuth 2.0 Authorization Code flow with PKCE. Label all components and messages.
+
+<details>
+<summary>Solution</summary>
+Components: Client, Authorization Server (AS), Resource Server. Flow: 1) Client generates code_verifier + code_challenge. 2) Client → AS: authorize?response_type=code&code_challenge=... 3) AS → User: authenticate + consent. 4) AS → Client: authorization code (via redirect). 5) Client → AS: POST /token?code=...&code_verifier=... 6) AS → Client: access_token + refresh_token. 7) Client → RS: GET /resource (Authorization: Bearer token).
+</details>
+
 3. What is the difference between TOTP and HOTP? When would you use each?
+
+<details>
+<summary>Solution</summary>
+HOTP (HMAC-based): counter-based — OTP changes after each successful use. TOTP (Time-based): time-window-based — OTP changes every 30 seconds. Use TOTP for most MFA scenarios (authenticator apps). Use HOTP when time synchronization is unreliable (offline systems, hardware tokens with no clock).
+</details>
+
 4. Explain the FAR/FRR/EER trade-off in biometric systems.
+
+<details>
+<summary>Solution</summary>
+FAR (False Acceptance Rate): impostor incorrectly accepted. FRR (False Rejection Rate): legitimate user incorrectly rejected. EER (Equal Error Rate): threshold where FAR = FRR. Lowering the threshold decreases FRR but increases FAR, and vice versa. The EER is typically used to compare biometric system accuracy.
+</details>
+
 5. What attack does PKCE prevent? Why was it needed for mobile apps?
+
+<details>
+<summary>Solution</summary>
+PKCE prevents the authorization code interception attack. In mobile/native apps, the redirect URI (e.g., custom scheme) can be intercepted by a malicious app on the same device. PKCE uses a code verifier (cryptographically random) that only the original client knows — the intercepted code alone is useless without the verifier.
+</details>
+
 6. Compare Kerberos TGT vs Service Ticket. Who can decrypt each?
+
+<details>
+<summary>Solution</summary>
+TGT (Ticket-Granting Ticket): encrypted with the KDC's krbtgt key — only KDC can decrypt. Contains session key SK1. Service Ticket: encrypted with the target service's key — only the service can decrypt. Contains session key SK2. TGT proves identity to KDC; Service Ticket proves identity to the specific service.
+</details>
+
 7. What is the SAML `AudienceRestriction` condition for?
+
+<details>
+<summary>Solution</summary>
+`AudienceRestriction` specifies the intended recipient (service provider) of a SAML assertion. If the SP receiving the assertion is not in the audience list, it must reject it. This prevents assertion replay across different SPs — an assertion issued for SP-A cannot be used to authenticate at SP-B.
+</details>
+
 8. Explain unconstrained vs constrained Kerberos delegation.
+
+<details>
+<summary>Solution</summary>
+Unconstrained delegation (legacy): the service can impersonate the user to any other service — extremely dangerous if the service is compromised. Constrained delegation: the service can only impersonate the user to specifically configured services. Resource-based constrained delegation: the target service controls who can delegate to it (Windows Server 2012+).
+</details>
+
 9. How does Google BeyondCorp implement Zero Trust without a VPN?
+
+<details>
+<summary>Solution</summary>
+BeyondCorp moves access control from the network perimeter to the device and user. All access is authenticated and authorized based on: device inventory (managed + patch level), user identity + group, and context (location, time). An access proxy enforces policy before allowing connections to internal applications — there is no trusted internal network.
+</details>
+
 10. What are the three case studies and what IAM lessons does each teach?
+
+<details>
+<summary>Solution</summary>
+1) SolarWinds: build agents need MFA (non-interactive auth must be secured differently). 2) Okta (2022): support portal with weak access control → contractor breached and viewed customer data. 3) Microsoft Midnight Blizzard: password spray attack against legacy non-MFA accounts. Lesson: all accounts must have MFA, including service accounts and contractors.
+</details>
+
 11. Explain why NIST SP 800-63B deprecated periodic password expiration.
+
+<details>
+<summary>Solution</summary>
+Research shows users respond to forced rotation by choosing predictable patterns (Password1! → Password2!). The cost (help desk calls, weaker passwords) outweighs the benefit. NIST now recommends: no periodic expiration, check passwords against known breach databases, enforce minimum 8 characters, and use MFA as the primary protection.
+</details>
+
 12. What is the difference between SAML and OAuth 2.0 in terms of primary purpose?
+
+<details>
+<summary>Solution</summary>
+SAML is primarily an authentication protocol — it asserts identity (who you are) using XML assertions. OAuth 2.0 is an authorization framework — it grants delegated access (what you can do) using tokens. SAML is about single sign-on; OAuth is about API access delegation. OpenID Connect bridges this by providing authentication on top of OAuth 2.0.
+</details>
+
 13. How does a FIDO2 passkey prevent phishing attacks?
+
+<details>
+<summary>Solution</summary>
+FIDO2 passkeys are scoped to the origin (protocol + domain + port). The private key never leaves the device. The browser/platform verifies the origin matches the credential's RP ID before allowing authentication. Even if a user visits a phishing site (evil.com), the passkey will not authenticate because the origin does not match the legitimate RP ID.
+</details>
+
 14. What is push fatigue and how do you mitigate it?
+
+<details>
+<summary>Solution</summary>
+Push fatigue occurs when users receive too many push MFA notifications and accidentally approve a fraudulent one. Mitigations: 1) Number matching (user must enter the number shown on screen). 2) Location-based policies (only prompt for push from trusted networks). 3) Rate limiting push requests per user. 4) FIDO2 as alternative (phishing-resistant, no push).
+</details>
+
 15. Why was the SolarWinds build pipeline not protected by MFA?
+
+<details>
+<summary>Solution</summary>
+Build agents and CI/CD pipelines run non-interactively — they cannot respond to MFA prompts (no human in the loop). The attacker compromised credentials or code-signing certificates used in automated builds. Solutions: hardware-bound ephemeral credentials (OIDC), short-lived tokens, code signing with HSM, and build attestation.
+</details>
 
 ### Application Problems
 
 1. **Password policy design:** A company has 10,000 employees. Design a password policy following NIST SP 800-63B. Justify each rule.
 
+<details>
+<summary>Solution</summary>
+Minimum 8 characters (no complexity rules — users pick longer phrases). Check against breach databases (HaveIBeenPwned API). No periodic expiration. Allow paste in password fields (enables password managers). MFA required for all accounts. Justification: NIST research shows complexity rules produce weaker passwords, and periodic rotation causes predictable patterns. Breach checking and MFA are more effective.
+</details>
+
 2. **ABAC policy for healthcare:** A hospital wants access to patient records based on: doctor-patient relationship, time of day, location, emergency override. Write ABAC policies for: scheduled visit, emergency, remote consultation.
+
+<details>
+<summary>Solution</summary>
+Scheduled visit: `allow if user.role == "doctor" AND patient.assignedDoctor == user AND time between 8:00-18:00 AND location == "hospital"`. Emergency: `allow if user.role in ["doctor","nurse"] AND context.emergency == true AND action == "read"`. Remote consultation: `allow if user.role == "doctor" AND patient.assignedDoctor == user AND context.telehealth == true AND MFA.verified == true`.
+</details>
 
 3. **MFA deployment plan:** A 200-person startup uses passwords only. Propose phased MFA deployment: Phase 1 (low friction), Phase 2 (high security), Phase 3 (passwordless). Include timeline, tools, user communication.
 
+<details>
+<summary>Solution</summary>
+Phase 1 (Month 1-2): Enable TOTP via authenticator app for all accounts — low friction, no hardware cost. Phase 2 (Month 3-4): Require MFA for admin roles, deploy push-based MFA (Okta Verify/MS Authenticator). Phase 3 (Month 5-6): FIDO2 hardware keys for admins, WebAuthn passkeys for all users — goal of 50% passwordless logins. Communication: weekly email tips, help desk training, dedicated Slack channel.
+</details>
+
 4. **OAuth token theft scenario:** A web app uses OAuth 2.0 tokens valid 24h with offline access. Describe what happens if tokens are stolen. Propose mitigations: token binding, rotation, shorter TTL.
 
+<details>
+<summary>Solution</summary>
+Stolen tokens can be used for 24h to access the API and refresh for new tokens. Mitigations: 1) Token binding (tokens tied to TLS client certificate or device proof-of-possession). 2) Refresh token rotation (each refresh invalidates previous token; theft is detected when the stolen token fails). 3) Shorter TTL (access token: 15min, refresh token: 24h with rotation).
+</details>
+
 5. **Zero Trust migration:** A company with HQ VPN + office network wants Zero Trust. Design migration stages: VPN removal, device management, app proxy, policy engine.
+
+<details>
+<summary>Solution</summary>
+Stage 1: Enroll all devices in MDM (Intune/Jamf), deploy device certificates. Stage 2: Deploy identity-aware proxy (Pomerium/Cloudflare Access) for web apps. Stage 3: Migrate non-web apps to use mTLS or WireGuard + device auth. Stage 4: Remove VPN — all access goes through the proxy with policy evaluation at every request. Stage 5: Continuous monitoring and policy refinement.
+</details>
 
 ### Challenge Problems
 
 1. **OIDC provider implementation:** Design a minimal OIDC provider from scratch. Cover `/authorize`, `/token`, `/userinfo`, JWKS rotation, ID Token signing. What crypto choices and why?
 
+<details>
+<summary>Solution</summary>
+/authorize: authenticate user, generate authorization code. /token: exchange code for ID token (JWT signed with RS256) + access token (opaque or JWT). /userinfo: return claims from access token. JWKS: publish public keys at /.well-known/jwks.json for token verification. Crypto: RS256 (RSA-2048 with SHA-256) — widely supported; ES256 (ECDSA P-256) for smaller tokens. Rotate signing keys every 90 days.
+</details>
+
 2. **Multi-cloud SaaS IAM:** A SaaS runs on AWS, uses GCP BigQuery, integrates with customer Azure AD for SSO. Design IAM for: internal service-to-service auth, end-user auth, customer federation, cloud provider access controls.
+
+<details>
+<summary>Solution</summary>
+Internal: service mesh with mTLS (SPIFFE/SPIRE for workload identity). End-user: OIDC with customer's Azure AD as IdP (federation through our OIDC provider). Cloud provider: AWS IAM roles for EC2/Lambda, GCP service accounts for BigQuery (workload identity federation). Use a central authorization service (e.g., OPA) for cross-cloud policy evaluation.
+</details>
 
 3. **Kerberos cross-realm trust:** Two companies merge with realms `COMPANY-A.COM` and `COMPANY-B.COM`. Design trust path. How does a user in Company A access a service in Company B?
 
+<details>
+<summary>Solution</summary>
+Establish a two-way cross-realm trust. Configure both KDCs with trust relationship (shared inter-realm key). User obtains TGT from COMPANY-A.COM KDC, then requests a referral ticket to COMPANY-B.COM, then requests a service ticket from COMPANY-B.COM KDC for the target service. The trust path is COMPANY-A → COMPANY-B (direct trust). The service ticket is encrypted with the target service's key in COMPANY-B.
+</details>
+
 ## Chapter Quiz
 
-1. RBAC grants permissions based on:
-   - A) The user's identity
-   - B) The user's role in the organization
-   - C) Security clearance labels
-   - D) Environmental attributes
-
-2. OAuth 2.0 is primarily:
-   - A) An authentication protocol
-   - B) An authorization framework for delegated access
-   - C) A password hashing standard
-   - D) A single sign-on protocol
-
-3. PKCE prevents:
-   - A) SQL injection
-   - B) Authorization code interception
-   - C) Cross-site scripting
-   - D) Session fixation
-
-4. The most phishing-resistant MFA method is:
-   - A) SMS code
-   - B) TOTP authenticator app
-   - C) FIDO2/WebAuthn passkey
-   - D) Push notification
-
-5. NIST SP 800-63B recommends:
-   - A) Expire passwords every 90 days
-   - B) Require uppercase, lowercase, digit, symbol
-   - C) No periodic expiration; check against breach databases
-   - D) Password hints allowed
-
-6. Kerberos TGT is encrypted with:
-   - A) The user's password hash
-   - B) The KDC's secret key
-   - C) The service's secret key
-   - D) The session key
-
-7. SAML assertion replay is prevented by:
-   - A) Encryption
-   - B) Unique assertion ID + timestamp window
-   - C) IP filtering
-   - D) Certificate pinning
-
-8. The SolarWinds attack succeeded because:
-   - A) MFA was bypassed on human users
-   - B) Build agents did not support interactive MFA
-   - C) SAML was misconfigured
-   - D) Kerberos tickets were forged
-
-<details>
-<summary>Answers&lt;/summary&gt;
-1. B, 2. B, 3. B, 4. C, 5. C, 6. B, 7. B, 8. B
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | RBAC grants permissions based on: | The user's identity | The user's role in the organization | Security clearance labels | Environmental attributes | B |
+| 2 | OAuth 2.0 is primarily: | An authentication protocol | An authorization framework for delegated access | A password hashing standard | A single sign-on protocol | B |
+| 3 | PKCE prevents: | SQL injection | Authorization code interception | Cross-site scripting | Session fixation | B |
+| 4 | The most phishing-resistant MFA method is: | SMS code | TOTP authenticator app | FIDO2/WebAuthn passkey | Push notification | C |
+| 5 | NIST SP 800-63B recommends: | Expire passwords every 90 days | Require uppercase, lowercase, digit, symbol | No periodic expiration; check against breach databases | Password hints allowed | C |
+| 6 | Kerberos TGT is encrypted with: | The user's password hash | The KDC's secret key | The service's secret key | The session key | B |
+| 7 | SAML assertion replay is prevented by: | Encryption | Unique assertion ID + timestamp window | IP filtering | Certificate pinning | B |
+| 8 | The SolarWinds attack succeeded because: | MFA was bypassed on human users | Build agents did not support interactive MFA | SAML was misconfigured | Kerberos tickets were forged | B |
 
 ---
 

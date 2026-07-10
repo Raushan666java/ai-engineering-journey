@@ -2750,6 +2750,20 @@ payload_v2.exe — SHA256: 78901234abcd...
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Use Tor Browser for anonymity — not private browsing mode | Deploy Tor Browser with Safer/Safest mode for any research requiring identity protection |
+| Run a DNS leak test before relying on a VPN | Use the DNSLeakTester class or visit ipleak.net to verify your DNS queries are not exposed |
+| Strip metadata from all shared files | Apply exiftool or the EXIFProcessor before sharing images; use MAT for document metadata |
+| Follow the data minimisation principle | Share only required form fields; use pseudonyms across services; enable disappearing messages |
+| Deploy browser fingerprinting countermeasures | Use Tor Browser or Brave with fingerprinting protection; disable WebGL and Canvas APIs |
+| Integrate OSINT collection into threat intelligence | Use the OSINTAggregator class to automate domain, email, and Shodan reconnaissance |
+| Apply the OPSEC checklist before sensitive research | Follow the journalist checklist: Tails OS, compartmentalised identities, encrypted communications |
+
+---
+
 ## Summary
 
 Digital privacy, anonymity, and OSINT form a three-legged foundation for secure online operations. The key takeaways from this chapter are:
@@ -2782,73 +2796,25 @@ Digital privacy, anonymity, and OSINT form a three-legged foundation for secure 
 
 ## Chapter Quiz
 
-Answer the following 10 multiple-choice questions to test your understanding.
-
-**Q1.** Which property of Tor onion routing ensures that no single relay knows both the source and destination of traffic?
-- A) Perfect forward secrecy
-- B) Three-hop circuits with layered encryption
-- C) Bandwidth-weighted relay selection
-- D) Directory authority consensus
-
-**Q2.** What distinguishes garlic routing (I2P) from onion routing (Tor)?
-- A) Garlic routing uses 5 hops instead of 3
-- B) Garlic routing bundles multiple messages together to obscure message boundaries
-- C) Garlic routing requires centralized directory servers
-- D) Garlic routing only works for web browsing
-
-**Q3.** In the context of VPNs, what is a DNS leak?
-- A) DNS queries being intercepted by the ISP's DNS server instead of the VPN's DNS
-- B) A vulnerability in the DNS protocol
-- C) The VPN provider sharing DNS logs with advertisers
-- D) DNS queries using UDP instead of TCP
-
-**Q4.** Which of the following is the most effective pluggable transport for circumventing Deep Packet Inspection (DPI)?
-- A) SOCKS5
-- B) obfs4
-- C) HTTP CONNECT proxy
-- D) SSH tunneling
-
-**Q5.** A Google dork query of `site:example.com filetype:sql "INSERT INTO"` would find:
-- A) All SQL files on example.com
-- B) SQL files containing INSERT statements on example.com
-- C) Database servers belonging to example.com
-- D) SQL injection vulnerabilities on example.com
-
-**Q6.** What is the primary security risk of EXIF GPS coordinates in photos?
-- A) They drain the device battery faster
-- B) They reveal the exact location where the photo was taken
-- C) They slow down image upload speeds
-- D) They cause compatibility issues with social media platforms
-
-**Q7.** In an email header, what does a DMARC "fail" result typically indicate?
-- A) The email server is down
-- B) The message may be spoofing the From domain
-- C) The recipient's mailbox is full
-- D) The email contains a virus
-
-**Q8.** Which of the following is NOT a valid Tor relay type?
-- A) Guard relay
-- B) Middle relay
-- C) Bridge relay
-- D) Directory relay
-
-**Q9.** What is the purpose of a kill switch in a VPN application?
-- A) To terminate the VPN connection when bandwidth exceeds a threshold
-- B) To block all traffic if the VPN tunnel drops unexpectedly
-- C) To kill other applications when the VPN is activated
-- D) To prevent the computer from sleeping while VPN is connected
-
-**Q10.** The Signal protocol provides "forward secrecy" because:
-- A) Messages forward themselves to the recipient automatically
-- B) Compromising a session key does not reveal past messages
-- C) Messages are forwarded through multiple servers
-- D) The protocol uses outdated encryption algorithms
-
-**Answers:** 1-B, 2-B, 3-A, 4-B, 5-B, 6-B, 7-B, 8-D, 9-B, 10-B
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which property of Tor onion routing ensures that no single relay knows both the source and destination of traffic? | Perfect forward secrecy | Three-hop circuits with layered encryption | Bandwidth-weighted relay selection | Directory authority consensus | **B** |
+| 2 | What distinguishes garlic routing (I2P) from onion routing (Tor)? | Garlic routing uses 5 hops instead of 3 | Garlic routing bundles multiple messages together to obscure message boundaries | Garlic routing requires centralized directory servers | Garlic routing only works for web browsing | **B** |
+| 3 | In the context of VPNs, what is a DNS leak? | DNS queries being intercepted by the ISP's DNS server instead of the VPN's DNS | A vulnerability in the DNS protocol | The VPN provider sharing DNS logs with advertisers | DNS queries using UDP instead of TCP | **A** |
+| 4 | Which of the following is the most effective pluggable transport for circumventing Deep Packet Inspection (DPI)? | SOCKS5 | obfs4 | HTTP CONNECT proxy | SSH tunneling | **B** |
+| 5 | A Google dork query of `site:example.com filetype:sql "INSERT INTO"` would find: | All SQL files on example.com | SQL files containing INSERT statements on example.com | Database servers belonging to example.com | SQL injection vulnerabilities on example.com | **B** |
+| 6 | What is the primary security risk of EXIF GPS coordinates in photos? | They drain the device battery faster | They reveal the exact location where the photo was taken | They slow down image upload speeds | They cause compatibility issues with social media platforms | **B** |
+| 7 | In an email header, what does a DMARC "fail" result typically indicate? | The email server is down | The message may be spoofing the From domain | The recipient's mailbox is full | The email contains a virus | **B** |
+| 8 | Which of the following is NOT a valid Tor relay type? | Guard relay | Middle relay | Bridge relay | Directory relay | **D** |
+| 9 | What is the purpose of a kill switch in a VPN application? | To terminate the VPN connection when bandwidth exceeds a threshold | To block all traffic if the VPN tunnel drops unexpectedly | To kill other applications when the VPN is activated | To prevent the computer from sleeping while VPN is connected | **B** |
+| 10 | The Signal protocol provides "forward secrecy" because: | Messages forward themselves to the recipient automatically | Compromising a session key does not reveal past messages | Messages are forwarded through multiple servers | The protocol uses outdated encryption algorithms | **B** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Review (Fundamental)
 
@@ -2905,6 +2871,8 @@ Answer the following 10 multiple-choice questions to test your understanding.
     - Findings (with severity ratings: Low/Medium/High/Critical)
     - IOCs table
     - Recommended remediations
+
+</details>
 
 ---
 

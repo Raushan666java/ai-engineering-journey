@@ -2893,6 +2893,20 @@ void demonstrateDependencyConfusionScanner();
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Generate SBOMs for every build artifact | Integrate CycloneDX or SPDX generation into your CI/CD pipeline using Syft or CycloneDX CLI |
+| Pin all CI/CD actions to commit SHAs | Audit workflows and replace version tags (`@v3`) with full commit hashes to prevent supply chain injection |
+| Scope CI/CD token permissions to minimum | Set `permissions: read-all` at the workflow level and override only where write access is strictly required |
+| Use ephemeral runners for all CI jobs | Replace persistent self-hosted runners with single-use containers or GitHub-hosted runners to prevent secret leakage |
+| Scan all dependencies and containers in CI | Add `npm audit`/`trivy`/`grype` scanning steps after dependency install and container build |
+| Sign all artifacts with Sigstore/Cosign | Implement keyless signing in CI; verify signatures at deployment to detect tampering |
+| Implement SLSA provenance attestation | Generate in-toto attestations at build time; require L3+ provenance for production deployments |
+
+---
+
 ## Summary
 
 This chapter covered the critical topic of software supply chain and CI/CD pipeline security:
@@ -2915,151 +2929,25 @@ This chapter covered the critical topic of software supply chain and CI/CD pipel
 
 ## Chapter Quiz — Supply Chain & CI/CD Pipeline Security
 
-**10 Multiple-Choice Questions**
-
----
-
-**Q1.** What was the primary mechanism used by the SolarWinds (Sunburst) attackers to distribute the backdoor?
-
-A. Phishing emails with malicious attachments
-B. Compromising the SolarWinds build pipeline to inject code into signed Orion updates
-C. Exploiting a zero-day vulnerability in the Orion web console
-D. Social engineering SolarWinds employees to reveal credentials
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** The attackers compromised SolarWinds' build infrastructure and inserted malicious code into the Orion software during the build process. The compromised binaries were then digitally signed with SolarWinds' legitimate code signing certificate.
-</details>
-
----
-
-**Q2.** What is an SBOM?
-
-A. A bill of materials for hardware components in data centers
-B. A machine-readable inventory of all software components, versions, and dependencies in an application
-C. A security baseline operating model for DevSecOps teams
-D. A build optimization methodology for container images
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of all components in a software artifact, including transitive dependencies and license information. Common formats are SPDX and CycloneDX.
-</details>
-
----
-
-**Q3.** Which SLSA level requires two-person review for all build steps?
-
-A. SLSA L1
-B. SLSA L2
-C. SLSA L3
-D. SLSA L4
-
-<details>
-<summary>Answer</summary>
-**Answer: D.** SLSA L4 requires two-person review for all changes, along with all requirements from L1–L3 plus security audit and FIPS 140 compliance.
-</details>
-
----
-
-**Q4.** In a dependency confusion attack, an attacker:
-
-A. Modifies the source code of a popular open-source library
-B. Publishes a package with the same name as a private package to a public registry with a higher version number
-C. Plants malicious code in a CI/CD pipeline configuration
-D. Intercepts network traffic to steal package credentials
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** Dependency confusion occurs when an attacker publishes a package with the same name as a private/internal package to a public registry, often with a much higher version number, causing package managers to resolve to the malicious public version.
-</details>
-
----
-
-**Q5.** Which tool is part of the Sigstore project for signing container images?
-
-A. Trivy
-B. Cosign
-C. Syft
-D. Grype
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** Cosign is the Sigstore tool for container image signing and verification. Trivy and Grype are vulnerability scanners, and Syft generates SBOMs.
-</details>
-
----
-
-**Q6.** What is the purpose of generating a provenance attestation in a CI/CD pipeline?
-
-A. To measure build performance metrics
-B. To create an auditable record of how an artifact was built, by whom, and from what source
-C. To comply with GDPR data retention requirements
-D. To generate API documentation automatically
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** Provenance attestation provides a verifiable record of an artifact's build process — what source code was used, what build command was executed, what builder produced it, and what dependencies were included.
-</details>
-
----
-
-**Q7.** Which of the following is a valid defense against typosquatting attacks?
-
-A. Always installing packages with `--save-exact` flag
-B. Using a package allowlist and implementing Levenshtein distance checks on package names
-C. Disabling npm audit in CI/CD pipelines
-D. Only using devDependencies in production builds
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** Package allowlisting combined with name similarity detection (Levenshtein distance, homoglyph detection) helps identify potential typosquatting attacks.
-</details>
-
----
-
-**Q8.** What is a primary risk of using self-hosted CI/CD runners?
-
-A. Slower build times compared to cloud runners
-B. Persistent state between builds may leak secrets from previous runs
-C. Self-hosted runners cannot cache dependencies
-D. They cannot run containerized builds
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** Self-hosted runners can retain state (disk, memory, environment variables) between builds, potentially leaking secrets, credentials, or cached malicious data from one build to another. Ephemeral runners mitigate this.
-</details>
-
----
-
-**Q9.** What does a "hermetic build" mean in the context of SLSA?
-
-A. The build runs in an isolated container
-B. The build is fully sealed and does not access the network for any purpose — all dependencies are pre-fetched and verified
-C. The build output is encrypted before storage
-D. The build is reproducible across different operating systems
-
-<details>
-<summary>Answer</summary>
-**Answer: B.** A hermetic build does not make any network requests during the build process. All dependencies are fetched and verified before the build starts, preventing network-based attacks and ensuring deterministic builds.
-</details>
-
----
-
-**Q10.** Which of the following is an example of a SAST (Static Application Security Testing) tool?
-
-A. OWASP ZAP
-B. Trivy
-C. CodeQL
-D. Falco
-
-<details>
-<summary>Answer</summary>
-**Answer: C.** CodeQL (from GitHub) is a SAST tool that analyzes source code for security vulnerabilities. OWASP ZAP is a DAST tool, Trivy scans containers, and Falco monitors runtime behavior.
-</details>
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What was the primary mechanism used by the SolarWinds (Sunburst) attackers to distribute the backdoor? | Phishing emails with malicious attachments | Compromising the SolarWinds build pipeline to inject code into signed Orion updates | Exploiting a zero-day vulnerability in the Orion web console | Social engineering SolarWinds employees to reveal credentials | **B** |
+| 2 | What is an SBOM? | A bill of materials for hardware components in data centers | A machine-readable inventory of all software components, versions, and dependencies in an application | A security baseline operating model for DevSecOps teams | A build optimization methodology for container images | **B** |
+| 3 | Which SLSA level requires two-person review for all build steps? | SLSA L1 | SLSA L2 | SLSA L3 | SLSA L4 | **D** |
+| 4 | In a dependency confusion attack, an attacker: | Modifies the source code of a popular open-source library | Publishes a package with the same name as a private package to a public registry with a higher version number | Plants malicious code in a CI/CD pipeline configuration | Intercepts network traffic to steal package credentials | **B** |
+| 5 | Which tool is part of the Sigstore project for signing container images? | Trivy | Cosign | Syft | Grype | **B** |
+| 6 | What is the purpose of generating a provenance attestation in a CI/CD pipeline? | To measure build performance metrics | To create an auditable record of how an artifact was built, by whom, and from what source | To comply with GDPR data retention requirements | To generate API documentation automatically | **B** |
+| 7 | Which of the following is a valid defense against typosquatting attacks? | Always installing packages with `--save-exact` flag | Using a package allowlist and implementing Levenshtein distance checks on package names | Disabling npm audit in CI/CD pipelines | Only using devDependencies in production builds | **B** |
+| 8 | What is a primary risk of using self-hosted CI/CD runners? | Slower build times compared to cloud runners | Persistent state between builds may leak secrets from previous runs | Self-hosted runners cannot cache dependencies | They cannot run containerized builds | **B** |
+| 9 | What does a "hermetic build" mean in the context of SLSA? | The build runs in an isolated container | The build is fully sealed and does not access the network for any purpose — all dependencies are pre-fetched and verified | The build output is encrypted before storage | The build is reproducible across different operating systems | **B** |
+| 10 | Which of the following is an example of a SAST (Static Application Security Testing) tool? | OWASP ZAP | Trivy | CodeQL | Falco | **C** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Exercise 1: SBOM Analysis and Validation
 
@@ -3189,6 +3077,8 @@ D. Falco
 3. Test a tampered chain where one link has been modified.
 
 **Deliverable:** Attestation chain verifier with test cases for valid and tampered chains.
+
+</details>
 
 ---
 

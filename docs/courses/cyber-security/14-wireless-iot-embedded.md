@@ -2580,6 +2580,18 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Always audit WPA2 handshakes for PMKID attacks | Capture the first EAPOL frame and compute PMKID offline — no client required, works even without a full 4-way handshake |
+| Use 802.1X/EAP with certificate validation for enterprise Wi-Fi | WPA2-PSK is vulnerable to cracking; migrate to WPA3-Enterprise or at minimum validate RADIUS server certificates |
+| Treat BLE advertisements as untrusted | BLE broadcasts are cleartext and spoofable — never transmit credentials or sensitive data in advertisement payloads |
+| Always change Zigbee default link keys | The default `ZigBeeAlliance09` key is public; always set a unique network key and use touchlink commissioning with QR code enrollment |
+| Run entropy analysis on every firmware sample | Binwalk entropy scan reveals encrypted/compressed regions in seconds — low entropy = plaintext, high entropy = packed/ciphered |
+| Never expose MQTT without TLS + authentication | MQTT on port 1883 with anonymous access allows anyone to subscribe to `#`; enforce TLS on 8883 and require client certificates |
+| Audit IoT device UART/JTAG exposure | Check for accessible UART (TX/RX/GND) and JTAG (TMS/TCK/TDI/TDO) on exposed PCB headers — these dump firmware without authentication |
+
 ## Summary
 
 Wireless, IoT, and embedded security is a multi-dimensional discipline that spans radio-layer attacks, protocol-level vulnerabilities, firmware reverse engineering, and hardware-level exploitation.
@@ -2632,73 +2644,25 @@ flowchart TB
 
 ## Chapter Quiz
 
-**10 Multiple Choice Questions**
-
-**1. What is the primary cryptographic weakness exploited in the PMKID attack against WPA2?**
-- A) Weak RC4 implementation in TKIP
-- B) Inclusion of PMKID in the first EAPOL frame, enabling offline brute-force
-- C) Predictable random number generation in 802.11 beacons
-- D) Absence of MIC verification in EAPOL-Key frames
-
-**2. Which Bluetooth vulnerability allows remote code execution without prior pairing or user interaction?**
-- A) BLUFFS
-- B) BlueBorne
-- C) KNOB
-- D) SweynTooth
-
-**3. In Zigbee security, which key is shared across all devices in a Personal Area Network (PAN)?**
-- A) Master Key
-- B) Link Key
-- C) Network Key
-- D) Session Key
-
-**4. What is the effective entropy (in bits) of a WPS PIN when brute-forcing with the half-key vulnerability?**
-- A) 8 bits
-- B) 10,000 + 1,000 possibilities (~13.4 bits)
-- C) 10^8 possibilities (~26.6 bits)
-- D) 10^4 possibilities (~13.3 bits)
-
-**5. Which of the following is NOT a valid defense against Evil Twin attacks?**
-- A) Validating RADIUS server certificates in 802.1X
-- B) Using WPA3-SAE with SAE hash-to-element
-- C) Increasing beacon interval to 500ms
-- D) Cross-checking BSSID vs. physical location history
-
-**6. What does `Binwalk -E firmware.bin` do during firmware analysis?**
-- A) Extracts the encrypted filesystem using AES-256
-- B) Generates an entropy graph to identify compressed/encrypted regions
-- C) Emulates the firmware in a virtual environment
-- D) Extracts all embedded file signatures
-
-**7. Which protocol uses the SMP (Security Manager Protocol) at levels 0–4 for pairing?**
-- A) Wi-Fi WPA3
-- B) Bluetooth Low Energy (BLE)
-- C) Zigbee 3.0
-- D) Matter over Thread
-
-**8. In the MiFare Classic nested authentication attack, what property of the Crypto-1 cipher enables key recovery?**
-- A) The 48-bit LFSR keystream can be reconstructed from known plaintext-ciphertext pairs
-- B) The cipher uses a fixed 8-bit key
-- C) The reader nonce is always zero
-- D) AES-128 keys are reused across sectors
-
-**9. What does the Wireshark filter `wlan.fc.type_subtype == 0x0c` capture?**
-- A) Beacon frames
-- B) Probe requests
-- C) Deauthentication frames
-- D) EAPOL-Key frames
-
-**10. Which of the following is a hardware debug interface commonly used for firmware dumping from embedded devices?**
-- A) TCP port 8080
-- B) UART (TX/RX/GND)
-- C) Bluetooth HCI
-- D) MQTT topic `/firmware`
-
-**Answer Key:** 1-B, 2-B, 3-C, 4-B, 5-C, 6-B, 7-B, 8-A, 9-C, 10-B
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What is the primary cryptographic weakness exploited in the PMKID attack against WPA2? | Weak RC4 implementation in TKIP | Inclusion of PMKID in the first EAPOL frame, enabling offline brute-force | Predictable random number generation in 802.11 beacons | Absence of MIC verification in EAPOL-Key frames | **B** |
+| 2 | Which Bluetooth vulnerability allows remote code execution without prior pairing or user interaction? | BLUFFS | BlueBorne | KNOB | SweynTooth | **B** |
+| 3 | In Zigbee security, which key is shared across all devices in a Personal Area Network (PAN)? | Master Key | Link Key | Network Key | Session Key | **C** |
+| 4 | What is the effective entropy (in bits) of a WPS PIN when brute-forcing with the half-key vulnerability? | 8 bits | 10,000 + 1,000 possibilities (~13.4 bits) | 10^8 possibilities (~26.6 bits) | 10^4 possibilities (~13.3 bits) | **B** |
+| 5 | Which of the following is NOT a valid defense against Evil Twin attacks? | Validating RADIUS server certificates in 802.1X | Using WPA3-SAE with SAE hash-to-element | Increasing beacon interval to 500ms | Cross-checking BSSID vs. physical location history | **C** |
+| 6 | What does `Binwalk -E firmware.bin` do during firmware analysis? | Extracts the encrypted filesystem using AES-256 | Generates an entropy graph to identify compressed/encrypted regions | Emulates the firmware in a virtual environment | Extracts all embedded file signatures | **B** |
+| 7 | Which protocol uses the SMP (Security Manager Protocol) at levels 0–4 for pairing? | Wi-Fi WPA3 | Bluetooth Low Energy (BLE) | Zigbee 3.0 | Matter over Thread | **B** |
+| 8 | In the MiFare Classic nested authentication attack, what property of the Crypto-1 cipher enables key recovery? | The 48-bit LFSR keystream can be reconstructed from known plaintext-ciphertext pairs | The cipher uses a fixed 8-bit key | The reader nonce is always zero | AES-128 keys are reused across sectors | **A** |
+| 9 | What does the Wireshark filter `wlan.fc.type_subtype == 0x0c` capture? | Beacon frames | Probe requests | Deauthentication frames | EAPOL-Key frames | **C** |
+| 10 | Which of the following is a hardware debug interface commonly used for firmware dumping from embedded devices? | TCP port 8080 | UART (TX/RX/GND) | Bluetooth HCI | MQTT topic `/firmware` | **B** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Exercise 1: PMKID Cracking Tool
 
@@ -2809,6 +2773,8 @@ Write a comprehensive security assessment report covering:
 6. **Overall security score** (0–100) with justification
 
 **Expected outcome:** A professional-quality penetration test report suitable for a client or publication.
+
+</details>
 
 ---
 

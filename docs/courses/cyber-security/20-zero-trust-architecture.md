@@ -2251,6 +2251,20 @@ Score interpretation:
 
 ---
 
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Implement continuous trust scoring based on NIST SP 800-207 | Use the NistTrustAlgorithm class to evaluate identity, device, location, and behaviour for every access request |
+| Deploy identity-aware proxy to replace VPNs | Set up Cloudflare Access or Zscaler ZPA to broker per-application sessions instead of network-level access |
+| Enforce microsegmentation with default-deny east-west rules | Use the MicrosegmentationPolicyEngine to generate firewall rules; apply default-deny on all internal traffic |
+| Separate control plane from data plane | Ensure Policy Engine and Policy Administrator run on isolated infrastructure from PEP gateways |
+| Require device attestation for every endpoint | Integrate TPM 2.0 measured boot and MDM health checks into the trust score calculation |
+| Apply risk-based conditional access policies | Configure tiered policies: block at risk > 0.8, require MFA at risk > 0.5, limit session at risk > 0.3 |
+| Measure Zero Trust maturity using CISA framework | Assess your organisation across 5 pillars (Identity, Device, Network, App, Data) from Traditional to Optimal |
+
+---
+
 ## Summary
 
 - **Zero Trust** originated with John Kindervag at Forrester in 2010, was operationalized by Google BeyondCorp (2011–2014), standardized by **NIST SP 800-207** (2020), and organized into maturity tiers by **CISA**.
@@ -2268,69 +2282,25 @@ Score interpretation:
 
 ## Chapter Quiz
 
-**1. Who coined the term "Zero Trust"?**
-   - A) NIST
-   - B) John Kindervag
-   - C) Google BeyondCorp team
-   - D) Gartner
-
-**2. Which NIST publication defines the Zero Trust logical architecture?**
-   - A) NIST SP 800-53
-   - B) NIST SP 800-207
-   - C) NIST SP 800-171
-   - D) NIST CSF 1.1
-
-**3. In the NIST ZTA model, which component makes the final access decision?**
-   - A) Policy Enforcement Point
-   - B) Policy Administrator
-   - C) Policy Engine
-   - D) Identity Provider
-
-**4. What does SASE stand for?**
-   - A) Secure Access Service Edge
-   - B) Secure Application Service Environment
-   - C) Security and Access Service Edge
-   - D) Secure Architecture for Service Endpoints
-
-**5. Which of the following is NOT a core principle of Zero Trust?**
-   - A) Never trust, always verify
-   - B) Assume breach
-   - C) Trust but verify
-   - D) Least privilege
-
-**6. What is the primary function of microsegmentation?**
-   - A) Improve network throughput
-   - B) Prevent lateral movement by isolating east-west traffic
-   - C) Replace all firewall rules with a single perimeter
-   - D) Consolidate data center servers
-
-**7. In the BeyondCorp model, what does the Access Proxy do?**
-   - A) Terminates VPN connections
-   - B) Verifies every request against user identity and device state before proxying
-   - C) Provides DHCP and DNS services
-   - D) Routes traffic based on BGP metrics
-
-**8. Which of the following is a client-initiated ZTNA solution?**
-   - A) Appgate SDP
-   - B) Microsoft Entra App Proxy
-   - C) Zscaler Private Access (ZPA)
-   - D) Both B and C
-
-**9. What hardware component provides measured boot attestation in Zero Trust endpoint security?**
-   - A) GPU
-   - B) TPM 2.0
-   - C) RAM
-   - D) SSD controller
-
-**10. According to the CISA Zero Trust Maturity Model, which is the highest maturity level?**
-   - A) Traditional
-   - B) Advanced
-   - C) Modern
-   - D) Optimal
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Who coined the term "Zero Trust"? | NIST | John Kindervag | Google BeyondCorp team | Gartner | **B** |
+| 2 | Which NIST publication defines the Zero Trust logical architecture? | NIST SP 800-53 | NIST SP 800-207 | NIST SP 800-171 | NIST CSF 1.1 | **B** |
+| 3 | In the NIST ZTA model, which component makes the final access decision? | Policy Enforcement Point | Policy Administrator | Policy Engine | Identity Provider | **C** |
+| 4 | What does SASE stand for? | Secure Access Service Edge | Secure Application Service Environment | Security and Access Service Edge | Secure Architecture for Service Endpoints | **A** |
+| 5 | Which of the following is NOT a core principle of Zero Trust? | Never trust, always verify | Assume breach | Trust but verify | Least privilege | **C** |
+| 6 | What is the primary function of microsegmentation? | Improve network throughput | Prevent lateral movement by isolating east-west traffic | Replace all firewall rules with a single perimeter | Consolidate data center servers | **B** |
+| 7 | In the BeyondCorp model, what does the Access Proxy do? | Terminates VPN connections | Verifies every request against user identity and device state before proxying | Provides DHCP and DNS services | Routes traffic based on BGP metrics | **B** |
+| 8 | Which of the following is a client-initiated ZTNA solution? | Appgate SDP | Microsoft Entra App Proxy | Zscaler Private Access (ZPA) | Both B and C | **D** |
+| 9 | What hardware component provides measured boot attestation in Zero Trust endpoint security? | GPU | TPM 2.0 | RAM | SSD controller | **B** |
+| 10 | According to the CISA Zero Trust Maturity Model, which is the highest maturity level? | Traditional | Advanced | Modern | Optimal | **D** |
 
 ---
 
 ## Exercises
+
+<details>
+<summary>Solution</summary>
 
 ### Exercise 1: Implement a Risk Score Aggregator
 Extend the `NistTrustAlgorithm` class to support **temporal decay**—attributes older than a configurable threshold should contribute less to the overall trust score. Use a half-life formula where the attribute weight decays exponentially.
@@ -2346,6 +2316,8 @@ Create a `SaseTrafficSimulator` that generates random user traffic patterns and 
 
 ### Exercise 5: Policy as Code - GitOps Workflow
 Implement a `PolicyGitOps` class that watches a Git repository for policy changes, validates the policy YAML/JSON against a schema, deploys new policies to the `PolicyEngine`, and rolls back if the success rate drops below a threshold. Include a `dryRun` mode that evaluates new policies against historical traffic logs before deploying.
+
+</details>
 
 ---
 

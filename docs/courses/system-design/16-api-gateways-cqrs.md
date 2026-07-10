@@ -544,33 +544,40 @@ class OrderProjection:
 ---
 
 ## Chapter Quiz
-> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
 
-**Q1:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | What distinguishes an API Gateway from a Load Balancer? | Load balancers only distribute traffic; gateways add auth, rate limiting, aggregation | Gateways are hardware; load balancers are software | Load balancers work at L7 only | Gateways cannot terminate SSL | **A** |
+| 2 | What is the BFF pattern? | Backend for Frontend — separate gateway per client type | Best Friend Forever — dedicated server per user | Big Fast Forwarding — high-throughput proxy | Basic Function Filter — request sanitization | **A** |
+| 3 | In CQRS, how does the write model communicate changes to the read model? | Direct database writes | Via events published by the command side | Synchronous REST calls | Shared in-memory cache | **B** |
+| 4 | What is the dual-write problem in CQRS without event sourcing? | Writing to two databases without transactional guarantees | Writing duplicate events to the event store | Writing to the same table twice | Writing to Kafka with two producers | **A** |
+| 5 | What is upcasting in event sourcing? | Deleting old events | Transforming historical events to the latest schema on read | Creating snapshots of current state | Broadcasting events to subscribers | **B** |
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+---
 
-**Q2:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Practical Takeaways
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+| Takeaway | Application |
+|----------|-------------|
+| Use API gateways for cross-cutting concerns (auth, rate limiting, routing) but keep business logic in services | Centralize authentication and rate limiting at the gateway; route requests to domain-specific microservices |
+| BFF pattern optimizes per-client payloads and reduces mobile bandwidth | Mobile BFF returns compact JSON (5 fields); Web BFF returns rich content with nested author details |
+| Sliding window counter in Redis balances accuracy and memory for distributed rate limiting | Store two counters per key (current + previous window); Lua scripts ensure atomic check-and-increment |
+| CQRS separates transactional writes from denormalized reads — use for complex querying over write-optimized data | Write model: normalized relational tables. Read model: materialized views, Elasticsearch, Redis |
+| Event sourcing provides complete audit trail; pair with snapshots every N events to bound replay cost | Snapshot every 100 events; rebuild state by loading latest snapshot + replaying subsequent events |
+| Sagas with compensation handle distributed transactions without two-phase commit | Orchestrated saga: central coordinator manages step execution and rollback. Choreographed: each step publishes events that trigger next step |
+| Event versioning requires discipline — use upcasting or versioned event types with Avro/Protobuf | Store event schema version in each event; apply upcasters on read to transform old formats to current schema |
 
-**Q3:** Which of the following best describes a key concept from this chapter?
-- A) Option A description
-- B) Option B description
-- C) Option C description
-- D) Option D description
+## Case Study
 
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
+**Scenario: E-Commerce Platform Migration to CQRS/ES**
 
-## Concept Comparison
+An e-commerce platform processing 50,000 orders per day experiences growing pains. The monolithic PostgreSQL database has 47 tables with complex JOINs (14-table JOINs for the order detail page). Read replicas lag by up to 5 seconds during flash sales, and the auditing team needs 7 years of order history — but the current schema only stores the latest state, making historical queries impossible without point-in-time recovery backup restore.
+
+The team migrates to CQRS + Event Sourcing. The command side uses PostgreSQL in its normalized form for transactional integrity: `orders`, `order_items`, `payments`, `shipments` tables with foreign keys and constraints. Each write appends events to a separate `events` table and publishes them to Kafka. The read side builds denormalized projections: an `order_summaries` table for the order detail page (single row per order, pre-joined), an Elasticsearch index for full-text search across historical orders, and a ClickHouse table for analytics dashboards.
+
+The API gateway sits in front with route-based authentication: `/api/v1/commands/*` routes to the command service (JWT required, rate-limited at 100 req/min per user), `/api/v1/queries/*` routes to the query service (cached for 30 seconds). A Saga orchestrator handles the checkout flow: ReserveInventory → ChargePayment → ShipOrder. When the payment fails, the saga compensates by releasing inventory and sending a failure notification — in under 500ms total.
+
+Results: read latency drops from 850ms (14-table JOIN) to 8ms (single-row lookup). Historical queries become trivial (replay events from any point-in-time). Audit compliance is satisfied with the immutable event log. The trade-off: writes are eventually consistent with reads (up to 1 second lag), requiring the UI to show a "processing" state for recently placed orders.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
@@ -722,6 +729,435 @@ class ProjectionBuilder {
 ```
 
 
+### TypeScript: API Gateway with Routing, Auth, Rate Limiting, and Aggregation
+
+```typescript
+interface GatewayRoute {
+  path: string;
+  methods: string[];
+  targetService: string;
+  targetPath: string;
+  authRequired: boolean;
+  rateLimitKey?: string;
+  rateLimitMax?: number;
+}
+
+interface GatewayResponse {
+  statusCode: number;
+  headers: Record<string, string>;
+  body: any;
+  fromCache: boolean;
+}
+
+class APIGateway {
+  private routes: GatewayRoute[] = [];
+  private authKeys = new Map<string, string>();
+  private rateLimitCounters = new Map<string, { count: number; resetAt: number }>();
+  private responseCache = new Map<string, { body: any; expiresAt: number }>();
+  private serviceClients = new Map<string, (path: string, method: string, body?: any) => Promise<any>>();
+
+  constructor(private defaultRateLimit: number, private windowMs: number) {}
+
+  addRoute(route: GatewayRoute): void { this.routes.push(route); }
+
+  registerService(name: string, client: (path: string, method: string, body?: any) => Promise<any>): void {
+    this.serviceClients.set(name, client);
+  }
+
+  addAuthKey(key: string, userId: string): void { this.authKeys.set(key, userId); }
+
+  async handleRequest(path: string, method: string, headers: Record<string, string>, body?: any): Promise<GatewayResponse> {
+    const route = this.matchRoute(path, method);
+    if (!route) return { statusCode: 404, headers: {}, body: { error: 'Route not found' }, fromCache: false };
+
+    if (route.authRequired) {
+      const authResult = this.authenticate(headers);
+      if (!authResult.ok) return { statusCode: 401, headers: {}, body: { error: authResult.error }, fromCache: false };
+    }
+
+    if (route.rateLimitKey) {
+      const rateResult = this.checkRateLimit(route.rateLimitKey, route.rateLimitMax ?? this.defaultRateLimit);
+      if (!rateResult.allowed) return {
+        statusCode: 429,
+        headers: { 'Retry-After': String(rateResult.retryAfter!) },
+        body: { error: 'Rate limit exceeded' },
+        fromCache: false,
+      };
+    }
+
+    const cacheKey = `${method}:${path}`;
+    if (method === 'GET') {
+      const cached = this.responseCache.get(cacheKey);
+      if (cached && cached.expiresAt > Date.now()) {
+        return { statusCode: 200, headers: { 'X-Cache': 'HIT' }, body: cached.body, fromCache: true };
+      }
+    }
+
+    const client = this.serviceClients.get(route.targetService);
+    if (!client) return { statusCode: 503, headers: {}, body: { error: 'Service unavailable' }, fromCache: false };
+
+    try {
+      const result = await client(route.targetPath, method, body);
+      if (method === 'GET') {
+        this.responseCache.set(cacheKey, { body: result, expiresAt: Date.now() + 30000 });
+      }
+      return { statusCode: 200, headers: { 'X-Cache': 'MISS' }, body: result, fromCache: false };
+    } catch {
+      return { statusCode: 502, headers: {}, body: { error: 'Upstream error' }, fromCache: false };
+    }
+  }
+
+  async aggregateRequest(requests: { service: string; path: string; method: string }[]): Promise<Map<string, any>> {
+    const results = new Map<string, any>();
+    await Promise.allSettled(requests.map(async r => {
+      const client = this.serviceClients.get(r.service);
+      if (client) {
+        try {
+          const data = await client(r.path, r.method);
+          results.set(r.service, data);
+        } catch { results.set(r.service, null); }
+      }
+    }));
+    return results;
+  }
+
+  private matchRoute(path: string, method: string): GatewayRoute | undefined {
+    return this.routes.find(r => r.methods.includes(method) && path.startsWith(r.path));
+  }
+
+  private authenticate(headers: Record<string, string>): { ok: boolean; error?: string } {
+    const token = headers['authorization']?.replace('Bearer ', '');
+    if (!token) return { ok: false, error: 'Missing token' };
+    if (!this.authKeys.has(token)) return { ok: false, error: 'Invalid token' };
+    return { ok: true };
+  }
+
+  private checkRateLimit(key: string, max: number): { allowed: boolean; retryAfter?: number } {
+    const now = Date.now();
+    let entry = this.rateLimitCounters.get(key);
+    if (!entry || now > entry.resetAt) {
+      entry = { count: 1, resetAt: now + this.windowMs };
+      this.rateLimitCounters.set(key, entry);
+      return { allowed: true };
+    }
+    entry.count++;
+    if (entry.count > max) {
+      return { allowed: false, retryAfter: Math.ceil((entry.resetAt - now) / 1000) };
+    }
+    return { allowed: true };
+  }
+
+  invalidateCache(pattern?: string): void {
+    if (!pattern) { this.responseCache.clear(); return; }
+    for (const [key] of this.responseCache) {
+      if (key.includes(pattern)) this.responseCache.delete(key);
+    }
+  }
+}
+
+async function demoGateway() {
+  const gw = new APIGateway(100, 60000);
+  gw.addRoute({ path: '/api/users', methods: ['GET'], targetService: 'users', targetPath: '/users', authRequired: true, rateLimitKey: 'users-api' });
+  gw.addRoute({ path: '/api/products', methods: ['GET'], targetService: 'products', targetPath: '/products', authRequired: false });
+  gw.registerService('users', async (p) => ({ id: 1, name: 'Alice' }));
+  gw.registerService('products', async (p) => ([{ id: 1, name: 'Widget' }]));
+  gw.addAuthKey('token-123', 'user-1');
+  let resp = await gw.handleRequest('/api/products', 'GET', {});
+  console.log('Products:', resp.statusCode, resp.body);
+  resp = await gw.handleRequest('/api/users', 'GET', { authorization: 'Bearer token-123' });
+  console.log('Users:', resp.statusCode, resp.body);
+  const agg = await gw.aggregateRequest([
+    { service: 'users', path: '/users', method: 'GET' },
+    { service: 'products', path: '/products', method: 'GET' },
+  ]);
+  console.log('Aggregated:', Object.fromEntries(agg));
+}
+```
+
+### TypeScript: CQRS Bus with Command/Query Separation and Event Bus
+
+```typescript
+interface Command {
+  type: string;
+  aggregateId: string;
+  payload: any;
+  timestamp: number;
+}
+
+interface DomainEvent {
+  type: string;
+  aggregateId: string;
+  payload: any;
+  version: number;
+  timestamp: number;
+}
+
+interface Query {
+  type: string;
+  payload: any;
+}
+
+class CQRSBus {
+  private commandHandlers = new Map<string, (cmd: Command) => Promise<DomainEvent[]>>();
+  private queryHandlers = new Map<string, (qry: Query) => Promise<any>>();
+  private eventSubscribers = new Map<string, Set<(event: DomainEvent) => Promise<void>>>();
+  private eventStore: DomainEvent[] = [];
+  private readModels = new Map<string, Map<string, any>>();
+  private versionMap = new Map<string, number>();
+
+  registerCommandHandler(commandType: string, handler: (cmd: Command) => Promise<DomainEvent[]>): void {
+    this.commandHandlers.set(commandType, handler);
+  }
+
+  registerQueryHandler(queryType: string, handler: (qry: Query) => Promise<any>): void {
+    this.queryHandlers.set(queryType, handler);
+  }
+
+  subscribe(eventType: string, handler: (event: DomainEvent) => Promise<void>): void {
+    if (!this.eventSubscribers.has(eventType)) this.eventSubscribers.set(eventType, new Set());
+    this.eventSubscribers.get(eventType)!.add(handler);
+  }
+
+  async dispatchCommand(cmd: Command): Promise<DomainEvent[]> {
+    const handler = this.commandHandlers.get(cmd.type);
+    if (!handler) throw new Error(`No handler for command ${cmd.type}`);
+    const version = (this.versionMap.get(cmd.aggregateId) ?? 0) + 1;
+    cmd.timestamp = Date.now();
+    const events = await handler(cmd);
+    for (const event of events) {
+      event.version = version;
+      event.timestamp = Date.now();
+      this.eventStore.push(event);
+      this.versionMap.set(cmd.aggregateId, version);
+      await this.publish(event);
+    }
+    return events;
+  }
+
+  async dispatchQuery(qry: Query): Promise<any> {
+    const handler = this.queryHandlers.get(qry.type);
+    if (!handler) throw new Error(`No handler for query ${qry.type}`);
+    return handler(qry);
+  }
+
+  private async publish(event: DomainEvent): Promise<void> {
+    const subscribers = this.eventSubscribers.get(event.type) ?? new Set();
+    await Promise.allSettled([...subscribers].map(s => s(event)));
+  }
+
+  buildReadModel(modelName: string, projection: (state: any, event: DomainEvent) => any): void {
+    if (!this.readModels.has(modelName)) this.readModels.set(modelName, new Map());
+    const model = this.readModels.get(modelName)!;
+    for (const event of this.eventStore) {
+      const key = event.aggregateId;
+      const current = model.get(key) ?? {};
+      model.set(key, projection(current, event));
+    }
+    this.subscribe('*', async (event) => {
+      const key = event.aggregateId;
+      const current = model.get(key) ?? {};
+      model.set(key, projection(current, event));
+    });
+  }
+
+  queryReadModel(modelName: string, aggregateId: string): any | undefined {
+    return this.readModels.get(modelName)?.get(aggregateId);
+  }
+
+  replayEvents(aggregateId?: string): DomainEvent[] {
+    if (!aggregateId) return [...this.eventStore];
+    return this.eventStore.filter(e => e.aggregateId === aggregateId);
+  }
+}
+
+async function demoCQRS() {
+  const bus = new CQRSBus();
+  bus.registerCommandHandler('PlaceOrder', async (cmd) => {
+    const events: DomainEvent[] = [{
+      type: 'OrderPlaced', aggregateId: cmd.aggregateId,
+      payload: { userId: cmd.payload.userId, items: cmd.payload.items, total: cmd.payload.total },
+      version: 0, timestamp: 0,
+    }];
+    return events;
+  });
+  bus.registerQueryHandler('GetOrderSummary', async (qry) => {
+    return bus.queryReadModel('orderSummaries', qry.payload.orderId) ?? null;
+  });
+  bus.buildReadModel('orderSummaries', (state, event) => {
+    if (event.type === 'OrderPlaced') return { ...state, ...event.payload, status: 'placed' };
+    if (event.type === 'OrderShipped') return { ...state, status: 'shipped' };
+    return state;
+  });
+  await bus.dispatchCommand({
+    type: 'PlaceOrder', aggregateId: 'ord-1',
+    payload: { userId: 'u-1', items: ['item-a'], total: 29.99 },
+    timestamp: 0,
+  });
+  const summary = await bus.dispatchQuery({ type: 'GetOrderSummary', payload: { orderId: 'ord-1' } });
+  console.log('Order summary:', summary);
+}
+```
+
+### TypeScript: Saga Orchestrator with Choreography vs Orchestration
+
+```typescript
+interface SagaStep {
+  name: string;
+  execute: () => Promise<void>;
+  compensate: () => Promise<void>;
+}
+
+class SagaOrchestrator {
+  private steps: SagaStep[] = [];
+  private executedSteps: string[] = [];
+  private context: Record<string, any> = {};
+
+  addStep(name: string, execute: () => Promise<void>, compensate: () => Promise<void>): void {
+    this.steps.push({ name, execute, compensate });
+  }
+
+  setContext(key: string, value: any): void { this.context[key] = value; }
+  getContext(key: string): any { return this.context[key]; }
+
+  async execute(): Promise<{ success: boolean; failedAt?: string; compensated: string[] }> {
+    for (const step of this.steps) {
+      try {
+        await step.execute();
+        this.executedSteps.push(step.name);
+        console.log(`Step "${step.name}" completed`);
+      } catch (err) {
+        console.error(`Step "${step.name}" failed:`, err);
+        const compensated = await this.rollback(step.name);
+        return { success: false, failedAt: step.name, compensated };
+      }
+    }
+    return { success: true, compensated: [] };
+  }
+
+  private async rollback(failedStep: string): Promise<string[]> {
+    const compensated: string[] = [];
+    const toRollback = [...this.executedSteps].reverse();
+    for (const stepName of toRollback) {
+      const step = this.steps.find(s => s.name === stepName);
+      if (step) {
+        try {
+          await step.compensate();
+          compensated.push(stepName);
+          console.log(`Compensated step "${stepName}"`);
+        } catch (err) {
+          console.error(`Compensation failed for "${stepName}":`, err);
+        }
+      }
+    }
+    return compensated;
+  }
+}
+
+class ChoreographedSaga {
+  private handlers = new Map<string, (event: any, context: Map<string, any>) => Promise<void>>();
+  private compensationHandlers = new Map<string, (event: any, context: Map<string, any>) => Promise<void>>();
+  private eventLog: { type: string; data: any; timestamp: number }[] = [];
+
+  on(eventType: string, handler: (event: any, context: Map<string, any>) => Promise<void>): void {
+    this.handlers.set(eventType, handler);
+  }
+
+  onCompensate(eventType: string, handler: (event: any, context: Map<string, any>) => Promise<void>): void {
+    this.compensationHandlers.set(eventType, handler);
+  }
+
+  async emit(eventType: string, data: any, context: Map<string, any>): Promise<void> {
+    this.eventLog.push({ type: eventType, data, timestamp: Date.now() });
+    const handler = this.handlers.get(eventType);
+    if (handler) await handler(data, context);
+  }
+
+  async compensate(eventType: string, data: any, context: Map<string, any>): Promise<void> {
+    const handler = this.compensationHandlers.get(eventType);
+    if (handler) await handler(data, context);
+  }
+}
+
+async function demoSaga() {
+  const saga = new SagaOrchestrator();
+  saga.addStep(
+    'ReserveInventory',
+    async () => { console.log('Inventory reserved'); },
+    async () => { console.log('Inventory reservation released'); }
+  );
+  saga.addStep(
+    'ChargePayment',
+    async () => { console.log('Payment charged'); },
+    async () => { console.log('Payment refunded'); }
+  );
+  saga.addStep(
+    'ShipOrder',
+    async () => { throw new Error('Shipping service unavailable'); },
+    async () => { console.log('Shipment cancelled'); }
+  );
+  const result = await saga.execute();
+  console.log('Saga result:', result.success ? 'Success' : `Failed at ${result.failedAt}, compensated: ${result.compensated.join(', ')}`);
+}
+```
+
+### CQRS + Event Sourcing Architecture
+
+```mermaid
+flowchart TB
+    subgraph CLIENT["Client Layer"]
+        CMD_CLIENT["Command Client<br/>POST /orders"]
+        QRY_CLIENT["Query Client<br/>GET /orders/123"]
+    end
+
+    subgraph COMMAND_SIDE["Command Side (Write Model)"]
+        CMD_HANDLER["Command Handler<br/>Validate & Apply Business Rules"]
+        AGGREGATE["Aggregate<br/>Order Aggregate"]
+        EVT_STORE["Event Store<br/>Append-Only Log<br/>ORDER: OrderPlaced, PaymentReceived, OrderShipped"]
+        SNAPSHOT["Snapshot Store<br/>Periodic State Save<br/>Every 100 Events"]
+    end
+
+    subgraph EVENT_BUS["Event Bus"]
+        EVT_PUB["Event Publisher<br/>Kafka / RabbitMQ"]
+        EVT_SUB["Event Subscribers"]
+    end
+
+    subgraph QUERY_SIDE["Query Side (Read Model)"]
+        PROJ_ORD["OrderSummary Projection<br/>Denormalized Table"]
+        PROJ_EMAIL["Email Projection<br/>Send Confirmation"]
+        PROJ_ANALYTICS["Analytics Projection<br/>ClickHouse / Druid"]
+        PROJ_SEARCH["Search Projection<br/>Elasticsearch Index"]
+    end
+
+    subgraph READ_STORE["Read-Optimized Stores"]
+        SQL_READ["PostgreSQL Read Replica<br/>Order Summaries"]
+        REDIS_CACHE["Redis Cache<br/>Hot Order Data"]
+        ES_INDEX["Elasticsearch<br/>Full-Text Search"]
+    end
+
+    CMD_CLIENT --> CMD_HANDLER
+    CMD_HANDLER --> AGGREGATE
+    AGGREGATE --> EVT_STORE
+    EVT_STORE --> SNAPSHOT
+    EVT_STORE --> EVT_PUB
+    EVT_PUB --> EVT_SUB
+    EVT_SUB --> PROJ_ORD & PROJ_EMAIL & PROJ_ANALYTICS & PROJ_SEARCH
+    PROJ_ORD --> SQL_READ
+    PROJ_ORD --> REDIS_CACHE
+    PROJ_SEARCH --> ES_INDEX
+    QRY_CLIENT --> SQL_READ & REDIS_CACHE & ES_INDEX
+
+    classDef client fill:#E3F2FD,color:#1565C0
+    classDef cmd fill:#FFCDD2,color:#C62828
+    classDef bus fill:#F3E5F5,color:#7B1FA2
+    classDef qry fill:#C8E6C9,color:#2E7D32
+    classDef store fill:#FFF3E0,color:#E65100
+    class CMD_CLIENT,QRY_CLIENT client
+    class CMD_HANDLER,AGGREGATE,EVT_STORE,SNAPSHOT cmd
+    class EVT_PUB,EVT_SUB bus
+    class PROJ_ORD,PROJ_EMAIL,PROJ_ANALYTICS,PROJ_SEARCH qry
+    class SQL_READ,REDIS_CACHE,ES_INDEX store
+```
+
 ### Implementation: API Gateways and CQRS Patterns
 
 ```typescript
@@ -860,29 +1296,31 @@ export { Cache, Logger, computeHash, CacheEntry }
 ## Exercises
 
 ### Review Questions
-
-1. Compare the single-gateway pattern with BFF. Under what conditions does BFF reduce development friction and latency?
-2. Explain the dual-write problem in CQRS without event sourcing. How does the transactional outbox pattern resolve it?
-3. In event sourcing, what is the difference between a "snapshot" and a "projection"? Why are both needed in production?
-4. An event schema changes: the `OrderPlaced` event now includes a `discount_code` field. Describe the upcasting process for existing events that lack this field.
-5. Why does the token bucket algorithm allow short bursts while the sliding window algorithm enforces a stricter rate? Sketch the traffic patterns for both under a sudden spike.
+<details><summary>Solution</summary>1. Single gateway: one API surface for all clients. BFF: each client type has its own gateway. BFF reduces friction when client requirements diverge significantly (mobile needs smaller payloads, web needs rich content). BFF also reduces latency because mobile BFF returns only essential fields without waiting for unnecessary data joins.
+2. Dual-write problem: writing to both write database and read database in the same transaction, where one may fail. Transactional outbox: write the event to an "outbox" table within the same database transaction as the write model. A separate process reads the outbox and publishes events to the read model. This guarantees at-least-once delivery.
+3. Snapshot: saved aggregate state at a specific version to avoid replaying all events from the beginning. Projection: a read model built by subscribing to events. Both are needed: snapshots optimize aggregate rebuilds (load snapshot + replay from there), projections build denormalized query-optimized views.
+4. Upcasting: when reading an old OrderPlaced event that lacks `discount_code`, an upcaster function transforms it: `(event) => ({...event, discount_code: null})`. The upcaster is registered for (OrderPlaced, version=1) and transforms to version 2. Chained upcasters handle multiple version transitions.
+5. Token bucket allows bursts up to the bucket size because tokens accumulate during idle periods. Sliding window tracks the exact count in the last window period, rejecting immediately when the limit is reached. Under a sudden spike: token bucket serves the full burst instantly then drops to refill rate; sliding window rejects all requests beyond the limit within the window.</details>
 
 ### Application Problems
-
-1. **Rate limiting design**: A gateway serves 50,000 requests/minute from 10,000 unique API keys. Design a rate limiter allowing 100 req/min per key with 5 req/s burst, using the sliding window counter in Redis. Calculate memory requirements and peak Redis throughput.
-2. **Aggregation optimization**: A product page requires data from 5 services (product, inventory, pricing, reviews, recommendations). Each service call takes 50ms. Calculate P95 latency with sequential aggregation vs parallel aggregation vs batch aggregation. How does this change with 10 services?
-3. **Event store migration**: A system has accumulated 50 million events over 3 years. The average aggregate has 200 events. Design a snapshot strategy: snapshot frequency, storage format, retention policy for old events. How long does a full catch-up take at 10,000 events/second read throughput?
-4. **CQRS read model consistency**: A user places an order, then immediately opens the order page. With CQRS (eventual consistency), the read model may not yet reflect the new order. Propose three solutions ranked by consistency strength vs complexity. Include an idempotency key approach.
+<details><summary>Solution</summary>1. Redis memory: each key stores current window count (4 bytes) + previous window count (4 bytes) + TTL metadata (~16 bytes) ≈ 24 bytes per key. 10,000 keys × 24 bytes = 240 KB. Peak Redis throughput: 50,000 req/min = ~833 req/s. Each request: 1 GET + 1 INCR + 1 EXPIRE = 3 Redis ops. Peak: 833 × 3 ≈ 2500 ops/sec. Trivial for a single Redis instance.
+2. Sequential: 5 × 50ms = 250ms (5 calls serially). Parallel: 50ms (all 5 concurrent, bounded by slowest). Batch: for services that support batch endpoints, single call ~60ms. With 10 services: sequential = 500ms, parallel = 50ms, batch = ~70ms (depends on batch overhead). Parallel aggregation is the clear winner for independent calls.
+3. Snapshot every 200 events (average aggregate length). Store as JSON blob in PostgreSQL `snapshots` table. Retain all events permanently (audit requirement). Catch-up: 50M events / 10K events/sec = 5000 seconds ≈ 83 minutes. With snapshots: load latest snapshot (O(1)) + replay remaining events (e.g., if snapshot at version 180, replay 20 events = negligible).
+4. (a) Strongest: write the read model synchronously in the same transaction (dual-write with outbox). (b) Medium: use a read-your-writes consistency model — after a write, wait for the read model to be updated before returning to the user (poll until updated). (c) Weakest/simplest: idempotency key — the user's create request includes a unique key; the query side returns the order status once visible. The UI polls the query side every 500ms until the order appears.</details>
 
 ### Challenge Problem
+<details><summary>Solution</summary>Design a financial trading ledger:
 
-> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Design a financial trading ledger using CQRS + Event Sourcing**: Each account has a balance derived from a stream of Deposit, Withdraw, TradeExecuted, and FeeCharged events. Regulatory requirements demand:
-- Complete audit trail of every balance change for 7 years
-- Current balance queries under 10ms P99
-- Balance at any past date queryable
-- 100,000 trades/second peak
-- Strong consistency on withdrawals (must not overdraft)
-- Read replicas for reporting dashboards (eventually consistent, &lt; 5s lag)
+**Event Schema**: `{ eventId, causationId, aggregateId, type, version, timestamp, data, userId }`. Causation tracking links each event to the command that caused it. Correlation ID links events across aggregates.
 
-Design the architecture covering: event schema with causation tracking, snapshot strategy (periodic + daily archival), optimistic concurrency for overdraft prevention, read-side projections for dashboards, and Kafka partitioning for 100K TPS. Address single-account event ordering, the hot account problem, and corrupted read model rebuild procedures.
+**Snapshot Strategy**: Periodic snapshots every 100 events per account. Daily archival snapshot of entire account state at market close (midnight UTC). Store snapshots in a separate `snapshots` table with compression (Avro/Parquet format for archival).
+
+**Concurrency**: Optimistic concurrency on the event store — the command includes `expectedVersion`. If the actual version differs (another write happened concurrently), reject with 409 Conflict. Client retries by re-reading the latest events and re-applying the command.
+
+**Read-Side Projections**: Current balance projection: maintains account_balances table, updated via Kafka consumer. Historical balance: replay events up to any timestamp (snapshot + events after snapshot). Reporting: ClickHouse for dashboard queries, updated within 5 seconds.
+
+**Kafka Partitioning**: Partition by account_id hash → 128 partitions. This guarantees order per account. 100K TPS / 128 ≈ 780 TPS per partition — well within Kafka's capacity.
+
+**Hot Account Problem**: A popular trading account generates 10K+ events/minute. Mitigations: (a) in-memory caching of the account snapshot with write-through. (b) Partition the account's event stream by time (daily snapshots, events organized by date). (c) Dedicated Kafka partition for high-volume accounts.
+
+**Read Model Rebuild**: Drop corrupted projection, re-read all events from the event store from position 0, re-apply projection handlers. With snapshots, rebuild time = O(number of accounts × average events per account). For a 7-year ledger, use daily snapshots to limit replay to at most 1 day of events (∼24K events at 1 TPS per account).</details>

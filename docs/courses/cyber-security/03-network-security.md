@@ -2471,38 +2471,160 @@ so-status
 ### Review Questions
 
 1. At which OSI layer does a stateful firewall maintain state information?
+
+<details>
+<summary>Solution</summary>
+Layer 4 (Transport). A stateful firewall tracks TCP connection state (SYN, SYN-ACK, ACK, FIN, RST) and UDP pseudo-state using a connection table. It makes filtering decisions based on the state of the connection, not just individual packets.
+</details>
+
 2. What is the primary weakness of signature-based IDS? How does anomaly-based IDS address it?
+
+<details>
+<summary>Solution</summary>
+Signature-based IDS cannot detect novel (zero-day) attacks — it only matches known patterns. Anomaly-based IDS establishes a baseline of normal traffic and flags deviations, enabling detection of unknown attacks. However, anomaly-based has higher false positive rates.
+</details>
+
 3. Explain how WPA3 SAE prevents offline dictionary attacks against Wi-Fi passwords.
+
+<details>
+<summary>Solution</summary>
+WPA3 SAE (Simultaneous Authentication of Equals) uses a zero-knowledge proof (Dragonfly handshake). Both parties prove knowledge of the password without revealing it. An attacker cannot capture the handshake and crack the password offline — each guess requires interaction with the real AP.
+</details>
+
 4. What is the difference between a VPN tunnel mode and transport mode?
+
+<details>
+<summary>Solution</summary>
+Transport mode encrypts only the payload (L4+), keeping the original IP header visible — used for end-to-end (host-to-host). Tunnel mode encrypts the entire original IP packet and encapsulates it in a new IP header — used for site-to-site (gateway-to-gateway) VPNs.
+</details>
+
 5. How does ARP spoofing work? List three detection/prevention techniques.
+
+<details>
+<summary>Solution</summary>
+ARP spoofing: attacker sends forged ARP replies, associating their MAC with the gateway's IP, intercepting traffic. Detection: 1) ARPwatch (monitors IP-MAC changes), 2) Dynamic ARP Inspection (DAI) on switches, 3) Static ARP entries for critical devices.
+</details>
+
 6. What is the role of RPKI in BGP security?
+
+<details>
+<summary>Solution</summary>
+Resource Public Key Infrastructure (RPKI) uses digitally signed route origin authorizations (ROAs) to verify that an AS is authorized to advertise specific IP prefixes. This prevents BGP hijacking by allowing routers to reject invalid route announcements.
+</details>
+
 7. How does micro-segmentation implement zero trust at the workload level?
+
+<details>
+<summary>Solution</summary>
+Micro-segmentation divides the network into isolated zones at the workload level (per-VM, per-container, per-pod). Each workload has a whitelist of allowed connections. In Kubernetes, Network Policies enforce this — default-deny ingress/egress with allow rules based on labels, namespaces, and ports.
+</details>
 
 ### Application Problems
 
 1. Design an iptables firewall for a DMZ web server that allows: HTTP/HTTPS from internet, SSH from 10.0.0.0/24 only, MySQL from 10.0.1.0/24 only, blocks all other inbound traffic, allows established/related, and logs all dropped packets.
 
+<details>
+<summary>Solution</summary>
+```
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+iptables -A INPUT -p tcp -s 10.0.0.0/24 --dport 22 -j ACCEPT
+iptables -A INPUT -p tcp -s 10.0.1.0/24 --dport 3306 -j ACCEPT
+iptables -A INPUT -j LOG --log-prefix "Dropped: "
+iptables -A INPUT -j DROP
+```
+</details>
+
 2. You are configuring WPA3-Enterprise for a 500-employee company. Design the authentication infrastructure, including 802.1X, RADIUS server, PKI, and client configuration.
+
+<details>
+<summary>Solution</summary>
+Deploy FreeRADIUS or Microsoft NPS as the RADIUS server. Set up a PKI (AD CS or Step CA) to issue server and client certificates. Configure APs to use WPA3-Enterprise with 802.1X/EAP-TLS. Push client certificates via MDM. Optionally use EAP-TTLS/PAP as fallback with strong passwords + MFA.
+</details>
 
 3. Your company is experiencing a DDoS attack (20,000 requests/second to the login page from random IPs). Design a multi-layer mitigation strategy.
 
+<details>
+<summary>Solution</summary>
+Layer 1: ISP-side scrubbing (Cloudflare/AWS Shield) to filter volumetric attacks. Layer 2: WAF rate limiting (200 req/min/IP to login). Layer 3: Challenge-based mitigation (JS challenge or CAPTCHA for suspicious IPs). Layer 4: Application-level queuing and connection limiting. Layer 5: Auto-scaling to absorb traffic.
+</details>
+
 4. A branch office needs to connect to HQ over the internet with encrypted site-to-site connectivity. Compare IPsec, WireGuard, and OpenVPN for this purpose and make a recommendation.
 
+<details>
+<summary>Solution</summary>
+WireGuard is recommended for modern site-to-site: faster (kernel-level, ~4k lines of code), simpler config, built-in roaming, ChaCha20-Poly1305 encryption. IPsec is mature but complex (IKEv2, multiple RFCs). OpenVPN is flexible but slower (userspace). For branch-to-HQ, WireGuard with pre-shared keys offers the best performance/security ratio.
+</details>
+
 5. Given a network with multiple VLANs (Management 10, Users 20, Servers 30, DMZ 40), design firewall rules that enforce: users can access internet and servers on port 80/443, servers can access DMZ database on port 3306, DMZ cannot initiate connections to internal networks, management can SSH to all zones.
+
+<details>
+<summary>Solution</summary>
+```
+VLAN 20 → Internet: allow (NAT)
+VLAN 20 → VLAN 30: allow tcp/80,443
+VLAN 30 → VLAN 40: allow tcp/3306
+VLAN 40 → VLAN *: deny all (DMZ cannot initiate)
+VLAN 10 → VLAN 20,30,40: allow tcp/22
+Default: deny all inter-VLAN
+```
+</details>
 
 ### Case Study Analysis
 
 1. **WannaCry:** A hospital with a flat network. An employee plugs in an infected USB. Trace the infection path and identify the network architectural changes needed to prevent recurrence.
 
+<details>
+<summary>Solution</summary>
+WannaCry spreads via EternalBlue (SMBv1 exploit) and DoublePulsar backdoor. On a flat network: infected USB → workstation → SMB scan → other workstations → servers. Mitigation: segment network into VLANs (clinical, admin, IoT), block SMBv1 at firewalls, enforce 802.1X for device authentication, disable unnecessary USB ports.
+</details>
+
 2. **Mirai:** A manufacturing plant has 500 IoT sensors on the same VLAN as the production servers. Design a network segmentation strategy that isolates IoT devices while maintaining necessary communication.
 
+<details>
+<summary>Solution</summary>
+Create IoT VLAN with default-deny ACLs. Only allow outbound traffic to specific management server IPs/ports. Production servers in separate VLAN with strict ingress rules from IoT VLAN. Use a bastion/jump host for admin access to IoT devices. Apply rate limiting per IoT device to prevent DDoS amplification.
+</details>
+
 3. **Stuxnet:** An air-gapped SCADA network for a chemical plant. Propose a security architecture that protects against USB-borne threats without compromising operational requirements.
+
+<details>
+<summary>Solution</summary>
+Multiple layers: 1) USB scanning station — all removable media must pass through an air-gapped scanning kiosk. 2) Data diode for unidirectional gateway from IT to OT (no return path). 3) Application whitelisting on SCADA hosts (only approved executables run). 4) Full disk encryption with TPM attestation. 5) Honeypot devices to detect scanning activity.
+</details>
 
 ### Challenge Problems
 
 1. Design a zero-trust architecture for a cloud-native company with 200 microservices, 50 employees, and AWS infrastructure. Include: identity provider, service mesh, network policies, device trust, and monitoring.
 
+<details>
+<summary>Solution</summary>
+IdP: Keycloak/OIDC for user auth. Service mesh: Istio with mTLS (STRICT mode) for service-to-service. Network policies: Kubernetes NetworkPolicy with default-deny, allow by label. Device trust: osquery + FleetDM for endpoint telemetry, compliance checks. Monitoring: OPA/Rego for policy evaluation, Falco for runtime detection. All access authenticated and authorized per request.
+</details>
+
 2. Write a complete set of nftables rules for a Kubernetes node that: blocks all inbound traffic except kubelet API (6443), allows pod-to-pod traffic (10.42.0.0/16), allows cluster-to-external traffic, logs dropped packets, and prevents IP spoofing from pods.
+
+<details>
+<summary>Solution</summary>
+```
+table inet filter {
+  chain input { type filter hook input priority 0;
+    tcp dport 6443 accept
+    ip saddr 10.42.0.0/16 accept
+    ct state established,related accept
+    log prefix "nftables-drop: " drop
+  }
+  chain forward { type filter hook forward priority 0;
+    ip saddr 10.42.0.0/16 accept
+    ip daddr 10.42.0.0/16 accept
+    ct state established,related accept
+    ip saddr != 10.42.0.0/24 drop
+    log prefix "nftables-fwd-drop: " drop
+  }
+}
+```
+</details>
 
 ---
 
@@ -3774,80 +3896,32 @@ sequenceDiagram
 
 Test your understanding of network security concepts covered in this chapter.
 
-1. **Which firewall type maintains a state table tracking TCP handshake states and only allows packets belonging to established connections?**
-   - A) Packet filter firewall
-   - B) Stateful firewall
-   - C) Proxy firewall
-   - D) Web application firewall (WAF)
+| # | Question | A | B | C | D | Answer |
+|---|----------|---|---|---|---|--------|
+| 1 | Which firewall type maintains a state table tracking TCP handshake states and only allows packets belonging to established connections? | Packet filter firewall | Stateful firewall | Proxy firewall | Web application firewall (WAF) | B |
+| 2 | What is the primary functional difference between an IDS and an IPS? | IDS is passive (monitors and alerts), IPS is inline (can actively block) | IDS is faster than IPS | IPS only works at Layer 7 | IDS requires signatures, IPS uses anomaly detection | A |
+| 3 | In a DMZ network architecture, publicly accessible servers should be placed: | On the internal trusted network behind a single firewall | In a separate network segment isolated between two firewalls | On the same broadcast domain as client workstations | Directly on the internet with host-based firewalls only | B |
+| 4 | Which IDS detection method builds a statistical baseline of normal traffic and flags deviations? | Signature-based detection | Anomaly-based detection | Stateful protocol analysis | Heuristic analysis | B |
+| 5 | In IPSec VPN, what is the purpose of IKE Phase 1? | Establish the IPSec SA for encrypting user data | Establish a secure ISAKMP control channel (authenticated DH key exchange) | Authenticate individual users via RADIUS | Negotiate compression algorithms | B |
+| 6 | Which wireless security standard replaces WPA2's PSK with Simultaneous Authentication of Equals (SAE), providing forward secrecy? | WEP | WPA2-TKIP | WPA3 | 802.11i | C |
+| 7 | A SYN flood attack exploits which aspect of the TCP protocol? | The three-way handshake — the server allocates resources before the handshake completes | Window size negotiation consuming excessive memory | Sequence number randomization delays processing | Congestion control algorithm retransmission timers | A |
+| 8 | Which attack involves an attacker sending forged ARP messages to associate their MAC address with a legitimate IP address? | DNS cache poisoning | ARP spoofing (ARP cache poisoning) | DHCP starvation | MAC flooding (CAM table overflow) | B |
+| 9 | Network segmentation using VLANs primarily provides: | Encryption of inter-VLAN traffic | Logical isolation of broadcast domains at Layer 2 | Automatic load balancing between subnets | Transparent failover for critical network paths | B |
+| 10 | Which switch security feature validates ARP packets against a trusted DHCP binding database to prevent ARP spoofing? | Port security with sticky MAC | Dynamic ARP Inspection (DAI) | VLAN trunking (802.1Q) | Spanning Tree Protocol (STP) BPDU Guard | B |
 
-2. **What is the primary functional difference between an IDS and an IPS?**
-   - A) IDS is passive (monitors and alerts), IPS is inline (can actively block)
-   - B) IDS is faster than IPS
-   - C) IPS only works at Layer 7
-   - D) IDS requires signatures, IPS uses anomaly detection
+---
 
-3. **In a DMZ network architecture, publicly accessible servers should be placed:**
-   - A) On the internal trusted network behind a single firewall
-   - B) In a separate network segment isolated between two firewalls
-   - C) On the same broadcast domain as client workstations
-   - D) Directly on the internet with host-based firewalls only
+## Practical Takeaways
 
-4. **Which IDS detection method builds a statistical baseline of normal traffic and flags deviations?**
-   - A) Signature-based detection
-   - B) Anomaly-based detection
-   - C) Stateful protocol analysis
-   - D) Heuristic analysis
-
-5. **In IPSec VPN, what is the purpose of IKE Phase 1?**
-   - A) Establish the IPSec SA for encrypting user data
-   - B) Establish a secure ISAKMP control channel (authenticated DH key exchange)
-   - C) Authenticate individual users via RADIUS
-   - D) Negotiate compression algorithms
-
-6. **Which wireless security standard replaces WPA2's PSK with Simultaneous Authentication of Equals (SAE), providing forward secrecy?**
-   - A) WEP
-   - B) WPA2-TKIP
-   - C) WPA3
-   - D) 802.11i
-
-7. **A SYN flood attack exploits which aspect of the TCP protocol?**
-   - A) The three-way handshake — the server allocates resources before the handshake completes
-   - B) Window size negotiation consuming excessive memory
-   - C) Sequence number randomization delays processing
-   - D) Congestion control algorithm retransmission timers
-
-8. **Which attack involves an attacker sending forged ARP messages to associate their MAC address with a legitimate IP address?**
-   - A) DNS cache poisoning
-   - B) ARP spoofing (ARP cache poisoning)
-   - C) DHCP starvation
-   - D) MAC flooding (CAM table overflow)
-
-9. **Network segmentation using VLANs primarily provides:**
-   - A) Encryption of inter-VLAN traffic
-   - B) Logical isolation of broadcast domains at Layer 2
-   - C) Automatic load balancing between subnets
-   - D) Transparent failover for critical network paths
-
-10. **Which switch security feature validates ARP packets against a trusted DHCP binding database to prevent ARP spoofing?**
-    - A) Port security with sticky MAC
-    - B) Dynamic ARP Inspection (DAI)
-    - C) VLAN trunking (802.1Q)
-    - D) Spanning Tree Protocol (STP) BPDU Guard
-
-<details>
-<summary>Answers</summary>
-
-1. **B** — Stateful firewall tracks connection state (SYN → SYN-ACK → ACK) and only permits packets matching established sessions.
-2. **A** — IDS receives a copy of traffic (passive), IPS sits inline and can drop malicious packets.
-3. **B** — DMZ sits between the perimeter firewall and internal firewall, isolating public servers.
-4. **B** — Anomaly detection uses machine learning/statistics to model normal behavior and detect outliers.
-5. **B** — IKE Phase 1 establishes the ISAKMP SA (authenticated encrypted channel for control traffic).
-6. **C** — WPA3 uses SAE (Dragonfly handshake) instead of pre-shared key, providing forward secrecy.
-7. **A** — The server creates a TCB entry upon receiving SYN; a flood of SYNs exhausts this memory.
-8. **B** — ARP spoofing poisons the victim's ARP cache, enabling MITM at Layer 2.
-9. **B** — VLANs segment broadcast domains; inter-VLAN traffic requires a Layer 3 device.
-10. **B** — DAI intercepts ARP packets and validates them against the DHCP snooping binding table.
-</details>
+| Takeaway | Application |
+|----------|-------------|
+| Layered Firewall Architecture | Deploy stateful firewall at perimeter + NGFW for internal segmentation + WAF for web applications |
+| IDS/IPS with Hybrid Detection | Use signature-based rules for known threats and anomaly-based detection for zero-day threats — Suricata for modern deployments |
+| VPN for Secure Remote Access | Use WireGuard for performance-critical tunnels, IPsec IKEv2 for enterprise site-to-site, OpenVPN for legacy compatibility |
+| Network Segmentation (VLANs + DMZ + Micro-segmentation) | Place public servers in DMZ, isolate IoT on separate VLANs, use Kubernetes Network Policies for micro-segmentation |
+| Protocol Security (DNSSEC, DHCP Snooping, BGP RPKI, SNMPv3) | Harden DNS with DNSSEC, enable DHCP snooping on switches, validate BGP routes with RPKI, use SNMPv3 with auth+privacy |
+| Wireless Security (WPA3-Enterprise + 802.1X) | Deploy WPA3 with SAE for home/SMB; use 802.1X/EAP-TLS with certificate authentication for enterprise |
+| Zero Trust Networking | Implement identity-aware proxies, micro-segmentation, and continuous verification — remove implicit trust based on network location |
 
 ---
 

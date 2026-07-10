@@ -42,6 +42,67 @@ flowchart LR
     D --> D1[DHCP / ARP / ICMP]
 ```
 
+### IPv4 Packet Header Structure
+
+```mermaid
+flowchart TB
+    subgraph IPv4_Header["IPv4 Packet Header (20-60 bytes)"]
+        direction TB
+        subgraph Row1["Row 1 (32 bits)"]
+            V["Version (4)"]
+            IHL["IHL (4)"]
+            DSCP["DSCP/ECN (8)"]
+            TL["Total Length (16)"]
+        end
+        subgraph Row2["Row 2 (32 bits)"]
+            ID["Identification (16)"]
+            F["Flags (3)"]
+            FO["Fragment Offset (13)"]
+        end
+        subgraph Row3["Row 3 (32 bits)"]
+            TTL["TTL (8)"]
+            PROTO["Protocol (8)"]
+            CHK["Header Checksum (16)"]
+        end
+        subgraph Row4["Row 4 (32 bits)"]
+            SA["Source IP Address (32)"]
+        end
+        subgraph Row5["Row 5 (32 bits)"]
+            DA["Destination IP Address (32)"]
+        end
+        subgraph Row6["Options (0-320 bits)"]
+            OPT["Options & Padding"]
+        end
+    end
+
+    classDef version fill:#4CAF50,stroke:#388E3C,color:#fff
+    classDef ihl fill:#2196F3,stroke:#1976D2,color:#fff
+    classDef dscp fill:#FF9800,stroke:#F57C00,color:#fff
+    classDef totLen fill:#9C27B0,stroke:#7B1FA2,color:#fff
+    classDef id fill:#E91E63,stroke:#C2185B,color:#fff
+    classDef flags fill:#00BCD4,stroke:#0097A7,color:#fff
+    classDef frag fill:#795548,stroke:#5D4037,color:#fff
+    classDef ttl fill:#FF5722,stroke:#E64A19,color:#fff
+    classDef proto fill:#607D8B,stroke:#455A64,color:#fff
+    classDef chk fill:#3F51B5,stroke:#303F9F,color:#fff
+    classDef src fill:#009688,stroke:#00796B,color:#fff
+    classDef dst fill:#673AB7,stroke:#512DA8,color:#fff
+    classDef opt fill:#FFC107,stroke:#FFA000,color:#000
+    class V version
+    class IHL ihl
+    class DSCP dscp
+    class TL totLen
+    class ID id
+    class F flags
+    class FO frag
+    class TTL ttl
+    class PROTO proto
+    class CHK chk
+    class SA src
+    class DA dst
+    class OPT opt
+```
+
 ---
 
 ## 6.0 Network Layer Services
@@ -725,6 +786,137 @@ Instead of allocating entire /8 or /16 blocks (like giving every organization an
 | VLSM support | No | Yes |
 | Year introduced | 1981 (RFC 791) | 1993 (RFC 1519) |
 
+### TypeScript Implementation: SubnetCalculator with VLSM
+
+```typescript
+interface SubnetConfig {
+  baseNetwork: string;
+  prefixLength: number;
+  numSubnets: number;
+  minHosts: number;
+}
+
+interface SubnetInfo {
+  networkAddress: string;
+  firstHost: string;
+  lastHost: string;
+  broadcastAddress: string;
+  prefix: number;
+  totalAddresses: number;
+  usableHosts: number;
+  subnetMask: string;
+}
+
+class SubnetCalculator {
+  private ipToNumber(ip: string): number {
+    const octets = ip.split('.').map(Number);
+    return (octets[0] << 24) | (octets[1] << 16) | (octets[2] << 8) | octets[3];
+  }
+
+  private numberToIp(num: number): string {
+    return [
+      (num >>> 24) & 0xFF,
+      (num >>> 16) & 0xFF,
+      (num >>> 8) & 0xFF,
+      num & 0xFF
+    ].join('.');
+  }
+
+  public cidrToMask(prefix: number): string {
+    const mask = ~0 << (32 - prefix);
+    return this.numberToIp(mask >>> 0);
+  }
+
+  public calculateSubnets(config: SubnetConfig): SubnetInfo[] {
+    const { baseNetwork, prefixLength, numSubnets, minHosts } = config;
+    const availableBits = 32 - prefixLength;
+    const neededHostBits = Math.ceil(Math.log2(minHosts + 2));
+    const neededSubnetBits = Math.ceil(Math.log2(numSubnets));
+
+    if (neededHostBits + neededSubnetBits > availableBits) {
+      throw new Error(`Insufficient bits: need ${neededHostBits + neededSubnetBits}, available ${availableBits}`);
+    }
+
+    const newPrefix = prefixLength + neededSubnetBits;
+    const subnetSize = 1 << (32 - newPrefix);
+    const baseInt = this.ipToNumber(baseNetwork);
+    const result: SubnetInfo[] = [];
+
+    for (let i = 0; i < numSubnets; i++) {
+      const netAddr = baseInt + (i * subnetSize);
+      const bcastAddr = netAddr + subnetSize - 1;
+      result.push({
+        networkAddress: this.numberToIp(netAddr),
+        firstHost: this.numberToIp(netAddr + 1),
+        lastHost: this.numberToIp(bcastAddr - 1),
+        broadcastAddress: this.numberToIp(bcastAddr),
+        prefix: newPrefix,
+        totalAddresses: subnetSize,
+        usableHosts: subnetSize - 2,
+        subnetMask: this.cidrToMask(newPrefix),
+      });
+    }
+    return result;
+  }
+
+  public calculateVLSM(baseNetwork: string, hostsRequired: number[]): SubnetInfo[] {
+    let currentBase = this.ipToNumber(baseNetwork);
+    const results: SubnetInfo[] = [];
+
+    const sorted = [...hostsRequired].sort((a, b) => b - a);
+
+    for (const hosts of sorted) {
+      const hostBits = Math.ceil(Math.log2(hosts + 2));
+      const prefix = 32 - hostBits;
+      const size = 1 << hostBits;
+
+      results.push({
+        networkAddress: this.numberToIp(currentBase),
+        firstHost: this.numberToIp(currentBase + 1),
+        lastHost: this.numberToIp(currentBase + size - 2),
+        broadcastAddress: this.numberToIp(currentBase + size - 1),
+        prefix,
+        totalAddresses: size,
+        usableHosts: size - 2,
+        subnetMask: this.cidrToMask(prefix),
+      });
+
+      currentBase += size;
+    }
+    return results;
+  }
+}
+
+// Usage example
+const calc = new SubnetCalculator();
+const subnets = calc.calculateSubnets({
+  baseNetwork: '200.100.20.0',
+  prefixLength: 24,
+  numSubnets: 4,
+  minHosts: 50,
+});
+console.log('Subnets:');
+subnets.forEach((s, i) => {
+  console.log(`Subnet ${i}: ${s.networkAddress}/${s.prefix} [${s.firstHost} - ${s.lastHost}] bcast=${s.broadcastAddress} mask=${s.subnetMask}`);
+});
+// Output:
+// Subnet 0: 200.100.20.0/26 [200.100.20.1 - 200.100.20.62] bcast=200.100.20.63 mask=255.255.255.192
+// Subnet 1: 200.100.20.64/26 [200.100.20.65 - 200.100.20.126] bcast=200.100.20.127 mask=255.255.255.192
+// Subnet 2: 200.100.20.128/26 [200.100.20.129 - 200.100.20.190] bcast=200.100.20.191 mask=255.255.255.192
+// Subnet 3: 200.100.20.192/26 [200.100.20.193 - 200.100.20.254] bcast=200.100.20.255 mask=255.255.255.192
+
+const vlsmSubnets = calc.calculateVLSM('10.0.0.0', [100, 50, 30, 10]);
+console.log('\nVLSM Subnets:');
+vlsmSubnets.forEach((s, i) => {
+  console.log(`VLSM ${i}: ${s.networkAddress}/${s.prefix} (${s.usableHosts} usable hosts)`);
+});
+// Output:
+// VLSM 0: 10.0.0.0/25 (126 usable hosts)
+// VLSM 1: 10.0.0.128/26 (62 usable hosts)
+// VLSM 2: 10.0.0.192/27 (30 usable hosts)
+// VLSM 3: 10.0.0.224/28 (14 usable hosts)
+```
+
 ---
 
 ## 6.4 Network Address Translation (NAT)
@@ -1270,6 +1462,111 @@ cache.print_cache()
 - **Detection**: Monitor for multiple ARP replies with same IP mapping to different MACs. Tools: `arpwatch`, `arp-scan`.
 - **Defense**: Static ARP entries, Dynamic ARP Inspection (DAI) on managed switches, `arptables` on Linux.
 
+### TypeScript Implementation: ARPSimulator
+
+```typescript
+interface ARPEntry {
+  mac: string;
+  timestamp: number;
+  ttl: number;
+}
+
+interface ARPPacket {
+  opcode: number; // 1=request, 2=reply
+  senderMac: string;
+  senderIp: string;
+  targetMac: string;
+  targetIp: string;
+}
+
+class ARPSimulator {
+  private cache: Map<string, ARPEntry> = new Map();
+  private readonly defaultTTL = 120_000; // 120 seconds
+
+  private now(): number {
+    return Date.now();
+  }
+
+  public update(ip: string, mac: string, ttl?: number): void {
+    this.cache.set(ip, {
+      mac,
+      timestamp: this.now(),
+      ttl: ttl ?? this.defaultTTL,
+    });
+  }
+
+  public resolve(ip: string): string | null {
+    const entry = this.cache.get(ip);
+    if (!entry) return null;
+    if (this.now() - entry.timestamp > entry.ttl) {
+      this.cache.delete(ip);
+      return null;
+    }
+    entry.timestamp = this.now(); // refresh on use
+    return entry.mac;
+  }
+
+  public sendRequest(targetIp: string, senderIp: string, senderMac: string): ARPPacket {
+    return {
+      opcode: 1,
+      senderMac,
+      senderIp,
+      targetMac: '00:00:00:00:00:00',
+      targetIp,
+    };
+  }
+
+  public sendReply(request: ARPPacket, responderMac: string): ARPPacket {
+    return {
+      opcode: 2,
+      senderMac: responderMac,
+      senderIp: request.targetIp,
+      targetMac: request.senderMac,
+      targetIp: request.senderIp,
+    };
+  }
+
+  public processReply(reply: ARPPacket): void {
+    this.update(reply.senderIp, reply.senderMac);
+  }
+
+  public sendGratuitousArp(ip: string, mac: string): ARPPacket {
+    return {
+      opcode: 1,
+      senderMac: mac,
+      senderIp: ip,
+      targetMac: '00:00:00:00:00:00',
+      targetIp: ip,
+    };
+  }
+
+  public getCacheSnapshot(): Map<string, ARPEntry> {
+    return new Map(this.cache);
+  }
+}
+
+// Usage example
+const arp = new ARPSimulator();
+arp.update('192.168.1.1', 'AA:BB:CC:DD:EE:01');
+arp.update('192.168.1.2', 'AA:BB:CC:DD:EE:02');
+
+const mac1 = arp.resolve('192.168.1.1');
+console.log(`192.168.1.1 is at ${mac1}`); // "192.168.1.1 is at AA:BB:CC:DD:EE:01"
+
+const req = arp.sendRequest('192.168.1.100', '192.168.1.10', '11:22:33:44:55:66');
+console.log(`ARP request: who-has ${req.targetIp}? tell ${req.senderIp}`);
+// "ARP request: who-has 192.168.1.100? tell 192.168.1.10"
+
+const reply = arp.sendReply(req, 'AB:CD:EF:01:02:03');
+arp.processReply(reply);
+console.log(`Cache now has ${arp.getCacheSnapshot().size} entries`);
+// "Cache now has 3 entries"
+
+const gratuitous = arp.sendGratuitousArp('192.168.1.1', 'AA:BB:CC:DD:EE:01');
+console.log(`Gratuitous ARP: ${gratuitous.senderIp} is at ${gratuitous.senderMac}`);
+// "Gratuitous ARP: 192.168.1.1 is at AA:BB:CC:DD:EE:01"
+```
+
 ---
 
 ### 6.7.2 DHCP
@@ -1513,6 +1810,153 @@ def ping(host: str, count: int = 4) -> dict:
     flag = "-n" if platform.system().lower() == "windows" else "-c"
     r = subprocess.run(["ping", flag, str(count), host], capture_output=True, text=True)
     return {"host": host, "output": r.stdout, "ok": r.returncode == 0}
+```
+
+### TypeScript Implementation: ICMPPacketHandler
+
+```typescript
+interface ICMPPacket {
+  type: number;
+  code: number;
+  checksum: number;
+  restOfHeader: number;
+  payload: Buffer;
+}
+
+enum ICMPType {
+  EchoReply = 0,
+  DestUnreachable = 3,
+  EchoRequest = 8,
+  TTLExceeded = 11,
+}
+
+class ICMPPacketHandler {
+  private computeChecksum(data: Buffer): number {
+    let sum = 0;
+    for (let i = 0; i < data.length; i += 2) {
+      const word = (data[i] << 8) | (i + 1 < data.length ? data[i + 1] : 0);
+      sum += word;
+      if (sum > 0xFFFF) sum = (sum & 0xFFFF) + 1;
+    }
+    return (~sum >>> 0) & 0xFFFF;
+  }
+
+  public createEchoRequest(identifier: number, sequence: number, payload?: Buffer): ICMPPacket {
+    const data = Buffer.alloc(8 + (payload?.length ?? 0));
+    data.writeUInt16BE(identifier, 4);
+    data.writeUInt16BE(sequence, 6);
+    if (payload) payload.copy(data, 8);
+
+    const checksum = this.computeChecksum(data);
+    data.writeUInt16BE(checksum, 2);
+
+    return {
+      type: ICMPType.EchoRequest,
+      code: 0,
+      checksum,
+      restOfHeader: (identifier << 16) | sequence,
+      payload: payload ?? Buffer.alloc(0),
+    };
+  }
+
+  public createEchoReply(request: ICMPPacket): ICMPPacket {
+    const identifier = (request.restOfHeader >>> 16) & 0xFFFF;
+    const sequence = request.restOfHeader & 0xFFFF;
+    const data = Buffer.alloc(8 + request.payload.length);
+    data.writeUInt16BE(identifier, 4);
+    data.writeUInt16BE(sequence, 6);
+    request.payload.copy(data, 8);
+
+    const checksum = this.computeChecksum(data);
+    data.writeUInt16BE(checksum, 2);
+
+    return {
+      type: ICMPType.EchoReply,
+      code: 0,
+      checksum,
+      restOfHeader: (identifier << 16) | sequence,
+      payload: request.payload,
+    };
+  }
+
+  public createDestUnreachable(originalPacket: Buffer, reason: string): ICMPPacket {
+    const codeMap: Record<string, number> = {
+      'network-unreachable': 0,
+      'host-unreachable': 1,
+      'protocol-unreachable': 2,
+      'port-unreachable': 3,
+      'fragmentation-needed': 4,
+    };
+    const code = codeMap[reason] ?? 1;
+    const payload = originalPacket.subarray(0, 28);
+    return {
+      type: ICMPType.DestUnreachable,
+      code,
+      checksum: 0,
+      restOfHeader: 0,
+      payload,
+    };
+  }
+
+  public createTTLExceeded(originalPacket: Buffer): ICMPPacket {
+    const payload = originalPacket.subarray(0, 28);
+    return {
+      type: ICMPType.TTLExceeded,
+      code: 0,
+      checksum: 0,
+      restOfHeader: 0,
+      payload,
+    };
+  }
+
+  public packetTypeName(packet: ICMPPacket): string {
+    const names: Record<number, string> = {
+      0: 'Echo Reply',
+      3: 'Destination Unreachable',
+      8: 'Echo Request',
+      11: 'TTL Exceeded',
+    };
+    return names[packet.type] ?? 'Unknown';
+  }
+
+  public simulatePing(targetIp: string, count: number): string[] {
+    const results: string[] = [];
+    for (let i = 0; i < count; i++) {
+      const req = this.createEchoRequest(1, i + 1, Buffer.from('abcdefghijklmnop'));
+      const reply = this.createEchoReply(req);
+      const rtt = Math.floor(Math.random() * 20 + 1);
+      results.push(
+        `Reply from ${targetIp}: seq=${i + 1} ttl=64 time=${rtt}ms type=${this.packetTypeName(reply)}`
+      );
+    }
+    return results;
+  }
+}
+
+// Usage example
+const icmp = new ICMPPacketHandler();
+
+const echoReq = icmp.createEchoRequest(0x1234, 1, Buffer.from('hello'));
+console.log(`Created ${icmp.packetTypeName(echoReq)}: type=${echoReq.type}, code=${echoReq.code}`);
+// "Created Echo Request: type=8, code=0"
+
+const echoReply = icmp.createEchoReply(echoReq);
+console.log(`Created ${icmp.packetTypeName(echoReply)}: checksum=0x${echoReply.checksum.toString(16)}`);
+// "Created Echo Reply: checksum=0x..."
+
+const unreachable = icmp.createDestUnreachable(Buffer.alloc(28), 'port-unreachable');
+console.log(`Unreachable: type=${unreachable.type}, code=${unreachable.code} (port-unreachable)`);
+// "Unreachable: type=3, code=3 (port-unreachable)"
+
+const ttlExceeded = icmp.createTTLExceeded(Buffer.alloc(28));
+console.log(`TTL Exceeded: type=${ttlExceeded.type}, code=${ttlExceeded.code}`);
+// "TTL Exceeded: type=11, code=0"
+
+const pings = icmp.simulatePing('8.8.8.8', 3);
+pings.forEach(p => console.log(p));
+// "Reply from 8.8.8.8: seq=1 ttl=64 time=12ms type=Echo Reply"
+// "Reply from 8.8.8.8: seq=2 ttl=64 time=5ms type=Echo Reply"
+// "Reply from 8.8.8.8: seq=3 ttl=64 time=18ms type=Echo Reply"
 ```
 
 ### GRE Encapsulation Details
@@ -1974,103 +2418,41 @@ When troubleshooting network layer issues, follow this systematic approach:
 
 ---
 
+## Case Study: IP Addressing Design for a Growing Enterprise
+
+### Problem
+
+A mid-sized company with 500 employees is expanding from a single office to 12 regional offices. The company owns the 172.16.0.0/16 private network and needs an IP addressing plan that supports 12 subnets (one per office), each with at least 50 hosts. Additionally, the network engineering team must deal with ARP broadcast storms during network scans and plan for future growth.
+
+### Solution
+
+Using VLSM (Variable Length Subnet Masking) from the /16 base, the team designs a hierarchical addressing scheme. Each office gets a /20 subnet (4096 addresses), providing ample room for growth. For the 50-host requirement, /26 subnets (62 usable hosts) are allocated within each office's /20 block. This creates a two-level hierarchy: the backbone routers see only 12 aggregated /20 routes instead of hundreds of smaller routes. The team deploys Dynamic ARP Inspection (DAI) on all access switches to prevent ARP spoofing and implements ARP rate-limiting to reduce broadcast storm impact during automated network scans. They configure DHCP scopes per subnet with 8-hour leases and add DHCP snooping to guard against rogue DHCP servers.
+
+### Outcome
+
+The hierarchical addressing plan reduces the core routing table from 500+ entries to 12 aggregated routes. ARP broadcast traffic decreases by 60% after implementing ARP caching and DAI. The VLSM design accommodates unexpected growth — one office expands to 200 hosts without renumbering. Annual network downtime drops from 12 hours to under 1 hour due to automated DHCP configuration and ARP attack prevention.
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| VLSM minimizes wasted address space | Allocate subnets based on actual host counts, not fixed sizes |
+| Route aggregation reduces routing table size | Summarize contiguous subnets into larger prefixes at backbone routers |
+| ARP caching is essential for LAN performance | Tune ARP cache timeouts to balance freshness vs. broadcast reduction |
+| DHCP automates IP management at scale | Use DHCP scopes per subnet with appropriate lease times |
+| DAI and DHCP snooping prevent L2 attacks | Enable on all managed switch ports, especially edge ports |
+| Plan for growth with hierarchical addressing | Reserve address blocks for future subnets in the allocation plan |
+| PMTUD and fragmentation avoidance improve reliability | Set DF bit and use path MTU discovery rather than router fragmentation |
+
 ## 6.13 Chapter Quiz
 
-**Q1.** What does CIDR solve that classful addressing could not?
-
-- A) Faster forwarding
-- B) Address depletion by allowing variable prefix lengths
-- C) Encryption
-- D) Multicast routing
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) CIDR eliminates fixed class boundaries, enabling subnetting of any size through variable prefix lengths and route aggregation.
-</details>
-
-**Q2.** Why was the IPv4 header checksum removed in IPv6?
-
-- A) It was too slow to compute
-- B) It was redundant with L2 and L4 checksums
-- C) It never detected any errors
-- D) IPv6 uses encryption instead
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) L2 (CRC) and L4 (TCP/UDP checksum) already provide integrity; the IP header checksum was redundant overhead.
-</details>
-
-**Q3.** How many IP addresses are in a /28 subnet?
-
-- A) 14 usable
-- B) 16 usable
-- C) 30 usable
-- D) 62 usable
-
-<details>
-<summary>Answer&lt;/summary&gt;
-A) 2^(32-28) = 16 total, minus network and broadcast = 14 usable.
-</details>
-
-**Q4.** The `traceroute` utility works by sending packets with increasing ______ values.
-
-- A) TTL
-- B) Sequence number
-- C) Port number
-- D) Checksum
-
-<details>
-<summary>Answer&lt;/summary&gt;
-A) TTL (Hop Limit) — each router decrements TTL and sends ICMP TTL Exceeded when it hits 0.
-</details>
-
-**Q5.** What problem does NAT introduce for peer-to-peer applications?
-
-- A) Slower encryption
-- B) Inability to accept unsolicited inbound connections
-- C) Duplicate ACKs
-- D) Packet reordering
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) NAT maps private IPs to a single public IP; unsolicited inbound packets cannot reach the correct internal host without port forwarding.
-</details>
-
-**Q6.** In DHCP DORA, why is the REQUEST message broadcast rather than unicast?
-
-- A) Because the client does not yet have an IP
-- B) To inform all DHCP servers which offer was accepted
-- C) To measure network latency
-- D) Both A and B
-
-<details>
-<summary>Answer&lt;/summary&gt;
-D) The client may not have an IP yet (A), and broadcasting the REJECT to non-selected servers (B) lets them return their offered IP to the pool.
-</details>
-
-**Q7.** What is the primary defense against ARP spoofing on a switched network?
-
-- A) Stronger encryption
-- B) Dynamic ARP Inspection (DAI)
-- C) Faster CPUs
-- D) Longer ARP timeouts
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) DAI on managed switches validates ARP packets against the DHCP snooping binding table, dropping forged replies.
-</details>
-
-**Q8.** A 4000-byte datagram (20-byte header) traverses an Ethernet link (MTU 1500). How many fragments?
-
-- A) 2
-- B) 3
-- C) 4
-- D) 5
-
-<details>
-<summary>Answer&lt;/summary&gt;
-B) 3980 bytes payload / 1480 per fragment = 2 full + 1 partial = 3 fragments.
-</details>
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1: What does CIDR solve that classful addressing could not? | B | CIDR eliminates fixed class boundaries, enabling subnetting of any size through variable prefix lengths and route aggregation. |
+| Q2: Why was the IPv4 header checksum removed in IPv6? | B | L2 (CRC) and L4 (TCP/UDP checksum) already provide integrity; the IP header checksum was redundant overhead. |
+| Q3: A 4000-byte datagram traverses an Ethernet link (MTU 1500). How many fragments? | B | 3980 bytes payload / 1480 per fragment = 2 full + 1 partial = 3 fragments. |
+| Q4: What problem does NAT introduce for peer-to-peer applications? | B | NAT maps private IPs to a single public IP; unsolicited inbound packets cannot reach the correct internal host without port forwarding. |
+| Q5: What is the primary defense against ARP spoofing on a switched network? | B | DAI on managed switches validates ARP packets against the DHCP snooping binding table, dropping forged replies. |
 
 ---
 
@@ -2085,28 +2467,223 @@ The network layer provides host-to-host delivery through logical addressing and 
 ### Review Questions
 
 1. What fields are present in the IPv4 header but absent from the IPv6 header?
+
+<details>
+<summary>Solution</summary>
+IHL, Identification, Flags, Fragment Offset, Header Checksum, and Options (moved to extension headers in IPv6). IPv6 has a fixed 40-byte header with no checksum and no fragmentation fields.
+</details>
+
 2. Why was the IPv4 header checksum not carried forward to IPv6?
+
+<details>
+<summary>Solution</summary>
+It was redundant. L2 (Ethernet CRC) already provides per-hop integrity, and L4 (TCP/UDP checksum) provides end-to-end integrity. Removing it improved router forwarding performance since every router had to recompute the checksum after decrementing TTL.
+</details>
+
 3. What is the difference between subnetting and supernetting?
+
+<details>
+<summary>Solution</summary>
+Subnetting divides a larger network into smaller sub-networks (borrowing host bits for the network portion). Supernetting (route aggregation) combines multiple contiguous smaller networks into a larger prefix (borrowing network bits for the host portion). Subnetting reduces broadcast domains; supernetting reduces routing table size.
+</details>
+
 4. How does NAT enable multiple internal hosts to share a single public IP address?
+
+<details>
+<summary>Solution</summary>
+NAT with PAT (Port Address Translation) maps each internal (private IP:port) to a unique (public IP:port) pair. The NAT router maintains a translation table. When an internal host sends outbound traffic, the router rewrites the source IP:port to the public IP:an ephemeral port. Responses are demultiplexed by looking up the destination port in the translation table to find the original internal host.
+</details>
+
 5. What problem does Path MTU Discovery solve, and how does it differ from IPv4 fragmentation?
+
+<details>
+<summary>Solution</summary>
+PMTUD avoids router fragmentation by having the source discover the smallest MTU along the path. The source sets the DF bit and reduces packet size when receiving ICMP "Fragmentation Needed" messages. Unlike IPv4 fragmentation (where any router can fragment), PMTUD ensures the source controls packet sizing, eliminating the issue where losing one fragment causes the entire datagram to be lost.
+</details>
+
 6. Why must the DHCP REQUEST message be broadcast?
+
+<details>
+<summary>Solution</summary>
+Two reasons: (1) The client typically doesn't have an IP address yet (still using 0.0.0.0), so unicast is not possible. (2) Broadcasting the REQUEST informs all DHCP servers which offer was accepted, allowing non-selected servers to return their offered IP to the available pool immediately.
+</details>
+
 7. What are the three main IPv6 transition mechanisms?
+
+<details>
+<summary>Solution</summary>
+(1) Dual Stack — running IPv4 and IPv6 simultaneously on the same interface. (2) Tunneling — encapsulating IPv6 packets inside IPv4 (6in4, Teredo, 6to4). (3) Translation — NAT64/DNS64 converts between IPv6 and IPv4 headers for IPv6-only clients accessing IPv4-only servers.
+</details>
+
 8. Explain the difference between SNAT, DNAT, and PAT.
+
+<details>
+<summary>Solution</summary>
+SNAT (Source NAT) translates the source IP of outbound packets (private→public). DNAT (Destination NAT) translates the destination IP of inbound packets (public→private), used for port forwarding. PAT (Port Address Translation) is a form of SNAT that maps many private IPs to one public IP using unique source ports. SNAT hides internal hosts; DNAT exposes internal services; PAT maximizes address utilization.
+</details>
 
 ### Application Problems
 
 9. An organization is assigned the CIDR block 200.100.20.0/24. It needs four subnets with at least 50 hosts each. Design the subnet scheme.
+
+<details>
+<summary>Solution</summary>
+Available host bits: 32 - 24 = 8. Needed host bits: ceil(log2(50 + 2)) = 6 bits (64 addresses, 62 usable). Needed subnet bits: ceil(log2(4)) = 2 bits. Check: 6 + 2 = 8 ≤ 8. New prefix: 24 + 2 = /26. Subnet size: 2^(32-26) = 64 addresses (62 usable). Subnets: Subnet 0: 200.100.20.0/26, Subnet 1: 200.100.20.64/26, Subnet 2: 200.100.20.128/26, Subnet 3: 200.100.20.192/26.
+</details>
+
 10. A 3000-byte IP datagram (including 20-byte header) traverses a link with MTU 620 bytes. How many fragments? Provide offset, MF, and total length for each.
+
+<details>
+<summary>Solution</summary>
+Payload = 2980 bytes. Max payload per fragment = ((620 - 20) / 8) * 8 = (600 / 8) * 8 = 75 * 8 = 600 bytes. Fragment 1: offset=0, MF=1, total=620; Fragment 2: offset=600, MF=1, total=620; Fragment 3: offset=1200, MF=1, total=620; Fragment 4: offset=1800, MF=1, total=620; Fragment 5: offset=2400, MF=0, total=420 (2980 - 2400 = 580 payload + 20 = 600... wait). Let me recalculate: 2980 / 600 = 4 full (2400 bytes) + 580 remainder. Fragment 5: offset=2400, MF=0, total=20+580=600. So 5 fragments total.
+</details>
+
 11. An ARP request is broadcast on an Ethernet LAN with 50 hosts. Each host generates 10 ARP requests per minute. What is the broadcast rate (per second)? How does this change with full ARP caches?
+
+<details>
+<summary>Solution</summary>
+Each host sends 10 requests/min = 10/60 ≈ 0.167 requests/sec. With 50 hosts: 50 × 0.167 ≈ 8.33 broadcast ARP requests per second. Each broadcast is received by all 50 hosts, so total processed ARP frames = 8.33 × 50 ≈ 416.7 frames/sec. With full ARP caches, most requests would be cache hits (no broadcast needed). If hit rate is 90%, only 10% of requests generate broadcasts → ~0.833 broadcasts/sec.
+</details>
+
 12. A NAT router has one public IP and 500 internal hosts, each with 40 concurrent TCP connections. Is port exhaustion possible? Show calculations.
+
+<details>
+<summary>Solution</summary>
+Total concurrent connections: 500 × 40 = 20,000. Available ports per public IP: 65,535 - 1024 (well-known reserved) = 64,511 usable ports. Since 20,000 < 64,511, theoretical exhaustion is not reached. However, practical factors matter: ephemeral port range default on Linux is 32768-60999 (28,232 ports), and each connection consumes one port for the NAT translation. With 20,000 connections, 20,000/28,232 ≈ 71% of the ephemeral range is used. Exhaustion is unlikely but possible during peak bursts. Mitigation: use multiple public IPs or increase the local port range.
+</details>
 
 ### Implementation Problems
 
 13. Write a Python function `calculate_subnet(base_ip, prefix, num_subnets, min_hosts)` returning subnet dictionaries.
+
+<details>
+<summary>Solution</summary>
+```python
+import ipaddress, math
+def calculate_subnet(base, prefix, count, min_hosts):
+    avail = 32 - prefix
+    need_h = math.ceil(math.log2(min_hosts + 2))
+    need_s = math.ceil(math.log2(count))
+    if need_h + need_s > avail:
+        raise ValueError("Insufficient bits")
+    new_pfx = prefix + need_s
+    sz = 1 << (32 - new_pfx)
+    base_int = int(ipaddress.IPv4Address(base))
+    result = []
+    for i in range(count):
+        net_int = base_int + i * sz
+        result.append({
+            'subnet': str(ipaddress.IPv4Address(net_int)),
+            'first': str(ipaddress.IPv4Address(net_int + 1)),
+            'last': str(ipaddress.IPv4Address(net_int + sz - 2)),
+            'bcast': str(ipaddress.IPv4Address(net_int + sz - 1)),
+            'prefix': f"/{new_pfx}",
+            'usable': sz - 2
+        })
+    return result
+```
+</details>
+
 14. Write a C++ function parsing an IPv4 hex dump into field printouts.
+
+<details>
+<summary>Solution</summary>
+```cpp
+#include <iostream>
+#include <cstdint>
+#include <arpa/inet.h>
+void parse_ipv4(const uint8_t* p) {
+    uint8_t ver = (p[0] >> 4) & 0x0F, ihl = p[0] & 0x0F;
+    uint16_t len = (p[2] << 8) | p[3];
+    uint16_t id = (p[4] << 8) | p[5];
+    uint8_t flags = (p[6] >> 5) & 0x07;
+    uint16_t offset = ((p[6] & 0x1F) << 8) | p[7];
+    char src[16], dst[16];
+    inet_ntop(AF_INET, &p[12], src, 16);
+    inet_ntop(AF_INET, &p[16], dst, 16);
+    printf("Ver=%d IHL=%d Len=%d ID=0x%04X Flags=%d Offset=%d TTL=%d Proto=%d Src=%s Dst=%s\n",
+           ver, ihl, len, id, flags, offset * 8, p[8], p[9], src, dst);
+}
+```
+</details>
+
 15. Write a Python class `FragmentationSimulator` with `fragment()` and `reassemble()`.
+
+<details>
+<summary>Solution</summary>
+```python
+from dataclasses import dataclass
+@dataclass
+class Fragment:
+    offset: int; length: int; mf: bool; data: bytes
+
+class FragmentationSimulator:
+    def fragment(self, datagram: bytes, mtu: int, id: int) -> list:
+        HEADER = 20
+        max_payload = ((mtu - HEADER) // 8) * 8
+        payload = datagram[HEADER:]
+        frags, offset = [], 0
+        while offset < len(payload):
+            frag_payload = min(max_payload, len(payload) - offset)
+            frags.append(Fragment(offset, HEADER + frag_payload,
+                                  offset + max_payload < len(payload),
+                                  payload[offset:offset + frag_payload]))
+            offset += frag_payload
+        return frags
+
+    def reassemble(self, fragments: list) -> bytes:
+        payload = bytearray()
+        for f in sorted(fragments, key=lambda x: x.offset):
+            payload.extend(f.data)
+        return bytes(payload)
+```
+</details>
+
 16. Write a Python function `simulate_nat(internal_hosts, public_ip)` simulating 100 connections. Report unique ports used.
+
+<details>
+<summary>Solution</summary>
+```python
+def simulate_nat(internal_hosts, public_ip):
+    used_ports, entries = set(), {}
+    next_port = 50000
+    for host in range(internal_hosts):
+        for conn in range(100):
+            private = f"10.0.{host // 256}.{host % 256}:{30000 + conn}"
+            public_port = next_port; next_port += 1
+            used_ports.add(public_port)
+            entries[private] = f"{public_ip}:{public_port}"
+    return {
+        'total_connections': len(entries),
+        'unique_ports_used': len(used_ports),
+        'port_range': f"50000-{next_port - 1}",
+        'entries': entries
+    }
+result = simulate_nat(10, "203.0.113.1")
+print(f"Connections: {result['total_connections']}, Ports: {result['unique_ports_used']}")
+# Connections: 1000, Ports: 1000
+```
+</details>
 
 ### Challenge Problem
 
 17. **Design an addressing plan for a multinational corporation.** A company has 50 countries, 3-20 departments each with 10-500 devices. HQ needs 5000 addresses; each country needs 1000 with growth room. Design hierarchical CIDR/VLSM. Show 5 representative countries. Explain route aggregation at each level. Provide a validation function in C++ or Python.
+
+<details>
+<summary>Solution</summary>
+Use 10.0.0.0/8 as base. Allocate /16 per country (65,536 addresses each, enough for 50 countries × 65,536 = 3,276,800). Within each /16, allocate /20 per department (4096 addresses, enough for up to 16 departments per country). HQ gets 10.0.0.0/16. Countries: USA = 10.1.0.0/16, UK = 10.2.0.0/16, JP = 10.3.0.0/16, DE = 10.4.0.0/16, BR = 10.5.0.0/16. Route aggregation: core routers see only /16 prefixes (50 routes). Country routers see /20 prefixes per department. Validation function:
+```python
+import ipaddress
+def validate_plan(country_nets):
+    seen = set()
+    for cidr in country_nets:
+        net = ipaddress.IPv4Network(cidr, strict=False)
+        for s in seen:
+            if net.overlaps(s):
+                return False, f"Overlap: {cidr} overlaps {s}"
+        seen.add(net)
+    return True, f"Valid: {len(seen)} non-overlapping networks"
+countries = ["10.0.0.0/16","10.1.0.0/16","10.2.0.0/16","10.3.0.0/16","10.4.0.0/16"]
+print(validate_plan(countries))
+```
+</details>

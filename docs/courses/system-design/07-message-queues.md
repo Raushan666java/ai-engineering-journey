@@ -668,29 +668,13 @@ sequenceDiagram
 
 ## Chapter Quiz
 
-**Q1:** What is the key takeaway from this chapter?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q2:** Which concept is most critical for distributed systems?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
-
-**Q3:** How does this topic apply to FAANG-level system design?
-- A) Option A
-- B) Option B
-- C) Option C
-- D) Option D
-
-<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
+| # | Question | Options | Answer |
+|---|----------|---------|--------|
+| 1 | What is the primary difference between synchronous and asynchronous communication in distributed systems? | A) Synchronous is faster, B) Asynchronous decouples sender and receiver via a broker, C) Synchronous never fails, D) Asynchronous requires HTTP | B) Asynchronous decouples sender and receiver via a broker |
+| 2 | In Kafka, what does the `acks=all` producer setting guarantee? | A) Fire-and-forget, B) Leader acknowledges after writing to its log, C) Leader waits for all ISR replicas to acknowledge, D) No acknowledgment | C) Leader waits for all ISR replicas to acknowledge |
+| 3 | Which RabbitMQ exchange type broadcasts messages to all bound queues ignoring the routing key? | A) Direct, B) Topic, C) Fanout, D) Headers | C) Fanout |
+| 4 | What problem does the transactional outbox pattern solve? | A) Message ordering, B) The dual-write problem of atomically writing to DB and publishing to queue, C) Consumer group rebalancing, D) Partition assignment | B) The dual-write problem of atomically writing to DB and publishing to queue |
+| 5 | What is the primary advantage of Kafka's pull-based consumption model? | A) Lower latency, B) Natural backpressure — the consumer controls the rate, C) Simpler broker implementation, D) Exactly-once delivery | B) Natural backpressure — the consumer controls the rate |
 
 ---
 
@@ -895,7 +879,223 @@ async function demo(): Promise&lt;void&gt; {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
+
+### TypeScript: MessageQueue, KafkaProducer, and DeadLetterQueue
+
+```typescript
+class MessageQueue {
+  private topics = new Map<string, { messages: any[]; subscribers: Map<string, Set<string>>; offsets: Map<string, number> }>();
+  private consumerGroups = new Map<string, string[]>();
+
+  createTopic(name: string): void {
+    if (!this.topics.has(name)) {
+      this.topics.set(name, { messages: [], subscribers: new Map(), offsets: new Map() });
+    }
+  }
+
+  publish(topic: string, message: any): number {
+    this.createTopic(topic);
+    const t = this.topics.get(topic)!;
+    const offset = t.messages.length;
+    t.messages.push({ ...message, offset, timestamp: Date.now() });
+    const subs = t.subscribers;
+    for (const [group, members] of this.consumerGroups) {
+      if (subs.has(group)) {
+        const memberSubs = subs.get(group)!;
+        const targetConsumer = [...memberSubs][offset % memberSubs.size];
+        if (targetConsumer) this.deliver(topic, group, targetConsumer, offset);
+      }
+    }
+    return offset;
+  }
+
+  subscribe(groupId: string, consumerId: string, topics: string[]): void {
+    this.consumerGroups.set(groupId, topics);
+    for (const t of topics) {
+      this.createTopic(t);
+      const topic = this.topics.get(t)!;
+      if (!topic.subscribers.has(groupId)) topic.subscribers.set(groupId, new Set());
+      topic.subscribers.get(groupId)!.add(consumerId);
+      if (!topic.offsets.has(`${groupId}:${consumerId}`)) topic.offsets.set(`${groupId}:${consumerId}`, 0);
+    }
+  }
+
+  private deliver(topic: string, group: string, consumer: string, offset: number): void {
+    const key = `${group}:${consumer}`;
+    const t = this.topics.get(topic)!;
+    t.offsets.set(key, offset + 1);
+  }
+
+  getOffset(topic: string, group: string, consumer: string): number {
+    return this.topics.get(topic)?.offsets.get(`${group}:${consumer}`) ?? 0;
+  }
+
+  getMessageCount(topic: string): number {
+    return this.topics.get(topic)?.messages.length ?? 0;
+  }
+}
+
+class KafkaProducer {
+  private partitionCount: number;
+  private retryCount: number;
+  private acks: number;
+  private idempotent: boolean;
+  private sequenceNumber = 0;
+  private producerId: string;
+
+  constructor(config: { partitions: number; retries?: number; acks?: number; idempotent?: boolean }) {
+    this.partitionCount = config.partitions;
+    this.retryCount = config.retries ?? 3;
+    this.acks = config.acks ?? 1;
+    this.idempotent = config.idempotent ?? false;
+    this.producerId = `producer-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  }
+
+  selectPartition(key: string): number {
+    let hash = 0;
+    for (let i = 0; i < key.length; i++) hash = ((hash << 5) - hash + key.charCodeAt(i)) | 0;
+    return Math.abs(hash) % this.partitionCount;
+  }
+
+  async send(topic: string, key: string, value: any): Promise<{ success: boolean; offset?: number; error?: string }> {
+    const partition = this.selectPartition(key);
+    let attempt = 0;
+    while (attempt <= this.retryCount) {
+      try {
+        if (this.idempotent) this.sequenceNumber++;
+        const ack = await this.brokerWrite(topic, partition, key, value);
+        if (this.acks === 0) return { success: true };
+        if (this.acks === 1 && ack) return { success: true, offset: ack };
+        if (this.acks === 2 && ack && ack > 0) return { success: true, offset: ack };
+        return { success: true, offset: ack };
+      } catch (e: any) {
+        attempt++;
+        if (attempt > this.retryCount) return { success: false, error: e.message };
+        await new Promise(r => setTimeout(r, 100 * attempt));
+      }
+    }
+    return { success: false, error: "Max retries exceeded" };
+  }
+
+  private async brokerWrite(topic: string, partition: number, key: string, value: any): Promise<number> {
+    return Math.floor(Math.random() * 1000);
+  }
+}
+
+class DeadLetterQueue {
+  private poisonMessages = new Map<string, Map<string, { message: any; retries: number; reason: string }>>();
+  private maxRetries: number;
+
+  constructor(maxRetries = 3) {
+    this.maxRetries = maxRetries;
+  }
+
+  detectPoison(topic: string, messageId: string, message: any, error: Error): boolean {
+    if (!this.poisonMessages.has(topic)) this.poisonMessages.set(topic, new Map());
+    const topicDLQ = this.poisonMessages.get(topic)!;
+    if (!topicDLQ.has(messageId)) {
+      topicDLQ.set(messageId, { message, retries: 0, reason: error.message });
+      return false;
+    }
+    const entry = topicDLQ.get(messageId)!;
+    entry.retries++;
+    entry.reason = error.message;
+    if (entry.retries >= this.maxRetries) return true;
+    return false;
+  }
+
+  routeToDLQ(topic: string, messageId: string, dlqTopic: string): void {
+    const topicDLQ = this.poisonMessages.get(topic);
+    if (!topicDLQ || !topicDLQ.has(messageId)) return;
+    const entry = topicDLQ.get(messageId)!;
+    console.log(`DLQ: Routing message ${messageId} from ${topic} to ${dlqTopic} after ${entry.retries} retries. Reason: ${entry.reason}`);
+    topicDLQ.delete(messageId);
+  }
+
+  getPoisonCount(topic: string): number {
+    return this.poisonMessages.get(topic)?.size ?? 0;
+  }
+
+  retryAll(topic: string): Map<string, any> {
+    const retryable = new Map<string, any>();
+    const topicDLQ = this.poisonMessages.get(topic);
+    if (!topicDLQ) return retryable;
+    for (const [id, entry] of topicDLQ) {
+      if (entry.retries < this.maxRetries) retryable.set(id, entry.message);
+    }
+    return retryable;
+  }
+}
+```
+
+### Mermaid: Kafka vs RabbitMQ vs SQS Feature Comparison
+
+```mermaid
+graph TD
+    classDef kafka fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef rabbit fill:#fce4ec,stroke:#c62828,stroke-width:2px
+    classDef sqs fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef feature fill:#fff3e0,stroke:#e65100,stroke-width:1px
+
+    subgraph "Apache Kafka"
+        K1["Commit Log Storage"]:::kafka
+        K2["Pull-Based Consumption"]:::kafka
+        K3["Partitioned Topics"]:::kafka
+        K4["Consumer Groups"]:::kafka
+        K5["Exactly-Once Semantics"]:::kafka
+        K6["High Throughput<br/>1M+ msg/sec"]:::kafka
+        K7["Disk-Based Retention"]:::kafka
+    end
+
+    subgraph "RabbitMQ"
+        R1["Exchange/Queue Routing"]:::rabbit
+        R2["Push-Based Delivery"]:::rabbit
+        R3["AMQP 0-9-1 Protocol"]:::rabbit
+        R4["Priority Queues"]:::rabbit
+        R5["At-Most-Once / At-Least-Once"]:::rabbit
+        R6["Moderate Throughput<br/>50K msg/sec"]:::rabbit
+        R7["Memory-Based (optional disk)"]:::rabbit
+    end
+
+    subgraph "AWS SQS"
+        S1["Fully Managed"]:::sqs
+        S2["Pull-Based (long polling)"]:::sqs
+        S3["Standard / FIFO Queues"]:::sqs
+        S4["Dead-Letter Queue Built-in"]:::sqs
+        S5["At-Least-Once / Exactly-Once"]:::sqs
+        S6["Virtually Unlimited TPS"]:::sqs
+        S7["Auto-Scaling"]:::sqs
+    end
+
+    Comparison((Feature<br/>Comparison)):::feature
+    K1 -.-> Comparison
+    R1 -.-> Comparison
+    S1 -.-> Comparison
+```
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|------------|
+| Asynchronous communication decouples services via a broker | Use message queues for any inter-service communication that does not require an immediate synchronous response |
+| Kafka's partitioned log provides ordered, durable storage | Use Kafka when you need replayable event streams, audit logs, or change data capture pipelines |
+| RabbitMQ's exchange/queue/binding model enables flexible routing | Use RabbitMQ when you need complex routing logic (direct, topic, fanout, headers) |
+| At-least-once delivery is the most practical default guarantee | Implement idempotent consumers to handle duplicate messages safely |
+| Exactly-once semantics require coordination across producer, broker, and consumer | Use Kafka's idempotent producer + transactions for exactly-once within a single cluster |
+| Dead-letter queues prevent message loss from poison messages | Always configure DLQ with monitoring alerts to detect systemic processing failures |
+| The transactional outbox pattern solves the dual-write problem | Use Debezium CDC or a dedicated outbox publisher to atomically write events alongside database transactions |
+
+## Case Study
+
+**E-Commerce Order Processing Pipeline**
+
+A large e-commerce platform processes 50,000 orders per day. Each order triggers inventory checks, payment processing, shipping label generation, email notifications, and analytics events. The initial architecture used synchronous HTTP calls between services — when the inventory service slowed down during a flash sale, the entire order pipeline stalled, causing 30-second response times and checkout failures.
+
+The team migrated to an event-driven architecture using Kafka. The Order Service writes events to a partitioned `orders` topic. Downstream services (Inventory, Payment, Shipping, Notification, Analytics) each run as independent consumer groups with their own offsets. The Inventory Service uses a key-based partition strategy (`order_id % 50`) to ensure all events for a single order reach the same partition, preserving ordering. During flash sales, the pipeline processes 5,000 orders/minute sustained with p99 latency under 200ms — a 150x improvement over the synchronous approach.
+
+A critical incident occurred when a malformed payload caused the Payment Service consumer to crash-loop. Without a DLQ, the consumer would have replayed the same poison message indefinitely. The team deployed a DeadLetterQueue with a retry policy (3 retries with exponential backoff) that routed the failing message to a `orders-dlq` topic after exhausting retries. An alert on DLQ depth (threshold: 100 messages) notified the on-call engineer within 2 minutes. The payload was fixed, and the DLQ was replayed using offset-based reprocessing, resulting in zero data loss.
+
+---
 
 - Asynchronous communication decouples services via a message broker, improving resilience and allowing independent scaling at the cost of increased system complexity
 - Kafka's partitioned commit log provides durable, ordered storage with consumer groups enabling parallel processing and rebalance tolerance
@@ -913,53 +1113,50 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### Review Questions
 
-1. Explain the difference between a Kafka consumer group partition assignment and a RabbitMQ competing consumer pattern. How does each handle consumer failure?
+<details>
+<summary>Solution for Review Question 1</summary>
+**Kafka consumer groups** assign partitions to consumers within a group — each partition is assigned to exactly one consumer. On failure, the group rebalances: partitions of the failed consumer are reassigned to remaining members (stop-the-world phase). **RabbitMQ competing consumers** all pull from the same queue — the broker delivers each message to exactly one consumer. On failure, unacknowledged messages are requeued and delivered to another consumer. Kafka's approach provides ordering within a partition; RabbitMQ's approach is simpler but provides no ordering guarantees across messages.
+</details>
 
-2. A system uses Kafka with `acks=1`. A leader broker receives a write, acknowledges it, then crashes before replicating to any follower. The failed leader never recovers. What happens to this message? How would `acks=all` change the outcome?
+<details>
+<summary>Solution for Review Question 2</summary>
+With `acks=1`, the message acknowledged by the leader is lost permanently if the leader crashes before replication and never recovers — the message existed only on that leader. With `acks=all`, the leader waits for all ISR replicas to acknowledge; the message survives on the replicas even if the original leader fails. In the scenario described, `acks=all` ensures the data is replicated to at least one follower before acknowledgment.
+</details>
 
-3. What is the dual-write problem? Describe how the transactional outbox pattern solves it, and what happens if the outbox publisher crashes mid-publish.
+<details>
+<summary>Solution for Review Question 3</summary>
+The dual-write problem occurs when a service writes to a database and then publishes a message to Kafka — if one operation succeeds and the other fails, the system is inconsistent. The transactional outbox pattern solves this by writing the event to an `outbox` table in the same database transaction as the business data. A separate process (CDC or poller) reads from the outbox and publishes to Kafka. If the outbox publisher crashes mid-publish, the unprocessed outbox rows remain and are picked up on restart (at-least-once delivery). The consumer must be idempotent to handle duplicate deliveries.
+</details>
 
-4. In Kafka, why is exactly-once delivery impossible between two independent systems (e.g., Kafka ? Database) without additional coordination? What guarantees must the consumer implement?
+<details>
+<summary>Solution for Review Question 4</summary>
+Exactly-once delivery between Kafka and an external database is impossible without additional coordination because Kafka and the database operate as independent systems with their own transaction boundaries. Kafka's exactly-once semantics apply within a single Kafka cluster (idempotent producer + transactions). Cross-system exactly-once requires the consumer to implement idempotent processing (e.g., tracking processed message IDs in a database table with a unique constraint) or use the transactional outbox pattern to atomically write both the business data and the consumption acknowledgment.
+</details>
 
 ### Application Problems
 
-1. **Design a Kafka topology for a food delivery platform.** The system has: Order Service, Restaurant Service, Delivery Service, Notification Service, and Analytics Service. Define topics, partitions, consumer groups, and the schema for at least 5 event types. Specify which event ordering guarantees are needed and how you achieve them.
+<details>
+<summary>Solution for Application Problem 1: Food Delivery Kafka Topology</summary>
+**Topics**: `orders` (10 partitions, key=order_id), `restaurant-orders` (5 partitions), `delivery-assignments` (5 partitions), `notifications` (3 partitions), `analytics-events` (10 partitions). **Consumer groups**: `order-processor` (subscribes to orders), `restaurant-service` (subscribes to restaurant-orders), `delivery-service` (subscribes to delivery-assignments), `notification-service` (subscribes to notifications), `analytics-ingester` (subscribes to analytics-events). Ordering guarantee: order_id as key ensures all events for one order go to the same partition, preserving order per order. Cross-order ordering is not required.
+</details>
 
-2. **Dead-letter queue analysis:** A notification service consumes from a Kafka topic at 500 messages/second. After a deployment bug, 15% of messages went to the DLQ over 2 hours. The DLQ contains 540,000 messages. Design a redrive strategy that: (a) processes all DLQ messages without overwhelming the system, (b) preserves original ordering within each partition, and (c) prevents duplicate notifications to users. Provide the Kafka producer and consumer configuration parameters.
+<details>
+<summary>Solution for Application Problem 2: DLQ Redrive Strategy</summary>
+To process 540,000 DLQ messages without overwhelming: (a) Use a rate-limited consumer that processes 100 msg/sec with a sliding window, gradually increasing to 500 msg/sec as the system stabilizes. (b) Preserve original ordering by replaying within each partition — process all messages from partition 0 first, then partition 1, etc. Use `kafka-consumer-groups --reset-offsets --to-earliest` on the DLQ topic per partition. (c) Prevent duplicates by using idempotency keys: store processed notification IDs in a Redis set with 24h TTL. Producer config: `enable.idempotence=true`, `acks=all`, `retries=5`. Consumer config: `isolation.level=read_committed`, `auto.offset.reset=earliest`.
+</details>
 
-3. **Priority queue implementation:** A ticket system has three priority levels: Critical (SLA: 5 minutes), High (SLA: 30 minutes), Low (SLA: 4 hours). 5% of tickets are Critical, 15% High, 80% Low. Design a queue architecture that guarantees Critical tickets are processed within 2 minutes of arrival while Low tickets do not starve. Show the consumer logic for draining queues, and calculate the maximum processing capacity required per consumer.
+<details>
+<summary>Solution for Application Problem 3: Priority Queue Implementation</summary>
+Use three separate queues: critical (1 partition), high (2 partitions), low (5 partitions). Consumer logic: drain critical queue first until empty, then drain high queue for at most 100ms, then low queue for at most 100ms, then repeat. To prevent starvation, use an aging mechanism: each message gets a timestamp; if a Low message waits > 3.5 hours, it's promoted to the High queue. Capacity calculation: Critical (5% of 1000 tickets/hr = 50/hr = 0.014/sec) + High (15% = 150/hr = 0.042/sec) + Low (80% = 800/hr = 0.22/sec) = 0.28 tickets/sec avg. Peak capacity: 5x average = 1.4 tickets/sec minimum per consumer.
+</details>
 
 ### Challenge Problem
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Design a Financial Event Sourcing System**
 
-Design an event-sourced ledger system for a financial exchange processing 50,000 trades/second.
-
-**Requirements:**
-- Each trade involves a buy order and a sell order, debiting one account and crediting another
-- Balances must be reconstructable from the event stream at any point in time
-- The system must support 50,000 events/second ingestion
-- Auditors must be able to query the state at any previous timestamp
-- Multiple read projections (real-time balances, P&L reports, risk exposure) must be supported
-- The system must never lose events
-
-**Deliverables:**
-
-1. **Event schema:** Define the event types (at least 4) and their schemas. Use a compact event format (Avro or Protobuf specification).
-
-2. **Event store topology:** Design the Kafka topology. Specify topic names, partition count, replication factor, retention policy, compaction settings, and consumer groups. Justify each choice.
-
-3. **Projection design:** Show the code for rebuilding an account balance from the event stream. Then design a snapshot strategy — specify snapshot interval (based on event count), snapshot schema, and how rebuilding works from a snapshot.
-
-4. **Exactly-once reconciliation:** Design a reconciliation process that runs nightly. It compares the event-sourced ledger balances with the actual database balances. If discrepancies exist, explain how you trace back through the event stream to find the root cause.
-
-5. **Audit query optimization:** An auditor needs to query the balance of account 12345 as of March 15, 2024 at 14:30:00 UTC. Current event volume is 4.3 billion events. Describe the query path (snapshot lookup + event replay) and estimate the expected query time. How would you optimize for sub-second audit queries?
-
-6. **Failure scenarios:** Describe what happens in each scenario — how events are recovered and whether any data is lost:
-   - Kafka broker fails (disk corruption)
-   - Consumer crashes after processing an event but before committing the offset
-   - The event store's snapshot table becomes corrupted
-   - A bug in a projection causes incorrect balances for 3 hours before detection
+<details>
+<summary>Solution: Financial Event Sourcing System</summary>
+**1. Event Schema (Avro):** TradeExecuted {tradeId, buyOrderId, sellOrderId, symbol, quantity, price, timestamp}, AccountCredited {accountId, amount, tradeId, balanceAfter}, AccountDebited {accountId, amount, tradeId, balanceAfter}, OrderPlaced {orderId, accountId, type, quantity, price, timestamp}, SettlementCompleted {tradeId, settlementDate, status}. **2. Topology:** Topic `ledger-events` with 50 partitions, replication factor 3, retention 30 days, compaction enabled. Consumer groups: balance-projection, pnl-projection, risk-projection, audit-query. **3. Snapshotting:** Snapshot every 100,000 events per partition. Snapshot schema: {accountId, balance, sequenceNumber, timestamp}. Rebuild: load latest snapshot, replay events after snapshot sequence number. **4. Reconciliation:** Nightly job computes expected balances from event stream, compares with DB balances. Discrepancies traced by scanning the event stream for orphaned events (debits without matching credits). **5. Audit optimization:** Partition-level snapshots enable O(1) lookup by account ID. Sub-second queries achieved by indexing snapshots by account + timestamp range.
+</details>
 
 ---

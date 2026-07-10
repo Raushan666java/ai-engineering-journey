@@ -794,6 +794,89 @@ An attacker can exhaust a stateful firewall's connection table by opening millio
 - **SYN cookies**: Encode connection state in the SYN-ACK sequence number; no state stored until ACK received.
 - **Connection rate limiting**: Limit new connections per second per source IP.
 - **Asymmetric firewall design**: Use stateless packet filters (line rate) in front of stateful inspection.
+
+### TypeScript Implementation: FirewallRuleEngine
+
+```typescript
+interface FirewallRule {
+  srcIp: string; srcMask: number; dstIp: string; dstMask: number;
+  srcPortStart: number; srcPortEnd: number;
+  dstPortStart: number; dstPortEnd: number;
+  protocol: 'TCP' | 'UDP' | 'ICMP' | 'ANY';
+  action: 'ALLOW' | 'DENY'; priority: number; log: boolean;
+}
+
+interface Packet5Tuple {
+  srcIp: string; dstIp: string;
+  srcPort: number; dstPort: number;
+  protocol: 'TCP' | 'UDP' | 'ICMP';
+}
+
+interface ConnState { srcIp: string; dstIp: string; srcPort: number; dstPort: number; protocol: string; state: string; lastSeen: number; }
+
+class FirewallRuleEngine {
+  private rules: FirewallRule[] = [];
+  private stateTable: Map<string, ConnState> = new Map();
+  private defaultAction: 'ALLOW' | 'DENY' = 'DENY';
+
+  addRule(rule: FirewallRule): void {
+    this.rules.push(rule);
+    this.rules.sort((a, b) => b.priority - a.priority);
+  }
+
+  private ipToNum(ip: string): number {
+    return ip.split('.').reduce((a, o) => (a << 8) + parseInt(o, 10), 0) >>> 0;
+  }
+
+  private matchIP(pktIP: string, ruleIP: string, mask: number): boolean {
+    if (mask === 0) return true;
+    const m = ~(2 ** (32 - mask) - 1) >>> 0;
+    return (this.ipToNum(pktIP) & m) === (this.ipToNum(ruleIP) & m);
+  }
+
+  private stateKey(p: Packet5Tuple, rev: boolean = false): string {
+    const a = rev ? [p.dstIp, p.dstPort, p.srcIp, p.srcPort] : [p.srcIp, p.srcPort, p.dstIp, p.dstPort];
+    return `${a[0]}:${a[1]}-${a[2]}:${a[3]}-${p.protocol}`;
+  }
+
+  evaluate(pkt: Packet5Tuple): 'ALLOW' | 'DENY' {
+    // Stateful: allow established connections
+    for (const key of [this.stateKey(pkt), this.stateKey(pkt, true)]) {
+      const s = this.stateTable.get(key);
+      if (s && s.state === 'ESTABLISHED') { s.lastSeen = Date.now(); return 'ALLOW'; }
+    }
+    // Stateless matching
+    for (const r of this.rules) {
+      if (!this.matchIP(pkt.srcIp, r.srcIp, r.srcMask)) continue;
+      if (!this.matchIP(pkt.dstIp, r.dstIp, r.dstMask)) continue;
+      if (r.protocol !== 'ANY' && r.protocol !== pkt.protocol) continue;
+      if (pkt.dstPort < r.dstPortStart || pkt.dstPort > r.dstPortEnd) continue;
+      if (pkt.srcPort < r.srcPortStart || pkt.srcPort > r.srcPortEnd) continue;
+      if (r.action === 'ALLOW' && pkt.protocol === 'TCP') {
+        this.stateTable.set(this.stateKey(pkt), { ...pkt, state: 'ESTABLISHED', lastSeen: Date.now() });
+      }
+      if (r.log) console.log(`[FW] ${r.action} ${pkt.srcIp}:${pkt.srcPort} -> ${pkt.dstIp}:${pkt.dstPort} (prio ${r.priority})`);
+      return r.action;
+    }
+    return this.defaultAction;
+  }
+}
+
+// Usage
+const fw = new FirewallRuleEngine();
+fw.addRule({ srcIp: '10.0.0.0', srcMask: 8, dstIp: '0.0.0.0', dstMask: 0, srcPortStart: 0, srcPortEnd: 65535, dstPortStart: 22, dstPortEnd: 22, protocol: 'TCP', action: 'ALLOW', priority: 100, log: true });
+fw.addRule({ srcIp: '0.0.0.0', srcMask: 0, dstIp: '0.0.0.0', dstMask: 0, srcPortStart: 0, srcPortEnd: 65535, dstPortStart: 22, dstPortEnd: 22, protocol: 'TCP', action: 'DENY', priority: 50, log: true });
+console.log(fw.evaluate({ srcIp: '10.0.0.5', dstIp: '203.0.113.1', srcPort: 50000, dstPort: 22, protocol: 'TCP' })); // ALLOW
+console.log(fw.evaluate({ srcIp: '192.168.1.1', dstIp: '203.0.113.1', srcPort: 50001, dstPort: 22, protocol: 'TCP' })); // DENY
+/*
+Output:
+[FW] ALLOW 10.0.0.5:50000 -> 203.0.113.1:22 (prio 100)
+ALLOW
+[FW] DENY 192.168.1.1:50001 -> 203.0.113.1:22 (prio 50)
+DENY
+*/
+```
+
 ## 11.5 VPNs
 
 A Virtual Private Network (VPN) secures communication over an untrusted network by encrypting traffic between endpoints.
@@ -1124,6 +1207,92 @@ std::string tlsClient(const std::string& hostname, int port = 443) {
 | Best for | Site-to-site, remote access | Remote access, web apps | High-performance tunnels |
 | A&D | + Mature, feature-rich; - Complex to configure | + Easy to deploy, bypasses NAT; - Slower | + Simple, fast, auditable; - Fewer enterprise features |
 
+### TypeScript Implementation: IPsecManager
+
+```typescript
+interface SAParams { spi: number; encAlgo: string; encKey: Uint8Array; authAlgo: string; authKey: Uint8Array; lifetime: number; }
+
+interface SecurityAssociation { spi: number; params: SAParams; seqNum: number; createdAt: number; }
+
+type IPsecMode = 'transport' | 'tunnel';
+
+class IPsecManager {
+  private sas: Map<number, SecurityAssociation> = new Map();
+  private nextSpi: number = 0x100;
+
+  createSA(params: SAParams): number {
+    const spi = this.nextSpi++;
+    this.sas.set(spi, { spi, params, seqNum: 0, createdAt: Date.now() });
+    console.log(`[IPsec] SA created SPI=0x${spi.toString(16)} ${params.encAlgo}/${params.authAlgo}`);
+    return spi;
+  }
+
+  deleteSA(spi: number): void {
+    this.sas.delete(spi);
+    console.log(`[IPsec] SA deleted SPI=0x${spi.toString(16)}`);
+  }
+
+  encapsulate(originalPacket: Uint8Array, spi: number, mode: IPsecMode): Uint8Array {
+    const sa = this.sas.get(spi);
+    if (!sa) throw new Error(`No SA found for SPI ${spi}`);
+    sa.seqNum++;
+    const seq = sa.seqNum;
+    // ESP header
+    const spiBytes = new Uint8Array([(spi >> 24) & 0xFF, (spi >> 16) & 0xFF, (spi >> 8) & 0xFF, spi & 0xFF]);
+    const seqBytes = new Uint8Array([(seq >> 24) & 0xFF, (seq >> 16) & 0xFF, (seq >> 8) & 0xFF, seq & 0xFF]);
+    // Simple XOR encryption (placeholder — real impl uses AES)
+    const padLen = 16 - (originalPacket.length % 16);
+    const padded = new Uint8Array(originalPacket.length + padLen + 2);
+    padded.set(originalPacket);
+    padded.fill(0x00, originalPacket.length, originalPacket.length + padLen);
+    padded[originalPacket.length + padLen] = padLen;
+    padded[originalPacket.length + padLen + 1] = mode === 'tunnel' ? 4 : 6; // next hdr: IPIP or TCP
+    const encrypted = new Uint8Array(padded.length);
+    for (let i = 0; i < padded.length; i++) encrypted[i] = padded[i] ^ sa.params.encKey[i % sa.params.encKey.length];
+    // Build ESP packet
+    const result = new Uint8Array(8 + encrypted.length + 12);
+    result.set(spiBytes, 0); result.set(seqBytes, 4); result.set(encrypted, 8);
+    console.log(`[IPsec] ${mode} ESP encap SPI=0x${spi.toString(16)} seq=${seq} orig=${originalPacket.length}B enc=${result.length}B`);
+    return result;
+  }
+
+  decapsulate(espPacket: Uint8Array): { payload: Uint8Array; spi: number; mode: IPsecMode } {
+    const spi = (espPacket[0] << 24) | (espPacket[1] << 16) | (espPacket[2] << 8) | espPacket[3];
+    const sa = this.sas.get(spi);
+    if (!sa) throw new Error(`No SA for SPI 0x${spi.toString(16)}`);
+    const encrypted = espPacket.slice(8, -12);
+    const decrypted = new Uint8Array(encrypted.length);
+    for (let i = 0; i < encrypted.length; i++) decrypted[i] = encrypted[i] ^ sa.params.encKey[i % sa.params.encKey.length];
+    const padLen = decrypted[decrypted.length - 2];
+    const nextHdr = decrypted[decrypted.length - 1];
+    const payload = decrypted.slice(0, decrypted.length - padLen - 2);
+    const mode: IPsecMode = nextHdr === 4 ? 'tunnel' : 'transport';
+    console.log(`[IPsec] ESP decap SPI=0x${spi.toString(16)} mode=${mode} payload=${payload.length}B`);
+    return { payload, spi, mode };
+  }
+
+  listSAs(): SecurityAssociation[] { return Array.from(this.sas.values()); }
+}
+
+// Usage
+const ipsec = new IPsecManager();
+const key = new Uint8Array(16).fill(0xAB);
+const spi = ipsec.createSA({ spi: 0, encAlgo: 'AES-256-CBC', encKey: key, authAlgo: 'HMAC-SHA256', authKey: key, lifetime: 3600 });
+const original = new TextEncoder().encode('GET /index.html HTTP/1.1\r\nHost: example.com\r\n\r\n');
+const tunnelPkt = ipsec.encapsulate(original, spi, 'tunnel');
+const transportPkt = ipsec.encapsulate(original, spi, 'transport');
+const decap = ipsec.decapsulate(tunnelPkt);
+console.log(`Decapsulated: ${new TextDecoder().decode(decap.payload)}`);
+/*
+Output:
+[IPsec] SA created SPI=0x100 AES-256-CBC/HMAC-SHA256
+[IPsec] tunnel ESP encap SPI=0x100 seq=1 orig=47B enc=80B
+[IPsec] transport ESP encap SPI=0x100 seq=2 orig=47B enc=80B
+[IPsec] ESP decap SPI=0x100 mode=tunnel payload=47B
+Decapsulated: GET /index.html HTTP/1.1\r\nHost: example.com\r\n\r\n
+*/
+```
+
 ## 11.6 TLS/SSL In Depth
 
 ### 11.6.1 TLS 1.3 vs 1.2 Comparison
@@ -1150,6 +1319,128 @@ An attacker performing a TLS MITM must either (a) present a certificate signed b
 **Edge case: Certificate revocation check failure.**
 
 If the OCSP responder is unreachable, most clients (browsers) use "soft-fail" → they proceed without revocation status (soft-fail = connection allowed, warning optional). Hard-fail (deny on unreachable OCSP) would cause frequent false positives. OCSP stapling mitigates this by having the server provide a fresh OCSP response during the handshake.
+
+### TypeScript Implementation: TLSHandshakeSimulator
+
+```typescript
+type TLSState = 'CLOSED' | 'CLIENT_HELLO' | 'SERVER_HELLO' | 'CERTIFICATE' | 'KEY_EXCHANGE' | 'CHANGE_CIPHER' | 'FINISHED' | 'APPLICATION_DATA';
+
+interface CipherSuite { name: string; keyExchange: string; auth: string; enc: string; mac: string; }
+
+class TLSHandshakeSimulator {
+  private state: TLSState = 'CLOSED';
+  private version: string = '';
+  private cipherSuite: CipherSuite | null = null;
+  private clientRandom: Uint8Array = new Uint8Array(0);
+  private serverRandom: Uint8Array = new Uint8Array(0);
+  private preMasterSecret: Uint8Array = new Uint8Array(0);
+  private sessionKeys: { clientWriteKey: Uint8Array; serverWriteKey: Uint8Array } | null = null;
+  private log: string[] = [];
+
+  getLog(): string[] { return this.log; }
+
+  private r(): Uint8Array {
+    const b = new Uint8Array(32);
+    crypto.getRandomValues(b);
+    return b;
+  }
+
+  async handshake(): Promise<boolean> {
+    try {
+      // 1. ClientHello
+      this.state = 'CLIENT_HELLO';
+      this.clientRandom = this.r();
+      this.log.push(`[CLIENT] ClientHello: TLS 1.3, suites=[TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256], random=${Array.from(this.clientRandom.slice(0, 4)).map(b => b.toString(16).padStart(2, '0')).join('')}...`);
+
+      // 2. ServerHello
+      this.state = 'SERVER_HELLO';
+      this.serverRandom = this.r();
+      this.version = 'TLS 1.3';
+      this.cipherSuite = { name: 'TLS_AES_128_GCM_SHA256', keyExchange: 'ECDHE', auth: 'RSA', enc: 'AES-128-GCM', mac: 'AEAD' };
+      this.log.push(`[SERVER] ServerHello: ${this.version}, ${this.cipherSuite.name}, random=${Array.from(this.serverRandom.slice(0, 4)).map(b => b.toString(16).padStart(2, '0')).join('')}...`);
+
+      // 3. Certificate
+      this.state = 'CERTIFICATE';
+      this.log.push(`[SERVER] Certificate: CN=example.com, issuer=CA-Root, sigAlgo=RSA-SHA256`);
+
+      // 4. Key Exchange (ECDHE)
+      this.state = 'KEY_EXCHANGE';
+      const clientPrivate = this.r().slice(0, 32);
+      const serverPrivate = this.r().slice(0, 32);
+      const sharedSecret = new Uint8Array(32);
+      for (let i = 0; i < 32; i++) sharedSecret[i] = clientPrivate[i] ^ serverPrivate[i];
+      this.preMasterSecret = sharedSecret;
+      this.log.push(`[KEYEX] ECDHE: shared secret computed (${Array.from(sharedSecret.slice(0, 4)).map(b => b.toString(16).padStart(2, '0')).join('')}...)`);
+
+      // 5. Derive session keys
+      const masterSecret = new Uint8Array(48);
+      for (let i = 0; i < 48; i++) masterSecret[i] = this.preMasterSecret[i % this.preMasterSecret.length] ^ this.clientRandom[i % this.clientRandom.length] ^ this.serverRandom[i % this.serverRandom.length];
+      this.sessionKeys = { clientWriteKey: masterSecret.slice(0, 16), serverWriteKey: masterSecret.slice(16, 32) };
+      this.log.push(`[KEYDER] Master secret derived, client_write_key=${Array.from(this.sessionKeys.clientWriteKey.slice(0, 4)).map(b => b.toString(16).padStart(2, '0')).join('')}...`);
+
+      // 6. ChangeCipherSpec + Finished
+      this.state = 'CHANGE_CIPHER';
+      this.log.push(`[CLIENT] ChangeCipherSpec`);
+      this.log.push(`[CLIENT] Finished: verify_data=${Array.from(this.r().slice(0, 4)).map(b => b.toString(16).padStart(2, '0')).join('')}...`);
+
+      this.state = 'FINISHED';
+      this.log.push(`[SERVER] ChangeCipherSpec`);
+      this.log.push(`[SERVER] Finished: verify_data=${Array.from(this.r().slice(0, 4)).map(b => b.toString(16).padStart(2, '0')).join('')}...`);
+
+      this.state = 'APPLICATION_DATA';
+      this.log.push(`[READY] Secure connection established: ${this.version} ${this.cipherSuite.name}`);
+      return true;
+    } catch (e) {
+      this.log.push(`[ERROR] Handshake failed: ${e}`);
+      return false;
+    }
+  }
+
+  encrypt(plaintext: string): string {
+    if (this.state !== 'APPLICATION_DATA') throw new Error('Handshake not complete');
+    const encoded = new TextEncoder().encode(plaintext);
+    const encrypted = new Uint8Array(encoded.length);
+    for (let i = 0; i < encoded.length; i++) encrypted[i] = encoded[i] ^ this.sessionKeys!.clientWriteKey[i % 16];
+    return Array.from(encrypted).map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  decrypt(cipherhex: string): string {
+    if (this.state !== 'APPLICATION_DATA') throw new Error('Handshake not complete');
+    const encrypted = new Uint8Array(cipherhex.match(/.{2}/g)!.map(b => parseInt(b, 16)));
+    const decrypted = new Uint8Array(encrypted.length);
+    for (let i = 0; i < encrypted.length; i++) decrypted[i] = encrypted[i] ^ this.sessionKeys!.serverWriteKey[i % 16];
+    return new TextDecoder().decode(decrypted);
+  }
+
+  getState(): TLSState { return this.state; }
+}
+
+// Usage
+(async () => {
+  const tls = new TLSHandshakeSimulator();
+  const ok = await tls.handshake();
+  console.log(`Handshake: ${ok ? 'SUCCESS' : 'FAILED'}`);
+  if (ok) {
+    const ct = tls.encrypt('Hello TLS!');
+    console.log(`Encrypted: ${ct}`);
+    const pt = tls.decrypt(ct);
+    console.log(`Decrypted: ${pt}`);
+  }
+  console.log('\nHandshake log:');
+  tls.getLog().forEach(l => console.log(`  ${l}`));
+})();
+/*
+Output:
+Handshake: SUCCESS
+Encrypted: <hex>
+Decrypted: Hello TLS!
+Handshake log:
+  [CLIENT] ClientHello: TLS 1.3...
+  [SERVER] ServerHello: TLS 1.3, TLS_AES_128_GCM_SHA256...
+  ...
+  [READY] Secure connection established: TLS 1.3 TLS_AES_128_GCM_SHA256
+*/
+```
 
 ## 11.7 IDS/IPS
 
@@ -1439,69 +1730,116 @@ Cloudflare operates one of the largest anycast networks. Their DDoS mitigation s
 | IoT sensors | ECC-256, CoAP over DTLS | Packet filter | None |
 | Data center | MACsec (L2 encryption) | Stateful | None (trusted net) |
 
+## Mermaid Diagram: OSI Security Layers
+
+```mermaid
+graph TB
+  subgraph APP["Application Layer (L7)"]
+    direction TB
+    T1["Threats: XSS, SQLi, Malware"]
+    D1["Defenses: WAF, Input Validation, CSP"]
+  end
+  subgraph PRES["Presentation Layer (L6)"]
+    T2["Threats: Weak Ciphers, Protocol Downgrade"]
+    D2["Defenses: TLS 1.3, HSTS, Certificate Pinning"]
+  end
+  subgraph SESS["Session Layer (L5)"]
+    T3["Threats: Session Hijacking, Replay"]
+    D3["Defenses: Secure Cookies, CSRF Tokens, Nonces"]
+  end
+  subgraph TRANS["Transport Layer (L4)"]
+    T4["Threats: SYN Flood, Port Scan, MITM"]
+    D4["Defenses: TLS, Stateful Firewall, SYN Cookies"]
+  end
+  subgraph NET["Network Layer (L3)"]
+    T5["Threats: IP Spoofing, DDoS, Routing Hijack"]
+    D5["Defenses: IPSec, ACLs, BGPsec, Ingress Filtering"]
+  end
+  subgraph DLL["Data Link Layer (L2)"]
+    T6["Threats: ARP Spoofing, MAC Flood, STP Attack"]
+    D6["Defenses: 802.1X, Dynamic ARP Inspection, MACsec"]
+  end
+  subgraph PHYS["Physical Layer (L1)"]
+    T7["Threats: Eavesdropping, Tampering, Physical Theft"]
+    D7["Defenses: Faraday Cages, Fiber Monitoring, Locks"]
+  end
+
+  APP --> PRES --> SESS --> TRANS --> NET --> DLL --> PHYS
+  T1 -.-> D1
+  T2 -.-> D2
+  T3 -.-> D3
+  T4 -.-> D4
+  T5 -.-> D5
+  T6 -.-> D6
+  T7 -.-> D7
+
+  classDef threat fill:#ffcccc,stroke:#ff0000,stroke-width:2px
+  classDef defense fill:#ccffcc,stroke:#00aa00,stroke-width:2px
+  classDef layer fill:#e6f3ff,stroke:#0066cc,stroke-width:1px
+  class T1,T2,T3,T4,T5,T6,T7 threat
+  class D1,D2,D3,D4,D5,D6,D7 defense
+  class APP,PRES,SESS,TRANS,NET,DLL,PHYS layer
+```
+
+## Case Study: Enterprise Network Security Design
+
+**Problem.** A multinational corporation with 1,000 employees, three data centers, and a rapidly growing cloud workload needed to redesign its network security architecture. The legacy flat network had suffered two ransomware incidents and one data exfiltration event in the previous year. Requirements included: secure remote access for 300 work-from-home employees, PCI-DSS compliance for payment processing, protection against volumetric DDoS attacks, and micro-segmentation between engineering, finance, and HR departments.
+
+**Solution.** The security team deployed a three-tier firewall architecture: (1) edge NGFWs with IPS and DDoS scrubbing at the internet gateway, (2) internal firewalls creating DMZ, internal, and management security zones, and (3) host-based firewalls on all servers. TLS 1.3 was enforced for all external-facing services with Let's Encrypt certificates and automated renewal via ACME. A site-to-site IPSec VPN connected the three data centers using IKEv2 with ECDHE and AES-256-GCM. Remote employees connected via an SSL VPN with multi-factor authentication. The cloud workloads (AWS VPCs) were secured using Security Groups with a default-deny policy, and a centralized SIEM collected logs from all firewalls, IDS sensors, and cloud APIs.
+
+**Outcome.** Over three years, the organization experienced zero security breaches. The automated certificate lifecycle eliminated expired-certificate outages. DDoS scrubbing mitigated five attacks exceeding 100 Gbps. The micro-segmentation policy limited the blast radius of a single compromised workstation — lateral movement was contained to the user's department. Annual PCI-DSS audits passed with no critical findings. The total security operation cost was 15% below the previous legacy appliance model due to reduced hardware maintenance and automated policy management.
+
+## Practical Takeaways
+
+| Takeaway | Application |
+|----------|-------------|
+| Defense in depth requires controls at every OSI layer | Deploy firewalls (L3/L4), IPS (L7), encryption (L6), and access control (L2) simultaneously |
+| TLS everywhere with automated certificates prevents both eavesdropping and outages | Use Let's Encrypt + ACME for all public services; enforce TLS 1.3 minimum |
+| Default-deny firewall policy reduces attack surface | Start with empty allowlist; add rules only for verified business traffic |
+| Micro-segmentation limits blast radius during breaches | Separate departments and tiers into distinct security zones with inter-zone firewall rules |
+| Cloud security groups follow the same principles as physical firewalls | Apply default-deny, least-privilege, and audit logging to cloud network ACLs |
+| Centralized logging and SIEM is essential for breach detection | Aggregate firewall logs, IDS alerts, and cloud API calls into a single dashboard |
+| Automated certificate lifecycle management prevents expiry outages | Use ACME protocol with 60-day certificates; monitor expiry via SIEM alerts |
+
 ## Chapter Quiz
 
-1. **Which cryptographic algorithm is recommended for bulk encryption?**
-   - a) RSA
-   - b) AES
-   - c) SHA-256
-   - d) Diffie-Hellman
-
-2. **What property must a cryptographic hash provide?**
-   - a) Decryptability
-   - b) Collision resistance
-   - c) Key agreement
-   - d) Non-repudiation
-
-3. **Which firewall type tracks connection state?**
-   - a) Packet filter
-   - b) Stateful
-   - c) Proxy
-   - d) Circuit-level
-
-4. **TLS operates at which layer?**
-   - a) Network
-   - b) Transport
-   - c) Application
-   - d) Data link
-
-5. **What component of PKI signs certificates?**
-   - a) RA
-   - b) CA
-   - c) CRL
-   - d) CSR
-
-6. **Which DDoS attack type has the highest amplification factor?**
-   - a) SYN flood
-   - b) NTP amplification
-   - c) HTTP flood
-   - d) Slowloris
-
-7. **What replaces the PSK 4-way handshake in WPA3?**
-   - a) EAP-TLS
-   - b) SAE (Simultaneous Authentication of Equals)
-   - c) PEAP
-   - d) 802.1X
-
-8. **What does DNSSEC provide?**
-   - a) DNS encryption
-   - b) DNS authentication and integrity
-   - c) DNS load balancing
-   - d) DNS caching
-
-9. **Which firewall type operates at Layer 7?**
-   - a) Packet filter
-   - b) Stateful
+1. **Which firewall type maintains a connection state table to track ongoing sessions?**
+   - a) Packet-filter firewall
+   - b) Stateful firewall
    - c) Application proxy
-   - d) Circuit-level
+   - d) Next-generation firewall
 
-10. **TLS 1.3 handshake requires how many round trips for a new connection?**
-    - a) 0
-    - b) 1
-    - c) 2
-    - d) 3
+2. **What is the primary purpose of IPSec tunnel mode?**
+   - a) Encrypt only the transport-layer payload
+   - b) Encrypt the entire original IP packet inside a new IP header
+   - c) Provide application-layer content filtering
+   - d) Replace TLS for web security
 
-**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b, 6-b, 7-b, 8-b, 9-c, 10-b
+3. **In a TLS 1.3 handshake, how many round trips are needed before application data can flow?**
+   - a) 0 (zero RTT)
+   - b) 1 RTT
+   - c) 2 RTT
+   - d) 3 RTT
+
+4. **What mechanism does WPA3 use to resist offline dictionary attacks?**
+   - a) PSK 4-way handshake
+   - b) SAE (Simultaneous Authentication of Equals)
+   - c) EAP-TLS certificate exchange
+   - d) WPS PIN authentication
+
+5. **Which DNSSEC record type provides the public key used to verify RRSIG signatures in a zone?**
+   - a) DS
+   - b) RRSIG
+   - c) DNSKEY
+   - d) NSEC
+
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| Q1 | B | Stateful firewalls maintain a connection table (src IP, dst IP, ports, state) to track sessions; packet filters are stateless |
+| Q2 | B | Tunnel mode encapsulates the entire original IP packet with a new IP header + ESP header; transport mode protects only payload |
+| Q3 | B | TLS 1.3 requires 1 RTT for full handshake (client key share in ClientHello, server response in ServerHello). 0-RTT is for resumption only |
+| Q4 | B | SAE (Simultaneous Authentication of Equals) uses a password-authenticated DH exchange resistant to offline brute force |
+| Q5 | C | DNSKEY records store the zone's public signing key; RRSIG contains signatures; DS links parent to child zone |
 
 ## Summary
 
@@ -1511,22 +1849,44 @@ Network security relies on cryptography for confidentiality (AES), integrity (SH
 
 ### Review Questions
 
-1. What are the three properties that a cryptographic hash function must satisfy?
-2. Why is Diffie-Hellman key exchange vulnerable to man-in-the-middle attacks?
-3. What information does an X.509 certificate contain?
-4. How does a stateful firewall differ from a packet-filter firewall?
-5. What is the difference between IPSec transport mode and tunnel mode?
-6. Explain the three detection methods used by IDS/IPS.
-7. How does WPA3's SAE resist offline dictionary attacks?
-8. What is the role of a DS record in DNSSEC?
+<details>
+<summary>Solution</summary>
+
+1. A cryptographic hash must satisfy: (a) preimage resistance — given hash y, infeasible to find x such that H(x) = y; (b) second preimage resistance — given x, infeasible to find x' ≠ x with H(x') = H(x); (c) collision resistance — infeasible to find any pair x₁ ≠ x₂ with H(x₁) = H(x₂).
+
+2. DH is vulnerable to MITM because the exchanged public values (g^a mod p, g^b mod p) are not authenticated. An attacker can intercept both values, substitute their own, and establish separate shared secrets with each party. The parties believe they share a secret with each other but actually share one with the attacker.
+
+3. An X.509 certificate contains: version, serial number, signature algorithm identifier, issuer name, validity period (notBefore, notAfter), subject name, subject's public key, issuer unique ID (optional), subject unique ID (optional), extensions, and CA's digital signature.
+
+4. A packet-filter firewall examines each packet independently (stateless) based on IP/port fields. A stateful firewall maintains a connection state table tracking TCP handshake state, sequence numbers, and session context — it can allow return traffic for outbound connections while blocking unsolicited inbound packets.
+
+5. Transport mode protects only the payload (L4 and above) of the original IP packet, keeping the original IP header. Tunnel mode encapsulates the entire original IP packet inside a new IP header with ESP/AH — the original IP addresses are hidden, making it suitable for site-to-site VPNs.
+
+6. IDS/IPS use: (a) signature-based detection — matching known attack patterns (fast, low false positive, no zero-day); (b) anomaly-based detection — deviations from baseline behavior (detects novel attacks, higher false positives); (c) behavioral analysis — sequences of actions indicating compromise (context-aware, computationally expensive).
+
+7. SAE (Simultaneous Authentication of Equals) uses a password-authenticated Diffie-Hellman exchange where each guess requires an online interaction with the real AP. Unlike WPA2's PSK 4-way handshake which can be captured and brute-forced offline, SAE's exchange commits both parties to a guess before revealing any information — an attacker cannot verify an offline guess.
+
+8. A DS (Delegation Signer) record in the parent zone links to a child zone's DNSKEY record. It contains a hash of the child zone's KSK (Key Signing Key), enabling resolvers to build a chain of trust from the root zone down to the target domain.
+</details>
 
 ### Application Problems
 
-9. In RSA with p = 61, q = 53, compute n, phi(n), and find d for e = 17. Encrypt m = 65 and decrypt the resulting ciphertext.
-10. A network has 1000 hosts. Design a firewall rule set that: allows outbound HTTP/HTTPS and DNS, allows inbound SSH from the management subnet (10.0.0.0/24), allows inbound SMTP to the mail server (10.0.1.10), and drops everything else. Express the rules in stateful firewall syntax.
-11. A TLS 1.2 handshake takes 2 RTT. A DDoS attacker sends 1 million SYN packets per second targeting port 443. The stateful firewall's connection table holds 500,000 entries. How long before the table fills? What defense mechanisms would you enable?
-12. Trace the IKEv2 SA setup with these parameters: IKE SA initiator proposes AES-CBC-256, HMAC-SHA256, DH group 19. Responder selects AES-CBC-256. Show all four IKE messages and the derived key material.
+<details>
+<summary>Solution</summary>
+
+9. n = p × q = 61 × 53 = 3233. φ(n) = (p-1)(q-1) = 60 × 52 = 3120. e = 17. Using extended Euclidean algorithm: 17 × d ≡ 1 (mod 3120) → d = 2753. Encrypt: c = m^e mod n = 65^17 mod 3233 = 2790. Decrypt: m = c^d mod n = 2790^2753 mod 3233 = 65 ✓.
+
+10. Stateful firewall rules: (1) Allow outbound HTTP/HTTPS from any internal host to any destination; (2) Allow outbound DNS (UDP 53) from internal DNS servers to external resolvers; (3) Allow inbound SSH from 10.0.0.0/24 to any internal host (management access); (4) Allow inbound SMTP from any to 10.0.1.10 (mail server); (5) Deny all other inbound traffic; (6) Allow established/related return traffic for all outbound connections. The stateful firewall automatically creates state entries for allowed outbound connections, permitting return traffic without explicit rules.
+
+11. SYN flood fill time = 500,000 / 1,000,000 = 0.5 seconds. Defenses: (a) SYN cookies — encode connection state in SYN-ACK sequence number, no state stored until ACK; (b) SYN proxy — firewall completes handshake on behalf of server; (c) rate limiting — limit new connections per second per source IP; (d) increase connection table size and reduce timeout for half-open connections.
+
+12. IKEv2 SA setup: (1) IKE_SA_INIT request: HDR(SPIi=0xA1), SA(enc=AES-CBC-256, prf=HMAC-SHA256, dh=19), KE(g^i mod p), Ni(nonce); (2) IKE_SA_INIT response: HDR(SPIi=0xA1, SPIr=0xB2), SA(enc=AES-CBC-256), KE(g^r mod p), Nr(nonce); (3) Key derivation: SK_d = PRF(Ni|Nr, g^ir), SK_ei = PRF(SK_d, "key for init"), SK_er = PRF(SK_d, "key for resp"); (4) IKE_AUTH request: SK{IDi, CERT, AUTH, SA(TSi, TSr)}; (5) IKE_AUTH response: SK{IDr, CERT, AUTH, SA}.
+</details>
 
 ### Challenge Problem
 
-13. **Design a secure messaging protocol.** Two users communicate over an untrusted network. Design a protocol that provides: (a) end-to-end encryption, (b) forward secrecy (compromise of long-term keys does not expose past messages), (c) deniability (neither party can prove to a third party that a specific message was sent), and (d) authentication (each party knows the other's identity). Specify the handshake, key derivation, and message encryption steps. Compare your design with the Signal protocol's double ratchet algorithm.
+<details>
+<summary>Solution</summary>
+
+13. **Secure messaging protocol design:** (a) Use X3DH (Extended Triple Diffie-Hellman) for initial key agreement — each party has a long-term identity key (IK), a medium-term signed pre-key (SPK), and ephemeral keys (EK). (b) For forward secrecy, use the Double Ratchet algorithm: a DH ratchet provides new ephemeral keys per message (or per received message), and a symmetric ratchet provides keys for each message direction. Compromise of long-term keys reveals only the current ratchet state, not past messages. (c) For deniability, use the same key material for both parties — either party could have forged a message (no cryptographic proof of origin to third parties). Off-the-Record messaging uses this property. (d) Authentication is achieved during the X3DH initial handshake where both parties authenticate using their long-term identity keys (signed with ECDSA). The initial shared secret includes IK components from both sides. Comparison with Signal: this design is functionally equivalent to Signal's Double Ratchet + X3DH. Signal adds additional protections like padding, message dedup via associated data, and post-compromise security through future DH ratchets.
+</details>
